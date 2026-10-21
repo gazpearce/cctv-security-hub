@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+    xmlns:podcast="https://podcastindex.org/namespace/1.0"
+    xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://gazpearce.github.io/cctv-security-hub/podcast.xml" rel="self" type="application/rss+xml" />
+    <title>UK Security &amp; Telecoms Engineering Debrief</title>
+    <link>https://adicommunications.co.uk/</link>
+    <language>en-GB</language>
+    <copyright>© 2026 Gary Pearce • ADI Communications</copyright>
+    <itunes:subtitle>Field Analysis, Hardware Benchmarks &amp; Physical Installation Standards</itunes:subtitle>
+    <itunes:author>Gary Pearce (ADI Communications)</itunes:author>
+    <itunes:summary>In-depth technical field breakdowns on modern UK burglar alarms, commercial 4K PoE CCTV systems, SpaceX Starlink satellite installations, and high-speed domestic Ethernet networks. Hosted by Gary Pearce, lead physical security and telecoms engineer with 25+ years hands-on trade experience across Yorkshire and the UK (07860 244 274).</itunes:summary>
+    <description>In-depth technical field breakdowns on modern UK burglar alarms, commercial 4K PoE CCTV systems, SpaceX Starlink satellite installations, and high-speed domestic Ethernet networks. Hosted by Gary Pearce, lead physical security and telecoms engineer with 25+ years hands-on trade experience across Yorkshire and the UK (07860 244 274).</description>
+    <itunes:owner>
+      <itunes:name>Gary Pearce</itunes:name>
+      <itunes:email>aiagent1510@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://gazpearce.github.io/cctv-security-hub/assets/podcast_cover_art_1400.jpg" />
+    <itunes:category text="Technology" />
+    <itunes:category text="Business">
+      <itunes:category text="Management" />
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+
+    <!-- Episode 1: Ajax Smart Alarms -->
+    <item>
+      <title>Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail, MotionCam PhOD &amp; Grade 2 Setup</title>
+      <itunes:title>Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail, MotionCam PhOD &amp; Grade 2 Setup</itunes:title>
+      <itunes:author>Gary Pearce</itunes:author>
+      <pubDate>Wed, 21 Oct 2026 18:00:00 +0100</pubDate>
+      <link>https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html</link>
+      <guid isPermaLink="false">adi-podcast-ep01-ajax-masterclass-2026</guid>
+      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Physical Security Engineer, 07860 244 274). Why legacy 433MHz wireless alarms fail against £30 radio jammers, how the Ajax Jeweller 868MHz protocol protects UK homes with sub-second frequency hopping, and how MotionCam photo-verification eliminates 92% of false callouts. Turnkey packages from £599 + VAT. Full details: https://adicommunications.co.uk/]]></description>
+      <enclosure url="https://gazpearce.github.io/cctv-security-hub/audio/ajax_masterclass_audio.mp3" length="3669120" type="audio/mpeg" />
+      <itunes:duration>03:49</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+
+    <!-- Episode 2: Starlink Gen 3 & Mini -->
+    <item>
+      <title>Starlink Gen 3 &amp; Mini UK Installation: 90mph Gale Chimney Mounts, Bypass &amp; Speed Test</title>
+      <itunes:title>Starlink Gen 3 &amp; Mini UK Installation: 90mph Gale Chimney Mounts, Bypass &amp; Speed Test</itunes:title>
+      <itunes:author>Gary Pearce</itunes:author>
+      <pubDate>Wed, 21 Oct 2026 22:30:00 +0100</pubDate>
+      <link>https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html</link>
+      <guid isPermaLink="false">adi-podcast-ep02-starlink-gen3-mini-2026</guid>
+      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Satellite & Telecoms Engineer, 07860 244 274). Everything you need to know about the UK rollout of SpaceX Starlink Gen 3 Standard dish and Starlink Mini. How to engineer heavy-duty non-drill chimney lashing cradles rated for 90mph Pennine gales, map 110° northern orbital cones to eliminate tree obstructions, and bypass the Gen 3 router into whole-home Wi-Fi 7 mesh networks. Full details: https://adicommunications.co.uk/]]></description>
+      <enclosure url="https://gazpearce.github.io/cctv-security-hub/audio/starlink_masterclass_audio.mp3" length="3630400" type="audio/mpeg" />
+      <itunes:duration>03:47</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
+</rss>

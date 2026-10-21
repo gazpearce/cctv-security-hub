@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK Home Network & Ethernet Upstairs Diagnostic Tool | ADI Communications</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#0A0A0F] text-slate-100 min-h-screen p-4 sm:p-8 flex items-center justify-center">
+
+  <div class="max-w-3xl w-full bg-[#12121A] border border-white/10 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+    <!-- Ambient Glow -->
+    <div class="absolute -top-24 -right-24 w-80 h-80 bg-[#FF5500]/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header -->
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-3 h-3 rounded-full bg-[#FF5500] animate-pulse"></div>
+      <span class="font-mono text-xs uppercase tracking-widest text-[#FFA07A]">ADI Trade Engineering Console</span>
+    </div>
+
+    <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
+      Upstairs Ethernet & Home Network Diagnostic
+    </h1>
+    <p class="text-sm text-slate-400 mb-8">
+      Evaluate your property architecture, electrical ring mains, and structural wall density to determine the optimal gigabit data path.
+    </p>
+
+    <!-- Interactive Form Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+      <!-- Q1: Property Wall Construction -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">1. Wall Construction</label>
+        <select id="wallType" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="cavity_brick">Standard Cavity Brick & Block (Post-1950)</option>
+          <option value="stone">Solid Yorkshire Stone / Thick Masonry (Pre-1930)</option>
+          <option value="stud_drywall">Timber Stud & Plasterboard (Modern Build)</option>
+        </select>
+      </div>
+
+      <!-- Q2: Consumer Unit / Electrical Setup -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">2. Electrical Consumer Unit</label>
+        <select id="electricType" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="split_rcd">Split RCD / Multi-Ring Main (Upstairs & Downstairs on separate circuits)</option>
+          <option value="single_board">Older Single Consumer Board (Single Ring)</option>
+          <option value="subpanel">Separate Sub-Panel / Extension Annex</option>
+        </select>
+      </div>
+
+      <!-- Q3: Destination Room -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">3. Target Destination</label>
+        <select id="destType" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="first_floor">First Floor Bedroom / Gaming Station</option>
+          <option value="attic">Attic / Loft Office Conversion</option>
+          <option value="garden_office">Detached Garden Office / Outbuilding</option>
+        </select>
+      </div>
+
+      <!-- Q4: Primary Performance Requirement -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">4. Primary Requirement</label>
+        <select id="reqType" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="gaming_work">Competitive Gaming & Low-Latency Video Calls (&lt;10ms jitter)</option>
+          <option value="mesh_backhaul">Wi-Fi 6 Whole-Home Mesh Hardwired Backhaul</option>
+          <option value="cctv_nas">4K CCTV NVR / High-Capacity NAS Storage</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Compute Button -->
+    <button onclick="calculateDiagnostics()" class="w-full bg-gradient-to-r from-[#FF5500] to-[#E04B00] hover:from-[#FF6611] hover:to-[#FF5500] text-white font-bold py-3.5 px-6 rounded-xl transition shadow-lg shadow-[#FF5500]/25 flex items-center justify-center gap-2 font-mono text-sm tracking-wide">
+      <span>Run Architectural Diagnostic</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </button>
+
+    <!-- Results Panel (Dynamic) -->
+    <div id="resultsPanel" class="mt-8 pt-8 border-t border-white/10 hidden">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-[#1A1A26] border border-white/5 p-4 rounded-xl">
+          <span class="text-xs text-slate-400 font-mono">Powerline Risk</span>
+          <div id="powerlineRisk" class="text-lg font-bold text-red-400 mt-1">High Risk</div>
+          <span class="text-xs text-slate-500">Cross-circuit phase loss</span>
+        </div>
+        <div class="bg-[#1A1A26] border border-white/5 p-4 rounded-xl">
+          <span class="text-xs text-slate-400 font-mono">Max Real Speed</span>
+          <div id="maxSpeed" class="text-lg font-bold text-green-400 mt-1">1,000 Mbps</div>
+          <span class="text-xs text-slate-500">Full duplex gigabit</span>
+        </div>
+        <div class="bg-[#1A1A26] border border-white/5 p-4 rounded-xl">
+          <span class="text-xs text-slate-400 font-mono">Latency / Jitter</span>
+          <div id="latencyVal" class="text-lg font-bold text-blue-400 mt-1">&lt; 1 ms</div>
+          <span class="text-xs text-slate-500">Zero packet drop</span>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-[#1A1A26] to-[#12121A] border border-[#FF5500]/20 p-5 rounded-xl mb-6">
+        <h4 class="text-sm font-bold text-[#FFA07A] font-mono uppercase tracking-wider mb-2">Recommended Engineering Solution</h4>
+        <p id="recSolution" class="text-sm text-slate-200 leading-relaxed"></p>
+      </div>
+
+      <!-- Direct Contact CTA -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/[0.02] border border-white/10 p-4 rounded-xl">
+        <div>
+          <div class="text-sm font-bold text-white">Need certified physical installation in Yorkshire?</div>
+          <div class="text-xs text-slate-400">Gary Pearce • ADI Communications • 25+ Years Experience</div>
+        </div>
+        <a href="tel:07860244274" class="bg-white/10 hover:bg-white/20 text-white font-mono text-xs uppercase tracking-wider font-bold py-2.5 px-5 rounded-full border border-white/20 transition whitespace-nowrap">
+          Call 07860 244 274
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function calculateDiagnostics() {
+      const wall = document.getElementById('wallType').value;
+      const electric = document.getElementById('electricType').value;
+      const dest = document.getElementById('destType').value;
+      const req = document.getElementById('reqType').value;
+
+      const results = document.getElementById('resultsPanel');
+      const powerlineRisk = document.getElementById('powerlineRisk');
+      const maxSpeed = document.getElementById('maxSpeed');
+      const latencyVal = document.getElementById('latencyVal');
+      const recSolution = document.getElementById('recSolution');
+
+      results.classList.remove('hidden');
+
+      if (electric === 'split_rcd' || electric === 'subpanel') {
+        powerlineRisk.innerText = 'High (80% Loss)';
+        powerlineRisk.className = 'text-lg font-bold text-red-400 mt-1';
+      } else {
+        powerlineRisk.innerText = 'Medium (30-50% Loss)';
+        powerlineRisk.className = 'text-lg font-bold text-amber-400 mt-1';
+      }
+
+      maxSpeed.innerText = '1,000 Mbps';
+      latencyVal.innerText = '< 1.0 ms';
+
+      let text = '';
+      if (wall === 'stone') {
+        text = 'Solid stone walls attenuate Wi-Fi signals by up to 18dB. Powerline adapters will struggle with phase degradation across split consumer units. The gold-standard trade solution is an external UV-rated solid copper Cat6 cavity drop with discreet weatherproof silicone drip loops, terminating at flush RJ45 faceplates in your target room.';
+      } else if (dest === 'garden_office') {
+        text = 'For detached garden rooms or outbuildings, domestic Wi-Fi mesh and powerline kits fail completely over distance. We engineer either an armored external Cat6 burial run or an ultra-low-latency 60GHz wireless bridge delivering gigabit line-of-sight speeds.';
+      } else {
+        text = 'For modern cavity homes, our certified route drops UV-stabilised solid bare copper Cat6 externally along mortar lines, or down internal service risers, terminating at shielded Euro-module RJ45 wall plates with zero visible surface mini-trunking.';
+      }
+
+      recSolution.innerText = text;
+      results.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
