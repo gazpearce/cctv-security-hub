@@ -52,6 +52,18 @@
       <enclosure url="https://gazpearce.github.io/cctv-security-hub/audio/starlink_masterclass_audio.mp3" length="3630400" type="audio/mpeg" />
       <itunes:duration>03:47</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
+    <!-- Episode 3: Hikvision ColorVu vs Infrared CCTV -->
+    <item>
+      <title>Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards &amp; 4K Police Evidence</title>
+      <itunes:title>Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards &amp; 4K Police Evidence</itunes:title>
+      <itunes:author>Gary Pearce</itunes:author>
+      <pubDate>Wed, 21 Oct 2026 23:00:00 +0100</pubDate>
+      <link>https://tvandhomesecurity.blogspot.com/2026/05/how-much-does-cctv-installation-cost-in.html</link>
+      <guid isPermaLink="false">adi-podcast-ep03-cctv-colorvu-dori-2026</guid>
+      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Physical Security & CCTV Specialist, 07860 244 274). Why 850nm infrared night vision fails Crown Prosecution Service (CPS) court admissibility standards, how Hikvision ColorVu G2 F1.0 super-apertures capture 24/7 colour in darkness, BS EN 62676-4 DORI identification targets (250 px/m), and why hardwired PoE beats jammer-vulnerable Wi-Fi cameras. Full details: https://adicommunications.co.uk/]]></description>
+      <enclosure url="https://gazpearce.github.io/cctv-security-hub/audio/cctv_masterclass_audio.mp3" length="3613588" type="audio/mpeg" />
+      <itunes:duration>03:50</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>

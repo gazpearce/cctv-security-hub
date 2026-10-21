@@ -39,6 +39,8 @@ Full unbroken single-take technical engineering breakdowns:
    * *Covers*: Gen 3 kickstand dish vs Mini USB-PD specs, non-drill chimney lashing cradles, 110° northern orbital cone obstruction mapping, and router bypass mode to whole-home Wi-Fi 7 mesh.
 2. **[Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail & MotionCam PhOD](https://youtu.be/l-HN4BuzBGQ)** (3:49)
    * *Covers*: Jeweller 868MHz frequency hopping, anti-jamming cellular failover, MotionCam 9-second visual verification, and 113dB StreetSiren storm rigging.
+3. **[Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards & 4K Police Evidence](https://youtu.be/50q89TsNN3w)** (3:50)
+   * *Covers*: Why 850nm IR night vision fails court standards, F1.0 super-apertures, BS EN 62676-4 DORI 250 px/m facial identification targets, hardwired PoE vs Wi-Fi jammers, and AcuSense AI object filtering.
 
 ---
 
