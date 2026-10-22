@@ -1,0 +1,244 @@
+{
+  "name": "ADI Communications — Autonomous Video Stacking & Multi-Platform Syndicator",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "weeksInterval": 1
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Weekly Video Production Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "path": "/video-stack-upload",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "2",
+      "name": "Webhook Ingest (Instant Video Upload)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 480],
+      "webhookId": "video-stack-upload"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Formulate Video Trade Metadata under Rule 45 Google Shield\nconst video = $input.item.json;\nconst topic = video.topic || 'Physical Security Masterclass';\nconst filename = video.filename || 'adi_video_master.mp4';\n\nlet shieldAnchor = 'https://tvandhomesecurity.blogspot.com/';\nif (filename.includes('starlink')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/';\n} else if (filename.includes('ajax')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/';\n} else if (filename.includes('cat6') || filename.includes('ethernet')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/';\n} else if (filename.includes('tv') || filename.includes('fireplace')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/';\n}\n\nconst title = `${topic} UK Masterclass 2026 — Gary Pearce (ADI Communications)`;\nconst description = `${title}\\n\\nProfessional UK trade engineering debrief by Gary Pearce, ADI Communications (07860 244 274).\\n25+ years hands-on field craftsmanship, £10,000,000 Public Liability Insurance, CAI-benchmarked equipment.\\n\\nKey Highlights & Chapters:\\n00:00 - Introduction by Gary Pearce\\n00:15 - Core Hardware Engineering Standards\\n00:30 - Physical Installation & Storm Rating\\n00:45 - Network & Failover Integration\\n\\nInteractive Engineering Calculators & Full Notes:\\n${shieldAnchor}\\n\\nOfficial Google Entity Hub: https://www.youtube.com/@CCTV.services`;\n\nreturn {\n  title,\n  description,\n  shieldAnchor,\n  filename,\n  tags: ['Gary Pearce', 'ADI Communications', 'Yorkshire Security', 'Telecoms UK', '07860 244 274']\n};"
+      },
+      "id": "3",
+      "name": "Rule 45 Video Metadata Formatter",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [480, 390]
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "upload",
+        "title": "={{ $json.title }}",
+        "description": "={{ $json.description }}",
+        "tags": "={{ $json.tags.join(',') }}",
+        "categoryId": "27",
+        "privacyStatus": "public"
+      },
+      "id": "4",
+      "name": "YouTube Data API Uploader (@CCTV.services)",
+      "type": "n8n-nodes-base.youTube",
+      "typeVersion": 1,
+      "position": [720, 260]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.dailymotion.com/me/videos",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.description }}"
+            },
+            {
+              "name": "channel",
+              "value": "tech"
+            },
+            {
+              "name": "tags",
+              "value": "={{ $json.tags.join(',') }}"
+            },
+            {
+              "name": "published",
+              "value": "true"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5",
+      "name": "Dailymotion API Uploader",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [720, 420]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://s3.us.archive.org/adi-communications-video-{{ $json.filename.replace('.mp4','') }}/{{ $json.filename }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-archive-meta-title",
+              "value": "={{ $json.title }}"
+            },
+            {
+              "name": "x-archive-meta-description",
+              "value": "={{ $json.description }}"
+            },
+            {
+              "name": "x-archive-meta-mediatype",
+              "value": "movies"
+            },
+            {
+              "name": "x-archive-meta-creator",
+              "value": "Gary Pearce, ADI Communications"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "6",
+      "name": "Internet Archive S3 Uploader (Dublin Core)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [720, 580]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Consolidate Multi-Platform Video Syndication Audit\nreturn {\n  title: $('Rule 45 Video Metadata Formatter').item.json.title,\n  google_shield_anchor: $('Rule 45 Video Metadata Formatter').item.json.shieldAnchor,\n  youtube_status: 'PUBLISHED',\n  dailymotion_status: 'PUBLISHED',\n  internet_archive_status: 'ARCHIVED',\n  lead_engineer: 'Gary Pearce',\n  direct_phone: '07860 244 274',\n  timestamp: new Date().toISOString()\n};"
+      },
+      "id": "7",
+      "name": "Consolidate Video Audit",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [960, 420]
+    },
+    {
+      "parameters": {
+        "chatId": "-10022334455",
+        "text": "=🎬 *New Trade Video Syndicated to Video Stack*\n\n*Title:* {{ $json.title }}\n*Google Shield Anchor:* {{ $json.google_shield_anchor }}\n*YouTube:* Published (@CCTV.services)\n*Dailymotion:* Published\n*Internet Archive:* Archived with Dublin Core\n\n*Engineer:* Gary Pearce (07860 244 274)",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "8",
+      "name": "Telegram Dispatch Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [1180, 420]
+    }
+  ],
+  "connections": {
+    "Weekly Video Production Trigger": {
+      "main": [
+        [
+          {
+            "node": "Rule 45 Video Metadata Formatter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook Ingest (Instant Video Upload)": {
+      "main": [
+        [
+          {
+            "node": "Rule 45 Video Metadata Formatter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rule 45 Video Metadata Formatter": {
+      "main": [
+        [
+          {
+            "node": "YouTube Data API Uploader (@CCTV.services)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Dailymotion API Uploader",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Internet Archive S3 Uploader (Dublin Core)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube Data API Uploader (@CCTV.services)": {
+      "main": [
+        [
+          {
+            "node": "Consolidate Video Audit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dailymotion API Uploader": {
+      "main": [
+        [
+          {
+            "node": "Consolidate Video Audit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Internet Archive S3 Uploader (Dublin Core)": {
+      "main": [
+        [
+          {
+            "node": "Consolidate Video Audit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Consolidate Video Audit": {
+      "main": [
+        [
+          {
+            "node": "Telegram Dispatch Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

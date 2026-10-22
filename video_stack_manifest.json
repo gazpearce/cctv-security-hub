@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ADI Communications — Master Video Stacking & Multi-Media Syndication Manifest",
+  "version": "2.0.0",
+  "last_updated": "2026-10-22T09:04:22+01:00",
+  "lead_engineer": "Gary Pearce",
+  "business": "ADI Communications",
+  "telephone": "07860 244 274",
+  "insurance": "£10,000,000 Public Liability Insurance",
+  "total_videos": 3,
+  "total_syndication_endpoints": 15,
+  "rule_45_compliance": "100% PASS (Zero raw money site root links, all anchors route to Google Shield or /news/ buffer posts)",
+  "videos": [
+    {
+      "video_id": "vid-01",
+      "title": "Ajax Smart Alarms UK Masterclass: Grade 2 Setup, Jeweller Wireless & 90mph Bell Box Installation",
+      "topic": "Ajax Wireless Smart Security",
+      "category": "Physical Security & Intrusion Prevention",
+      "filename": "adi_engineer_ajax_46s_master.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 7773324,
+      "sha256_hash": "1d78462877d029279cbe0851473e623721635d7dad53e995fef80d3cb5f5e75c",
+      "duration_seconds": 46,
+      "tags": [
+        "Ajax Alarms",
+        "Burglar Alarm Installation",
+        "Gary Pearce",
+        "ADI Communications",
+        "Leeds Security",
+        "Yorkshire Alarms",
+        "Grade 2 Alarm",
+        "Jeweller Wireless"
+      ],
+      "timestamps": [
+        "00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Trade Experience)",
+        "00:10 - Why Legacy 433MHz Alarms Are Jammed & Bypassed in Minutes",
+        "00:22 - Ajax Jeweller 868MHz Frequency Hopping & Encrypted Rolling Code",
+        "00:32 - StreetSiren Masonry Mounting & 90mph Gale Wind Testing",
+        "00:40 - Hub 2 Plus Dual Micro-SIM Cellular Failover & Ethernet Integration"
+      ],
+      "description": "Ajax Smart Alarms UK Masterclass: Grade 2 Setup, Jeweller Wireless & 90mph Bell Box Installation\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and £10,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Trade Experience)\n00:10 - Why Legacy 433MHz Alarms Are Jammed & Bypassed in Minutes\n00:22 - Ajax Jeweller 868MHz Frequency Hopping & Encrypted Rolling Code\n00:32 - StreetSiren Masonry Mounting & 90mph Gale Wind Testing\n00:40 - Hub 2 Plus Dual Micro-SIM Cellular Failover & Ethernet Integration\n\nVerified Engineering Standards:\n• CAI-benchmarked equipment & double-screened WF100 coaxial cable\n• NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n• 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "syndication_targets": {
+        "youtube": {
+          "channel": "@CCTV.services",
+          "privacy_status": "public",
+          "category_id": "27",
+          "public_watch_url": "https://www.youtube.com/watch?v=vid-01_placeholder"
+        },
+        "dailymotion": {
+          "channel": "gazpearce",
+          "public_video_url": "https://www.dailymotion.com/video/vid-01_dm",
+          "embed_url": "https://geo.dailymotion.com/player.html?video=vid-01_dm"
+        },
+        "vimeo": {
+          "user": "gazpearce",
+          "public_video_url": "https://vimeo.com/vid-01_vm"
+        },
+        "internet_archive": {
+          "identifier": "adi-communications-vid-01-masterclass",
+          "item_url": "https://archive.org/details/adi-communications-vid-01-masterclass",
+          "metadata_schema": "Dublin Core XML (RFC 5013)"
+        },
+        "peertube": {
+          "instance": "peertube.tv",
+          "channel": "cctv_telecom_yorkshire",
+          "public_url": "https://peertube.tv/w/vid-01_pt"
+        }
+      }
+    },
+    {
+      "video_id": "vid-02",
+      "title": "SpaceX Starlink UK Field Installation: Chimney Mount vs Roof Apex Storm Brackets",
+      "topic": "Starlink Satellite Rigging",
+      "category": "Satellite Broadband Infrastructure",
+      "filename": "gary_pearce_ajax_smart_alarms_flow_24s_master.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5029377,
+      "sha256_hash": "2d8f11fff7d0a469ee255456105aa4f27f0aa7df4cc3b92d69877acd4d1f2321",
+      "duration_seconds": 24,
+      "tags": [
+        "Starlink Installation",
+        "Starlink UK",
+        "Chimney Mount",
+        "Gary Pearce",
+        "ADI Communications",
+        "Rural Broadband",
+        "Starlink Gen 3",
+        "Bradford",
+        "Huddersfield"
+      ],
+      "timestamps": [
+        "00:00 - Starlink Gen 3 Dish Obstruction Survey & 110° Sky Clearance",
+        "00:08 - Non-Drill Chimney Lashing Kits vs Heavy Duty Apex Brackets",
+        "00:16 - Pennine 90mph Gale Force Engineering & UV-Rated Cat6 Drip Loops",
+        "00:21 - Whole-Home Wi-Fi Mesh Integration & Router Bypass Mode"
+      ],
+      "description": "SpaceX Starlink UK Field Installation: Chimney Mount vs Roof Apex Storm Brackets\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and £10,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - Starlink Gen 3 Dish Obstruction Survey & 110° Sky Clearance\n00:08 - Non-Drill Chimney Lashing Kits vs Heavy Duty Apex Brackets\n00:16 - Pennine 90mph Gale Force Engineering & UV-Rated Cat6 Drip Loops\n00:21 - Whole-Home Wi-Fi Mesh Integration & Router Bypass Mode\n\nVerified Engineering Standards:\n• CAI-benchmarked equipment & double-screened WF100 coaxial cable\n• NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n• 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "syndication_targets": {
+        "youtube": {
+          "channel": "@CCTV.services",
+          "privacy_status": "public",
+          "category_id": "27",
+          "public_watch_url": "https://www.youtube.com/watch?v=vid-02_placeholder"
+        },
+        "dailymotion": {
+          "channel": "gazpearce",
+          "public_video_url": "https://www.dailymotion.com/video/vid-02_dm",
+          "embed_url": "https://geo.dailymotion.com/player.html?video=vid-02_dm"
+        },
+        "vimeo": {
+          "user": "gazpearce",
+          "public_video_url": "https://vimeo.com/vid-02_vm"
+        },
+        "internet_archive": {
+          "identifier": "adi-communications-vid-02-masterclass",
+          "item_url": "https://archive.org/details/adi-communications-vid-02-masterclass",
+          "metadata_schema": "Dublin Core XML (RFC 5013)"
+        },
+        "peertube": {
+          "instance": "peertube.tv",
+          "channel": "cctv_telecom_yorkshire",
+          "public_url": "https://peertube.tv/w/vid-02_pt"
+        }
+      }
+    },
+    {
+      "video_id": "vid-03",
+      "title": "Hikvision ColorVu vs Infrared 4K CCTV: Low-Light F1.0 Aperture & Police Evidence Standards",
+      "topic": "Commercial & Domestic 4K CCTV",
+      "category": "Electronic Surveillance & Police Evidence",
+      "filename": "adi_communications_ajax_engineer_46s_broadcast.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 1834578,
+      "sha256_hash": "0597c0d8ac6799d895673a056e9680f9ae3c2dc57e573627a36fad0ecdacb084",
+      "duration_seconds": 46,
+      "tags": [
+        "Hikvision ColorVu",
+        "4K CCTV Installation",
+        "Police Evidence CCTV",
+        "Gary Pearce",
+        "ADI Communications",
+        "Yorkshire CCTV",
+        "ColorVu Night Vision",
+        "PoE Security"
+      ],
+      "timestamps": [
+        "00:00 - CCTV Night Vision Reality: Infrared Fogging & Spiderweb Glare",
+        "00:12 - ColorVu 24/7 Full Colour Video with F1.0 Super-Aperture",
+        "00:25 - DORI Admissibility Standards: 250 Pixels/Metre for Court Evidence",
+        "00:38 - Hardwired PoE Cat6 vs Vulnerable Wi-Fi Jamming Attacks"
+      ],
+      "description": "Hikvision ColorVu vs Infrared 4K CCTV: Low-Light F1.0 Aperture & Police Evidence Standards\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and £10,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - CCTV Night Vision Reality: Infrared Fogging & Spiderweb Glare\n00:12 - ColorVu 24/7 Full Colour Video with F1.0 Super-Aperture\n00:25 - DORI Admissibility Standards: 250 Pixels/Metre for Court Evidence\n00:38 - Hardwired PoE Cat6 vs Vulnerable Wi-Fi Jamming Attacks\n\nVerified Engineering Standards:\n• CAI-benchmarked equipment & double-screened WF100 coaxial cable\n• NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n• 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://tvandhomesecurity.blogspot.com/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
+      "google_shield_anchor": "https://tvandhomesecurity.blogspot.com/",
+      "syndication_targets": {
+        "youtube": {
+          "channel": "@CCTV.services",
+          "privacy_status": "public",
+          "category_id": "27",
+          "public_watch_url": "https://www.youtube.com/watch?v=vid-03_placeholder"
+        },
+        "dailymotion": {
+          "channel": "gazpearce",
+          "public_video_url": "https://www.dailymotion.com/video/vid-03_dm",
+          "embed_url": "https://geo.dailymotion.com/player.html?video=vid-03_dm"
+        },
+        "vimeo": {
+          "user": "gazpearce",
+          "public_video_url": "https://vimeo.com/vid-03_vm"
+        },
+        "internet_archive": {
+          "identifier": "adi-communications-vid-03-masterclass",
+          "item_url": "https://archive.org/details/adi-communications-vid-03-masterclass",
+          "metadata_schema": "Dublin Core XML (RFC 5013)"
+        },
+        "peertube": {
+          "instance": "peertube.tv",
+          "channel": "cctv_telecom_yorkshire",
+          "public_url": "https://peertube.tv/w/vid-03_pt"
+        }
+      }
+    }
+  ]
+}
