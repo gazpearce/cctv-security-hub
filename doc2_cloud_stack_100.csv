@@ -103,3 +103,53 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 102,Bitbucket Cloud (Atlassian),bitbucket.org,95,Cloud Repositories & CI/CD,"50 GB storage, 50 build mins/mo free",Google OAuth,https://bitbucket.org/cctvsystem/workspace/overview/,JOINED,https://bitbucket.org/cctvsystem/workspace/overview/
 103,CircleCI,circleci.com,91,CI/CD & Automation,"6,000 build mins/mo free",GitHub / Email,https://app.circleci.com/login,JOINED,https://app.circleci.com/home
 104,Sentry,sentry.io,90,Cloud Telemetry & APM,"5,000 errors, 10,000 performance units/mo",GitHub OAuth,https://sentry.io/signup/,JOINED,https://adi-communications-ltd.sentry.io/onboarding/welcome/
+105,Google Sites,sites.google.com,99,Edge & Static Hosting,Unlimited free sites on sites.google.com/view/,Google OAuth,https://sites.google.com/,JOINED,https://sites.google.com/view/adi-communications/
+106,Blogger (Google Shield),blogger.com,99,Blog & Editorial Networks,"Unlimited posts, custom domains, Google DA 99",Google OAuth,https://www.blogger.com/,JOINED,https://tvandhomesecurity.blogspot.com/
+107,GitBook,gitbook.com,91,Documentation & Knowledge Bases,Free public docs for open-source,GitHub / Google,https://www.gitbook.com/,PENDING,
+108,Read the Docs,readthedocs.org,91,Documentation & Knowledge Bases,Free Sphinx/MkDocs hosting for public repos,GitHub / GitLab,https://readthedocs.org/,PENDING,
+109,Dev.to,dev.to,91,Blog & Editorial Networks,Free developer publishing with canonical links,GitHub / Twitter,https://dev.to/enter,PENDING,
+110,Hashnode,hashnode.com,88,Blog & Editorial Networks,Free developer blogging on custom or hashnode subdomains,GitHub / Google,https://hashnode.com/,PENDING,
+111,Substack,substack.com,92,Blog & Editorial Networks,Free newsletter & article publishing,Google / Email,https://substack.com/signup,PENDING,
+112,Medium,medium.com,95,Blog & Editorial Networks,Free publishing to global readership,Google / Email,https://medium.com/m/signin,PENDING,
+113,CodePen,codepen.io,93,Developer & Interactive Pens,Free front-end HTML/CSS/JS interactive pens,GitHub / Google,https://codepen.io/accounts/signup,PENDING,
+114,JSFiddle,jsfiddle.net,90,Developer & Interactive Pens,Embeddable live JavaScript calculators,GitHub / Google,https://jsfiddle.net/user/login/,PENDING,
+115,StackBlitz,stackblitz.com,89,Developer & Interactive Pens,WebContainers in-browser full stack apps,GitHub / Google,https://stackblitz.com/,PENDING,
+116,CodeSandbox,codesandbox.io,90,Developer & Interactive Pens,Cloud development sandboxes & live previews,GitHub / Google,https://codesandbox.io/signin,PENDING,
+117,Tiiny Host,tiiny.host,75,Edge & Static Hosting,Instant drag-and-drop HTML hosting,Email / Web,https://tiiny.host/,PENDING,
+118,Carrd,carrd.co,89,Edge & Static Hosting,3 free responsive one-page micro-sites,Email,https://carrd.co/build,PENDING,
+119,Framer,framer.com,88,Edge & Static Hosting,Free responsive visual landing pages,Google / Email,https://www.framer.com/signup/,PENDING,
+120,Webflow,webflow.com,92,Edge & Static Hosting,2 free unhosted design projects on webflow.io,Google / Email,https://webflow.com/dashboard/signup,PENDING,
+121,Wix,wix.com,94,Edge & Static Hosting,Free website builder on wixsite.com,Google / Email,https://users.wix.com/signin,PENDING,
+122,Notion Sites,notion.so,93,Documentation & Knowledge Bases,Publish any Notion page to the web,Google / Email,https://www.notion.so/signup,PENDING,
+123,Codeberg,codeberg.org,85,Cloud Repositories & CI/CD,Free European open-source Git hosting & Pages,Codeberg OAuth,https://codeberg.org/user/sign_up,PENDING,
+124,Google AI Studio,aistudio.google.com,98,AI Inference & Development,Free Gemini API rate limits & prompt tuning,Google OAuth,https://aistudio.google.com/,JOINED,https://aistudio.google.com/
+125,GroqCloud,console.groq.com,82,AI Inference & Development,"Ultra-fast LPU inference (Llama 3.3 70B, DeepSeek)",Google / GitHub,https://console.groq.com/,PENDING,
+126,Deepnote,deepnote.com,80,AI Inference & Development,Collaborative cloud Jupyter notebooks & SQL,Google / GitHub,https://deepnote.com/sign-up,PENDING,
+127,Observable HQ,observablehq.com,86,AI Inference & Development,Interactive D3.js visualization notebooks,Google / GitHub,https://observablehq.com/auth/signup,PENDING,
+128,Lightning AI,lightning.ai,79,AI Inference & Development,22 free credits/mo cloud compute for Python,Google / GitHub,https://lightning.ai/signup,PENDING,
+129,OpenRouter,openrouter.ai,74,AI Inference & Development,Free open-source models gateway,Google / GitHub,https://openrouter.ai/auth/signin,PENDING,
+130,Google Apps Script,script.google.com,98,Serverless & Compute,100% free serverless JavaScript tied to Google Suite,Google OAuth,https://script.google.com/home/start,JOINED,https://script.google.com/home
+131,jsDelivr Multi-CDN,jsdelivr.com,92,Cloud Object Storage,100% free multi-CDN for GitHub repositories,Automated,https://www.jsdelivr.com/,JOINED,https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/
+132,Cloudinary,cloudinary.com,92,Cloud Object Storage,25 monthly transformation credits & global CDN,Google / GitHub,https://cloudinary.com/users/register_free,PENDING,
+133,ImageKit,imagekit.io,82,Cloud Object Storage,20 GB bandwidth/mo & media CDN,Google / Email,https://imagekit.io/registration,PENDING,
+134,Pinterest,pinterest.com,96,Media & Visual Syndication,Free visual pins with direct external hyperlinks,Google / Email,https://www.pinterest.com/signup/,JOINED,https://www.pinterest.com/adicommunications/
+135,Flickr,flickr.com,94,Media & Visual Syndication,"1,000 photos free with EXIF & GPS metadata",Google / Email,https://identity.flickr.com/sign-up,JOINED,https://www.flickr.com/photos/adi_communications/
+136,Imgur,imgur.com,93,Media & Visual Syndication,Free image hosting & viral galleries,Google / Email,https://imgur.com/register,PENDING,
+137,Unsplash,unsplash.com,93,Media & Visual Syndication,Contributor photo profile & attribution,Email,https://unsplash.com/join,PENDING,
+138,Pexels,pexels.com,91,Media & Visual Syndication,Visual trade photography profile,Email,https://www.pexels.com/onboarding/,PENDING,
+139,Wikimedia Commons,commons.wikimedia.org,99,Media & Visual Syndication,Public domain technical engineering diagrams,Web,https://commons.wikimedia.org/w/index.php?title=Special:CreateAccount,PENDING,
+140,DailyMotion,dailymotion.com,94,Video & Streaming Networks,Free video channel & player embeds,Google / Email,https://www.dailymotion.com/register,PENDING,
+141,Vimeo,vimeo.com,96,Video & Streaming Networks,Free portfolio video player embeds,Google / Email,https://vimeo.com/join,PENDING,
+142,Podbean,podbean.com,89,Audio & Podcast Networks,5 hours free podcast storage & Apple/Spotify feed,Google / Email,https://www.podbean.com/site/user/register,PENDING,
+143,Spotify for Podcasters,podcasters.spotify.com,93,Audio & Podcast Networks,Free global audio distribution to Spotify,Spotify / Google,https://podcasters.spotify.com/,PENDING,
+144,SoundCloud,soundcloud.com,94,Audio & Podcast Networks,3 hours free audio hosting & social embeds,Google / Email,https://soundcloud.com/signin,PENDING,
+145,npm Registry,npmjs.com,96,"Code, Package & Template Networks",Unlimited public open-source packages,GitHub / Email,https://www.npmjs.com/signup,PENDING,
+146,PyPI (Python Package Index),pypi.org,94,"Code, Package & Template Networks",Free public Python library hosting,Email / 2FA,https://pypi.org/account/register/,PENDING,
+147,Zenodo (CERN Open Science),zenodo.org,92,Documentation & Knowledge Bases,Permanent open research archiving with citable DOIs,GitHub / ORCID,https://zenodo.org/signup/,PENDING,
+148,UptimeRobot,uptimerobot.com,88,Cloud Observability & Telemetry,50 free monitors with 5-minute intervals,Google / Email,https://uptimerobot.com/signUp,PENDING,
+149,Better Stack,betterstack.com,84,Cloud Observability & Telemetry,10 free monitors & status pages,Google / GitHub,https://betterstack.com/users/sign-up,PENDING,
+150,PostHog,posthog.com,86,Cloud Observability & Telemetry,1M free events/mo analytics & session recording,Google / GitHub,https://us.posthog.com/signup,PENDING,
+151,Resend,resend.com,81,Developer & Communication Services,"3,000 emails/mo (100/day) free forever",GitHub / Google,https://resend.com/signup,PENDING,
+152,Clerk,clerk.com,82,Developer & Communication Services,"10,000 monthly active users free",Google / GitHub,https://dashboard.clerk.com/sign-up,PENDING,
+153,Bluesky Social,bsky.app,91,Community & Open Protocols,Open AT-Protocol decentralized social network,Email,https://bsky.app/,JOINED,https://bsky.app/profile/adicommunications.co.uk
+154,Mastodon,joinmastodon.org,92,Community & Open Protocols,Federated ActivityPub decentralized social network,Email,https://joinmastodon.org/,PENDING,

@@ -5,8 +5,22 @@ import urllib.request
 import urllib.error
 import time
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
-GITLAB_TOKEN = os.getenv("GITLAB_TOKEN", "")
+import subprocess
+
+def get_git_remote_token(remote_name):
+    try:
+        url = subprocess.check_output(["git", "remote", "get-url", remote_name], text=True).strip()
+        if "@" in url and "https://" in url:
+            auth_part = url.split("https://")[1].split("@")[0]
+            if ":" in auth_part:
+                return auth_part.split(":", 1)[1]
+            return auth_part
+    except Exception:
+        pass
+    return None
+
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN") or get_git_remote_token("origin")
+GITLAB_TOKEN = os.getenv("GITLAB_TOKEN") or get_git_remote_token("gitlab")
 
 def log(msg):
     print(f"[AUTONOMOUS STACK ENGINE] {msg}")
@@ -44,6 +58,11 @@ satellite_repos = [
         "name": "music-showcase-player",
         "desc": "ADI Sound System 7 Multi-Genre Studio Audio Showcase by Gary Pearce (07860 244 274)",
         "source_file": "music-showcase.html"
+    },
+    {
+        "name": "poe-switch-power-calculator",
+        "desc": "CCTV PoE Switch Power Budget & Night-Loading Calculator by Gary Pearce (07860 244 274)",
+        "source_file": "poe-switch-budget-calculator.html"
     }
 ]
 

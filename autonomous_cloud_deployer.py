@@ -31,7 +31,8 @@ surge_domains = [
     ("adi-cctv-crime-checker.surge.sh", "uk-postcode-crime-risk-checker.html"),
     ("adi-starlink-gale-calculator.surge.sh", "starlink-wind-load-calculator.html"),
     ("adi-sound-system-music.surge.sh", "music-showcase.html"),
-    ("adi-dori-cctv-evidence.surge.sh", "cctv-lens-dori-calculator.html")
+    ("adi-dori-cctv-evidence.surge.sh", "cctv-dori-lens-calculator.html"),
+    ("adi-poe-calculator.surge.sh", "poe-switch-budget-calculator.html")
 ]
 
 for domain, entry_file in surge_domains:
@@ -48,7 +49,7 @@ for domain, entry_file in surge_domains:
             dst.write(content)
             
         # Also copy audio and assets folders if needed
-        subprocess.run(["npx", "--yes", "surge", deploy_dir, domain], check=True, capture_output=True, text=True)
+        subprocess.run(["npx.cmd", "--yes", "surge", deploy_dir, domain], check=True, capture_output=True, text=True, shell=True)
         log(f"-> SUCCESS: Deployed to https://{domain}/")
     except Exception as e:
         log(f"-> Surge deploy error on {domain}: {e}")

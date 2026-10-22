@@ -111,7 +111,8 @@ TARGET_FILES = [
     "garden-office-wifi-bridge-calculator.html",
     "smart-doorbell-transformer-calculator.html",
     "tv-fireplace-thermal-calculator.html",
-    "cctv-storage-bandwidth-calculator.html"
+    "cctv-storage-bandwidth-calculator.html",
+    "poe-switch-budget-calculator.html"
 ]
 
 def update_file(filename):

@@ -1,11 +1,12 @@
-# Master Cloud Stack Onboarding & Authority Matrix (Wave 5 Verified)
+# Master Cloud Stack Onboarding & Authority Matrix (154-Platform Directory)
 **Business**: ADI Communications / Gary Pearce (07860 244 274)  
-**Total Platforms**: 104 | **Verified Active Tenants**: 48 | **Stack Average DA**: 90.9  
-**Architecture Rule**: Rule 45 (Google Shield Buffer & E-E-A-T Trade Invariant)
+**Total Platforms Tracked**: 154 | **Verified Active Tenants**: 56 | **Joined Stack Average DA**: 91.6  
+**Architecture Rule**: Rule 45 (Google Shield Buffer & E-E-A-T Trade Invariant)  
+**Last Updated**: 2026-10-22 16:54
 
 ---
 
-## 1. Verified Active Cloud Tenants (48 Platforms)
+## 1. Verified Active Cloud Tenants (56 Platforms)
 
 | # | Platform | Category | DA | SSO Method | Verified Active Tenant / Endpoint |
 |---|---|---|---|---|---|
@@ -57,10 +58,66 @@
 | 46 | **Bitbucket Cloud (Atlassian)** | Cloud Repositories & CI/CD | **95** | Google OAuth | `https://bitbucket.org/cctvsystem/workspace/overview/` |
 | 47 | **CircleCI** | CI/CD & Automation | **91** | GitHub / Email | `https://app.circleci.com/home` |
 | 48 | **Sentry** | Cloud Telemetry & APM | **90** | GitHub OAuth | `https://adi-communications-ltd.sentry.io/onboarding/welcome/` |
+| 49 | **Google Sites** | Edge & Static Hosting | **99** | Google OAuth | `https://sites.google.com/view/adi-communications/` |
+| 50 | **Blogger (Google Shield)** | Blog & Editorial Networks | **99** | Google OAuth | `https://tvandhomesecurity.blogspot.com/` |
+| 51 | **Google AI Studio** | AI Inference & Development | **98** | Google OAuth | `https://aistudio.google.com/` |
+| 52 | **Google Apps Script** | Serverless & Compute | **98** | Google OAuth | `https://script.google.com/home` |
+| 53 | **jsDelivr Multi-CDN** | Cloud Object Storage | **92** | Automated | `https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/` |
+| 54 | **Pinterest** | Media & Visual Syndication | **96** | Google / Email | `https://www.pinterest.com/adicommunications/` |
+| 55 | **Flickr** | Media & Visual Syndication | **94** | Google / Email | `https://www.flickr.com/photos/adi_communications/` |
+| 56 | **Bluesky Social** | Community & Open Protocols | **91** | Email | `https://bsky.app/profile/adicommunications.co.uk` |
 
 ---
 
-## 2. Strategic Reciprocal Linking & Authority Invariants
+## 2. Platform Directory Breakdown by Category
+
+| Category | Total Platforms | Joined Active | Pending Expansion |
+|---|:---:|:---:|:---:|
+| **Edge & Static Hosting** | 31 | 14 | 17 |
+| **Cloud Object Storage** | 28 | 9 | 19 |
+| **Cloud Databases & BaaS** | 25 | 12 | 13 |
+| **Serverless & Compute** | 21 | 9 | 12 |
+| **AI Inference & Development** | 6 | 1 | 5 |
+| **Media & Visual Syndication** | 6 | 2 | 4 |
+| **Container Registries** | 5 | 3 | 2 |
+| **Blog & Editorial Networks** | 5 | 1 | 4 |
+| **Cloud Observability & Telemetry** | 4 | 1 | 3 |
+| **Documentation & Knowledge Bases** | 4 | 0 | 4 |
+| **Developer & Interactive Pens** | 4 | 0 | 4 |
+| **Audio & Podcast Networks** | 3 | 0 | 3 |
+| **Cloud Repositories & CI/CD** | 2 | 1 | 1 |
+| **Video & Streaming Networks** | 2 | 0 | 2 |
+| **Code, Package & Template Networks** | 2 | 0 | 2 |
+| **Developer & Communication Services** | 2 | 0 | 2 |
+| **Community & Open Protocols** | 2 | 1 | 1 |
+| **CI/CD & Automation** | 1 | 1 | 0 |
+| **Cloud Telemetry & APM** | 1 | 1 | 0 |
+
+---
+
+## 3. High-Priority Next Expansion Batch (Instant 1-Click OAuth)
+
+The following high-DA platforms are queued for instant 1-click authentication via existing GitHub or Google Workspace credentials:
+
+| Platform | Category | DA | Sign Up URL | 1-Click SSO |
+|---|---|:---:|---|---|
+| **GitBook** | Documentation & Knowledge Bases | **91** | `https://www.gitbook.com/` | GitHub / Google |
+| **Read the Docs** | Documentation & Knowledge Bases | **91** | `https://readthedocs.org/` | GitHub / GitLab |
+| **Dev.to** | Blog & Editorial Networks | **91** | `https://dev.to/enter` | GitHub / Twitter |
+| **Hashnode** | Blog & Editorial Networks | **88** | `https://hashnode.com/` | GitHub / Google |
+| **CodePen** | Developer & Interactive Pens | **93** | `https://codepen.io/` | GitHub / Google |
+| **JSFiddle** | Developer & Interactive Pens | **90** | `https://jsfiddle.net/` | GitHub / Google |
+| **StackBlitz** | Developer & Interactive Pens | **89** | `https://stackblitz.com/` | GitHub / Google |
+| **CodeSandbox** | Developer & Interactive Pens | **90** | `https://codesandbox.io/` | GitHub / Google |
+| **Codeberg** | Cloud Repositories & CI/CD | **85** | `https://codeberg.org/` | Codeberg OAuth |
+| **Zenodo (CERN)** | Documentation & Knowledge Bases | **92** | `https://zenodo.org/` | GitHub / ORCID |
+| **UptimeRobot** | Cloud Observability & Telemetry | **88** | `https://uptimerobot.com/` | Google / Email |
+| **Resend** | Developer & Communication Services | **81** | `https://resend.com/` | GitHub / Google |
+| **Clerk** | Developer & Communication Services | **82** | `https://clerk.com/` | Google / GitHub |
+
+---
+
+## 4. Strategic Reciprocal Linking & Authority Invariants
 1. **Google Shield Buffer (Rule 45)**:
    - All external cloud repos, packages, and calculators link upward to **Google Shield Blogger** (`https://tvandhomesecurity.blogspot.com/`), **Google Drive CAD Vault** (`1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88`), and pillar money pages (`adicommunications.co.uk/starlink-internet-installation/`).
    - Zero raw root linking prevents algorithmic link dilution or spam triggers.
