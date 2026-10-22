@@ -21,7 +21,12 @@ import websockets
 
 CDP_BASE = "http://127.0.0.1:9223"
 DEFAULT_ACCOUNT = "aiagent1510@gmail.com"
-BANNED_YEARS = {"2024", "2025", "2026", "2027"}
+BANNED_YEARS = {str(y) for y in range(1900, 2100)}  # Disqualify all years 1900-2099
+DISQUALIFIED_PREFIXES = (
+    "status code", "error code", "http error", "promo code",
+    "discount code", "coupon code", "voucher code", "referral code",
+    "postal code", "zip code", "area code", "country code"
+)
 
 
 class AutoEmailVerifier:
@@ -34,25 +39,31 @@ class AutoEmailVerifier:
         return self._msg_id
 
     async def _send_cdp(self, ws, method, params=None, timeout=10.0):
+        """Send CDP command over WebSocket and correlate response by msg_id."""
         msg_id = self._next_id()
         msg = {"id": msg_id, "method": method, "params": params or {}}
         try:
             await ws.send(json.dumps(msg))
         except Exception:
             return {}
-        
+
         loop = asyncio.get_event_loop()
         start = loop.time()
         while loop.time() - start < timeout:
             remaining = max(0.01, timeout - (loop.time() - start))
             try:
                 raw = await asyncio.wait_for(ws.recv(), timeout=remaining)
-                data = json.loads(raw)
-                if isinstance(data, dict) and data.get("id") == msg_id:
+                try:
+                    data = json.loads(raw)
+                except (json.JSONDecodeError, UnicodeDecodeError, ValueError):
+                    continue
+                if not isinstance(data, dict):
+                    continue
+                if data.get("id") == msg_id:
                     res = data.get("result")
                     return res if isinstance(res, dict) else {}
-            except (json.JSONDecodeError, AttributeError, UnicodeDecodeError):
-                continue
+            except (websockets.ConnectionClosed, ConnectionResetError, OSError):
+                return {}
             except asyncio.TimeoutError:
                 break
             except Exception:
@@ -60,74 +71,85 @@ class AutoEmailVerifier:
         return {}
 
     def _get_tabs(self):
+        """Fetch active browser tabs from CDP endpoint with complete error suppression."""
         req = urllib.request.Request(f"{self.cdp_base}/json")
         try:
             with urllib.request.urlopen(req, timeout=3) as resp:
-                data = json.loads(resp.read().decode())
-                return data if isinstance(data, list) else []
-        except Exception as e:
+                raw_bytes = resp.read()
+                try:
+                    data = json.loads(raw_bytes.decode("utf-8", errors="ignore"))
+                    return data if isinstance(data, list) else []
+                except (json.JSONDecodeError, UnicodeDecodeError, ValueError):
+                    return []
+        except (urllib.error.URLError, TimeoutError, OSError, ConnectionRefusedError, Exception):
             return []
 
     async def get_or_create_gmail_tab(self, account=DEFAULT_ACCOUNT, create_if_missing=False):
-        raw_tabs = self._get_tabs()
-        if not raw_tabs or not isinstance(raw_tabs, list):
-            return None, False
-
-        # Filter strictly for genuine top-level page targets on mail.google.com/
-        mail_tabs = []
-        for t in raw_tabs:
-            if not isinstance(t, dict):
-                continue
-            if t.get("type") != "page":
-                continue
-            url = t.get("url")
-            if not isinstance(url, str) or not url.startswith("https://mail.google.com/"):
-                continue
-            if url.endswith("/sw.js") or "RotateCookiesPage" in url or "accounts.google.com" in url:
-                continue
-            mail_tabs.append(t)
-
-        target_acc = (account or DEFAULT_ACCOUNT).lower().strip()
-
-        # 1. Match by email in title or URL authuser parameter
-        for t in mail_tabs:
-            title = (t.get("title") or "").lower()
-            url = (t.get("url") or "").lower()
-            if target_acc in title or f"authuser={target_acc}" in url:
-                return t, False
-
-        # 2. Match standard multi-account URL paths
-        if target_acc == "aiagent1510@gmail.com":
-            for t in mail_tabs:
-                if "/u/0/" in (t.get("url") or ""):
-                    return t, False
-        elif target_acc == "admin@adicommunications.co.uk":
-            for t in mail_tabs:
-                if "/u/1/" in (t.get("url") or ""):
-                    return t, False
-
-        # 3. If any mail tab is open and no specific non-default account was requested
-        if mail_tabs and target_acc == DEFAULT_ACCOUNT:
-            return mail_tabs[0], False
-
-        if not create_if_missing:
-            return None, False
-
-        # 4. If target account not currently open and creation requested, launch ephemeral tab via CDP /json/new
-        auth_url = f"https://mail.google.com/mail/u/?authuser={urllib.parse.quote(target_acc)}#inbox"
-        quoted = urllib.parse.quote(auth_url, safe="")
-        endpoint = f"{self.cdp_base}/json/new?{quoted}"
+        """Select existing Gmail inbox tab or optionally launch an ephemeral one."""
         try:
+            raw_tabs = self._get_tabs()
+            if not raw_tabs or not isinstance(raw_tabs, list):
+                return None, False
+
+            # Filter strictly for genuine top-level page targets on mail.google.com/
+            mail_tabs = []
+            for t in raw_tabs:
+                if not isinstance(t, dict):
+                    continue
+                if t.get("type") != "page":
+                    continue
+                url = t.get("url")
+                if not isinstance(url, str) or not url.startswith("https://mail.google.com/"):
+                    continue
+                if url.endswith("/sw.js") or "RotateCookiesPage" in url or "accounts.google.com" in url:
+                    continue
+                mail_tabs.append(t)
+
+            target_acc = str(account or DEFAULT_ACCOUNT).lower().strip()
+
+            # 1. Match by email in title or URL authuser parameter
+            for t in mail_tabs:
+                title = str(t.get("title") or "").lower()
+                url = str(t.get("url") or "").lower()
+                if target_acc in title or f"authuser={target_acc}" in url:
+                    return t, False
+
+            # 2. Match standard multi-account URL paths
+            if target_acc == "aiagent1510@gmail.com":
+                for t in mail_tabs:
+                    if "/u/0/" in str(t.get("url") or ""):
+                        return t, False
+            elif target_acc == "admin@adicommunications.co.uk":
+                for t in mail_tabs:
+                    if "/u/1/" in str(t.get("url") or ""):
+                        return t, False
+
+            # 3. If any mail tab is open and default account requested
+            if mail_tabs and target_acc == DEFAULT_ACCOUNT:
+                return mail_tabs[0], False
+
+            if not create_if_missing:
+                return None, False
+
+            # 4. If target account not currently open and creation requested, launch ephemeral tab via CDP /json/new
+            auth_url = f"https://mail.google.com/mail/u/?authuser={urllib.parse.quote(target_acc)}#inbox"
+            quoted = urllib.parse.quote(auth_url, safe="")
+            endpoint = f"{self.cdp_base}/json/new?{quoted}"
             req_new = urllib.request.Request(endpoint, method="PUT")
             with urllib.request.urlopen(req_new, timeout=5) as resp:
-                new_tab = json.loads(resp.read().decode())
+                new_tab = json.loads(resp.read().decode("utf-8", errors="ignore"))
             await asyncio.sleep(4)
-            return new_tab, True
+            if isinstance(new_tab, dict):
+                return new_tab, True
+            return None, False
         except Exception as e:
-            print(f"[EMAIL-VERIFIER] Failed to launch tab for {account}: {e}")
+            print(f"[EMAIL-VERIFIER] Tab selection error: {e}")
             return None, False
 
     def _close_tab(self, tab_id):
+        """Close an ephemeral tab by target id."""
+        if not tab_id:
+            return
         try:
             req = urllib.request.Request(f"{self.cdp_base}/json/close/{tab_id}")
             with urllib.request.urlopen(req, timeout=3):
@@ -136,18 +158,19 @@ class AutoEmailVerifier:
             pass
 
     async def get_recent_emails(self, max_count=10, account=DEFAULT_ACCOUNT):
-        tab, is_ephemeral = await self.get_or_create_gmail_tab(account)
-        if not tab:
-            return []
-
-        ws_url = tab.get("webSocketDebuggerUrl")
-        tab_id = tab.get("id")
-        if not ws_url:
-            if is_ephemeral and tab_id:
-                self._close_tab(tab_id)
-            return []
-
+        """Extract recent emails from Gmail inbox with guaranteed tab cleanup."""
+        tab = None
+        is_ephemeral = False
+        tab_id = None
         try:
+            tab, is_ephemeral = await self.get_or_create_gmail_tab(account)
+            if not isinstance(tab, dict):
+                return []
+            tab_id = tab.get("id")
+            ws_url = tab.get("webSocketDebuggerUrl")
+            if not ws_url or not isinstance(ws_url, str):
+                return []
+
             async with websockets.connect(ws_url, max_size=20 * 1024 * 1024) as ws:
                 extract_js = f"""
                 (() => {{
@@ -172,8 +195,8 @@ class AutoEmailVerifier:
                 }})()
                 """
                 res = await self._send_cdp(ws, "Runtime.evaluate", {"expression": extract_js, "returnByValue": True})
-                emails = res.get("result", {}).get("value", [])
-                return emails or []
+                emails = res.get("result", {}).get("value", []) if isinstance(res.get("result"), dict) else []
+                return emails if isinstance(emails, list) else []
         except Exception as e:
             print(f"[EMAIL-VERIFIER] Error reading emails: {e}")
             return []
@@ -183,79 +206,91 @@ class AutoEmailVerifier:
 
     @staticmethod
     def extract_otp_from_text(text):
-        if not text:
+        """Extract OTP / verification code with rigorous false-positive rejection."""
+        if not text or not isinstance(text, str):
             return None
 
         # Clean HTML entities if present
         cleaned = re.sub(r'&[a-zA-Z]+;', ' ', text)
         cleaned_lower = cleaned.lower()
 
-        # Reject promo codes, discount codes, coupon codes
+        # Reject promo codes, discount codes, coupon codes unless explicit verification phrase present
         if any(p in cleaned_lower for p in ["promo code", "discount code", "coupon code"]):
-            return None
+            if not any(k in cleaned_lower for k in ["verification code", "verify code", "security code", "one-time", "otp", "confirmation pin"]):
+                return None
 
-        # Helper to validate candidates
         def is_valid_otp(val):
-            if not val:
+            if not val or not isinstance(val, str):
                 return False
+            val = val.strip()
             digits = re.sub(r'\D', '', val)
-            if len(digits) < 4:
+            if len(val) < 4:
                 return False
-            # Check year boundary (e.g. 1900-2099)
-            if len(digits) == 4 and digits.isdigit():
-                num = int(digits)
-                if 1900 <= num <= 2099:
+            if val.isdigit():
+                if len(val) < 4 or len(val) > 8:
                     return False
-            # Check 8-digit date timestamps (YYYYMMDD)
-            if len(digits) == 8 and digits.isdigit():
-                if digits.startswith(("19", "20")):
+                # Disqualify all years 1900-2099
+                if len(val) == 4 and 1900 <= int(val) <= 2099:
                     return False
-            if val in BANNED_YEARS or digits in BANNED_YEARS:
-                return False
+                # Disqualify 8-digit date timestamps (YYYYMMDD)
+                if len(val) == 8 and val.startswith(("19", "20")):
+                    return False
+                if val in BANNED_YEARS:
+                    return False
+            else:
+                clean_alpha = re.sub(r'[^A-Za-z0-9]', '', val)
+                if len(clean_alpha) < 4:
+                    return False
+                if len(digits) < 1:
+                    return False
+                if re.search(r'(?:off|save|disc|promo|deal|free|sale)', val, re.IGNORECASE):
+                    return False
             return True
 
-        # Pattern 0: Spaced 6-digit codes (e.g. "123 456", "492 847", "829 103", "554 321")
+        # Pattern 0: Targeted phrase with spaced 6-digit or 8-digit OTP (e.g. "123 456", "492 847")
         m_spaced = re.search(
-            r'(?:verification code|verify code|security code|confirmation (?:pin|code)|one-time (?:passcode|code)|otp|pin)[\s:]+(?:is[\s:]+)?(\d{3}\s+\d{3})\b',
+            r'(?:verification\s+code|verify\s+code|security\s+code|confirmation\s+(?:pin|code)|one-time\s+(?:passcode|code)|login\s+code|access\s+code|auth(?:entication)?\s+code|otp|pin)[\s:]+(?:is[\s:]+)?(?:please\s+use\s+the\s+following\s+verification\s+code:\s*)?(\d{3}[\s-]\d{3}|\d{4}[\s-]\d{4})\b',
             cleaned, re.IGNORECASE
         )
         if m_spaced:
-            return m_spaced.group(1).replace(" ", "")
-
-        # Check general spaced 6-digit code if confirmation/verification keyword is present
-        if any(k in cleaned_lower for k in ["verification", "security", "code", "pin", "otp", "confirm"]):
-            m_gen_spaced = re.search(r'\b(\d{3})\s+(\d{3})\b', cleaned)
-            if m_gen_spaced:
-                return f"{m_gen_spaced.group(1)}{m_gen_spaced.group(2)}"
+            val = re.sub(r'[\s-]', '', m_spaced.group(1))
+            if is_valid_otp(val):
+                return val
 
         # Pattern A: Labeled verification phrases (alphanumeric like V7042-492847 and 7-digit 0370019)
-        if not any(k in cleaned_lower for k in ["error code", "status code", "http error"]):
-            m_phrase = re.search(
-                r'(?:verification code|verify code|security code|confirmation (?:pin|code)|one-time (?:passcode|code)|otp|pin)[\s:]+(?:is[\s:]+)?(?:please\s+use\s+the\s+following\s+verification\s+code:\s*)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b',
-                cleaned, re.IGNORECASE
-            )
-            if m_phrase:
-                val = m_phrase.group(1).strip()
-                if is_valid_otp(val):
-                    return val
+        m_phrase = re.search(
+            r'(?:verification\s+code|verify\s+code|security\s+code|confirmation\s+(?:pin|code)|one-time\s+(?:passcode|code)|login\s+code|access\s+code|auth(?:entication)?\s+code|otp|pin)[\s:]+(?:is[\s:]+)?(?:please\s+use\s+the\s+following\s+verification\s+code:\s*)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b',
+            cleaned, re.IGNORECASE
+        )
+        if m_phrase:
+            val = m_phrase.group(1).strip()
+            if is_valid_otp(val):
+                return val
 
-        # Pattern B: Explicit 'code is: 123456'
-        if not any(k in cleaned_lower for k in ["error code", "status code", "http error"]):
+        # Pattern B: Explicit 'code is: 123456' (excluding status/error codes)
+        if not any(dp in cleaned_lower for dp in DISQUALIFIED_PREFIXES):
             m_code = re.search(r'\bcode[:\s]+(?:is[:\s]+)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b', cleaned, re.IGNORECASE)
             if m_code:
                 val = m_code.group(1).strip()
                 if is_valid_otp(val):
                     return val
 
-        # Pattern C: Standalone 6-to-8 digit numeric code
-        for match in re.finditer(r'\b(\d{6,8})\b', cleaned):
+        # Pattern C: Standalone 6-to-8 digit numeric code (isolated from phone numbers)
+        for match in re.finditer(r'(?<!\d)(?<!\d\s)\b(\d{6,8})\b(?!\s*\d)', cleaned):
             val = match.group(1)
             if is_valid_otp(val):
                 return val
 
-        # Pattern D: Standalone 4-to-5 digit numeric code if verification keywords present
-        if any(k in cleaned_lower for k in ["verify", "code", "pin", "confirm", "otp"]):
-            for match in re.finditer(r'\b(\d{4,5})\b', cleaned):
+        # Pattern D: Standalone spaced 6-digit (e.g. "123 456") if verification keywords present (isolated from phone numbers)
+        if any(k in cleaned_lower for k in ["verify", "code", "pin", "confirm", "otp", "passcode"]):
+            for match in re.finditer(r'(?<!\d)(?<!\d\s)\b(\d{3})\s+(\d{3})\b(?!\s*\d)', cleaned):
+                val = f"{match.group(1)}{match.group(2)}"
+                if is_valid_otp(val):
+                    return val
+
+        # Pattern E: Standalone 4-to-5 digit numeric code if verification keywords present
+        if any(k in cleaned_lower for k in ["verify", "code", "pin", "confirm", "otp", "passcode"]):
+            for match in re.finditer(r'(?<!\d)(?<!\d\s)\b(\d{4,5})\b(?!\s*\d)', cleaned):
                 val = match.group(1)
                 if is_valid_otp(val):
                     return val
@@ -263,16 +298,19 @@ class AutoEmailVerifier:
         return None
 
     async def find_otp_code(self, platform_name, account=DEFAULT_ACCOUNT, timeout_secs=30):
+        """Poll recent emails for OTP matching target platform."""
         loop = asyncio.get_event_loop()
         start_time = loop.time()
-        plat_lower = platform_name.lower().strip()
+        plat_lower = str(platform_name or "").lower().strip()
 
         while loop.time() - start_time < timeout_secs:
             emails = await self.get_recent_emails(max_count=10, account=account)
             for e in emails:
-                full = e.get("fullText", "")
-                subject = e.get("subject", "")
-                sender = e.get("sender", "")
+                if not isinstance(e, dict):
+                    continue
+                full = str(e.get("fullText") or "")
+                subject = str(e.get("subject") or "")
+                sender = str(e.get("sender") or "")
 
                 matches_platform = (
                     plat_lower in full.lower() or
@@ -287,32 +325,48 @@ class AutoEmailVerifier:
         return None
 
     async def find_verification_link(self, platform_domain, account=DEFAULT_ACCOUNT, timeout_secs=30):
-        tab, is_ephemeral = await self.get_or_create_gmail_tab(account)
-        if not tab:
-            return None
-
-        ws_url = tab.get("webSocketDebuggerUrl")
-        tab_id = tab.get("id")
-        if not ws_url:
-            if is_ephemeral and tab_id:
-                self._close_tab(tab_id)
-            return None
-
-        loop = asyncio.get_event_loop()
-        start_time = loop.time()
-        plat_domain_clean = platform_domain.lower().replace("https://", "").replace("http://", "").split("/")[0].strip()
-
+        """Find and extract activation link scoped strictly to platform domain."""
+        tab = None
+        is_ephemeral = False
+        tab_id = None
         try:
+            tab, is_ephemeral = await self.get_or_create_gmail_tab(account)
+            if not isinstance(tab, dict):
+                return None
+
+            tab_id = tab.get("id")
+            ws_url = tab.get("webSocketDebuggerUrl")
+            if not ws_url or not isinstance(ws_url, str):
+                return None
+
+            loop = asyncio.get_event_loop()
+            start_time = loop.time()
+            plat_domain_clean = str(platform_domain or "").lower().replace("https://", "").replace("http://", "").split("/")[0].strip()
+            plat_name = plat_domain_clean.split(".")[0] if "." in plat_domain_clean else plat_domain_clean
+
             async with websockets.connect(ws_url, max_size=20 * 1024 * 1024) as ws:
                 while loop.time() - start_time < timeout_secs:
                     find_row_js = f"""
                     (() => {{
                         const rows = Array.from(document.querySelectorAll('div[role=main] tr[role=row], tr.zA'));
-                        for (let i = 0; i < Math.min(rows.length, 10); i++) {{
+                        const platDomain = '{plat_domain_clean}';
+                        const platName = '{plat_name}';
+                        
+                        // Pass 1: Row matches platform AND contains verification intent keywords
+                        for (let i = 0; i < Math.min(rows.length, 15); i++) {{
                             const text = (rows[i].innerText || '').toLowerCase();
-                            const matchesPlatform = text.includes('{plat_domain_clean}');
-                            const hasIntent = text.includes('verify') || text.includes('confirm') || text.includes('activate') || text.includes('welcome') || text.includes('code');
+                            const matchesPlatform = text.includes(platDomain) || (platName.length >= 3 && text.includes(platName));
+                            const hasIntent = text.includes('verify') || text.includes('confirm') || text.includes('activate') || text.includes('welcome') || text.includes('code') || text.includes('auth');
                             if (matchesPlatform && hasIntent) {{
+                                return {{ found: true, index: i }};
+                            }}
+                        }}
+                        
+                        // Pass 2: Row matches platform domain or name
+                        for (let i = 0; i < Math.min(rows.length, 15); i++) {{
+                            const text = (rows[i].innerText || '').toLowerCase();
+                            const matchesPlatform = text.includes(platDomain) || (platName.length >= 3 && text.includes(platName));
+                            if (matchesPlatform) {{
                                 return {{ found: true, index: i }};
                             }}
                         }}
@@ -320,7 +374,7 @@ class AutoEmailVerifier:
                     }})()
                     """
                     row_res = await self._send_cdp(ws, "Runtime.evaluate", {"expression": find_row_js, "returnByValue": True})
-                    row_data = row_res.get("result", {}).get("value", {})
+                    row_data = row_res.get("result", {}).get("value", {}) if isinstance(row_res.get("result"), dict) else {}
 
                     if row_data.get("found"):
                         idx = row_data.get("index")
@@ -342,28 +396,61 @@ class AutoEmailVerifier:
                         extract_links_js = """
                         (() => {
                             const links = Array.from(document.querySelectorAll('div[role=main] a[href]')).map(a => ({
-                                href: a.href,
+                                href: a.href || '',
                                 text: (a.innerText || a.textContent || '').trim().toLowerCase()
                             }));
                             return links;
                         })()
                         """
                         res_links = await self._send_cdp(ws, "Runtime.evaluate", {"expression": extract_links_js, "returnByValue": True})
-                        links = res_links.get("result", {}).get("value", [])
+                        raw_links = res_links.get("result", {}).get("value", []) if isinstance(res_links.get("result"), dict) else []
+                        if not isinstance(raw_links, list):
+                            raw_links = []
 
-                        target_link = None
-                        disqualified = ["google.com", "gstatic.com", "unsubscribe", "privacy", "terms", "twitter.com", "facebook.com", "support.google.com"]
-                        for l in links:
-                            href = l.get("href", "")
-                            txt = l.get("text", "")
-                            if any(d in href.lower() for d in disqualified):
+                        disqualified = [
+                            "google.com", "gstatic.com", "googleusercontent.com", "youtube.com",
+                            "facebook.com", "twitter.com", "x.com", "linkedin.com", "instagram.com",
+                            "unsubscribe", "privacy", "terms", "support.google.com", "mail.google.com"
+                        ]
+
+                        candidate_links = []
+                        for l in raw_links:
+                            if not isinstance(l, dict):
                                 continue
-                            if any(k in href.lower() or k in txt for k in ["confirm", "verify", "activate", "token", "signup", "auth"]):
+                            href = str(l.get("href") or "").strip()
+                            txt = str(l.get("text") or "").strip().lower()
+                            if not href.startswith("http://") and not href.startswith("https://"):
+                                continue
+                            href_lower = href.lower()
+                            if any(d in href_lower for d in disqualified):
+                                continue
+                            candidate_links.append((href, txt))
+
+                        # Priority 1: Link matches platform domain AND verification keywords
+                        target_link = None
+                        for href, txt in candidate_links:
+                            href_lower = href.lower()
+                            matches_plat = (plat_domain_clean in href_lower) or (len(plat_name) >= 3 and plat_name in href_lower)
+                            has_intent = any(k in href_lower or k in txt for k in ["confirm", "verify", "activate", "token", "signup", "auth", "validate"])
+                            if matches_plat and has_intent:
                                 target_link = href
                                 break
-                            if plat_domain_clean in href.lower():
-                                target_link = href
-                                break
+
+                        # Priority 2: Link matches platform domain
+                        if not target_link:
+                            for href, txt in candidate_links:
+                                href_lower = href.lower()
+                                if (plat_domain_clean in href_lower) or (len(plat_name) >= 3 and plat_name in href_lower):
+                                    target_link = href
+                                    break
+
+                        # Priority 3: Generic verification link not in disqualified
+                        if not target_link:
+                            for href, txt in candidate_links:
+                                href_lower = href.lower()
+                                if any(k in href_lower or k in txt for k in ["confirm", "verify", "activate", "token"]):
+                                    target_link = href
+                                    break
 
                         # Reset back to inbox hash
                         await self._send_cdp(ws, "Runtime.evaluate", {"expression": "window.location.hash = '#inbox'; true", "returnByValue": True})
@@ -388,7 +475,7 @@ class AutoEmailVerifier:
             print("[EMAIL-VERIFIER] No active Gmail tab found on port 9223")
             return None
 
-        title_safe = tab.get("title", "").encode("ascii", "replace").decode("ascii")
+        title_safe = str(tab.get("title") or "").encode("ascii", "replace").decode("ascii")
         print(f"[EMAIL-VERIFIER] Inspecting inbox tab: {title_safe}")
 
         emails = await self.get_recent_emails(max_count=15)
@@ -396,7 +483,9 @@ class AutoEmailVerifier:
 
         results = []
         for e in emails:
-            full = e.get("fullText", "")
+            if not isinstance(e, dict):
+                continue
+            full = str(e.get("fullText") or "")
             code = self.extract_otp_from_text(full)
             is_verify = any(k in full.lower() for k in ["verify", "verification", "confirm", "code", "activate", "welcome"])
             if is_verify:
