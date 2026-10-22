@@ -7,7 +7,7 @@
   <channel>
     <atom:link href="https://gazpearce.github.io/cctv-security-hub/podcast.xml" rel="self" type="application/rss+xml" />
     <title>UK Security &amp; Telecoms Engineering Debrief</title>
-    <link>https://adicommunications.co.uk/</link>
+    <link>https://tvandhomesecurity.blogspot.com/</link>
     <language>en-GB</language>
     <copyright>© 2026 Gary Pearce • ADI Communications</copyright>
     <itunes:subtitle>Field Analysis, Hardware Benchmarks &amp; Physical Installation Standards</itunes:subtitle>
@@ -33,7 +33,7 @@
       <pubDate>Wed, 21 Oct 2026 18:00:00 +0100</pubDate>
       <link>https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html</link>
       <guid isPermaLink="false">adi-podcast-ep01-ajax-masterclass-2026</guid>
-      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Physical Security Engineer, 07860 244 274). Why legacy 433MHz wireless alarms fail against £30 radio jammers, how the Ajax Jeweller 868MHz protocol protects UK homes with sub-second frequency hopping, and how MotionCam photo-verification eliminates 92% of false callouts. Turnkey packages from £599 + VAT. Full details: https://adicommunications.co.uk/]]></description>
+      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Physical Security Engineer, 07860 244 274). Why legacy 433MHz wireless alarms fail against £30 radio jammers, how the Ajax Jeweller 868MHz protocol protects UK homes with sub-second frequency hopping, and how MotionCam photo-verification eliminates 92% of false callouts. Turnkey packages from £599 + VAT. Full details: https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html]]></description>
       <enclosure url="https://gazpearce.github.io/cctv-security-hub/audio/ajax_masterclass_audio.mp3" length="3669120" type="audio/mpeg" />
       <itunes:duration>03:49</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
@@ -48,19 +48,20 @@
       <pubDate>Wed, 21 Oct 2026 22:30:00 +0100</pubDate>
       <link>https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html</link>
       <guid isPermaLink="false">adi-podcast-ep02-starlink-gen3-mini-2026</guid>
-      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Satellite & Telecoms Engineer, 07860 244 274). Everything you need to know about the UK rollout of SpaceX Starlink Gen 3 Standard dish and Starlink Mini. How to engineer heavy-duty non-drill chimney lashing cradles rated for 90mph Pennine gales, map 110° northern orbital cones to eliminate tree obstructions, and bypass the Gen 3 router into whole-home Wi-Fi 7 mesh networks. Full details: https://adicommunications.co.uk/]]></description>
+      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Satellite & Telecoms Engineer, 07860 244 274). Everything you need to know about the UK rollout of SpaceX Starlink Gen 3 Standard dish and Starlink Mini. How to engineer heavy-duty non-drill chimney lashing cradles rated for 90mph Pennine gales, map 110° northern orbital cones to eliminate tree obstructions, and bypass the Gen 3 router into whole-home Wi-Fi 7 mesh networks. Full details: https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html]]></description>
       <enclosure url="https://gazpearce.github.io/cctv-security-hub/audio/starlink_masterclass_audio.mp3" length="3630400" type="audio/mpeg" />
       <itunes:duration>03:47</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
+    </item>
     <!-- Episode 3: Hikvision ColorVu vs Infrared CCTV -->
     <item>
       <title>Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards &amp; 4K Police Evidence</title>
       <itunes:title>Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards &amp; 4K Police Evidence</itunes:title>
       <itunes:author>Gary Pearce</itunes:author>
       <pubDate>Wed, 21 Oct 2026 23:00:00 +0100</pubDate>
-      <link>https://tvandhomesecurity.blogspot.com/2026/05/how-much-does-cctv-installation-cost-in.html</link>
+      <link>https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html</link>
       <guid isPermaLink="false">adi-podcast-ep03-cctv-colorvu-dori-2026</guid>
-      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Physical Security & CCTV Specialist, 07860 244 274). Why 850nm infrared night vision fails Crown Prosecution Service (CPS) court admissibility standards, how Hikvision ColorVu G2 F1.0 super-apertures capture 24/7 colour in darkness, BS EN 62676-4 DORI identification targets (250 px/m), and why hardwired PoE beats jammer-vulnerable Wi-Fi cameras. Full details: https://adicommunications.co.uk/]]></description>
+      <description><![CDATA[Official ADI Communications Technical Field Breakdown by Gary Pearce (25+ Years Hands-On Physical Security & CCTV Specialist, 07860 244 274). Why 850nm infrared night vision fails Crown Prosecution Service (CPS) court admissibility standards, how Hikvision ColorVu G2 F1.0 super-apertures capture 24/7 colour in darkness, BS EN 62676-4 DORI identification targets (250 px/m), and why hardwired PoE beats jammer-vulnerable Wi-Fi cameras. Full details: https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html]]></description>
       <enclosure url="https://gazpearce.github.io/cctv-security-hub/audio/cctv_masterclass_audio.mp3" length="3613588" type="audio/mpeg" />
       <itunes:duration>03:50</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
