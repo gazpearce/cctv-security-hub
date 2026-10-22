@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "platform": "DailyMotion",
+  "specification": "DailyMotion Batch Video Import Format v2.1",
+  "updated_at": "2026-10-22T08:46:13.984002",
+  "total_videos": 3,
+  "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+  "shield_hub": "https://tvandhomesecurity.blogspot.com/",
+  "drive_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+  "videos": [
+    {
+      "title": "Starlink Gen 3 & Mini UK Installation: 90mph Gale Chimney Mounts, Bypass & Speed Test",
+      "description": "Official ADI Communications Technical Masterclass by Gary Pearce (25+ Years Hands-On Physical Security & Telecoms Engineer, Direct Mobile: 07860 244 274).\n\nSpaceX Starlink Gen 3 Standard dish and Starlink Mini installation engineering in the UK: 90mph Pennine gale-tested non-drill chimney lashing cradles, 110° northern orbital cone clearance, router bypass mode, and whole-home domestic Wi-Fi 7 mesh integration.\n\n• Detailed Field Engineering Guide & Transcript: https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html\n• Verified Technical Asset & Calculation Hub: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n• License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)\n• Direct Engineer Telephone Enquiries: 07860 244 274 (Gary Pearce)",
+      "tags": "SpaceX Starlink Gen 3, Starlink Mini, Non-drill chimney cradles, 90mph gale engineering, Wi-Fi 7 mesh bypass",
+      "channel": "tech",
+      "privacy": "public",
+      "published": "true",
+      "media_url": "https://youtu.be/dOFIxVqMxCM",
+      "language": "en",
+      "explicit": "false",
+      "license": "creative_commons",
+      "external_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "source_authority_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "author": "Gary Pearce (ADI Communications)",
+      "telephone": "07860 244 274"
+    },
+    {
+      "title": "Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail & MotionCam PhOD",
+      "description": "Official ADI Communications Technical Masterclass by Gary Pearce (25+ Years Hands-On Physical Security & Telecoms Engineer, Direct Mobile: 07860 244 274).\n\nField analysis of why legacy 433MHz wireless alarm bells fail against £30 radio jammers, how the Ajax Jeweller 868MHz encrypted protocol defends UK homes with sub-second frequency hopping, and how MotionCam photo-verification eliminates 92% of false callouts.\n\n• Detailed Field Engineering Guide & Transcript: https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html\n• Verified Technical Asset & Calculation Hub: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n• License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)\n• Direct Engineer Telephone Enquiries: 07860 244 274 (Gary Pearce)",
+      "tags": "Grade 2 intruder alarms, Jeweller 868MHz frequency hopping, 433MHz jammer vulnerability, MotionCam PhOD, 113dB StreetSiren",
+      "channel": "tech",
+      "privacy": "public",
+      "published": "true",
+      "media_url": "https://youtu.be/l-HN4BuzBGQ",
+      "language": "en",
+      "explicit": "false",
+      "license": "creative_commons",
+      "external_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "source_authority_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "author": "Gary Pearce (ADI Communications)",
+      "telephone": "07860 244 274"
+    },
+    {
+      "title": "Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards & 4K Police Evidence",
+      "description": "Official ADI Communications Technical Masterclass by Gary Pearce (25+ Years Hands-On Physical Security & Telecoms Engineer, Direct Mobile: 07860 244 274).\n\nWhy 850nm infrared night vision fails Crown Prosecution Service (CPS) court admissibility standards, how Hikvision ColorVu G2 F1.0 super-apertures capture 24/7 colour in pitch darkness, BS EN 62676-4 DORI identification targets (250 px/m), and solid copper Cat6 PoE cabling.\n\n• Detailed Field Engineering Guide & Transcript: https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html\n• Verified Technical Asset & Calculation Hub: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n• License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)\n• Direct Engineer Telephone Enquiries: 07860 244 274 (Gary Pearce)",
+      "tags": "F1.0 super-apertures, 850nm IR flare spiderwebs, BS EN 62676-4 DORI 250 px/m, Solid copper Cat6 PoE, WD Purple NVR",
+      "channel": "tech",
+      "privacy": "public",
+      "published": "true",
+      "media_url": "https://youtu.be/50q89TsNN3w",
+      "language": "en",
+      "explicit": "false",
+      "license": "creative_commons",
+      "external_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "source_authority_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "author": "Gary Pearce (ADI Communications)",
+      "telephone": "07860 244 274"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "platform": "Podbean",
+  "specification": "Podbean Episode Batch Import Specification",
+  "updated_at": "2026-10-22T08:46:13.987340",
+  "total_episodes": 3,
+  "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+  "shield_hub": "https://tvandhomesecurity.blogspot.com/",
+  "drive_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+  "episodes": [
+    {
+      "title": "Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail, MotionCam PhOD & Grade 2 Setup",
+      "description": "Official ADI Communications Technical Audio Debrief by Gary Pearce (25+ Years Hands-On Physical Security & Telecoms Engineer, Direct Mobile: 07860 244 274).\n\nField debrief covering technical installation standards, diagnostic benchmarks, and physical hardware analysis across Yorkshire and the UK.\n\n• Complete Field Debrief, Circuit Diagrams & Full Transcript: https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html\n• Public Evidence & Technical Assets Hub: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n• RSS Feed: https://gazpearce.github.io/cctv-security-hub/podcast.xml\n• License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)\n• Engineer Telephone: 07860 244 274",
+      "audio_url": "https://gazpearce.github.io/cctv-security-hub/audio/ajax_masterclass_audio.mp3",
+      "publish_time": "Wed, 21 Oct 2026 18:00:00 +0100",
+      "season": 1,
+      "episode_number": 1,
+      "episode_type": "full",
+      "explicit": "clean",
+      "tags": "ADI Communications, Gary Pearce, Ajax, UK Security Debrief, Physical Engineering",
+      "author": "Gary Pearce",
+      "link": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "authority_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "engineer_phone": "07860 244 274"
+    },
+    {
+      "title": "Starlink Gen 3 & Mini UK Installation: 90mph Gale Chimney Mounts, Bypass & Speed Test",
+      "description": "Official ADI Communications Technical Audio Debrief by Gary Pearce (25+ Years Hands-On Physical Security & Telecoms Engineer, Direct Mobile: 07860 244 274).\n\nField debrief covering technical installation standards, diagnostic benchmarks, and physical hardware analysis across Yorkshire and the UK.\n\n• Complete Field Debrief, Circuit Diagrams & Full Transcript: https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html\n• Public Evidence & Technical Assets Hub: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n• RSS Feed: https://gazpearce.github.io/cctv-security-hub/podcast.xml\n• License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)\n• Engineer Telephone: 07860 244 274",
+      "audio_url": "https://gazpearce.github.io/cctv-security-hub/audio/starlink_masterclass_audio.mp3",
+      "publish_time": "Wed, 21 Oct 2026 22:30:00 +0100",
+      "season": 1,
+      "episode_number": 2,
+      "episode_type": "full",
+      "explicit": "clean",
+      "tags": "ADI Communications, Gary Pearce, Starlink, UK Security Debrief, Physical Engineering",
+      "author": "Gary Pearce",
+      "link": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "authority_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "engineer_phone": "07860 244 274"
+    },
+    {
+      "title": "Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards & 4K Police Evidence",
+      "description": "Official ADI Communications Technical Audio Debrief by Gary Pearce (25+ Years Hands-On Physical Security & Telecoms Engineer, Direct Mobile: 07860 244 274).\n\nField debrief covering technical installation standards, diagnostic benchmarks, and physical hardware analysis across Yorkshire and the UK.\n\n• Complete Field Debrief, Circuit Diagrams & Full Transcript: https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html\n• Public Evidence & Technical Assets Hub: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n• RSS Feed: https://gazpearce.github.io/cctv-security-hub/podcast.xml\n• License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)\n• Engineer Telephone: 07860 244 274",
+      "audio_url": "https://gazpearce.github.io/cctv-security-hub/audio/cctv_masterclass_audio.mp3",
+      "publish_time": "Wed, 21 Oct 2026 23:00:00 +0100",
+      "season": 1,
+      "episode_number": 3,
+      "episode_type": "full",
+      "explicit": "clean",
+      "tags": "ADI Communications, Gary Pearce, Cctv, UK Security Debrief, Physical Engineering",
+      "author": "Gary Pearce",
+      "link": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "authority_hub": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "engineer_phone": "07860 244 274"
+    }
+  ]
+}
