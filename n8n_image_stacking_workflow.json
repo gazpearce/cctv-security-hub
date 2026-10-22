@@ -1,0 +1,165 @@
+{
+  "name": "ADI Communications — Autonomous Image Stacking & Syndication Engine",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Schedule Trigger (Daily)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "path": "/image-stack-upload",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "2",
+      "name": "Webhook Ingest (Instant Upload)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 480],
+      "webhookId": "image-stack-upload"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Formulate Trade Metadata under Rule 45 Google Shield\nconst filename = $input.item.json.filename || 'trade-installation.webp';\nconst cleanTitle = filename.replace('.webp', '').split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');\n\nlet shieldAnchor = 'https://tvandhomesecurity.blogspot.com/';\nif (filename.includes('starlink')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/';\n} else if (filename.includes('ajax')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/';\n} else if (filename.includes('cat6') || filename.includes('ethernet')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/';\n} else if (filename.includes('tv') || filename.includes('fireplace')) {\n  shieldAnchor = 'https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/';\n}\n\nconst tradeDescription = `${cleanTitle} — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, CAI-benchmarked hardware. Full Technical Debrief: ${shieldAnchor}`;\n\nreturn {\n  filename,\n  cleanTitle,\n  shieldAnchor,\n  tradeDescription,\n  apiKey: '6d207e02198a847aa98d0a2a901485a5'\n};"
+      },
+      "id": "3",
+      "name": "Rule 45 Metadata Formatter",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [480, 400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://freeimage.host/api/1/upload",
+        "sendBinaryData": true,
+        "binaryPropertyName": "data",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "key",
+              "value": "={{ $json.apiKey }}"
+            },
+            {
+              "name": "action",
+              "value": "upload"
+            },
+            {
+              "name": "format",
+              "value": "json"
+            },
+            {
+              "name": "title",
+              "value": "={{ $json.cleanTitle }}"
+            },
+            {
+              "name": "description",
+              "value": "={{ $json.tradeDescription }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "4",
+      "name": "FreeImage.Host API Uploader",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [700, 400]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Extract the 3 Output Types (Type A, Type B, Type C)\nconst res = $input.item.json;\nconst img = res.image || {};\n\nreturn {\n  success: res.status_code === 200,\n  filename: $('Rule 45 Metadata Formatter').item.json.filename,\n  type_a_direct_url: img.url,\n  type_a_thumb_url: img.thumb ? img.thumb.url : null,\n  type_b_viewer_page: img.url_viewer,\n  type_c_shield_anchor: $('Rule 45 Metadata Formatter').item.json.shieldAnchor,\n  engineer: 'Gary Pearce',\n  telephone: '07860 244 274',\n  timestamp: new Date().toISOString()\n};"
+      },
+      "id": "5",
+      "name": "Parse 3-Tier Image Outputs",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [920, 400]
+    },
+    {
+      "parameters": {
+        "chatId": "-10022334455",
+        "text": "=📸 *New Trade Image Syndicated to Image Stack*\n\n*Title:* {{ $json.filename }}\n*Type A Direct CDN:* {{ $json.type_a_direct_url }}\n*Type B Viewer Page:* {{ $json.type_b_viewer_page }}\n*Type C Google Shield Anchor:* {{ $json.type_c_shield_anchor }}\n\n*Engineer:* Gary Pearce (07860 244 274)",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "6",
+      "name": "Telegram Dispatch Alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [1140, 400]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (Daily)": {
+      "main": [
+        [
+          {
+            "node": "Rule 45 Metadata Formatter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook Ingest (Instant Upload)": {
+      "main": [
+        [
+          {
+            "node": "Rule 45 Metadata Formatter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rule 45 Metadata Formatter": {
+      "main": [
+        [
+          {
+            "node": "FreeImage.Host API Uploader",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FreeImage.Host API Uploader": {
+      "main": [
+        [
+          {
+            "node": "Parse 3-Tier Image Outputs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse 3-Tier Image Outputs": {
+      "main": [
+        [
+          {
+            "node": "Telegram Dispatch Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

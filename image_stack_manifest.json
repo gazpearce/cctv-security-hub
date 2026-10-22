@@ -1,0 +1,1362 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ADI Communications — Multi-Surface Image Stacking Manifest",
+  "version": "2.0.0",
+  "last_updated": "2026-10-22T09:02:41+01:00",
+  "total_images": 54,
+  "type_a_direct_urls": 216,
+  "type_b_viewer_pages": 54,
+  "type_c_shield_anchors": 54,
+  "images": [
+    {
+      "filename": "ajax-grade2-wireless-alarm-system-beardwood.webp",
+      "title": "Ajax Grade2 Wireless Alarm System Beardwood",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 255490,
+      "sha256": "1020e6c49b05bed396315f676013236e8773ec8693d868ebdaa95c5b88ca0845",
+      "description": "Ajax Grade2 Wireless Alarm System Beardwood — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-grade2-wireless-alarm-system-beardwood.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-grade2-wireless-alarm-system-beardwood.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-grade2-wireless-alarm-system-beardwood.webp",
+        "type_a_external_direct": "https://iili.io/nOgrFcb.webp",
+        "type_a_external_thumb": "https://iili.io/nOgrFcb.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgrFcb",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-grade2-wireless-alarm-system-beardwood"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-hub-2-plus-motioncam-installation-uk.webp",
+      "title": "Ajax Hub 2 Plus Motioncam Installation UK",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 27888,
+      "sha256": "f5a270518977583677e4a3ecd81354c52e7508e2fe2b3dff1a1dfefe1fd3007c",
+      "description": "Ajax Hub 2 Plus Motioncam Installation UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-hub-2-plus-motioncam-installation-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-hub-2-plus-motioncam-installation-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-hub-2-plus-motioncam-installation-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOgvFsa.webp",
+        "type_a_external_thumb": "https://iili.io/nOgvFsa.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgvFsa",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-hub-2-plus-motioncam-installation-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-hub-internals-dual-sim-ethernet-uk.webp",
+      "title": "Ajax Hub Internals Dual SIM Ethernet UK",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 152634,
+      "sha256": "8070b016979ed66065e8a543618e46c72d893c5fa7a2e0f750eed9fd3293fa1c",
+      "description": "Ajax Hub Internals Dual SIM Ethernet UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-hub-internals-dual-sim-ethernet-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-hub-internals-dual-sim-ethernet-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-hub-internals-dual-sim-ethernet-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOgvbQn.webp",
+        "type_a_external_thumb": "https://iili.io/nOgvbQn.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgvbQn",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-hub-internals-dual-sim-ethernet-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-hub2-backup-battery-network-shadsworth.webp",
+      "title": "Ajax Hub2 Backup Battery Network Shadsworth",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 58706,
+      "sha256": "6de145ee3ca4efcd1bef1d94c1d2a07c851de536d89360ff05ae175e2453a72f",
+      "description": "Ajax Hub2 Backup Battery Network Shadsworth — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-hub2-backup-battery-network-shadsworth.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-hub2-backup-battery-network-shadsworth.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-hub2-backup-battery-network-shadsworth.webp",
+        "type_a_external_direct": "https://iili.io/nOgrMfn.webp",
+        "type_a_external_thumb": "https://iili.io/nOgrMfn.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgrMfn",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-hub2-backup-battery-network-shadsworth"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-hub2-central-panel-whitebirk.webp",
+      "title": "Ajax Hub2 Central Panel Whitebirk",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 41398,
+      "sha256": "d9da42dd632fa12260dd3379f0f224e374fa27171d7b62f76d4d7177106f6e95",
+      "description": "Ajax Hub2 Central Panel Whitebirk — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-hub2-central-panel-whitebirk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-hub2-central-panel-whitebirk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-hub2-central-panel-whitebirk.webp",
+        "type_a_external_direct": "https://iili.io/nOgrhJf.webp",
+        "type_a_external_thumb": "https://iili.io/nOgrhJf.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgrhJf",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-hub2-central-panel-whitebirk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-keypad-touchscreen-jeweller-uk.webp",
+      "title": "Ajax Keypad Touchscreen Jeweller UK",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 40094,
+      "sha256": "a2c5e9bac855434badfbb7bc25e6244dff08483b84b3591a9ad2052c2ee04e13",
+      "description": "Ajax Keypad Touchscreen Jeweller UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-keypad-touchscreen-jeweller-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-keypad-touchscreen-jeweller-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-keypad-touchscreen-jeweller-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOgrgUb.webp",
+        "type_a_external_thumb": "https://iili.io/nOgrgUb.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgrgUb",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-keypad-touchscreen-jeweller-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-motioncam-outdoor-phod-uk.webp",
+      "title": "Ajax Motioncam Outdoor Phod UK",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 103804,
+      "sha256": "6ba8e29ae044fca90b40b01b81a2a0017a10f0fa390c1ee7ebccf75c4f14a5b3",
+      "description": "Ajax Motioncam Outdoor Phod UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-motioncam-outdoor-phod-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-motioncam-outdoor-phod-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-motioncam-outdoor-phod-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOgrmga.webp",
+        "type_a_external_thumb": "https://iili.io/nOgrmga.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgrmga",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-motioncam-outdoor-phod-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-smart-alarm-home-exterior-uk.webp",
+      "title": "Ajax Smart Alarm Home Exterior UK",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 180032,
+      "sha256": "9168ebae89c36ddc427138055a683843bdbee66b1c41ee32a5bd5b41c9afa20e",
+      "description": "Ajax Smart Alarm Home Exterior UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-smart-alarm-home-exterior-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-smart-alarm-home-exterior-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-smart-alarm-home-exterior-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOg4Bgs.webp",
+        "type_a_external_thumb": "https://iili.io/nOg4Bgs.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg4Bgs",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-smart-alarm-home-exterior-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-streetsiren-brickwork-installation-adwick.webp",
+      "title": "Ajax Streetsiren Brickwork Installation Adwick",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 83408,
+      "sha256": "6b0e8df655bb16096d3422fa6468987d8dc5e29deb549917af9b7a2efea8baca",
+      "description": "Ajax Streetsiren Brickwork Installation Adwick — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-streetsiren-brickwork-installation-adwick.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-streetsiren-brickwork-installation-adwick.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-streetsiren-brickwork-installation-adwick.webp",
+        "type_a_external_direct": "https://iili.io/nOg4TI2.webp",
+        "type_a_external_thumb": "https://iili.io/nOg4TI2.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg4TI2",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-streetsiren-brickwork-installation-adwick"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-streetsiren-high-visibility-mount-mill-hill.webp",
+      "title": "Ajax Streetsiren High Visibility Mount Mill Hill",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 177328,
+      "sha256": "b7c6c020f6d2eda90485e9fbca8eb555e7d11a549b8f0cdc3841421a159f9010",
+      "description": "Ajax Streetsiren High Visibility Mount Mill Hill — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-streetsiren-high-visibility-mount-mill-hill.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-streetsiren-high-visibility-mount-mill-hill.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-streetsiren-high-visibility-mount-mill-hill.webp",
+        "type_a_external_direct": "https://iili.io/nOg4XB1.webp",
+        "type_a_external_thumb": "https://iili.io/nOg4XB1.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg4XB1",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-streetsiren-high-visibility-mount-mill-hill"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "ajax-streetsiren-outdoor-masonry-installation-uk.webp",
+      "title": "Ajax Streetsiren Outdoor Masonry Installation UK",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 170910,
+      "sha256": "9e9e2a39cf83bfcfd3a21115a6638a1db212953a9588ea00b06f7b2344f1e39b",
+      "description": "Ajax Streetsiren Outdoor Masonry Installation UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ajax-streetsiren-outdoor-masonry-installation-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ajax-streetsiren-outdoor-masonry-installation-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ajax-streetsiren-outdoor-masonry-installation-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOg4kpR.webp",
+        "type_a_external_thumb": "https://iili.io/nOg4kpR.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg4kpR",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ajax-streetsiren-outdoor-masonry-installation-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-5ghz-gigabit-wireless-bridge-garden-office.webp",
+      "title": "Cat6 5Ghz Gigabit Wireless Bridge Garden Office",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 139848,
+      "sha256": "3d4a6e2a2bc7f7f56d14bbe69e4042a635a8e581164265a5cde768ea77233117",
+      "description": "Cat6 5Ghz Gigabit Wireless Bridge Garden Office — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-5ghz-gigabit-wireless-bridge-garden-office.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-5ghz-gigabit-wireless-bridge-garden-office.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-5ghz-gigabit-wireless-bridge-garden-office.webp",
+        "type_a_external_direct": "https://iili.io/nOg4Qp4.webp",
+        "type_a_external_thumb": "https://iili.io/nOg4Qp4.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg4Qp4",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-5ghz-gigabit-wireless-bridge-garden-office"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-cavity-wall-drip-loop-external-cabling-adwick.webp",
+      "title": "Cat6 Cavity Wall Drip Loop External Cabling Adwick",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 212078,
+      "sha256": "5e88d19f54e817e307bd18f345c343a7648dd885747ea39004cac41f4c425c71",
+      "description": "Cat6 Cavity Wall Drip Loop External Cabling Adwick — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-cavity-wall-drip-loop-external-cabling-adwick.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-cavity-wall-drip-loop-external-cabling-adwick.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-cavity-wall-drip-loop-external-cabling-adwick.webp",
+        "type_a_external_direct": "https://iili.io/nOg62vj.webp",
+        "type_a_external_thumb": "https://iili.io/nOg62vj.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg62vj",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-cavity-wall-drip-loop-external-cabling-adwick"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-ceiling-access-point-wifi6-deployment-adwick.webp",
+      "title": "Cat6 Ceiling Access Point Wifi6 Deployment Adwick",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 145692,
+      "sha256": "2a5c3509696a4c446ceae3516712f964f59da2f686cb4632a7811bada27e8482",
+      "description": "Cat6 Ceiling Access Point Wifi6 Deployment Adwick — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-ceiling-access-point-wifi6-deployment-adwick.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-ceiling-access-point-wifi6-deployment-adwick.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-ceiling-access-point-wifi6-deployment-adwick.webp",
+        "type_a_external_direct": "https://iili.io/nOg6Iaa.webp",
+        "type_a_external_thumb": "https://iili.io/nOg6Iaa.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg6Iaa",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-ceiling-access-point-wifi6-deployment-adwick"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-enterprise-rack-switch-cabinet-beardwood.webp",
+      "title": "Cat6 Enterprise Rack Switch Cabinet Beardwood",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 107204,
+      "sha256": "3bd394cbe75ba181b4f3f2f69e6984a43d0c9d0625916e9046d7a074ccc6622f",
+      "description": "Cat6 Enterprise Rack Switch Cabinet Beardwood — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-enterprise-rack-switch-cabinet-beardwood.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-enterprise-rack-switch-cabinet-beardwood.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-enterprise-rack-switch-cabinet-beardwood.webp",
+        "type_a_external_direct": "https://iili.io/nOg6anI.webp",
+        "type_a_external_thumb": "https://iili.io/nOg6anI.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg6anI",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-enterprise-rack-switch-cabinet-beardwood"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-external-data-run-armthorpe.webp",
+      "title": "Cat6 External Data Run Armthorpe",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 75926,
+      "sha256": "701029adf00e20e46ca25586a3dff06be115c3208cc26b060aa07de9fa4ccf22",
+      "description": "Cat6 External Data Run Armthorpe — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-external-data-run-armthorpe.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-external-data-run-armthorpe.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-external-data-run-armthorpe.webp",
+        "type_a_external_direct": "https://iili.io/nOg6OP9.webp",
+        "type_a_external_thumb": "https://iili.io/nOg6OP9.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg6OP9",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-external-data-run-armthorpe"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
+      "title": "Cat6 Fluke Dsx 8000 Cable Certification Telemetry",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 154606,
+      "sha256": "556b337c4987916bd7adbb4a7c3cb80aa1ebb8df9e274f0496bcbc5a38dee5f7",
+      "description": "Cat6 Fluke Dsx 8000 Cable Certification Telemetry — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
+        "type_a_external_direct": "https://iili.io/nOg64tV.webp",
+        "type_a_external_thumb": "https://iili.io/nOg64tV.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg64tV",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-fluke-dsx-8000-cable-certification-telemetry"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-rf-jammer-field-spectrum-analysis-handheld.webp",
+      "title": "Cat6 Rf Jammer Field Spectrum Analysis Handheld",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 85328,
+      "sha256": "905e97cb25fb3ca237b2f9dd094e162392cd1219fb86126fb56dcf36483682ad",
+      "description": "Cat6 Rf Jammer Field Spectrum Analysis Handheld — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-rf-jammer-field-spectrum-analysis-handheld.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-rf-jammer-field-spectrum-analysis-handheld.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-rf-jammer-field-spectrum-analysis-handheld.webp",
+        "type_a_external_direct": "https://iili.io/nOg6mAv.webp",
+        "type_a_external_thumb": "https://iili.io/nOg6mAv.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOg6mAv",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-rf-jammer-field-spectrum-analysis-handheld"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cat6-soho-patch-panel-cabinet-termination-mill-hill.webp",
+      "title": "Cat6 Soho Patch Panel Cabinet Termination Mill Hill",
+      "category": "Structured Copper & Fibre Infrastructure",
+      "topic": "Data Cabling & SOHO Networking",
+      "file_size_bytes": 100712,
+      "sha256": "b43817b7dbc587ecfb50e758b62bb9469bdc3972223c953591a8d291d1a43ddb",
+      "description": "Cat6 Soho Patch Panel Cabinet Termination Mill Hill — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cat6-soho-patch-panel-cabinet-termination-mill-hill.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cat6-soho-patch-panel-cabinet-termination-mill-hill.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cat6-soho-patch-panel-cabinet-termination-mill-hill.webp",
+        "type_a_external_direct": "https://iili.io/nOgPqHG.webp",
+        "type_a_external_thumb": "https://iili.io/nOgPqHG.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgPqHG",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cat6-soho-patch-panel-cabinet-termination-mill-hill"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        "anchor_text": "Gary Pearce Data Cabling & SOHO Networking Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-16mp-panoramic-dual-lens-180-degree-turret-installation.webp",
+      "title": "CCTV 16Mp Panoramic Dual Lens 180 Degree Turret Installation",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 208842,
+      "sha256": "a3525b90e31b49d83fddce245eb5568086c76ac2ae442a5fe7895539394e28dc",
+      "description": "CCTV 16Mp Panoramic Dual Lens 180 Degree Turret Installation — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-16mp-panoramic-dual-lens-180-degree-turret-installation.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-16mp-panoramic-dual-lens-180-degree-turret-installation.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-16mp-panoramic-dual-lens-180-degree-turret-installation.webp",
+        "type_a_external_direct": "https://iili.io/nOgPAle.webp",
+        "type_a_external_thumb": "https://iili.io/nOgPAle.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgPAle",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-16mp-panoramic-dual-lens-180-degree-turret-installation"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-4k-turret-soffit-mount-almondbury.webp",
+      "title": "CCTV 4K Turret Soffit Mount Almondbury",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 213580,
+      "sha256": "087842e149bf9bbd0b46dc0525b84d7f603db4b34824ddf32b423dc749e1818b",
+      "description": "CCTV 4K Turret Soffit Mount Almondbury — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-4k-turret-soffit-mount-almondbury.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-4k-turret-soffit-mount-almondbury.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-4k-turret-soffit-mount-almondbury.webp",
+        "type_a_external_direct": "https://iili.io/nOgPEiP.webp",
+        "type_a_external_thumb": "https://iili.io/nOgPEiP.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgPEiP",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-4k-turret-soffit-mount-almondbury"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-coastal-weather-shielded-install-withernsea.webp",
+      "title": "CCTV Coastal Weather Shielded Install Withernsea",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 178576,
+      "sha256": "1b733d9f9d8ba97ec9a5cdbb6efea850571978716ce5eb794fd4fdffc4bd9afc",
+      "description": "CCTV Coastal Weather Shielded Install Withernsea — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-coastal-weather-shielded-install-withernsea.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-coastal-weather-shielded-install-withernsea.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-coastal-weather-shielded-install-withernsea.webp",
+        "type_a_external_direct": "https://iili.io/nOgPSft.webp",
+        "type_a_external_thumb": "https://iili.io/nOgPSft.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgPSft",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-coastal-weather-shielded-install-withernsea"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-commercial-perimeter-turret-brighouse.webp",
+      "title": "CCTV Commercial Perimeter Turret Brighouse",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 171286,
+      "sha256": "dcbd0faace624438e0fa4087d976ae059c5f85a6f49c0d54fb2a4419962a497b",
+      "description": "CCTV Commercial Perimeter Turret Brighouse — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-commercial-perimeter-turret-brighouse.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-commercial-perimeter-turret-brighouse.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-commercial-perimeter-turret-brighouse.webp",
+        "type_a_external_direct": "https://iili.io/nOgPQX2.webp",
+        "type_a_external_thumb": "https://iili.io/nOgPQX2.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgPQX2",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-commercial-perimeter-turret-brighouse"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-consumer-infrared-flare-spiderweb-blindness-breakdown.webp",
+      "title": "CCTV Consumer Infrared Flare Spiderweb Blindness Breakdown",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 276454,
+      "sha256": "e3e31db21fd91327e25810154d0562d7176c0c6dd2d2a5a97981c4f6b3055609",
+      "description": "CCTV Consumer Infrared Flare Spiderweb Blindness Breakdown — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-consumer-infrared-flare-spiderweb-blindness-breakdown.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-consumer-infrared-flare-spiderweb-blindness-breakdown.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-consumer-infrared-flare-spiderweb-blindness-breakdown.webp",
+        "type_a_external_direct": "https://iili.io/nOgi2zQ.webp",
+        "type_a_external_thumb": "https://iili.io/nOgi2zQ.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgi2zQ",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-consumer-infrared-flare-spiderweb-blindness-breakdown"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-hikvision-colorvu-vs-infrared-night-vision-comparison.webp",
+      "title": "CCTV Hikvision Colorvu Vs Infrared Night Vision Comparison",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 134524,
+      "sha256": "72b134df174b69bc71b4d16bb832907a40294be895107d9d3da57f003b061f01",
+      "description": "CCTV Hikvision Colorvu Vs Infrared Night Vision Comparison — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-hikvision-colorvu-vs-infrared-night-vision-comparison.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-hikvision-colorvu-vs-infrared-night-vision-comparison.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-hikvision-colorvu-vs-infrared-night-vision-comparison.webp",
+        "type_a_external_direct": "https://iili.io/nOgi71t.webp",
+        "type_a_external_thumb": "https://iili.io/nOgi71t.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgi71t",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-hikvision-colorvu-vs-infrared-night-vision-comparison"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-masonry-junction-box-mounting-accrington.webp",
+      "title": "CCTV Masonry Junction Box Mounting Accrington",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 216668,
+      "sha256": "7f1dd76e5e4bb92e58d786c76c5276b73b9695ada67fba192702c71fe7ce8a02",
+      "description": "CCTV Masonry Junction Box Mounting Accrington — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-masonry-junction-box-mounting-accrington.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-masonry-junction-box-mounting-accrington.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-masonry-junction-box-mounting-accrington.webp",
+        "type_a_external_direct": "https://iili.io/nOgiMhl.webp",
+        "type_a_external_thumb": "https://iili.io/nOgiMhl.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgiMhl",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-masonry-junction-box-mounting-accrington"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-perimeter-surveillance-system-accrington.webp",
+      "title": "CCTV Perimeter Surveillance System Accrington",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 227620,
+      "sha256": "57685c4534113a204be2933328cb49112d2f1e4301a3659c60d4ea45cdd06cae",
+      "description": "CCTV Perimeter Surveillance System Accrington — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-perimeter-surveillance-system-accrington.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-perimeter-surveillance-system-accrington.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-perimeter-surveillance-system-accrington.webp",
+        "type_a_external_direct": "https://iili.io/nOgiShQ.webp",
+        "type_a_external_thumb": "https://iili.io/nOgiShQ.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgiShQ",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-perimeter-surveillance-system-accrington"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-residential-turret-eaves-mount-beverley.webp",
+      "title": "CCTV Residential Turret Eaves Mount Beverley",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 224912,
+      "sha256": "053d35b0aa0358b41ed10609a33f2c3a234a330c36a1b878a11ff8d7a39b493a",
+      "description": "CCTV Residential Turret Eaves Mount Beverley — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-residential-turret-eaves-mount-beverley.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-residential-turret-eaves-mount-beverley.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-residential-turret-eaves-mount-beverley.webp",
+        "type_a_external_direct": "https://iili.io/nOgipCN.webp",
+        "type_a_external_thumb": "https://iili.io/nOgipCN.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgipCN",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-residential-turret-eaves-mount-beverley"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "cctv-rf-jammer-deauth-attack-vs-hardwired-poe-infrastructure.webp",
+      "title": "CCTV Rf Jammer Deauth Attack Vs Hardwired PoE Infrastructure",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 171334,
+      "sha256": "c19e96e2e408d34364c19b0a9eaa951c38b7b2a6c3637f4e49819f0d9c664b20",
+      "description": "CCTV Rf Jammer Deauth Attack Vs Hardwired PoE Infrastructure — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/cctv-rf-jammer-deauth-attack-vs-hardwired-poe-infrastructure.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/cctv-rf-jammer-deauth-attack-vs-hardwired-poe-infrastructure.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/cctv-rf-jammer-deauth-attack-vs-hardwired-poe-infrastructure.webp",
+        "type_a_external_direct": "https://iili.io/nOgsKuf.webp",
+        "type_a_external_thumb": "https://iili.io/nOgsKuf.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgsKuf",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#cctv-rf-jammer-deauth-attack-vs-hardwired-poe-infrastructure"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "legacy-bell-box-vs-ajax-streetsiren-comparison-uk.webp",
+      "title": "Legacy Bell Box Vs Ajax Streetsiren Comparison UK",
+      "category": "Intruder Security & Intrusion Detection",
+      "topic": "Ajax Wireless Smart Alarm",
+      "file_size_bytes": 322612,
+      "sha256": "02fe2208d0130cb147209e92807b9a8304467ed3726cfe9bf7d17484b014e1ab",
+      "description": "Legacy Bell Box Vs Ajax Streetsiren Comparison UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/legacy-bell-box-vs-ajax-streetsiren-comparison-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/legacy-bell-box-vs-ajax-streetsiren-comparison-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/legacy-bell-box-vs-ajax-streetsiren-comparison-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOgsT8u.webp",
+        "type_a_external_thumb": "https://iili.io/nOgsT8u.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgsT8u",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#legacy-bell-box-vs-ajax-streetsiren-comparison-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+        "anchor_text": "Gary Pearce Ajax Wireless Smart Alarm Field Debrief"
+      }
+    },
+    {
+      "filename": "reolink-poe-video-doorbell-brick-surface-mount-clean.webp",
+      "title": "Reolink PoE Video Doorbell Brick Surface Mount Clean",
+      "category": "Electronic Surveillance & Police Evidence",
+      "topic": "Commercial & Domestic 4K CCTV",
+      "file_size_bytes": 205996,
+      "sha256": "68a3071feedeef06b588941f3f44e7a117bd052479d4de8837120a2d36b03367",
+      "description": "Reolink PoE Video Doorbell Brick Surface Mount Clean — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://tvandhomesecurity.blogspot.com/",
+      "google_shield_anchor": "https://tvandhomesecurity.blogspot.com/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/reolink-poe-video-doorbell-brick-surface-mount-clean.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/reolink-poe-video-doorbell-brick-surface-mount-clean.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/reolink-poe-video-doorbell-brick-surface-mount-clean.webp",
+        "type_a_external_direct": "https://iili.io/nOgs1F1.webp",
+        "type_a_external_thumb": "https://iili.io/nOgs1F1.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgs1F1",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#reolink-poe-video-doorbell-brick-surface-mount-clean"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://tvandhomesecurity.blogspot.com/",
+        "anchor_text": "Gary Pearce Commercial & Domestic 4K CCTV Field Debrief"
+      }
+    },
+    {
+      "filename": "reolink-poe-video-doorbell-masonry-installation-uk.webp",
+      "title": "Reolink PoE Video Doorbell Masonry Installation UK",
+      "category": "Electronic Surveillance & Police Evidence",
+      "topic": "Commercial & Domestic 4K CCTV",
+      "file_size_bytes": 180858,
+      "sha256": "b773c61feddc2d36a5ee446d146a0cf26777c81393309ebf6d2bd95b1a1470d8",
+      "description": "Reolink PoE Video Doorbell Masonry Installation UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://tvandhomesecurity.blogspot.com/",
+      "google_shield_anchor": "https://tvandhomesecurity.blogspot.com/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/reolink-poe-video-doorbell-masonry-installation-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/reolink-poe-video-doorbell-masonry-installation-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/reolink-poe-video-doorbell-masonry-installation-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOgsEcF.webp",
+        "type_a_external_thumb": "https://iili.io/nOgsEcF.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgsEcF",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#reolink-poe-video-doorbell-masonry-installation-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://tvandhomesecurity.blogspot.com/",
+        "anchor_text": "Gary Pearce Commercial & Domestic 4K CCTV Field Debrief"
+      }
+    },
+    {
+      "filename": "ring-doorbell-gritstone-wedge-mount-yorkshire-stone-leeds.webp",
+      "title": "Ring Doorbell Gritstone Wedge Mount Yorkshire Stone Leeds",
+      "category": "Electronic Surveillance & Police Evidence",
+      "topic": "Commercial & Domestic 4K CCTV",
+      "file_size_bytes": 244474,
+      "sha256": "9ad271f491b60d89f85c100186692451c7e83d4edbbe3223024d4c54dabd012b",
+      "description": "Ring Doorbell Gritstone Wedge Mount Yorkshire Stone Leeds — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://tvandhomesecurity.blogspot.com/",
+      "google_shield_anchor": "https://tvandhomesecurity.blogspot.com/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/ring-doorbell-gritstone-wedge-mount-yorkshire-stone-leeds.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/ring-doorbell-gritstone-wedge-mount-yorkshire-stone-leeds.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/ring-doorbell-gritstone-wedge-mount-yorkshire-stone-leeds.webp",
+        "type_a_external_direct": "https://iili.io/nOgsV9a.webp",
+        "type_a_external_thumb": "https://iili.io/nOgsV9a.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgsV9a",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#ring-doorbell-gritstone-wedge-mount-yorkshire-stone-leeds"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://tvandhomesecurity.blogspot.com/",
+        "anchor_text": "Gary Pearce Commercial & Domestic 4K CCTV Field Debrief"
+      }
+    },
+    {
+      "filename": "smart-doorbell-24v-bell-transformer-consumer-unit-installation.webp",
+      "title": "Smart Doorbell 24V Bell Transformer Consumer Unit Installation",
+      "category": "Electronic Surveillance & Police Evidence",
+      "topic": "Commercial & Domestic 4K CCTV",
+      "file_size_bytes": 99014,
+      "sha256": "5c7fa557dee0b27622ab6cf09fdfbd8cb983130626eeb50bc243d0b0f2bba751",
+      "description": "Smart Doorbell 24V Bell Transformer Consumer Unit Installation — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://tvandhomesecurity.blogspot.com/",
+      "google_shield_anchor": "https://tvandhomesecurity.blogspot.com/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/smart-doorbell-24v-bell-transformer-consumer-unit-installation.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/smart-doorbell-24v-bell-transformer-consumer-unit-installation.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/smart-doorbell-24v-bell-transformer-consumer-unit-installation.webp",
+        "type_a_external_direct": "https://iili.io/nOgskFt.webp",
+        "type_a_external_thumb": "https://iili.io/nOgskFt.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgskFt",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#smart-doorbell-24v-bell-transformer-consumer-unit-installation"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://tvandhomesecurity.blogspot.com/",
+        "anchor_text": "Gary Pearce Commercial & Domestic 4K CCTV Field Debrief"
+      }
+    },
+    {
+      "filename": "smart-video-doorbell-composite-door-frame-installation.webp",
+      "title": "Smart Video Doorbell Composite Door Frame Installation",
+      "category": "Electronic Surveillance & Police Evidence",
+      "topic": "Commercial & Domestic 4K CCTV",
+      "file_size_bytes": 87816,
+      "sha256": "c9a53722d9ef725227b85e4dea0114a1d46857a891df7e7ce90ac849f9a729a6",
+      "description": "Smart Video Doorbell Composite Door Frame Installation — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://tvandhomesecurity.blogspot.com/",
+      "google_shield_anchor": "https://tvandhomesecurity.blogspot.com/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/smart-video-doorbell-composite-door-frame-installation.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/smart-video-doorbell-composite-door-frame-installation.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/smart-video-doorbell-composite-door-frame-installation.webp",
+        "type_a_external_direct": "https://iili.io/nOgsU9s.webp",
+        "type_a_external_thumb": "https://iili.io/nOgsU9s.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgsU9s",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#smart-video-doorbell-composite-door-frame-installation"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://tvandhomesecurity.blogspot.com/",
+        "anchor_text": "Gary Pearce Commercial & Domestic 4K CCTV Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-110-degree-obstruction-scan-telemetry-mill-hill.webp",
+      "title": "Starlink 110 Degree Obstruction Scan Telemetry Mill Hill",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 104342,
+      "sha256": "dbcffcbf85d288668d8d95a1475f44d6425cc8454caf24a613b9040f3b24d5ec",
+      "description": "Starlink 110 Degree Obstruction Scan Telemetry Mill Hill — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-110-degree-obstruction-scan-telemetry-mill-hill.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-110-degree-obstruction-scan-telemetry-mill-hill.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-110-degree-obstruction-scan-telemetry-mill-hill.webp",
+        "type_a_external_direct": "https://iili.io/nOgsQK7.webp",
+        "type_a_external_thumb": "https://iili.io/nOgsQK7.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgsQK7",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-110-degree-obstruction-scan-telemetry-mill-hill"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-320mbps-gigabit-speed-test-telemetry.webp",
+      "title": "Starlink Gen3 320Mbps Gigabit Speed Test Telemetry",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 102780,
+      "sha256": "bed2cfa8c8570155bff7876b3e5b00155da1688bb785f88046dc18fdb7f60169",
+      "description": "Starlink Gen3 320Mbps Gigabit Speed Test Telemetry — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-320mbps-gigabit-speed-test-telemetry.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-320mbps-gigabit-speed-test-telemetry.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-320mbps-gigabit-speed-test-telemetry.webp",
+        "type_a_external_direct": "https://iili.io/nOgLJVV.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLJVV.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLJVV",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-320mbps-gigabit-speed-test-telemetry"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-90mph-storm-bracket-installation-beardwood.webp",
+      "title": "Starlink Gen3 90Mph Storm Bracket Installation Beardwood",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 157272,
+      "sha256": "10c3d88b526fdfdeeae9802c830ee0dbf0122beb48c550009ed5e844a00a1c50",
+      "description": "Starlink Gen3 90Mph Storm Bracket Installation Beardwood — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-90mph-storm-bracket-installation-beardwood.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-90mph-storm-bracket-installation-beardwood.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-90mph-storm-bracket-installation-beardwood.webp",
+        "type_a_external_direct": "https://iili.io/nOgLFl1.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLFl1.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLFl1",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-90mph-storm-bracket-installation-beardwood"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-chimney-mount-vs-gable-apex-engineering-uk.webp",
+      "title": "Starlink Gen3 Chimney Mount Vs Gable Apex Engineering UK",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 145876,
+      "sha256": "868dc6c8996ed20975ec227eb01a05cee58d47da5a8f6c7ce91eb094ee6ec72b",
+      "description": "Starlink Gen3 Chimney Mount Vs Gable Apex Engineering UK — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-chimney-mount-vs-gable-apex-engineering-uk.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-chimney-mount-vs-gable-apex-engineering-uk.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-chimney-mount-vs-gable-apex-engineering-uk.webp",
+        "type_a_external_direct": "https://iili.io/nOgLnDv.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLnDv.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLnDv",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-chimney-mount-vs-gable-apex-engineering-uk"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-gable-apex-bracket-mount-armthorpe.webp",
+      "title": "Starlink Gen3 Gable Apex Bracket Mount Armthorpe",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 166070,
+      "sha256": "3e2d82a6bc85b1fa301951d0b920805f6cca5066d2c5bdcaa72091a998678c44",
+      "description": "Starlink Gen3 Gable Apex Bracket Mount Armthorpe — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-gable-apex-bracket-mount-armthorpe.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-gable-apex-bracket-mount-armthorpe.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-gable-apex-bracket-mount-armthorpe.webp",
+        "type_a_external_direct": "https://iili.io/nOgLRUX.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLRUX.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLRUX",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-gable-apex-bracket-mount-armthorpe"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
+      "title": "Starlink Gen3 Heavy Duty Chimney Lashing Livesey",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 168804,
+      "sha256": "4b6cb0a3f8b5c009f7d2165a624dad9405193139192f3465e2bab74d86dd6444",
+      "description": "Starlink Gen3 Heavy Duty Chimney Lashing Livesey — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
+        "type_a_external_direct": "https://iili.io/nOgLaOG.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLaOG.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLaOG",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-heavy-duty-chimney-lashing-livesey"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-high-wind-lashing-thorne.webp",
+      "title": "Starlink Gen3 High Wind Lashing Thorne",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 217310,
+      "sha256": "a33801e6b2ae3e03a545bc4fc5ea611462c845ddd20e564ddc3ef235836e7af7",
+      "description": "Starlink Gen3 High Wind Lashing Thorne — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-high-wind-lashing-thorne.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-high-wind-lashing-thorne.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-high-wind-lashing-thorne.webp",
+        "type_a_external_direct": "https://iili.io/nOgLEs2.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLEs2.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLEs2",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-high-wind-lashing-thorne"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-residential-chimney-mount-adwick.webp",
+      "title": "Starlink Gen3 Residential Chimney Mount Adwick",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 199154,
+      "sha256": "1d9516331a44a535e9f6b7a996b7bb8926b9ad73d2d3572ba47cbda7480ddebe",
+      "description": "Starlink Gen3 Residential Chimney Mount Adwick — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-residential-chimney-mount-adwick.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-residential-chimney-mount-adwick.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-residential-chimney-mount-adwick.webp",
+        "type_a_external_direct": "https://iili.io/nOgLwOb.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLwOb.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLwOb",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-residential-chimney-mount-adwick"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-rooftop-dish-mount-rishton.webp",
+      "title": "Starlink Gen3 Rooftop Dish Mount Rishton",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 181240,
+      "sha256": "e7498e85880ad087d855b7b1d2e05bf89b7b084cbd9a235429bc348aced11117",
+      "description": "Starlink Gen3 Rooftop Dish Mount Rishton — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-rooftop-dish-mount-rishton.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-rooftop-dish-mount-rishton.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-rooftop-dish-mount-rishton.webp",
+        "type_a_external_direct": "https://iili.io/nOgLU0P.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLU0P.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLU0P",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-rooftop-dish-mount-rishton"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-rooftop-dish-mount-shadsworth.webp",
+      "title": "Starlink Gen3 Rooftop Dish Mount Shadsworth",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 187994,
+      "sha256": "0876d68adf750108a5ae6aab2d8ba79d91131796476b2d4edba20fc77cefac09",
+      "description": "Starlink Gen3 Rooftop Dish Mount Shadsworth — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-rooftop-dish-mount-shadsworth.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-rooftop-dish-mount-shadsworth.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-rooftop-dish-mount-shadsworth.webp",
+        "type_a_external_direct": "https://iili.io/nOgL4dF.webp",
+        "type_a_external_thumb": "https://iili.io/nOgL4dF.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgL4dF",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-rooftop-dish-mount-shadsworth"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "starlink-gen3-rural-farmhouse-mount-brigg.webp",
+      "title": "Starlink Gen3 Rural Farmhouse Mount Brigg",
+      "category": "Satellite & Broadband Rigging",
+      "topic": "SpaceX Starlink Installation",
+      "file_size_bytes": 168600,
+      "sha256": "fc6d7c3506021d8ce3cc02b765c769109528d7d7aac82903a26b40d2ebe64f1a",
+      "description": "Starlink Gen3 Rural Farmhouse Mount Brigg — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/starlink-gen3-rural-farmhouse-mount-brigg.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/starlink-gen3-rural-farmhouse-mount-brigg.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/starlink-gen3-rural-farmhouse-mount-brigg.webp",
+        "type_a_external_direct": "https://iili.io/nOgLQXR.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLQXR.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLQXR",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#starlink-gen3-rural-farmhouse-mount-brigg"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+        "anchor_text": "Gary Pearce SpaceX Starlink Installation Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-aerial-digital-spectrum-analyzer-signal-meter-mill-hill.webp",
+      "title": "Tv Aerial Digital Spectrum Analyzer Signal Meter Mill Hill",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 143360,
+      "sha256": "3dbc7972bbba9622efb0a5be5b1391cde6e31f1815511b4b6596e9c8fad5e8ef",
+      "description": "Tv Aerial Digital Spectrum Analyzer Signal Meter Mill Hill — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-aerial-digital-spectrum-analyzer-signal-meter-mill-hill.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-aerial-digital-spectrum-analyzer-signal-meter-mill-hill.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-aerial-digital-spectrum-analyzer-signal-meter-mill-hill.webp",
+        "type_a_external_direct": "https://iili.io/nOgLDqN.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLDqN.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLDqN",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-aerial-digital-spectrum-analyzer-signal-meter-mill-hill"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-aerial-loft-distribution-amplifier-lte-filter-mill-hill.webp",
+      "title": "Tv Aerial Loft Distribution Amplifier Lte Filter Mill Hill",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 119490,
+      "sha256": "9862fb35edbe657590477026c03e2fbeacb90933ae84d60181e20bf8a0004c83",
+      "description": "Tv Aerial Loft Distribution Amplifier Lte Filter Mill Hill — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-aerial-loft-distribution-amplifier-lte-filter-mill-hill.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-aerial-loft-distribution-amplifier-lte-filter-mill-hill.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-aerial-loft-distribution-amplifier-lte-filter-mill-hill.webp",
+        "type_a_external_direct": "https://iili.io/nOgLydX.webp",
+        "type_a_external_thumb": "https://iili.io/nOgLydX.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgLydX",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-aerial-loft-distribution-amplifier-lte-filter-mill-hill"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-luxury-acoustic-slat-media-wall-living-room.webp",
+      "title": "Tv Luxury Acoustic Slat Media Wall Living Room",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 115760,
+      "sha256": "4738ed39e9228ff691987e8ad52d32dce631c991ab13d22dad065ff75522c3f2",
+      "description": "Tv Luxury Acoustic Slat Media Wall Living Room — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-luxury-acoustic-slat-media-wall-living-room.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-luxury-acoustic-slat-media-wall-living-room.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-luxury-acoustic-slat-media-wall-living-room.webp",
+        "type_a_external_direct": "https://iili.io/nOgQ3X4.webp",
+        "type_a_external_thumb": "https://iili.io/nOgQ3X4.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgQ3X4",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-luxury-acoustic-slat-media-wall-living-room"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-mounting-acoustic-slat-media-wall-almondbury.webp",
+      "title": "Tv Mounting Acoustic Slat Media Wall Almondbury",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 157638,
+      "sha256": "d8020d624c282c95e24f91b59d82dd415f3ab1290f9128e0333f64d28e0f922a",
+      "description": "Tv Mounting Acoustic Slat Media Wall Almondbury — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-mounting-acoustic-slat-media-wall-almondbury.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-mounting-acoustic-slat-media-wall-almondbury.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-mounting-acoustic-slat-media-wall-almondbury.webp",
+        "type_a_external_direct": "https://iili.io/nOgQBr7.webp",
+        "type_a_external_thumb": "https://iili.io/nOgQBr7.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgQBr7",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-mounting-acoustic-slat-media-wall-almondbury"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-mounting-articulated-dual-arm-swivel-bracket-detail.webp",
+      "title": "Tv Mounting Articulated Dual Arm Swivel Bracket Detail",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 121398,
+      "sha256": "3128072e7a512f6a29ffaab90947468c642a938f098e937d5d02a1e65b814edd",
+      "description": "Tv Mounting Articulated Dual Arm Swivel Bracket Detail — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-mounting-articulated-dual-arm-swivel-bracket-detail.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-mounting-articulated-dual-arm-swivel-bracket-detail.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-mounting-articulated-dual-arm-swivel-bracket-detail.webp",
+        "type_a_external_direct": "https://iili.io/nOgQzmb.webp",
+        "type_a_external_thumb": "https://iili.io/nOgQzmb.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgQzmb",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-mounting-articulated-dual-arm-swivel-bracket-detail"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-mounting-concealed-conduit-fireplace-anlaby.webp",
+      "title": "Tv Mounting Concealed Conduit Fireplace Anlaby",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 158796,
+      "sha256": "8ca587b5aecca54c2d4e5f2dd387fe9466f4c3fd16c233e3d01be986cc252c54",
+      "description": "Tv Mounting Concealed Conduit Fireplace Anlaby — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-mounting-concealed-conduit-fireplace-anlaby.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-mounting-concealed-conduit-fireplace-anlaby.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-mounting-concealed-conduit-fireplace-anlaby.webp",
+        "type_a_external_direct": "https://iili.io/nOgQYrP.webp",
+        "type_a_external_thumb": "https://iili.io/nOgQYrP.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgQYrP",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-mounting-concealed-conduit-fireplace-anlaby"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-mounting-corefix-dot-and-dab-masonry-anchors-beardwood.webp",
+      "title": "Tv Mounting Corefix Dot And Dab Masonry Anchors Beardwood",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 124692,
+      "sha256": "0a22f67430e28e7b51d91dba7cef65c4aeffa4def491bea31f7dca0c465bf12f",
+      "description": "Tv Mounting Corefix Dot And Dab Masonry Anchors Beardwood — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-mounting-corefix-dot-and-dab-masonry-anchors-beardwood.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-mounting-corefix-dot-and-dab-masonry-anchors-beardwood.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-mounting-corefix-dot-and-dab-masonry-anchors-beardwood.webp",
+        "type_a_external_direct": "https://iili.io/nOgQ1pa.webp",
+        "type_a_external_thumb": "https://iili.io/nOgQ1pa.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgQ1pa",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-mounting-corefix-dot-and-dab-masonry-anchors-beardwood"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    },
+    {
+      "filename": "tv-samsung-frame-flush-gapless-wall-mounting-feniscowles.webp",
+      "title": "Tv Samsung Frame Flush Gapless Wall Mounting Feniscowles",
+      "category": "Heavy Duty AV & Thermal Protection",
+      "topic": "Architectural TV Wall Mounting",
+      "file_size_bytes": 146126,
+      "sha256": "b0b45e4176e5905bc0f7f7c489a3d38be5b272b9036c4a377a982fb5bd0b215f",
+      "description": "Tv Samsung Frame Flush Gapless Wall Mounting Feniscowles — Professional UK installation by Gary Pearce, ADI Communications (07860 244 274). 25+ years hands-on field craftsmanship, £10,000,000 Public Liability insurance, and CAI-benchmarked hardware across Yorkshire & Lancashire. Technical Debrief & Interactive Engineering Tools: https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "google_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "cdn_endpoints": {
+        "type_a_jsdelivr_multicdn": "https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/assets/images/tv-samsung-frame-flush-gapless-wall-mounting-feniscowles.webp",
+        "type_a_github_raw": "https://raw.githubusercontent.com/gazpearce/cctv-security-hub/master/assets/images/tv-samsung-frame-flush-gapless-wall-mounting-feniscowles.webp",
+        "type_a_firebase_edge": "https://gary-pearce-forensic-hub.web.app/assets/images/tv-samsung-frame-flush-gapless-wall-mounting-feniscowles.webp",
+        "type_a_external_direct": "https://iili.io/nOgQMhv.webp",
+        "type_a_external_thumb": "https://iili.io/nOgQMhv.th.webp"
+      },
+      "public_viewer_pages": {
+        "type_b_freeimage_viewer": "https://freeimage.host/i/nOgQMhv",
+        "type_b_firebase_gallery": "https://gary-pearce-forensic-hub.web.app/image-gallery.html#tv-samsung-frame-flush-gapless-wall-mounting-feniscowles"
+      },
+      "clickable_backlink_target": {
+        "type_c_rule_45_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        "anchor_text": "Gary Pearce Architectural TV Wall Mounting Field Debrief"
+      }
+    }
+  ]
+}
