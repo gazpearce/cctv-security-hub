@@ -139,6 +139,63 @@ if os.path.exists("image_stack_manifest.json"):
                 })
                 asset_counter += 1
 
+# B2. Ingest 4K Video Masterclasses & Interactive Theatre
+doc3_asset_links.append({
+    "asset_id": f"LINK-{asset_counter:04d}",
+    "parent_profile_id": "PROF-004", # Firebase Hosting
+    "platform_name": "Firebase Hosting",
+    "profile_live_url": "https://gary-pearce-forensic-hub.web.app/",
+    "asset_title": "4K Video Masterclasses & Field Telemetry Hub",
+    "asset_type": "Interactive Video Theatre & Telemetry Hub",
+    "asset_public_url": "https://gary-pearce-forensic-hub.web.app/video-showcase.html",
+    "top_of_stack_apex_url": YOUTUBE_APEX,
+    "shield_target_url": BLOGGER_APEX,
+    "seo_tags": "#VideoMasterclasses #StarlinkUK #AjaxAlarms #HikvisionColorVu #GaryPearce",
+    "seo_description_summary": "Official 4K video theatre presenting Starlink Gen 3 chimney rigging, Ajax Grade 2 alarms, and Hikvision ColorVu DORI court standards by Gary Pearce (07860 244 274).",
+    "dofollow_status": "Dofollow Authority Edge Node",
+    "publication_date": "2026-10-22",
+    "verification_status": "HTTP_200"
+})
+asset_counter += 1
+
+# B3. Canonical YouTube Broadcast Masterclasses (@CCTV.services DA 100)
+yt_masters = [
+    {
+        "title": "YouTube 4K: Starlink Gen 3 & Mini UK Installation: 90mph Gale Chimney Mounts",
+        "url": "https://youtu.be/dOFIxVqMxCM",
+        "cluster": CLUSTER_MAP["starlink"]
+    },
+    {
+        "title": "YouTube 4K: Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail",
+        "url": "https://youtu.be/l-HN4BuzBGQ",
+        "cluster": CLUSTER_MAP["ajax"]
+    },
+    {
+        "title": "YouTube 4K: Hikvision ColorVu vs Infrared CCTV UK: Night Vision & DORI Standards",
+        "url": "https://youtu.be/50q89TsNN3w",
+        "cluster": CLUSTER_MAP["cctv"]
+    }
+]
+
+for ym in yt_masters:
+    doc3_asset_links.append({
+        "asset_id": f"LINK-{asset_counter:04d}",
+        "parent_profile_id": "PROF-021", # YouTube
+        "platform_name": "YouTube",
+        "profile_live_url": "https://www.youtube.com/@CCTV.services",
+        "asset_title": ym["title"],
+        "asset_type": "Canonical 4K Video Masterclass",
+        "asset_public_url": ym["url"],
+        "top_of_stack_apex_url": YOUTUBE_APEX,
+        "shield_target_url": ym["cluster"]["apex_google"],
+        "seo_tags": ym["cluster"]["tags"],
+        "seo_description_summary": f"Canonical YouTube 4K broadcast debrief by Gary Pearce (07860 244 274). Connects physical trade hardware to Google Drive Vault and companion Blogger guide.",
+        "dofollow_status": "DA 100 Top-of-Stack Apex",
+        "publication_date": "2026-10-22",
+        "verification_status": "HTTP_200"
+    })
+    asset_counter += 1
+
 # C. Bespoke published assets for all 100 established profiles
 for prof in ESTABLISHED_PROFILES:
     pid = prof["profile_id"]
