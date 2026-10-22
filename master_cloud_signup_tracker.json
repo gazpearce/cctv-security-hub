@@ -1,6 +1,6 @@
 {
   "total_platforms": 154,
-  "joined_count": 60,
+  "joined_count": 61,
   "platforms": [
     {
       "rank": "1",
@@ -1710,8 +1710,8 @@
       "free_tier": "Free video channel & player embeds",
       "sso_method": "Google / Email",
       "signup_url": "https://www.dailymotion.com/register",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://www.dailymotion.com/user/adicommunications",
       "rank": "140"
     },
     {

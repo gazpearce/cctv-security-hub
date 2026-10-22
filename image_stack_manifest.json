@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ADI Communications \u2014 Multi-Surface Image Stacking Manifest",
   "version": "2.0.0",
-  "last_updated": "2026-10-22T09:02:41+01:00",
+  "last_updated": "2026-10-22T20:11:42+01:00",
   "total_images": 54,
   "type_a_direct_urls": 216,
   "type_b_viewer_pages": 54,
