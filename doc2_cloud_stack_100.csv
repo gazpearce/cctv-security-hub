@@ -1,0 +1,101 @@
+Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method (SSO),Official Signup / Cloud URL
+1,Google Firebase Hosting,web.app,99,Edge & Static Hosting,"10 GB storage, 360 MB/day free forever",Google OAuth,https://firebase.google.com/
+2,Cloudflare Pages,pages.dev,99,Edge & Static Hosting,"Unlimited bandwidth, 500 builds/mo free",GitHub / Email,https://pages.cloudflare.com/
+3,GitHub Pages,github.io,98,Edge & Static Hosting,"1 GB site limit, 100 GB/mo bandwidth",GitHub OAuth,https://pages.github.com/
+4,GitLab Pages,gitlab.io,95,Edge & Static Hosting,"Unlimited static sites, 400 CI mins/mo",GitLab / Google,https://docs.gitlab.com/ee/user/project/pages/
+5,Vercel,vercel.app,92,Edge & Static Hosting,"100 GB bandwidth, unlimited deployments",GitHub / GitLab,https://vercel.com/
+6,Netlify,netlify.app,94,Edge & Static Hosting,"100 GB bandwidth, 300 build mins/mo",GitHub / GitLab / Email,https://www.netlify.com/
+7,Render,onrender.com,89,Edge & Static Hosting,"Free static sites, 100 GB bandwidth",GitHub / GitLab / Google,https://render.com/
+8,Deno Deploy,deno.dev,88,Edge & Static Hosting,"100k req/day, sub-ms edge V8 execution",GitHub OAuth,https://deno.com/deploy
+9,Surge.sh,surge.sh,85,Edge & Static Hosting,Unlimited static sites via CLI,CLI / Email,https://surge.sh/
+10,Neocities,neocities.org,87,Edge & Static Hosting,"1 GB free storage, 200 GB bandwidth",Email,https://neocities.org/
+11,Glitch,glitch.com,88,Edge & Static Hosting,Free full-stack Node/static apps,GitHub / Google,https://glitch.com/
+12,Replit,replit.com,89,Edge & Static Hosting,Free sandbox hosting & repls,Google / GitHub,https://replit.com/
+13,Koyeb,koyeb.com,78,Edge & Static Hosting,"2 free micro services, global edge",GitHub / GitLab,https://www.koyeb.com/
+14,Fly.io,fly.io,84,Edge & Static Hosting,"3 shared-CPU VMs, 3GB storage free",GitHub OAuth,https://fly.io/
+15,Railway,railway.app,82,Edge & Static Hosting,Free trial / low-cost micro containers,GitHub OAuth,https://railway.app/
+16,Zeabur,zeabur.com,72,Edge & Static Hosting,Free serverless deployment for Git,GitHub OAuth,https://zeabur.com/
+17,Northflank,northflank.com,74,Edge & Static Hosting,Free developer tier for 2 services,GitHub / GitLab / Google,https://northflank.com/
+18,Alwaysdata,alwaysdata.com,76,Edge & Static Hosting,"100 MB free hosting forever, SSH access",Email / Google,https://www.alwaysdata.com/
+19,InfinityFree,infinityfree.com,79,Edge & Static Hosting,"Unlimited disk space, 50k daily hits",Email,https://www.infinityfree.com/
+20,ByetHost,byet.host,75,Edge & Static Hosting,"1 GB disk space, 50 GB transfer free",Email,https://byet.host/
+21,AwardSpace,awardspace.com,77,Edge & Static Hosting,"1 GB disk space, 5 GB bandwidth free",Email / Google,https://www.awardspace.com/
+22,FreeHosting,freehosting.com,73,Edge & Static Hosting,"10 GB storage, unmetered bandwidth",Email,https://www.freehosting.com/
+23,Sevalla (formerly Kinsta Free),sevalla.com,70,Edge & Static Hosting,Free static site hosting,GitHub / Google,https://sevalla.com/
+24,Appliku,appliku.com,68,Edge & Static Hosting,Free tier for deploying web apps,GitHub OAuth,https://appliku.com/
+25,Fleek (IPFS Edge),fleek.xyz,76,Edge & Static Hosting,Free IPFS & decentralized edge hosting,GitHub / Google,https://fleek.xyz/
+26,Amazon S3 (AWS),amazonaws.com,96,Cloud Object Storage,"5 GB S3 standard storage, 20k GETs free",AWS Root / IAM,https://aws.amazon.com/s3/
+27,AWS Amplify Hosting,amplifyapp.com,96,Cloud Object Storage,Free tier static hosting & CDN,GitHub / AWS,https://aws.amazon.com/amplify/
+28,Google Cloud Storage (GCS),cloud.google.com,98,Cloud Object Storage,5 GB Always Free bucket storage,Google OAuth,https://cloud.google.com/storage
+29,Microsoft OneDrive,onedrive.live.com,97,Cloud Object Storage,5 GB free cloud storage & sharing links,Microsoft Account,https://onedrive.live.com/
+30,Microsoft Azure Blob Storage,azure.microsoft.com,97,Cloud Object Storage,5 GB LRS storage in 12-mo free tier,Microsoft OAuth,https://azure.microsoft.com/en-gb/products/storage/blobs
+31,Cloudflare R2,cloudflare.com,99,Cloud Object Storage,"10 GB/mo free storage, 0 egress fees",Cloudflare Account,https://www.cloudflare.com/developer-platform/r2/
+32,Backblaze B2,backblazeb2.com,88,Cloud Object Storage,10 GB free S3-compatible bucket storage,Email / Google,https://www.backblaze.com/cloud-storage
+33,Supabase Storage,supabase.co,89,Cloud Object Storage,1 GB free S3 bucket storage,GitHub OAuth,https://supabase.com/storage
+34,Appwrite Cloud Storage,appwrite.io,82,Cloud Object Storage,2 GB free asset bucket storage,GitHub OAuth,https://appwrite.io/
+35,Google Drive Vault,drive.google.com,100,Cloud Object Storage,15 GB shared Google Workspace storage,Google OAuth,https://drive.google.com/
+36,Internet Archive S3 (IAS3),archive.org,98,Cloud Object Storage,Unlimited permanent media archiving,Archive.org Account,https://archive.org/
+37,Wasabi Cloud Sync,wasabi.com,84,Cloud Object Storage,30-day free trial 1 TB hot storage,Email,https://wasabi.com/
+38,Storj Decentralized Cloud,storj.io,80,Cloud Object Storage,25 GB free decentralized storage forever,Email,https://www.storj.io/
+39,Filebase IPFS S3,filebase.com,75,Cloud Object Storage,5 GB free IPFS geo-redundant storage,Email / GitHub,https://filebase.com/
+40,Scaleway Object Storage,scaleway.com,83,Cloud Object Storage,75 GB free multi-AZ storage forever,Email,https://www.scaleway.com/en/object-storage/
+41,Oracle OCI Object Storage,oracle.com,93,Cloud Object Storage,20 GB Always Free object storage,Oracle Free Tier,https://www.oracle.com/cloud/free/
+42,DigitalOcean Spaces,digitalocean.com,92,Cloud Object Storage,60-day  free credit trial,GitHub / Google,https://www.digitalocean.com/products/spaces
+43,Linode Object Storage,linode.com,89,Cloud Object Storage, free credit trial,GitHub / Google,https://www.linode.com/products/object-storage/
+44,Vultr Object Storage,vultr.com,87,Cloud Object Storage, free credit trial,GitHub / Google,https://www.vultr.com/products/object-storage/
+45,Bunny.net Storage,bunny.net,85,Cloud Object Storage,14-day free trial global edge storage,Email,https://bunny.net/storage/
+46,IDrive e2,idrive.com,86,Cloud Object Storage,10 GB free S3-compatible cloud storage,Email,https://www.idrive.com/e2/
+47,Degoo Cloud,degoo.com,78,Cloud Object Storage,20 GB free cloud storage for assets,Google / Email,https://degoo.com/
+48,Mega.nz,mega.io,91,Cloud Object Storage,20 GB free encrypted cloud storage,Email,https://mega.io/
+49,Box.com Free,box.com,94,Cloud Object Storage,10 GB free secure cloud storage,Google / Email,https://www.box.com/
+50,Dropbox Basic,dropbox.com,96,Cloud Object Storage,2 GB free cloud storage & link sharing,Google / Apple / Email,https://www.dropbox.com/
+51,Cloudflare Workers,workers.dev,99,Serverless & Compute,"100,000 req/day free global V8 compute",Cloudflare Account,https://workers.cloudflare.com/
+52,Google Cloud Run,run.app,98,Serverless & Compute,2 million requests/month Always Free,Google OAuth,https://cloud.google.com/run
+53,Google Cloud Functions,cloud.google.com,98,Serverless & Compute,2 million invocations/month Always Free,Google OAuth,https://cloud.google.com/functions
+54,AWS Lambda,amazonaws.com,96,Serverless & Compute,1 million free requests/mo Always Free,AWS Root / IAM,https://aws.amazon.com/lambda/
+55,Microsoft Azure Functions,azure.microsoft.com,97,Serverless & Compute,1 million executions/mo Always Free,Microsoft OAuth,https://azure.microsoft.com/en-gb/products/functions
+56,Fastly Compute@Edge,fastly.com,92,Serverless & Compute,/mo free developer credit,GitHub / Google,https://www.fastly.com/products/edge-compute
+57,Docker Hub Registry,hub.docker.com,95,Container Registries,Unlimited public container repos,GitHub / Docker ID,https://hub.docker.com/
+58,GitHub Container Registry (GHCR),ghcr.io,98,Container Registries,"500 MB storage, free public packages",GitHub OAuth,https://github.com/features/packages
+59,GitLab Container Registry,registry.gitlab.com,95,Container Registries,10 GB free package/container storage,GitLab OAuth,https://docs.gitlab.com/ee/user/packages/container_registry/
+60,Quay.io (Red Hat),quay.io,86,Container Registries,Unlimited public container repos,Red Hat / GitHub,https://quay.io/
+61,AWS ECR Public Gallery,public.ecr.aws,96,Container Registries,50 GB/mo free public data transfer,AWS Root / IAM,https://gallery.ecr.aws/
+62,Hugging Face Spaces,huggingface.co,92,Serverless & Compute,Free 2 vCPU 16GB RAM Gradio/Docker app,GitHub / Email,https://huggingface.co/spaces
+63,Google Colab Cloud,colab.research.google.com,97,Serverless & Compute,Free GPU (T4) & CPU cloud runtimes,Google OAuth,https://colab.research.google.com/
+64,Kaggle Cloud Notebooks,kaggle.com,91,Serverless & Compute,Free 30 hrs/wk GPU & cloud compute,Google / Email,https://www.kaggle.com/
+65,Modal Labs,modal.com,75,Serverless & Compute,/mo free compute credits for python,GitHub OAuth,https://modal.com/
+66,Baseten,baseten.co,72,Serverless & Compute,Free model serving & microservice endpoints,GitHub / Google,https://www.baseten.co/
+67,Replicate,replicate.com,82,Serverless & Compute,Free trial API inference for AI/code,GitHub OAuth,https://replicate.com/
+68,RunPod Cloud,runpod.io,77,Serverless & Compute,Serverless GPU & CPU cloud endpoints,Google / Email,https://www.runpod.io/
+69,Beam.cloud,beam.cloud,69,Serverless & Compute,10 free hours of GPU compute/month,GitHub OAuth,https://beam.cloud/
+70,Cerebrium,cerebrium.ai,68,Serverless & Compute, free credits for serverless compute,GitHub OAuth,https://www.cerebrium.ai/
+71,Val.town,val.town,74,Serverless & Compute,Free social JavaScript/TypeScript runtimes,GitHub OAuth,https://www.val.town/
+72,Pipedream Cloud,pipedream.com,84,Serverless & Compute,333 free credits/day for APIs & code,GitHub / Google,https://pipedream.com/
+73,Zapier Central Cloud,zapier.com,91,Serverless & Compute,Free tier 100 tasks/month for webhooks,Google / Microsoft,https://zapier.com/
+74,Make.com (Integromat),make.com,88,Serverless & Compute,"1,000 operations/month free forever",Google / GitHub,https://www.make.com/
+75,n8n Cloud Community,n8n.io,86,Serverless & Compute,Self-hostable or cloud trial workflows,GitHub / Email,https://n8n.io/
+76,Supabase (Postgres & Auth),supabase.com,89,Cloud Databases & BaaS,"2 free Postgres DBs, 500MB storage",GitHub OAuth,https://supabase.com/
+77,Neon Serverless Postgres,neon.tech,84,Cloud Databases & BaaS,"0.5 GB storage, serverless autoscaling",GitHub / Google,https://neon.tech/
+78,PlanetScale Serverless MySQL,planetscale.com,85,Cloud Databases & BaaS,Free developer tier for scalable MySQL,GitHub OAuth,https://planetscale.com/
+79,Turso (libSQL / SQLite Edge),turso.tech,81,Cloud Databases & BaaS,"9 GB storage, 500 databases free",GitHub OAuth,https://turso.tech/
+80,MongoDB Atlas Cloud,mongodb.com,93,Cloud Databases & BaaS,512 MB free cluster (M0) forever,Google / GitHub,https://www.mongodb.com/cloud/atlas
+81,CockroachDB Serverless,cockroachlabs.com,84,Cloud Databases & BaaS,"5 GB free storage, 50M request units/mo",GitHub / Google,https://www.cockroachlabs.com/
+82,Firebase Cloud Firestore,firebase.google.com,99,Cloud Databases & BaaS,"1 GB storage, 50k reads/day free",Google OAuth,https://firebase.google.com/products/firestore
+83,Firebase Realtime Database,firebase.google.com,99,Cloud Databases & BaaS,"1 GB storage, 10 GB/mo transfer free",Google OAuth,https://firebase.google.com/products/realtime-database
+84,Upstash Serverless Redis,upstash.com,80,Cloud Databases & BaaS,"10,000 commands/day free forever",GitHub / Google,https://upstash.com/
+85,Upstash Vector Database,upstash.com,80,Cloud Databases & BaaS,Free vector index for AI search & rag,GitHub / Google,https://upstash.com/vector
+86,Upstash QStash,upstash.com,80,Cloud Databases & BaaS,Serverless message queue & scheduler,GitHub / Google,https://upstash.com/qstash
+87,Convex Cloud Backend,convex.dev,76,Cloud Databases & BaaS,1 million function calls/mo free,GitHub OAuth,https://www.convex.dev/
+88,Xata Serverless Data Platform,xata.io,78,Cloud Databases & BaaS,"15 GB free storage, built-in search",GitHub / Google,https://xata.io/
+89,PocketBase Cloud,pocketbase.io,82,Cloud Databases & BaaS,Lightweight SQLite embedded BaaS,Open Source / Self,https://pocketbase.io/
+90,Directus Cloud,directus.io,83,Cloud Databases & BaaS,Open data platform & headless CMS,GitHub / Google,https://directus.io/
+91,NocoDB Cloud,nocodb.com,79,Cloud Databases & BaaS,Open-source Airtable alternative,GitHub / Google,https://nocodb.com/
+92,Baserow Cloud,baserow.io,78,Cloud Databases & BaaS,"3,000 rows free no-code relational DB",Email / Google,https://baserow.io/
+93,Aiven Cloud Databases,aiven.io,82,Cloud Databases & BaaS,"Free trial PostgreSQL, MySQL, Redis",Google / GitHub,https://aiven.io/
+94,Tembo Cloud Postgres,tembo.io,72,Cloud Databases & BaaS,Free developer instance with extensions,GitHub OAuth,https://tembo.io/
+95,TiDB Cloud (Serverless),pingcap.com,81,Cloud Databases & BaaS,"5 GB free storage, HTAP SQL",GitHub / Google,https://www.pingcap.com/tidb-cloud/
+96,SurrealDB Cloud,surrealdb.com,79,Cloud Databases & BaaS,Free multi-model database tier,Email / GitHub,https://surrealdb.com/
+97,HarperDB Cloud,harperdb.io,74,Cloud Databases & BaaS,Free single-instance database in cloud,Email,https://harperdb.io/
+98,FaunaDB Cloud,fauna.com,82,Cloud Databases & BaaS,Free tier document-relational database,GitHub / Google,https://fauna.com/
+99,Hasura Cloud (GraphQL),hasura.io,84,Cloud Databases & BaaS,Free tier GraphQL engine on Postgres,GitHub OAuth,https://hasura.io/
+100,Prisma Data Platform,prisma.io,88,Cloud Databases & BaaS,Free serverless connection pooling & proxy,GitHub OAuth,https://www.prisma.io/data-platform
