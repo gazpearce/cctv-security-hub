@@ -1,6 +1,6 @@
 {
   "total_platforms": 154,
-  "joined_count": 58,
+  "joined_count": 60,
   "platforms": [
     {
       "rank": "1",
@@ -1384,8 +1384,8 @@
       "free_tier": "Free front-end HTML/CSS/JS interactive pens",
       "sso_method": "GitHub / Google",
       "signup_url": "https://codepen.io/accounts/signup",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://codepen.io/aiagent1510",
       "rank": "113"
     },
     {
@@ -1480,8 +1480,8 @@
       "free_tier": "Free website builder on wixsite.com",
       "sso_method": "Google / Email",
       "signup_url": "https://users.wix.com/signin",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://aiagent1510.wixsite.com/cctv/blog",
       "rank": "121"
     },
     {

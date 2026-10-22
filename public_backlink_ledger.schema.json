@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gary-pearce-forensic-hub.web.app/schemas/public_backlink_master_ledger.schema.json",
+  "title": "PublicBacklinkMasterLedger",
+  "description": "JSON Schema Draft 2020-12 definition for ADI Communications Public Backlink Discovery Ledger.",
+  "type": "object",
+  "required": [
+    "$schema",
+    "version",
+    "title",
+    "lead_engineer",
+    "rule_45_shield",
+    "total_backlinks",
+    "last_updated",
+    "entries"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "https://json-schema.org/draft/2020-12/schema"
+    },
+    "version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "lead_engineer": {
+      "type": "string"
+    },
+    "rule_45_shield": {
+      "type": "string",
+      "const": "STRICT_AIR_GAP"
+    },
+    "total_backlinks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "last_updated": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "platform",
+          "category_stack",
+          "tenant_url",
+          "anchor_text",
+          "apex_target",
+          "http_status",
+          "index_status",
+          "last_verified"
+        ],
+        "properties": {
+          "platform": { "type": "string", "minLength": 1 },
+          "category_stack": { "type": "string", "minLength": 1 },
+          "tenant_url": { "type": "string" },
+          "anchor_text": { "type": "string", "minLength": 1 },
+          "apex_target": { "type": "string" },
+          "http_status": { "type": ["string", "integer"] },
+          "index_status": { "type": "string" },
+          "last_verified": { "type": "string" },
+          "timestamp": { "type": "string" },
+          "category": { "type": "string" },
+          "asset_title": { "type": "string" },
+          "asset_type": { "type": "string" },
+          "public_live_url": { "type": "string" },
+          "top_of_stack_apex_url": { "type": "string" },
+          "shield_target_url": { "type": "string" },
+          "seo_tags": { "type": "string" },
+          "seo_description": { "type": "string" },
+          "dofollow_status": { "type": "string" },
+          "indexing_method": { "type": "string" },
+          "verified_http_status": { "type": ["string", "integer"] },
+          "responsible_agent": { "type": "string" }
+        }
+      }
+    }
+  }
+}

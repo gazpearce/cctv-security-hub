@@ -111,7 +111,7 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 110,Hashnode,hashnode.com,88,Blog & Editorial Networks,Free developer blogging on custom or hashnode subdomains,GitHub / Google,https://hashnode.com/,JOINED,https://hashnode.com/@hardwire
 111,Substack,substack.com,92,Blog & Editorial Networks,Free newsletter & article publishing,Google / Email,https://substack.com/signup,PENDING,
 112,Medium,medium.com,95,Blog & Editorial Networks,Free publishing to global readership,Google / Email,https://medium.com/m/signin,PENDING,
-113,CodePen,codepen.io,93,Developer & Interactive Pens,Free front-end HTML/CSS/JS interactive pens,GitHub / Google,https://codepen.io/accounts/signup,PENDING,
+113,CodePen,codepen.io,93,Developer & Interactive Pens,Free front-end HTML/CSS/JS interactive pens,GitHub / Google,https://codepen.io/accounts/signup,JOINED,https://codepen.io/aiagent1510
 114,JSFiddle,jsfiddle.net,90,Developer & Interactive Pens,Embeddable live JavaScript calculators,GitHub / Google,https://jsfiddle.net/user/login/,PENDING,
 115,StackBlitz,stackblitz.com,89,Developer & Interactive Pens,WebContainers in-browser full stack apps,GitHub / Google,https://stackblitz.com/,PENDING,
 116,CodeSandbox,codesandbox.io,90,Developer & Interactive Pens,Cloud development sandboxes & live previews,GitHub / Google,https://codesandbox.io/signin,PENDING,
@@ -119,7 +119,7 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 118,Carrd,carrd.co,89,Edge & Static Hosting,3 free responsive one-page micro-sites,Email,https://carrd.co/build,PENDING,
 119,Framer,framer.com,88,Edge & Static Hosting,Free responsive visual landing pages,Google / Email,https://www.framer.com/signup/,PENDING,
 120,Webflow,webflow.com,92,Edge & Static Hosting,2 free unhosted design projects on webflow.io,Google / Email,https://webflow.com/dashboard/signup,PENDING,
-121,Wix,wix.com,94,Edge & Static Hosting,Free website builder on wixsite.com,Google / Email,https://users.wix.com/signin,PENDING,
+121,Wix,wix.com,94,Edge & Static Hosting,Free website builder on wixsite.com,Google / Email,https://users.wix.com/signin,JOINED,https://aiagent1510.wixsite.com/cctv/blog
 122,Notion Sites,notion.so,93,Documentation & Knowledge Bases,Publish any Notion page to the web,Google / Email,https://www.notion.so/signup,PENDING,
 123,Codeberg,codeberg.org,85,Cloud Repositories & CI/CD,Free European open-source Git hosting & Pages,Codeberg OAuth,https://codeberg.org/user/sign_up,PENDING,
 124,Google AI Studio,aistudio.google.com,98,AI Inference & Development,Free Gemini API rate limits & prompt tuning,Google OAuth,https://aistudio.google.com/,JOINED,https://aistudio.google.com/

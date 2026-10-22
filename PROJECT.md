@@ -23,8 +23,8 @@
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
 | M1 | Automated Verification & Onboarding Engine | Fix auto_email_verifier.py tab selector, verify CDP 9223 live inbox OTP extraction, build automated platform onboarding script (outputs: auto_email_verifier.py, automated_platform_onboarder.py, 154 platforms in master_cloud_signup_tracker.json & doc2_cloud_stack_100.csv with 0 parity errors, CDP port 9223 verified, all test suites passed) | none | DONE |
-| M2 | Multi-Category Stack & Profile Standardization | Verify 11 Google Apex entities, enforce Gary Pearce E-E-A-T metadata, enforce Rule 45 zero raw root link firewall | M1 | IN_PROGRESS |
-| M3 | Backlink Ledger Synchronization & Publishing | Ingest new endpoints into doc3, compile public_backlink_master_ledger.csv/json/html, verify HTTP 200 statuses | M2 | PLANNED |
+| M2 | Multi-Category Stack & Profile Standardization | Verify 11 Google Apex entities, enforce Gary Pearce E-E-A-T metadata, enforce Rule 45 zero raw root link firewall (outputs: 100 established profiles standardized across 11 category stacks in doc2_established_profiles_list.csv, master_profile_manifest.json v2.1.0 Draft 2020-12 compliant, package.json Rule 45 cleaned, verify_no_root_anchors hardened) | M1 | DONE |
+| M3 | Backlink Ledger Synchronization & Publishing | Ingest new endpoints into doc3, compile public_backlink_master_ledger.csv/json/html, verify HTTP 200 statuses | M2 | IN_PROGRESS |
 | M4 | Master /gstack Swarm Orchestration Skill | Validate and configure /gstack master skill, verify subagent dispatching interfaces, ensure command execution parity | M3 | PLANNED |
 | M5 | Final Milestone: 100% E2E Test Pass & Hardening | Pass 100% of E2E test suite (Tiers 1-4), perform Tier 5 adversarial hardening with Challenger | M4, E2E_TRACK | PLANNED |
 | E2E | E2E Testing Track | Requirement-driven test harness, 4-tier opaque-box test suite covering all features, publish TEST_READY.md | none | DONE |
