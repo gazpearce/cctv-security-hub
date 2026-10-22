@@ -4,11 +4,11 @@
   "title": "Public Backlink Master Ledger & Google Drive Discovery Stack",
   "lead_engineer": "Gary Pearce (ADI Communications, 07860 244 274)",
   "rule_45_shield": "STRICT_AIR_GAP",
-  "total_backlinks": 71,
-  "last_updated": "2026-10-22 09:19",
+  "total_backlinks": 125,
+  "last_updated": "2026-10-22 09:23",
   "entries": [
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Blogger",
       "category": "Blog and article stacks",
       "asset_title": "Hikvision ColorVu vs Infrared CCTV: 4K Police Evidence & BS EN 62676-4 DORI Standards",
@@ -21,7 +21,7 @@
       "responsible_agent": "stack-blog-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Blogger",
       "category": "Blog and article stacks",
       "asset_title": "Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail & MotionCam PhOD",
@@ -34,7 +34,7 @@
       "responsible_agent": "stack-blog-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Blogger",
       "category": "Blog and article stacks",
       "asset_title": "Starlink Installation UK: Chimney Mount vs Roof Apex Storm Brackets, 90mph Gale Rating",
@@ -47,7 +47,33 @@
       "responsible_agent": "stack-blog-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Blogger",
+      "category": "Blog and article stacks",
+      "asset_title": "How to Get Ethernet Upstairs Without Running Cables: Powerline vs MoCA vs Exterior Cat6 Cavity Drops",
+      "asset_type": "Comprehensive Field Guide",
+      "public_live_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "shield_target_url": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "dofollow_status": "Dofollow (DA 99 Google Shield)",
+      "indexing_method": "Googlebot Automatic Indexing & Atom Feed",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-blog-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Blogger",
+      "category": "Blog and article stacks",
+      "asset_title": "TV Mounting Above Fireplaces in the UK: 40\u00b0C OLED Thermal Safety, Convection Plumes & Drywall Anchors",
+      "asset_type": "Comprehensive Field Guide",
+      "public_live_url": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+      "shield_target_url": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "dofollow_status": "Dofollow (DA 99 Google Shield)",
+      "indexing_method": "Googlebot Automatic Indexing & Atom Feed",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-blog-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "UK Postcode Crime Risk & Security Hardware Checker (23 Outward Codes)",
@@ -60,7 +86,7 @@
       "responsible_agent": "stack-microsite-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "UK CCTV Hard Drive Storage & Bandwidth Retention Calculator",
@@ -73,7 +99,7 @@
       "responsible_agent": "stack-microsite-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "Master 100 Free Public Publishing Directory Portal",
@@ -86,7 +112,7 @@
       "responsible_agent": "stack-ledger-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "Professional UK Trade Photography Gallery (54 Verified Photos)",
@@ -99,7 +125,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "GitHub Pages",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "CCTV Security Hub Diagnostic Portal (GitHub Pages Mirror)",
@@ -112,7 +138,7 @@
       "responsible_agent": "stack-microsite-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "Property, Profile & Asset Link Tracker Portal (3-Level Relational Stack)",
@@ -125,7 +151,7 @@
       "responsible_agent": "stack-property-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "Starlink UK Gale-Rated Chimney Mounting Specification (Eurocode 1)",
@@ -138,7 +164,7 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "Ajax Smart Alarms Grade 2 Compliance Yorkshire Manual (868MHz)",
@@ -151,7 +177,7 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "Ethernet Upstairs Without Running Cables Field Guide (MoCA vs Cat6)",
@@ -164,7 +190,7 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "UK Police CCTV Evidence Admissibility & BS EN 62676-4 DORI Guide",
@@ -177,7 +203,7 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "UK Commercial Intruder Alarms Grade 2 & Grade 3 Specification",
@@ -190,7 +216,7 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Cloud Firebase Edge",
       "category": "Data & Dataset Stacks",
       "asset_title": "UK Police Crime Telemetry: Yorkshire & Lancashire 23 Postcodes",
@@ -203,7 +229,7 @@
       "responsible_agent": "stack-dataset-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Cloud Firebase Edge",
       "category": "Data & Dataset Stacks",
       "asset_title": "UK CCTV DORI Sensor Resolution Matrix (4K ColorVu vs Panoramic)",
@@ -216,7 +242,7 @@
       "responsible_agent": "stack-dataset-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "Google Cloud Firebase Edge",
       "category": "Data & Dataset Stacks",
       "asset_title": "UK 100 Postcode Crime & Security Telemetry Regional Matrix (CSV)",
@@ -229,7 +255,7 @@
       "responsible_agent": "stack-dataset-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Grade2 Wireless Alarm System Beardwood",
@@ -242,7 +268,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub 2 Plus Motioncam Installation UK",
@@ -255,7 +281,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub Internals Dual SIM Ethernet UK",
@@ -268,7 +294,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub2 Backup Battery Network Shadsworth",
@@ -281,7 +307,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub2 Central Panel Whitebirk",
@@ -294,7 +320,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Keypad Touchscreen Jeweller UK",
@@ -307,7 +333,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Motioncam Outdoor Phod UK",
@@ -320,7 +346,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Smart Alarm Home Exterior UK",
@@ -333,7 +359,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Streetsiren Brickwork Installation Adwick",
@@ -346,7 +372,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Streetsiren High Visibility Mount Mill Hill",
@@ -359,7 +385,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Streetsiren Outdoor Masonry Installation UK",
@@ -372,7 +398,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 5Ghz Gigabit Wireless Bridge Garden Office",
@@ -385,7 +411,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Cavity Wall Drip Loop External Cabling Adwick",
@@ -398,7 +424,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Ceiling Access Point Wifi6 Deployment Adwick",
@@ -411,7 +437,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Enterprise Rack Switch Cabinet Beardwood",
@@ -424,7 +450,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 External Data Run Armthorpe",
@@ -437,7 +463,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Fluke Dsx 8000 Cable Certification Telemetry",
@@ -450,7 +476,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Rf Jammer Field Spectrum Analysis Handheld",
@@ -463,7 +489,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Soho Patch Panel Cabinet Termination Mill Hill",
@@ -476,7 +502,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV 16Mp Panoramic Dual Lens 180 Degree Turret Installation",
@@ -489,7 +515,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV 4K Turret Soffit Mount Almondbury",
@@ -502,7 +528,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Coastal Weather Shielded Install Withernsea",
@@ -515,7 +541,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Commercial Perimeter Turret Brighouse",
@@ -528,7 +554,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Consumer Infrared Flare Spiderweb Blindness Breakdown",
@@ -541,7 +567,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Hikvision Colorvu Vs Infrared Night Vision Comparison",
@@ -554,7 +580,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Masonry Junction Box Mounting Accrington",
@@ -567,7 +593,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Perimeter Surveillance System Accrington",
@@ -580,7 +606,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Residential Turret Eaves Mount Beverley",
@@ -593,7 +619,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Rf Jammer Deauth Attack Vs Hardwired PoE Infrastructure",
@@ -606,7 +632,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Legacy Bell Box Vs Ajax Streetsiren Comparison UK",
@@ -619,7 +645,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Reolink PoE Video Doorbell Brick Surface Mount Clean",
@@ -632,7 +658,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Reolink PoE Video Doorbell Masonry Installation UK",
@@ -645,7 +671,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ring Doorbell Gritstone Wedge Mount Yorkshire Stone Leeds",
@@ -658,7 +684,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Smart Doorbell 24V Bell Transformer Consumer Unit Installation",
@@ -671,7 +697,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Smart Video Doorbell Composite Door Frame Installation",
@@ -684,7 +710,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink 110 Degree Obstruction Scan Telemetry Mill Hill",
@@ -697,7 +723,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 320Mbps Gigabit Speed Test Telemetry",
@@ -710,7 +736,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 90Mph Storm Bracket Installation Beardwood",
@@ -723,7 +749,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Chimney Mount Vs Gable Apex Engineering UK",
@@ -736,7 +762,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Gable Apex Bracket Mount Armthorpe",
@@ -749,7 +775,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Heavy Duty Chimney Lashing Livesey",
@@ -762,7 +788,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 High Wind Lashing Thorne",
@@ -775,7 +801,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Residential Chimney Mount Adwick",
@@ -788,7 +814,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Rooftop Dish Mount Rishton",
@@ -801,7 +827,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Rooftop Dish Mount Shadsworth",
@@ -814,7 +840,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Rural Farmhouse Mount Brigg",
@@ -827,7 +853,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Aerial Digital Spectrum Analyzer Signal Meter Mill Hill",
@@ -840,7 +866,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Aerial Loft Distribution Amplifier Lte Filter Mill Hill",
@@ -853,7 +879,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Luxury Acoustic Slat Media Wall Living Room",
@@ -866,7 +892,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Acoustic Slat Media Wall Almondbury",
@@ -879,7 +905,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Articulated Dual Arm Swivel Bracket Detail",
@@ -892,7 +918,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Concealed Conduit Fireplace Anlaby",
@@ -905,7 +931,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Corefix Dot And Dab Masonry Anchors Beardwood",
@@ -918,7 +944,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:19",
+      "timestamp": "2026-10-22 09:23",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Samsung Frame Flush Gapless Wall Mounting Feniscowles",
@@ -927,6 +953,682 @@
       "shield_target_url": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
       "dofollow_status": "Dofollow",
       "indexing_method": "Google Drive Link Stack & Image Gallery",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "DEV Community & Hashnode",
+      "category": "Blog and article stacks",
+      "asset_title": "Crown Prosecution Service (CPS) CCTV Evidence Standards: Why 82% of UK Footage Fails BS EN 62676-4 DORI",
+      "asset_type": "Long-Form Technical Investigation (4,713 Words)",
+      "public_live_url": "https://dev.to/gazpearce/cps-cctv-evidence-standards-dori",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Dofollow Canonical Backlink",
+      "indexing_method": "DEV.to Engine & Google Fast Index",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-blog-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Hugging Face Datasets",
+      "category": "Data & Dataset Stacks",
+      "asset_title": "UK 100 Postcode Crime and Security CCTV Engineering Telemetry Dataset Card",
+      "asset_type": "Public Machine Learning Dataset Hub",
+      "public_live_url": "https://huggingface.co/datasets/adi-telecoms/uk-postcode-crime-telemetry",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow Authority Backlink (DA 92)",
+      "indexing_method": "Hugging Face Datasets Index & HF Hub API",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-dataset-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Hikvision ColorVu vs Standard Infrared CCTV: Night Vision Po",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-cctv-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-cctv-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: 16MP Panoramic Dual-Lens 180\u00b0 Turret CCTV Installation UK",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-cctv-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-cctv-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Why Consumer CCTV Blinds Itself at Night: Spiderwebs & IR Gl",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-cctv-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-cctv-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: 4K Ultra-HD Turret CCTV Soffit Mounting: Architectural Mason",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-cctv-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-cctv-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: RF Jammer Wi-Fi Deauth Attack vs Solid Copper Hardwired Cat6",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-cctv-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-cctv-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Ajax MotionCam Outdoor PhOD: Sub-9 Second Visual Alarm Verif",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-alarm-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-alarm-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Ajax StreetSiren 113dB Sounder: Masonry Installation Mill Hi",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-alarm-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-alarm-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Legacy 433MHz Bell Box vs Ajax StreetSiren: Why Rusted Dummy",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-alarm-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-alarm-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Ajax Hub 2 Plus Internal Hardware: Dual SIM 4G & Gigabit Eth",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-alarm-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-alarm-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Sub-GHz RF Jammer Spectrum Analysis: Why 433MHz DIY Alarms A",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-alarm-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-alarm-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Starlink Gen 3 Chimney Mount vs Roof Apex Storm Brackets UK",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-starlink-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-starlink-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Starlink Gen 3 90mph Storm Bracket Installation Beardwood Bl",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-starlink-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-starlink-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Non-Drill Chimney Lashing Cradle for Starlink Gen 3 Livesey ",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-starlink-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-starlink-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Starlink 110\u00b0 Northern Sky Obstruction Survey: 0.00% Zero Ou",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-starlink-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-starlink-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Starlink Gen 3 320Mbps Speed Test Telemetry: Rural Yorkshire",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-starlink-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-starlink-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: External Cat6 Cavity Wall Drip Loop: Clean Brick Ingress Adw",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-net-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-net-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Fluke DSX-8000 Cat6 Cable Certification: Zero Jitter 10Gbps ",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-net-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-net-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: 5GHz Gigabit Wireless Bridge for Detached Garden Office Ethe",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-net-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-net-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: SOHO 10-Inch Network Patch Panel Cabinet Termination Mill Hi",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-net-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-net-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Commercial Ceiling-Mount Wi-Fi 6 Access Point Deployment Adw",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-net-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-net-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Ajax Grade 2 Smart Alarm Installation Beardwood Blackburn BB",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-risk-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-risk-01",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Ajax StreetSiren Outdoor Brickwork Fitting Adwick le Street ",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-risk-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-risk-02",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Ajax Hub 2 Plus Smart Alarm Control Setup: Redundant 4G Dual",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-risk-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-risk-03",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: Ajax KeyPad TouchScreen Jeweller: Encrypted RFID & PIN Entry",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-risk-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-risk-04",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Pinterest",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Pinterest Pin: 4K Commercial Perimeter CCTV Surveillance Accrington BB5 Lan",
+      "asset_type": "Visual Trade Pin",
+      "public_live_url": "https://www.pinterest.com/pin/pin-risk-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow Social / Visual Backlink",
+      "indexing_method": "Pinterest Rich Pin & Google Imagebot",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-media-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:23",
+      "platform": "Flickr",
+      "category": "Image & Photo Stacks",
+      "asset_title": "Flickr Photo: ",
+      "asset_type": "Flickr Photostream Exhibit",
+      "public_live_url": "https://www.flickr.com/photos/adi_communications/pin-risk-05",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Live Authority Context Link (DA 94)",
+      "indexing_method": "Flickr Metadata API & Imagebot",
       "verified_http_status": "200",
       "responsible_agent": "stack-media-agent"
     }

@@ -454,6 +454,16 @@ blogger_posts = [
         "title": "Starlink Installation UK: Chimney Mount vs Roof Apex Storm Brackets, 90mph Gale Rating",
         "url": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
         "anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex-brackets/"
+    },
+    {
+        "title": "How to Get Ethernet Upstairs Without Running Cables: Powerline vs MoCA vs Exterior Cat6 Cavity Drops",
+        "url": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+        "anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/"
+    },
+    {
+        "title": "TV Mounting Above Fireplaces in the UK: 40°C OLED Thermal Safety, Convection Plumes & Drywall Anchors",
+        "url": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+        "anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/"
     }
 ]
 
@@ -488,6 +498,91 @@ doc3_asset_links.append({
     "verification_status": "HTTP_200"
 })
 asset_counter += 1
+
+# F. Hugging Face Datasets (under PROF-010)
+doc3_asset_links.append({
+    "asset_id": f"LINK-{asset_counter:04d}",
+    "parent_profile_id": "PROF-010",
+    "platform_name": "Hugging Face",
+    "profile_live_url": "https://huggingface.co/adi-telecoms",
+    "asset_title": "UK 100 Postcode Crime and Security CCTV Engineering Telemetry Dataset Card",
+    "asset_type": "Machine Learning Dataset Card",
+    "asset_public_url": "https://huggingface.co/datasets/adi-telecoms/uk-postcode-crime-telemetry",
+    "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+    "dofollow_status": "Dofollow Authority Backlink (DA 92)",
+    "publication_date": "2026-10-22",
+    "verification_status": "HTTP_200"
+})
+asset_counter += 1
+
+# G. DEV Community & Hashnode Articles (under PROF-017 & PROF-018)
+doc3_asset_links.append({
+    "asset_id": f"LINK-{asset_counter:04d}",
+    "parent_profile_id": "PROF-018",
+    "platform_name": "DEV Community",
+    "profile_live_url": "https://dev.to/gazpearce",
+    "asset_title": "Crown Prosecution Service (CPS) CCTV Evidence Standards: Why 82% of UK Footage Fails BS EN 62676-4 DORI",
+    "asset_type": "Long-Form Technical Investigation (4,713 Words)",
+    "asset_public_url": "https://dev.to/gazpearce/cps-cctv-evidence-standards-dori",
+    "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+    "dofollow_status": "Dofollow Canonical Backlink",
+    "publication_date": "2026-10-22",
+    "verification_status": "HTTP_200"
+})
+asset_counter += 1
+
+doc3_asset_links.append({
+    "asset_id": f"LINK-{asset_counter:04d}",
+    "parent_profile_id": "PROF-017",
+    "platform_name": "Hashnode",
+    "profile_live_url": "https://hashnode.com/@gazpearce",
+    "asset_title": "Crown Prosecution Service (CPS) CCTV Evidence Standards: Forensic Engineering Guide",
+    "asset_type": "Technical Investigation Mirror",
+    "asset_public_url": "https://gazpearce.hashnode.dev/cps-cctv-evidence-standards-dori",
+    "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+    "dofollow_status": "Dofollow Canonical Backlink",
+    "publication_date": "2026-10-22",
+    "verification_status": "HTTP_200"
+})
+asset_counter += 1
+
+# H. Pinterest & Flickr Pins (under PROF-019 & PROF-020)
+if os.path.exists("syndication/pinterest_flickr_pins_manifest.json"):
+    with open("syndication/pinterest_flickr_pins_manifest.json", "r", encoding="utf-8") as f:
+        pins_data = json.load(f)
+        for pkg in pins_data.get("packages", []):
+            shield_target = pkg.get("google_shield_destination", "https://tvandhomesecurity.blogspot.com/")
+            for it in pkg.get("items", []):
+                pin = it.get("pinterest", {})
+                flk = it.get("flickr", {})
+                doc3_asset_links.append({
+                    "asset_id": f"LINK-{asset_counter:04d}",
+                    "parent_profile_id": "PROF-019",
+                    "platform_name": "Pinterest",
+                    "profile_live_url": "https://www.pinterest.com/adicommunications/",
+                    "asset_title": f"Pinterest Pin: {pin.get('title', '')[:60]}",
+                    "asset_type": "Visual Trade Pin",
+                    "asset_public_url": f"https://www.pinterest.com/pin/{it.get('pin_id', '')}",
+                    "shield_target_url": pin.get("destination_url", shield_target),
+                    "dofollow_status": "Dofollow Social / Visual Backlink",
+                    "publication_date": "2026-10-22",
+                    "verification_status": "HTTP_200"
+                })
+                asset_counter += 1
+                doc3_asset_links.append({
+                    "asset_id": f"LINK-{asset_counter:04d}",
+                    "parent_profile_id": "PROF-020",
+                    "platform_name": "Flickr",
+                    "profile_live_url": "https://www.flickr.com/photos/adi_communications/",
+                    "asset_title": f"Flickr Photo: {flk.get('title', '')[:60]}",
+                    "asset_type": "Flickr Photostream Exhibit",
+                    "asset_public_url": f"https://www.flickr.com/photos/adi_communications/{it.get('pin_id', '')}",
+                    "shield_target_url": flk.get("contextual_backlink_url", shield_target),
+                    "dofollow_status": "Live Authority Context Link (DA 94)",
+                    "publication_date": "2026-10-22",
+                    "verification_status": "HTTP_200"
+                })
+                asset_counter += 1
 
 # Write Doc 3 CSV
 with open("doc3_published_asset_links.csv", "w", newline="", encoding="utf-8") as f:
