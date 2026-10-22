@@ -1,0 +1,10 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp -r *.html *.js *.json *.xml *.txt assets audio public/ 2>/dev/null || cp -r * public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
