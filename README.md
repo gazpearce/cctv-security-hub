@@ -2,11 +2,11 @@
 
 [![Live Web Tools](https://img.shields.io/badge/Live%20Web%20Apps-10%20Active%20Tools-FF5500?style=for-the-badge)](https://gazpearce.github.io/cctv-security-hub/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![British Standards](https://img.shields.io/badge/Standards-BS%20EN%2062676--4%20%7C%20BS%20EN%2050131%20%7C%20BS%207671-emerald?style=for-the-badge)](https://adicommunications.co.uk/)
+[![British Standards](https://img.shields.io/badge/Standards-BS%20EN%2062676--4%20%7C%20BS%20EN%2050131%20%7C%20BS%207671-emerald?style=for-the-badge)](https://gary-pearce-forensic-hub.web.app/)
 [![YouTube Verified](https://img.shields.io/badge/YouTube-CCTV.services-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@CCTV.services)
 [![GitLab Mirror](https://img.shields.io/badge/GitLab-Mirror%20Repo-orange?style=for-the-badge&logo=gitlab)](https://gitlab.com/aiagent1510/cctv-security-hub)
 
-Official open-source engineering calculation models, interactive diagnostic web applications, and technical field specifications engineered by **Gary Pearce** (Lead Physical Infrastructure & Electronic Security Engineer, [ADI Communications](https://adicommunications.co.uk/), Direct Line: `07860 244 274`).
+Official open-source engineering calculation models, interactive diagnostic web applications, and technical field specifications engineered by **Gary Pearce** (Lead Physical Infrastructure & Electronic Security Engineer, [ADI Communications Citadel](https://gary-pearce-forensic-hub.web.app/), Direct Line: `07860 244 274`).
 
 ---
 
@@ -146,5 +146,5 @@ The suite is engineered for zero-latency global delivery across redundant edge c
 * **Hands-On Experience**: 25+ Years Physical Security, Aerials, Satellite & Data Cabling
 * **Insurance**: £10 Million Public Liability Insurance
 * **Direct Mobile**: `07860 244 274`
-* **Website**: [adicommunications.co.uk](https://adicommunications.co.uk/)
+* **Citadel Hub**: [gary-pearce-forensic-hub.web.app](https://gary-pearce-forensic-hub.web.app/)
 * **Blog**: [tvandhomesecurity.blogspot.com](https://tvandhomesecurity.blogspot.com/)

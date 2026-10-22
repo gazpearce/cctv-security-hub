@@ -1,7 +1,7 @@
 /**
  * CCTV & Telecom Engineering Mathematics Library (v1.0.0)
  * Open-source physics, electrical, and optical calculations for UK physical security & telecommunications.
- * Developed by Gary Pearce / ADI Communications (https://adicommunications.co.uk | 07860 244 274)
+ * Developed by Gary Pearce / ADI Communications (https://gary-pearce-forensic-hub.web.app/ | 07860 244 274)
  * License: MIT
  */
 
