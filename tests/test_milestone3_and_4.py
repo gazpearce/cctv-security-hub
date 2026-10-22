@@ -88,8 +88,12 @@ class TestMilestone3And4(unittest.TestCase):
     def test_m4_01_orchestrator_subcommands(self):
         orch = REPO_ROOT / "swarm_stack_orchestrator.py"
         res = subprocess.run([sys.executable, str(orch), "--help"], capture_output=True, text=True, cwd=str(REPO_ROOT))
-        if "status" not in res.stdout:
-            self.skipTest("Milestone 4 orchestrator subcommands not yet implemented (scheduled for worker_m4_1)")
+        self.assertEqual(res.returncode, 0, f"--help failed: {res.stderr}")
+        self.assertIn("status", res.stdout)
+        self.assertIn("sync", res.stdout)
+        self.assertIn("audit", res.stdout)
+        self.assertIn("verify", res.stdout)
+        self.assertIn("deploy", res.stdout)
 
         for subcmd in ["status", "sync", "audit", "verify"]:
             res = subprocess.run([sys.executable, str(orch), subcmd], capture_output=True, text=True, cwd=str(REPO_ROOT))
@@ -97,10 +101,6 @@ class TestMilestone3And4(unittest.TestCase):
 
     def test_m4_02_orchestrator_deploy_dry_run(self):
         orch = REPO_ROOT / "swarm_stack_orchestrator.py"
-        res = subprocess.run([sys.executable, str(orch), "--help"], capture_output=True, text=True, cwd=str(REPO_ROOT))
-        if "status" not in res.stdout:
-            self.skipTest("Milestone 4 orchestrator deploy subcommand not yet implemented (scheduled for worker_m4_1)")
-
         res = subprocess.run([sys.executable, str(orch), "deploy", "--skip-deploy"], capture_output=True, text=True, cwd=str(REPO_ROOT))
         self.assertEqual(res.returncode, 0, f"deploy --skip-deploy failed: {res.stderr}")
 
