@@ -4,11 +4,11 @@
   "title": "Public Backlink Master Ledger & Google Drive Discovery Stack",
   "lead_engineer": "Gary Pearce (ADI Communications, 07860 244 274)",
   "rule_45_shield": "STRICT_AIR_GAP",
-  "total_backlinks": 67,
-  "last_updated": "2026-10-22 09:15",
+  "total_backlinks": 71,
+  "last_updated": "2026-10-22 09:19",
   "entries": [
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Blogger",
       "category": "Blog and article stacks",
       "asset_title": "Hikvision ColorVu vs Infrared CCTV: 4K Police Evidence & BS EN 62676-4 DORI Standards",
@@ -21,7 +21,7 @@
       "responsible_agent": "stack-blog-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Blogger",
       "category": "Blog and article stacks",
       "asset_title": "Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail & MotionCam PhOD",
@@ -34,7 +34,7 @@
       "responsible_agent": "stack-blog-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Blogger",
       "category": "Blog and article stacks",
       "asset_title": "Starlink Installation UK: Chimney Mount vs Roof Apex Storm Brackets, 90mph Gale Rating",
@@ -47,7 +47,7 @@
       "responsible_agent": "stack-blog-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "UK Postcode Crime Risk & Security Hardware Checker (23 Outward Codes)",
@@ -60,7 +60,7 @@
       "responsible_agent": "stack-microsite-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "UK CCTV Hard Drive Storage & Bandwidth Retention Calculator",
@@ -73,7 +73,7 @@
       "responsible_agent": "stack-microsite-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "Master 100 Free Public Publishing Directory Portal",
@@ -86,7 +86,7 @@
       "responsible_agent": "stack-ledger-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Firebase Hosting Edge",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "Professional UK Trade Photography Gallery (54 Verified Photos)",
@@ -99,7 +99,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "GitHub Pages",
       "category": "Public Website & Microsite Stacks",
       "asset_title": "CCTV Security Hub Diagnostic Portal (GitHub Pages Mirror)",
@@ -112,7 +112,20 @@
       "responsible_agent": "stack-microsite-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
+      "platform": "Firebase Hosting Edge",
+      "category": "Public Website & Microsite Stacks",
+      "asset_title": "Property, Profile & Asset Link Tracker Portal (3-Level Relational Stack)",
+      "asset_type": "Interactive Tracker Portal",
+      "public_live_url": "https://gary-pearce-forensic-hub.web.app/property-asset-tracker.html",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow (DA 99)",
+      "indexing_method": "Firebase Hosting Edge & Sitemap",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-property-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:19",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "Starlink UK Gale-Rated Chimney Mounting Specification (Eurocode 1)",
@@ -125,7 +138,7 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "Ajax Smart Alarms Grade 2 Compliance Yorkshire Manual (868MHz)",
@@ -138,7 +151,7 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Google Drive Hub",
       "category": "PDF & Document Stacks",
       "asset_title": "Ethernet Upstairs Without Running Cables Field Guide (MoCA vs Cat6)",
@@ -151,7 +164,33 @@
       "responsible_agent": "stack-pdf-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
+      "platform": "Google Drive Hub",
+      "category": "PDF & Document Stacks",
+      "asset_title": "UK Police CCTV Evidence Admissibility & BS EN 62676-4 DORI Guide",
+      "asset_type": "Interactive Vector PDF",
+      "public_live_url": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "dofollow_status": "Embedded Hyperlinks",
+      "indexing_method": "Google Drive Public Folder & Blogger Embed",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-pdf-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:19",
+      "platform": "Google Drive Hub",
+      "category": "PDF & Document Stacks",
+      "asset_title": "UK Commercial Intruder Alarms Grade 2 & Grade 3 Specification",
+      "asset_type": "Interactive Vector PDF",
+      "public_live_url": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "dofollow_status": "Embedded Hyperlinks",
+      "indexing_method": "Google Drive Public Folder & Blogger Embed",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-pdf-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:19",
       "platform": "Google Cloud Firebase Edge",
       "category": "Data & Dataset Stacks",
       "asset_title": "UK Police Crime Telemetry: Yorkshire & Lancashire 23 Postcodes",
@@ -164,7 +203,7 @@
       "responsible_agent": "stack-dataset-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "Google Cloud Firebase Edge",
       "category": "Data & Dataset Stacks",
       "asset_title": "UK CCTV DORI Sensor Resolution Matrix (4K ColorVu vs Panoramic)",
@@ -177,7 +216,20 @@
       "responsible_agent": "stack-dataset-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
+      "platform": "Google Cloud Firebase Edge",
+      "category": "Data & Dataset Stacks",
+      "asset_title": "UK 100 Postcode Crime & Security Telemetry Regional Matrix (CSV)",
+      "asset_type": "Public CSV Dataset",
+      "public_live_url": "https://gary-pearce-forensic-hub.web.app/stack_assets/data/uk_100_postcode_crime_and_security_telemetry.csv",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "dofollow_status": "Dofollow",
+      "indexing_method": "Postcode Risk Tool & Public Directory",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-dataset-agent"
+    },
+    {
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Grade2 Wireless Alarm System Beardwood",
@@ -190,7 +242,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub 2 Plus Motioncam Installation UK",
@@ -203,7 +255,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub Internals Dual SIM Ethernet UK",
@@ -216,7 +268,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub2 Backup Battery Network Shadsworth",
@@ -229,7 +281,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Hub2 Central Panel Whitebirk",
@@ -242,7 +294,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Keypad Touchscreen Jeweller UK",
@@ -255,7 +307,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Motioncam Outdoor Phod UK",
@@ -268,7 +320,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Smart Alarm Home Exterior UK",
@@ -281,7 +333,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Streetsiren Brickwork Installation Adwick",
@@ -294,7 +346,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Streetsiren High Visibility Mount Mill Hill",
@@ -307,7 +359,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ajax Streetsiren Outdoor Masonry Installation UK",
@@ -320,7 +372,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 5Ghz Gigabit Wireless Bridge Garden Office",
@@ -333,7 +385,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Cavity Wall Drip Loop External Cabling Adwick",
@@ -346,7 +398,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Ceiling Access Point Wifi6 Deployment Adwick",
@@ -359,7 +411,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Enterprise Rack Switch Cabinet Beardwood",
@@ -372,7 +424,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 External Data Run Armthorpe",
@@ -385,7 +437,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Fluke Dsx 8000 Cable Certification Telemetry",
@@ -398,7 +450,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Rf Jammer Field Spectrum Analysis Handheld",
@@ -411,7 +463,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Cat6 Soho Patch Panel Cabinet Termination Mill Hill",
@@ -424,7 +476,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV 16Mp Panoramic Dual Lens 180 Degree Turret Installation",
@@ -437,7 +489,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV 4K Turret Soffit Mount Almondbury",
@@ -450,7 +502,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Coastal Weather Shielded Install Withernsea",
@@ -463,7 +515,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Commercial Perimeter Turret Brighouse",
@@ -476,7 +528,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Consumer Infrared Flare Spiderweb Blindness Breakdown",
@@ -489,7 +541,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Hikvision Colorvu Vs Infrared Night Vision Comparison",
@@ -502,7 +554,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Masonry Junction Box Mounting Accrington",
@@ -515,7 +567,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Perimeter Surveillance System Accrington",
@@ -528,7 +580,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Residential Turret Eaves Mount Beverley",
@@ -541,7 +593,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: CCTV Rf Jammer Deauth Attack Vs Hardwired PoE Infrastructure",
@@ -554,7 +606,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Legacy Bell Box Vs Ajax Streetsiren Comparison UK",
@@ -567,7 +619,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Reolink PoE Video Doorbell Brick Surface Mount Clean",
@@ -580,7 +632,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Reolink PoE Video Doorbell Masonry Installation UK",
@@ -593,7 +645,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Ring Doorbell Gritstone Wedge Mount Yorkshire Stone Leeds",
@@ -606,7 +658,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Smart Doorbell 24V Bell Transformer Consumer Unit Installation",
@@ -619,7 +671,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Smart Video Doorbell Composite Door Frame Installation",
@@ -632,7 +684,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink 110 Degree Obstruction Scan Telemetry Mill Hill",
@@ -645,7 +697,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 320Mbps Gigabit Speed Test Telemetry",
@@ -658,7 +710,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 90Mph Storm Bracket Installation Beardwood",
@@ -671,7 +723,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Chimney Mount Vs Gable Apex Engineering UK",
@@ -684,7 +736,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Gable Apex Bracket Mount Armthorpe",
@@ -697,7 +749,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Heavy Duty Chimney Lashing Livesey",
@@ -710,7 +762,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 High Wind Lashing Thorne",
@@ -723,7 +775,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Residential Chimney Mount Adwick",
@@ -736,7 +788,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Rooftop Dish Mount Rishton",
@@ -749,7 +801,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Rooftop Dish Mount Shadsworth",
@@ -762,7 +814,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Starlink Gen3 Rural Farmhouse Mount Brigg",
@@ -775,7 +827,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Aerial Digital Spectrum Analyzer Signal Meter Mill Hill",
@@ -788,7 +840,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Aerial Loft Distribution Amplifier Lte Filter Mill Hill",
@@ -801,7 +853,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Luxury Acoustic Slat Media Wall Living Room",
@@ -814,7 +866,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Acoustic Slat Media Wall Almondbury",
@@ -827,7 +879,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Articulated Dual Arm Swivel Bracket Detail",
@@ -840,7 +892,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Concealed Conduit Fireplace Anlaby",
@@ -853,7 +905,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Mounting Corefix Dot And Dab Masonry Anchors Beardwood",
@@ -866,7 +918,7 @@
       "responsible_agent": "stack-media-agent"
     },
     {
-      "timestamp": "2026-10-22 09:15",
+      "timestamp": "2026-10-22 09:19",
       "platform": "FreeImage.Host",
       "category": "Image & Photo Stacks",
       "asset_title": "Trade Photo: Tv Samsung Frame Flush Gapless Wall Mounting Feniscowles",

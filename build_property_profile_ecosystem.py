@@ -130,6 +130,126 @@ ESTABLISHED_PROFILES = [
         "auth_credentials_ref": "HF_TOKEN User Access Token",
         "creation_date": "2026-10-22",
         "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-011",
+        "platform_name": "Zenodo",
+        "category": "PDF, ebook, document and research stacks",
+        "profile_handle": "adi-communications",
+        "profile_live_url": "https://zenodo.org/communities/adi-communications",
+        "bio_copy": "CERN European Research Repository: British Physical Security & Eurocode 1 Vector Whitepapers.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Zenodo REST API Personal Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-012",
+        "platform_name": "Kaggle",
+        "category": "Data, charts and public dataset stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://www.kaggle.com/gazpearce",
+        "bio_copy": "UK Police Recorded Crime Telemetry & Optical Camera Sensor Resolution Matrices (DA 93).",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Kaggle API Key (kaggle.json)",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-013",
+        "platform_name": "Substack",
+        "category": "Social, community and newsletter stacks",
+        "profile_handle": "aditrade",
+        "profile_live_url": "https://aditrade.substack.com/",
+        "bio_copy": "ADI Communications Official Technical Field Dispatch & Engineering Newsletter. Gary Pearce, 07860 244 274.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google OAuth Ingestion / RSS Feed",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-014",
+        "platform_name": "Vercel",
+        "category": "Free public website and microsite stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://vercel.com/gazpearce",
+        "bio_copy": "High-performance edge deployments and forensic security diagnostic calculators.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub OAuth / Vercel CLI",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-015",
+        "platform_name": "Netlify",
+        "category": "Free public website and microsite stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://app.netlify.com/teams/gazpearce",
+        "bio_copy": "Continuous integration edge deployments and UK CCTV bandwidth calculators.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub OAuth / Netlify CLI",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-016",
+        "platform_name": "Codeberg",
+        "category": "Code, templates, packages and documentation stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://codeberg.org/gazpearce",
+        "bio_copy": "European FOSS Git repository mirror for ADI Communications diagnostic tools.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Codeberg Access Token / Git SSH",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-017",
+        "platform_name": "Hashnode",
+        "category": "Blog and article stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://hashnode.com/@gazpearce",
+        "bio_copy": "Engineering field analysis on telecom, Starlink storm ratings, and physical security standards.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google OAuth / Hashnode PAT",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-018",
+        "platform_name": "DEV Community",
+        "category": "Blog and article stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://dev.to/gazpearce",
+        "bio_copy": "UK physical security and networking engineering tutorials by Gary Pearce (ADI Communications).",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub OAuth / Forem API Key",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-019",
+        "platform_name": "Bluesky",
+        "category": "Social, community and newsletter stacks",
+        "profile_handle": "adicommunications.bsky.social",
+        "profile_live_url": "https://bsky.app/profile/adicommunications.bsky.social",
+        "bio_copy": "ADI Communications Official Field Wire. Gary Pearce (25+ yrs physical security & telecoms, 07860 244 274).",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "AT Protocol App Password",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-020",
+        "platform_name": "Supabase",
+        "category": "Extra publishing and automation destinations",
+        "profile_handle": "adi-telecoms",
+        "profile_live_url": "https://supabase.com/dashboard/project/adi-telecoms",
+        "bio_copy": "PostgreSQL security telemetry & public DORI matrix storage backend.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub OAuth / Supabase Anon Key",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
     }
 ]
 
@@ -224,6 +344,16 @@ drive_assets = [
         "title": "Ethernet Upstairs Without Running Cables Field Guide (MoCA vs Cat6)",
         "url": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
         "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html"
+    },
+    {
+        "title": "UK Police CCTV Evidence Admissibility & BS EN 62676-4 DORI Guide",
+        "url": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html"
+    },
+    {
+        "title": "UK Commercial Intruder Alarms Grade 2 & Grade 3 Specification (Jeweller 868MHz)",
+        "url": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html"
     }
 ]
 
@@ -279,6 +409,16 @@ firebase_tools = [
         "title": "UK CCTV DORI Sensor Resolution Matrix CSV",
         "url": "https://gary-pearce-forensic-hub.web.app/stack_assets/data/uk_cctv_dori_sensor_matrix.csv",
         "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html"
+    },
+    {
+        "title": "UK 100 Postcode Crime & Security Telemetry Regional Matrix (CSV)",
+        "url": "https://gary-pearce-forensic-hub.web.app/stack_assets/data/uk_100_postcode_crime_and_security_telemetry.csv",
+        "anchor": "https://tvandhomesecurity.blogspot.com/"
+    },
+    {
+        "title": "Property, Profile & Asset Link Tracker Portal (3-Level Ecosystem)",
+        "url": "https://gary-pearce-forensic-hub.web.app/property-asset-tracker.html",
+        "anchor": "https://tvandhomesecurity.blogspot.com/"
     }
 ]
 

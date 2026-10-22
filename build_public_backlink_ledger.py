@@ -71,6 +71,32 @@ def build_ledger():
             "indexing_method": "Google Drive Public Folder & Blogger Embed",
             "verified_http_status": "200",
             "responsible_agent": "stack-pdf-agent"
+        },
+        {
+            "timestamp": timestamp,
+            "platform": "Google Drive Hub",
+            "category": "PDF & Document Stacks",
+            "asset_title": "UK Police CCTV Evidence Admissibility & BS EN 62676-4 DORI Guide",
+            "asset_type": "Interactive Vector PDF",
+            "public_live_url": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+            "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+            "dofollow_status": "Embedded Hyperlinks",
+            "indexing_method": "Google Drive Public Folder & Blogger Embed",
+            "verified_http_status": "200",
+            "responsible_agent": "stack-pdf-agent"
+        },
+        {
+            "timestamp": timestamp,
+            "platform": "Google Drive Hub",
+            "category": "PDF & Document Stacks",
+            "asset_title": "UK Commercial Intruder Alarms Grade 2 & Grade 3 Specification",
+            "asset_type": "Interactive Vector PDF",
+            "public_live_url": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+            "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+            "dofollow_status": "Embedded Hyperlinks",
+            "indexing_method": "Google Drive Public Folder & Blogger Embed",
+            "verified_http_status": "200",
+            "responsible_agent": "stack-pdf-agent"
         }
     ]
 
@@ -99,6 +125,19 @@ def build_ledger():
             "shield_target_url": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
             "dofollow_status": "Dofollow",
             "indexing_method": "DORI Calculator Tool & GitHub Repo",
+            "verified_http_status": "200",
+            "responsible_agent": "stack-dataset-agent"
+        },
+        {
+            "timestamp": timestamp,
+            "platform": "Google Cloud Firebase Edge",
+            "category": "Data & Dataset Stacks",
+            "asset_title": "UK 100 Postcode Crime & Security Telemetry Regional Matrix (CSV)",
+            "asset_type": "Public CSV Dataset",
+            "public_live_url": "https://gary-pearce-forensic-hub.web.app/stack_assets/data/uk_100_postcode_crime_and_security_telemetry.csv",
+            "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+            "dofollow_status": "Dofollow",
+            "indexing_method": "Postcode Risk Tool & Public Directory",
             "verified_http_status": "200",
             "responsible_agent": "stack-dataset-agent"
         }
@@ -170,6 +209,19 @@ def build_ledger():
             "indexing_method": "GitHub Pages & README Links",
             "verified_http_status": "200",
             "responsible_agent": "stack-microsite-agent"
+        },
+        {
+            "timestamp": timestamp,
+            "platform": "Firebase Hosting Edge",
+            "category": "Public Website & Microsite Stacks",
+            "asset_title": "Property, Profile & Asset Link Tracker Portal (3-Level Relational Stack)",
+            "asset_type": "Interactive Tracker Portal",
+            "public_live_url": "https://gary-pearce-forensic-hub.web.app/property-asset-tracker.html",
+            "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+            "dofollow_status": "Dofollow (DA 99)",
+            "indexing_method": "Firebase Hosting Edge & Sitemap",
+            "verified_http_status": "200",
+            "responsible_agent": "stack-property-agent"
         }
     ]
 
