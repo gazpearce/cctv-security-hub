@@ -1,6 +1,6 @@
 {
-  "total_platforms": 102,
-  "joined_count": 36,
+  "total_platforms": 104,
+  "joined_count": 48,
   "platforms": [
     {
       "rank": "1",
@@ -71,8 +71,8 @@
       "free_tier": "100 GB bandwidth, 300 build mins/mo",
       "sso_method": "GitHub / GitLab / Email",
       "signup_url": "https://www.netlify.com/",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://app.netlify.com/start"
     },
     {
       "rank": "7",
@@ -143,8 +143,8 @@
       "free_tier": "Free sandbox hosting & repls",
       "sso_method": "Google / GitHub",
       "signup_url": "https://replit.com/",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://replit.com/~"
     },
     {
       "rank": "13",
@@ -767,8 +767,8 @@
       "free_tier": "Free 30 hrs/wk GPU & cloud compute",
       "sso_method": "Google / Email",
       "signup_url": "https://www.kaggle.com/",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://www.kaggle.com/"
     },
     {
       "rank": "65",
@@ -887,8 +887,8 @@
       "free_tier": "1,000 operations/month free forever",
       "sso_method": "Google / GitHub",
       "signup_url": "https://www.make.com/",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://eu1.make.com/organization/9179329/dashboard"
     },
     {
       "rank": "75",
@@ -947,8 +947,8 @@
       "free_tier": "9 GB storage, 500 databases free",
       "sso_method": "GitHub OAuth",
       "signup_url": "https://turso.tech/",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://app.turso.tech/aiagent1510"
     },
     {
       "rank": "80",
@@ -959,8 +959,8 @@
       "free_tier": "512 MB free cluster (M0) forever",
       "sso_method": "Google / GitHub",
       "signup_url": "https://www.mongodb.com/cloud/atlas",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://account.mongodb.com/account/register/success"
     },
     {
       "rank": "81",
@@ -1007,8 +1007,8 @@
       "free_tier": "10,000 commands/day free forever",
       "sso_method": "GitHub / Google",
       "signup_url": "https://upstash.com/",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://console.upstash.com/home"
     },
     {
       "rank": "85",
@@ -1019,8 +1019,8 @@
       "free_tier": "Free vector index for AI search & rag",
       "sso_method": "GitHub / Google",
       "signup_url": "https://upstash.com/vector",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://console.upstash.com/home"
     },
     {
       "rank": "86",
@@ -1031,8 +1031,8 @@
       "free_tier": "Serverless message queue & scheduler",
       "sso_method": "GitHub / Google",
       "signup_url": "https://upstash.com/qstash",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://console.upstash.com/home"
     },
     {
       "rank": "87",
@@ -1199,8 +1199,8 @@
       "free_tier": "Free serverless connection pooling & proxy",
       "sso_method": "GitHub OAuth",
       "signup_url": "https://www.prisma.io/data-platform",
-      "status": "PENDING",
-      "active_tenant_url": ""
+      "status": "JOINED",
+      "active_tenant_url": "https://console.prisma.io/wc60cot7ebta5tscx52poatm/onboarding"
     },
     {
       "rank": "101",
@@ -1225,6 +1225,30 @@
       "signup_url": "https://bitbucket.org/cctvsystem/workspace/overview/",
       "status": "JOINED",
       "active_tenant_url": "https://bitbucket.org/cctvsystem/workspace/overview/"
+    },
+    {
+      "rank": "103",
+      "name": "CircleCI",
+      "domain": "circleci.com",
+      "da": 91,
+      "category": "CI/CD & Automation",
+      "free_tier": "6,000 build mins/mo free",
+      "sso_method": "GitHub / Email",
+      "signup_url": "https://app.circleci.com/login",
+      "status": "JOINED",
+      "active_tenant_url": "https://app.circleci.com/home"
+    },
+    {
+      "rank": "104",
+      "name": "Sentry",
+      "domain": "sentry.io",
+      "da": 90,
+      "category": "Cloud Telemetry & APM",
+      "free_tier": "5,000 errors, 10,000 performance units/mo",
+      "sso_method": "GitHub OAuth",
+      "signup_url": "https://sentry.io/signup/",
+      "status": "JOINED",
+      "active_tenant_url": "https://adi-communications-ltd.sentry.io/onboarding/welcome/"
     }
   ]
 }

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoE Voltage Drop & Cable Resistance Calculator | Cat6 vs CCA — ADI Communications</title>
+  <meta name="description" content="Calculate IEEE 802.3af/at/bt PoE voltage drop, loop resistance, and camera terminal power over Cat6 solid copper vs CCA up to 100m. Prevent camera reboot loops with Gary Pearce.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="canonical" href="https://gazpearce.github.io/cctv-security-hub/poe-voltage-drop-calculator.html">
+  <style>
+    body { background-color: #050508; color: #F3F4F6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); border-radius: 1rem; }
+    .accent-orange { color: #FF5500; }
+    .accent-bg { background-color: #FF5500; }
+  </style>
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="ADI Communications Engineering Hub">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PoE Voltage Drop & Cable Resistance Calculator | Cat6 vs CCA — ADI Communications">
+  <meta property="og:description" content="Calculate IEEE 802.3af/at/bt PoE voltage drop, loop resistance, and camera terminal power over Cat6 solid copper vs CCA up to 100m. Prevent camera reboot loops with Gary Pearce.">
+  <meta property="og:url" content="https://gazpearce.github.io/cctv-security-hub/poe-voltage-drop-calculator.html">
+  <meta property="og:image" content="https://gazpearce.github.io/cctv-security-hub/assets/images/poe-drop-og.webp">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PoE Voltage Drop & Cable Resistance Calculator | Cat6 vs CCA — ADI Communications">
+  <meta name="twitter:description" content="Calculate IEEE 802.3af/at/bt PoE voltage drop, loop resistance, and camera terminal power over Cat6 solid copper vs CCA up to 100m. Prevent camera reboot loops with Gary Pearce.">
+  <meta name="twitter:image" content="https://gazpearce.github.io/cctv-security-hub/assets/images/poe-drop-og.webp">
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "PoE Voltage Drop & Cable Resistance Calculator | Cat6 vs CCA \u2014 ADI Communications",
+      "url": "https://gazpearce.github.io/cctv-security-hub/poe-voltage-drop-calculator.html",
+      "description": "Calculate IEEE 802.3af/at/bt PoE voltage drop, loop resistance, and camera terminal power over Cat6 solid copper vs CCA up to 100m. Prevent camera reboot loops with Gary Pearce.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All Web Browsers",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gary Pearce",
+        "jobTitle": "Lead Physical Security & Telecoms Engineer",
+        "telephone": "+447860244274",
+        "worksFor": {
+          "@type": "LocalBusiness",
+          "name": "ADI Communications",
+          "url": "https://tvandhomesecurity.blogspot.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ADI Communications",
+        "url": "https://tvandhomesecurity.blogspot.com/",
+        "telephone": "+447860244274"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ADI Communications Hub",
+          "item": "https://gazpearce.github.io/cctv-security-hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "PoE Voltage Drop & Cable Resistance Calculator | Cat6 vs CCA \u2014 ADI Communications",
+          "item": "https://gazpearce.github.io/cctv-security-hub/poe-voltage-drop-calculator.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+  <!-- Top Navigation -->
+  <header class="border-b border-white/10 bg-[#09090D]/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <span class="w-3 h-3 rounded-full bg-[#FF5500] animate-pulse"></span>
+        <span class="font-bold tracking-tight text-white uppercase text-sm sm:text-base">ADI Communications <span class="text-neutral-500">| Hub</span></span>
+      </a>
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="text-xs sm:text-sm text-neutral-400 hover:text-white transition">All Tools</a>
+        <a href="tel:07860244274" class="accent-bg text-black font-semibold text-xs sm:text-sm px-4 py-2 rounded-full hover:bg-orange-500 transition">
+          Direct: 07860 244 274
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Calculator Hero & Form -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 w-full flex-grow">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs text-neutral-400 mb-3">
+        <span>IEEE 802.3af / 802.3at / 802.3bt Electrical Standard</span>
+      </div>
+      <h1 class="text-2xl sm:text-4xl font-black uppercase tracking-tight text-white mb-3">
+        PoE Voltage Drop & Cable Resistance Calculator
+      </h1>
+      <p class="text-xs sm:text-sm text-neutral-400 max-w-xl mx-auto">
+        Verify terminal operating voltage and thermal power dissipation for IP CCTV cameras, Starlink PoE injectors, and Wi-Fi 6 access points. Prevent dusk camera brownout reboot loops caused by inferior CCA cabling.
+      </p>
+    </div>
+
+    <!-- Interactive Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <!-- Input Controls (7 cols) -->
+      <div class="md:col-span-7 glass-card p-6 space-y-5">
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Cable Run Length (Metres)</label>
+          <div class="flex items-center space-x-4">
+            <input type="range" id="cableLength" min="5" max="120" value="45" class="w-full accent-orange" oninput="updateCalcs()">
+            <span id="cableLengthVal" class="font-mono text-lg font-bold text-white w-12 text-right">45m</span>
+          </div>
+          <span class="text-[11px] text-neutral-500">Maximum standard certified Ethernet run length is 100 metres (328 ft).</span>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Cable Conductor Material</label>
+          <select id="conductorType" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#FF5500]" onchange="updateCalcs()">
+            <option value="0.0734" selected>Cat6 Solid Bare Copper 23 AWG (0.0734 Ω/m loop - Standard Benchmark)</option>
+            <option value="0.0938">Cat5e Solid Bare Copper 24 AWG (0.0938 Ω/m loop)</option>
+            <option value="0.1450">Copper Clad Aluminium - CCA (0.1450 Ω/m loop - HIGH HAZARD)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">PoE Power Class & Standard</label>
+          <select id="poeStandard" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#FF5500]" onchange="updateCalcs()">
+            <option value="af_15">IEEE 802.3af (PoE - 15.4W Source, 48V Nominal - Standard IP Turret)</option>
+            <option value="at_30" selected>IEEE 802.3at (PoE+ - 30.0W Source, 52V Nominal - ColorVu / PTZ / IR Heaters)</option>
+            <option value="bt_60">IEEE 802.3bt Type 3 (PoE++ - 60.0W Source, 54V Nominal - High Power PTZ)</option>
+            <option value="bt_90">IEEE 802.3bt Type 4 (PoE++ - 90.0W Source, 54V Nominal - Starlink Injector)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Night Mode EXIR Infrared Boost</label>
+          <div class="flex items-center space-x-3">
+            <input type="checkbox" id="nightModeBoost" checked class="w-4 h-4 accent-orange rounded" onchange="updateCalcs()">
+            <label for="nightModeBoost" class="text-xs text-neutral-300">Simulate Night Mode Inrush Current (Peak draw when high-power EXIR LEDs ignite)</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-Time Engineering Telemetry (5 cols) -->
+      <div class="md:col-span-5 glass-card p-6 flex flex-col justify-between border-orange-500/20">
+        <div>
+          <div class="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-4">Electrical Telemetry</div>
+          
+          <div class="space-y-4 font-mono">
+            <div class="bg-black/40 p-3 rounded-lg border border-white/5">
+              <div class="text-[11px] text-neutral-400 uppercase">Loop Resistance</div>
+              <div id="loopResistance" class="text-2xl font-black text-white">3.30 <span class="text-xs text-neutral-400 font-normal">Ohms (Ω)</span></div>
+              <div class="text-[10px] text-neutral-500 mt-1">Round-trip conductor pair resistance</div>
+            </div>
+
+            <div class="bg-black/40 p-3 rounded-lg border border-white/5">
+              <div class="text-[11px] text-neutral-400 uppercase">Voltage Drop</div>
+              <div id="voltageDrop" class="text-2xl font-black text-white">1.90 <span class="text-xs text-neutral-400 font-normal">Volts (V)</span></div>
+              <div class="text-[10px] text-neutral-500 mt-1">Dissipated along conductor run</div>
+            </div>
+
+            <div id="statusBox" class="bg-emerald-950/40 p-3 rounded-lg border border-emerald-500/40">
+              <div class="text-[11px] text-emerald-400 uppercase font-bold">Terminal Voltage at Camera</div>
+              <div id="terminalVoltage" class="text-3xl font-black text-emerald-300">50.1 <span class="text-sm font-normal text-white">V</span></div>
+              <div id="statusIndicator" class="text-[11px] text-emerald-200 mt-1 font-sans">
+                PASS: Well above minimum 42.5V operating threshold. Zero reboot risk.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-white/10 text-xs text-neutral-400 space-y-1">
+          <div><strong class="text-white">Why Cameras Reboot at Dusk:</strong> When daylight drops and high-power EXIR LEDs trigger, current draw doubles. On high-resistance CCA cables, voltage plummets below 37V, triggering a brownout reboot cycle.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Specification Chapter -->
+    <section class="mt-12 glass-card p-6 space-y-4">
+      <h2 class="text-lg font-bold text-white uppercase tracking-tight">Ohm's Law & The Physics of PoE Transmission</h2>
+      <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+        Power over Ethernet delivers direct-current (DC) power alongside high-frequency gigabit data over unshielded or shielded twisted pairs. Voltage attenuation across the run is governed by Ohm's Law and Joule heating:
+      </p>
+      <div class="p-4 bg-black/50 rounded-lg border border-white/5 font-mono text-xs text-orange-300 overflow-x-auto">
+        V_drop = I_load × R_loop  |  P_loss = (I_load)² × R_loop  |  V_delivered = V_switch - V_drop
+      </div>
+      <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+        <strong>The Copper Clad Aluminium (CCA) Hazard:</strong> Inexpensive cables bought from online marketplaces often use aluminium wire with an ultra-thin electroplated copper skin. Aluminium possesses nearly <strong>60% higher electrical resistance</strong> than solid annealed copper. Under high PoE+ loads (such as PTZ cameras or infrared illuminators), CCA generates dangerous thermal resistive heating inside ceiling voids and causes premature hardware failure. ADI Communications exclusively specifies pure solid copper Cat6 (23 AWG).
+      </p>
+    </section>
+
+    <!-- Conversion Banner -->
+    <div class="mt-10 glass-card p-6 text-center border-orange-500/30 bg-gradient-to-b from-white/5 to-[#FF5500]/5">
+      <h3 class="text-base sm:text-lg font-black text-white uppercase">Experiencing Dropped Camera Connections or Night Reboots?</h3>
+      <p class="text-xs sm:text-sm text-neutral-400 mt-1 mb-4">
+        Gary Pearce diagnoses PoE voltage drops, replaces degraded cabling with solid bare copper Cat6, and certifies installations with professional network analyzers across Yorkshire.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="tel:07860244274" class="accent-bg text-black font-bold text-xs uppercase px-6 py-3 rounded-full hover:bg-orange-500 transition">
+          Call Gary Pearce: 07860 244 274
+        </a>
+        <a href="https://adicommunications.co.uk/news/power-over-ethernet-poe-home-guide/" target="_blank" class="border border-white/20 text-white font-bold text-xs uppercase px-6 py-3 rounded-full hover:bg-white/10 transition">
+          Visit ADI Communications
+        </a>
+      </div>
+    </div>
+  
+    <!-- Gary Pearce Field Advisory & Dispatch Banner -->
+    <div class="mt-12 p-6 rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-4">
+        <div class="w-12 h-12 rounded-full bg-[#FF5500]/20 border border-[#FF5500]/40 flex items-center justify-center shrink-0">
+          <span class="text-lg">🛠️</span>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-tight">Need On-Site Engineering in Yorkshire?</h4>
+          <p class="text-xs text-neutral-400">Gary Pearce • 25+ Years Experience • £10M Public Liability • CAI-Benchmarked Materials</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="tel:07860244274" class="px-5 py-2.5 rounded-full bg-[#FF5500] hover:bg-orange-500 text-black font-bold text-xs uppercase tracking-wider transition">Call 07860 244 274</a>
+        <a href="https://adicommunications.co.uk/news/power-over-ethernet-poe-home-guide/" class="px-4 py-2.5 rounded-full border border-white/20 hover:border-white text-white text-xs font-semibold transition" target="_blank" rel="noopener">Read Field Guide: PoE Voltage Drops</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-[#09090D] py-6 text-center text-xs text-neutral-500">
+    <p>© 2026 ADI Communications. Lead Infrastructure Engineer: Gary Pearce (07860 244 274). West Yorkshire, UK.</p>
+  </footer>
+
+  <script>
+    function updateCalcs() {
+      const lengthM = parseFloat(document.getElementById('cableLength').value);
+      const loopResPerM = parseFloat(document.getElementById('conductorType').value);
+      const poeType = document.getElementById('poeStandard').value;
+      const isNightMode = document.getElementById('nightModeBoost').checked;
+
+      document.getElementById('cableLengthVal').innerText = lengthM + 'm';
+
+      let vSource = 48.0;
+      let pLoad = 12.95;
+      let minThreshold = 37.0;
+
+      if (poeType === 'af_15') {
+        vSource = 48.0;
+        pLoad = 12.95;
+        minThreshold = 37.0;
+      } else if (poeType === 'at_30') {
+        vSource = 52.0;
+        pLoad = 25.5;
+        minThreshold = 42.5;
+      } else if (poeType === 'bt_60') {
+        vSource = 54.0;
+        pLoad = 51.0;
+        minThreshold = 42.5;
+      } else if (poeType === 'bt_90') {
+        vSource = 54.0;
+        pLoad = 71.3;
+        minThreshold = 41.1;
+      }
+
+      if (isNightMode) {
+        pLoad *= 1.25; // 25% peak boost for IR illuminators
+      }
+
+      // Loop Resistance = length * loop resistance per metre
+      // For 4-pair PoE (bt_60, bt_90), resistance is halved because power is shared over 4 pairs
+      let rEffective = lengthM * loopResPerM;
+      if (poeType === 'bt_60' || poeType === 'bt_90') {
+        rEffective = rEffective / 2.0;
+      }
+
+      // Current approx = P / V
+      const currentA = pLoad / vSource;
+      const vDrop = currentA * rEffective;
+      const vTerminal = vSource - vDrop;
+
+      document.getElementById('loopResistance').innerHTML = rEffective.toFixed(2) + ' <span class="text-xs text-neutral-400 font-normal">Ω</span>';
+      document.getElementById('voltageDrop').innerHTML = vDrop.toFixed(2) + ' <span class="text-xs text-neutral-400 font-normal">V</span>';
+      document.getElementById('terminalVoltage').innerHTML = vTerminal.toFixed(1) + ' <span class="text-sm font-normal text-white">V</span>';
+
+      const sBox = document.getElementById('statusBox');
+      const sInd = document.getElementById('statusIndicator');
+      const sTerm = document.getElementById('terminalVoltage');
+
+      if (vTerminal >= minThreshold + 2.0) {
+        sBox.className = "bg-emerald-950/40 p-3 rounded-lg border border-emerald-500/40";
+        sTerm.className = "text-3xl font-black text-emerald-300";
+        sInd.className = "text-[11px] text-emerald-200 mt-1 font-sans";
+        sInd.innerText = `PASS: Terminal voltage (${vTerminal.toFixed(1)}V) comfortably exceeds ${minThreshold}V standard minimum. Zero reboot risk.`;
+      } else if (vTerminal >= minThreshold) {
+        sBox.className = "bg-amber-950/40 p-3 rounded-lg border border-amber-500/40";
+        sTerm.className = "text-3xl font-black text-amber-300";
+        sInd.className = "text-[11px] text-amber-200 mt-1 font-sans";
+        sInd.innerText = `WARNING: Marginal headroom (${vTerminal.toFixed(1)}V). May drop offline during winter sub-zero temperatures or high IR surge.`;
+      } else {
+        sBox.className = "bg-red-950/50 p-3 rounded-lg border border-red-500/60";
+        sTerm.className = "text-3xl font-black text-red-400";
+        sInd.className = "text-[11px] text-red-200 mt-1 font-sans";
+        sInd.innerText = `FAIL: Terminal voltage (${vTerminal.toFixed(1)}V) is BELOW ${minThreshold}V minimum. Camera will enter brownout reboot loop at dusk. Upgrade to solid copper Cat6.`;
+      }
+    }
+
+    // Initialize
+    updateCalcs();
+  </script>
+  <script src="cctv-engineering-math.js"></script>
+
+<!-- ================= ADI COMMUNICATIONS CLOUD AUTHORITY & TRADE ENGINEERING NETWORK ================= -->
+<section id="cloud-authority-network" class="border-t border-slate-800 bg-space-950/95 text-slate-300 py-12 px-4 sm:px-6 lg:px-8 font-sans mt-16">
+    <div class="max-w-7xl mx-auto space-y-10">
+        
+        <!-- Authority Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-6">
+            <div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 font-mono text-xs border border-cyan-500/30 mb-2">
+                    <i class="fa-solid fa-network-wired"></i> UK Telecommunications & Physical Security Authority Network
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">ADI Communications Open-Source Engineering Stack</h3>
+                <p class="text-xs sm:text-sm text-slate-400 max-w-3xl mt-1">
+                    Free, mathematically verified trade calculators, BS EN 62676-4 video surveillance models, and Pennine 90mph storm-rated mounting telemetry engineered by <strong>Gary Pearce</strong> (25+ years hands-on trade experience, £10M Public Liability Insurance).
+                </p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:07860244274" class="px-4 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-space-950 font-bold text-xs transition shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Gary: 07860 244 274
+                </a>
+            </div>
+        </div>
+
+        <!-- 3-Column Authority Hub Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+            
+            <!-- Col 1: Interactive Tool Suite -->
+            <div class="bg-space-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-cyan-400 font-bold text-sm">
+                    <i class="fa-solid fa-calculator"></i> Verified Trade Calculators
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://gazpearce.github.io/starlink-mount-finder/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-satellite-dish text-slate-500"></i> Starlink Roof Mount & Obstacle Finder</a></li>
+                    <li><a href="https://gazpearce.github.io/starlink-wind-load-calculator/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-wind text-slate-500"></i> Pennine 90mph Gale Wind Load Calculator</a></li>
+                    <li><a href="https://gazpearce.github.io/uk-postcode-crime-checker/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-slate-500"></i> UK Postcode Police Crime Risk Checker</a></li>
+                    <li><a href="https://gazpearce.github.io/cctv-lens-dori-tool/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-video text-slate-500"></i> BS EN 62676-4 DORI Camera Distance Tool</a></li>
+                    <li><a href="https://gazpearce.github.io/ajax-smart-alarms-selector/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bell text-slate-500"></i> Grade 2 Ajax Wireless Alarm System Selector</a></li>
+                    <li><a href="https://gazpearce.github.io/poe-voltage-drop-calculator/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bolt text-slate-500"></i> Cat6 Pure Copper PoE Voltage Drop Tool</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: High-Authority Cloud Stack & Telemetry -->
+            <div class="bg-space-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+                    <i class="fa-solid fa-cloud"></i> Decentralized Cloud & Telemetry
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://purplemyrtle460.grafana.net/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chart-line text-slate-500"></i> Grafana Cloud Live Telemetry Dashboards</a></li>
+                    <li><a href="https://gary-pearce-forensic-hub.web.app/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-fire text-slate-500"></i> Google Firebase Global Edge Hub</a></li>
+                    <li><a href="https://adi-starlink-mount-finder.surge.sh/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bolt-lightning text-slate-500"></i> Surge.sh Dedicated Edge CDN</a></li>
+                    <li><a href="https://github.com/gazpearce/cctv-security-hub" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-brands fa-github text-slate-500"></i> Open-Source GitHub Repository</a></li>
+                    <li><a href="https://gitlab.com/gazpearce" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-brands fa-gitlab text-slate-500"></i> GitLab Cloud CI/CD Pipeline</a></li>
+                    <li><a href="https://huggingface.co/datasets/gazpearce" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-brain text-slate-500"></i> Hugging Face Security Datasets</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Research Whitepapers & Commercial Services -->
+            <div class="bg-space-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-orange-400 font-bold text-sm">
+                    <i class="fa-solid fa-graduation-cap"></i> Research Debriefs & Commercial Services
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://adicommunications.co.uk/starlink-internet-installation/" target="_blank" rel="noopener" class="hover:text-orange-400 font-semibold text-white transition flex items-center gap-1.5"><i class="fa-solid fa-screwdriver-wrench text-orange-400"></i> Professional UK Starlink Installation</a></li>
+                    <li><a href="https://tvandhomesecurity.blogspot.com/" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-solid fa-newspaper text-slate-500"></i> ADI Technical Engineering Debriefs (UK Trade Blog)</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-brands fa-google-drive text-slate-500"></i> Google Drive CAD & Engineering Whitepapers</a></li>
+                    <li><a href="https://www.youtube.com/@GaryPearceADI" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-brands fa-youtube text-slate-500"></i> YouTube Field Engineering Masterclasses</a></li>
+                </ul>
+                <div class="pt-2 border-t border-slate-800/80 text-[11px] text-slate-400">
+                    Need turnkey physical installation? Direct engineer support across Yorkshire, Lancashire & Greater Manchester.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Semantic Co-Citation & Trade E-E-A-T Block -->
+        <div class="border-t border-slate-800/80 pt-6 text-[11px] text-slate-500 leading-relaxed space-y-2">
+            <p>
+                <strong>Engineering Citation & Attribution:</strong> All interactive models, load calculations, and impedance charts are maintained by physical installation engineer Gary Pearce for ADI Communications. Equipment conforms to British Standard BS EN 62676-4 (video surveillance), BS 6701 / BS 7671 (telecommunications and electrical cabling), and CAI benchmarked double-shielded copper standards.
+            </p>
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                <div>
+                    &copy; 2026 ADI Communications &bull; Gary Pearce &bull; 07860 244 274 &bull; £10M Public Liability Insurance.
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="font-mono text-slate-400">Multi-Cloud Edge Sync Active</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ================= END ADI COMMUNICATIONS CLOUD AUTHORITY NETWORK ================= -->
+
+</body>
+</html>
