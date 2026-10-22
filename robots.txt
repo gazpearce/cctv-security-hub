@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gazpearce.github.io/cctv-security-hub/sitemap.xml

@@ -58,6 +58,19 @@
       ]
     }
     </script>
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="ADI Communications Engineering Hub">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Starlink Gen 3 & Mini Wind-Load & 90mph Gale Storm Calculator | ADI Communications">
+  <meta property="og:description" content="Free UK interactive SpaceX Starlink Gen 3 Standard & Mini wind-load and storm bracket calculator. Calculate Pennine gale shear forces and non-drill chimney lashing kit safety factors by Gary Pearce.">
+  <meta property="og:url" content="https://gazpearce.github.io/cctv-security-hub/starlink-wind-load-calculator.html">
+  <meta property="og:image" content="https://gazpearce.github.io/cctv-security-hub/assets/images/starlink-wind-tool-og.webp">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starlink Gen 3 & Mini Wind-Load & 90mph Gale Storm Calculator | ADI Communications">
+  <meta name="twitter:description" content="Free UK interactive SpaceX Starlink Gen 3 Standard & Mini wind-load and storm bracket calculator. Calculate Pennine gale shear forces and non-drill chimney lashing kit safety factors by Gary Pearce.">
+  <meta name="twitter:image" content="https://gazpearce.github.io/cctv-security-hub/assets/images/starlink-wind-tool-og.webp">
+
 </head>
 <body class="bg-dark text-slate-100 font-sans min-h-screen flex flex-col antialiased selection:bg-brand selection:text-white">
 
@@ -264,7 +277,25 @@
 
             </div>
         </div>
-    </main>
+    
+    <!-- Gary Pearce Field Advisory & Dispatch Banner -->
+    <div class="mt-12 p-6 rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-4">
+        <div class="w-12 h-12 rounded-full bg-[#FF5500]/20 border border-[#FF5500]/40 flex items-center justify-center shrink-0">
+          <span class="text-lg">🛠️</span>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-tight">Need On-Site Engineering in Yorkshire?</h4>
+          <p class="text-xs text-neutral-400">Gary Pearce • 25+ Years Experience • £10M Public Liability • CAI-Benchmarked Materials</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="tel:07860244274" class="px-5 py-2.5 rounded-full bg-[#FF5500] hover:bg-orange-500 text-black font-bold text-xs uppercase tracking-wider transition">Call 07860 244 274</a>
+        <a href="https://adicommunications.co.uk/" class="px-4 py-2.5 rounded-full border border-white/20 hover:border-white text-white text-xs font-semibold transition" target="_blank" rel="noopener">Visit Main Site</a>
+      </div>
+    </div>
+
+  </main>
 
     <!-- Footer with Do-Follow Semantic Entity Links -->
     <footer class="border-t border-borderMuted bg-dark py-8 text-xs text-slate-500 font-mono">
@@ -395,5 +426,6 @@
 
         recalculate();
     </script>
+  <script src="cctv-engineering-math.js"></script>
 </body>
 </html>

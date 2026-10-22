@@ -1,0 +1,30 @@
+{
+  "name": "cctv-engineering-math",
+  "version": "1.0.0",
+  "description": "Open-source physics, electrical, and optical calculations for UK physical security & telecommunications (BS EN 62676-4 DORI, Starlink aerodynamic drag, PoE IEEE 802.3 voltage drop, Ajax Grade 2/3, and more).",
+  "main": "cctv-engineering-math.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gazpearce/cctv-security-hub.git"
+  },
+  "keywords": [
+    "cctv",
+    "dori-calculator",
+    "bs-en-62676-4",
+    "starlink-mounting",
+    "wind-load",
+    "poe-voltage-drop",
+    "ajax-systems",
+    "security-engineering",
+    "telecom"
+  ],
+  "author": "Gary Pearce <aiagent1510@gmail.com> (https://adicommunications.co.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gazpearce/cctv-security-hub/issues"
+  },
+  "homepage": "https://gazpearce.github.io/cctv-security-hub/"
+}

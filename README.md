@@ -72,6 +72,37 @@ Complete engineering teardowns published under Gary Pearce's verified author pro
 
 ---
 
+## 📦 Open-Source JavaScript / Node.js Library (`cctv-engineering-math.js`)
+
+All 10 physics and electrical algorithms are bundled into a standalone, zero-dependency isomorphic library supporting CommonJS, ES Modules, and direct browser `<script>` CDN delivery:
+
+### Browser CDN:
+```html
+<script src="https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/cctv-engineering-math.js"></script>
+<script>
+  // Calculate BS EN 62676-4 DORI PPM
+  const result = CctvEngineeringMath.calculateDori({
+    resolutionMp: 4,
+    sensorWidthMm: 5.37,
+    focalLengthMm: 2.8,
+    distanceM: 10
+  });
+  console.log('Pixels Per Metre:', result.ppm, 'Identify:', result.isIdentify);
+</script>
+```
+
+### Node.js / NPM:
+```bash
+npm install git+https://github.com/gazpearce/cctv-security-hub.git
+```
+```javascript
+const math = require('cctv-engineering-math');
+const wind = math.calculateWindLoad({ windSpeedMph: 90, dishAreaM2: 0.231, mastHeightM: 0.6 });
+console.log('Pennine Gale Force:', wind.totalForceN, 'N');
+```
+
+---
+
 ## 👨‍🔧 Trade E-E-A-T & Contact
 
 * **Lead Engineer**: Gary Pearce
