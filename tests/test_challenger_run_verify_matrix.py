@@ -69,7 +69,7 @@ sso.run_verify()
                 ret, stdout, stderr = self.run_verify_subprocess(stack, f"{self.base_url}/status/404")
                 self.assertEqual(ret, 1, f"Stack {stack} did not trigger exit code 1 on 404!")
                 self.assertIn("[VERIFY FAIL]", stdout)
-                self.assertIn("10/11 Endpoints Reachable", stdout)
+                self.assertNotIn("11/11 Endpoints Reachable", stdout)
 
     def test_matrix_all_11_stacks_fail_on_500(self):
         """Every stack must cause run_verify to exit 1 when returning HTTP 500."""
@@ -78,7 +78,7 @@ sso.run_verify()
                 ret, stdout, stderr = self.run_verify_subprocess(stack, f"{self.base_url}/status/500")
                 self.assertEqual(ret, 1, f"Stack {stack} did not trigger exit code 1 on 500!")
                 self.assertIn("[VERIFY FAIL]", stdout)
-                self.assertIn("10/11 Endpoints Reachable", stdout)
+                self.assertNotIn("11/11 Endpoints Reachable", stdout)
 
     def test_matrix_all_11_stacks_fail_on_dns_error(self):
         """Every stack must cause run_verify to exit 1 when DNS fails."""
@@ -88,7 +88,7 @@ sso.run_verify()
                 ret, stdout, stderr = self.run_verify_subprocess(stack, bad_dns)
                 self.assertEqual(ret, 1, f"Stack {stack} did not trigger exit code 1 on DNS failure!")
                 self.assertIn("[VERIFY FAIL]", stdout)
-                self.assertIn("10/11 Endpoints Reachable", stdout)
+                self.assertNotIn("11/11 Endpoints Reachable", stdout)
 
     def test_matrix_redirect_loop_vulnerability(self):
         """

@@ -5,4 +5,10 @@ with open("master_profile_manifest.json", "r", encoding="utf-8") as f:
 
 cs = m.get("category_stacks_11", {})
 for k, v in cs.items():
-    print(f"{k}: id={v.get('id')} name='{v.get('name')}' apex='{v.get('apex_url')}' agent='{v.get('agent')}'")
+    print(f"Stack {k}:")
+    for field in v:
+        val = v[field]
+        if isinstance(val, list):
+            print(f"   {field}: list of {len(val)}")
+        else:
+            print(f"   {field}: {val}")
