@@ -148,3 +148,20 @@ SEO TAGS:
 2. **Explicit Working Hyperlinks:** Every asset must contain at least 2 working URLs: one pointing UPWARD to the Top of Stack Google Property, and one pointing DOWNWARD to the ADI Communications buffer post.
 3. **Valid Tags:** Every asset must feature 5–10 relevant trade tags formatted per platform rules.
 4. **Automated Health Check:** `run_master_qc_audit.py` checks that 100% of entries in `doc3_published_asset_links.csv` and `public_backlink_master_ledger.csv` contain valid descriptions, tags, and HTTP 200 URLs.
+
+---
+
+## 6. Strict Media-Type Separation & Anti-Ban Podcast Protocol (NotebookLM Exclusive)
+
+To guarantee 100% compliance across Apple Podcasts, Spotify for Podcasters, Podbean, and open RSS directories without triggering account suspensions or feed rejections:
+
+1. **Podcast Platforms = 100% Audio Only (`.mp3` / `.m4a`):**
+   - Podbean, Apple Podcasts, Libsyn, Spotify, and `podcast.xml` RSS feeds must **ONLY** receive genuine audio episodes.
+   - **Strict Ban:** NEVER upload raw video files (`.mp4` / `.mov`) or arbitrary web videos to dedicated audio podcast feeds or hosts. Doing so violates iTunes DTD / RSS 2.0 specifications, breaks duration parsing, and leads to immediate account bans.
+2. **Mandatory NotebookLM Explainer Engine:**
+   - All audio podcast debriefs must originate exclusively from genuine **Google NotebookLM Deep Dive Audio Overviews** (or Gemini 2.0 £0 token processing), formatted as dual-engineer field discussions.
+   - Trade Presentation: Presented as *ADI Technical Audio Debrief – Dual-Engineer Field Analysis* with zero AI brand mentions on the frontend.
+   - Enclosures are strict `type="audio/mpeg"` with valid byte lengths and ID3 tags.
+3. **Video Platforms = 100% Video Files (`.mp4` / `.webm`):**
+   - YouTube, DailyMotion, Vimeo, Internet Archive (movies collection), PeerTube, and Rumble receive full 1080p/4K video masterclasses with timestamps and links back to canonical YouTube (`@CCTV.services`).
+4. **Zero Media Bleed:** Keep video and podcast distribution channels strictly isolated. Podbean receives only genuine NotebookLM MP3s; YouTube and video hosts receive only genuine MP4 video masterclasses.
