@@ -12,34 +12,82 @@ import sys
 from datetime import datetime
 
 STACK_TEAMS = {
-    "blog": {
-        "agent": "stack-blog-agent",
-        "description": "Blogger DA 99, Hashnode, DEV.to, Write.as, Ghost publishing",
-        "script": "syndicate_blog_stack.py"
+    "video": {
+        "agent": "stack-video-agent",
+        "apex": "https://www.youtube.com/@CCTV.services",
+        "description": "Video Stack (YouTube Apex -> Vimeo, Dailymotion, Rumble, Archive.org, PeerTube)",
+        "script": "video_stack_syndicator.py"
     },
-    "pdf": {
-        "agent": "stack-pdf-agent",
-        "description": "Interactive ReportLab vector PDFs, whitepapers, Internet Archive, Zenodo",
+    "podcast": {
+        "agent": "stack-podcast-agent",
+        "apex": "https://www.youtube.com/@CCTV.services/podcasts",
+        "description": "Podcast & Audio Stack (YouTube Podcasts -> Podbean, Spotify, SoundCloud, Audius)",
+        "script": "syndicate_archive_media.py"
+    },
+    "docs": {
+        "agent": "stack-docs-agent",
+        "apex": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "description": "Docs & Research Stack (Google Drive Vault -> Zenodo, OSF, SlideShare, Scribd)",
         "script": "generate_reportlab_whitepapers.py"
     },
-    "data": {
-        "agent": "stack-dataset-agent",
-        "description": "UK police crime telemetry, CCTV DORI matrices, Hugging Face, Google Sheets",
-        "script": "generate_public_datasets.py"
+    "blog": {
+        "agent": "stack-blog-agent",
+        "apex": "https://tvandhomesecurity.blogspot.com/",
+        "description": "Blog & Editorial Stack (Blogger DA 99 -> DEV.to, Hashnode, Medium, Substack)",
+        "script": "syndicate_blog_stack.py"
+    },
+    "cloud": {
+        "agent": "stack-cloud-agent",
+        "apex": "https://gary-pearce-forensic-hub.web.app/",
+        "description": "Cloud Apps & Tools Stack (Firebase Edge CDN & Google Sites -> Netlify, Surge, GitHub, GitLab, Cloudflare)",
+        "script": "autonomous_cloud_deployer.py"
     },
     "media": {
         "agent": "stack-media-agent",
-        "description": "Trade photography (FreeImage.Host, ImgBB, Pinterest), YouTube videos, Dailymotion",
+        "apex": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "description": "Image & Visual Stack (Google Drive CDN -> Pinterest, Flickr, Imgur, Unsplash, Pexels)",
         "script": "image_stack_syndicator.py"
     },
-    "microsite": {
-        "agent": "stack-microsite-agent",
-        "description": "Firebase Hosting Edge tools, GitHub Pages calculators, Cloudflare Pages",
-        "script": "build_master_100_directory.py"
+    "howto": {
+        "agent": "stack-howto-agent",
+        "apex": "https://docs.google.com/document/d/e/2PACX-1vT-how-to-guide/pub",
+        "description": "How-To & Guides Stack (Google Classroom & Docs -> Instructables, WikiHow, GitHub Wiki)",
+        "script": "generate_trade_whitepapers.py"
+    },
+    "bookmark": {
+        "agent": "stack-bookmark-agent",
+        "apex": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
+        "description": "Bookmarking & Discovery Stack (Firebase Ledger -> Raindrop.io, Pinboard, Diigo, Reddit)",
+        "script": "build_public_backlink_ledger.py"
+    },
+    "rss": {
+        "agent": "stack-rss-agent",
+        "apex": "https://tvandhomesecurity.blogspot.com/feeds/posts/default?alt=rss",
+        "description": "RSS Feed Stacking (Google Feedburner & Blogger RSS -> Feedspot, Feedly, AllTop)",
+        "script": "upgrade_manifests_and_assets.py"
+    },
+    "music": {
+        "agent": "stack-music-agent",
+        "apex": "https://www.youtube.com/@CCTV.services",
+        "description": "Music Showcase Stack (YouTube Music -> Bandcamp, SoundCloud, Audius, ReverbNation)",
+        "script": "generate_studio_music_tracks.py"
+    },
+    "offers": {
+        "agent": "stack-offers-agent",
+        "apex": "https://maps.google.com/?cid=ADI-Communications",
+        "description": "Offers & Trade Directories (Google Business Profile & Maps -> FreeIndex, Cylex, Hotfrog, Scoot)",
+        "script": "generate_100_postcode_dataset.py"
+    },
+    "verifier": {
+        "agent": "workspace-verifier-agent",
+        "apex": "https://mail.google.com/",
+        "description": "Automated Email & Link Verification (admin@adicommunications.co.uk & aiagent1510@gmail.com)",
+        "script": "auto_email_verifier.py"
     },
     "ledger": {
         "agent": "stack-ledger-agent",
-        "description": "Aggregates all published backlinks, updates public CSV & HTML ledgers, audits Rule 45",
+        "apex": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
+        "description": "Public Discovery Ledger & Rule 45 QC Auditor",
         "script": "build_public_backlink_ledger.py"
     }
 }

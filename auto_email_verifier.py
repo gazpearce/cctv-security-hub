@@ -13,7 +13,7 @@ async def get_latest_verification_data():
     with urllib.request.urlopen(req) as resp:
         tabs = json.loads(resp.read().decode())
         
-    mail_tab = next((t for t in tabs if "mail.google.com" in t.get("url", "")), None)
+    mail_tab = next((t for t in tabs if t.get("url", "").startswith("https://mail.google.com/")), None)
     if not mail_tab:
         print("[EMAIL-VERIFIER] No active Gmail tab found on port 9223")
         return None
@@ -48,7 +48,8 @@ async def get_latest_verification_data():
                 if is_verify:
                     code = code_match.group(1) if code_match else None
                     results.append({"text": snip[:100], "code": code})
-                    print(f"  -> [MATCH] {snip[:80]} | Code: {code}")
+                    safe_snip = snip[:80].encode("ascii", "replace").decode("ascii")
+                    print(f"  -> [MATCH] {safe_snip} | Code: {code}")
                     
             return results
     except Exception as e:
