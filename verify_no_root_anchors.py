@@ -13,7 +13,7 @@ for root, dirs, files in os.walk(root_dir):
             with open(p, "r", encoding="utf-8", errors="ignore") as fp:
                 for line_no, line in enumerate(fp, 1):
                     # Check for direct money site root
-                    if re.search(r"https?://(?:www\.)?adicommunications\.co\.uk/?(?:$|[?#\"'\s<>,;\\]}])", line):
+                    if re.search(r"https?://(?:www\.)?adicommunications\.co\.uk/?(?:$|[?#\"'\s<>,;)\]}])", line):
                         # Ensure it's not a /news/ or specific subpath
                         if not re.search(r"adicommunications\.co\.uk/(?:news|assets|feed)", line):
                             violations.append((p, line_no, line.strip()))

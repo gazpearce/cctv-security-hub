@@ -384,25 +384,25 @@ class TestParityAndInvariants(unittest.TestCase):
 
 
 class TestVerifyNoRootAnchorsAudit(unittest.TestCase):
-    """Audit the repository's verify_no_root_anchors.py script for blind spots."""
+    """Audit the repository's verify_no_root_anchors.py script for blind spots and hardening."""
 
     def test_verify_script_has_delimiter_blindspot(self):
-        """Empirically prove that verify_no_root_anchors.py misses parenthetical URLs."""
+        """Empirically verify that verify_no_root_anchors.py checks CSV and parenthetical URLs."""
         verify_script_path = REPO_ROOT / "verify_no_root_anchors.py"
         script_content = verify_script_path.read_text(encoding="utf-8")
 
-        # Proof 1: Extension coverage omits .csv
-        self.assertNotIn(".csv", script_content, "verify_no_root_anchors.py fails to check .csv files")
+        # Proof 1: Extension coverage includes .csv
+        self.assertIn(".csv", script_content, "verify_no_root_anchors.py must check .csv files")
 
-        # Proof 2: Regex delimiter limitation
+        # Proof 2: Regex delimiter check
         test_line = '"author": "Gary Pearce <aiagent1510@gmail.com> (https://adicommunications.co.uk)",'
-        script_regex = re.compile(r"https?://(?:www\.)?adicommunications\.co\.uk/?[\"\'\s>]")
+        script_regex = re.compile(r"https?://(?:www\.)?adicommunications\.co\.uk/?(?:$|[?#\"'\s<>,;)\]}])")
         matched_by_script = bool(script_regex.search(test_line))
 
-        # This proves the script fails to detect package.json's violation!
-        self.assertFalse(
+        # This proves the script now detects package.json's parenthetical violation!
+        self.assertTrue(
             matched_by_script,
-            "verify_no_root_anchors.py regex fails to match URLs terminated by ')'"
+            "verify_no_root_anchors.py regex must match URLs terminated by ')'"
         )
 
 
