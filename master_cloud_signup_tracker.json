@@ -1,6 +1,6 @@
 {
-  "total_platforms": 154,
-  "joined_count": 61,
+  "total_platforms": 155,
+  "joined_count": 62,
   "platforms": [
     {
       "rank": "1",
@@ -1881,6 +1881,18 @@
       "status": "PENDING",
       "active_tenant_url": "",
       "rank": "154"
+    },
+    {
+      "rank": "155",
+      "name": "Rumble",
+      "domain": "rumble.com",
+      "da": 92,
+      "category": "Video Hosting & Streaming",
+      "free_tier": "Free video hosting, HD streaming, embed player",
+      "sso_method": "Email & OTP Verification",
+      "signup_url": "https://rumble.com/register/",
+      "status": "JOINED",
+      "active_tenant_url": "https://rumble.com/user/adicommunications"
     }
   ]
 }

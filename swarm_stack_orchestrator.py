@@ -14,6 +14,10 @@ import subprocess
 import sys
 import urllib.request
 import urllib.error
+import socket
+import ssl
+import time
+from typing import Dict, List, Optional, Tuple
 from datetime import datetime
 
 REPO_ROOT = os.path.dirname(os.path.abspath(globals()["__file__"])) if globals().get("__file__") else os.getcwd()
@@ -57,7 +61,7 @@ STACK_TEAMS = {
     },
     "howto": {
         "agent": "stack-howto-agent",
-        "apex": "https://docs.google.com/document/d/e/2PACX-1vT-how-to-guide/pub",
+        "apex": "https://sites.google.com/view/cctv-security-hub-uk",
         "description": "How-To & Guides Stack (Google Classroom & Docs -> Instructables, WikiHow, GitHub Wiki)",
         "script": "generate_trade_whitepapers.py"
     },
@@ -75,7 +79,7 @@ STACK_TEAMS = {
     },
     "music": {
         "agent": "stack-music-agent",
-        "apex": "https://www.youtube.com/@CCTV.services",
+        "apex": "https://music.youtube.com/@CCTV.services",
         "description": "Music Showcase Stack (YouTube Music -> Bandcamp, SoundCloud, Audius, ReverbNation)",
         "script": "generate_studio_music_tracks.py"
     },
@@ -210,6 +214,59 @@ def deploy_to_cloud():
     """Backward compatibility alias for run_deploy()."""
     run_deploy(skip_deploy=False)
 
+CATEGORY_STACK_KEYS = [
+    "video", "podcast", "docs", "blog", "cloud", "media",
+    "howto", "bookmark", "rss", "music", "offers"
+]
+
+def check_url_reachability(
+    url: str,
+    timeout: float = 5.0,
+    user_agent: str = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+) -> Tuple[bool, Optional[int], str, float]:
+    """
+    Perform an empirical HTTP GET probe against a target URL.
+    Handles standard HTTP redirects (301, 302, 303, 307, 308) via urllib's default
+    HTTPRedirectHandler, accepting any status in [200, 400) as verified reachable.
+    Cleanly catches urllib.error.HTTPError, urllib.error.URLError, TimeoutError,
+    socket.timeout, and ssl.SSLError, returning real observed status codes and error messages.
+    """
+    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
+    t0 = time.time()
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            elapsed = time.time() - t0
+            status = getattr(resp, "status", resp.getcode())
+            if 200 <= status < 400:
+                return True, status, f"HTTP {status} (Verified Reachable in {elapsed:.2f}s)", elapsed
+            else:
+                return False, status, f"HTTP {status} (Unexpected status)", elapsed
+    except urllib.error.HTTPError as e:
+        elapsed = time.time() - t0
+        status = e.code
+        if 200 <= status < 400:
+            return True, status, f"HTTP {status} {e.reason} (Redirect Reachable in {elapsed:.2f}s)", elapsed
+        else:
+            return False, status, f"HTTP {status} {e.reason}", elapsed
+    except urllib.error.URLError as e:
+        elapsed = time.time() - t0
+        reason = e.reason
+        if isinstance(reason, (TimeoutError, socket.timeout)):
+            return False, None, f"Connection Timed Out (>{timeout}s)", elapsed
+        elif isinstance(reason, ssl.SSLError):
+            return False, None, f"SSL Handshake Error: {reason}", elapsed
+        else:
+            return False, None, f"URLError: {reason}", elapsed
+    except (TimeoutError, socket.timeout) as e:
+        elapsed = time.time() - t0
+        return False, None, f"Connection Timed Out (>{timeout}s)", elapsed
+    except ssl.SSLError as e:
+        elapsed = time.time() - t0
+        return False, None, f"SSL Error: {e}", elapsed
+    except Exception as e:
+        elapsed = time.time() - t0
+        return False, None, f"Error ({type(e).__name__}): {e}", elapsed
+
 def run_verify():
     print("================================================================================")
     print("             VERIFYING PUBLIC ENDPOINTS & CDP AUTH CONNECTIONS                  ")
@@ -225,13 +282,46 @@ def run_verify():
     except Exception as e:
         print(f"[VERIFY WARN] Chrome CDP Port 9223 currently offline: {e}")
 
-    # 2. Apex Reachability
+    # 2. Genuine Apex Reachability Verification
     print("\nTesting Top-of-Stack Google Citadel Apex Endpoints:")
-    for name, info in list(STACK_TEAMS.items())[:5]:
-        apex = info["apex"]
-        print(f"  - [{name.upper()}] Apex: {apex} -> HTTP 200 (Verified Google Citadel)")
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    tested_count = 0
+    reachable_count = 0
+    failed_stacks: List[Tuple[str, str, str]] = []
 
-    print("\n[VERIFY PASS] Endpoint verification completed.")
+    for name in CATEGORY_STACK_KEYS:
+        info = STACK_TEAMS.get(name)
+        if not info:
+            print(f"  - [{name.upper():<8}] Apex: [NOT DEFINED IN STACK_TEAMS] -> FAILED")
+            failed_stacks.append((name, "N/A", "Not defined in STACK_TEAMS"))
+            tested_count += 1
+            continue
+
+        apex = info.get("apex", "")
+        tested_count += 1
+
+        is_ok, status_code, message, elapsed = check_url_reachability(
+            apex, timeout=5.0, user_agent=user_agent
+        )
+
+        if is_ok:
+            reachable_count += 1
+            print(f"  - [{name.upper():<8}] Apex: {apex} -> HTTP {status_code} (Verified Reachable in {elapsed:.2f}s)")
+        else:
+            failed_stacks.append((name, apex, message))
+            print(f"  - [{name.upper():<8}] Apex: {apex} -> UNREACHABLE: {message}")
+
+    print("\n" + "-" * 88)
+    print(f"Apex Verification Telemetry: {reachable_count}/{tested_count} Endpoints Reachable")
+    print("-" * 88)
+
+    if reachable_count == tested_count and tested_count == len(CATEGORY_STACK_KEYS):
+        print(f"[VERIFY PASS] All {reachable_count}/{tested_count} Top-of-Stack Google Citadel Apex endpoints verified reachable.")
+    else:
+        print(f"[VERIFY FAIL] {len(failed_stacks)}/{tested_count} apex endpoints failed verification!")
+        for fail_name, fail_url, fail_reason in failed_stacks:
+            print(f"   -> [{fail_name.upper()}]: {fail_url} => {fail_reason}")
+        sys.exit(1)
 
 def run_stack_execution(stack_name, skip_deploy=False):
     print("================================================================================")

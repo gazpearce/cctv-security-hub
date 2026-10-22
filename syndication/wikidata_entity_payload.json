@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wikidata & Grokipedia Entity Payload for Gary Pearce & ADI Communications",
+  "generated_at": "2026-10-22T19:30:00Z",
+  "entity_gary_pearce": {
+    "labels": {
+      "en": "Gary Pearce",
+      "en-gb": "Gary Pearce"
+    },
+    "descriptions": {
+      "en": "British physical security engineer, telecommunications specialist, and founder of ADI Communications",
+      "en-gb": "British physical security engineer and founder of ADI Communications with 25+ years field experience"
+    },
+    "claims": {
+      "P31": [
+        {"value": "Q5", "label": "human"}
+      ],
+      "P21": [
+        {"value": "Q6581097", "label": "male"}
+      ],
+      "P27": [
+        {"value": "Q145", "label": "United Kingdom"}
+      ],
+      "P106": [
+        {"value": "Q11225", "label": "telecommunications engineer"},
+        {"value": "Q1605333", "label": "security consultant"}
+      ],
+      "P108": [
+        {"value": "ADI Communications", "label": "ADI Communications Ltd"}
+      ],
+      "P1329": [
+        {"value": "+44-7860-244274", "label": "phone number"}
+      ],
+      "P856": [
+        {"value": "https://adicommunications.co.uk/about/", "label": "official about page"}
+      ],
+      "P159": [
+        {"value": "Q1958614", "label": "Birstall, West Yorkshire"}
+      ],
+      "P854": [
+        {"value": "https://gary-pearce-forensic-hub.web.app/", "label": "forensic authority ledger"}
+      ]
+    }
+  },
+  "entity_adi_communications": {
+    "labels": {
+      "en": "ADI Communications",
+      "en-gb": "ADI Communications"
+    },
+    "descriptions": {
+      "en": "British physical security and telecommunications engineering firm operating across West Yorkshire",
+      "en-gb": "British security installation and telecommunications engineering company established by Gary Pearce"
+    },
+    "claims": {
+      "P31": [
+        {"value": "Q4830453", "label": "business enterprise"}
+      ],
+      "P112": [
+        {"value": "Gary Pearce", "label": "founder"}
+      ],
+      "P159": [
+        {"value": "Q1958614", "label": "Birstall, West Yorkshire"}
+      ],
+      "P856": [
+        {"value": "https://adicommunications.co.uk/about/", "label": "official about page"}
+      ],
+      "P1329": [
+        {"value": "+44-7860-244274", "label": "official phone"}
+      ],
+      "P452": [
+        {"value": "Q15637255", "label": "security industry"},
+        {"value": "Q11225", "label": "telecommunications"}
+      ]
+    }
+  }
+}

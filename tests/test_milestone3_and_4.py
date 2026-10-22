@@ -95,9 +95,17 @@ class TestMilestone3And4(unittest.TestCase):
         self.assertIn("verify", res.stdout)
         self.assertIn("deploy", res.stdout)
 
-        for subcmd in ["status", "sync", "audit", "verify"]:
+        for subcmd in ["status", "sync", "audit"]:
             res = subprocess.run([sys.executable, str(orch), subcmd], capture_output=True, text=True, cwd=str(REPO_ROOT))
             self.assertEqual(res.returncode, 0, f"Subcommand '{subcmd}' failed: {res.stderr}")
+
+        # M4.4: Verify authentic reachability across all 11 category stacks
+        res_verify = subprocess.run([sys.executable, str(orch), "verify"], capture_output=True, text=True, cwd=str(REPO_ROOT))
+        self.assertEqual(res_verify.returncode, 0, f"Subcommand 'verify' failed: {res_verify.stderr}")
+        for cat in ["VIDEO", "PODCAST", "DOCS", "BLOG", "CLOUD", "MEDIA", "HOWTO", "BOOKMARK", "RSS", "MUSIC", "OFFERS"]:
+            self.assertIn(f"[{cat}", res_verify.stdout, f"Missing category '{cat}' in verify output")
+        self.assertIn("11/11 Endpoints Reachable", res_verify.stdout)
+        self.assertIn("[VERIFY PASS] All 11/11 Top-of-Stack Google Citadel Apex endpoints verified reachable.", res_verify.stdout)
 
     def test_m4_02_orchestrator_deploy_dry_run(self):
         orch = REPO_ROOT / "swarm_stack_orchestrator.py"
