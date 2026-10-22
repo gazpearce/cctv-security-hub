@@ -6,7 +6,8 @@ surge_sites = [
     ("adi-starlink-wind-calculator.surge.sh", "starlink-wind-load-calculator.html"),
     ("adi-sound-system-music.surge.sh", "music-showcase.html"),
     ("adi-cctv-dori-lens.surge.sh", "cctv-dori-lens-calculator.html"),
-    ("adi-ajax-alarm-selector.surge.sh", "ajax-alarm-grade-selector.html")
+    ("adi-ajax-alarm-selector.surge.sh", "ajax-alarm-grade-selector.html"),
+    ("adi-starlink-mount-finder.surge.sh", "starlink-mount-obstacle-finder.html")
 ]
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
