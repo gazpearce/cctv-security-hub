@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Above Fireplace Thermal Safety & Wall Anchor Calculator | ADI Communications</title>
+  <meta name="description" content="Calculate OLED/QLED thermal safety, convection heat deflection, and wall anchor shear loads for mounting TVs above UK fireplaces and log burners. Engineered by Gary Pearce.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#0A0A0F] text-slate-100 min-h-screen p-4 sm:p-8 flex items-center justify-center">
+
+  <div class="max-w-3xl w-full bg-[#12121A] border border-white/10 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+    <!-- Ambient Glow -->
+    <div class="absolute -top-24 -right-24 w-80 h-80 bg-[#FF5500]/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header -->
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-3 h-3 rounded-full bg-[#FF5500] animate-pulse"></div>
+      <span class="font-mono text-xs uppercase tracking-widest text-[#FFA07A]">ADI Trade Engineering Console</span>
+    </div>
+
+    <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
+      TV Above Fireplace Thermal &amp; Anchor Diagnostic
+    </h1>
+    <p class="text-sm text-slate-400 mb-8">
+      Verify 40&deg;C OLED panel thermal safety margins, rising convection plume deflection, and wall anchor pull-out limits across British masonry and plasterboard.
+    </p>
+
+    <!-- Interactive Form Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+      <!-- Q1: TV Display Size & Type -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">1. TV Screen Size &amp; Panel Type</label>
+        <select id="tvType" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="oled_55">55&quot; OLED (e.g. LG C3/G3, Samsung S90C - 16-19kg, Max 40&deg;C)</option>
+          <option value="oled_65">65&quot; OLED (e.g. LG G4, Sony A80L - 23-28kg, Max 40&deg;C)</option>
+          <option value="qled_65">65&quot;-75&quot; Mini-LED / QLED (25-38kg, Max 45&deg;C)</option>
+          <option value="giant_85">77&quot;-85&quot; Heavyweight Flagship (38-52kg, High Leverage)</option>
+        </select>
+      </div>
+
+      <!-- Q2: Fireplace Heat Source -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">2. Fireplace Heat Source</label>
+        <select id="heatSource" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="log_burner">Wood Burning Stove / Multi-Fuel Log Burner (High Convection 6-8kW)</option>
+          <option value="gas_fire">Flued / Inset Living Flame Gas Fire (Moderate Heat 3-5kW)</option>
+          <option value="electric_fire">Modern Inset Electric Fireplace (Low Frontal Vent &lt;2kW)</option>
+          <option value="unused_breast">Decorative Chimney Breast (No Fire / Decommissioned)</option>
+        </select>
+      </div>
+
+      <!-- Q3: Mantelpiece Deflector Depth -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">3. Mantelpiece Deflector Projection</label>
+        <select id="mantelDepth" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="none">No Mantelpiece (Flush Vertical Breast)</option>
+          <option value="shallow">Shallow Floating Shelf (100mm - 120mm Projection)</option>
+          <option value="deep_oak">Deep Solid Oak or Stone Mantel (200mm - 250mm Projection)</option>
+        </select>
+      </div>
+
+      <!-- Q4: Wall Construction -->
+      <div>
+        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 font-mono">4. Wall Substrate &amp; Construction</label>
+        <select id="wallSubstrate" class="w-full bg-[#1A1A26] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500] transition">
+          <option value="dot_dab">Dot &amp; Dab Drywall over Thermalite / Aerated Block</option>
+          <option value="solid_brick">Solid Victorian Clay Brick Chimney Breast</option>
+          <option value="stone_breast">Yorkshire Sandstone / Gritstone Hearth Breast</option>
+          <option value="stud_hollow">Hollow Stud False Breast (Plasterboard over Timber Studs)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Compute Button -->
+    <button onclick="calculateThermalSafety()" class="w-full bg-gradient-to-r from-[#FF5500] to-[#E04B00] hover:from-[#FF6611] hover:to-[#FF5500] text-white font-bold py-3.5 px-6 rounded-xl transition shadow-lg shadow-[#FF5500]/25 flex items-center justify-center gap-2 font-mono text-sm tracking-wide">
+      <span>Verify Thermal Limits &amp; Structural Anchors</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </button>
+
+    <!-- Results Panel (Dynamic) -->
+    <div id="resultsPanel" class="mt-8 pt-8 border-t border-white/10 hidden">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-[#1A1A26] border border-white/5 p-4 rounded-xl">
+          <span class="text-xs text-slate-400 font-mono">Thermal Plume Status</span>
+          <div id="thermalStatus" class="text-lg font-bold text-amber-400 mt-1">Checking...</div>
+          <span id="thermalDetail" class="text-xs text-slate-500">Peak panel temperature</span>
+        </div>
+        <div class="bg-[#1A1A26] border border-white/5 p-4 rounded-xl">
+          <span class="text-xs text-slate-400 font-mono">Structural Anchor Spec</span>
+          <div id="anchorSpec" class="text-lg font-bold text-blue-400 mt-1">CoreFix 100 Heavy Duty</div>
+          <span id="anchorDetail" class="text-xs text-slate-500">100kg shear safety load</span>
+        </div>
+        <div class="bg-[#1A1A26] border border-white/5 p-4 rounded-xl">
+          <span class="text-xs text-slate-400 font-mono">Recommended Mount</span>
+          <div id="mountType" class="text-lg font-bold text-emerald-400 mt-1">Drop-Down MantelMount</div>
+          <span class="text-xs text-slate-500">Eye-level comfort</span>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-[#1A1A26] to-[#12121A] border border-[#FF5500]/20 p-5 rounded-xl mb-6">
+        <h4 class="text-sm font-bold text-[#FFA07A] font-mono uppercase tracking-wider mb-2">Trade Engineering Analysis &amp; Field Verdict</h4>
+        <p id="engineeringVerdict" class="text-sm text-slate-200 leading-relaxed"></p>
+      </div>
+
+      <!-- Direct Contact CTA -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/[0.02] border border-white/10 p-4 rounded-xl">
+        <div>
+          <div class="text-sm font-bold text-white">Need certified fireplace TV installation in Yorkshire?</div>
+          <div class="text-xs text-slate-400">Gary Pearce &bull; ADI Communications &bull; 25+ Years Experience &bull; &pound;10M Public Liability</div>
+        </div>
+        <a href="tel:07860244274" class="bg-gradient-to-r from-[#FF5500] to-[#E04B00] hover:from-[#FF6611] hover:to-[#FF5500] text-white font-mono text-xs uppercase tracking-wider font-bold py-2.5 px-5 rounded-full border border-white/20 transition whitespace-nowrap">
+          Call Gary: 07860 244 274
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function calculateThermalSafety() {
+      const tv = document.getElementById('tvType').value;
+      const heat = document.getElementById('heatSource').value;
+      const mantel = document.getElementById('mantelDepth').value;
+      const wall = document.getElementById('wallSubstrate').value;
+
+      const results = document.getElementById('resultsPanel');
+      const thermalStatus = document.getElementById('thermalStatus');
+      const thermalDetail = document.getElementById('thermalDetail');
+      const anchorSpec = document.getElementById('anchorSpec');
+      const anchorDetail = document.getElementById('anchorDetail');
+      const mountType = document.getElementById('mountType');
+      const verdict = document.getElementById('engineeringVerdict');
+
+      results.classList.remove('hidden');
+
+      // Thermal calculations
+      if (heat === 'unused_breast' || heat === 'electric_fire') {
+        thermalStatus.innerText = 'Safe (< 28°C)';
+        thermalStatus.className = 'text-lg font-bold text-emerald-400 mt-1';
+        thermalDetail.innerText = 'Well inside manufacturer 40°C limit';
+      } else if (heat === 'gas_fire') {
+        if (mantel === 'deep_oak') {
+          thermalStatus.innerText = 'Protected (< 34°C)';
+          thermalStatus.className = 'text-lg font-bold text-emerald-400 mt-1';
+          thermalDetail.innerText = 'Mantel effectively deflects heat plume';
+        } else if (mantel === 'shallow') {
+          thermalStatus.innerText = 'Caution (36°C - 39°C)';
+          thermalStatus.className = 'text-lg font-bold text-amber-400 mt-1';
+          thermalDetail.innerText = 'Marginal clearance for OLED panels';
+        } else {
+          thermalStatus.innerText = 'Thermal Risk (> 44°C)';
+          thermalStatus.className = 'text-lg font-bold text-red-400 mt-1';
+          thermalDetail.innerText = 'Exceeds OLED operational warranty';
+        }
+      } else { // log_burner
+        if (mantel === 'deep_oak') {
+          thermalStatus.innerText = 'Safe With Deflector (< 35°C)';
+          thermalStatus.className = 'text-lg font-bold text-emerald-400 mt-1';
+          thermalDetail.innerText = '200mm+ mantel breaks direct plume';
+        } else if (mantel === 'shallow') {
+          thermalStatus.innerText = 'Severe Risk (42°C - 48°C)';
+          thermalStatus.className = 'text-lg font-bold text-red-400 mt-1';
+          thermalDetail.innerText = 'High risk of OLED organic pixel burn';
+        } else {
+          thermalStatus.innerText = 'CRITICAL RISK (> 55°C)';
+          thermalStatus.className = 'text-lg font-bold text-red-500 mt-1';
+          thermalDetail.innerText = 'Will void LG/Samsung warranty & delaminate panel';
+        }
+      }
+
+      // Anchor calculations
+      if (wall === 'dot_dab') {
+        anchorSpec.innerText = 'CoreFix 100 Heavy Duty';
+        anchorDetail.innerText = 'Steel bridging collar into solid block';
+      } else if (wall === 'solid_brick') {
+        anchorSpec.innerText = 'Fischer M8 Masonry Shield';
+        anchorDetail.innerText = 'Direct expansion anchor into Victorian brick';
+      } else if (wall === 'stone_breast') {
+        anchorSpec.innerText = 'Chemical Resin + M8 Studs';
+        anchorDetail.innerText = 'Zero spalling risk on historic gritstone';
+      } else {
+        anchorSpec.innerText = 'Fischer Duotec / Geefix';
+        anchorDetail.innerText = 'Heavy-duty steel/nylon cavity toggles';
+      }
+
+      // Mount selection
+      if (heat === 'log_burner' || heat === 'gas_fire') {
+        mountType.innerText = 'MantelMount MM540 / Heavy Tilt';
+      } else {
+        mountType.innerText = 'Ultra-Slim Low Profile Tilt';
+      }
+
+      // Detailed Verdict Prose
+      let verdictText = '';
+      if (heat === 'log_burner' && mantel === 'none') {
+        verdictText = 'CRITICAL WARNING: Mounting an OLED panel directly above an unmantelled log burner will expose sensitive organic light-emitting diodes to convection plumes exceeding 55°C. Manufacturer warranties (LG, Sony, Samsung) strictly void coverage above 40°C. To proceed safely, an engineered deflector mantel (minimum 200mm projection) must be installed at least 300mm above the firebox, paired with an articulating drop-down mount to preserve eye-level viewing angles.';
+      } else if (wall === 'dot_dab') {
+        verdictText = 'WALL INTEGRITY NOTICE: Modern UK dot and dab construction leaves an unsupported 10mm-25mm air cavity between plasterboard and thermalite blocks. Standard plastic rawlplugs cause plasterboard crushing and catastrophic bracket pull-out. We engineer every dot-and-dab fireplace installation with heavy-duty CoreFix 100 steel bridging sleeves, transferring the full 100kg shear load directly into solid masonry without stressing the drywall.';
+      } else if (wall === 'stone_breast') {
+        verdictText = 'HERITAGE STONE INTEGRITY: Historic Yorkshire stone breasts feature irregular mortar lines and hard gritstone faces. Mechanical hammer percussion drilling frequently cracks aged bedding mortar. We utilize diamond rotary drilling and chemical resin injection anchors, achieving a rock-solid, vibration-proof anchor rated for heavy 75"+ screens with zero risk of stone fracture.';
+      } else {
+        verdictText = 'APPROVED INSTALLATION: Your configuration meets UK Building Regulations Approved Document J clearances. By ensuring a 10-12° forward downward tilt and utilising heavy-duty engineered anchors, you achieve optimal cinematic viewing geometry while keeping panel thermal soak comfortably below the 35°C threshold.';
+      }
+
+      verdict.innerText = verdictText;
+      results.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
