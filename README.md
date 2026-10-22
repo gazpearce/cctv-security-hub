@@ -10,9 +10,9 @@ Official open-source engineering calculation models, interactive diagnostic web 
 
 ---
 
-## 🛠️ The 10 Interactive Diagnostic Web Applications
+## 🛠️ The 12 Interactive Diagnostic Web Applications & Image CDN
 
-All tools are client-side, zero-telemetry, mobile-responsive, and hosted 100% free on GitHub Pages:
+All tools are client-side, zero-telemetry, mobile-responsive, and hosted across multi-cloud edge networks:
 
 | # | Tool Name | British Standard / Benchmark | Live Web Application |
 |---|:---|:---|:---|
@@ -26,6 +26,9 @@ All tools are client-side, zero-telemetry, mobile-responsive, and hosted 100% fr
 | 8 | **Starlink vs 4G/5G Rural Broadband TCO** | **3-Year Total Cost Benchmark** | [Launch Tool 8](https://gazpearce.github.io/cctv-security-hub/starlink-vs-5g-cost-calculator.html) |
 | 9 | **Garden Office Wi-Fi Bridge vs Fibre** | **60GHz Fresnel Zone** | [Launch Tool 9](https://gazpearce.github.io/cctv-security-hub/garden-office-wifi-bridge-calculator.html) |
 | 10 | **Smart Doorbell Transformer & Wedge Angle** | **BS EN 61558-2-8** | [Launch Tool 10](https://gazpearce.github.io/cctv-security-hub/smart-doorbell-transformer-calculator.html) |
+| 11 | **TV Fireplace Bracket & Heavy Wall Anchor** | **CoreFix 100 Shear** | [Launch Tool 11](https://gazpearce.github.io/cctv-security-hub/tv-fireplace-bracket-calculator.html) |
+| 12 | **UK Postcode Crime Risk & Police Evidence** | **Home Office Police Data** | [Launch Tool 12](https://gazpearce.github.io/cctv-security-hub/uk-postcode-crime-risk-checker.html) |
+| 13 | **UK Trade Photography CDN & Gallery** | **54 High-Res WebP Assets** | [Launch Image CDN](https://gazpearce.github.io/cctv-security-hub/image-gallery.html) |
 
 ---
 
@@ -100,6 +103,39 @@ const math = require('cctv-engineering-math');
 const wind = math.calculateWindLoad({ windSpeedMph: 90, dishAreaM2: 0.231, mastHeightM: 0.6 });
 console.log('Pennine Gale Force:', wind.totalForceN, 'N');
 ```
+
+---
+
+## 🌐 Multi-Cloud Edge Deployment Architecture
+
+The suite is engineered for zero-latency global delivery across redundant edge clouds with automated security headers, immutable WebP caching, and clean URL rewrites:
+
+### 1. Vercel Edge (`vercel.json`)
+* **Configuration**: Clean extensionless URLs (`cleanUrls: true`), OWASP security headers (`HSTS`, `X-Content-Type-Options`, `SAMEORIGIN`), immutable asset caching (`31536000s`), and friendly tool aliases (`/dori`, `/starlink-wind`, `/poe`, `/storage`, `/ajax`, etc.).
+* **Deploy Command**:
+  ```bash
+  vercel --prod
+  ```
+
+### 2. Netlify Edge (`netlify.toml`)
+* **Configuration**: Automated build pre-verification (`node test.js`), pretty URLs processing, global security headers, immutable caching for `assets/` and `*.webp`, and 200 rewrite rules for clean URLs.
+* **Deploy Command**:
+  ```bash
+  netlify deploy --prod --dir=.
+  ```
+
+### 3. Render Static Site (`render.yaml`)
+* **Configuration**: Infrastructure-as-code Blueprint (`render.yaml`) with static runtime, automated test pre-flight, HTTP response headers, and clean route rewrites.
+* **Deploy Command**:
+  Connected automatically via Git repo Blueprint or via Render CLI:
+  ```bash
+  render blueprints launch
+  ```
+
+### 4. Git Mirrors & CI/CD
+* **GitHub Pages**: Primary live demo at [https://gazpearce.github.io/cctv-security-hub/](https://gazpearce.github.io/cctv-security-hub/)
+* **GitLab CI/CD Pages Mirror (`.gitlab-ci.yml`)**: Continuous automated deployment to GitLab Pages at [https://gitlab.com/aiagent1510/cctv-security-hub](https://gitlab.com/aiagent1510/cctv-security-hub)
+* **Firebase Hosting (`firebase.json`)**: Edge CDN deployment with clean static headers.
 
 ---
 

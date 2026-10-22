@@ -1,0 +1,221 @@
+[build]
+  publish = "."
+  command = "node test.js"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+# Global Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Long-term Immutable Caching for Assets & Media
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/audio/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Code Assets Caching
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+
+# Feeds & Sitemaps
+[[headers]]
+  for = "/podcast.xml"
+  [headers.values]
+    Content-Type = "application/rss+xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+
+# --- URL Shortcuts & Clean Rewrites ---
+
+[[redirects]]
+  from = "/dori"
+  to = "/cctv-dori-lens-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/starlink-wind"
+  to = "/starlink-wind-load-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/starlink-cost"
+  to = "/starlink-vs-5g-cost-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/poe"
+  to = "/poe-voltage-drop-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/storage"
+  to = "/cctv-storage-bandwidth-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/ethernet"
+  to = "/ethernet-upstairs-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/ajax"
+  to = "/ajax-alarm-grade-selector.html"
+  status = 200
+
+[[redirects]]
+  from = "/garden-office"
+  to = "/garden-office-wifi-bridge-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/doorbell"
+  to = "/smart-doorbell-transformer-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/smart-doorbell"
+  to = "/smart-doorbell-transformer-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/tv-thermal"
+  to = "/tv-fireplace-thermal-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/tv-bracket"
+  to = "/tv-fireplace-bracket-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/crime-risk"
+  to = "/uk-postcode-crime-risk-checker.html"
+  status = 200
+
+[[redirects]]
+  from = "/postcode-checker"
+  to = "/uk-postcode-crime-risk-checker.html"
+  status = 200
+
+[[redirects]]
+  from = "/gallery"
+  to = "/image-gallery.html"
+  status = 200
+
+[[redirects]]
+  from = "/podcast"
+  to = "/podcast.xml"
+  status = 301
+
+# Clean URLs rewrites for individual tools
+[[redirects]]
+  from = "/ajax-alarm-grade-selector"
+  to = "/ajax-alarm-grade-selector.html"
+  status = 200
+
+[[redirects]]
+  from = "/cctv-dori-lens-calculator"
+  to = "/cctv-dori-lens-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/cctv-planning-permission"
+  to = "/cctv-planning-permission.html"
+  status = 200
+
+[[redirects]]
+  from = "/cctv-storage-bandwidth-calculator"
+  to = "/cctv-storage-bandwidth-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/ethernet-upstairs-calculator"
+  to = "/ethernet-upstairs-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/garden-office-wifi-bridge-calculator"
+  to = "/garden-office-wifi-bridge-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/image-gallery"
+  to = "/image-gallery.html"
+  status = 200
+
+[[redirects]]
+  from = "/night-vision-technology"
+  to = "/night-vision-technology.html"
+  status = 200
+
+[[redirects]]
+  from = "/poe-voltage-drop-calculator"
+  to = "/poe-voltage-drop-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/smart-doorbell-transformer-calculator"
+  to = "/smart-doorbell-transformer-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/starlink-vs-5g-cost-calculator"
+  to = "/starlink-vs-5g-cost-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/starlink-wind-load-calculator"
+  to = "/starlink-wind-load-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/tv-fireplace-bracket-calculator"
+  to = "/tv-fireplace-bracket-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/tv-fireplace-thermal-calculator"
+  to = "/tv-fireplace-thermal-calculator.html"
+  status = 200
+
+[[redirects]]
+  from = "/uk-postcode-crime-risk-checker"
+  to = "/uk-postcode-crime-risk-checker.html"
+  status = 200

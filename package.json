@@ -4,7 +4,9 @@
   "description": "Open-source physics, electrical, and optical calculations for UK physical security & telecommunications (BS EN 62676-4 DORI, Starlink aerodynamic drag, PoE IEEE 802.3 voltage drop, Ajax Grade 2/3, and more).",
   "main": "cctv-engineering-math.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "verify:edge": "python verify_edge_deployment.py",
+    "verify:media": "python verify_media_stack.py"
   },
   "repository": {
     "type": "git",

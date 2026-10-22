@@ -1,0 +1,150 @@
+services:
+  - type: web
+    name: cctv-security-hub
+    runtime: static
+    buildCommand: node test.js
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-XSS-Protection
+        value: 1; mode=block
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=()
+      - path: /*
+        name: Strict-Transport-Security
+        value: max-age=31536000; includeSubDomains; preload
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /*.webp
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /audio/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /*.js
+        name: Cache-Control
+        value: public, max-age=604800, stale-while-revalidate=86400
+      - path: /*.css
+        name: Cache-Control
+        value: public, max-age=604800, stale-while-revalidate=86400
+      - path: /podcast.xml
+        name: Content-Type
+        value: application/rss+xml; charset=utf-8
+      - path: /podcast.xml
+        name: Cache-Control
+        value: public, max-age=3600, stale-while-revalidate=86400
+      - path: /sitemap.xml
+        name: Content-Type
+        value: application/xml; charset=utf-8
+      - path: /sitemap.xml
+        name: Cache-Control
+        value: public, max-age=3600, stale-while-revalidate=86400
+    routes:
+      # Calculator & Gallery Short Aliases
+      - type: rewrite
+        source: /dori
+        destination: /cctv-dori-lens-calculator.html
+      - type: rewrite
+        source: /starlink-wind
+        destination: /starlink-wind-load-calculator.html
+      - type: rewrite
+        source: /starlink-cost
+        destination: /starlink-vs-5g-cost-calculator.html
+      - type: rewrite
+        source: /poe
+        destination: /poe-voltage-drop-calculator.html
+      - type: rewrite
+        source: /storage
+        destination: /cctv-storage-bandwidth-calculator.html
+      - type: rewrite
+        source: /ethernet
+        destination: /ethernet-upstairs-calculator.html
+      - type: rewrite
+        source: /ajax
+        destination: /ajax-alarm-grade-selector.html
+      - type: rewrite
+        source: /garden-office
+        destination: /garden-office-wifi-bridge-calculator.html
+      - type: rewrite
+        source: /doorbell
+        destination: /smart-doorbell-transformer-calculator.html
+      - type: rewrite
+        source: /smart-doorbell
+        destination: /smart-doorbell-transformer-calculator.html
+      - type: rewrite
+        source: /tv-thermal
+        destination: /tv-fireplace-thermal-calculator.html
+      - type: rewrite
+        source: /tv-bracket
+        destination: /tv-fireplace-bracket-calculator.html
+      - type: rewrite
+        source: /crime-risk
+        destination: /uk-postcode-crime-risk-checker.html
+      - type: rewrite
+        source: /postcode-checker
+        destination: /uk-postcode-crime-risk-checker.html
+      - type: rewrite
+        source: /gallery
+        destination: /image-gallery.html
+      - type: redirect
+        source: /podcast
+        destination: /podcast.xml
+
+      # Clean URLs without .html
+      - type: rewrite
+        source: /ajax-alarm-grade-selector
+        destination: /ajax-alarm-grade-selector.html
+      - type: rewrite
+        source: /cctv-dori-lens-calculator
+        destination: /cctv-dori-lens-calculator.html
+      - type: rewrite
+        source: /cctv-planning-permission
+        destination: /cctv-planning-permission.html
+      - type: rewrite
+        source: /cctv-storage-bandwidth-calculator
+        destination: /cctv-storage-bandwidth-calculator.html
+      - type: rewrite
+        source: /ethernet-upstairs-calculator
+        destination: /ethernet-upstairs-calculator.html
+      - type: rewrite
+        source: /garden-office-wifi-bridge-calculator
+        destination: /garden-office-wifi-bridge-calculator.html
+      - type: rewrite
+        source: /image-gallery
+        destination: /image-gallery.html
+      - type: rewrite
+        source: /night-vision-technology
+        destination: /night-vision-technology.html
+      - type: rewrite
+        source: /poe-voltage-drop-calculator
+        destination: /poe-voltage-drop-calculator.html
+      - type: rewrite
+        source: /smart-doorbell-transformer-calculator
+        destination: /smart-doorbell-transformer-calculator.html
+      - type: rewrite
+        source: /starlink-vs-5g-cost-calculator
+        destination: /starlink-vs-5g-cost-calculator.html
+      - type: rewrite
+        source: /starlink-wind-load-calculator
+        destination: /starlink-wind-load-calculator.html
+      - type: rewrite
+        source: /tv-fireplace-bracket-calculator
+        destination: /tv-fireplace-bracket-calculator.html
+      - type: rewrite
+        source: /tv-fireplace-thermal-calculator
+        destination: /tv-fireplace-thermal-calculator.html
+      - type: rewrite
+        source: /uk-postcode-crime-risk-checker
+        destination: /uk-postcode-crime-risk-checker.html

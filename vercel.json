@@ -1,0 +1,164 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(webp|jpg|jpeg|png|svg|ico|gif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/audio/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(css|js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/podcast.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/rss+xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/dori",
+      "destination": "/cctv-dori-lens-calculator.html"
+    },
+    {
+      "source": "/starlink-wind",
+      "destination": "/starlink-wind-load-calculator.html"
+    },
+    {
+      "source": "/starlink-cost",
+      "destination": "/starlink-vs-5g-cost-calculator.html"
+    },
+    {
+      "source": "/poe",
+      "destination": "/poe-voltage-drop-calculator.html"
+    },
+    {
+      "source": "/storage",
+      "destination": "/cctv-storage-bandwidth-calculator.html"
+    },
+    {
+      "source": "/ethernet",
+      "destination": "/ethernet-upstairs-calculator.html"
+    },
+    {
+      "source": "/ajax",
+      "destination": "/ajax-alarm-grade-selector.html"
+    },
+    {
+      "source": "/garden-office",
+      "destination": "/garden-office-wifi-bridge-calculator.html"
+    },
+    {
+      "source": "/doorbell",
+      "destination": "/smart-doorbell-transformer-calculator.html"
+    },
+    {
+      "source": "/smart-doorbell",
+      "destination": "/smart-doorbell-transformer-calculator.html"
+    },
+    {
+      "source": "/tv-thermal",
+      "destination": "/tv-fireplace-thermal-calculator.html"
+    },
+    {
+      "source": "/tv-bracket",
+      "destination": "/tv-fireplace-bracket-calculator.html"
+    },
+    {
+      "source": "/crime-risk",
+      "destination": "/uk-postcode-crime-risk-checker.html"
+    },
+    {
+      "source": "/postcode-checker",
+      "destination": "/uk-postcode-crime-risk-checker.html"
+    },
+    {
+      "source": "/gallery",
+      "destination": "/image-gallery.html"
+    },
+    {
+      "source": "/podcast",
+      "destination": "/podcast.xml"
+    }
+  ]
+}
