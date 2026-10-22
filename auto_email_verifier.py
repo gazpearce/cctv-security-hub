@@ -214,9 +214,9 @@ class AutoEmailVerifier:
         cleaned = re.sub(r'&[a-zA-Z]+;', ' ', text)
         cleaned_lower = cleaned.lower()
 
-        # Reject promo codes, discount codes, coupon codes unless explicit verification phrase present
-        if any(p in cleaned_lower for p in ["promo code", "discount code", "coupon code"]):
-            if not any(k in cleaned_lower for k in ["verification code", "verify code", "security code", "one-time", "otp", "confirmation pin"]):
+        # Reject disqualified phrases (promo, discount, referral, postal, status, error, etc.) unless explicit verification phrase present
+        if any(p in cleaned_lower for p in DISQUALIFIED_PREFIXES):
+            if not any(k in cleaned_lower for k in ["verification code", "verify code", "security code", "one-time", "otp", "confirmation pin", "login code", "access code", "passcode"]):
                 return None
 
         def is_valid_otp(val):

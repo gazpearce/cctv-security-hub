@@ -146,23 +146,43 @@ class TestFalsePositiveResistance(unittest.TestCase):
             res = AutoEmailVerifier.extract_otp_from_text(text)
             self.assertEqual(res, expected, f"Failed trap '{text}': got '{res}'")
 
-    def test_status_codes_and_disqualified_prefixes(self):
+    def test_status_and_error_codes(self):
         traps = [
-            "HTTP status code: 200",
-            "Status code 404",
-            "Error code 500",
-            "HTTP error 403",
-            "Promo code: SAVE20",
-            "Discount code: 50OFF",
-            "Coupon code: FREE10",
-            "Postal code: BD19 5AA",
-            "Zip code: 90210",
-            "Area code: 01484",
-            "Country code: +44",
+            ("HTTP status code: 200", None),
+            ("Status code 404", None),
+            ("Error code 500", None),
+            ("HTTP error 403", None),
+            ("Error code 50001", None),
+            ("Error code 500123", None),
         ]
-        for trap in traps:
+        for trap, expected in traps:
             res = AutoEmailVerifier.extract_otp_from_text(trap)
-            self.assertIsNone(res, f"Extracted code '{res}' from disqualified prefix phrase: '{trap}'")
+            self.assertEqual(res, expected, f"Extracted code '{res}' from error phrase: '{trap}'")
+
+    def test_promo_discount_referral_codes(self):
+        traps = [
+            ("Promo code: SAVE20", None),
+            ("Discount code: 50OFF", None),
+            ("Coupon code: FREE10", None),
+            ("Your referral code: 829103", None),
+            ("Your voucher code: 582910", None),
+        ]
+        for trap, expected in traps:
+            res = AutoEmailVerifier.extract_otp_from_text(trap)
+            self.assertEqual(res, expected, f"Extracted code '{res}' from promo/referral phrase: '{trap}'")
+
+    def test_postal_zip_area_country_codes(self):
+        traps = [
+            ("Postal code: BD19 5AA", None),
+            ("Postal code: 123456", None),
+            ("Zip code: 90210", None),
+            ("Area code: 01484", None),
+            ("Country code: +44", None),
+            ("Country code: 44123", None),
+        ]
+        for trap, expected in traps:
+            res = AutoEmailVerifier.extract_otp_from_text(trap)
+            self.assertEqual(res, expected, f"Extracted code '{res}' from postal/zip/area phrase: '{trap}'")
 
 
 class TestWebSocketDisconnectionAndLifecycle(unittest.TestCase):
