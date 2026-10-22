@@ -52,29 +52,57 @@
         "byArtist": {
           "@id": "https://gary-pearce-forensic-hub.web.app/music-showcase.html#artist"
         },
-        "genre": ["UK Grime", "UK Drill", "Bassline", "Rap"],
+        "genre": ["UK Grime", "UK Drill", "Bassline", "80s Synthwave", "Deep House", "Lo-Fi Chillhop", "Britpop"],
         "datePublished": "2026-10-22",
-        "numTracks": 3,
+        "numTracks": 7,
         "track": [
           {
             "@type": "MusicRecording",
             "name": "90mph Gales (Top of the Stack)",
-            "duration": "PT1M12S",
+            "duration": "PT0M20S",
             "isrcCode": "GB-ADI-26-00101",
             "url": "https://music.youtube.com/@CCTV.services"
           },
           {
             "@type": "MusicRecording",
             "name": "868 Jeweller (Anti-Jam)",
-            "duration": "PT1M10S",
+            "duration": "PT0M20S",
             "isrcCode": "GB-ADI-26-00102",
             "url": "https://music.youtube.com/@CCTV.services"
           },
           {
             "@type": "MusicRecording",
             "name": "ColorVu Evidence (250 Pixels per Metre)",
-            "duration": "PT1M12S",
+            "duration": "PT0M20S",
             "isrcCode": "GB-ADI-26-00103",
+            "url": "https://music.youtube.com/@CCTV.services"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Neon Perimeter (Night Patrol)",
+            "duration": "PT0M20S",
+            "isrcCode": "GB-ADI-26-00104",
+            "url": "https://music.youtube.com/@CCTV.services"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Fiber Optic Groove",
+            "duration": "PT0M20S",
+            "isrcCode": "GB-ADI-26-00105",
+            "url": "https://music.youtube.com/@CCTV.services"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Holme Moss Chill (Field Memos)",
+            "duration": "PT0M20S",
+            "isrcCode": "GB-ADI-26-00106",
+            "url": "https://music.youtube.com/@CCTV.services"
+          },
+          {
+            "@type": "MusicRecording",
+            "name": "Pennine Stone Acoustic",
+            "duration": "PT0M20S",
+            "isrcCode": "GB-ADI-26-00107",
             "url": "https://music.youtube.com/@CCTV.services"
           }
         ]
@@ -232,59 +260,23 @@
       <!-- Right 1 Col: Track Selector Playlist -->
       <div class="space-y-4">
         <div class="flex items-center justify-between pb-2 border-b border-white/10">
-          <h3 class="font-bold text-white uppercase tracking-wider text-sm font-mono">Track Catalog (Vol. 1)</h3>
-          <span class="text-xs font-mono text-neutral-400">3 Master Tracks</span>
+          <h3 class="font-bold text-white uppercase tracking-wider text-sm font-mono">Multi-Genre Music Stack</h3>
+          <span class="text-xs font-mono text-neutral-400">7 Studio Tracks</span>
         </div>
 
-        <!-- Track 1 Card -->
-        <div onclick="switchTrack(0)" id="track-card-0" class="track-card active glass-card p-4 rounded-xl cursor-pointer transition border border-white/10 hover:border-orange-500/50 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono text-[#FF5500] font-bold">TRACK 01 • 140 BPM GRIME</span>
-            <span class="text-[10px] font-mono text-neutral-400">01:12</span>
-          </div>
-          <h4 class="text-sm font-black text-white">90mph Gales (Top of the Stack)</h4>
-          <p class="text-xs text-neutral-400 line-clamp-2">
-            Starlink Gen 3 chimney rigging, stainless steel cradles, zero drilling on stone, Pennine storm gales.
-          </p>
-          <div class="flex items-center space-x-2 pt-1 text-[11px] font-mono text-neutral-500">
-            <span>ISRC: GB-ADI-26-00101</span>
-            <span>•</span>
-            <span class="text-emerald-400">Master WAV Live</span>
-          </div>
+        <!-- Genre Filter Pills -->
+        <div class="flex flex-wrap gap-1.5 pb-1">
+          <button onclick="filterGenre('all')" id="genre-btn-all" class="genre-filter-btn px-2.5 py-1 rounded bg-[#FF5500] text-white text-[11px] font-mono font-bold transition">All (7)</button>
+          <button onclick="filterGenre('grime')" id="genre-btn-grime" class="genre-filter-btn px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 text-[11px] font-mono transition">Grime & Drill</button>
+          <button onclick="filterGenre('synthwave')" id="genre-btn-synthwave" class="genre-filter-btn px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 text-[11px] font-mono transition">Synthwave</button>
+          <button onclick="filterGenre('house')" id="genre-btn-house" class="genre-filter-btn px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 text-[11px] font-mono transition">House</button>
+          <button onclick="filterGenre('lofi')" id="genre-btn-lofi" class="genre-filter-btn px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 text-[11px] font-mono transition">Lo-Fi</button>
+          <button onclick="filterGenre('indie')" id="genre-btn-indie" class="genre-filter-btn px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 text-[11px] font-mono transition">Indie Rock</button>
         </div>
 
-        <!-- Track 2 Card -->
-        <div onclick="switchTrack(1)" id="track-card-1" class="track-card glass-card p-4 rounded-xl cursor-pointer transition border border-white/10 hover:border-orange-500/50 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono text-neutral-400 font-bold">TRACK 02 • UK DRILL / BASSLINE</span>
-            <span class="text-[10px] font-mono text-neutral-400">01:10</span>
-          </div>
-          <h4 class="text-sm font-black text-white">868 Jeweller (Anti-Jam)</h4>
-          <p class="text-xs text-neutral-400 line-clamp-2">
-            Ajax Grade 2 smart alarms, 868MHz frequency hopping, StreetSiren 113dB, MotionCam photo-on-demand.
-          </p>
-          <div class="flex items-center space-x-2 pt-1 text-[11px] font-mono text-neutral-500">
-            <span>ISRC: GB-ADI-26-00102</span>
-            <span>•</span>
-            <span class="text-emerald-400">Master WAV Live</span>
-          </div>
-        </div>
-
-        <!-- Track 3 Card -->
-        <div onclick="switchTrack(2)" id="track-card-2" class="track-card glass-card p-4 rounded-xl cursor-pointer transition border border-white/10 hover:border-orange-500/50 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono text-neutral-400 font-bold">TRACK 03 • MELODIC UK RAP</span>
-            <span class="text-[10px] font-mono text-neutral-400">01:12</span>
-          </div>
-          <h4 class="text-sm font-black text-white">ColorVu Evidence (250 Px/m)</h4>
-          <p class="text-xs text-neutral-400 line-clamp-2">
-            Hikvision 4K ColorVu G2, F1.0 super-apertures, BS EN 62676-4 DORI identification standard, CPS convictions.
-          </p>
-          <div class="flex items-center space-x-2 pt-1 text-[11px] font-mono text-neutral-500">
-            <span>ISRC: GB-ADI-26-00103</span>
-            <span>•</span>
-            <span class="text-emerald-400">Master WAV Live</span>
-          </div>
+        <!-- Dynamic Playlist Cards Container -->
+        <div id="playlist-cards-container" class="space-y-3 max-h-[460px] overflow-y-auto pr-1">
+          <!-- Populated dynamically via renderPlaylist() in JS -->
         </div>
 
         <!-- Quick Apex Callout Card -->
@@ -505,202 +497,155 @@ Top of the stack. Gone.
   <script>
     const tracks = [
       {
+        id: 0,
         title: "90mph Gales (Top of the Stack)",
-        genre: "140 BPM UK Grime",
+        genre: "UK Grime & Bassline",
+        genreCategory: "grime",
+        bpm: "140 BPM",
         isrc: "ISRC: GB-ADI-26-00101",
         audioSrc: "audio/adi_01_90mph_gales_starlink_grime.mp3",
-        duration: "01:12",
-        description: "140 BPM UK grime track detailing the physical engineering required to secure SpaceX Starlink Gen 3 dishes and wireless broadband masts in 90mph Pennine mountain gales. Mastered with heavy distorted 808 square sub-bass and authentic engineering lyrics.",
+        duration: "00:20",
+        description: "140 BPM UK grime track chronicling Starlink Gen 3 satellite installations in 90mph Pennine mountain gales. Synthesized on NVIDIA RTX 5060 Ti via Meta MusicGen with heavy distorted 808 square sub-bass and authentic engineering lyrics.",
         bufferUrl: "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex-brackets/",
-        lyrics: `[INTRO - Radio sweep, skippy hi-hats, engine rumble]
-(Voice note sample: "Gary, wind's howling 90 mile an hour up Holme Moss, dish ain't budging an inch!")
+        lyrics: `[GENRE: 140 BPM UK GRIME & BASSLINE • PRODUCED ON NVIDIA RTX 5060 Ti / ZERO TOKENS]
 Yo! ADI Sound System.
-Gary on the ladder. Top of the stack.
-Listen.
-
-[VERSE 1 - Fast, aggressive 140 BPM grime flow]
+Gary on the ladder, top of the stack.
 Rain lash down when I step on the slate,
 Pennine winds pushing 90 on the gauge.
-Copper broadband died in the hedge,
-Buffer wheel spinning on the living room edge.
-Now look up—see the dish on the stack,
 SpaceX flat panel, Gen 3 black!
 No hammer drill into the Yorkshire stone,
-Stainless steel lashing locked to the bone.
-Corner mitre brackets holding the strain,
-Tensioned steel wire laughing at the rain.
-Cat6 solid copper drop down the flue,
-Drip loop sealed with silicone glue!
-Solid gigabit throughput in the storm,
-While the copper line drowned and the copper got torn!
-
-[CHORUS - Catchy, sing-along grime anthem hook]
+Stainless steel lashing locked to the bone!
 Ninety mile gales on the Pennine peak,
 Dish stays locked, solid signal won't leak!
 Top of the stack, yeah we don't drill stone,
-Starlink flying through the orbit cone!
-Call zero-seven-eight-six-zero, two-four-four,
-Two-seven-four, kicking open the door!
-From Holmfirth moors to the Hebden ridge,
-We bridge that signal, we build that bridge!
-
-[VERSE 2 - Technical flow, multisyllabic]
-Eurocode 1, calculate the wind shear,
-Amateur riggers caught in the fear.
-T&K wall brackets, galvanised steel,
-Twelve-gauge heavy duty, that’s how we deal.
-Low-loss coaxial? Nah, pure Cat6,
-Fluke-tested pairs, no cheap quick fixes.
-Ping down to twenty on the low Earth orbit,
-Broadband dead? Yeah, Starlink absorb it.
-Outbuilding link with a sixty gig beam,
-High-speed throughput, living the dream!
-
-[CHORUS - Full energy with vocal doubles]
-Ninety mile gales on the Pennine peak,
-Dish stays locked, solid signal won't leak!
-Top of the stack, yeah we don't drill stone,
-Starlink flying through the orbit cone!
-Call zero-seven-eight-six-zero, two-four-four,
-Two-seven-four, kicking open the door!
-
-[OUTRO - 808 bass rumble fades, radio static]
-ADI Communications.
-Yorkshire & Lancashire.
-Gary Pearce. 07860 244 274.
-Top of the stack. Gone.`
+Starlink flying through the orbit cone!`
       },
       {
+        id: 1,
         title: "868 Jeweller (Anti-Jam)",
-        genre: "UK Drill / Bassline",
+        genre: "UK Drill & 4x4 Bassline",
+        genreCategory: "grime",
+        bpm: "142 BPM",
         isrc: "ISRC: GB-ADI-26-00102",
         audioSrc: "audio/adi_02_868_jeweller_ajax_drill.mp3",
-        duration: "01:10",
+        duration: "00:20",
         description: "UK drill and northern 4x4 bassline hybrid celebrating Ajax Grade 2 smart alarm engineering, 868MHz frequency hopping, 113dB StreetSirens, and dual-SIM 4G failover.",
         bufferUrl: "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
-        lyrics: `[INTRO - Drill sliding 808, police radio chatter]
-(Radio dispatch: "Intruder detected perimeter, rear patio zone.")
+        lyrics: `[GENRE: 142 BPM UK DRILL & YORKSHIRE BASSLINE]
 They think they can jam the frequency?
-Nah. Ajax Jeweller. Dual SIM.
-Watch this.
-
-[VERSE 1 - Dark drill cadence, gliding 808s]
+Ajax Jeweller. Dual SIM. Watch this.
 Midnight creeper dressed in black,
-Creeping round the patio, round the back.
-Thought he had an RF jammer in his coat,
-Didn't know the Jeweller got his throat!
+Thought he had an RF jammer in his coat!
 Eight-six-eight megahertz, hop to the band,
-Signal rerouted straight through the land.
-Dual Micro-SIM, four-G failover,
-Ethernet locked, man’s getting bowled over!
-MotionCam PhOD snap three in the dark,
-Photo verification in the park.
-Sent to the cloud in nine seconds flat,
-Police on the road while you grab your hat!
-
-[CHORUS - Massive Bassline Drop with sung female vocal hook]
-(Vocal Hook):
+Signal rerouted straight through the land!
 Siren screaming in the dead of the night,
 One-thirteen decibels, flashing red light!
-No wires cut, no blind spot found,
-Ajax Jeweller owns this ground!
-(Drill Voice):
 Grade 2 certified, tamper-proof seal,
-Gary Pearce fitted, that’s real deal!
-
-[VERSE 2 - Fast syncopated bassline flow]
-StreetSiren bolted on the red-brick face,
-Vandal-proof shell, no wires out of place.
-DoorProtect Plus on the patio slide,
-Shock and tilt sensor, nowhere to hide!
-Hub 2 Plus running sixteen hours,
-Even if the council cut off the power!
-Scenarios active, floodlights blaze,
-Intruder caught in a blinding haze!
-No false alarms from a dog or a cat,
-SmartDetect algorithms filter all that!
-
-[CHORUS - Full Bassline & Drill drop]
-Siren screaming in the dead of the night,
-One-thirteen decibels, flashing red light!
-No wires cut, no blind spot found,
-Ajax Jeweller owns this ground!
-Grade 2 certified, tamper-proof seal,
-Gary Pearce fitted, that’s real deal!
-
-[OUTRO]
-Zero-seven-eight-six-zero, two-four-four, two-seven-four.
-ADI Communications.
-Grade 2 protection. Stay safe.`
+Gary Pearce fitted, that’s real deal!`
       },
       {
-        title: "ColorVu Evidence (250 Pixels per Metre)",
-        genre: "Melodic UK Rap",
+        id: 2,
+        title: "ColorVu Evidence (250 Px/m)",
+        genre: "Melodic UK Rap & Road Wave",
+        genreCategory: "grime",
+        bpm: "138 BPM",
         isrc: "ISRC: GB-ADI-26-00103",
         audioSrc: "audio/adi_03_colorvu_evidence_cctv_rap.mp3",
-        duration: "01:12",
+        duration: "00:20",
         description: "Soulful melodic UK rap anthem highlighting BS EN 62676-4 DORI forensic identification standards, 4K Hikvision ColorVu F1.0 apertures, and eliminating nighttime ghost blur for Crown Prosecution Service (CPS) convictions.",
         bufferUrl: "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv/",
-        lyrics: `[INTRO - Warm guitar sample, soulful vocal hum, vinyl crackle]
-Yeah.
-You see them black and white ghost cameras?
-Spider webs over the lens, infrared flare, blur in the dark?
-That don't stand up in court, man.
-Listen to the standard.
-
-[VERSE 1 - Melodic UK Rap flow, heartfelt and authoritative]
-Came to the property, surveyed the scene,
-Old analogue cameras, blurry and mean.
-Infrared flare making faces look white,
-Burglars walk past in the middle of the night.
-Police take the tape, say "Sorry, no trace,
-Can't see the plate, can't identify the face."
-That’s when they ring Gary, dial on the cell,
-Fix up the system and ring out the bell.
+        lyrics: `[GENRE: 138 BPM MELODIC UK RAP & ROAD WAVE]
+Yeah. You see them black and white ghost cameras?
+Spider webs over the lens, blur in the dark?
+That don't stand up in court.
 Hikvision ColorVu, four-K true,
 F one-point-zero glass drinking the blue!
-Full colour daylight at three in the morning,
-Number plate crisp, that’s a physical warning!
-
-[CHORUS - Soulful melodic singing hook]
 Two-hundred and fifty pixels a metre,
 DORI standard, there ain't nothing sweeter!
 Full colour night vision, crystal and clear,
-No ghost in the shadows, no panic, no fear!
-From the soffit mount down to the garden gate,
-We catch the detail, we seal their fate!
-Call zero-seven-eight-six-zero, two-four-four,
-Two-seven-four, at your door!
-
-[VERSE 2 - Confident, rhythmic technical verse]
-BS EN sixty-two-six-seven-six,
-Part four compliance, that’s how Gary fits.
-AcuSense deep learning, vehicle and man,
-False alarm filter across the whole span.
-No leaves in the wind triggering the bell,
-Just clean push alerts on your phone as well.
-Exterior Cat6, solid pure copper,
-PoE switch powered, neat and proper.
-Drip loops in the brickwork, silicone tight,
-CPS evidence locked in the night!
-
-[CHORUS - Soulful singing hook + rap ad-libs]
-Two-hundred and fifty pixels a metre,
-DORI standard, there ain't nothing sweeter!
-Full colour night vision, crystal and clear,
-No ghost in the shadows, no panic, no fear!
-From the soffit mount down to the garden gate,
-We catch the detail, we seal their fate!
-
-[OUTRO - Guitar plucks fade out]
-Crown Prosecution Service approved.
-Forensic identification standard.
-ADI Communications. Gary Pearce.
-07860 244 274.`
+No ghost in the shadows, no panic, no fear!`
+      },
+      {
+        id: 3,
+        title: "Neon Perimeter (Night Patrol)",
+        genre: "80s Retro Synthwave",
+        genreCategory: "synthwave",
+        bpm: "112 BPM",
+        isrc: "ISRC: GB-ADI-26-00104",
+        audioSrc: "audio/adi_04_neon_perimeter_synthwave.mp3",
+        duration: "00:20",
+        description: "Cinematic 80s cyberpunk synthwave track featuring analog synth arpeggios, pulsing bassline, and gated reverb drums, inspired by night perimeter security patrolling.",
+        bufferUrl: "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv/",
+        lyrics: `[GENRE: 80s RETRO SYNTHWAVE / CYBERPUNK • 112 BPM]
+Analog synthesizer arpeggios pulsing through the nocturnal grid.
+Night perimeter surveillance active:
+- 4K ColorVu F1.0 low-light sensors
+- Infrared thermal matrix scanning boundaries
+- Optical zoom tracking movement along perimeter lines
+Gated reverb snare and driving synth bass driving the night patrol.`
+      },
+      {
+        id: 4,
+        title: "Fiber Optic Groove",
+        genre: "Deep House & Club EDM",
+        genreCategory: "house",
+        bpm: "124 BPM",
+        isrc: "ISRC: GB-ADI-26-00105",
+        audioSrc: "audio/adi_05_fiber_optic_groove_deephouse.mp3",
+        duration: "00:20",
+        description: "Ibiza summer club deep house groove with pumping 4x4 kick, warm sub-bassline, lush electric piano chords, celebrating high-speed optical networking.",
+        bufferUrl: "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+        lyrics: `[GENRE: DEEP HOUSE & CLUB EDM • 124 BPM]
+Pumping 4x4 kick drum and warm rolling bassline.
+Celebrating high-speed multi-gigabit throughput:
+- OM4 multimode fibre backbone
+- Zero latency Cat6 solid copper infrastructure
+- Whole-home Wi-Fi 7 roaming mesh
+Lush Rhodes chords and euphoric club sunset atmosphere.`
+      },
+      {
+        id: 5,
+        title: "Holme Moss Chill (Field Memos)",
+        genre: "Lo-Fi Hip Hop & Chillhop",
+        genreCategory: "lofi",
+        bpm: "84 BPM",
+        isrc: "ISRC: GB-ADI-26-00106",
+        audioSrc: "audio/adi_06_holme_moss_chill_lofi.mp3",
+        duration: "00:20",
+        description: "Cozy rainy-day lo-fi hip hop beat with warm vintage Rhodes keys, vinyl crackle, and boom bap drums, inspired by quiet upland moorland engineering calls.",
+        bufferUrl: "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex-brackets/",
+        lyrics: `[GENRE: LO-FI HIP HOP & CHILLHOP • 84 BPM]
+Warm vintage Rhodes electric piano chords and gentle vinyl crackle.
+Field memories from high Pennine moorland installations:
+- Holme Moss transmitting tower in morning mist
+- Rainy afternoon diagnostic telemetry
+- Low-stress, reliable high-altitude satellite links
+Relaxing study and focus beat.`
+      },
+      {
+        id: 6,
+        title: "Pennine Stone Acoustic",
+        genre: "Acoustic Indie & Britpop",
+        genreCategory: "indie",
+        bpm: "115 BPM",
+        isrc: "ISRC: GB-ADI-26-00107",
+        audioSrc: "audio/adi_07_pennine_stone_acoustic.mp3",
+        duration: "00:20",
+        description: "Uplifting British indie acoustic rock track with chiming guitars, driving melodic bass, and live kit, capturing traditional Yorkshire gritstone craftsmanship.",
+        bufferUrl: "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+        lyrics: `[GENRE: ACOUSTIC INDIE & BRITPOP • 115 BPM]
+Chiming acoustic guitars and driving melodic bass guitar.
+Craftsmanship on historic Yorkshire stone architecture:
+- Non-drill masonry preservation
+- Heavy-duty chimney lashing kits
+- Built to weather upland winter gales
+Uplifting Northern British trade energy.`
       }
     ];
 
     let currentTrackIdx = 0;
+    let activeGenreFilter = 'all';
+
     const audio = document.getElementById('main-audio');
     const btnPlay = document.getElementById('btn-play');
     const iconPlay = document.getElementById('icon-play');
@@ -710,46 +655,71 @@ ADI Communications. Gary Pearce.
     const currentTimeEl = document.getElementById('current-time');
     const totalDurationEl = document.getElementById('total-duration');
     const waveformContainer = document.getElementById('waveform-container');
+    const playlistContainer = document.getElementById('playlist-cards-container');
 
-    // Build visualizer bars
-    const numBars = 48;
-    for (let i = 0; i < numBars; i++) {
-      const bar = document.createElement('div');
-      bar.className = 'w-1 sm:w-1.5 rounded-full bg-gradient-to-t from-orange-600 via-[#FF5500] to-yellow-400 opacity-75';
-      const randomHeight = Math.floor(Math.random() * 65) + 15;
-      bar.style.height = `${randomHeight}%`;
-      bar.style.transition = 'height 0.15s ease';
-      waveformContainer.appendChild(bar);
+    function renderPlaylist() {
+      playlistContainer.innerHTML = '';
+      const filtered = tracks.filter(t => activeGenreFilter === 'all' || t.genreCategory === activeGenreFilter);
+      filtered.forEach((t) => {
+        const card = document.createElement('div');
+        const isActive = t.id === currentTrackIdx;
+        card.id = `track-card-${t.id}`;
+        card.className = `track-card ${isActive ? 'active border-orange-500 bg-orange-500/10' : ''} glass-card p-3.5 rounded-xl cursor-pointer transition border border-white/10 hover:border-orange-500/50 space-y-1.5`;
+        card.onclick = () => switchTrack(t.id);
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-mono text-[#FF5500] font-bold uppercase">${t.genre} • ${t.bpm}</span>
+            <span class="text-[10px] font-mono text-neutral-400">${t.duration}</span>
+          </div>
+          <h4 class="text-sm font-black text-white">${t.title}</h4>
+          <p class="text-xs text-neutral-400 line-clamp-1">${t.description}</p>
+          <div class="flex items-center space-x-2 pt-0.5 text-[10px] font-mono text-neutral-500">
+            <span>${t.isrc}</span>
+            <span>•</span>
+            <span class="text-emerald-400">Zero-Token GPU Master</span>
+          </div>
+        `;
+        playlistContainer.appendChild(card);
+      });
     }
 
-    function formatTime(seconds) {
-      const mins = Math.floor(seconds / 60);
-      const secs = Math.floor(seconds % 60);
-      return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    function filterGenre(genre) {
+      activeGenreFilter = genre;
+      const btns = document.querySelectorAll('.genre-filter-btn');
+      btns.forEach(b => {
+        b.className = 'genre-filter-btn px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 text-[11px] font-mono transition';
+      });
+      const activeBtn = document.getElementById(`genre-btn-${genre}`);
+      if (activeBtn) {
+        activeBtn.className = 'genre-filter-btn px-2.5 py-1 rounded bg-[#FF5500] text-white text-[11px] font-mono font-bold transition';
+      }
+      renderPlaylist();
     }
 
     function switchTrack(idx) {
       currentTrackIdx = idx;
       const t = tracks[idx];
       audio.src = t.audioSrc;
-      document.getElementById('player-genre-badge').textContent = t.genre;
+      document.getElementById('player-genre-badge').textContent = `${t.genre} • ${t.bpm}`;
       document.getElementById('player-isrc-badge').textContent = t.isrc;
       document.getElementById('player-track-title').textContent = t.title;
       document.getElementById('player-description').textContent = t.description;
       document.getElementById('player-buffer-link').href = t.bufferUrl;
       document.getElementById('player-buffer-link').textContent = new URL(t.bufferUrl).pathname;
-      document.getElementById('lyrics-title').textContent = `${t.title} - Lyrics`;
+      document.getElementById('lyrics-title').textContent = `${t.title} - Notes & Lyrics`;
       document.getElementById('lyrics-content').textContent = t.lyrics;
       totalDurationEl.textContent = t.duration;
 
-      for (let i = 0; i < tracks.length; i++) {
-        const card = document.getElementById(`track-card-${i}`);
-        if (i === idx) {
-          card.classList.add('active', 'border-orange-500');
-        } else {
-          card.classList.remove('active', 'border-orange-500');
-        }
-      }
+      renderPlaylist();
+
+      audio.play().then(() => {
+        iconPlay.classList.add('hidden');
+        iconPause.classList.remove('hidden');
+      }).catch(() => {});
+    }
+
+    // Initial playlist render
+    renderPlaylist();
 
       audio.play().then(() => {
         iconPlay.classList.add('hidden');
