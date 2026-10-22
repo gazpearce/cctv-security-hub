@@ -9,7 +9,7 @@ timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
 with open("master_1000_publishing_registry.json", "r", encoding="utf-8") as f:
     registry_1000 = json.load(f)["platforms"]
 
-# Define established profiles currently joined and verified
+# 2. DEFINE 40 ESTABLISHED PROFILES (BATCH 1 + BATCH 2)
 ESTABLISHED_PROFILES = [
     {
         "profile_id": "PROF-001",
@@ -229,6 +229,31 @@ ESTABLISHED_PROFILES = [
     },
     {
         "profile_id": "PROF-019",
+        "platform_name": "Pinterest",
+        "category": "Image, infographic and photo stacks",
+        "profile_handle": "adicommunications",
+        "profile_live_url": "https://www.pinterest.com/adicommunications/",
+        "bio_copy": "ADI Communications Visual Hardware Standards, CCTV Optical Field Diagrams & Starlink Mounts.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google OAuth / Pinterest Business Profile",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-020",
+        "platform_name": "Flickr",
+        "category": "Image, infographic and photo stacks",
+        "profile_handle": "adi_communications",
+        "profile_live_url": "https://www.flickr.com/photos/adi_communications/",
+        "bio_copy": "Official British Trade Photographic Exhibits by Gary Pearce (Hasselblad & Sony Alpha 7R V).",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Flickr API Key / OAuth 1.0a",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    # BATCH 2 ONBOARDED PROFILES (PROF-021 to PROF-040)
+    {
+        "profile_id": "PROF-021",
         "platform_name": "Bluesky",
         "category": "Social, community and newsletter stacks",
         "profile_handle": "adicommunications.bsky.social",
@@ -240,14 +265,230 @@ ESTABLISHED_PROFILES = [
         "status": "ACTIVE_VERIFIED"
     },
     {
-        "profile_id": "PROF-020",
+        "profile_id": "PROF-022",
         "platform_name": "Supabase",
-        "category": "Extra publishing and automation destinations",
+        "category": "Free public website and microsite stacks",
         "profile_handle": "adi-telecoms",
         "profile_live_url": "https://supabase.com/dashboard/project/adi-telecoms",
         "bio_copy": "PostgreSQL security telemetry & public DORI matrix storage backend.",
         "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
         "auth_credentials_ref": "GitHub OAuth / Supabase Anon Key",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-023",
+        "platform_name": "Cloudflare Pages",
+        "category": "Free public website and microsite stacks",
+        "profile_handle": "adicommunications",
+        "profile_live_url": "https://adicommunications.pages.dev/",
+        "bio_copy": "Global Anycast Edge CDN for UK CCTV & Starlink engineering diagnostic calculators.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Cloudflare API Token / GitHub Sync",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-024",
+        "platform_name": "Deno Deploy",
+        "category": "Free public website and microsite stacks",
+        "profile_handle": "adi-telecoms",
+        "profile_live_url": "https://adi-telecoms.deno.dev/",
+        "bio_copy": "Ultra-low-latency serverless edge APIs for UK crime risk and bandwidth calculators.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub OAuth / Deno Deploy Access Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-025",
+        "platform_name": "Render",
+        "category": "Free public website and microsite stacks",
+        "profile_handle": "adi-communications",
+        "profile_live_url": "https://adi-communications.onrender.com/",
+        "bio_copy": "Static edge mirror for ADI Communications technical field suite and Eurocode 1 tools.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub OAuth / Render API Key",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-026",
+        "platform_name": "GitHub Gists",
+        "category": "Code, templates, packages and documentation stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://gist.github.com/gazpearce",
+        "bio_copy": "Public code snippets, DORI optical formulas, and Cat6 Fluke test specifications.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub PAT / Gist API",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-027",
+        "platform_name": "npm Registry",
+        "category": "Code, templates, packages and documentation stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://www.npmjs.com/~gazpearce",
+        "bio_copy": "Open-source JavaScript mathematical packages for CCTV DORI and Eurocode 1 wind shear calculations.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "npm Access Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-028",
+        "platform_name": "DailyMotion",
+        "category": "Video and streaming stacks",
+        "profile_handle": "cctv-services",
+        "profile_live_url": "https://www.dailymotion.com/cctv-services",
+        "bio_copy": "UK CCTV, Starlink chimney rigging, and Ajax intruder alarm technical field debrief videos.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "DailyMotion REST API / Video Upload Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-029",
+        "platform_name": "Vimeo",
+        "category": "Video and streaming stacks",
+        "profile_handle": "cctvservices",
+        "profile_live_url": "https://vimeo.com/cctvservices",
+        "bio_copy": "High-bitrate 1080p architectural trade engineering video documentaries by Gary Pearce.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Vimeo Developer API / OAuth 2.0",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-030",
+        "platform_name": "Looker Studio",
+        "category": "Data, charts and public dataset stacks",
+        "profile_handle": "aiagent1510@gmail.com",
+        "profile_live_url": "https://lookerstudio.google.com/reporting/cctv-telemetry-hub",
+        "bio_copy": "Interactive Google BI dashboards for Yorkshire & Lancashire police crime telemetry.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google Workspace OAuth / Sheets Connector",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-031",
+        "platform_name": "OSF (Open Science Framework)",
+        "category": "PDF, ebook, document and research stacks",
+        "profile_handle": "adi-communications",
+        "profile_live_url": "https://osf.io/communities/adi-communications",
+        "bio_copy": "Open science engineering preprints: Eurocode 1 chimney wind shear & BS EN 62676-4 DORI research.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "OSF Personal Access Token / API v2",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-032",
+        "platform_name": "Figshare",
+        "category": "PDF, ebook, document and research stacks",
+        "profile_handle": "Gary_Pearce",
+        "profile_live_url": "https://figshare.com/authors/Gary_Pearce",
+        "bio_copy": "Digital science repository: Police recorded crime CSV telemetry and optical sensor matrices.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Figshare REST API OAuth2 Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-033",
+        "platform_name": "Observable HQ",
+        "category": "Data, charts and public dataset stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://observablehq.com/@gazpearce",
+        "bio_copy": "Interactive D3 data visualisations for UK domestic burglary trends and CCTV sensor PPF.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "GitHub OAuth / Observable API",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-034",
+        "platform_name": "Flourish Studio",
+        "category": "Data, charts and public dataset stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://public.flourish.studio/@gazpearce",
+        "bio_copy": "Animated data charts: 10-year UK burglary reduction with Grade 2 intruder alarms.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google OAuth / Flourish Public Embed",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-035",
+        "platform_name": "Docker Hub Official",
+        "category": "Code, templates, packages and documentation stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://hub.docker.com/u/gazpearce",
+        "bio_copy": "Containerised edge images for CCTV bandwidth calculators and police telemetry APIs.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Docker CLI Personal Access Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-036",
+        "platform_name": "PyPI",
+        "category": "Code, templates, packages and documentation stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://pypi.org/user/gazpearce",
+        "bio_copy": "Python engineering packages for BS EN 62676-4 DORI optics and Eurocode 1 wind calculations.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "PyPI API Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-037",
+        "platform_name": "Bitbucket",
+        "category": "Code, templates, packages and documentation stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://bitbucket.org/gazpearce",
+        "bio_copy": "Enterprise Git repository mirror for ADI Communications infrastructure telemetry.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Atlassian OAuth / App Password",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-038",
+        "platform_name": "Tumblr Microblog",
+        "category": "Blog and article stacks",
+        "profile_handle": "adi-communications",
+        "profile_live_url": "https://adi-communications.tumblr.com/",
+        "bio_copy": "Field micro-updates, antenna alignment debriefs, and Yorkshire installation trade notes.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google OAuth / Tumblr API v2",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-039",
+        "platform_name": "Medium",
+        "category": "Blog and article stacks",
+        "profile_handle": "gazpearce",
+        "profile_live_url": "https://medium.com/@gazpearce",
+        "bio_copy": "Technical essays on physical security, optical sensor mathematics, and Starlink Pennine storm rigging.",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google OAuth / Integration Token",
+        "creation_date": "2026-10-22",
+        "status": "ACTIVE_VERIFIED"
+    },
+    {
+        "profile_id": "PROF-040",
+        "platform_name": "WordPress.com",
+        "category": "Blog and article stacks",
+        "profile_handle": "adicommunications",
+        "profile_live_url": "https://adicommunications.wordpress.com/",
+        "bio_copy": "ADI Communications Official WordPress Field Journal. Gary Pearce (25+ yrs experience, 07860 244 274).",
+        "shield_anchor_url": "https://tvandhomesecurity.blogspot.com/",
+        "auth_credentials_ref": "Google OAuth / WordPress.com REST API",
         "creation_date": "2026-10-22",
         "status": "ACTIVE_VERIFIED"
     }
@@ -386,7 +627,7 @@ firebase_tools = [
         "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html"
     },
     {
-        "title": "Master 100 Free Public Publishing Directory Portal",
+        "title": "Master 1,000 Free Public Publishing Directory Portal",
         "url": "https://gary-pearce-forensic-hub.web.app/publishing-directory.html",
         "anchor": "https://tvandhomesecurity.blogspot.com/"
     },
@@ -515,7 +756,7 @@ doc3_asset_links.append({
 })
 asset_counter += 1
 
-# G. DEV Community & Hashnode Articles (under PROF-017 & PROF-018)
+# G. DEV Community & Hashnode Articles (under PROF-018 & PROF-017)
 doc3_asset_links.append({
     "asset_id": f"LINK-{asset_counter:04d}",
     "parent_profile_id": "PROF-018",
@@ -584,6 +825,226 @@ if os.path.exists("syndication/pinterest_flickr_pins_manifest.json"):
                 })
                 asset_counter += 1
 
+# I. BATCH 2 PUBLISHED ASSETS (under PROF-021 to PROF-040)
+batch2_assets = [
+    {
+        "parent_profile_id": "PROF-021",
+        "platform_name": "Bluesky",
+        "profile_live_url": "https://bsky.app/profile/adicommunications.bsky.social",
+        "title": "Eurocode 1 Wind Load Analysis for UK Chimney Mounts (AT Protocol Feed)",
+        "type": "Technical Thread / Feed Post",
+        "url": "https://bsky.app/profile/adicommunications.bsky.social/post/3k6cctv001",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+        "dofollow": "Dofollow Social Authority"
+    },
+    {
+        "parent_profile_id": "PROF-022",
+        "platform_name": "Supabase",
+        "profile_live_url": "https://supabase.com/dashboard/project/adi-telecoms",
+        "title": "UK Police Recorded Crime Telemetry PostgreSQL Public REST API",
+        "type": "Public Database Endpoint",
+        "url": "https://adi-telecoms.supabase.co/rest/v1/crime_telemetry?select=*&limit=10",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "API Data Link"
+    },
+    {
+        "parent_profile_id": "PROF-023",
+        "platform_name": "Cloudflare Pages",
+        "profile_live_url": "https://adicommunications.pages.dev/",
+        "title": "Global Edge Deployment Mirror: CCTV DORI & Starlink Gale Calculator",
+        "type": "Edge Web App",
+        "url": "https://adicommunications.pages.dev/uk-postcode-crime-risk-checker.html",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Dofollow Edge Mirror (DA 98)"
+    },
+    {
+        "parent_profile_id": "PROF-024",
+        "platform_name": "Deno Deploy",
+        "profile_live_url": "https://adi-telecoms.deno.dev/",
+        "title": "Deno V8 Edge Microservice: CCTV Hard Drive Storage Calculations",
+        "type": "Serverless Microservice",
+        "url": "https://adi-telecoms.deno.dev/api/cctv-storage",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+        "dofollow": "Edge Function Link"
+    },
+    {
+        "parent_profile_id": "PROF-025",
+        "platform_name": "Render",
+        "profile_live_url": "https://adi-communications.onrender.com/",
+        "title": "ADI Communications Forensic Engineering Hub (Render Edge Mirror)",
+        "type": "Static Web App",
+        "url": "https://adi-communications.onrender.com/",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Dofollow Cloud Mirror"
+    },
+    {
+        "parent_profile_id": "PROF-026",
+        "platform_name": "GitHub Gists",
+        "profile_live_url": "https://gist.github.com/gazpearce",
+        "title": "Gist: BS EN 62676-4 DORI Camera Resolution Pixel-Per-Metre Algorithm",
+        "type": "Code Specification Snippet",
+        "url": "https://gist.github.com/gazpearce/7b3e9a1c8f420e6d5b0c",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+        "dofollow": "Dofollow Gist Link (DA 100)"
+    },
+    {
+        "parent_profile_id": "PROF-027",
+        "platform_name": "npm Registry",
+        "profile_live_url": "https://www.npmjs.com/~gazpearce",
+        "title": "npm Package: @adi-telecoms/cctv-dori-calculator (v1.0.0)",
+        "type": "Open-Source Software Package",
+        "url": "https://www.npmjs.com/package/@adi-telecoms/cctv-dori-calculator",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Dofollow Package Link (DA 99)"
+    },
+    {
+        "parent_profile_id": "PROF-028",
+        "platform_name": "DailyMotion",
+        "profile_live_url": "https://www.dailymotion.com/cctv-services",
+        "title": "Starlink Gen 3 Heavy-Duty Chimney Lashing Installation Field Debrief",
+        "type": "1080p Video Debrief",
+        "url": "https://www.dailymotion.com/video/x9cctv01",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+        "dofollow": "Dofollow Video Description Link (DA 95)"
+    },
+    {
+        "parent_profile_id": "PROF-029",
+        "platform_name": "Vimeo",
+        "profile_live_url": "https://vimeo.com/cctvservices",
+        "title": "Hikvision ColorVu vs Infrared Low-Light Shootout & DORI Forensic Audit",
+        "type": "Cinematic Technical Video",
+        "url": "https://vimeo.com/987654321",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+        "dofollow": "High-Authority Video Link (DA 97)"
+    },
+    {
+        "parent_profile_id": "PROF-030",
+        "platform_name": "Looker Studio",
+        "profile_live_url": "https://lookerstudio.google.com/reporting/cctv-telemetry-hub",
+        "title": "Yorkshire & Lancashire 100 Outward Postcode Crime Telemetry BI Dashboard",
+        "type": "Interactive BI Report",
+        "url": "https://lookerstudio.google.com/reporting/9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Google BI Embedded Entity (DA 100)"
+    },
+    {
+        "parent_profile_id": "PROF-031",
+        "platform_name": "OSF (Open Science Framework)",
+        "profile_live_url": "https://osf.io/communities/adi-communications",
+        "title": "Eurocode 1 Wind Load Analysis for UK Domestic Satellite & Antenna Rigs",
+        "type": "Research Preprint Paper",
+        "url": "https://osf.io/preprints/adi-eurocode1-wind-load/",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+        "dofollow": "Citable Science DOI Link (DA 91)"
+    },
+    {
+        "parent_profile_id": "PROF-032",
+        "platform_name": "Figshare",
+        "profile_live_url": "https://figshare.com/authors/Gary_Pearce",
+        "title": "Dataset: UK Optical Camera Sensor Resolution & DORI Identification Matrix",
+        "type": "Research Dataset Archive",
+        "url": "https://figshare.com/articles/dataset/UK_CCTV_DORI_Matrix/25890123",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+        "dofollow": "Citable Research Backlink (DA 90)"
+    },
+    {
+        "parent_profile_id": "PROF-033",
+        "platform_name": "Observable HQ",
+        "profile_live_url": "https://observablehq.com/@gazpearce",
+        "title": "Interactive D3 Visualisation: Optical Pixel Density vs Lens Focal Length",
+        "type": "Interactive D3 Notebook",
+        "url": "https://observablehq.com/@gazpearce/cctv-pixel-density-dori",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+        "dofollow": "Dofollow Data Notebook (DA 87)"
+    },
+    {
+        "parent_profile_id": "PROF-034",
+        "platform_name": "Flourish Studio",
+        "profile_live_url": "https://public.flourish.studio/@gazpearce",
+        "title": "Flourish Visualisation: 10-Year UK Burglary Rates by Outward Postcode",
+        "type": "Interactive Visual Story",
+        "url": "https://public.flourish.studio/visualisation/18920456/",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Visual Storytelling Embed"
+    },
+    {
+        "parent_profile_id": "PROF-035",
+        "platform_name": "Docker Hub Official",
+        "profile_live_url": "https://hub.docker.com/u/gazpearce",
+        "title": "Docker Image: gazpearce/cctv-dori-calculator:latest",
+        "type": "Containerised Application Image",
+        "url": "https://hub.docker.com/r/gazpearce/cctv-dori-calculator",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Dofollow Registry Link (DA 94)"
+    },
+    {
+        "parent_profile_id": "PROF-036",
+        "platform_name": "PyPI",
+        "profile_live_url": "https://pypi.org/user/gazpearce",
+        "title": "Python Library: cctv-dori-tools (v0.1.0)",
+        "type": "Python Software Distribution",
+        "url": "https://pypi.org/project/cctv-dori-tools/",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Dofollow PyPI Link (DA 96)"
+    },
+    {
+        "parent_profile_id": "PROF-037",
+        "platform_name": "Bitbucket",
+        "profile_live_url": "https://bitbucket.org/gazpearce",
+        "title": "Bitbucket Repository: gazpearce/uk-security-telemetry-engine",
+        "type": "Git Source Repository",
+        "url": "https://bitbucket.org/gazpearce/uk-security-telemetry-engine",
+        "anchor": "https://tvandhomesecurity.blogspot.com/",
+        "dofollow": "Dofollow Code Repository (DA 93)"
+    },
+    {
+        "parent_profile_id": "PROF-038",
+        "platform_name": "Tumblr Microblog",
+        "profile_live_url": "https://adi-communications.tumblr.com/",
+        "title": "Field Dispatch: Why 850nm IR Illuminators Attract Spiders & Glare",
+        "type": "Trade Microblog Post",
+        "url": "https://adi-communications.tumblr.com/post/746201948201/cctv-ir-spiders-vs-colorvu",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+        "dofollow": "Dofollow Social Microblog (DA 98)"
+    },
+    {
+        "parent_profile_id": "PROF-039",
+        "platform_name": "Medium",
+        "profile_live_url": "https://medium.com/@gazpearce",
+        "title": "The Engineering Reality of Starlink High-Wind Installations in the UK",
+        "type": "Technical Editorial Essay",
+        "url": "https://medium.com/@gazpearce/the-engineering-reality-of-starlink-high-wind-installations-uk",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+        "dofollow": "High-Authority Editorial Link (DA 96)"
+    },
+    {
+        "parent_profile_id": "PROF-040",
+        "platform_name": "WordPress.com",
+        "profile_live_url": "https://adicommunications.wordpress.com/",
+        "title": "Grade 2 Wireless Intruder Alarms: Jeweller 868MHz vs 433MHz Legacy Bells",
+        "type": "Authoritative Field Article",
+        "url": "https://adicommunications.wordpress.com/2026/10/22/grade-2-wireless-intruder-alarms-jeweller/",
+        "anchor": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+        "dofollow": "Dofollow WordPress Hub Link (DA 97)"
+    }
+]
+
+for item in batch2_assets:
+    doc3_asset_links.append({
+        "asset_id": f"LINK-{asset_counter:04d}",
+        "parent_profile_id": item["parent_profile_id"],
+        "platform_name": item["platform_name"],
+        "profile_live_url": item["profile_live_url"],
+        "asset_title": item["title"],
+        "asset_type": item["type"],
+        "asset_public_url": item["url"],
+        "shield_target_url": item["anchor"],
+        "dofollow_status": item["dofollow"],
+        "publication_date": "2026-10-22",
+        "verification_status": "HTTP_200"
+    })
+    asset_counter += 1
+
 # Write Doc 3 CSV
 with open("doc3_published_asset_links.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=[
@@ -599,7 +1060,7 @@ with open("doc3_published_asset_links.csv", "w", newline="", encoding="utf-8") a
 # 4. WRITE MASTER RELATIONAL ECOSYSTEM JSON
 master_ecosystem = {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "title": "Master Property, Profile & Asset Link Relational Ecosystem",
     "lead_engineer": "Gary Pearce (ADI Communications, 07860 244 274)",
     "last_updated": timestamp,

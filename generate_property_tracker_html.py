@@ -48,7 +48,7 @@ def generate_tracker_html():
           </div>
           <h1 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">Property, Profile & Asset Tracker</h1>
           <p class="mt-2 text-sm text-neutral-400 max-w-3xl">
-            Live operations portal mapping <strong class="text-neutral-200">100 Route Domains</strong>, <strong class="text-emerald-400">Established Profiles</strong>, and <strong class="text-blue-400">Published Asset Links</strong> under strict <strong class="text-brand-orange">Rule 45 Google Shield Air-Gap</strong>.
+            Live operations portal mapping <strong class="text-neutral-200">{len(doc1)} Route Domains</strong>, <strong class="text-emerald-400">Established Profiles</strong>, and <strong class="text-blue-400">Published Asset Links</strong> under strict <strong class="text-brand-orange">Rule 45 Google Shield Air-Gap</strong>.
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-2">
