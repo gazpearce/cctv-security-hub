@@ -149,7 +149,7 @@ def build_ledger():
     "publisher": {{
       "@type": "Organization",
       "name": "ADI Communications",
-      "url": "https://adicommunications.co.uk"
+      "url": "https://tvandhomesecurity.blogspot.com/"
     }}
   }}
   </script>

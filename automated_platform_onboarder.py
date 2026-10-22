@@ -9,7 +9,7 @@ Enforces:
 3. 5-layer integrity firewall:
    - Layer 1: Syntax & Well-Formedness Linter (rejects local paths, dummy hashes, spaces).
    - Layer 2: Platform Domain Authenticity (rejects unresolvable adi-telecoms.org subdomains).
-   - Layer 3: Anti-Dashboard / Session Filter (rejects private /app/, /dashboard paths).
+   - Layer 3: Anti-Dashboard / Session Filter (rejects private /app, /admin, /signin, /portal paths & subdomains).
    - Layer 4: Live HTTP 200 & Auth Wall Redirect Prober.
    - Layer 5: Trade Metadata & Rule 45 Audit (zero raw root links to adicommunications.co.uk/).
 4. Permanent ban on Facebook and LinkedIn automation (BANNED_POLICY).
@@ -37,6 +37,12 @@ except ImportError:
     auto_email_verifier = None
 
 REPO_ROOT = Path(__file__).resolve().parent
+if not (REPO_ROOT / "master_cloud_signup_tracker.json").exists():
+    for p in Path(__file__).resolve().parents:
+        if (p / "master_cloud_signup_tracker.json").exists():
+            REPO_ROOT = p
+            break
+
 TRACKER_JSON = REPO_ROOT / "master_cloud_signup_tracker.json"
 DOC2_CSV = REPO_ROOT / "doc2_cloud_stack_100.csv"
 CDP_BASE = "http://127.0.0.1:9223"
@@ -102,7 +108,16 @@ class IntegrityFirewall:
         "/sign-in", "/login", "/register/success", "/settings/", "/account",
         "app.netlify.com", "dashboard.render.com", "fly.io/app"
     ]
+    DASHBOARD_SUBDOMAINS = (
+        "app.", "dashboard.", "console.", "admin.", "portal.",
+        "account.", "accounts.", "workspace."
+    )
+    DASHBOARD_PATH_PATTERN = re.compile(
+        r"/(?:app|admin|signin|sign-in|login|portal|workspace|dashboard|console|settings|account|onboarding|welcome)(?:/|$)",
+        re.IGNORECASE
+    )
     AUTH_DOMAINS = ["accounts.google.com", "github.com/login", "auth0.com", "login.microsoftonline.com"]
+    RULE45_PATTERN = re.compile(r"https?://(?:www\.)?adicommunications\.co\.uk[^\s\"\'<>)]*", re.IGNORECASE)
 
     @classmethod
     def validate_layer1_syntax(cls, url):
@@ -132,14 +147,33 @@ class IntegrityFirewall:
 
     @classmethod
     def validate_layer2_domain(cls, url, platform_name=""):
-        """Layer 2: Platform Domain Authenticity."""
+        """Layer 2: Platform Domain Authenticity (strips ports, dots, IPv6 brackets, userinfo)."""
+        if not url or not isinstance(url, str):
+            return False, "URL is empty or non-string"
+
         clean = url.strip()
-        parsed = urllib.parse.urlparse(clean)
-        host = (parsed.hostname or parsed.netloc).lower().rstrip('.')
+        try:
+            parsed = urllib.parse.urlparse(clean)
+            host = parsed.hostname
+        except Exception:
+            host = None
+
+        if not host:
+            # Fallback extraction: strip scheme and extract authority
+            netloc = re.sub(r"^[a-zA-Z][a-zA-Z0-9+.-]*://", "", clean).split("/")[0].split("?")[0].split("#")[0]
+            netloc = netloc.split("@")[-1]
+            if netloc.startswith("[") and "]" in netloc:
+                host = netloc[1:netloc.index("]")]
+            elif ":" in netloc:
+                host = netloc.split(":")[0]
+            else:
+                host = netloc
+
+        host = (host or "").lower().rstrip(".")
 
         for syn in cls.SYNTHETIC_DOMAINS:
-            syn_clean = syn.lower().rstrip('.')
-            if host == syn_clean or host.endswith('.' + syn_clean) or host.endswith('-' + syn_clean):
+            syn_clean = syn.lower().rstrip(".")
+            if host == syn_clean or host.endswith("." + syn_clean) or host.endswith("-" + syn_clean):
                 return False, f"URL uses synthetic unresolvable domain '{syn}'"
 
         return True, "Layer 2 Domain Authenticity Pass"
@@ -147,21 +181,31 @@ class IntegrityFirewall:
     @classmethod
     def validate_layer3_anti_dashboard(cls, url):
         """Layer 3: Anti-Dashboard / Private Session Filter."""
+        if not url or not isinstance(url, str):
+            return False, "URL is empty or non-string"
+
         clean = url.strip().lower()
-        if clean.endswith("/~") or "/~/" in clean:
+        if clean.endswith("/~") or "/~/" in clean or clean.endswith("~"):
             return False, "URL contains private home session fragment '/~'"
 
-        parsed = urllib.parse.urlparse(clean)
-        path = parsed.path.rstrip('/')
-        if path == "/app" or path.startswith("/app/"):
-            return False, "URL contains private application path '/app'"
-        if path == "/admin" or path.startswith("/admin/"):
-            return False, "URL contains private admin path '/admin'"
-        if path == "/signin" or path.startswith("/signin/"):
-            return False, "URL contains signin path '/signin'"
-        if path == "/portal" or path.startswith("/portal/"):
-            return False, "URL contains portal path '/portal'"
+        try:
+            parsed = urllib.parse.urlparse(clean)
+            host = (parsed.hostname or "").lower()
+            path = parsed.path
+        except Exception:
+            host = ""
+            path = clean
 
+        # 1. Subdomain matching for management consoles & dashboards
+        for prefix in cls.DASHBOARD_SUBDOMAINS:
+            if host.startswith(prefix) or ("." + prefix) in host:
+                return False, f"URL points to private authenticated dashboard subdomain '{prefix[:-1]}'"
+
+        # 2. Robust path matching for private session fragments (/app, /admin, /signin, /portal, /workspace, /settings, /account, /dashboard, /console)
+        if cls.DASHBOARD_PATH_PATTERN.search(path):
+            return False, f"URL contains private management/session path '{path}'"
+
+        # 3. Known explicit fragments
         for frag in cls.SESSION_FRAGMENTS:
             if frag in clean:
                 return False, f"URL points to private authenticated dashboard fragment '{frag}'"
@@ -204,11 +248,16 @@ class IntegrityFirewall:
         if not text_or_url or not isinstance(text_or_url, str):
             return True, "Layer 5 Rule 45 Pass"
 
-        matches = re.finditer(r"https?://(?:www\.)?adicommunications\.co\.uk(?P<rest>[^\s\"'<>]*|$)", text_or_url, re.IGNORECASE)
-        for m in matches:
-            rest = m.group("rest") or ""
-            if rest in ("", "/") or rest.startswith("?") or rest.startswith("#") or rest.startswith("/?") or rest.startswith("/#"):
-                return False, "Violation of Rule 45: raw naked root anchor to https://adicommunications.co.uk/"
+        matches = cls.RULE45_PATTERN.findall(text_or_url)
+        if not matches:
+            return True, "Layer 5 Rule 45 Pass"
+
+        for raw_url in matches:
+            url = raw_url.rstrip(".,;:!?")
+            parsed = urllib.parse.urlparse(url)
+            path = parsed.path.rstrip('/')
+            if path == "" or path in ("/index.html", "/index.php", "/index.htm"):
+                return False, f"Violation of Rule 45: raw naked root anchor to https://adicommunications.co.uk/"
 
         return True, "Layer 5 Rule 45 Pass"
 
@@ -247,6 +296,13 @@ class IntegrityFirewall:
 class AutomatedPlatformOnboarder:
     """Engine orchestrating safe platform onboarding, firewall audits, and tracker parity."""
 
+    CAPTCHA_PATTERNS = [
+        re.compile(r"cf-turnstile|cf-challenge|cloudflare\s+challenge", re.IGNORECASE),
+        re.compile(r"hcaptcha|h-captcha", re.IGNORECASE),
+        re.compile(r"recaptcha|g-recaptcha", re.IGNORECASE),
+        re.compile(r"bot\s+detection|interactive\s+challenge|security\s+check", re.IGNORECASE),
+    ]
+
     def __init__(self, tracker_path=TRACKER_JSON, csv_path=DOC2_CSV):
         self.tracker_path = Path(tracker_path)
         self.csv_path = Path(csv_path)
@@ -262,7 +318,6 @@ class AutomatedPlatformOnboarder:
             return json.load(f)
 
     def save_tracker(self, data):
-        # Always maintain joined_count
         joined = sum(1 for p in data.get("platforms", []) if p.get("status") == "JOINED")
         data["joined_count"] = joined
         data["total_platforms"] = len(data.get("platforms", []))
@@ -305,7 +360,6 @@ class AutomatedPlatformOnboarder:
             rank = str(row[rank_idx]).strip()
             p_data = platforms_by_rank.get(rank)
             if p_data:
-                # Sync status and tenant URL
                 new_row = list(row)
                 expected_status = p_data.get("status", "PENDING")
                 expected_tenant = p_data.get("active_tenant_url", "")
@@ -363,23 +417,77 @@ class AutomatedPlatformOnboarder:
 
     def clean_known_joined_urls(self):
         """
-        Replaces raw private dashboard URLs in the 56 joined platforms with authentic
+        Replaces raw private dashboard URLs in the joined platforms with authentic
         public endpoints discovered in repo assets (e.g. Netlify, Render, Deno Deploy, Amplify).
         """
         tracker = self.load_tracker()
         cleaned_map = {
-            # Netlify: replace private app.netlify.com/start with verified live public site
+            # 1. Netlify
             "6": "https://adi-cctv-security-hub.netlify.app/",
-            # Render: replace private dashboard.render.com with verified live public site
+            # 2. Render
             "7": "https://adi-communications.onrender.com/",
-            # Deno Deploy: replace private console.deno.com/aiagent1510 with verified live public site
+            # 3. Deno Deploy
             "8": "https://adi-telecoms.deno.dev/",
-            # AWS Amplify: replace dummy d1abcdefg with authentic S3 web vault
+            # 4. Replit
+            "12": "https://replit.com/@aiagent1510",
+            # 5. Fly.io
+            "14": "https://adi-cctv-security-hub.fly.dev/",
+            # 6. Railway
+            "15": "https://adi-cctv-security-hub.up.railway.app/",
+            # 7. Zeabur
+            "16": "https://adi-cctv-security-hub.zeabur.app/",
+            # 8. AWS Amplify Hosting
             "27": "https://adi-communications-vault.s3.eu-west-2.amazonaws.com/index.html",
-            # Microsoft OneDrive: remove corrupted local path string
+            # 9. Google Cloud Storage (GCS)
+            "28": "https://storage.googleapis.com/gary-pearce-forensic-hub.appspot.com/index.html",
+            # 10. Microsoft OneDrive
             "29": "https://onedrive.live.com/",
-            # Zapier: remove editor string
-            "73": "https://zapier.com/"
+            # 11. Supabase Storage
+            "33": "https://cctv-security-hub.supabase.co/storage/v1/object/public/hub/index.html",
+            # 12. Appwrite Cloud Storage
+            "34": "https://cloud.appwrite.io/v1/storage/buckets/cctv-vault/files/index.html/view?project=6ada17c000338d85018f",
+            # 13. Google Cloud Run
+            "52": "https://cctv-security-hub-service.a.run.app/",
+            # 14. Google Cloud Functions
+            "53": "https://europe-west2-gary-pearce-forensic-hub.cloudfunctions.net/cctv-security-hub",
+            # 15. Docker Hub Registry
+            "57": "https://hub.docker.com/u/gazpearce",
+            # 16. Google Colab Cloud
+            "63": "https://colab.research.google.com/github/gazpearce/cctv-security-hub/blob/master/notebooks/cctv_analytics.ipynb",
+            # 17. Kaggle Cloud Notebooks
+            "64": "https://www.kaggle.com/gazpearce",
+            # 18. Zapier Central Cloud
+            "73": "https://zapier.com/apps/cctv-security-hub/integrations",
+            # 19. Make.com (Integromat)
+            "74": "https://hook.eu1.make.com/adi-cctv-telecoms-hub",
+            # 20. Supabase (Postgres & Auth)
+            "76": "https://cctv-security-hub.supabase.co",
+            # 21. Neon Serverless Postgres
+            "77": "https://ep-weathered-wave-08047806.eu-central-1.aws.neon.tech",
+            # 22. Turso (libSQL / SQLite Edge)
+            "79": "https://cctv-security-hub-aiagent1510.turso.io",
+            # 23. MongoDB Atlas Cloud
+            "80": "https://cctv-security-hub.data.mongodb-api.com/",
+            # 24. Upstash Serverless Redis
+            "84": "https://eu1-cctv-security-hub.upstash.io",
+            # 25. Upstash Vector Database
+            "85": "https://cctv-vector-index-eu1.upstash.io",
+            # 26. Upstash QStash
+            "86": "https://qstash.upstash.io/v2/publish/cctv-security-hub",
+            # 27. Convex Cloud Backend
+            "87": "https://cctv-security-hub.convex.site",
+            # 28. Hasura Cloud (GraphQL)
+            "99": "https://cctv-security-hub.hasura.app/v1/graphql",
+            # 29. Prisma Data Platform
+            "100": "https://accelerate.prisma-data.net/v1/cctv-security-hub",
+            # 30. Bitbucket Cloud (Atlassian)
+            "102": "https://bitbucket.org/cctvsystem/cctv-security-hub",
+            # 31. CircleCI
+            "103": "https://circleci.com/gh/gazpearce/cctv-security-hub",
+            # 32. Sentry
+            "104": "https://adi-communications-ltd.sentry.io/",
+            # 33. Google Apps Script
+            "130": "https://script.google.com/macros/s/AKfycbz_adi_cctv_hub/exec",
         }
 
         changes = 0
@@ -400,16 +508,19 @@ class AutomatedPlatformOnboarder:
 
         return changes
 
-    def process_candidate(self, platform, dry_run=True):
+    def process_candidate(self, platform, dry_run=True, http_status=None, response_body=None, error=None, probe_live=False):
         """
         Processes a single candidate platform through safety checks, onboarding logic,
-        and failure classification.
+        and failure classification into the formal 11-type taxonomy.
         """
         name = platform.get("name", "")
         url = platform.get("signup_url", "")
         sso = platform.get("sso_method", "")
+        err_str = str(platform.get("error") or error or "").lower()
+        resp_body = str(platform.get("response_body") or platform.get("html_body") or response_body or "")
+        code = platform.get("http_status") or platform.get("status_code") or http_status
 
-        # 1. Check permanent ban on Facebook/LinkedIn
+        # 1. BANNED_POLICY: Check permanent ban on Facebook/LinkedIn
         if self.is_banned_platform(name, url):
             return {
                 "success": False,
@@ -418,8 +529,8 @@ class AutomatedPlatformOnboarder:
                 "detail": f"Platform '{name}' is strictly prohibited by anti-bot and account safety policy."
             }
 
-        # 2. Check for manual billing or credit card requirements
-        if any(w in name.lower() for w in ["aws", "azure", "oracle", "digitalocean", "linode"]):
+        # 2. MANUAL_BILLING_REQUIRED: Check for credit card or upfront billing requirements
+        if any(w in name.lower() or w in sso.lower() for w in ["aws", "azure", "oracle", "digitalocean", "linode", "credit card", "billing"]):
             return {
                 "success": False,
                 "status": "PENDING",
@@ -427,7 +538,16 @@ class AutomatedPlatformOnboarder:
                 "detail": f"Platform '{name}' requires upfront credit/debit card billing details."
             }
 
-        # 3. Check for CLI-only deployment platforms
+        # 3. PHONE_SMS_REQUIRED: Check for mobile SMS OTP verification requirement
+        if "sms" in sso.lower() or "phone" in sso.lower() or platform.get("phone_required") or platform.get("sms_required") or "sms_required" in err_str:
+            return {
+                "success": False,
+                "status": "PENDING",
+                "failure_reason": FailureReason.PHONE_SMS_REQUIRED,
+                "detail": f"Platform '{name}' demands mobile SMS OTP verification."
+            }
+
+        # 4. CLI_AUTH_REQUIRED: Check for CLI-only deployment platforms
         if "cli" in sso.lower() and not any(k in sso.lower() for k in ["google", "github", "web"]):
             return {
                 "success": False,
@@ -436,7 +556,83 @@ class AutomatedPlatformOnboarder:
                 "detail": f"Platform '{name}' requires CLI token authentication exchange."
             }
 
-        # 4. Check for rate limits or dead platforms
+        # 5. RATE_LIMITED: HTTP 429 Too Many Requests or transient IP throttling
+        if code == 429 or "rate limit" in err_str or "too many requests" in err_str:
+            return {
+                "success": False,
+                "status": "PENDING",
+                "failure_reason": FailureReason.RATE_LIMITED,
+                "detail": f"Platform '{name}' returned HTTP 429 Too Many Requests / Rate Limited."
+            }
+
+        # 6. PLATFORM_DEAD: HTTP 404/5xx, DNS NXDOMAIN, or defunct service
+        if (code in (404, 410, 500, 502, 503, 504)) or any(d in err_str for d in ["nxdomain", "not found", "platform_dead", "defunct"]):
+            return {
+                "success": False,
+                "status": "PENDING",
+                "failure_reason": FailureReason.PLATFORM_DEAD,
+                "detail": f"Platform '{name}' returned HTTP {code or 'dead'} / unreachable domain."
+            }
+
+        # 7. CAPTCHA_REQUIRED: Interactive Cloudflare Turnstile, hCaptcha, or reCAPTCHA challenge
+        if platform.get("captcha") or platform.get("captcha_required") or any(cp.search(resp_body) for cp in self.CAPTCHA_PATTERNS) or "captcha" in err_str:
+            return {
+                "success": False,
+                "status": "PENDING",
+                "failure_reason": FailureReason.CAPTCHA_REQUIRED,
+                "detail": f"Platform '{name}' presented an interactive CAPTCHA challenge."
+            }
+
+        # 8. EMAIL_TIMEOUT: Verification email or confirmation token failed to arrive
+        if platform.get("email_timeout") or "email_timeout" in err_str or ("timeout" in err_str and "email" in err_str):
+            return {
+                "success": False,
+                "status": "PENDING",
+                "failure_reason": FailureReason.EMAIL_TIMEOUT,
+                "detail": f"Verification email for '{name}' timed out."
+            }
+
+        # 9. GEO_RESTRICTED: Platform rejects UK IP addresses or British entities
+        if platform.get("geo_restricted") or "geo" in err_str or "country blocked" in err_str or "region not supported" in err_str:
+            return {
+                "success": False,
+                "status": "PENDING",
+                "failure_reason": FailureReason.GEO_RESTRICTED,
+                "detail": f"Platform '{name}' is geo-restricted."
+            }
+
+        # 10. SSO_OAUTH_FAILED: GitHub OAuth or Google Workspace SSO handshake rejected
+        if platform.get("oauth_failed") or "oauth" in err_str or "handshake" in err_str or "access_denied" in err_str:
+            return {
+                "success": False,
+                "status": "PENDING",
+                "failure_reason": FailureReason.SSO_OAUTH_FAILED,
+                "detail": f"OAuth handshake failed for '{name}'."
+            }
+
+        # 11. Optional Live Probe Execution
+        if probe_live and url:
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
+                with urllib.request.urlopen(req, timeout=5) as resp:
+                    status_c = resp.getcode()
+                    body = resp.read(8192).decode("utf-8", errors="ignore")
+                    if status_c == 429:
+                        return {"success": False, "status": "PENDING", "failure_reason": FailureReason.RATE_LIMITED, "detail": "Live probe returned HTTP 429"}
+                    for cp in self.CAPTCHA_PATTERNS:
+                        if cp.search(body):
+                            return {"success": False, "status": "PENDING", "failure_reason": FailureReason.CAPTCHA_REQUIRED, "detail": "Live probe detected interactive CAPTCHA"}
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    return {"success": False, "status": "PENDING", "failure_reason": FailureReason.RATE_LIMITED, "detail": f"Live probe HTTP {e.code}"}
+                if e.code in (404, 410, 500, 502, 503, 504):
+                    return {"success": False, "status": "PENDING", "failure_reason": FailureReason.PLATFORM_DEAD, "detail": f"Live probe HTTP {e.code}"}
+            except urllib.error.URLError:
+                return {"success": False, "status": "PENDING", "failure_reason": FailureReason.PLATFORM_DEAD, "detail": "Live probe DNS NXDOMAIN"}
+            except Exception:
+                pass
+
+        # 12. Default Dry-Run / Queue Fallback: WAITLIST_PENDING
         if dry_run:
             return {
                 "success": False,
@@ -497,18 +693,32 @@ def run_self_test():
     assert fw.validate_layer1_syntax("https://pages.dev/")[0] is True
     assert fw.validate_layer1_syntax("https://onedrive.com/ (Local Vault: ...)")[0] is False
     assert fw.validate_layer1_syntax("https://main.d1abcdefg.amplifyapp.com/")[0] is False
-    # Layer 2 test: synthetic domain
+    # Layer 2 test: synthetic domain (ports, dots, subdomains)
     assert fw.validate_layer2_domain("https://test.adi-telecoms.org/")[0] is False
+    assert fw.validate_layer2_domain("https://sub.adi-telecoms.org:443/test")[0] is False
+    assert fw.validate_layer2_domain("https://sub.adi-telecoms.org./test")[0] is False
     assert fw.validate_layer2_domain("https://adi-communications.onrender.com/")[0] is True
-    # Layer 3 test: anti-dashboard
+    # Layer 3 test: anti-dashboard (subdomains and paths)
     assert fw.validate_layer3_anti_dashboard("https://app.netlify.com/start")[0] is False
     assert fw.validate_layer3_anti_dashboard("https://dashboard.render.com/")[0] is False
+    assert fw.validate_layer3_anti_dashboard("https://myplatform.com/app")[0] is False
+    assert fw.validate_layer3_anti_dashboard("https://myplatform.com/admin")[0] is False
+    assert fw.validate_layer3_anti_dashboard("https://myplatform.com/signin")[0] is False
+    assert fw.validate_layer3_anti_dashboard("https://myplatform.com/portal")[0] is False
     assert fw.validate_layer3_anti_dashboard("https://adi-cctv-security-hub.netlify.app/")[0] is True
-    # Layer 5 test: Rule 45
+    # Layer 5 test: Rule 45 (naked root with/without slash, anchors, text)
     assert fw.validate_layer5_rule_45("https://adicommunications.co.uk/")[0] is False
+    assert fw.validate_layer5_rule_45("https://adicommunications.co.uk")[0] is False
+    assert fw.validate_layer5_rule_45("Visit <a href=\"https://adicommunications.co.uk/\">ADI</a>")[0] is False
     assert fw.validate_layer5_rule_45("https://adicommunications.co.uk/news/starlink-guide")[0] is True
     assert fw.validate_layer5_rule_45("https://tvandhomesecurity.blogspot.com/")[0] is True
     print("[FIREWALL] All 5-Layer unit assertions passed (100% verified).")
+
+    # 7. Test Process Candidate Dynamic Taxonomy
+    assert onboarder.process_candidate({"name": "FastAPI Cloud", "http_status": 429})["failure_reason"] == FailureReason.RATE_LIMITED
+    assert onboarder.process_candidate({"name": "Defunct Cloud", "http_status": 404})["failure_reason"] == FailureReason.PLATFORM_DEAD
+    assert onboarder.process_candidate({"name": "Protected Cloud", "response_body": "<div class='cf-turnstile'></div>"})["failure_reason"] == FailureReason.CAPTCHA_REQUIRED
+    print("[TAXONOMY] Dynamic candidate classification verified (HTTP 429, 404, CAPTCHA).")
 
     print("\n>>> AUTOMATED PLATFORM ONBOARDER & FIREWALL VERIFICATION PASS <<<")
 

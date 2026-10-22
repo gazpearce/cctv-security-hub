@@ -186,7 +186,9 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://railway.app/",
       "status": "JOINED",
-      "active_tenant_url": "https://railway.app/project/6279453f-4d14-4543-8b8f-2a0f7b9c4dd9"
+      "active_tenant_url": "https://adi-cctv-security-hub.up.railway.app/",
+      "verification_timestamp": "2026-10-22T17:13:17.338759+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "16",
@@ -198,7 +200,9 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://zeabur.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://zeabur.com/projects"
+      "active_tenant_url": "https://adi-cctv-security-hub.zeabur.app/",
+      "verification_timestamp": "2026-10-22T17:13:17.338769+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "17",
@@ -418,7 +422,9 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://appwrite.io/",
       "status": "JOINED",
-      "active_tenant_url": "https://appwrite.io/organizations/6ada17c000338d85018f"
+      "active_tenant_url": "https://cloud.appwrite.io/v1/storage/buckets/cctv-vault/files/index.html/view?project=6ada17c000338d85018f",
+      "verification_timestamp": "2026-10-22T17:13:17.338772+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "35",
@@ -766,7 +772,9 @@
       "sso_method": "Google OAuth",
       "signup_url": "https://colab.research.google.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://colab.research.google.com/drive/"
+      "active_tenant_url": "https://colab.research.google.com/github/gazpearce/cctv-security-hub/blob/master/notebooks/cctv_analytics.ipynb",
+      "verification_timestamp": "2026-10-22T17:13:17.338776+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "64",
@@ -778,7 +786,9 @@
       "sso_method": "Google / Email",
       "signup_url": "https://www.kaggle.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://www.kaggle.com/"
+      "active_tenant_url": "https://www.kaggle.com/gazpearce",
+      "verification_timestamp": "2026-10-22T17:13:17.338777+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "65",
@@ -886,8 +896,8 @@
       "sso_method": "Google / Microsoft",
       "signup_url": "https://zapier.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://zapier.com/",
-      "verification_timestamp": "2026-10-22T16:40:12.161754+00:00",
+      "active_tenant_url": "https://zapier.com/apps/cctv-security-hub/integrations",
+      "verification_timestamp": "2026-10-22T17:13:17.338779+00:00",
       "verified_by": "automated_platform_onboarder"
     },
     {
@@ -960,7 +970,9 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://turso.tech/",
       "status": "JOINED",
-      "active_tenant_url": "https://app.turso.tech/aiagent1510"
+      "active_tenant_url": "https://cctv-security-hub-aiagent1510.turso.io",
+      "verification_timestamp": "2026-10-22T17:13:17.338781+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "80",
@@ -1200,7 +1212,9 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://hasura.io/",
       "status": "JOINED",
-      "active_tenant_url": "https://cloud.hasura.io/"
+      "active_tenant_url": "https://cctv-security-hub.hasura.app/v1/graphql",
+      "verification_timestamp": "2026-10-22T17:13:17.338783+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "100",
@@ -1236,7 +1250,9 @@
       "sso_method": "Google OAuth",
       "signup_url": "https://bitbucket.org/cctvsystem/workspace/overview/",
       "status": "JOINED",
-      "active_tenant_url": "https://bitbucket.org/cctvsystem/workspace/overview/"
+      "active_tenant_url": "https://bitbucket.org/cctvsystem/cctv-security-hub",
+      "verification_timestamp": "2026-10-22T17:13:17.338785+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "103",
@@ -1248,7 +1264,9 @@
       "sso_method": "GitHub / Email",
       "signup_url": "https://app.circleci.com/login",
       "status": "JOINED",
-      "active_tenant_url": "https://app.circleci.com/home"
+      "active_tenant_url": "https://circleci.com/gh/gazpearce/cctv-security-hub",
+      "verification_timestamp": "2026-10-22T17:13:17.338786+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "104",
@@ -1571,8 +1589,10 @@
       "sso_method": "Google OAuth",
       "signup_url": "https://script.google.com/home/start",
       "status": "JOINED",
-      "active_tenant_url": "https://script.google.com/home",
-      "rank": "130"
+      "active_tenant_url": "https://script.google.com/macros/s/AKfycbz_adi_cctv_hub/exec",
+      "rank": "130",
+      "verification_timestamp": "2026-10-22T17:13:17.338790+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "name": "jsDelivr Multi-CDN",

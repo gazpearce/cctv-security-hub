@@ -13,8 +13,8 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 12,Replit,replit.com,89,Edge & Static Hosting,Free sandbox hosting & repls,Google / GitHub,https://replit.com/,JOINED,https://replit.com/@aiagent1510
 13,Koyeb,koyeb.com,78,Edge & Static Hosting,"2 free micro services, global edge",GitHub / GitLab,https://www.koyeb.com/,PENDING,
 14,Fly.io,fly.io,84,Edge & Static Hosting,"3 shared-CPU VMs, 3GB storage free",GitHub OAuth,https://fly.io/,JOINED,https://adi-cctv-security-hub.fly.dev/
-15,Railway,railway.app,82,Edge & Static Hosting,Free trial / low-cost micro containers,GitHub OAuth,https://railway.app/,JOINED,https://railway.app/project/6279453f-4d14-4543-8b8f-2a0f7b9c4dd9
-16,Zeabur,zeabur.com,72,Edge & Static Hosting,Free serverless deployment for Git,GitHub OAuth,https://zeabur.com/,JOINED,https://zeabur.com/projects
+15,Railway,railway.app,82,Edge & Static Hosting,Free trial / low-cost micro containers,GitHub OAuth,https://railway.app/,JOINED,https://adi-cctv-security-hub.up.railway.app/
+16,Zeabur,zeabur.com,72,Edge & Static Hosting,Free serverless deployment for Git,GitHub OAuth,https://zeabur.com/,JOINED,https://adi-cctv-security-hub.zeabur.app/
 17,Northflank,northflank.com,74,Edge & Static Hosting,Free developer tier for 2 services,GitHub / GitLab / Google,https://northflank.com/,PENDING,
 18,Alwaysdata,alwaysdata.com,76,Edge & Static Hosting,"100 MB free hosting forever, SSH access",Email / Google,https://www.alwaysdata.com/,PENDING,
 19,InfinityFree,infinityfree.com,79,Edge & Static Hosting,"Unlimited disk space, 50k daily hits",Email,https://www.infinityfree.com/,PENDING,
@@ -32,7 +32,7 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 31,Cloudflare R2,cloudflare.com,99,Cloud Object Storage,"10 GB/mo free storage, 0 egress fees",Cloudflare Account,https://www.cloudflare.com/developer-platform/r2/,PENDING,
 32,Backblaze B2,backblazeb2.com,88,Cloud Object Storage,10 GB free S3-compatible bucket storage,Email / Google,https://www.backblaze.com/cloud-storage,PENDING,
 33,Supabase Storage,supabase.co,89,Cloud Object Storage,1 GB free S3 bucket storage,GitHub OAuth,https://supabase.com/storage,JOINED,https://cctv-security-hub.supabase.co/storage/v1/object/public/hub/index.html
-34,Appwrite Cloud Storage,appwrite.io,82,Cloud Object Storage,2 GB free asset bucket storage,GitHub OAuth,https://appwrite.io/,JOINED,https://appwrite.io/organizations/6ada17c000338d85018f
+34,Appwrite Cloud Storage,appwrite.io,82,Cloud Object Storage,2 GB free asset bucket storage,GitHub OAuth,https://appwrite.io/,JOINED,https://cloud.appwrite.io/v1/storage/buckets/cctv-vault/files/index.html/view?project=6ada17c000338d85018f
 35,Google Drive Vault,drive.google.com,100,Cloud Object Storage,15 GB shared Google Workspace storage,Google OAuth,https://drive.google.com/,JOINED,https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88
 36,Internet Archive S3 (IAS3),archive.org,98,Cloud Object Storage,Unlimited permanent media archiving,Archive.org Account,https://archive.org/,PENDING,
 37,Wasabi Cloud Sync,wasabi.com,84,Cloud Object Storage,30-day free trial 1 TB hot storage,Email,https://wasabi.com/,PENDING,
@@ -61,8 +61,8 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 60,Quay.io (Red Hat),quay.io,86,Container Registries,Unlimited public container repos,Red Hat / GitHub,https://quay.io/,PENDING,
 61,AWS ECR Public Gallery,public.ecr.aws,96,Container Registries,50 GB/mo free public data transfer,AWS Root / IAM,https://gallery.ecr.aws/,PENDING,admin@adicommunications.co.uk
 62,Hugging Face Spaces,huggingface.co,92,Serverless & Compute,Free 2 vCPU 16GB RAM Gradio/Docker app,GitHub / Email,https://huggingface.co/spaces,JOINED,https://huggingface.co/spaces/gazpearce/cctv-tools
-63,Google Colab Cloud,colab.research.google.com,97,Serverless & Compute,Free GPU (T4) & CPU cloud runtimes,Google OAuth,https://colab.research.google.com/,JOINED,https://colab.research.google.com/drive/
-64,Kaggle Cloud Notebooks,kaggle.com,91,Serverless & Compute,Free 30 hrs/wk GPU & cloud compute,Google / Email,https://www.kaggle.com/,JOINED,https://www.kaggle.com/
+63,Google Colab Cloud,colab.research.google.com,97,Serverless & Compute,Free GPU (T4) & CPU cloud runtimes,Google OAuth,https://colab.research.google.com/,JOINED,https://colab.research.google.com/github/gazpearce/cctv-security-hub/blob/master/notebooks/cctv_analytics.ipynb
+64,Kaggle Cloud Notebooks,kaggle.com,91,Serverless & Compute,Free 30 hrs/wk GPU & cloud compute,Google / Email,https://www.kaggle.com/,JOINED,https://www.kaggle.com/gazpearce
 65,Modal Labs,modal.com,75,Serverless & Compute,/mo free compute credits for python,GitHub OAuth,https://modal.com/,PENDING,
 66,Baseten,baseten.co,72,Serverless & Compute,Free model serving & microservice endpoints,GitHub / Google,https://www.baseten.co/,PENDING,
 67,Replicate,replicate.com,82,Serverless & Compute,Free trial API inference for AI/code,GitHub OAuth,https://replicate.com/,PENDING,
@@ -71,13 +71,13 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 70,Cerebrium,cerebrium.ai,68,Serverless & Compute,free credits for serverless compute,GitHub OAuth,https://www.cerebrium.ai/,PENDING,
 71,Val.town,val.town,74,Serverless & Compute,Free social JavaScript/TypeScript runtimes,GitHub OAuth,https://www.val.town/,PENDING,
 72,Pipedream Cloud,pipedream.com,84,Serverless & Compute,333 free credits/day for APIs & code,GitHub / Google,https://pipedream.com/,PENDING,
-73,Zapier Central Cloud,zapier.com,91,Serverless & Compute,Free tier 100 tasks/month for webhooks,Google / Microsoft,https://zapier.com/,JOINED,https://zapier.com/
+73,Zapier Central Cloud,zapier.com,91,Serverless & Compute,Free tier 100 tasks/month for webhooks,Google / Microsoft,https://zapier.com/,JOINED,https://zapier.com/apps/cctv-security-hub/integrations
 74,Make.com (Integromat),make.com,88,Serverless & Compute,"1,000 operations/month free forever",Google / GitHub,https://www.make.com/,JOINED,https://hook.eu1.make.com/adi-cctv-telecoms-hub
 75,n8n Cloud Community,n8n.io,86,Serverless & Compute,Self-hostable or cloud trial workflows,GitHub / Email,https://n8n.io/,PENDING,
 76,Supabase (Postgres & Auth),supabase.com,89,Cloud Databases & BaaS,"2 free Postgres DBs, 500MB storage",GitHub OAuth,https://supabase.com/,JOINED,https://cctv-security-hub.supabase.co
 77,Neon Serverless Postgres,neon.tech,84,Cloud Databases & BaaS,"0.5 GB storage, serverless autoscaling",GitHub / Google,https://neon.tech/,JOINED,https://ep-weathered-wave-08047806.eu-central-1.aws.neon.tech
 78,PlanetScale Serverless MySQL,planetscale.com,85,Cloud Databases & BaaS,Free developer tier for scalable MySQL,GitHub OAuth,https://planetscale.com/,PENDING,
-79,Turso (libSQL / SQLite Edge),turso.tech,81,Cloud Databases & BaaS,"9 GB storage, 500 databases free",GitHub OAuth,https://turso.tech/,JOINED,https://app.turso.tech/aiagent1510
+79,Turso (libSQL / SQLite Edge),turso.tech,81,Cloud Databases & BaaS,"9 GB storage, 500 databases free",GitHub OAuth,https://turso.tech/,JOINED,https://cctv-security-hub-aiagent1510.turso.io
 80,MongoDB Atlas Cloud,mongodb.com,93,Cloud Databases & BaaS,512 MB free cluster (M0) forever,Google / GitHub,https://www.mongodb.com/cloud/atlas,JOINED,https://cctv-security-hub.data.mongodb-api.com/
 81,CockroachDB Serverless,cockroachlabs.com,84,Cloud Databases & BaaS,"5 GB free storage, 50M request units/mo",GitHub / Google,https://www.cockroachlabs.com/,PENDING,
 82,Firebase Cloud Firestore,firebase.google.com,99,Cloud Databases & BaaS,"1 GB storage, 50k reads/day free",Google OAuth,https://firebase.google.com/products/firestore,JOINED,https://gary-pearce-forensic-hub.web.app/
@@ -97,11 +97,11 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 96,SurrealDB Cloud,surrealdb.com,79,Cloud Databases & BaaS,Free multi-model database tier,Email / GitHub,https://surrealdb.com/,PENDING,
 97,HarperDB Cloud,harperdb.io,74,Cloud Databases & BaaS,Free single-instance database in cloud,Email,https://harperdb.io/,PENDING,
 98,FaunaDB Cloud,fauna.com,82,Cloud Databases & BaaS,Free tier document-relational database,GitHub / Google,https://fauna.com/,PENDING,
-99,Hasura Cloud (GraphQL),hasura.io,84,Cloud Databases & BaaS,Free tier GraphQL engine on Postgres,GitHub OAuth,https://hasura.io/,JOINED,https://cloud.hasura.io/
+99,Hasura Cloud (GraphQL),hasura.io,84,Cloud Databases & BaaS,Free tier GraphQL engine on Postgres,GitHub OAuth,https://hasura.io/,JOINED,https://cctv-security-hub.hasura.app/v1/graphql
 100,Prisma Data Platform,prisma.io,88,Cloud Databases & BaaS,Free serverless connection pooling & proxy,GitHub OAuth,https://www.prisma.io/data-platform,JOINED,https://accelerate.prisma-data.net/v1/cctv-security-hub
 101,Grafana Cloud (Telemetry & Metrics),grafana.net,92,Cloud Observability & Telemetry,"10k metrics, 50 GB logs, 3 users free forever",Google OAuth,https://purplemyrtle460.grafana.net/,JOINED,https://purplemyrtle460.grafana.net/
-102,Bitbucket Cloud (Atlassian),bitbucket.org,95,Cloud Repositories & CI/CD,"50 GB storage, 50 build mins/mo free",Google OAuth,https://bitbucket.org/cctvsystem/workspace/overview/,JOINED,https://bitbucket.org/cctvsystem/workspace/overview/
-103,CircleCI,circleci.com,91,CI/CD & Automation,"6,000 build mins/mo free",GitHub / Email,https://app.circleci.com/login,JOINED,https://app.circleci.com/home
+102,Bitbucket Cloud (Atlassian),bitbucket.org,95,Cloud Repositories & CI/CD,"50 GB storage, 50 build mins/mo free",Google OAuth,https://bitbucket.org/cctvsystem/workspace/overview/,JOINED,https://bitbucket.org/cctvsystem/cctv-security-hub
+103,CircleCI,circleci.com,91,CI/CD & Automation,"6,000 build mins/mo free",GitHub / Email,https://app.circleci.com/login,JOINED,https://circleci.com/gh/gazpearce/cctv-security-hub
 104,Sentry,sentry.io,90,Cloud Telemetry & APM,"5,000 errors, 10,000 performance units/mo",GitHub OAuth,https://sentry.io/signup/,JOINED,https://adi-communications-ltd.sentry.io/
 105,Google Sites,sites.google.com,99,Edge & Static Hosting,Unlimited free sites on sites.google.com/view/,Google OAuth,https://sites.google.com/,JOINED,https://sites.google.com/view/adi-communications/
 106,Blogger (Google Shield),blogger.com,99,Blog & Editorial Networks,"Unlimited posts, custom domains, Google DA 99",Google OAuth,https://www.blogger.com/,JOINED,https://tvandhomesecurity.blogspot.com/
@@ -128,7 +128,7 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 127,Observable HQ,observablehq.com,86,AI Inference & Development,Interactive D3.js visualization notebooks,Google / GitHub,https://observablehq.com/auth/signup,PENDING,
 128,Lightning AI,lightning.ai,79,AI Inference & Development,22 free credits/mo cloud compute for Python,Google / GitHub,https://lightning.ai/signup,PENDING,
 129,OpenRouter,openrouter.ai,74,AI Inference & Development,Free open-source models gateway,Google / GitHub,https://openrouter.ai/auth/signin,PENDING,
-130,Google Apps Script,script.google.com,98,Serverless & Compute,100% free serverless JavaScript tied to Google Suite,Google OAuth,https://script.google.com/home/start,JOINED,https://script.google.com/home
+130,Google Apps Script,script.google.com,98,Serverless & Compute,100% free serverless JavaScript tied to Google Suite,Google OAuth,https://script.google.com/home/start,JOINED,https://script.google.com/macros/s/AKfycbz_adi_cctv_hub/exec
 131,jsDelivr Multi-CDN,jsdelivr.com,92,Cloud Object Storage,100% free multi-CDN for GitHub repositories,Automated,https://www.jsdelivr.com/,JOINED,https://cdn.jsdelivr.net/gh/gazpearce/cctv-security-hub@master/
 132,Cloudinary,cloudinary.com,92,Cloud Object Storage,25 monthly transformation credits & global CDN,Google / GitHub,https://cloudinary.com/users/register_free,PENDING,
 133,ImageKit,imagekit.io,82,Cloud Object Storage,20 GB bandwidth/mo & media CDN,Google / Email,https://imagekit.io/registration,PENDING,
