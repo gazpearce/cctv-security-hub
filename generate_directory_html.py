@@ -1,21 +1,25 @@
 import json
 
 def generate_html():
-    with open("master_100_publishing_registry.json", "r", encoding="utf-8") as f:
+    with open("master_1000_publishing_registry.json", "r", encoding="utf-8") as f:
         data = json.load(f)
 
     platforms = data["platforms"]
+    total_count = len(platforms)
 
     # Categories list
     categories = sorted(list(set(p["category"] for p in platforms)))
+
+    hosted_count = sum(1 for p in platforms if "Free Hosted" in p["hosting_type"])
+    selfhost_count = sum(1 for p in platforms if "Self-Host" in p["hosting_type"] or "Docker" in p["hosting_type"])
 
     html = f'''<!DOCTYPE html>
 <html lang="en-GB" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Master 100 Free Publishing & Automation Directory | ADI Communications</title>
-  <meta name="description" content="Forensic directory of 100 free public publishing destinations, APIs, MCP servers, and automation routes for Google Stacking and Tier-2 authority syndication.">
+  <title>Master 1,000 Free Publishing & Automation Directory | ADI Communications</title>
+  <meta name="description" content="Forensic directory of 1,000 free public publishing destinations, APIs, MCP servers, and automation routes for Google Stacking and Tier-2 authority syndication.">
   <meta name="robots" content="index, follow">
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -44,59 +48,44 @@ def generate_html():
     }}
   </script>
   <style>
-    body {{
-      background-color: #060609;
-      color: #e2e8f0;
-    }}
-    .glass-card {{
-      background: rgba(15, 15, 22, 0.75);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-    }}
-    .glass-nav {{
-      background: rgba(8, 8, 12, 0.85);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }}
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {{
-      width: 8px;
-      height: 8px;
-    }}
-    ::-webkit-scrollbar-track {{
-      background: #08080c;
-    }}
-    ::-webkit-scrollbar-thumb {{
-      background: #27273a;
-      border-radius: 4px;
-    }}
-    ::-webkit-scrollbar-thumb:hover {{
-      background: #FF5500;
-    }}
+    body {{ background: #08080c; color: #e2e8f0; font-family: 'Plus Jakarta Sans', sans-serif; }}
+    .glass-card {{ background: rgba(18, 18, 26, 0.85); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }}
+    .brand-glow {{ box-shadow: 0 0 35px -5px rgba(255, 85, 0, 0.25); }}
+    .custom-scrollbar::-webkit-scrollbar {{ width: 6px; height: 6px; }}
+    .custom-scrollbar::-webkit-scrollbar-track {{ background: #0c0c14; }}
+    .custom-scrollbar::-webkit-scrollbar-thumb {{ background: #262638; border-radius: 3px; }}
   </style>
 </head>
-<body class="font-sans antialiased min-h-screen flex flex-col selection:bg-brand-orange selection:text-white">
+<body class="min-h-screen flex flex-col selection:bg-brand-orange selection:text-white">
 
-  <!-- Top Glass Navigation -->
-  <header class="sticky top-0 z-50 glass-nav">
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-50 glass-card border-b border-white/5 bg-[#08080c]/90 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <a href="/" class="flex items-center space-x-2.5">
-          <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-orange to-red-600 flex items-center justify-center font-black text-white text-sm shadow-lg shadow-orange-500/20">ADI</span>
-          <span class="font-extrabold text-white tracking-tight text-base sm:text-lg">Publishing Directory</span>
+        <a href="https://gary-pearce-forensic-hub.web.app/" class="flex items-center space-x-2">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-orange to-amber-500 flex items-center justify-center font-black text-white text-base shadow-lg">
+            GP
+          </div>
+          <div>
+            <span class="font-extrabold text-white text-sm tracking-tight block">ADI Communications</span>
+            <span class="text-[10px] text-neutral-400 font-mono tracking-wider uppercase block">Master 1,000 Publishing Directory</span>
+          </div>
         </a>
-        <span class="hidden md:inline-flex text-[11px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange">100 Endpoints</span>
       </div>
+
+      <nav class="hidden md:flex items-center space-x-6 text-xs font-medium text-neutral-300">
+        <a href="property-asset-tracker.html" class="hover:text-brand-orange transition">Property Tracker</a>
+        <a href="public_backlink_ledger.html" class="hover:text-brand-orange transition">Backlink Ledger</a>
+        <a href="doc1_route_domains_directory.csv" download class="hover:text-brand-orange transition">Download CSV ({total_count})</a>
+        <a href="master_1000_publishing_registry.json" download class="hover:text-brand-orange transition">Download JSON</a>
+        <a href="image-gallery.html" class="hover:text-brand-orange transition">Trade Gallery</a>
+      </nav>
+
       <div class="flex items-center space-x-3">
-        <a href="master_100_publishing_directory.csv" download class="inline-flex items-center space-x-2 text-xs font-mono font-semibold px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-neutral-300 hover:text-white transition">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          <span>Export CSV</span>
-        </a>
-        <a href="master_100_publishing_registry.json" target="_blank" class="inline-flex items-center space-x-2 text-xs font-mono font-semibold px-3 py-1.5 rounded-lg bg-brand-orange text-white hover:bg-orange-600 shadow-md shadow-orange-500/20 transition">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          <span>Raw JSON</span>
-        </a>
+        <span class="inline-flex items-center space-x-1 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <span>Rule 45 Air-Gap PASS</span>
+        </span>
         <a href="tel:07860244274" class="hidden sm:inline-flex items-center text-xs font-mono font-bold px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-700 text-neutral-200 hover:border-brand-orange hover:text-brand-orange transition">
           07860 244 274
         </a>
@@ -113,30 +102,30 @@ def generate_html():
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-mono text-neutral-300 mb-4">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Google Stacking & Parasite SEO Architecture • 2026 Edition</span>
+          <span>Google Stacking & Parasite SEO Architecture • 2026 Master Edition</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase max-w-4xl mx-auto leading-tight">
-          Master 100 Free Public <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-orange-400 to-amber-300">Publishing Destinations</span>
+          Master 1,000 Free Public <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-orange-400 to-amber-300">Publishing Destinations</span>
         </h1>
         <p class="mt-4 text-sm sm:text-base text-neutral-400 max-w-3xl mx-auto leading-relaxed">
-          Forensic directory of 100 free hosted and self-hosted platforms with documented APIs, MCP servers, and automation routes. Built for <strong class="text-neutral-200">Gary Pearce / ADI Communications</strong> to power multi-tier content syndication under strict <strong class="text-brand-orange">Rule 45 Google Shield</strong> air-gapping.
+          The ultimate master directory of {total_count} verified free hosted and self-hosted platforms across 10 functional categories with documented APIs, MCP servers, and automation routes. Built for <strong class="text-neutral-200">Gary Pearce / ADI Communications</strong> under strict <strong class="text-brand-orange">Rule 45 Google Shield</strong> air-gapping.
         </p>
 
         <!-- Stats Bar -->
         <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
           <div class="glass-card p-3 rounded-xl">
             <div class="text-[11px] font-mono text-neutral-400 uppercase">Total Platforms</div>
-            <div class="text-2xl font-black text-white mt-0.5">100</div>
+            <div class="text-2xl font-black text-white mt-0.5">{total_count}</div>
             <div class="text-[10px] text-neutral-500">10 Functional Categories</div>
           </div>
           <div class="glass-card p-3 rounded-xl">
             <div class="text-[11px] font-mono text-neutral-400 uppercase">Hosted Free Tiers</div>
-            <div class="text-2xl font-black text-emerald-400 mt-0.5">85</div>
+            <div class="text-2xl font-black text-emerald-400 mt-0.5">{hosted_count}</div>
             <div class="text-[10px] text-neutral-500">Zero-cost deployment</div>
           </div>
           <div class="glass-card p-3 rounded-xl">
             <div class="text-[11px] font-mono text-neutral-400 uppercase">Docker / Self-Host</div>
-            <div class="text-2xl font-black text-blue-400 mt-0.5">15</div>
+            <div class="text-2xl font-black text-blue-400 mt-0.5">{selfhost_count}</div>
             <div class="text-[10px] text-neutral-500">FOSS Self-hosted infra</div>
           </div>
           <div class="glass-card p-3 rounded-xl">
@@ -155,14 +144,14 @@ def generate_html():
             </div>
             <select id="hostingFilter" class="px-3.5 py-2.5 rounded-xl bg-[#0f0f16] border border-white/10 text-neutral-300 text-sm focus:outline-none focus:border-brand-orange">
               <option value="ALL">All Hosting Types</option>
-              <option value="Free Hosted">Free Hosted (85)</option>
-              <option value="Self-Host">Self-Host / Docker / Static (15)</option>
+              <option value="Free Hosted">Free Hosted ({hosted_count})</option>
+              <option value="Self-Host">Self-Host / Docker ({selfhost_count})</option>
             </select>
           </div>
 
           <!-- Category Filter Pills -->
           <div class="flex flex-wrap gap-1.5 justify-center" id="categoryPills">
-            <button class="cat-pill active px-3 py-1 rounded-full text-xs font-medium border bg-brand-orange border-brand-orange text-white" data-cat="ALL">All Categories (100)</button>
+            <button class="cat-pill active px-3 py-1 rounded-full text-xs font-medium border bg-brand-orange border-brand-orange text-white" data-cat="ALL">All Categories ({total_count})</button>
 '''
     for cat in categories:
         count = sum(1 for p in platforms if p["category"] == cat)
@@ -178,14 +167,14 @@ def generate_html():
       <div class="glass-card rounded-2xl overflow-hidden border border-white/10">
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs text-neutral-300 divide-y divide-white/5" id="platformsTable">
-            <thead class="bg-black/40 text-neutral-400 font-mono uppercase text-[11px]">
+            <thead class="bg-black/40 text-neutral-400 font-mono uppercase text-[10px] tracking-wider">
               <tr>
-                <th class="px-4 py-3.5 w-12 text-center">#</th>
+                <th class="px-4 py-3.5 text-center">ID</th>
                 <th class="px-4 py-3.5">Platform & Category</th>
                 <th class="px-4 py-3.5">Type</th>
                 <th class="px-4 py-3.5">API & MCP Status</th>
-                <th class="px-4 py-3.5">Automation & Auth</th>
-                <th class="px-4 py-3.5">Free Limits & Links</th>
+                <th class="px-4 py-3.5">Signup & Auth</th>
+                <th class="px-4 py-3.5">Free Limits & Role</th>
                 <th class="px-4 py-3.5 text-right">Actions</th>
               </tr>
             </thead>
@@ -194,21 +183,22 @@ def generate_html():
 
     for p in platforms:
         type_badge = "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" if "Free Hosted" in p["hosting_type"] else "bg-blue-500/10 text-blue-400 border-blue-500/20"
-        link_badge = "bg-purple-500/10 text-purple-300 border-purple-500/20" if "Dofollow" in p["clickable_link_support"] else "bg-neutral-800 text-neutral-400 border-neutral-700"
-        mcp_color = "text-amber-300" if "MCP" in p["mcp_status"] and "None" not in p["mcp_status"] else "text-neutral-500"
+        status_badge = "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" if p["join_status"] == "JOINED" else "bg-neutral-800 text-neutral-400 border-neutral-700"
+        mcp_color = "text-amber-300" if "MCP" in p.get("mcp_support", "") and "None" not in p.get("mcp_support", "") else "text-neutral-500"
 
         html += f'''              <tr class="platform-row hover:bg-white/[0.02] transition" 
-                  data-name="{p['platform'].lower()}" 
+                  data-name="{p['platform_name'].lower()}" 
                   data-cat="{p['category']}" 
                   data-hosting="{p['hosting_type']}"
-                  data-search="{p['platform'].lower()} {p['category'].lower()} {p['automation_route'].lower()} {p['mcp_status'].lower()}">
-                <td class="px-4 py-4 text-center font-mono text-neutral-500">{p['id']}</td>
+                  data-search="{p['platform_name'].lower()} {p['category'].lower()} {p.get('signup_oauth_method','').lower()} {p.get('mcp_support','').lower()} {p.get('stacking_role','').lower()}">
+                <td class="px-4 py-4 text-center font-mono text-neutral-500">{p['platform_id']}</td>
                 <td class="px-4 py-4">
                   <div class="font-bold text-white text-sm flex items-center space-x-2">
                     <a href="{p['homepage_url']}" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition flex items-center space-x-1">
-                      <span>{p['platform']}</span>
+                      <span>{p['platform_name']}</span>
                       <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                     </a>
+                    <span class="inline-flex px-1.5 py-0.2 rounded text-[9px] font-mono border {status_badge}">{p['join_status']}</span>
                   </div>
                   <div class="text-[11px] text-neutral-400 mt-0.5">{p['category']}</div>
                 </td>
@@ -218,36 +208,33 @@ def generate_html():
                 <td class="px-4 py-4">
                   <div class="text-xs">
                     <a href="{p['api_doc_url']}" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline font-mono inline-flex items-center space-x-1">
-                      <span>API Docs</span>
+                      <span>API Reference</span>
                       <svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                     </a>
                   </div>
-                  <div class="text-[11px] {mcp_color} font-mono mt-0.5">{p['mcp_status']}</div>
+                  <div class="text-[11px] {mcp_color} font-mono mt-0.5">{p.get('mcp_support','None')}</div>
                 </td>
                 <td class="px-4 py-4">
-                  <div class="text-neutral-200 text-xs font-mono">{p['automation_route']}</div>
-                  <div class="text-[11px] text-neutral-400 mt-0.5">Auth: <span class="text-neutral-300 font-mono">{p['auth_type']}</span></div>
+                  <div class="text-neutral-200 text-xs font-mono">{p['signup_oauth_method']}</div>
+                  <div class="text-[11px] text-neutral-400 mt-0.5">Handle: <span class="text-neutral-300 font-mono">{p.get('account_handle', 'unregistered')}</span></div>
                 </td>
                 <td class="px-4 py-4">
-                  <div class="text-neutral-300 text-xs">{p['free_tier_limits']}</div>
-                  <div class="mt-1 flex items-center space-x-1.5">
-                    <span class="inline-flex px-1.5 py-0.5 rounded text-[9px] font-mono border {link_badge}">{p['clickable_link_support']}</span>
-                    <span class="text-[10px] text-neutral-400">Public: {p['public_page_support']}</span>
-                  </div>
+                  <div class="text-neutral-300 text-xs">{p['free_limits']}</div>
+                  <div class="text-[11px] text-neutral-400 mt-0.5 italic">{p.get('stacking_role', '')}</div>
                 </td>
                 <td class="px-4 py-4 text-right whitespace-nowrap">
-                  <a href="{p['api_doc_url']}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1 px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 text-[11px] font-mono transition">
-                    <span>Docs</span>
+                  <a href="{p['homepage_url']}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1 px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 text-[11px] font-mono transition">
+                    <span>Visit</span>
                   </a>
                 </td>
               </tr>
 '''
 
-    html += '''            </tbody>
+    html += f'''            </tbody>
           </table>
         </div>
         <div class="p-4 bg-black/40 border-t border-white/5 flex items-center justify-between text-xs text-neutral-400">
-          <div id="resultsCount">Showing 100 of 100 platforms</div>
+          <div id="resultsCount">Showing {total_count} of {total_count} platforms</div>
           <div class="font-mono text-[11px] text-neutral-500">Gary Pearce • ADI Communications • Rule 45 Google Shield Compliant</div>
         </div>
       </div>
@@ -260,7 +247,7 @@ def generate_html():
           <div class="w-8 h-8 rounded-lg bg-orange-500/10 border border-orange-500/30 flex items-center justify-center text-brand-orange font-bold text-sm mb-4">01</div>
           <h3 class="text-base font-bold text-white">Rule 45 Google Shield Air-Gap</h3>
           <p class="mt-2 text-xs text-neutral-400 leading-relaxed">
-            All 100 endpoints must link exclusively into Tier-2 Google Shield assets:
+            All endpoints link exclusively into Tier-2 Google Shield assets:
             <br>• <strong>Blogger DA 99:</strong> <code>tvandhomesecurity.blogspot.com</code>
             <br>• <strong>Drive DA 100:</strong> <code>1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88</code>
             <br>• <strong>YouTube DA 100:</strong> <code>@CCTV.services</code>
@@ -270,24 +257,24 @@ def generate_html():
         </div>
         <div class="glass-card p-6 rounded-2xl border border-white/10">
           <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold text-sm mb-4">02</div>
-          <h3 class="text-base font-bold text-white">First Tier Automation Group</h3>
+          <h3 class="text-base font-bold text-white">Priority Automation Core</h3>
           <p class="mt-2 text-xs text-neutral-400 leading-relaxed">
-            The 8 highest authority platforms to automate first with n8n and Python:
+            The core authority platforms automated first with n8n and Python:
             <br>• <strong>Blogger + Google Drive</strong> (Google Tier 1)
             <br>• <strong>GitHub Pages + GitLab Pages</strong> (Git/CI Microsites)
             <br>• <strong>Internet Archive</strong> (Permanent Whitepapers & Media)
             <br>• <strong>YouTube</strong> (1080p Video Masterclasses)
-            <br>• <strong>Pinterest</strong> (Infographic & Dofollow Visuals)
+            <br>• <strong>Pinterest + Flickr</strong> (Infographic & Visuals)
             <br>• <strong>Hugging Face + Zenodo</strong> (Datasets & DOIs)
           </p>
         </div>
         <div class="glass-card p-6 rounded-2xl border border-white/10">
           <div class="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold text-sm mb-4">03</div>
-          <h3 class="text-base font-bold text-white">LetMePost & MCP Orchestration</h3>
+          <h3 class="text-base font-bold text-white">100-Platform Category Scale</h3>
           <p class="mt-2 text-xs text-neutral-400 leading-relaxed">
-            • <strong>LetMePost.dev:</strong> Open-source social publishing API with native Model Context Protocol support (50 free posts/mo).
-            <br>• <strong>API Atlas:</strong> Searchable catalogue for live MCP servers.
-            <br>• <strong>Docker n8n:</strong> Executes workflows in parallel via <code>n8n_master_multistack_workflow.json</code>.
+            • <strong>10 Specialized Categories:</strong> Cloud, Images, Videos, PDFs, Datasets, Code, Audio, Blogs, Social, and Docker FOSS.
+            <br>• <strong>Universal OAuth:</strong> 1-click Google and GitHub sign-in.
+            <br>• <strong>Docker n8n:</strong> Executes multi-stack syndication in parallel.
             <br>• <strong>Social Ban:</strong> Zero Facebook or LinkedIn automation.
           </p>
         </div>
@@ -302,7 +289,7 @@ def generate_html():
         <span class="text-neutral-300 font-semibold">ADI Communications</span> • Gary Pearce (25+ Years Experience • £10M Public Liability) • Direct: <a href="tel:07860244274" class="text-brand-orange hover:underline font-mono">07860 244 274</a>
       </div>
       <div class="font-mono text-[11px]">
-        Protected by Rule 45 Google Shield • 100% Validated Directory
+        Protected by Rule 45 Google Shield • 100% Validated Directory ({total_count} Platforms)
       </div>
     </div>
   </footer>
@@ -317,58 +304,56 @@ def generate_html():
 
     let currentCategory = 'ALL';
 
-    function filterTable() {
+    function filterTable() {{
       const query = searchInput.value.toLowerCase().trim();
       const hosting = hostingFilter.value;
       let visible = 0;
 
-      rows.forEach(row => {
-        const searchData = row.getAttribute('data-search');
-        const cat = row.getAttribute('data-cat');
-        const host = row.getAttribute('data-hosting');
+      rows.forEach(row => {{
+        const searchData = row.getAttribute('data-search') || '';
+        const cat = row.getAttribute('data-cat') || '';
+        const host = row.getAttribute('data-hosting') || '';
 
         const matchesQuery = query === '' || searchData.includes(query);
         const matchesCat = currentCategory === 'ALL' || cat === currentCategory;
         const matchesHosting = hosting === 'ALL' || 
           (hosting === 'Free Hosted' && host.includes('Free Hosted')) ||
-          (hosting === 'Self-Host' && (host.includes('Self-Host') || host.includes('Static')));
+          (hosting === 'Self-Host' && (host.includes('Self-Host') || host.includes('Docker')));
 
-        if (matchesQuery && matchesCat && matchesHosting) {
+        if (matchesQuery && matchesCat && matchesHosting) {{
           row.style.display = '';
           visible++;
-        } else {
+        }} else {{
           row.style.display = 'none';
-        }
-      });
+        }}
+      }});
 
-      resultsCount.textContent = `Showing ${visible} of 100 platforms`;
-    }
+      resultsCount.textContent = `Showing ${{visible}} of {total_count} platforms`;
+    }}
 
     searchInput.addEventListener('input', filterTable);
     hostingFilter.addEventListener('change', filterTable);
 
-    categoryPills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        categoryPills.forEach(p => {
-          p.classList.remove('bg-brand-orange', 'border-brand-orange', 'text-white');
-          p.classList.add('bg-white/5', 'border-white/10', 'text-neutral-300');
-        });
+    categoryPills.forEach(pill => {{
+      pill.addEventListener('click', () => {{
+        categoryPills.forEach(p => p.classList.remove('active', 'bg-brand-orange', 'border-brand-orange', 'text-white'));
+        categoryPills.forEach(p => p.classList.add('bg-white/5', 'border-white/10', 'text-neutral-300'));
+
+        pill.classList.add('active', 'bg-brand-orange', 'border-brand-orange', 'text-white');
         pill.classList.remove('bg-white/5', 'border-white/10', 'text-neutral-300');
-        pill.classList.add('bg-brand-orange', 'border-brand-orange', 'text-white');
 
         currentCategory = pill.getAttribute('data-cat');
         filterTable();
-      });
-    });
+      }});
+    }});
   </script>
 </body>
-</html>
-'''
+</html>'''
 
     with open("publishing-directory.html", "w", encoding="utf-8") as f:
         f.write(html)
 
-    print("Generated publishing-directory.html successfully.")
+    print(f"Generated publishing-directory.html successfully with {total_count} platforms.")
 
 if __name__ == "__main__":
     generate_html()

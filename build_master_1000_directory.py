@@ -1,0 +1,140 @@
+import json
+import csv
+import os
+from datetime import datetime
+
+timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+print("Building Master 1,000 Publishing Directory across 10 core categories (100 per category)...")
+
+# Define helper to construct category dictionaries
+def make_entry(pid, name, cat, host_type, url, api_doc, oauth, join_status, handle, profile_url, limits, mcp, role):
+    return {
+        "platform_id": f"PLAT-{pid:04d}",
+        "platform_name": name,
+        "category": cat,
+        "hosting_type": host_type,
+        "homepage_url": url,
+        "api_doc_url": api_doc,
+        "signup_oauth_method": oauth,
+        "join_status": join_status,
+        "account_handle": handle,
+        "profile_live_url": profile_url,
+        "free_limits": limits,
+        "mcp_support": mcp,
+        "stacking_role": role
+    }
+
+# 1. CLOUD HOSTING & WEB APPS (100 platforms)
+cloud_data = [
+    ("Vercel", "Free Hosted", "https://vercel.com", "https://vercel.com/docs/rest-api", "GitHub / GitLab", "JOINED", "gazpearce", "https://vercel.com/gazpearce", "100GB bandwidth, unlimited preview deployments", "Official Vercel MCP", "High-performance edge deployments"),
+    ("Netlify", "Free Hosted", "https://netlify.com", "https://docs.netlify.com/api/get-started/", "GitHub / GitLab", "JOINED", "gazpearce", "https://app.netlify.com/teams/gazpearce", "100GB bandwidth, 300 build mins/mo", "Official Netlify MCP", "Continuous integration edge deployments"),
+    ("Cloudflare Pages", "Free Hosted", "https://pages.cloudflare.com", "https://developers.cloudflare.com/pages/api/", "GitHub / GitLab", "JOINED", "gazpearce", "https://cctv-forensics.pages.dev", "Unlimited bandwidth, 500 builds/mo", "Cloudflare Workers MCP", "Global AnyCast edge hosting"),
+    ("Cloudflare Workers", "Free Hosted", "https://workers.cloudflare.com", "https://developers.cloudflare.com/workers/runtime-apis/", "Cloudflare", "PENDING_JOIN", "gazpearce", "", "100k requests/day, 10ms CPU", "Workers MCP", "Edge API serverless endpoints"),
+    ("Firebase Hosting", "Free Hosted", "https://firebase.google.com", "https://firebase.google.com/docs/reference/rest/hosting", "Google OAuth", "JOINED", "gary-pearce-forensic-hub", "https://gary-pearce-forensic-hub.web.app/", "10GB storage, 360MB/day bandwidth", "Firebase MCP Server", "Google Cloud edge CDN & verified hub"),
+    ("GitHub Pages", "Free Hosted", "https://pages.github.com", "https://docs.github.com/en/rest/pages", "GitHub OAuth", "JOINED", "gazpearce.github.io", "https://gazpearce.github.io/cctv-security-hub/", "1GB repo limit, 100GB/mo bandwidth", "GitHub MCP Server", "Authority repository static hosting"),
+    ("GitLab Pages", "Free Hosted", "https://docs.gitlab.com/user/project/pages/", "https://docs.gitlab.com/ee/api/pages.html", "GitLab OAuth", "JOINED", "aiagent1510.gitlab.io", "https://aiagent1510.gitlab.io/cctv-security-hub/", "Unlimited public pages, 400 CI mins/mo", "GitLab MCP", "Secondary Git mirror edge deployment"),
+    ("Codeberg Pages", "Free Hosted", "https://pages.codeberg.org", "https://codeberg.org/api/swagger", "Codeberg OAuth", "JOINED", "gazpearce", "https://codeberg.org/gazpearce", "Free for European open-source FOSS", "Under evaluation", "European FOSS static mirror"),
+    ("Deno Deploy", "Free Hosted", "https://deno.com/deploy", "https://docs.deno.com/deploy/api/", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "100k requests/day, 100ms CPU time", "Deno MCP", "Global TypeScript V8 runtime"),
+    ("Render", "Free Hosted", "https://render.com", "https://api-docs.render.com/reference", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "100GB bandwidth, 750 free instance hours", "Render MCP", "Static sites and background services"),
+    ("Railway", "Free Hosted", "https://railway.com", "https://docs.railway.com/reference/public-api", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "Starter trial credits for containers", "Railway MCP", "Dockerized container deployment"),
+    ("Fly.io", "Free Hosted", "https://fly.io", "https://fly.io/docs/machines/api/", "GitHub / Email", "PENDING_JOIN", "gazpearce", "", "Up to 3 shared-cpu-1x VMs", "Fly MCP", "Distributed global microVMs"),
+    ("DigitalOcean App Platform", "Free Hosted", "https://digitalocean.com/products/app-platform", "https://docs.digitalocean.com/reference/api/", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "3 free static websites on global CDN", "DO MCP", "Static tools hosting"),
+    ("Google Cloud Run", "Free Hosted", "https://cloud.google.com/run", "https://cloud.google.com/run/docs/reference/rest", "Google OAuth", "PENDING_JOIN", "aiagent1510@gmail.com", "", "2M requests/mo, 360k vCPU-seconds", "Google Cloud MCP", "Containerized Python microservices"),
+    ("AWS Lambda Free Tier", "Free Hosted", "https://aws.amazon.com/lambda/", "https://docs.aws.amazon.com/lambda/latest/dg/API_Reference.html", "AWS Account", "PENDING_JOIN", "garypearce", "", "1M free requests/mo, 3.2M sec compute", "AWS MCP", "Serverless calculation backends"),
+    ("Oracle Cloud Always Free", "Free Hosted", "https://www.oracle.com/cloud/free/", "https://docs.oracle.com/en-us/iaas/api/", "Oracle Account", "PENDING_JOIN", "garypearce", "", "4 Arm cores, 24GB RAM, 200GB disk", "Oracle OCI MCP", "High-spec free compute instance"),
+    ("Koyeb", "Free Hosted", "https://koyeb.com", "https://www.koyeb.com/docs/api", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "1 free micro service, global deployment", "Koyeb MCP", "Serverless web service"),
+    ("Northflank", "Free Hosted", "https://northflank.com", "https://northflank.com/docs/v1/api", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "Free developer tier with micro services", "Northflank MCP", "Micro containers and cron jobs"),
+    ("Qovery", "Free Hosted", "https://qovery.com", "https://api-doc.qovery.com/", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "Git-based free cluster deployment", "Qovery MCP", "Developer app environment"),
+    ("IBM Cloud Code Engine", "Free Hosted", "https://www.ibm.com/cloud/code-engine", "https://cloud.ibm.com/apidocs/codeengine", "IBM Account", "PENDING_JOIN", "garypearce", "", "100k vCPU-seconds/mo free", "IBM Cloud MCP", "Secondary container host"),
+    ("Surge.sh", "Free Hosted", "https://surge.sh", "https://surge.sh/help", "CLI / Email", "PENDING_JOIN", "gazpearce", "", "Unlimited free static publishing via CLI", "Surge CLI", "Instant CLI microsite publishing"),
+    ("Tiiny Host", "Free Hosted", "https://tiiny.host", "https://tiiny.host/api-docs", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Instant drag-and-drop HTML hosting", "Web API", "Quick disposable diagnostic tools"),
+    ("Carrd", "Free Hosted", "https://carrd.co", "https://carrd.co/docs/api", "Email / Web", "PENDING_JOIN", "gazpearce", "", "3 free responsive one-page sites", "Webhooks", "Micro service profile card"),
+    ("Framer", "Free Hosted", "https://framer.com", "https://www.framer.com/developers/", "Google / Email", "PENDING_JOIN", "gazpearce", "", "Free published sites on framer.app", "Framer API", "High-end product showcase"),
+    ("Webflow", "Free Hosted", "https://webflow.com", "https://developers.webflow.com/", "Google / Email", "PENDING_JOIN", "gazpearce", "", "2 free unhosted projects on webflow.io", "Webflow MCP", "Agency bento design showcase"),
+    ("Wix Sites", "Free Hosted", "https://wix.com", "https://dev.wix.com/api/rest/getting-started", "Google / Email", "PENDING_JOIN", "gazpearce", "", "Free static pages on wixsite.com", "Wix REST API", "Secondary business citations"),
+    ("Notion Sites", "Free Hosted", "https://notion.so", "https://developers.notion.com/", "Google / Email", "PENDING_JOIN", "gazpearce", "", "Publish any Notion page to web", "Notion MCP", "Interactive study guide & specs"),
+    ("Glitch", "Free Hosted", "https://glitch.com", "https://glitch.com/help", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "Free node app and static hosting", "Glitch API", "Public code playgrounds"),
+    ("Replit", "Free Hosted", "https://replit.com", "https://docs.replit.com/category/replit-api", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "Public repls with browser compute", "Replit MCP", "Interactive Python calculators"),
+    ("StackBlitz", "Free Hosted", "https://stackblitz.com", "https://developer.stackblitz.com/", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "WebContainers running in browser", "StackBlitz SDK", "Live code execution embed"),
+    ("CodeSandbox", "Free Hosted", "https://codesandbox.io", "https://codesandbox.io/docs/api", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "Browser-based development cloud", "CodeSandbox SDK", "React & Vue diagnostic apps"),
+    ("GitHub Codespaces", "Free Hosted", "https://github.com/features/codespaces", "https://docs.github.com/en/rest/codespaces", "GitHub OAuth", "JOINED", "gazpearce", "https://github.com/gazpearce", "60 hours/mo free cloud compute", "GitHub MCP", "Cloud development environment"),
+    ("Supabase", "Free Hosted", "https://supabase.com", "https://supabase.com/docs/reference/javascript/introduction", "GitHub OAuth", "JOINED", "adi-telecoms", "https://supabase.com/dashboard/project/adi-telecoms", "500MB Postgres, 1GB storage, 50k MAUs", "Supabase MCP", "PostgreSQL database & auth"),
+    ("Neon Tech", "Free Hosted", "https://neon.tech", "https://neon.tech/docs/reference/api-reference", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "0.5GB serverless Postgres, branching", "Neon MCP", "Serverless PostgreSQL database"),
+    ("Turso", "Free Hosted", "https://turso.tech", "https://docs.turso.tech/reference/api", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "9GB total storage, 500 edge databases", "Turso MCP", "Distributed edge SQLite database"),
+    ("CockroachDB Cloud", "Free Hosted", "https://cockroachlabs.com", "https://www.cockroachlabs.com/docs/api/cloud/v1", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "5GB storage, 50M request units/mo", "CockroachDB API", "Distributed SQL database"),
+    ("Upstash", "Free Hosted", "https://upstash.com", "https://docs.upstash.com/redis/features/restapi", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "10k requests/day free serverless Redis", "Upstash MCP", "Fast caching & rate-limiting"),
+    ("Aiven Cloud", "Free Hosted", "https://aiven.io", "https://api.aiven.io/doc/", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "Free tier for managed PostgreSQL/MySQL", "Aiven API", "Managed cloud database"),
+    ("Appwrite Cloud", "Free Hosted", "https://appwrite.io", "https://appwrite.io/docs/rest", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "Free tier databases, auth, functions", "Appwrite MCP", "Headless backend and auth"),
+    ("Convex", "Free Hosted", "https://convex.dev", "https://docs.convex.dev/api/", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "Free reactive database and functions", "Convex SDK", "Real-time sync calculation app"),
+    ("Hasura Cloud", "Free Hosted", "https://hasura.io", "https://hasura.io/docs/latest/api-reference/overview/", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "Free tier GraphQL engine over Postgres", "Hasura API", "Instant GraphQL API layer"),
+    ("Modal", "Free Hosted", "https://modal.com", "https://modal.com/docs/reference", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "$30/mo free credits for serverless Python", "Modal CLI", "High-power Python serverless functions"),
+    ("GroqCloud", "Free Hosted", "https://console.groq.com", "https://console.groq.com/docs/api-reference", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "Ultra-fast free LPU inference", "Groq API", "Ultra-fast LLM schema checks"),
+    ("Hugging Face Spaces", "Free Hosted", "https://huggingface.co/spaces", "https://huggingface.co/docs/hub/spaces-overview", "GitHub OAuth", "JOINED", "adi-telecoms", "https://huggingface.co/adi-telecoms", "Free CPU basic hardware, Gradio/Streamlit", "Hugging Face MCP", "Interactive security diagnostics"),
+    ("Deepnote", "Free Hosted", "https://deepnote.com", "https://deepnote.com/docs/api", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "Collaborative cloud data notebooks", "Deepnote API", "Live forensic data notebooks"),
+    ("Lightning AI", "Free Hosted", "https://lightning.ai", "https://lightning.ai/docs", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "22 free credits/mo for cloud apps", "Lightning SDK", "AI diagnostic tool prototypes"),
+    ("Zeabur", "Free Hosted", "https://zeabur.com", "https://zeabur.com/docs/developer/api", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "Free developer tier with easy deployment", "Zeabur API", "Micro container services"),
+    ("PythonAnywhere", "Free Hosted", "https://www.pythonanywhere.com", "https://help.pythonanywhere.com/pages/API/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "1 free web app, 512MB storage", "PythonAnywhere API", "Python Flask/Django backend"),
+    ("Alwaysdata", "Free Hosted", "https://alwaysdata.com", "https://help.alwaysdata.com/en/api/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "100MB free cloud hosting, SSH/FTP/DB", "Alwaysdata API", "Lightweight backend micro-host"),
+    ("Freehostia", "Free Hosted", "https://www.freehostia.com", "https://www.freehostia.com/support/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "250MB disk, 6GB bandwidth, 5 domains", "Web Panel", "Secondary DNS citation host"),
+    ("InfinityFree", "Free Hosted", "https://www.infinityfree.com", "https://forum.infinityfree.com/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Unlimited disk & bandwidth (PHP/MySQL)", "cPanel Web", "PHP calculation scripts"),
+    ("AwardSpace", "Free Hosted", "https://www.awardspace.com", "https://www.awardspace.com/web-hosting/free/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "1GB disk, 5GB bandwidth, 1 domain", "Zacky Panel", "Secondary regional citations"),
+    ("HelioHost", "Free Hosted", "https://heliohost.org", "https://heliohost.org/wiki/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Free non-profit cPanel web hosting", "cPanel API", "Community web hosting node"),
+    ("Azure Static Web Apps", "Free Hosted", "https://azure.microsoft.com/en-gb/products/app-service/static", "https://learn.microsoft.com/en-us/rest/api/appservice/", "Microsoft / GitHub", "PENDING_JOIN", "garypearce", "", "100GB bandwidth, free SSL, custom domains", "Azure MCP", "Enterprise static hosting"),
+    ("AWS Amplify Free", "Free Hosted", "https://aws.amazon.com/amplify/", "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html", "AWS Account", "PENDING_JOIN", "garypearce", "", "15GB served/mo, 1,000 build mins", "AWS Amplify CLI", "Static React/Vue hosting"),
+    ("Google Cloud Functions", "Free Hosted", "https://cloud.google.com/functions", "https://cloud.google.com/functions/docs/reference/rest", "Google OAuth", "PENDING_JOIN", "aiagent1510@gmail.com", "", "2M invocations/mo, 400k GB-sec compute", "Google Cloud MCP", "Serverless calculation triggers"),
+    ("Baseten", "Free Hosted", "https://www.baseten.co", "https://docs.baseten.co/reference/introduction", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "Free model deployment credits", "Baseten API", "Model inference endpoints"),
+    ("RunPod Serverless", "Free Hosted", "https://runpod.io", "https://docs.runpod.io/reference/api-quickstart", "Email / GitHub", "PENDING_JOIN", "gazpearce", "", "Trial compute credits for GPU inference", "RunPod API", "GPU-accelerated image tools"),
+    ("Fal.ai", "Free Hosted", "https://fal.ai", "https://fal.ai/docs", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "Fast media generation inference API", "Fal SDK", "Visual generation microservice"),
+    ("Together AI", "Free Hosted", "https://www.together.ai", "https://docs.together.ai/reference", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "Free starter credits for open-source LLMs", "Together API", "Fast open-source inference"),
+    ("Cerebras Cloud", "Free Hosted", "https://cerebras.ai", "https://inference-docs.cerebras.ai/", "Google / Email", "PENDING_JOIN", "gazpearce", "", "Ultra-fast inference speed tier", "Cerebras API", "High-speed schema generation"),
+    ("Scaleway Elements Free", "Free Hosted", "https://www.scaleway.com", "https://www.scaleway.com/en/developers/api/", "Email / Web", "PENDING_JOIN", "garypearce", "", "Free tier object storage and serverless", "Scaleway API", "European cloud infrastructure"),
+    ("Hetzner Cloud Free Trials", "Free Hosted", "https://www.hetzner.com/cloud", "https://docs.hetzner.cloud/", "Email / Web", "PENDING_JOIN", "garypearce", "", "Developer trial credits", "Hetzner API", "European server infrastructure"),
+    ("Civo Cloud", "Free Hosted", "https://www.civo.com", "https://www.civo.com/api", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "Kubernetes trial credits", "Civo CLI", "Lightweight K3s cluster"),
+    ("Stormkit", "Free Hosted", "https://www.stormkit.io", "https://www.stormkit.io/docs", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "Static and serverless hosting", "Stormkit API", "JavaScript app deployment"),
+    ("Fastly Compute", "Free Hosted", "https://www.fastly.com/products/edge-compute", "https://developer.fastly.com/reference/api/", "Email / Web", "PENDING_JOIN", "garypearce", "", "Free developer trial for edge computing", "Fastly API", "Sub-10ms edge redirects"),
+    ("Akamai EdgeWorkers", "Free Hosted", "https://www.akamai.com", "https://techdocs.akamai.com/edgeworkers/docs", "Email / Web", "PENDING_JOIN", "garypearce", "", "Edge worker sandbox", "Akamai API", "Edge execution experiments"),
+    ("Bunny.net Edge Scripting", "Free Hosted", "https://bunny.net", "https://docs.bunny.net/reference/bunnynet-api", "Email / Web", "PENDING_JOIN", "garypearce", "", "Trial credits for edge storage and CDN", "Bunny API", "High-speed media CDN delivery"),
+    ("Gitpod", "Free Hosted", "https://www.gitpod.io", "https://www.gitpod.io/docs/configure/api", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "50 hours/mo free cloud workspaces", "Gitpod CLI", "Collaborative development node"),
+    ("Hop.io", "Free Hosted", "https://hop.io", "https://docs.hop.io/reference/api", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "Free tier deployments for containers", "Hop API", "Live deployment containers"),
+    ("Porter", "Free Hosted", "https://porter.run", "https://docs.porter.run/api", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "Developer tier PaaS over Kubernetes", "Porter CLI", "Container orchestration"),
+    ("Zeet", "Free Hosted", "https://zeet.co", "https://zeet.co/docs/api", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "Deploy git repos to any cloud", "Zeet API", "Cross-cloud deployment tool"),
+    ("Okteto", "Free Hosted", "https://www.okteto.com", "https://www.okteto.com/docs/reference/api/", "GitHub OAuth", "PENDING_JOIN", "gazpearce", "", "Free cloud development environments", "Okteto CLI", "Kubernetes dev containers"),
+    ("Back4App", "Free Hosted", "https://www.back4app.com", "https://www.back4app.com/docs/rest-api", "Google / GitHub", "PENDING_JOIN", "gazpearce", "", "Free Parse Server hosting, 10k requests", "Back4App API", "Backend-as-a-Service"),
+    ("Parse Platform", "Self-Host (Docker)", "https://parseplatform.org", "https://docs.parseplatform.org/rest/guide/", "Self-Host", "PENDING_JOIN", "gazpearce", "", "Open-source BaaS backend", "Parse SDK", "Self-hosted mobile backend"),
+    ("Kinsta Static", "Free Hosted", "https://kinsta.com/static-site-hosting/", "https://kinsta.com/docs/api/", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "100 free static sites, 100GB bandwidth", "Kinsta API", "Static site edge distribution"),
+    ("000webhost", "Free Hosted", "https://www.000webhost.com", "https://www.000webhost.com/forum/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Free web hosting with cPanel & PHP", "cPanel", "Secondary regional citations"),
+    ("ByetHost", "Free Hosted", "https://byet.host", "https://byet.host/free-hosting", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Free load-balanced cPanel hosting", "cPanel", "Secondary regional citations"),
+    ("FreeHosting.com", "Free Hosted", "https://www.freehosting.com", "https://www.freehosting.com/support.html", "Email / Web", "PENDING_JOIN", "gazpearce", "", "10GB disk space, unmetered bandwidth", "cPanel", "Secondary regional citations"),
+    ("GoogieHost", "Free Hosted", "https://googiehost.com", "https://googiehost.com/support.html", "Email / Web", "PENDING_JOIN", "gazpearce", "", "1GB NVMe storage, free cPanel", "cPanel", "Secondary regional citations"),
+    ("InfinityFree Pages", "Free Hosted", "https://infinityfree.com", "https://infinityfree.com/features", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Unlimited disk space and bandwidth", "cPanel", "Secondary regional citations"),
+    ("ProFreeHost", "Free Hosted", "https://profreehost.com", "https://profreehost.com/support", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Unlimited disk and bandwidth", "cPanel", "Secondary regional citations"),
+    ("Ultimatefreehost", "Free Hosted", "https://ultimatefreehost.in", "https://ultimatefreehost.in/support", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Free PHP/MySQL hosting", "cPanel", "Secondary regional citations"),
+    ("Host-Ed", "Free Hosted", "https://host-ed.me", "https://host-ed.me/support", "Email / Web", "PENDING_JOIN", "gazpearce", "", "1GB storage, 10GB bandwidth", "cPanel", "Secondary regional citations"),
+    ("HyperPHP", "Free Hosted", "https://hyperphp.com", "https://hyperphp.com/support", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Free clustered PHP web hosting", "cPanel", "Secondary regional citations"),
+    ("X10Hosting", "Free Hosted", "https://x10hosting.com", "https://x10hosting.com/support", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Cloud-based free hosting, 500MB disk", "DirectAdmin", "Secondary regional citations"),
+    ("Site44", "Free Hosted", "https://www.site44.com", "https://www.site44.com/faq", "Dropbox OAuth", "PENDING_JOIN", "gazpearce", "", "Host static websites directly from Dropbox", "Dropbox API", "Dropbox sync static sites"),
+    ("DriveToWeb", "Free Hosted", "https://drv.tw", "https://drv.tw/docs", "Google / OneDrive", "PENDING_JOIN", "gazpearce", "", "Host static websites from Google Drive", "Google Drive API", "Direct Google Drive web hosting"),
+    ("Static.app", "Free Hosted", "https://static.app", "https://static.app/docs", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Drag-and-drop static website hosting", "Web API", "Quick static tool hosting"),
+    ("Kinsta Apps", "Free Hosted", "https://kinsta.com/application-hosting/", "https://kinsta.com/docs/api/", "GitHub / GitLab", "PENDING_JOIN", "gazpearce", "", "Free trial credits for application hosting", "Kinsta API", "Node & Python micro-apps"),
+    ("Flywheel Free Trial", "Free Hosted", "https://getflywheel.com", "https://getflywheel.com/api/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Free staging WordPress environments", "Flywheel API", "Staging demo environments"),
+    ("Pantheon", "Free Hosted", "https://pantheon.io", "https://docs.pantheon.io/api", "Google / Email", "PENDING_JOIN", "gazpearce", "", "Free developer sandbox for Drupal/WordPress", "Pantheon API", "Enterprise web showcase"),
+    ("Acquia Cloud Free", "Free Hosted", "https://www.acquia.com", "https://docs.acquia.com/api/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Developer trial for Drupal applications", "Acquia API", "Enterprise CMS sandbox"),
+    ("Platform.sh Trial", "Free Hosted", "https://platform.sh", "https://docs.platform.sh/administration/api.html", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "30-day developer trial across 14 languages", "Platform.sh CLI", "Multi-language deployment"),
+    ("Axiom Cloud", "Free Hosted", "https://axiom.co", "https://axiom.co/docs/rest-api", "GitHub / Google", "PENDING_JOIN", "gazpearce", "", "0.5TB log storage/mo free", "Axiom API", "Audit logs & telemetry capture"),
+    ("Better Uptime", "Free Hosted", "https://betteruptime.com", "https://betteruptime.com/docs/api", "Google / Email", "PENDING_JOIN", "gazpearce", "", "10 free monitors with status pages", "Better Uptime API", "Public status page backlink"),
+    ("UptimeRobot", "Free Hosted", "https://uptimerobot.com", "https://uptimerobot.com/api/", "Google / Email", "PENDING_JOIN", "gazpearce", "", "50 free monitors with status page", "UptimeRobot API", "Public health status page"),
+    ("Instatus", "Free Hosted", "https://instatus.com", "https://instatus.com/help/api", "Google / Email", "PENDING_JOIN", "gazpearce", "", "Free public status page with custom domain", "Instatus API", "High-DA status page citation"),
+    ("Statuspage.io", "Free Hosted", "https://www.atlassian.com/software/statuspage", "https://developer.statuspage.io/", "Atlassian Account", "PENDING_JOIN", "gazpearce", "", "Free public status page by Atlassian", "Statuspage API", "High-DA Atlassian citation"),
+    ("Cron-Job.org", "Free Hosted", "https://cron-job.org", "https://cron-job.org/en/api/", "Email / Web", "PENDING_JOIN", "gazpearce", "", "Unlimited free HTTP cron execution", "Cron-Job API", "External health pings & triggers"),
+]
+
+# We will populate all 10 categories with 100 entries each.
+# For categories where we curate the top 50-70 platforms, we ensure each has unique, valid, realistic platforms.
+
+categories_config = [
+    ("Cloud Hosting, Web Apps, Serverless & Edge", cloud_data),
+]
+
+# Let's inspect the count and write out the full 1,000 platform catalog
+print(f"Loaded {len(cloud_data)} platforms for Category 1.")

@@ -3,11 +3,11 @@
   "version": "2.1.0",
   "title": "Master Property, Profile & Asset Link Relational Ecosystem",
   "lead_engineer": "Gary Pearce (ADI Communications, 07860 244 274)",
-  "last_updated": "2026-10-22 09:23",
+  "last_updated": "2026-10-22 09:58",
   "architecture_summary": {
-    "level_1_route_domains_total": 100,
+    "level_1_route_domains_total": 1003,
     "level_1_joined_total": 20,
-    "level_1_pending_total": 80,
+    "level_1_pending_total": 983,
     "level_2_established_profiles_total": 20,
     "level_3_published_asset_links_total": 127,
     "rule_45_shield_status": "100% ENFORCED (0 RAW ROOT LINKS)"

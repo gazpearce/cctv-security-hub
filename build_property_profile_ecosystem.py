@@ -5,9 +5,9 @@ from datetime import datetime
 
 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-# 1. LOAD MASTER 100 ROUTE DOMAINS
-with open("master_100_publishing_registry.json", "r", encoding="utf-8") as f:
-    registry_100 = json.load(f)["platforms"]
+# 1. LOAD MASTER 1,000 ROUTE DOMAINS
+with open("master_1000_publishing_registry.json", "r", encoding="utf-8") as f:
+    registry_1000 = json.load(f)["platforms"]
 
 # Define established profiles currently joined and verified
 ESTABLISHED_PROFILES = [
@@ -258,23 +258,23 @@ joined_platform_names = {p["platform_name"]: p for p in ESTABLISHED_PROFILES}
 
 # 1. BUILD DOC 1: ROUTE DOMAINS DIRECTORY
 doc1_route_domains = []
-for p in registry_100:
-    name = p["platform"]
+for p in registry_1000:
+    name = p["platform_name"]
     is_joined = name in joined_platform_names
     profile_info = joined_platform_names.get(name, {})
     doc1_route_domains.append({
-        "platform_id": f"PLAT-{p['id']:03d}",
+        "platform_id": p["platform_id"],
         "platform_name": name,
         "category": p["category"],
         "hosting_type": p["hosting_type"],
         "homepage_url": p["homepage_url"],
         "api_doc_url": p["api_doc_url"],
-        "signup_oauth_method": p["auth_type"],
+        "signup_oauth_method": p["signup_oauth_method"],
         "join_status": "JOINED" if is_joined else "PENDING_JOIN",
         "account_handle": profile_info.get("profile_handle", "unregistered"),
         "profile_live_url": profile_info.get("profile_live_url", "pending"),
-        "free_limits": p["free_tier_limits"],
-        "mcp_support": p["mcp_status"]
+        "free_limits": p["free_limits"],
+        "mcp_support": p["mcp_support"]
     })
 
 # Write Doc 1 CSV
