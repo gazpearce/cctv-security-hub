@@ -1,0 +1,120 @@
+{
+  "title": "ADI Communications \u2014 Master Multi-Tier Video Stacking Registry",
+  "updated_at": "2026-10-22T19:01:28.553302+00:00",
+  "apex_youtube_channel": "https://www.youtube.com/@CCTV.services",
+  "total_platforms": 9,
+  "tier_summary": {
+    "tier_1_apex": [
+      "YouTube (@CCTV.services, DA 100)"
+    ],
+    "tier_2_top_level": [
+      "DailyMotion (DA 95)",
+      "Vimeo (DA 97)",
+      "Wistia (DA 92)",
+      "Internet Archive (DA 98)"
+    ],
+    "tier_3_low_level": [
+      "Rumble (DA 90)",
+      "PeerTube (DA 82)",
+      "Bitchute (DA 78)",
+      "Odysee (DA 84)",
+      "DTube (DA 75)"
+    ]
+  },
+  "linking_invariants": {
+    "tier_1_apex": "Links to adicommunications.co.uk & tvandhomesecurity.blogspot.com",
+    "tier_2_top_level": "Links to adicommunications.co.uk/news/... & youtube.com",
+    "tier_3_low_level": "Links to youtube.com ONLY (0 raw website links)"
+  },
+  "videos": [
+    {
+      "id": "vid-01",
+      "youtube_id": "dOFIxVqMxCM",
+      "youtube_url": "https://www.youtube.com/watch?v=dOFIxVqMxCM",
+      "youtube_short": "https://youtu.be/dOFIxVqMxCM",
+      "title": "Starlink Gen 3 & Mini UK Installation: 90mph Gale Chimney Mounts, Bypass & Speed Test",
+      "topic": "SpaceX Starlink Satellite Rigging",
+      "category": "Broadband Infrastructure & Telecommunications",
+      "duration_seconds": 45,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "timestamps": [
+        "00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Field Experience)",
+        "00:08 - Starlink Gen 3 Dish Obstruction Survey & 110\u00b0 Northern Orbital Cone",
+        "00:18 - Non-Drill Chimney Lashing Kits vs Pennine 90mph Gale Brackets",
+        "00:28 - UV-Rated Cat6 Exterior Drops, Drip Loops & Weatherproof Grommets",
+        "00:38 - Gen 3 Router Bypass Mode & Whole-Home Wi-Fi 7 Mesh Integration"
+      ],
+      "tags": [
+        "Starlink Installation UK",
+        "SpaceX Starlink Gen 3",
+        "Starlink Mini",
+        "Non-Drill Chimney Mount",
+        "90mph Gale Tested",
+        "Gary Pearce",
+        "ADI Communications",
+        "Wi-Fi 7 Mesh",
+        "West Yorkshire Broadband"
+      ]
+    },
+    {
+      "id": "vid-02",
+      "youtube_id": "l-HN4BuzBGQ",
+      "youtube_url": "https://www.youtube.com/watch?v=l-HN4BuzBGQ",
+      "youtube_short": "https://youtu.be/l-HN4BuzBGQ",
+      "title": "Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail & MotionCam PhOD",
+      "topic": "Ajax Wireless Intrusion Detection",
+      "category": "Physical Security & Smart Intruder Alarms",
+      "duration_seconds": 46,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "timestamps": [
+        "00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Trade Experience)",
+        "00:10 - Why Legacy 433MHz Alarms Are Jammed & Bypassed in Minutes",
+        "00:22 - Ajax Jeweller 868MHz Frequency Hopping & Encrypted Rolling Code",
+        "00:32 - StreetSiren Masonry Mounting & 90mph Gale Wind Testing",
+        "00:40 - Hub 2 Plus Dual Micro-SIM Cellular Failover & Ethernet Integration"
+      ],
+      "tags": [
+        "Ajax Smart Alarms",
+        "Grade 2 Intruder Alarm",
+        "Jeweller 868MHz",
+        "Anti-Jamming Security",
+        "MotionCam PhOD",
+        "StreetSiren 113dB",
+        "Gary Pearce",
+        "ADI Communications",
+        "Leeds Alarm Installation"
+      ]
+    },
+    {
+      "id": "vid-03",
+      "youtube_id": "50q89TsNN3w",
+      "youtube_url": "https://www.youtube.com/watch?v=50q89TsNN3w",
+      "youtube_short": "https://youtu.be/50q89TsNN3w",
+      "title": "Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards & 4K Police Evidence",
+      "topic": "4K Ultra-HD Surveillance & Court Admissibility",
+      "category": "Commercial & Domestic CCTV Engineering",
+      "duration_seconds": 46,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "timestamps": [
+        "00:00 - CCTV Night Vision Reality: Infrared Fogging & Spiderweb Glare",
+        "00:12 - ColorVu 24/7 Full Colour Video with F1.0 Super-Aperture",
+        "00:25 - DORI Admissibility Standards: 250 Pixels/Metre for Court Evidence",
+        "00:38 - Hardwired PoE Cat6 vs Vulnerable Wi-Fi Jamming Attacks"
+      ],
+      "tags": [
+        "Hikvision ColorVu",
+        "4K CCTV UK",
+        "Police Evidence CCTV",
+        "BS EN 62676-4 DORI",
+        "F1.0 Super Aperture",
+        "PoE Data Cabling",
+        "Gary Pearce",
+        "ADI Communications",
+        "Bradford CCTV Specialist"
+      ]
+    }
+  ]
+}
