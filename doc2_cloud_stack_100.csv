@@ -99,3 +99,4 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 98,FaunaDB Cloud,fauna.com,82,Cloud Databases & BaaS,Free tier document-relational database,GitHub / Google,https://fauna.com/
 99,Hasura Cloud (GraphQL),hasura.io,84,Cloud Databases & BaaS,Free tier GraphQL engine on Postgres,GitHub OAuth,https://hasura.io/
 100,Prisma Data Platform,prisma.io,88,Cloud Databases & BaaS,Free serverless connection pooling & proxy,GitHub OAuth,https://www.prisma.io/data-platform
+101,Grafana Cloud (Telemetry & Metrics),grafana.net,92,Cloud Observability & Telemetry,"10k metrics, 50 GB logs, 3 users free forever",Google OAuth,https://purplemyrtle460.grafana.net/
