@@ -207,7 +207,7 @@ class TestF3MultiCategoryStackExpansion(unittest.TestCase):
     """F3: Validates platform onboarding engine and candidate registries across 11 stacks."""
 
     def test_f3_01_cloud_signup_tracker_structure(self):
-        """Verify master_cloud_signup_tracker.json exists with 154 platforms and required schema."""
+        """Verify master_cloud_signup_tracker.json exists with >=154 platforms and required schema."""
         tracker_path = REPO_ROOT / "master_cloud_signup_tracker.json"
         self.assertTrue(tracker_path.exists(), "master_cloud_signup_tracker.json must exist")
 
@@ -216,7 +216,15 @@ class TestF3MultiCategoryStackExpansion(unittest.TestCase):
 
         self.assertIn("platforms", data, "Tracker must contain 'platforms' list")
         platforms = data["platforms"]
-        self.assertEqual(len(platforms), 154, "Tracker must contain exactly 154 platforms")
+        self.assertGreaterEqual(len(platforms), 154, "Tracker must contain at least 154 platforms")
+        self.assertEqual(len(platforms), data.get("total_platforms", len(platforms)), "Tracker metadata 'total_platforms' must match platform count")
+
+        # Verify 100% mathematical parity with doc2_cloud_stack_100.csv
+        csv_path = REPO_ROOT / "doc2_cloud_stack_100.csv"
+        if csv_path.exists():
+            with open(csv_path, "r", encoding="utf-8", errors="ignore") as f_csv:
+                csv_rows = list(csv.DictReader(f_csv))
+            self.assertEqual(len(platforms), len(csv_rows), "Tracker JSON and CSV must have identical platform counts")
 
         required_keys = {"name", "category", "da", "signup_url", "status"}
         for p in platforms:
@@ -235,7 +243,8 @@ class TestF3MultiCategoryStackExpansion(unittest.TestCase):
         pending_count = sum(1 for p in platforms if p["status"] == "PENDING")
 
         self.assertGreaterEqual(joined_count, 56, "Expected at least 56 JOINED platforms")
-        self.assertEqual(joined_count + pending_count, 154, "All 154 platforms must be JOINED or PENDING")
+        self.assertEqual(joined_count + pending_count, len(platforms), "All platforms must be JOINED or PENDING")
+        self.assertGreaterEqual(len(platforms), 154, "Tracker must contain at least 154 platforms")
 
     def test_f3_03_route_domains_directory_row_count(self):
         """Verify doc1_route_domains_directory.csv contains >=1,000 candidate route domains."""

@@ -139,7 +139,7 @@ def run_status():
 
     print(f"\nGlobal Status Overview:")
     print(f"  Total Published Backlinks : {total_assets} endpoints (HTTP 200)")
-    print(f"  Platforms Onboarded       : {joined_platforms} JOINED | {pending_platforms} PENDING (154 Total)")
+    print(f"  Platforms Onboarded       : {joined_platforms} JOINED | {pending_platforms} PENDING ({joined_platforms + pending_platforms} Total)")
     print(f"  Rule 45 Air-Gap Status    : 100% STRICT_AIR_GAP (0 Raw Root Links)")
 
     print("\n" + "-" * 88)
@@ -231,9 +231,9 @@ def check_url_reachability(
     Cleanly catches urllib.error.HTTPError, urllib.error.URLError, TimeoutError,
     socket.timeout, and ssl.SSLError, returning real observed status codes and error messages.
     """
-    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
     t0 = time.time()
     try:
+        req = urllib.request.Request(url, headers={"User-Agent": user_agent})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             elapsed = time.time() - t0
             status = getattr(resp, "status", resp.getcode())
@@ -245,7 +245,7 @@ def check_url_reachability(
         elapsed = time.time() - t0
         status = e.code
         if 200 <= status < 400:
-            return True, status, f"HTTP {status} {e.reason} (Redirect Reachable in {elapsed:.2f}s)", elapsed
+            return False, status, f"HTTP {status} Redirect Error / Loop", elapsed
         else:
             return False, status, f"HTTP {status} {e.reason}", elapsed
     except urllib.error.URLError as e:
@@ -263,6 +263,9 @@ def check_url_reachability(
     except ssl.SSLError as e:
         elapsed = time.time() - t0
         return False, None, f"SSL Error: {e}", elapsed
+    except ValueError as e:
+        elapsed = time.time() - t0
+        return False, None, f"Malformed URL (ValueError): {e}", elapsed
     except Exception as e:
         elapsed = time.time() - t0
         return False, None, f"Error ({type(e).__name__}): {e}", elapsed

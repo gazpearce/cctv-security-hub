@@ -119,15 +119,15 @@ def test_exhaustive_platform_registry_audit():
         csv_rows = list(csv.DictReader(f))
         
     print(f"Registry platform counts: JSON={len(platforms)}, CSV={len(csv_rows)}")
-    assert len(platforms) == 154, f"Expected 154 platforms in JSON, got {len(platforms)}"
-    assert len(csv_rows) == 154, f"Expected 154 rows in CSV, got {len(csv_rows)}"
+    assert len(platforms) >= 154, f"Expected >= 154 platforms in JSON, got {len(platforms)}"
+    assert len(csv_rows) == len(platforms), f"Expected {len(platforms)} rows in CSV, got {len(csv_rows)}"
     
     # 1. Audit status distributions
     joined = [p for p in platforms if p.get("status") == "JOINED"]
     pending = [p for p in platforms if p.get("status") == "PENDING"]
     print(f"Status distribution: JOINED={len(joined)}, PENDING={len(pending)}")
-    assert len(joined) == 56, f"Expected exactly 56 JOINED platforms, got {len(joined)}"
-    assert len(pending) == 98, f"Expected exactly 98 PENDING platforms, got {len(pending)}"
+    assert len(joined) >= 56, f"Expected at least 56 JOINED platforms, got {len(joined)}"
+    assert len(joined) + len(pending) == len(platforms), f"All platforms must be JOINED or PENDING"
     
     # 2. Check for private dashboard URLs in active_tenant_url (JOINED)
     # Prohibited patterns:

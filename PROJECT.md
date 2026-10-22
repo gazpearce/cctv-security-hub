@@ -25,8 +25,8 @@
 | M1 | Automated Verification & Onboarding Engine | Fix auto_email_verifier.py tab selector, verify CDP 9223 live inbox OTP extraction, build automated platform onboarding script (outputs: auto_email_verifier.py, automated_platform_onboarder.py, 154 platforms in master_cloud_signup_tracker.json & doc2_cloud_stack_100.csv with 0 parity errors, CDP port 9223 verified, all test suites passed) | none | DONE |
 | M2 | Multi-Category Stack & Profile Standardization | Verify 11 Google Apex entities, enforce Gary Pearce E-E-A-T metadata, enforce Rule 45 zero raw root link firewall (outputs: 100 established profiles standardized across 11 category stacks in doc2_established_profiles_list.csv, master_profile_manifest.json v2.1.0 Draft 2020-12 compliant, package.json Rule 45 cleaned, verify_no_root_anchors hardened) | M1 | DONE |
 | M3 | Backlink Ledger Synchronization & Publishing | Ingest new endpoints into doc3, compile public_backlink_master_ledger.csv/json/html, verify HTTP 200 statuses (outputs: build_public_backlink_ledger.py upgraded with 11 Sovereign Category Stacks, public_backlink_ledger.schema.json, validate_ledger_schema.py, 219 links with 100% mathematical parity across CSV/JSON/HTML, and interactive search/filter UI) | M2 | DONE |
-| M4 | Master /gstack Swarm Orchestration Skill | Validate and configure /gstack master skill, verify subagent dispatching interfaces, ensure command execution parity | M3 | IN_PROGRESS |
-| M5 | Final Milestone: 100% E2E Test Pass & Hardening | Pass 100% of E2E test suite (Tiers 1-4), perform Tier 5 adversarial hardening with Challenger | M4, E2E_TRACK | PLANNED |
+| M4 | Master /gstack Swarm Orchestration Skill | Validate and configure /gstack master skill, verify subagent dispatching interfaces, ensure command execution parity (outputs: swarm_stack_orchestrator.py subcommands, SKILL.md Section 20, 11/11 verified live Google Citadel Apex endpoints, all test suites pass) | M3 | DONE |
+| M5 | Final Milestone: 100% E2E Test Pass & Hardening | Pass 100% of E2E test suite (Tiers 1-4), perform Tier 5 adversarial hardening with Challenger, expand 550+ platforms across 11 category stacks | M4, E2E_TRACK | IN_PROGRESS |
 | E2E | E2E Testing Track | Requirement-driven test harness, 4-tier opaque-box test suite covering all features, publish TEST_READY.md | none | DONE |
 
 ## Interface Contracts
@@ -52,7 +52,7 @@
 - `auto_email_verifier.py`: CDP email inspection & OTP extraction
 - `verify_no_root_anchors.py`: Rule 45 compliance audit script
 - `build_public_backlink_ledger.py`: Backlink ledger compilation script
-- `master_cloud_signup_tracker.json`: 154-platform onboarding tracking database
+- `master_cloud_signup_tracker.json`: 155-platform onboarding tracking database (62 JOINED, 93 PENDING; 100% parity with doc2_cloud_stack_100.csv)
 - `doc1_route_domains_directory.csv`: 1,003 route domains registry
 - `doc2_established_profiles_list.csv`: Established profiles registry (PROF-001..PROF-100)
 - `doc3_published_asset_links.csv`: Published asset links database

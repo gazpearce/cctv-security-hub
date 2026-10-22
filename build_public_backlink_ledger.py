@@ -7,6 +7,7 @@ Compiles doc3_published_asset_links.csv into:
 """
 
 import csv
+from html import escape as html_escape
 import json
 import os
 import re
@@ -149,36 +150,45 @@ def build_ledger():
                      "YouTube (DA 100)" if "youtube.com" in e['top_of_stack_apex_url'] else \
                      "Blogger (DA 99)" if "blogspot.com" in e['top_of_stack_apex_url'] else \
                      "Firebase Edge (DA 98)"
-        tags_html = e.get('seo_tags', '')
+        asset_title = html_escape(str(e.get('asset_title', '')), quote=True)
+        cat_stack = html_escape(str(e.get('category_stack', '')), quote=True)
+        platform = html_escape(str(e.get('platform', '')), quote=True)
+        tags_html = html_escape(str(e.get('seo_tags', '')), quote=True)
+        public_url = html_escape(str(e.get('public_live_url', '')), quote=True)
+        apex_url = html_escape(str(e.get('top_of_stack_apex_url', '')), quote=True)
+        shield_url = html_escape(str(e.get('shield_target_url', '')), quote=True)
+        dofollow = html_escape(str(e.get('dofollow_status', '')), quote=True)
+        agent = html_escape(str(e.get('responsible_agent', '')), quote=True)
+
         rows_html += f"""
-        <tr class="hover:bg-white/[0.02] border-b border-white/5 transition" data-category="{e['category_stack']}">
+        <tr class="hover:bg-white/[0.02] border-b border-white/5 transition" data-category="{cat_stack}">
           <td class="px-4 py-3 font-mono text-neutral-500 text-center">{idx}</td>
           <td class="px-4 py-3">
-            <div class="font-bold text-white text-sm">{e['asset_title']}</div>
-            <div class="text-[11px] text-neutral-400">{e['category_stack']} &bull; <span class="text-orange-400">{e['platform']}</span></div>
+            <div class="font-bold text-white text-sm">{asset_title}</div>
+            <div class="text-[11px] text-neutral-400">{cat_stack} &bull; <span class="text-orange-400">{platform}</span></div>
             <div class="text-[10px] font-mono text-orange-400/80 mt-1 line-clamp-1">{tags_html}</div>
           </td>
           <td class="px-4 py-3 text-xs text-neutral-300 font-mono">
-            <a href="{e['public_live_url']}" target="_blank" rel="noopener" class="text-blue-400 hover:underline break-all inline-flex items-center space-x-1">
-              <span>{e['public_live_url']}</span>
+            <a href="{public_url}" target="_blank" rel="noopener" class="text-blue-400 hover:underline break-all inline-flex items-center space-x-1">
+              <span>{public_url}</span>
             </a>
           </td>
           <td class="px-4 py-3 text-xs text-neutral-300 font-mono">
-            <a href="{e['top_of_stack_apex_url']}" target="_blank" rel="noopener" class="text-emerald-400 hover:underline break-all inline-flex items-center space-x-1">
+            <a href="{apex_url}" target="_blank" rel="noopener" class="text-emerald-400 hover:underline break-all inline-flex items-center space-x-1">
               <span class="inline-flex px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[10px] text-emerald-300 mr-1">{apex_badge}</span>
-              <span>{e['top_of_stack_apex_url']}</span>
+              <span>{apex_url}</span>
             </a>
           </td>
           <td class="px-4 py-3 text-xs text-neutral-400 font-mono">
-            <a href="{e['shield_target_url']}" target="_blank" rel="noopener" class="text-neutral-300 hover:text-white hover:underline break-all">
-              {e['shield_target_url']}
+            <a href="{shield_url}" target="_blank" rel="noopener" class="text-neutral-300 hover:text-white hover:underline break-all">
+              {shield_url}
             </a>
           </td>
           <td class="px-4 py-3 text-center whitespace-nowrap">
-            <span class="inline-flex px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">{e['dofollow_status']}</span>
+            <span class="inline-flex px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">{dofollow}</span>
           </td>
           <td class="px-4 py-3 text-center whitespace-nowrap">
-            <span class="inline-flex px-2 py-0.5 rounded text-[10px] font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20">{e['responsible_agent']}</span>
+            <span class="inline-flex px-2 py-0.5 rounded text-[10px] font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20">{agent}</span>
           </td>
         </tr>
         """

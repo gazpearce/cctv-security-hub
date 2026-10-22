@@ -4,8 +4,8 @@
   "title": "Public Backlink Master Ledger & Apex Google Pyramid Stack",
   "lead_engineer": "Gary Pearce (ADI Communications, 07860 244 274)",
   "rule_45_shield": "STRICT_AIR_GAP",
-  "total_backlinks": 219,
-  "last_updated": "2026-10-22 20:51",
+  "total_backlinks": 220,
+  "last_updated": "2026-10-22 21:16",
   "entries": [
     {
       "platform": "Pinterest",
@@ -5043,6 +5043,29 @@
       "indexing_method": "Googlebot & Relational Ecosystem Discovery",
       "verified_http_status": "200",
       "responsible_agent": "stack-cloud-agent"
+    },
+    {
+      "platform": "DEV.to",
+      "category_stack": "Docs, PDFs & Research Stack",
+      "tenant_url": "https://dev.to/gary_pearce_2171c679bfd81/crown-prosecution-service-cps-cctv-evidence-standards-why-82-of-uk-footage-fails-bs-en-62676-4-3d12",
+      "anchor_text": "CPS CCTV Evidence Standards: Why 82% of UK Footage Fails BS EN 62676-4 DORI Identification",
+      "apex_target": "https://tvandhomesecurity.blogspot.com/",
+      "http_status": "200",
+      "index_status": "Googlebot & Relational Ecosystem Discovery",
+      "last_verified": "2026-10-22",
+      "timestamp": "2026-10-22",
+      "category": "Docs, PDFs & Research Stack",
+      "asset_title": "CPS CCTV Evidence Standards: Why 82% of UK Footage Fails BS EN 62676-4 DORI Identification",
+      "asset_type": "Technical Guide / Whitepaper",
+      "public_live_url": "https://dev.to/gary_pearce_2171c679bfd81/crown-prosecution-service-cps-cctv-evidence-standards-why-82-of-uk-footage-fails-bs-en-62676-4-3d12",
+      "top_of_stack_apex_url": "https://tvandhomesecurity.blogspot.com/",
+      "shield_target_url": "https://tvandhomesecurity.blogspot.com/",
+      "seo_tags": "CCTV Evidence, BS EN 62676-4 DORI, CPS Standards, PACE S.78, Gary Pearce",
+      "seo_description": "Field engineering whitepaper by Gary Pearce (ADI Communications, 07860 244 274) analyzing UK CCTV evidential standards under BS EN 62676-4 and CPIA 1996.",
+      "dofollow_status": "Dofollow",
+      "indexing_method": "Googlebot & Relational Ecosystem Discovery",
+      "verified_http_status": "200",
+      "responsible_agent": "stack-docs-agent"
     }
   ]
 }
