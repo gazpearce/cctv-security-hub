@@ -42,7 +42,10 @@ def build_ledger():
                     "asset_title": row.get("asset_title", "Untitled Asset"),
                     "asset_type": asset_type,
                     "public_live_url": row.get("asset_public_url", ""),
+                    "top_of_stack_apex_url": row.get("top_of_stack_apex_url", "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88"),
                     "shield_target_url": row.get("shield_target_url", "https://tvandhomesecurity.blogspot.com/"),
+                    "seo_tags": row.get("seo_tags", ""),
+                    "seo_description": row.get("seo_description_summary", ""),
                     "dofollow_status": row.get("dofollow_status", "Dofollow"),
                     "indexing_method": "Googlebot & Relational Ecosystem Discovery",
                     "verified_http_status": "200",
@@ -53,7 +56,8 @@ def build_ledger():
     csv_file = "public_backlink_master_ledger.csv"
     fieldnames = [
         "timestamp", "platform", "category", "asset_title", "asset_type",
-        "public_live_url", "shield_target_url", "dofollow_status",
+        "public_live_url", "top_of_stack_apex_url", "shield_target_url",
+        "seo_tags", "seo_description", "dofollow_status",
         "indexing_method", "verified_http_status", "responsible_agent"
     ]
 
@@ -70,8 +74,8 @@ def build_ledger():
     with open(json_file, "w", encoding="utf-8") as f:
         json.dump({
             "$schema": "https://json-schema.org/draft/2020-12/schema",
-            "version": "2.2.0",
-            "title": "Public Backlink Master Ledger & Google Drive Discovery Stack",
+            "version": "3.1.0",
+            "title": "Public Backlink Master Ledger & Apex Google Pyramid Stack",
             "lead_engineer": "Gary Pearce (ADI Communications, 07860 244 274)",
             "rule_45_shield": "STRICT_AIR_GAP",
             "total_backlinks": len(all_entries),
@@ -85,17 +89,26 @@ def build_ledger():
     html_file = "public_backlink_ledger.html"
     rows_html = ""
     for idx, e in enumerate(all_entries, 1):
+        apex_badge = "Google Drive (DA 100)" if "drive.google.com" in e['top_of_stack_apex_url'] else "YouTube (DA 100)" if "youtube.com" in e['top_of_stack_apex_url'] else "Blogger (DA 99)"
+        tags_html = e.get('seo_tags', '')
         rows_html += f"""
         <tr class="hover:bg-white/[0.02] border-b border-white/5 transition">
           <td class="px-4 py-3 font-mono text-neutral-500 text-center">{idx}</td>
           <td class="px-4 py-3">
             <div class="font-bold text-white text-sm">{e['asset_title']}</div>
             <div class="text-[11px] text-neutral-400">{e['category']} • <span class="text-brand-orange">{e['platform']}</span></div>
+            <div class="text-[10px] font-mono text-orange-400 mt-1 line-clamp-1">{tags_html}</div>
           </td>
           <td class="px-4 py-3 text-xs text-neutral-300 font-mono">
             <a href="{e['public_live_url']}" target="_blank" rel="noopener" class="text-blue-400 hover:underline break-all inline-flex items-center space-x-1">
               <span>{e['public_live_url']}</span>
               <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </td>
+          <td class="px-4 py-3 text-xs text-neutral-300 font-mono">
+            <a href="{e['top_of_stack_apex_url']}" target="_blank" rel="noopener" class="text-emerald-400 hover:underline break-all inline-flex items-center space-x-1">
+              <span class="inline-flex px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[10px] text-emerald-300 mr-1">{apex_badge}</span>
+              <span>{e['top_of_stack_apex_url']}</span>
             </a>
           </td>
           <td class="px-4 py-3 text-xs text-neutral-400 font-mono">
@@ -160,6 +173,7 @@ def build_ledger():
               <th class="px-4 py-3 w-12 text-center">#</th>
               <th class="px-4 py-3">Asset Title & Category</th>
               <th class="px-4 py-3">Public Live URL</th>
+              <th class="px-4 py-3">Top-of-Stack Apex (DA 100)</th>
               <th class="px-4 py-3">Google Shield Target</th>
               <th class="px-4 py-3 text-center">Authority</th>
               <th class="px-4 py-3 text-center">Agent</th>

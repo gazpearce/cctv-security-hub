@@ -134,9 +134,10 @@ def generate_tracker_html():
             <thead class="bg-black/60 text-neutral-400 font-mono uppercase text-[11px] border-b border-white/10">
               <tr>
                 <th class="px-4 py-3 text-center w-12">#</th>
-                <th class="px-4 py-3">Asset Title & Type</th>
-                <th class="px-4 py-3">Parent Profile</th>
+                <th class="px-4 py-3">Asset Title & SEO Tags</th>
+                <th class="px-4 py-3">Platform & Profile</th>
                 <th class="px-4 py-3">Public Asset URL</th>
+                <th class="px-4 py-3">Top-of-Stack Apex (DA 100)</th>
                 <th class="px-4 py-3">Shield Target</th>
                 <th class="px-4 py-3 text-center">Status</th>
               </tr>
@@ -145,19 +146,29 @@ def generate_tracker_html():
 '''
 
     for a in doc3:
+        apex_badge = "Google Drive Vault" if "drive.google.com" in a.get('top_of_stack_apex_url', '') else "YouTube Apex" if "youtube.com" in a.get('top_of_stack_apex_url', '') else "Blogger Apex"
+        tags_display = a.get('seo_tags', '')
         html += f'''              <tr class="hover:bg-white/[0.02] transition">
                 <td class="px-4 py-3 font-mono text-neutral-500 text-center">{a['asset_id']}</td>
                 <td class="px-4 py-3">
                   <div class="font-bold text-white text-sm">{a['asset_title']}</div>
                   <div class="text-[11px] text-neutral-400">{a['asset_type']}</div>
+                  <div class="mt-1 text-[10px] font-mono text-[#FF5500] line-clamp-1">{tags_display}</div>
                 </td>
                 <td class="px-4 py-3 whitespace-nowrap">
-                  <span class="inline-flex px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 border border-white/10 text-neutral-300">{a['platform_name']}</span>
+                  <div class="inline-flex px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 border border-white/10 text-neutral-300">{a['platform_name']}</div>
+                  <div class="text-[10px] font-mono text-neutral-500 mt-0.5">{a.get('parent_profile_id', '')}</div>
                 </td>
                 <td class="px-4 py-3 font-mono text-xs">
                   <a href="{a['asset_public_url']}" target="_blank" rel="noopener" class="text-blue-400 hover:underline break-all inline-flex items-center space-x-1">
                     <span>{a['asset_public_url']}</span>
                     <svg class="w-2.5 h-2.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </td>
+                <td class="px-4 py-3 font-mono text-xs">
+                  <a href="{a.get('top_of_stack_apex_url', '#')}" target="_blank" rel="noopener" class="text-emerald-400 hover:underline break-all inline-flex items-center space-x-1">
+                    <span class="inline-flex px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-mono text-emerald-300 mr-1">{apex_badge}</span>
+                    <span>{a.get('top_of_stack_apex_url', '')}</span>
                   </a>
                 </td>
                 <td class="px-4 py-3 font-mono text-xs text-neutral-400">
