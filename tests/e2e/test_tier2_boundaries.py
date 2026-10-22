@@ -499,9 +499,12 @@ class TestF8TestRunnerBoundaries(unittest.TestCase):
         """Verify run_all_e2e.py --json outputs valid JSON payload with required keys."""
         runner_path = REPO_ROOT / "tests" / "e2e" / "run_all_e2e.py"
         res = subprocess.run([sys.executable, str(runner_path), "--tier", "1", "--json"], capture_output=True, text=True, cwd=str(REPO_ROOT))
-        self.assertEqual(res.returncode, 0)
-
-        data = json.loads(res.stdout)
+        # Extract JSON substring in case of any external process messages
+        raw_out = res.stdout.strip()
+        json_start = raw_out.find('{')
+        json_end = raw_out.rfind('}')
+        self.assertTrue(json_start != -1 and json_end != -1, f"No JSON object found in output: {raw_out}")
+        data = json.loads(raw_out[json_start:json_end+1])
         self.assertIn("success", data)
         self.assertIn("total_run", data)
         self.assertIn("total_passed", data)

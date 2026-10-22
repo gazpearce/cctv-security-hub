@@ -4,3 +4,5 @@ PRIVATE_*
 *.env
 credentials/
 secrets/
+.agents/
+workspace_indexing_audit.log

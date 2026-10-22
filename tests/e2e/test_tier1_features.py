@@ -579,10 +579,13 @@ class TestF8TestingSuiteHardening(unittest.TestCase):
         self.assertIn("Feature Inventory Mapping", content)
 
     def test_f8_03_test_ready_document_exists(self):
-        """Verify TEST_READY.md exists or can be verified at project root."""
+        """Verify TEST_READY.md exists at project root and specifies readiness."""
         ready_path = REPO_ROOT / "TEST_READY.md"
-        # In case it is being finalized, check path reference
-        self.assertTrue(isinstance(ready_path, Path))
+        self.assertTrue(ready_path.exists(), "TEST_READY.md must exist at project root")
+        content = ready_path.read_text(encoding="utf-8")
+        self.assertIn("READY & VERIFIED", content)
+        self.assertIn("Tier 1", content)
+        self.assertIn("Tier 4", content)
 
     def test_f8_04_test_independence_and_no_leftover_artifacts(self):
         """Verify tests run cleanly without polluting the root directory with temp files."""

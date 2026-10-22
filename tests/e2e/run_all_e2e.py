@@ -17,6 +17,7 @@ Supports running via:
 """
 
 import argparse
+import contextlib
 import io
 import json
 import os
@@ -63,7 +64,7 @@ TIER_MODULES = {
 }
 
 
-def run_tier(tier_num: int, verbose: bool = False):
+def run_tier(tier_num: int, verbose: bool = False, suppress_stdout: bool = False):
     """Executes a single test tier and returns summary statistics."""
     tier_info = TIER_MODULES.get(tier_num)
     if not tier_info:
@@ -109,7 +110,11 @@ def run_tier(tier_num: int, verbose: bool = False):
     runner = unittest.TextTestRunner(stream=stream, verbosity=verbosity_level)
 
     start_time = time.time()
-    result = runner.run(suite)
+    if suppress_stdout:
+        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            result = runner.run(suite)
+    else:
+        result = runner.run(suite)
     duration = time.time() - start_time
 
     tests_run = result.testsRun
@@ -157,7 +162,7 @@ def main():
         tier_name = TIER_MODULES[tier_num]["name"]
         if not args.json_output:
             print(f"{BOLD}>> Running {tier_name}...{RESET}")
-        tier_res = run_tier(tier_num, verbose=args.verbose)
+        tier_res = run_tier(tier_num, verbose=args.verbose, suppress_stdout=args.json_output)
         results.append(tier_res)
 
         if not args.json_output:

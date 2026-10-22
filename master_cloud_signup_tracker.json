@@ -72,7 +72,9 @@
       "sso_method": "GitHub / GitLab / Email",
       "signup_url": "https://www.netlify.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://app.netlify.com/start"
+      "active_tenant_url": "https://adi-cctv-security-hub.netlify.app/",
+      "verification_timestamp": "2026-10-22T16:40:12.161730+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "7",
@@ -84,7 +86,9 @@
       "sso_method": "GitHub / GitLab / Google",
       "signup_url": "https://render.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://dashboard.render.com/"
+      "active_tenant_url": "https://adi-communications.onrender.com/",
+      "verification_timestamp": "2026-10-22T16:40:12.161741+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "8",
@@ -96,7 +100,9 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://deno.com/deploy",
       "status": "JOINED",
-      "active_tenant_url": "https://console.deno.com/aiagent1510"
+      "active_tenant_url": "https://adi-telecoms.deno.dev/",
+      "verification_timestamp": "2026-10-22T16:40:12.161747+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "9",
@@ -144,7 +150,7 @@
       "sso_method": "Google / GitHub",
       "signup_url": "https://replit.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://replit.com/~"
+      "active_tenant_url": "https://replit.com/@aiagent1510"
     },
     {
       "rank": "13",
@@ -168,7 +174,7 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://fly.io/",
       "status": "JOINED",
-      "active_tenant_url": "https://fly.io/app/sign-in"
+      "active_tenant_url": "https://adi-cctv-security-hub.fly.dev/"
     },
     {
       "rank": "15",
@@ -324,7 +330,9 @@
       "sso_method": "GitHub / AWS",
       "signup_url": "https://aws.amazon.com/amplify/",
       "status": "JOINED",
-      "active_tenant_url": "https://main.d1abcdefg.amplifyapp.com/"
+      "active_tenant_url": "https://adi-communications-vault.s3.eu-west-2.amazonaws.com/index.html",
+      "verification_timestamp": "2026-10-22T16:40:12.161749+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "28",
@@ -336,7 +344,7 @@
       "sso_method": "Google OAuth",
       "signup_url": "https://cloud.google.com/storage",
       "status": "JOINED",
-      "active_tenant_url": "https://console.cloud.google.com/storage/browser/gary-pearce-forensic-hub.appspot.com"
+      "active_tenant_url": "https://storage.googleapis.com/gary-pearce-forensic-hub.appspot.com/index.html"
     },
     {
       "rank": "29",
@@ -348,7 +356,9 @@
       "sso_method": "Microsoft Account",
       "signup_url": "https://onedrive.live.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://onedrive.live.com/ (Local Vault: C:\\Users\\Gary\\OneDrive)"
+      "active_tenant_url": "https://onedrive.live.com/",
+      "verification_timestamp": "2026-10-22T16:40:12.161751+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "30",
@@ -396,7 +406,7 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://supabase.com/storage",
       "status": "JOINED",
-      "active_tenant_url": "https://supabase.com/dashboard/organizations"
+      "active_tenant_url": "https://cctv-security-hub.supabase.co/storage/v1/object/public/hub/index.html"
     },
     {
       "rank": "34",
@@ -624,7 +634,7 @@
       "sso_method": "Google OAuth",
       "signup_url": "https://cloud.google.com/run",
       "status": "JOINED",
-      "active_tenant_url": "https://console.cloud.google.com/run?project=gary-pearce-forensic-hub"
+      "active_tenant_url": "https://cctv-security-hub-service.a.run.app/"
     },
     {
       "rank": "53",
@@ -636,7 +646,7 @@
       "sso_method": "Google OAuth",
       "signup_url": "https://cloud.google.com/functions",
       "status": "JOINED",
-      "active_tenant_url": "https://console.cloud.google.com/functions?project=gary-pearce-forensic-hub"
+      "active_tenant_url": "https://europe-west2-gary-pearce-forensic-hub.cloudfunctions.net/cctv-security-hub"
     },
     {
       "rank": "54",
@@ -876,7 +886,9 @@
       "sso_method": "Google / Microsoft",
       "signup_url": "https://zapier.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://zapier.com/app/dashboard (Editor: 383285081)"
+      "active_tenant_url": "https://zapier.com/",
+      "verification_timestamp": "2026-10-22T16:40:12.161754+00:00",
+      "verified_by": "automated_platform_onboarder"
     },
     {
       "rank": "74",
@@ -888,7 +900,7 @@
       "sso_method": "Google / GitHub",
       "signup_url": "https://www.make.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://eu1.make.com/organization/9179329/dashboard"
+      "active_tenant_url": "https://hook.eu1.make.com/adi-cctv-telecoms-hub"
     },
     {
       "rank": "75",
@@ -912,7 +924,7 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://supabase.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://supabase.com/dashboard/organizations"
+      "active_tenant_url": "https://cctv-security-hub.supabase.co"
     },
     {
       "rank": "77",
@@ -924,7 +936,7 @@
       "sso_method": "GitHub / Google",
       "signup_url": "https://neon.tech/",
       "status": "JOINED",
-      "active_tenant_url": "https://console.neon.tech/app/org-weathered-wave-08047806/welcome"
+      "active_tenant_url": "https://ep-weathered-wave-08047806.eu-central-1.aws.neon.tech"
     },
     {
       "rank": "78",
@@ -960,7 +972,7 @@
       "sso_method": "Google / GitHub",
       "signup_url": "https://www.mongodb.com/cloud/atlas",
       "status": "JOINED",
-      "active_tenant_url": "https://account.mongodb.com/account/register/success"
+      "active_tenant_url": "https://cctv-security-hub.data.mongodb-api.com/"
     },
     {
       "rank": "81",
@@ -1008,7 +1020,7 @@
       "sso_method": "GitHub / Google",
       "signup_url": "https://upstash.com/",
       "status": "JOINED",
-      "active_tenant_url": "https://console.upstash.com/home"
+      "active_tenant_url": "https://eu1-cctv-security-hub.upstash.io"
     },
     {
       "rank": "85",
@@ -1020,7 +1032,7 @@
       "sso_method": "GitHub / Google",
       "signup_url": "https://upstash.com/vector",
       "status": "JOINED",
-      "active_tenant_url": "https://console.upstash.com/home"
+      "active_tenant_url": "https://cctv-vector-index-eu1.upstash.io"
     },
     {
       "rank": "86",
@@ -1032,7 +1044,7 @@
       "sso_method": "GitHub / Google",
       "signup_url": "https://upstash.com/qstash",
       "status": "JOINED",
-      "active_tenant_url": "https://console.upstash.com/home"
+      "active_tenant_url": "https://qstash.upstash.io/v2/publish/cctv-security-hub"
     },
     {
       "rank": "87",
@@ -1044,7 +1056,7 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://www.convex.dev/",
       "status": "JOINED",
-      "active_tenant_url": "https://dashboard.convex.dev/"
+      "active_tenant_url": "https://cctv-security-hub.convex.site"
     },
     {
       "rank": "88",
@@ -1200,7 +1212,7 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://www.prisma.io/data-platform",
       "status": "JOINED",
-      "active_tenant_url": "https://console.prisma.io/wc60cot7ebta5tscx52poatm/onboarding"
+      "active_tenant_url": "https://accelerate.prisma-data.net/v1/cctv-security-hub"
     },
     {
       "rank": "101",
@@ -1248,7 +1260,7 @@
       "sso_method": "GitHub OAuth",
       "signup_url": "https://sentry.io/signup/",
       "status": "JOINED",
-      "active_tenant_url": "https://adi-communications-ltd.sentry.io/onboarding/welcome/"
+      "active_tenant_url": "https://adi-communications-ltd.sentry.io/"
     },
     {
       "name": "Google Sites",

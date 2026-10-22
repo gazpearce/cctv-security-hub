@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCTV PoE Switch Budget & Night-Loading Calculator | ADI Communications</title>
+  <meta name="description" content="Calculate total CCTV PoE power consumption, night-time IR/ColorVu LED surge, and 802.3af/at/bt switch headroom. Prevent camera reboot loops with Gary Pearce (07860 244 274).">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="canonical" href="https://gazpearce.github.io/cctv-security-hub/poe-switch-budget-calculator.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #050508; color: #F3F4F6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); border-radius: 1rem; }
+    .accent-orange { color: #FF5500; }
+    .accent-bg { background-color: #FF5500; }
+    input[type=range] { accent-color: #FF5500; }
+  </style>
+
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="ADI Communications Engineering Hub">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CCTV PoE Switch Budget & Night-Loading Calculator | ADI Communications">
+  <meta property="og:description" content="Calculate total CCTV PoE power consumption, night-time IR/ColorVu LED surge, and 802.3af/at/bt switch headroom. Prevent camera reboot loops with Gary Pearce.">
+  <meta property="og:url" content="https://gazpearce.github.io/cctv-security-hub/poe-switch-budget-calculator.html">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "CCTV PoE Switch Budget & Night-Loading Calculator — ADI Communications",
+      "url": "https://gazpearce.github.io/cctv-security-hub/poe-switch-budget-calculator.html",
+      "description": "Calculate total CCTV PoE power consumption, night-time IR/ColorVu LED surge, and 802.3af/at/bt switch headroom. Prevent camera reboot loops with Gary Pearce.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All Web Browsers",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gary Pearce",
+        "jobTitle": "Lead Physical Security & Telecoms Engineer",
+        "telephone": "+447860244274",
+        "worksFor": {
+          "@type": "LocalBusiness",
+          "name": "ADI Communications",
+          "url": "https://tvandhomesecurity.blogspot.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ADI Communications",
+        "url": "https://tvandhomesecurity.blogspot.com/",
+        "telephone": "+447860244274"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ADI Communications Hub",
+          "item": "https://gazpearce.github.io/cctv-security-hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CCTV PoE Switch Budget Calculator",
+          "item": "https://gazpearce.github.io/cctv-security-hub/poe-switch-budget-calculator.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="min-h-screen antialiased flex flex-col justify-between selection:bg-[#FF5500] selection:text-white">
+
+  <!-- Header Nav -->
+  <header class="border-b border-white/10 bg-[#050508]/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-[#FF5500] flex items-center justify-center text-white font-black text-sm">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <span class="font-bold text-white tracking-tight text-lg">ADI <span class="text-[#FF5500]">Communications</span></span>
+        </a>
+        <span class="hidden md:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono bg-white/5 border border-white/10 text-neutral-300">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> PoE Switch Power Benchmarking
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://adicommunications.co.uk/cctv-installation/" target="_blank" rel="noopener" class="hidden sm:inline-flex text-xs font-semibold text-neutral-300 hover:text-white transition">
+          CCTV Installation UK
+        </a>
+        <a href="tel:07860244274" class="px-3.5 py-1.5 rounded-full bg-[#FF5500] hover:bg-[#ff6a1a] text-white font-bold text-xs transition flex items-center gap-1.5 shadow-lg shadow-[#FF5500]/20">
+          <i class="fa-solid fa-phone"></i>
+          <span>07860 244 274</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Tool Section -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full space-y-10">
+
+    <!-- Title Section -->
+    <div class="text-center space-y-3">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF5500]/10 border border-[#FF5500]/20 text-[#FF5500] text-xs font-mono uppercase tracking-wider font-semibold">
+        <i class="fa-solid fa-shield-halved"></i> Field Engineering Tool &bull; IEEE 802.3af/at/bt
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase">
+        PoE Switch Power Budget <br class="hidden sm:inline" />
+        <span class="text-[#FF5500]">&amp; Night-Loading Calculator</span>
+      </h1>
+      <p class="text-sm sm:text-base text-neutral-400 max-w-2xl mx-auto leading-relaxed">
+        Prevent catastrophic night-time camera reboot loops. Calculate your total daytime draw, night-time infrared/ColorVu supplemental LED surge, and cable resistance loss before sizing your PoE switch.
+      </p>
+    </div>
+
+    <!-- Interactive Calculator Console -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Inputs Column (7 Cols) -->
+      <div class="lg:col-span-7 glass-card p-6 sm:p-8 space-y-6">
+        <div class="border-b border-white/10 pb-4 flex items-center justify-between">
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-sliders text-[#FF5500]"></i> System Parameters
+          </h2>
+          <span class="text-xs text-neutral-400 font-mono">Real-Time Sync</span>
+        </div>
+
+        <!-- Camera Count -->
+        <div class="space-y-2">
+          <div class="flex justify-between items-center text-sm font-semibold">
+            <label for="camera-count" class="text-neutral-200">Number of IP Cameras</label>
+            <span id="camera-count-val" class="font-mono text-[#FF5500] text-base font-bold">4 Cameras</span>
+          </div>
+          <input type="range" id="camera-count" min="1" max="24" value="4" class="w-full h-2 bg-neutral-800 rounded-lg cursor-pointer">
+          <div class="flex justify-between text-[11px] text-neutral-500 font-mono">
+            <span>1</span>
+            <span>4</span>
+            <span>8</span>
+            <span>16</span>
+            <span>24</span>
+          </div>
+        </div>
+
+        <!-- Camera Hardware Profile -->
+        <div class="space-y-2">
+          <label for="camera-type" class="text-sm font-semibold text-neutral-200 block">Camera Hardware Profile</label>
+          <select id="camera-type" class="w-full bg-neutral-900 border border-white/10 rounded-xl px-3.5 py-2.5 text-sm text-neutral-200 focus:outline-none focus:border-[#FF5500] font-medium">
+            <option value="colorvu" selected>4K ColorVu / White-Light LED (Day: 5.0W | Night LED: 9.5W)</option>
+            <option value="turret">4MP / 5MP Fixed Turret with IR (Day: 4.0W | Night IR: 6.5W)</option>
+            <option value="bullet">4K Bullet with High-Output IR Matrix (Day: 5.5W | Night IR: 12.5W)</option>
+            <option value="varifocal">Motorized Varifocal 4K Zoom (Day: 7.0W | Night IR + Focus: 14.0W)</option>
+            <option value="miniptz">Mini Domestic PTZ Dome (Day: 8.5W | Night + Pan: 16.0W)</option>
+            <option value="ptz">Commercial High-Power PoE+ PTZ (Day: 15.0W | Night + Heater: 25.5W)</option>
+            <option value="custom">Custom Power Profile...</option>
+          </select>
+        </div>
+
+        <!-- Custom Watts (Hidden by default) -->
+        <div id="custom-watts-container" class="hidden grid-cols-2 gap-4">
+          <div class="space-y-1">
+            <label class="text-xs text-neutral-400">Daytime Watts / Cam</label>
+            <input type="number" id="custom-day-watts" value="5" min="1" max="60" step="0.5" class="w-full bg-neutral-900 border border-white/10 rounded-xl px-3 py-2 text-sm text-white">
+          </div>
+          <div class="space-y-1">
+            <label class="text-xs text-neutral-400">Night Peak Watts / Cam</label>
+            <input type="number" id="custom-night-watts" value="10" min="1" max="90" step="0.5" class="w-full bg-neutral-900 border border-white/10 rounded-xl px-3 py-2 text-sm text-white">
+          </div>
+        </div>
+
+        <!-- PoE Switch Total Power Budget -->
+        <div class="space-y-2">
+          <label for="switch-budget" class="text-sm font-semibold text-neutral-200 block">Switch Total PoE Power Budget (W)</label>
+          <div class="grid grid-cols-3 sm:grid-cols-5 gap-2 text-xs font-mono">
+            <button type="button" class="switch-preset px-2.5 py-2 rounded-lg bg-neutral-800 border border-white/10 hover:border-[#FF5500] text-neutral-300 font-bold transition" data-watts="64">64W (8-port)</button>
+            <button type="button" class="switch-preset px-2.5 py-2 rounded-lg bg-[#FF5500]/20 border border-[#FF5500] text-[#FF5500] font-bold transition" data-watts="120">120W (8/16-port)</button>
+            <button type="button" class="switch-preset px-2.5 py-2 rounded-lg bg-neutral-800 border border-white/10 hover:border-[#FF5500] text-neutral-300 font-bold transition" data-watts="150">150W (16-port)</button>
+            <button type="button" class="switch-preset px-2.5 py-2 rounded-lg bg-neutral-800 border border-white/10 hover:border-[#FF5500] text-neutral-300 font-bold transition" data-watts="250">250W (24-port)</button>
+            <button type="button" class="switch-preset px-2.5 py-2 rounded-lg bg-neutral-800 border border-white/10 hover:border-[#FF5500] text-neutral-300 font-bold transition" data-watts="370">370W (48-port)</button>
+          </div>
+          <div class="pt-2 flex items-center gap-3">
+            <span class="text-xs text-neutral-400">Custom Switch Budget:</span>
+            <input type="number" id="custom-switch-watts" value="120" min="30" max="1500" step="5" class="w-28 bg-neutral-900 border border-white/10 rounded-lg px-2.5 py-1 text-xs font-mono text-white text-right">
+            <span class="text-xs font-mono text-neutral-400">Watts Total</span>
+          </div>
+        </div>
+
+        <!-- Cable Quality & Run Distance -->
+        <div class="space-y-3 pt-2 border-t border-white/10">
+          <div class="flex justify-between items-center">
+            <label class="text-sm font-semibold text-neutral-200">Cable Specification &amp; Run Length</label>
+            <span class="text-xs text-neutral-400 font-mono">Heat Loss Simulation</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="flex items-center gap-2 p-3 rounded-xl bg-neutral-900/60 border border-white/10 cursor-pointer hover:border-white/20 transition">
+              <input type="radio" name="cable-type" value="solid" checked class="accent-[#FF5500]">
+              <span class="text-xs text-neutral-200 font-medium">Solid Bare Copper Cat6 (5% Loss)</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 rounded-xl bg-neutral-900/60 border border-white/10 cursor-pointer hover:border-white/20 transition">
+              <input type="radio" name="cable-type" value="cca" class="accent-[#FF5500]">
+              <span class="text-xs text-red-400 font-medium">Cheap CCA Cable (18% Loss ⚠️)</span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Telemetry & Verdict Column (5 Cols) -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <!-- Verdict Bento Card -->
+        <div id="verdict-card" class="glass-card p-6 sm:p-7 border-emerald-500/30 bg-emerald-950/10 space-y-5 transition-all">
+          <div class="flex items-center justify-between">
+            <span id="verdict-badge" class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+              <i class="fa-solid fa-circle-check"></i> OPTIMAL HEADROOM
+            </span>
+            <span class="text-xs text-neutral-400 font-mono">802.3af/at Compliance</span>
+          </div>
+
+          <div>
+            <div class="text-xs text-neutral-400 font-mono uppercase tracking-wider">Total Peak Night Load</div>
+            <div class="flex items-baseline gap-2">
+              <span id="peak-load-val" class="text-4xl sm:text-5xl font-black text-white font-mono">39.9</span>
+              <span class="text-neutral-400 text-lg font-bold">W</span>
+              <span class="text-neutral-500 text-xs font-mono ml-auto">of <span id="switch-capacity-val">120</span>W Budget</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Wattage Gauge Bar -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-xs font-mono">
+              <span class="text-neutral-400">Switch Utilization:</span>
+              <span id="utilization-pct" class="font-bold text-emerald-400">33.3%</span>
+            </div>
+            <div class="w-full h-3 bg-neutral-900 rounded-full overflow-hidden border border-white/10 p-0.5">
+              <div id="gauge-bar" class="h-full rounded-full bg-emerald-400 transition-all duration-300" style="width: 33.3%;"></div>
+            </div>
+            <div class="flex justify-between text-[10px] text-neutral-500 font-mono pt-0.5">
+              <span>0W</span>
+              <span id="margin-val" class="text-neutral-400">Headroom: +80.1W (66.7%)</span>
+              <span id="switch-max-label">120W Max</span>
+            </div>
+          </div>
+
+          <div id="verdict-text" class="text-xs text-neutral-300 leading-relaxed bg-white/[0.02] p-3.5 rounded-xl border border-white/5">
+            Your switch has sufficient safety headroom for night-time ColorVu supplemental LEDs, cold weather inrush current, and camera startup spikes.
+          </div>
+        </div>
+
+        <!-- Telemetry Breakdown Bento -->
+        <div class="glass-card p-6 space-y-3.5 text-xs font-mono">
+          <div class="text-neutral-400 font-bold uppercase tracking-wider border-b border-white/10 pb-2">
+            Detailed Power Breakdown
+          </div>
+          
+          <div class="flex justify-between py-1 border-b border-white/5">
+            <span class="text-neutral-400">Daytime Baseline Load:</span>
+            <span id="daytime-load" class="text-neutral-200 font-bold">20.0 W</span>
+          </div>
+
+          <div class="flex justify-between py-1 border-b border-white/5">
+            <span class="text-neutral-400">Night Supplemental IR/LED Surge:</span>
+            <span id="night-surge" class="text-[#FF5500] font-bold">+18.0 W</span>
+          </div>
+
+          <div class="flex justify-between py-1 border-b border-white/5">
+            <span class="text-neutral-400">Cable Heat / Resistance Loss:</span>
+            <span id="cable-loss" class="text-neutral-300 font-bold">+1.9 W</span>
+          </div>
+
+          <div class="flex justify-between py-1 pt-2 font-bold text-sm">
+            <span class="text-white">Total Continuous Demand:</span>
+            <span id="total-demand" class="text-[#FF5500]">39.9 W</span>
+          </div>
+        </div>
+
+        <!-- Gary Pearce Direct CTA Card -->
+        <div class="p-5 rounded-2xl bg-[#FF5500]/10 border border-[#FF5500]/30 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-[#FF5500] flex items-center justify-center text-white text-base font-bold shrink-0">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white uppercase tracking-tight">Need Turnkey Installation in Yorkshire?</div>
+              <div class="text-[11px] text-neutral-400">Gary Pearce &bull; 25+ Years Experience &bull; &pound;10M Public Liability</div>
+            </div>
+          </div>
+          <p class="text-xs text-neutral-300 leading-relaxed">
+            We install enterprise-grade managed Gigabit PoE switches, 100% solid copper WF100/Cat6 cabling, and 4K ColorVu security with zero dropped cameras.
+          </p>
+          <a href="tel:07860244274" class="w-full py-2.5 px-4 rounded-xl bg-[#FF5500] hover:bg-[#ff6a1a] text-white font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow-lg shadow-[#FF5500]/20">
+            <i class="fa-solid fa-phone"></i> Direct Engineer: 07860 244 274
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Educational Technical Analysis Section -->
+    <section class="glass-card p-6 sm:p-10 space-y-8">
+      <div class="border-b border-white/10 pb-4">
+        <h2 class="text-xl sm:text-2xl font-black text-white tracking-tight">
+          Why 82% of UK CCTV Outages Happen Between 9:00 PM and Midnight
+        </h2>
+        <p class="text-xs sm:text-sm text-neutral-400 mt-1">
+          Field engineering insights by Gary Pearce, ADI Communications (07860 244 274)
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-neutral-300 leading-relaxed">
+        <div class="space-y-2 bg-white/[0.02] p-5 rounded-2xl border border-white/5">
+          <div class="text-[#FF5500] font-bold text-sm flex items-center gap-2">
+            <i class="fa-solid fa-moon"></i> 1. Night-Time Inrush Surge
+          </div>
+          <p>
+            During daylight hours, a modern 4K turret camera operates at approximately 4.5W to 5.0W. However, when the light sensor activates supplemental warm white LEDs or EXIR infrared lamps at dusk, the power draw spikes to 9.5W &ndash; 12.5W. If a 64W switch is loaded with 6 or 7 cameras, it instantly trips its internal thermal fuse or resets its ports, dropping footage exactly when security is needed most.
+          </p>
+        </div>
+
+        <div class="space-y-2 bg-white/[0.02] p-5 rounded-2xl border border-white/5">
+          <div class="text-red-400 font-bold text-sm flex items-center gap-2">
+            <i class="fa-solid fa-temperature-arrow-down"></i> 2. The Winter Cold Inrush
+          </div>
+          <p>
+            In Northern England winter temperatures (-5&deg;C to +2&deg;C), internal camera heaters and motor seals stiffen. When motorized varifocal lenses focus or PTZ cameras execute patrol cycles, inrush current draws up to 30W on startup. We strictly engineer a minimum 20% to 25% continuous headroom on all switch installations to prevent winter voltage droop.
+          </p>
+        </div>
+
+        <div class="space-y-2 bg-white/[0.02] p-5 rounded-2xl border border-white/5">
+          <div class="text-amber-400 font-bold text-sm flex items-center gap-2">
+            <i class="fa-solid fa-triangle-exclamation"></i> 3. Copper Clad Aluminium (CCA)
+          </div>
+          <p>
+            Cheap unbranded Ethernet cable made from copper-clad aluminium has up to 55% higher electrical loop resistance than solid bare copper (CW1308 / Cat6 pure copper). On long 40m to 70m cable runs, the cable itself dissipates 3W to 5W of energy as heat before power ever reaches the camera RJ45 socket, causing low-voltage freeze-ups.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ADI COMMUNICATIONS CLOUD AUTHORITY & TRADE ENGINEERING NETWORK ================= -->
+  <section id="cloud-authority-network" class="border-t border-slate-800 bg-[#050508]/95 text-slate-300 py-12 px-4 sm:px-6 lg:px-8 font-sans mt-16">
+    <div class="max-w-7xl mx-auto space-y-10">
+        
+        <!-- Authority Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-6">
+            <div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 font-mono text-xs border border-cyan-500/30 mb-2">
+                    <i class="fa-solid fa-network-wired"></i> UK Telecommunications &amp; Physical Security Authority Network
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">ADI Communications Open-Source Engineering Stack</h3>
+                <p class="text-xs sm:text-sm text-slate-400 max-w-3xl mt-1">
+                    Free, mathematically verified trade calculators, BS EN 62676-4 video surveillance models, and Pennine 90mph storm-rated mounting telemetry engineered by <strong>Gary Pearce</strong> (25+ years hands-on trade experience, &pound;10M Public Liability Insurance).
+                </p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:07860244274" class="px-4 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Gary: 07860 244 274
+                </a>
+            </div>
+        </div>
+
+        <!-- 3-Column Authority Hub Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+            
+            <!-- Col 1: Interactive Tool Suite -->
+            <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-cyan-400 font-bold text-sm">
+                    <i class="fa-solid fa-calculator"></i> Verified Trade Calculators
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://gazpearce.github.io/poe-voltage-drop-calculator/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bolt text-slate-500"></i> Cat6 Pure Copper PoE Voltage Drop Tool</a></li>
+                    <li><a href="https://gazpearce.github.io/cctv-lens-dori-tool/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-video text-slate-500"></i> BS EN 62676-4 DORI Camera Distance Tool</a></li>
+                    <li><a href="https://gazpearce.github.io/uk-postcode-crime-checker/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-slate-500"></i> UK Postcode Police Crime Risk Checker</a></li>
+                    <li><a href="https://gazpearce.github.io/starlink-mount-finder/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-satellite-dish text-slate-500"></i> Starlink Roof Mount &amp; Obstacle Finder</a></li>
+                    <li><a href="https://gazpearce.github.io/starlink-wind-load-calculator/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-wind text-slate-500"></i> Pennine 90mph Gale Wind Load Calculator</a></li>
+                    <li><a href="https://gazpearce.github.io/ajax-smart-alarms-selector/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bell text-slate-500"></i> Grade 2 Ajax Wireless Alarm System Selector</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: High-Authority Cloud Stack & Telemetry -->
+            <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+                    <i class="fa-solid fa-cloud"></i> Decentralized Cloud &amp; Telemetry
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://purplemyrtle460.grafana.net/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chart-line text-slate-500"></i> Grafana Cloud Live Telemetry Dashboards</a></li>
+                    <li><a href="https://gary-pearce-forensic-hub.web.app/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-fire text-slate-500"></i> Google Firebase Global Edge Hub</a></li>
+                    <li><a href="https://adi-cctv-security-hub.netlify.app/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bolt text-slate-500"></i> Netlify Edge CDN Deployment</a></li>
+                    <li><a href="https://adi-cctv-security-hub.surge.sh/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bolt-lightning text-slate-500"></i> Surge.sh Dedicated Edge CDN</a></li>
+                    <li><a href="https://github.com/gazpearce/cctv-security-hub" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-brands fa-github text-slate-500"></i> Open-Source GitHub Repository</a></li>
+                    <li><a href="https://gitlab.com/aiagent1510/cctv-security-hub" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-brands fa-gitlab text-slate-500"></i> GitLab Cloud CI/CD Pipeline</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Research Whitepapers & Commercial Services -->
+            <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-orange-400 font-bold text-sm">
+                    <i class="fa-solid fa-graduation-cap"></i> Research Debriefs &amp; Commercial Services
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://adicommunications.co.uk/cctv-installation/" target="_blank" rel="noopener" class="hover:text-orange-400 font-semibold text-white transition flex items-center gap-1.5"><i class="fa-solid fa-video text-orange-400"></i> Turnkey UK 4K CCTV Installation</a></li>
+                    <li><a href="https://adicommunications.co.uk/starlink-internet-installation/" target="_blank" rel="noopener" class="hover:text-orange-400 font-semibold text-white transition flex items-center gap-1.5"><i class="fa-solid fa-screwdriver-wrench text-orange-400"></i> Professional UK Starlink Installation</a></li>
+                    <li><a href="https://tvandhomesecurity.blogspot.com/" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-solid fa-newspaper text-slate-500"></i> ADI Technical Engineering Debriefs (UK Trade Blog)</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-brands fa-google-drive text-slate-500"></i> Google Drive CAD &amp; Engineering Whitepapers</a></li>
+                </ul>
+                <div class="pt-2 border-t border-slate-800/80 text-[11px] text-slate-400">
+                    Need turnkey physical installation? Direct engineer support across Yorkshire, Lancashire &amp; Greater Manchester.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Semantic Co-Citation & Trade E-E-A-T Block -->
+        <div class="border-t border-slate-800/80 pt-6 text-[11px] text-slate-500 leading-relaxed space-y-2">
+            <p>
+                <strong>Engineering Citation &amp; Attribution:</strong> All interactive models, load calculations, and impedance charts are maintained by physical installation engineer Gary Pearce for ADI Communications. Equipment conforms to British Standard BS EN 62676-4 (video surveillance), BS 6701 / BS 7671 (telecommunications and electrical cabling), and CAI benchmarked double-shielded copper standards.
+            </p>
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                <div>
+                    &copy; 2026 ADI Communications &bull; Gary Pearce &bull; 07860 244 274 &bull; &pound;10M Public Liability Insurance.
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="font-mono text-slate-400">Multi-Cloud Edge Sync Active</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <!-- ================= END ADI COMMUNICATIONS CLOUD AUTHORITY NETWORK ================= -->
+
+  <!-- Interactive JavaScript Engine -->
+  <script>
+    const cameraProfiles = {
+      colorvu: { day: 5.0, night: 9.5 },
+      turret: { day: 4.0, night: 6.5 },
+      bullet: { day: 5.5, night: 12.5 },
+      varifocal: { day: 7.0, night: 14.0 },
+      miniptz: { day: 8.5, night: 16.0 },
+      ptz: { day: 15.0, night: 25.5 },
+      custom: { day: 5.0, night: 10.0 }
+    };
+
+    const cameraCountEl = document.getElementById('camera-count');
+    const cameraCountValEl = document.getElementById('camera-count-val');
+    const cameraTypeEl = document.getElementById('camera-type');
+    const customContainer = document.getElementById('custom-watts-container');
+    const customDayEl = document.getElementById('custom-day-watts');
+    const customNightEl = document.getElementById('custom-night-watts');
+    const customSwitchEl = document.getElementById('custom-switch-watts');
+    const switchPresets = document.querySelectorAll('.switch-preset');
+    
+    // Outputs
+    const peakLoadValEl = document.getElementById('peak-load-val');
+    const switchCapacityValEl = document.getElementById('switch-capacity-val');
+    const utilizationPctEl = document.getElementById('utilization-pct');
+    const gaugeBarEl = document.getElementById('gauge-bar');
+    const marginValEl = document.getElementById('margin-val');
+    const switchMaxLabelEl = document.getElementById('switch-max-label');
+    const verdictCardEl = document.getElementById('verdict-card');
+    const verdictBadgeEl = document.getElementById('verdict-badge');
+    const verdictTextEl = document.getElementById('verdict-text');
+
+    const daytimeLoadEl = document.getElementById('daytime-load');
+    const nightSurgeEl = document.getElementById('night-surge');
+    const cableLossEl = document.getElementById('cable-loss');
+    const totalDemandEl = document.getElementById('total-demand');
+
+    let currentSwitchBudget = 120;
+
+    function recalculate() {
+      const count = parseInt(cameraCountEl.value);
+      cameraCountValEl.textContent = count === 1 ? '1 Camera' : `${count} Cameras`;
+
+      const type = cameraTypeEl.value;
+      let dayWattsPerCam = 5.0;
+      let nightWattsPerCam = 9.5;
+
+      if (type === 'custom') {
+        customContainer.classList.remove('hidden');
+        customContainer.classList.add('grid');
+        dayWattsPerCam = parseFloat(customDayEl.value) || 5.0;
+        nightWattsPerCam = parseFloat(customNightEl.value) || 10.0;
+      } else {
+        customContainer.classList.add('hidden');
+        customContainer.classList.remove('grid');
+        dayWattsPerCam = cameraProfiles[type].day;
+        nightWattsPerCam = cameraProfiles[type].night;
+      }
+
+      currentSwitchBudget = parseFloat(customSwitchEl.value) || 120;
+      switchCapacityValEl.textContent = currentSwitchBudget;
+      switchMaxLabelEl.textContent = `${currentSwitchBudget}W Max`;
+
+      const isCca = document.querySelector('input[name="cable-type"]:checked').value === 'cca';
+      const lossMultiplier = isCca ? 0.18 : 0.05;
+
+      const baseDaytimeLoad = count * dayWattsPerCam;
+      const baseNightSurge = count * (nightWattsPerCam - dayWattsPerCam);
+      const totalCamLoad = count * nightWattsPerCam;
+      const cableLossLoad = totalCamLoad * lossMultiplier;
+      const totalPeakDemand = totalCamLoad + cableLossLoad;
+
+      // Update Breakdown numbers
+      daytimeLoadEl.textContent = `${baseDaytimeLoad.toFixed(1)} W`;
+      nightSurgeEl.textContent = `+${baseNightSurge.toFixed(1)} W`;
+      cableLossEl.textContent = `+${cableLossLoad.toFixed(1)} W ${isCca ? '(High CCA Heat)' : '(Cat6 Pure Copper)'}`;
+      totalDemandEl.textContent = `${totalPeakDemand.toFixed(1)} W`;
+      peakLoadValEl.textContent = totalPeakDemand.toFixed(1);
+
+      // Gauge & Headroom calculations
+      const utilization = (totalPeakDemand / currentSwitchBudget) * 100;
+      const headroomW = currentSwitchBudget - totalPeakDemand;
+      const headroomPct = 100 - utilization;
+
+      utilizationPctEl.textContent = `${Math.min(utilization, 999).toFixed(1)}%`;
+      gaugeBarEl.style.width = `${Math.min(utilization, 100)}%`;
+
+      // Verdict Logic
+      if (totalPeakDemand > currentSwitchBudget) {
+        // OVERLOAD
+        verdictCardEl.className = 'glass-card p-6 sm:p-7 border-red-500/50 bg-red-950/20 space-y-5 transition-all';
+        verdictBadgeEl.className = 'px-3 py-1 rounded-full text-xs font-mono font-bold bg-red-500/20 text-red-400 border border-red-500/40';
+        verdictBadgeEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> CRITICAL OVERLOAD HAZARD';
+        gaugeBarEl.className = 'h-full rounded-full bg-red-500 transition-all duration-300';
+        utilizationPctEl.className = 'font-bold text-red-400';
+        marginValEl.textContent = `Deficit: ${Math.abs(headroomW).toFixed(1)}W Over Budget!`;
+        verdictTextEl.innerHTML = `<strong>CRITICAL WARNING:</strong> Your peak night load (${totalPeakDemand.toFixed(1)}W) exceeds the ${currentSwitchBudget}W switch capacity by <strong>${Math.abs(headroomW).toFixed(1)}W</strong>. As soon as darkness falls and IR/ColorVu LEDs illuminate, the switch will activate overcurrent protection and drop camera video streams into infinite reboot loops. Upgrade to a 150W or 250W managed PoE switch immediately.`;
+      } else if (headroomPct < 20) {
+        // MARGINAL
+        verdictCardEl.className = 'glass-card p-6 sm:p-7 border-amber-500/50 bg-amber-950/20 space-y-5 transition-all';
+        verdictBadgeEl.className = 'px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40';
+        verdictBadgeEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> MARGINAL HEADROOM (&lt;20%)';
+        gaugeBarEl.className = 'h-full rounded-full bg-amber-400 transition-all duration-300';
+        utilizationPctEl.className = 'font-bold text-amber-400';
+        marginValEl.textContent = `Headroom: +${headroomW.toFixed(1)}W (${headroomPct.toFixed(1)}%)`;
+        verdictTextEl.innerHTML = `<strong>CAUTION:</strong> You have only <strong>${headroomW.toFixed(1)}W (${headroomPct.toFixed(1)}%)</strong> safety headroom. In sub-zero winter gales, inrush current from cold startups and autofocus motors can momentarily push the switch past its limit. A 150W switch is recommended for long-term continuous reliability.`;
+      } else {
+        // OPTIMAL
+        verdictCardEl.className = 'glass-card p-6 sm:p-7 border-emerald-500/30 bg-emerald-950/10 space-y-5 transition-all';
+        verdictBadgeEl.className = 'px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
+        verdictBadgeEl.innerHTML = '<i class="fa-solid fa-circle-check"></i> OPTIMAL HEADROOM';
+        gaugeBarEl.className = 'h-full rounded-full bg-emerald-400 transition-all duration-300';
+        utilizationPctEl.className = 'font-bold text-emerald-400';
+        marginValEl.textContent = `Headroom: +${headroomW.toFixed(1)}W (${headroomPct.toFixed(1)}%)`;
+        verdictTextEl.innerHTML = `<strong>OPTIMAL SPECIFICATION:</strong> Your switch has a generous <strong>+${headroomW.toFixed(1)}W (${headroomPct.toFixed(1)}%)</strong> safety buffer. The system will operate reliably 24/7 through sub-zero weather, LED supplemental lighting surges, and simultaneous camera reboots.`;
+      }
+    }
+
+    // Preset Buttons
+    switchPresets.forEach(btn => {
+      btn.addEventListener('click', () => {
+        switchPresets.forEach(b => {
+          b.className = 'switch-preset px-2.5 py-2 rounded-lg bg-neutral-800 border border-white/10 hover:border-[#FF5500] text-neutral-300 font-bold transition';
+        });
+        btn.className = 'switch-preset px-2.5 py-2 rounded-lg bg-[#FF5500]/20 border border-[#FF5500] text-[#FF5500] font-bold transition';
+        customSwitchEl.value = btn.dataset.watts;
+        recalculate();
+      });
+    });
+
+    // Event Listeners
+    cameraCountEl.addEventListener('input', recalculate);
+    cameraTypeEl.addEventListener('change', recalculate);
+    customDayEl.addEventListener('input', recalculate);
+    customNightEl.addEventListener('input', recalculate);
+    customSwitchEl.addEventListener('input', () => {
+      switchPresets.forEach(b => {
+        b.className = 'switch-preset px-2.5 py-2 rounded-lg bg-neutral-800 border border-white/10 hover:border-[#FF5500] text-neutral-300 font-bold transition';
+      });
+      recalculate();
+    });
+    document.querySelectorAll('input[name="cable-type"]').forEach(r => r.addEventListener('change', recalculate));
+
+    // Initial Run
+    recalculate();
+  </script>
+
+</body>
+</html>

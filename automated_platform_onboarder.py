@@ -135,10 +135,11 @@ class IntegrityFirewall:
         """Layer 2: Platform Domain Authenticity."""
         clean = url.strip()
         parsed = urllib.parse.urlparse(clean)
-        host = parsed.netloc.lower()
+        host = (parsed.hostname or parsed.netloc).lower().rstrip('.')
 
         for syn in cls.SYNTHETIC_DOMAINS:
-            if host.endswith(syn):
+            syn_clean = syn.lower().rstrip('.')
+            if host == syn_clean or host.endswith('.' + syn_clean) or host.endswith('-' + syn_clean):
                 return False, f"URL uses synthetic unresolvable domain '{syn}'"
 
         return True, "Layer 2 Domain Authenticity Pass"
@@ -149,6 +150,17 @@ class IntegrityFirewall:
         clean = url.strip().lower()
         if clean.endswith("/~") or "/~/" in clean:
             return False, "URL contains private home session fragment '/~'"
+
+        parsed = urllib.parse.urlparse(clean)
+        path = parsed.path.rstrip('/')
+        if path == "/app" or path.startswith("/app/"):
+            return False, "URL contains private application path '/app'"
+        if path == "/admin" or path.startswith("/admin/"):
+            return False, "URL contains private admin path '/admin'"
+        if path == "/signin" or path.startswith("/signin/"):
+            return False, "URL contains signin path '/signin'"
+        if path == "/portal" or path.startswith("/portal/"):
+            return False, "URL contains portal path '/portal'"
 
         for frag in cls.SESSION_FRAGMENTS:
             if frag in clean:
@@ -189,15 +201,14 @@ class IntegrityFirewall:
     @classmethod
     def validate_layer5_rule_45(cls, text_or_url):
         """Layer 5: Rule 45 Google Shield Compliance (zero raw root links to adicommunications.co.uk/)."""
-        raw_root_pattern = re.compile(r"https?://(?:www\.)?adicommunications\.co\.uk/?[\"\'\s>/#?]", re.IGNORECASE)
-        # Check direct string
-        if raw_root_pattern.search(text_or_url):
-            # Check if it has a sub-path or if it's the raw root
-            clean = text_or_url.strip()
-            parsed = urllib.parse.urlparse(clean)
-            if parsed.netloc in ("adicommunications.co.uk", "www.adicommunications.co.uk"):
-                if parsed.path in ("", "/"):
-                    return False, "Violation of Rule 45: raw naked root anchor to https://adicommunications.co.uk/"
+        if not text_or_url or not isinstance(text_or_url, str):
+            return True, "Layer 5 Rule 45 Pass"
+
+        matches = re.finditer(r"https?://(?:www\.)?adicommunications\.co\.uk(?P<rest>[^\s\"'<>]*|$)", text_or_url, re.IGNORECASE)
+        for m in matches:
+            rest = m.group("rest") or ""
+            if rest in ("", "/") or rest.startswith("?") or rest.startswith("#") or rest.startswith("/?") or rest.startswith("/#"):
+                return False, "Violation of Rule 45: raw naked root anchor to https://adicommunications.co.uk/"
 
         return True, "Layer 5 Rule 45 Pass"
 

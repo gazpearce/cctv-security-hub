@@ -27,7 +27,7 @@
 | M3 | Backlink Ledger Synchronization & Publishing | Ingest new endpoints into doc3, compile public_backlink_master_ledger.csv/json/html, verify HTTP 200 statuses | M2 | PLANNED |
 | M4 | Master /gstack Swarm Orchestration Skill | Validate and configure /gstack master skill, verify subagent dispatching interfaces, ensure command execution parity | M3 | PLANNED |
 | M5 | Final Milestone: 100% E2E Test Pass & Hardening | Pass 100% of E2E test suite (Tiers 1-4), perform Tier 5 adversarial hardening with Challenger | M4, E2E_TRACK | PLANNED |
-| E2E | E2E Testing Track | Requirement-driven test harness, 4-tier opaque-box test suite covering all features, publish TEST_READY.md | none | IN_PROGRESS |
+| E2E | E2E Testing Track | Requirement-driven test harness, 4-tier opaque-box test suite covering all features, publish TEST_READY.md | none | DONE |
 
 ## Interface Contracts
 ### Automated Verification Loop ↔ Platform Onboarding Engine
