@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax Smart Alarm Grade & Hardware Selector | ADI Communications</title>
+  <meta name="description" content="Calculate BS EN 50131 Grade 2 vs Grade 3 smart intruder alarm compliance, Jeweller RF coverage, and dual-SIM cellular requirements for UK properties. By Gary Pearce (07860 244 274).">
+  <link rel="canonical" href="https://gazpearce.github.io/cctv-security-hub/ajax-alarm-grade-selector.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #050508; color: #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .glass-panel { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(16px); }
+    .accent-orange { color: #FF5500; }
+    .bg-accent-orange { background-color: #FF5500; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between p-4 sm:p-8">
+
+  <div class="max-w-4xl mx-auto w-full">
+    <!-- HEADER -->
+    <header class="mb-8">
+      <div class="flex items-center justify-between flex-wrap gap-4 pb-6 border-b border-white/10">
+        <a href="index.html" class="flex items-center gap-3 text-white text-lg font-bold tracking-tight hover:opacity-80 transition">
+          <span class="w-3 h-3 rounded-full bg-accent-orange animate-pulse"></span>
+          <span>ADI COMMUNICATIONS &bull; SECURITY ENGINEERING</span>
+        </a>
+        <div class="flex items-center gap-3">
+          <a href="https://adicommunications.co.uk" target="_blank" class="text-xs font-mono px-3 py-1.5 rounded-full border border-white/10 hover:border-white/30 text-neutral-300 transition">adicommunications.co.uk &rarr;</a>
+          <a href="tel:07860244274" class="text-xs font-mono font-bold px-3 py-1.5 rounded-full bg-accent-orange text-white hover:bg-orange-600 transition">Call Gary: 07860 244 274</a>
+        </div>
+      </div>
+      <div class="mt-6">
+        <span class="text-xs font-mono uppercase tracking-widest text-[#FF5500] font-semibold">UK Standard BS EN 50131 Compliance Diagnostic</span>
+        <h1 class="text-2xl sm:text-4xl font-black text-white tracking-tight mt-1">Ajax Smart Alarm Grade &amp; Hardware Selector</h1>
+        <p class="text-sm text-neutral-400 mt-2 max-w-2xl leading-relaxed">
+          Engineered by Gary Pearce (25+ years security &amp; telecom engineering experience, &pound;10M Public Liability Insured). Determine exact EN 50131 Grade 2 vs Grade 3 compliance, Jeweller RF range through UK masonry, and required cellular failover channels.
+        </p>
+      </div>
+    </header>
+
+    <!-- CALCULATOR CONSOLE -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      
+      <!-- INPUTS (7 COLS) -->
+      <div class="lg:col-span-7 glass-panel rounded-2xl p-6 space-y-6">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span> Property &amp; Risk Parameters
+        </h2>
+
+        <!-- Property Type -->
+        <div>
+          <label class="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-2">Property Type</label>
+          <select id="propType" class="w-full bg-neutral-900/80 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500]" onchange="calculate()">
+            <option value="domestic">Domestic Home / Semi / Detached</option>
+            <option value="rural_farm">Rural Detached / Farm / Equestrian</option>
+            <option value="high_value">High-Value Residential (&gt;&pound;50k jewellery/contents)</option>
+            <option value="commercial_retail">Commercial Retail / Office / Workshop</option>
+            <option value="warehouse">Industrial Warehouse / Plant Yard</option>
+          </select>
+        </div>
+
+        <!-- Masonry Thickness -->
+        <div>
+          <label class="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-2">Exterior Wall Construction</label>
+          <select id="wallConst" class="w-full bg-neutral-900/80 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500]" onchange="calculate()">
+            <option value="cavity">Standard UK Brick Cavity (300mm)</option>
+            <option value="stone">Solid Yorkshire Gritstone / Granite (500mm+)</option>
+            <option value="foil">Modern Timber Frame with Foil Insulation (High RF Attenuation)</option>
+            <option value="outbuilding">Main House + Outbuilding / Garden Office (&gt;25m)</option>
+          </select>
+        </div>
+
+        <!-- Detection Requirements -->
+        <div class="space-y-3">
+          <label class="block text-xs font-mono uppercase tracking-wider text-neutral-400">Security Detection Zones</label>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="flex items-center gap-2 p-3 bg-neutral-900/40 border border-white/5 rounded-xl cursor-pointer hover:border-white/20">
+              <input type="checkbox" id="checkOutdoor" checked class="rounded accent-[#FF5500]" onchange="calculate()">
+              <span class="text-xs text-neutral-300">Outdoor Curtain / Patio PIR</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 bg-neutral-900/40 border border-white/5 rounded-xl cursor-pointer hover:border-white/20">
+              <input type="checkbox" id="checkPhod" checked class="rounded accent-[#FF5500]" onchange="calculate()">
+              <span class="text-xs text-neutral-300">Photo-on-Demand (PhOD)</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 bg-neutral-900/40 border border-white/5 rounded-xl cursor-pointer hover:border-white/20">
+              <input type="checkbox" id="checkSiren" checked class="rounded accent-[#FF5500]" onchange="calculate()">
+              <span class="text-xs text-neutral-300">External 113dB StreetSiren</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 bg-neutral-900/40 border border-white/5 rounded-xl cursor-pointer hover:border-white/20">
+              <input type="checkbox" id="checkKeypad" checked class="rounded accent-[#FF5500]" onchange="calculate()">
+              <span class="text-xs text-neutral-300">TouchScreen KeyPad</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Insurance Requirement -->
+        <div>
+          <label class="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-2">Insurer Security Grade Mandate</label>
+          <select id="insMandate" class="w-full bg-neutral-900/80 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FF5500]" onchange="calculate()">
+            <option value="none">Standard Domestic (No Strict Insurer Policy)</option>
+            <option value="grade2">Insurer Mandates EN 50131 Grade 2</option>
+            <option value="grade3">Insurer Mandates EN 50131 Grade 3 (Commercial / High Risk)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- RESULTS & SPECIFICATION (5 COLS) -->
+      <div class="lg:col-span-5 glass-panel rounded-2xl p-6 flex flex-col justify-between space-y-6">
+        <div>
+          <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <span class="text-xs font-mono uppercase tracking-wider text-neutral-400">Recommended Grade</span>
+            <span id="badgeGrade" class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-green-500/20 text-green-400 border border-green-500/30">EN 50131 Grade 2</span>
+          </div>
+
+          <!-- Central Hardware Pick -->
+          <div class="mt-4 p-4 rounded-xl bg-black/40 border border-white/5">
+            <div class="text-xs font-mono text-neutral-400 uppercase">Core Control Panel</div>
+            <div id="hubName" class="text-lg font-bold text-white mt-1">Ajax Hub 2 Plus</div>
+            <p id="hubDesc" class="text-xs text-neutral-400 mt-1 leading-relaxed">
+              Equipped with 4 independent communication channels: Gigabit Ethernet, Wi-Fi, and Dual Micro-SIM 4G/LTE cellular failover.
+            </p>
+          </div>
+
+          <!-- Technical Metrics -->
+          <div class="mt-4 space-y-3">
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-neutral-400">Jeweller RF Frequency:</span>
+              <span class="font-mono text-white">868.0 – 868.6 MHz (TDMA)</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-neutral-400">Signal Range (Open Field):</span>
+              <span id="rfRange" class="font-mono text-white">Up to 2,000 metres</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-neutral-400">ReX Range Extender Needed:</span>
+              <span id="rexNeeded" class="font-mono text-amber-400">No (Direct Coverage)</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-neutral-400">Battery Operating Life:</span>
+              <span class="font-mono text-white">Up to 5 to 7 Years (Pre-fitted CR123A)</span>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <span class="text-neutral-400">Tamper &amp; Anti-Jamming:</span>
+              <span class="font-mono text-green-400">Frequency Hopping &bull; Instant Push</span>
+            </div>
+          </div>
+
+          <!-- Estimated Price Range -->
+          <div class="mt-6 pt-4 border-t border-white/10">
+            <div class="flex items-baseline justify-between">
+              <span class="text-xs font-mono text-neutral-400 uppercase">Installed Trade Estimate</span>
+              <span id="priceRange" class="text-xl font-black text-white font-mono">From &pound;599 + VAT</span>
+            </div>
+            <p class="text-[11px] text-neutral-500 mt-1">Includes professional physical installation, brickwork commissioning, mobile app encryption, and &pound;10M liability warranty.</p>
+          </div>
+        </div>
+
+        <!-- ACTION CTA -->
+        <div class="pt-4 space-y-2">
+          <a href="tel:07860244274" class="block w-full text-center py-3.5 rounded-xl bg-accent-orange text-white font-bold text-xs uppercase tracking-wider hover:bg-orange-600 active:scale-95 transition">
+            Book Survey With Gary: 07860 244 274
+          </a>
+          <a href="https://adicommunications.co.uk" target="_blank" class="block w-full text-center py-2.5 rounded-xl border border-white/10 text-neutral-300 text-xs font-mono hover:border-white/30 transition">
+            View All Services &bull; adicommunications.co.uk
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TECHNICAL SPECIFICATION TABLE -->
+    <div class="mt-12 glass-panel rounded-2xl p-6">
+      <h3 class="text-base font-bold text-white mb-4">Why Ajax Smart Alarms Outperform Legacy 433MHz Bell Boxes</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs text-neutral-300">
+          <thead class="border-b border-white/10 text-neutral-400 font-mono uppercase">
+            <tr>
+              <th class="py-2.5 pr-4">Feature</th>
+              <th class="py-2.5 pr-4">Legacy 433MHz DIY Alarm</th>
+              <th class="py-2.5">Ajax Jeweller Smart System</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/5 font-sans">
+            <tr>
+              <td class="py-2.5 pr-4 font-semibold text-white">Radio Protocol</td>
+              <td class="py-2.5 pr-4 text-neutral-400">Unencrypted 433MHz (easily jammed)</td>
+              <td class="py-2.5 text-green-400">868MHz Encrypted TDMA + Frequency Hopping</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 pr-4 font-semibold text-white">Power / Line Cut Protection</td>
+              <td class="py-2.5 pr-4 text-neutral-400">None (router cut = system offline)</td>
+              <td class="py-2.5 text-green-400">Dual SIM 4G + Internal 16hr Battery Backup</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 pr-4 font-semibold text-white">Visual Verification</td>
+              <td class="py-2.5 pr-4 text-neutral-400">None (audio siren only)</td>
+              <td class="py-2.5 text-green-400">MotionCam PhOD 9-second animated photos</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 pr-4 font-semibold text-white">British Standard Compliance</td>
+              <td class="py-2.5 pr-4 text-neutral-400">Uncertified (insurers reject claims)</td>
+              <td class="py-2.5 text-green-400">BS EN 50131 Grade 2 / Grade 3 Certified</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- INTERLINKING FOOTER -->
+    <footer class="mt-12 pt-6 border-t border-white/10 flex flex-wrap justify-between items-center gap-4 text-xs text-neutral-500 font-mono">
+      <div>
+        <span>ADI Communications &bull; Yorkshire Security Engineering &bull; 07860 244 274</span>
+      </div>
+      <div class="flex gap-4">
+        <a href="cctv-dori-lens-calculator.html" class="hover:text-white transition">CCTV DORI Tool</a>
+        <a href="starlink-wind-load-calculator.html" class="hover:text-white transition">Starlink Wind Tool</a>
+        <a href="ethernet-upstairs-calculator.html" class="hover:text-white transition">Cat6 Loss Tool</a>
+        <a href="https://dev.to/gary_pearce_2171c679bfd81" target="_blank" class="hover:text-white transition">Dev.to Articles</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    function calculate() {
+      const prop = document.getElementById('propType').value;
+      const wall = document.getElementById('wallConst').value;
+      const outdoor = document.getElementById('checkOutdoor').checked;
+      const phod = document.getElementById('checkPhod').checked;
+      const mandate = document.getElementById('insMandate').value;
+
+      let grade = "EN 50131 Grade 2";
+      let badgeCls = "bg-green-500/20 text-green-400 border-green-500/30";
+      let hub = "Ajax Hub 2 Plus";
+      let desc = "Equipped with 4 independent channels: Gigabit Ethernet, Wi-Fi, and Dual Micro-SIM 4G/LTE cellular failover.";
+      let rex = "No (Direct Jeweller Coverage)";
+      let rexColor = "text-green-400";
+      let price = "From £599 + VAT";
+
+      if (mandate === "grade3" || prop === "warehouse") {
+        grade = "EN 50131 Grade 3 (Fibra Hardwired)";
+        badgeCls = "bg-purple-500/20 text-purple-400 border-purple-500/30";
+        hub = "Ajax Hub Hybrid (Fibra + Jeweller)";
+        desc = "Combines wireless Jeweller flexibility with grade-3 anti-tamper Fibra bus wired lines for maximum commercial insurance compliance.";
+        price = "From £895 + VAT";
+      } else if (mandate === "grade2" || prop === "high_value" || prop === "commercial_retail") {
+        grade = "EN 50131 Grade 2 Professional";
+        badgeCls = "bg-blue-500/20 text-blue-400 border-blue-500/30";
+        hub = "Ajax Hub 2 Plus";
+        price = "From £699 + VAT";
+      }
+
+      if (wall === "outbuilding" || wall === "stone") {
+        rex = "Recommended: ReX 2 Range Extender (Radio + Ethernet Backhaul)";
+        rexColor = "text-amber-400";
+      }
+
+      document.getElementById('badgeGrade').innerText = grade;
+      document.getElementById('badgeGrade').className = `px-3 py-1 rounded-full text-xs font-mono font-bold border ${badgeCls}`;
+      document.getElementById('hubName').innerText = hub;
+      document.getElementById('hubDesc').innerText = desc;
+      document.getElementById('rexNeeded').innerText = rex;
+      document.getElementById('rexNeeded').className = `font-mono ${rexColor}`;
+      document.getElementById('priceRange').innerText = price;
+    }
+    calculate();
+  </script>
+
+</body>
+</html>
