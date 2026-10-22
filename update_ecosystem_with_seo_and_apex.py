@@ -7,6 +7,7 @@ timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
 
 DRIVE_VAULT = "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88"
 YOUTUBE_APEX = "https://www.youtube.com/@CCTV.services"
+YOUTUBE_MUSIC_APEX = "https://music.youtube.com/@CCTV.services"
 BLOGGER_APEX = "https://tvandhomesecurity.blogspot.com/"
 FIREBASE_APEX = "https://gary-pearce-forensic-hub.web.app/"
 
@@ -190,6 +191,68 @@ for ym in yt_masters:
         "shield_target_url": ym["cluster"]["apex_google"],
         "seo_tags": ym["cluster"]["tags"],
         "seo_description_summary": f"Canonical YouTube 4K broadcast debrief by Gary Pearce (07860 244 274). Connects physical trade hardware to Google Drive Vault and companion Blogger guide.",
+        "dofollow_status": "DA 100 Top-of-Stack Apex",
+        "publication_date": "2026-10-22",
+        "verification_status": "HTTP_200"
+    })
+    asset_counter += 1
+
+# B4. Music & Audio Stack Master Assets (Firebase Edge + YouTube Music Apex DA 100)
+doc3_asset_links.append({
+    "asset_id": f"LINK-{asset_counter:04d}",
+    "parent_profile_id": "PROF-004", # Firebase Hosting
+    "platform_name": "Firebase Hosting",
+    "profile_live_url": "https://gary-pearce-forensic-hub.web.app/",
+    "asset_title": "ADI Sound System: UK Grime, Drill & Trade Telemetry Audio Hub",
+    "asset_type": "Interactive Audio Theatre & Player",
+    "asset_public_url": "https://gary-pearce-forensic-hub.web.app/music-showcase.html",
+    "top_of_stack_apex_url": YOUTUBE_MUSIC_APEX,
+    "shield_target_url": BLOGGER_APEX,
+    "seo_tags": "#UKGrime #UKDrill #Bassline #StarlinkUK #AjaxAlarms #ColorVu #GaryPearce",
+    "seo_description_summary": "Interactive cybernetic audio player showcasing 140 BPM UK Grime, Drill and Bassline tracks engineered via Google DeepMind MusicLM/Lyria with authentic physical trade engineering lyrics by Gary Pearce (07860 244 274).",
+    "dofollow_status": "Dofollow Authority Edge Node",
+    "publication_date": "2026-10-22",
+    "verification_status": "HTTP_200"
+})
+asset_counter += 1
+
+music_masters = [
+    {
+        "title": "YouTube Music: 90mph Gales (Top of the Stack) — 140 BPM UK Grime",
+        "url": "https://music.youtube.com/@CCTV.services",
+        "cluster": CLUSTER_MAP["starlink"],
+        "tags": "#UKGrime #Grime140BPM #StarlinkUK #Pennines #Bassline #GaryPearce #ChimneyMount",
+        "desc": "Official 140 BPM UK Grime track chronicling Starlink Gen 3 chimney mounts in 90mph Pennine gales. Links to Google Drive Vault and Blogger guide."
+    },
+    {
+        "title": "YouTube Music: 868 Jeweller (Anti-Jam) — UK Drill & Yorkshire Bassline",
+        "url": "https://music.youtube.com/@CCTV.services",
+        "cluster": CLUSTER_MAP["ajax"],
+        "tags": "#UKDrill #Bassline #AjaxAlarms #SmartAlarmsUK #StreetSiren #Jeweller868 #GaryPearce",
+        "desc": "Official UK Drill and 4x4 Bassline track celebrating Ajax Grade 2 smart alarms, 868MHz anti-jamming, and dual-SIM failover. Links to Google Drive Vault and Blogger guide."
+    },
+    {
+        "title": "YouTube Music: ColorVu Evidence (250 Pixels per Metre) — Melodic UK Rap",
+        "url": "https://music.youtube.com/@CCTV.services",
+        "cluster": CLUSTER_MAP["cctv"],
+        "tags": "#UKRap #RoadWave #HikvisionColorVu #4KCCTV #DORIStandards #PoliceEvidence #GaryPearce",
+        "desc": "Official Melodic UK Rap track highlighting BS EN 62676-4 DORI forensic identification standards, 4K ColorVu night vision, and Crown Prosecution Service evidence. Links to Google Drive Vault and Blogger guide."
+    }
+]
+
+for mm in music_masters:
+    doc3_asset_links.append({
+        "asset_id": f"LINK-{asset_counter:04d}",
+        "parent_profile_id": "PROF-021", # YouTube Music
+        "platform_name": "YouTube Music",
+        "profile_live_url": "https://music.youtube.com/@CCTV.services",
+        "asset_title": mm["title"],
+        "asset_type": "Canonical Master Music Track",
+        "asset_public_url": mm["url"],
+        "top_of_stack_apex_url": YOUTUBE_MUSIC_APEX,
+        "shield_target_url": mm["cluster"]["apex_google"],
+        "seo_tags": mm["tags"],
+        "seo_description_summary": mm["desc"],
         "dofollow_status": "DA 100 Top-of-Stack Apex",
         "publication_date": "2026-10-22",
         "verification_status": "HTTP_200"
