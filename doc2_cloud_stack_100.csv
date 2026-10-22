@@ -107,8 +107,8 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 106,Blogger (Google Shield),blogger.com,99,Blog & Editorial Networks,"Unlimited posts, custom domains, Google DA 99",Google OAuth,https://www.blogger.com/,JOINED,https://tvandhomesecurity.blogspot.com/
 107,GitBook,gitbook.com,91,Documentation & Knowledge Bases,Free public docs for open-source,GitHub / Google,https://www.gitbook.com/,PENDING,
 108,Read the Docs,readthedocs.org,91,Documentation & Knowledge Bases,Free Sphinx/MkDocs hosting for public repos,GitHub / GitLab,https://readthedocs.org/,PENDING,
-109,Dev.to,dev.to,91,Blog & Editorial Networks,Free developer publishing with canonical links,GitHub / Twitter,https://dev.to/enter,PENDING,
-110,Hashnode,hashnode.com,88,Blog & Editorial Networks,Free developer blogging on custom or hashnode subdomains,GitHub / Google,https://hashnode.com/,PENDING,
+109,Dev.to,dev.to,91,Blog & Editorial Networks,Free developer publishing with canonical links,GitHub / Twitter,https://dev.to/enter,JOINED,https://dev.to/gary_pearce_2171c679bfd81
+110,Hashnode,hashnode.com,88,Blog & Editorial Networks,Free developer blogging on custom or hashnode subdomains,GitHub / Google,https://hashnode.com/,JOINED,https://hashnode.com/@hardwire
 111,Substack,substack.com,92,Blog & Editorial Networks,Free newsletter & article publishing,Google / Email,https://substack.com/signup,PENDING,
 112,Medium,medium.com,95,Blog & Editorial Networks,Free publishing to global readership,Google / Email,https://medium.com/m/signin,PENDING,
 113,CodePen,codepen.io,93,Developer & Interactive Pens,Free front-end HTML/CSS/JS interactive pens,GitHub / Google,https://codepen.io/accounts/signup,PENDING,

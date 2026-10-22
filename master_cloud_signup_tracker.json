@@ -1,6 +1,6 @@
 {
   "total_platforms": 154,
-  "joined_count": 56,
+  "joined_count": 58,
   "platforms": [
     {
       "rank": "1",
@@ -1336,8 +1336,8 @@
       "free_tier": "Free developer publishing with canonical links",
       "sso_method": "GitHub / Twitter",
       "signup_url": "https://dev.to/enter",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://dev.to/gary_pearce_2171c679bfd81",
       "rank": "109"
     },
     {
@@ -1348,8 +1348,8 @@
       "free_tier": "Free developer blogging on custom or hashnode subdomains",
       "sso_method": "GitHub / Google",
       "signup_url": "https://hashnode.com/",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://hashnode.com/@hardwire",
       "rank": "110"
     },
     {
