@@ -1,0 +1,7 @@
+camera_model_type,sensor_resolution,focal_length_mm,horizontal_fov_deg,detect_m_25px_m,observe_m_62px_m,recognize_m_125px_m,identify_m_250px_m,low_light_tech,poe_wattage_class,rule45_shield_target
+Hikvision ColorVu Turret,4K (8MP / 3840x2160),2.8,107.0,89.0,35.0,18.0,9.0,F1.0 24/7 Color (0.0005 Lux),PoE 802.3af (Class 3),https://tvandhomesecurity.blogspot.com/
+Hikvision ColorVu Turret,4K (8MP / 3840x2160),4.0,88.0,114.0,45.0,23.0,11.0,F1.0 24/7 Color (0.0005 Lux),PoE 802.3af (Class 3),https://tvandhomesecurity.blogspot.com/
+Hikvision Panoramic 180°,16MP Dual-Lens,2.8,180.0,65.0,26.0,13.0,6.5,Dual F1.0 ColorVu Stitched,PoE+ 802.3at (Class 4),https://tvandhomesecurity.blogspot.com/
+Standard IR Turret,4MP (2560x1440),2.8,103.0,63.0,25.0,13.0,6.0,EXIR 850nm (Black/White),PoE 802.3af (Class 2),https://tvandhomesecurity.blogspot.com/
+Long-Range Bullet,4K (8MP / 3840x2160),6.0,54.0,175.0,70.0,35.0,17.5,DarkFighter Ultra Low-Light,PoE 802.3af (Class 3),https://tvandhomesecurity.blogspot.com/
+Motorised Varifocal PTZ,4K (8MP / 3840x2160),12.0,28.0,350.0,140.0,70.0,35.0,Laser IR 200m Assisted,Hi-PoE (60W),https://tvandhomesecurity.blogspot.com/

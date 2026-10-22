@@ -1,0 +1,24 @@
+outward_code,locality,county_region,burglary_rate_per_1000,vehicle_crime_rate_per_1000,asb_rate_per_1000,police_risk_tier,recommended_camera_count,minimum_storage_days,cctv_dori_priority,rule45_shield_target
+LS1,Leeds City Centre,West Yorkshire,14.8,18.2,34.5,Severe,8,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+LS6,Headingley & Hyde Park,West Yorkshire,12.4,9.8,22.1,High,4,30,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+LS8,Roundhay & Gledhow,West Yorkshire,5.2,4.8,11.2,Moderate,4,30,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+LS17,Alwoodley & Moortown,West Yorkshire,3.8,3.2,7.4,Low-Moderate,3,14,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+BD1,Bradford City Centre,West Yorkshire,16.2,19.5,38.0,Severe,8,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+BD9,Manningham & Frizinghall,West Yorkshire,11.9,10.4,24.3,High,4,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+BD18,Saltaire & Shipley,West Yorkshire,6.1,5.4,13.8,Moderate,3,14,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+HD1,Huddersfield Centre,West Yorkshire,13.5,12.1,28.4,High,6,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+HD8,Kirkburton & Denby Dale,West Yorkshire,2.9,2.4,5.1,Low,3,14,Observe (62 px/m),https://tvandhomesecurity.blogspot.com/
+HX1,Halifax Town Centre,West Yorkshire,14.1,11.8,29.2,High,6,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+HX3,Lightcliffe & Hipperholme,West Yorkshire,4.2,3.8,8.6,Low-Moderate,3,14,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+WF1,Wakefield City Centre,West Yorkshire,12.8,11.2,26.5,High,6,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+WF17,Birstall & Batley (HQ),West Yorkshire,7.4,6.8,16.2,Moderate,4,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+S1,Sheffield City Centre,South Yorkshire,15.1,16.4,32.8,Severe,8,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+S10,Broomhill & Ranmoor,South Yorkshire,4.1,3.5,8.1,Low-Moderate,3,14,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+DN1,Doncaster Centre,South Yorkshire,15.9,14.2,35.1,Severe,8,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+DN6,Adwick le Street,South Yorkshire,8.2,7.1,18.4,Moderate,4,30,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+HU1,Hull Old Town,East Riding of Yorkshire,16.8,15.0,36.2,Severe,8,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+HU17,Beverley & Molescroft,East Riding of Yorkshire,3.2,2.9,6.8,Low,3,14,Observe (62 px/m),https://tvandhomesecurity.blogspot.com/
+YO1,York City Centre,North Yorkshire,11.2,8.9,21.4,Moderate-High,6,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+BB1,Blackburn Centre,Lancashire,14.5,13.1,30.2,High,6,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/
+BB5,Accrington & Rishton,Lancashire,9.8,8.4,21.0,Moderate-High,4,30,Recognize (125 px/m),https://tvandhomesecurity.blogspot.com/
+OL1,Oldham Town Centre,Greater Manchester,15.4,14.8,33.9,Severe,8,30,Identify (250 px/m),https://tvandhomesecurity.blogspot.com/

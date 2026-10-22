@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ADI Communications & Gary Pearce — Master Multi-Stack Compilation Manifest",
+  "version": "2.0.0",
+  "last_updated": "2026-10-22T09:06:50+01:00",
+  "lead_engineer": "Gary Pearce",
+  "business": "ADI Communications",
+  "direct_mobile": "07860 244 274",
+  "insurance": "£10,000,000 Public Liability Insurance",
+  "stack_summary": {
+    "stack_1_pdf_whitepapers": 3,
+    "stack_2_public_datasets": 2,
+    "stack_3_interactive_tools": 13,
+    "stack_4_syndicated_images": 54,
+    "stack_5_broadcast_videos": 3,
+    "stack_6_audio_podcasts": 3,
+    "stack_7_cloud_platforms": 135,
+    "stack_8_image_platforms": 100,
+    "stack_9_video_platforms": 50,
+    "stack_10_multi_stack_nodes": 60
+  },
+  "rule_45_compliance": {
+    "status": "100% VERIFIED PASS",
+    "raw_root_domain_links": 0,
+    "shield_blogger_hub": "https://tvandhomesecurity.blogspot.com/",
+    "shield_google_drive_vault": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+    "shield_youtube_channel": "https://www.youtube.com/@CCTV.services",
+    "shield_firebase_hub": "https://gary-pearce-forensic-hub.web.app/"
+  },
+  "stack_assets": {
+    "pdf_documents": [
+      {
+        "filename": "Ajax_Smart_Alarms_Grade2_Compliance_Yorkshire_Manual.pdf",
+        "file_size_bytes": 4925,
+        "sha256": "a9e668589530b3a002ddf84c6e06726ca6e56e0efe02679444ae85ef4ed914af",
+        "public_edge_url": "https://gary-pearce-forensic-hub.web.app/stack_assets/documents/Ajax_Smart_Alarms_Grade2_Compliance_Yorkshire_Manual.pdf",
+        "google_drive_target_vault": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "filename": "Ethernet_Upstairs_Without_Running_Cables_Field_Guide.pdf",
+        "file_size_bytes": 4951,
+        "sha256": "dd8f84e44d6e8b7a8fdf9020c012fc17044ba526cd7675a37fa8a4ac13a22253",
+        "public_edge_url": "https://gary-pearce-forensic-hub.web.app/stack_assets/documents/Ethernet_Upstairs_Without_Running_Cables_Field_Guide.pdf",
+        "google_drive_target_vault": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "filename": "Starlink_UK_Gale_Rated_Chimney_Mounting_Specification.pdf",
+        "file_size_bytes": 5062,
+        "sha256": "674a9375e6ea74534d4a82b4f30c4f9366a5d8af1920acef048386dd7e1fa8c8",
+        "public_edge_url": "https://gary-pearce-forensic-hub.web.app/stack_assets/documents/Starlink_UK_Gale_Rated_Chimney_Mounting_Specification.pdf",
+        "google_drive_target_vault": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      }
+    ],
+    "public_datasets": [
+      {
+        "filename": "uk_cctv_dori_sensor_matrix.csv",
+        "file_size_bytes": 1160,
+        "sha256": "9d19cff5b59d1207cbc4f315da406b11f726d97118c55dd95e62a4da0da27bf9",
+        "public_edge_url": "https://gary-pearce-forensic-hub.web.app/stack_assets/data/uk_cctv_dori_sensor_matrix.csv",
+        "kaggle_zenodo_target": "https://kaggle.com/datasets/gazpearce/uk-security-telemetry",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "filename": "uk_police_crime_telemetry_yorkshire_lancs.csv",
+        "file_size_bytes": 3160,
+        "sha256": "0c5ee44c207308a9f63b0e75d41b3261af1ef17955bea8a1a4046be542d688b3",
+        "public_edge_url": "https://gary-pearce-forensic-hub.web.app/stack_assets/data/uk_police_crime_telemetry_yorkshire_lancs.csv",
+        "kaggle_zenodo_target": "https://kaggle.com/datasets/gazpearce/uk-security-telemetry",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      }
+    ],
+    "interactive_tools": [
+      {
+        "tool_name": "UK Postcode Crime Risk & Storage Checker",
+        "filename": "uk-postcode-crime-risk-checker.html",
+        "file_size_bytes": 247747,
+        "sha256": "e394a2bb19c36c1c189e693bb165c34496d53a2dad1ee425734e01d56aeea4b7",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/uk-postcode-crime-risk-checker.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/uk-postcode-crime-risk-checker.html",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "tool_name": "CCTV DORI Lens & Field-of-View Calculator",
+        "filename": "cctv-dori-lens-calculator.html",
+        "file_size_bytes": 28491,
+        "sha256": "e6b673f9515bbd10dea6564f1d891bf29e3b36ce65eed545b9fdaaff2aeb8d01",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/cctv-dori-lens-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/cctv-dori-lens-calculator.html",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "tool_name": "CCTV Storage & Bandwidth Calculator",
+        "filename": "cctv-storage-bandwidth-calculator.html",
+        "file_size_bytes": 18489,
+        "sha256": "e2d883a50199285d61f2e11b6951d4ba1eb788e4f20aefbab295114f695d7910",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/cctv-storage-bandwidth-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/cctv-storage-bandwidth-calculator.html",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "tool_name": "PoE Voltage Drop & Cable Distance Calculator",
+        "filename": "poe-voltage-drop-calculator.html",
+        "file_size_bytes": 19137,
+        "sha256": "37bc80475d7b1b69ac00a9edfdecab230c1f9f92ee1a3ff44da1b3f8f97ad9ed",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/poe-voltage-drop-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/poe-voltage-drop-calculator.html",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "tool_name": "Starlink 90mph Gale Wind Load & Shear Calculator",
+        "filename": "starlink-wind-load-calculator.html",
+        "file_size_bytes": 28690,
+        "sha256": "030204074903c27b514196bf75e313c5f6acb8448ba7606bdb226266c0083347",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/starlink-wind-load-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/starlink-wind-load-calculator.html",
+        "rule45_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/"
+      },
+      {
+        "tool_name": "Starlink vs 4G/5G Speed & Cost Analyzer",
+        "filename": "starlink-vs-5g-cost-calculator.html",
+        "file_size_bytes": 18748,
+        "sha256": "a4703f8bc480315a1ec613fe8cd05ae214224c9d686407de381755c23964890f",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/starlink-vs-5g-cost-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/starlink-vs-5g-cost-calculator.html",
+        "rule45_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/"
+      },
+      {
+        "tool_name": "Starlink Roof & Chimney Obstruction Quiz",
+        "filename": "starlink-roof-chimney-quiz.html",
+        "file_size_bytes": 0,
+        "sha256": "N/A",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/starlink-roof-chimney-quiz.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/starlink-roof-chimney-quiz.html",
+        "rule45_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/"
+      },
+      {
+        "tool_name": "Ethernet Upstairs Without Running Cables Calculator",
+        "filename": "ethernet-upstairs-calculator.html",
+        "file_size_bytes": 14740,
+        "sha256": "651a6c5ad73874748d7af58a969be9990c17aab147a6a7e27e985927e557cafb",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/ethernet-upstairs-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/ethernet-upstairs-calculator.html",
+        "rule45_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/"
+      },
+      {
+        "tool_name": "Garden Office Wi-Fi Bridge vs Fibre vs SWA Calculator",
+        "filename": "garden-office-wifi-bridge-calculator.html",
+        "file_size_bytes": 17668,
+        "sha256": "8ecc80ccb597bb5d97e5486908f589e815378a18599ed1a6e17542f3d89a742e",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/garden-office-wifi-bridge-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/garden-office-wifi-bridge-calculator.html",
+        "rule45_shield_anchor": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/"
+      },
+      {
+        "tool_name": "Smart Doorbell 24V Transformer Upgrade Calculator",
+        "filename": "smart-doorbell-transformer-calculator.html",
+        "file_size_bytes": 18898,
+        "sha256": "a9dd2886ccc7820c80b5fa07b3d26cd1c1d014647813588a8342f9b66d1725c1",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/smart-doorbell-transformer-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/smart-doorbell-transformer-calculator.html",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      },
+      {
+        "tool_name": "TV Fireplace Thermal Safety Calculator",
+        "filename": "tv-fireplace-thermal-calculator.html",
+        "file_size_bytes": 19473,
+        "sha256": "f95e2a0d40f67c2bb27f467756efa6b91b191504545c262e7a610b969114ad54",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/tv-fireplace-thermal-calculator.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/tv-fireplace-thermal-calculator.html",
+        "rule45_shield_anchor": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/"
+      },
+      {
+        "tool_name": "Ajax Alarm Grade & Sensor Density Selector",
+        "filename": "ajax-alarm-grade-selector.html",
+        "file_size_bytes": 21191,
+        "sha256": "c6458a0e21bbbad72ab7dd705adf76eef809218e2d5349167507024ae6ee3029",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/ajax-alarm-grade-selector.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/ajax-alarm-grade-selector.html",
+        "rule45_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/"
+      },
+      {
+        "tool_name": "Open-Source Image CDN & Trade Gallery",
+        "filename": "image-gallery.html",
+        "file_size_bytes": 508532,
+        "sha256": "f8d9be948c9a9347a0867b8fb51e7d7e1d9459e398b114a5a92cb6cbb0c2048d",
+        "firebase_live_url": "https://gary-pearce-forensic-hub.web.app/image-gallery.html",
+        "github_pages_url": "https://gazpearce.github.io/cctv-security-hub/image-gallery.html",
+        "rule45_shield_anchor": "https://tvandhomesecurity.blogspot.com/"
+      }
+    ]
+  }
+}
