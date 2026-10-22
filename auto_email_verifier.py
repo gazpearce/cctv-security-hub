@@ -210,13 +210,18 @@ class AutoEmailVerifier:
         if not text or not isinstance(text, str):
             return None
 
-        # Clean HTML entities if present
-        cleaned = re.sub(r'&[a-zA-Z]+;', ' ', text)
+        # Clean HTML tags and entities while preserving angle-bracket boundary punctuation like <123456>
+        cleaned = re.sub(r'</?[a-zA-Z][^>]*>', ' ', text)
+        cleaned = re.sub(r'&[a-zA-Z]+;', ' ', cleaned)
+        cleaned = cleaned.replace(' ', ' ')
         cleaned_lower = cleaned.lower()
 
         # Reject disqualified phrases (promo, discount, referral, postal, status, error, etc.) unless explicit verification phrase present
         if any(p in cleaned_lower for p in DISQUALIFIED_PREFIXES):
-            if not any(k in cleaned_lower for k in ["verification code", "verify code", "security code", "one-time", "otp", "confirmation pin", "login code", "access code", "passcode"]):
+            if not any(k in cleaned_lower for k in [
+                "verification code", "verify code", "security code", "one-time", "otp",
+                "confirmation pin", "login code", "access code", "auth code", "passcode"
+            ]):
                 return None
 
         def is_valid_otp(val):
@@ -267,30 +272,70 @@ class AutoEmailVerifier:
             if is_valid_otp(val):
                 return val
 
-        # Pattern B: Explicit 'code is: 123456' (excluding status/error codes)
-        if not any(dp in cleaned_lower for dp in DISQUALIFIED_PREFIXES):
-            m_code = re.search(r'\bcode[:\s]+(?:is[:\s]+)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b', cleaned, re.IGNORECASE)
-            if m_code:
-                val = m_code.group(1).strip()
-                if is_valid_otp(val):
-                    return val
+        # Reverse Pattern: e.g. "G-123456 is your code", "G-123456 is your Google verification code", "001 234 is your verification code"
+        m_rev_spaced = re.search(
+            r'\b(\d{3}[\s-]\d{3}|\d{4}[\s-]\d{4})\s+is\s+your\s+(?:(?:[A-Za-z]+\s+)?(?:verification|security|auth(?:entication)?|one-time|confirmation)\s+|[A-Za-z]+\s+)?(?:code|pin|passcode)\b',
+            cleaned, re.IGNORECASE
+        )
+        if m_rev_spaced:
+            val = re.sub(r'[\s-]', '', m_rev_spaced.group(1))
+            if is_valid_otp(val):
+                return val
 
-        # Pattern C: Standalone 6-to-8 digit numeric code (isolated from phone numbers)
-        for match in re.finditer(r'(?<!\d)(?<!\d\s)\b(\d{6,8})\b(?!\s*\d)', cleaned):
+        m_rev = re.search(
+            r'\b([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\s+is\s+your\s+(?:(?:[A-Za-z]+\s+)?(?:verification|security|auth(?:entication)?|one-time|confirmation)\s+|[A-Za-z]+\s+)?(?:code|pin|passcode)\b',
+            cleaned, re.IGNORECASE
+        )
+        if m_rev:
+            val = m_rev.group(1).strip()
+            if is_valid_otp(val):
+                return val
+
+        # Sanitize text for fallback patterns by removing disqualified phrases and telephone numbers
+        # 1. Strip disqualified phrases and their values (postal, zip, error, referral, promo, etc.)
+        sanitized = re.sub(
+            r'\b(?:' + '|'.join(re.escape(dp) for dp in DISQUALIFIED_PREFIXES) + r')\b[:\s]*(?:is[:\s]*)?[\+A-Za-z0-9-]+',
+            ' ',
+            cleaned,
+            flags=re.IGNORECASE
+        )
+        # 2. Strip Gary Pearce phone numbers in all punctuations: (07860) 244 274, 07860-244-274, +44 7860 244 274, 07860.244.274, 07860/244/274
+        sanitized = re.sub(
+            r'(?:\+?44[\s/.-]*(?:\(0\)|0)?[\s/.-]*)?\(?0?7860\)?[\s/.-]*244[\s/.-]*274\b',
+            ' ',
+            sanitized
+        )
+        # 3. Strip general UK mobile/landline telephone patterns
+        sanitized = re.sub(
+            r'(?:\+?44[\s/.-]*(?:\(0\)|0)?[\s/.-]*|\b0)\(?\d{2,5}\)?[\s/.-]+\d{3,4}[\s/.-]+\d{3,4}\b',
+            ' ',
+            sanitized
+        )
+        sanitized_lower = sanitized.lower()
+
+        # Pattern B: Explicit 'code is: 123456' on sanitized text
+        m_code = re.search(r'\bcode[:\s]+(?:is[:\s]+)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b', sanitized, re.IGNORECASE)
+        if m_code:
+            val = m_code.group(1).strip()
+            if is_valid_otp(val):
+                return val
+
+        # Pattern C: Standalone 6-to-8 digit numeric code (isolated from phone numbers & hyphenated words)
+        for match in re.finditer(r'(?<![\d\w-])(?<!\d\s)\b(\d{6,8})\b(?!\s*\d)(?!-[\d\w])', sanitized):
             val = match.group(1)
             if is_valid_otp(val):
                 return val
 
         # Pattern D: Standalone spaced 6-digit (e.g. "123 456") if verification keywords present (isolated from phone numbers)
-        if any(k in cleaned_lower for k in ["verify", "code", "pin", "confirm", "otp", "passcode"]):
-            for match in re.finditer(r'(?<!\d)(?<!\d\s)\b(\d{3})\s+(\d{3})\b(?!\s*\d)', cleaned):
+        if any(k in sanitized_lower for k in ["verify", "code", "pin", "confirm", "otp", "passcode"]):
+            for match in re.finditer(r'(?<![\d\w-])(?<!\d\s)\b(\d{3})\s+(\d{3})\b(?!\s*\d)', sanitized):
                 val = f"{match.group(1)}{match.group(2)}"
                 if is_valid_otp(val):
                     return val
 
-        # Pattern E: Standalone 4-to-5 digit numeric code if verification keywords present
-        if any(k in cleaned_lower for k in ["verify", "code", "pin", "confirm", "otp", "passcode"]):
-            for match in re.finditer(r'(?<!\d)(?<!\d\s)\b(\d{4,5})\b(?!\s*\d)', cleaned):
+        # Pattern E: Standalone 4-to-5 digit numeric code if verification keywords present (isolated from phone numbers & hyphenated words)
+        if any(k in sanitized_lower for k in ["verify", "code", "pin", "confirm", "otp", "passcode"]):
+            for match in re.finditer(r'(?<![\d\w-])(?<!\d\s)\b(\d{4,5})\b(?!\s*\d)(?!-[\d\w])', sanitized):
                 val = match.group(1)
                 if is_valid_otp(val):
                     return val
@@ -346,6 +391,8 @@ class AutoEmailVerifier:
 
             async with websockets.connect(ws_url, max_size=20 * 1024 * 1024) as ws:
                 while loop.time() - start_time < timeout_secs:
+                    if hasattr(ws, "open") and not ws.open:
+                        break
                     find_row_js = f"""
                     (() => {{
                         const rows = Array.from(document.querySelectorAll('div[role=main] tr[role=row], tr.zA'));
