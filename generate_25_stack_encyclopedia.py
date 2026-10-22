@@ -1,0 +1,348 @@
+import json
+import os
+import time
+
+TARGET_FILE = r"C:\Users\Gary\github-cctv-seo\master_25_stack_encyclopedia.json"
+
+encyclopedia = {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "1.0.0",
+    "last_updated": time.strftime("%Y-%m-%dT%H:%M:%S+01:00"),
+    "title": "ADI Communications & Gary Pearce — Master 25-Category Stacking Architecture Encyclopedia",
+    "description": "Comprehensive reference directory of 25 content & syndication categories for automated SEO stacking via APIs, MCPs, Docker, and Git integration.",
+    "lead_engineer": {
+        "name": "Gary Pearce",
+        "business": "ADI Communications",
+        "telephone": "07860 244 274",
+        "coverage": "Yorkshire, Lancashire & Greater Manchester",
+        "experience": "25+ Years Hands-on Craftsmanship",
+        "insurance": "£10,000,000 Public Liability Insurance",
+        "cai_status": "Fitted with CAI-benchmarked equipment and double-screened WF100 cable (NOT a CAI member)"
+    },
+    "rule_45_google_shield": {
+        "primary_blogger_da99": "https://tvandhomesecurity.blogspot.com/",
+        "google_drive_asset_vault_da100": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+        "youtube_verified_channel": "https://www.youtube.com/@CCTV.services",
+        "firebase_app_hosting_edge": "https://gary-pearce-forensic-hub.web.app/",
+        "buffer_posts": {
+            "starlink_chimney_apex": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+            "ajax_wireless_alarm": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+            "ethernet_upstairs": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+            "tv_above_fireplace": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/"
+        }
+    },
+    "categories": []
+}
+
+raw_categories = [
+    {
+        "id": 1,
+        "name": "Blog Networks",
+        "what_to_publish": "Original technical field articles, problem-solution guides, and trade tutorials",
+        "automation_route": "REST API, Blogger API v3, WordPress REST, Ghost Admin API, MCP, RSS feeds",
+        "top_platforms": [
+            {"name": "Blogger", "url": "https://blogger.com", "role": "Primary Google Shield Hub (DA 99)", "auth": "Google OAuth"},
+            {"name": "WordPress.com", "url": "https://wordpress.com", "role": "Hosted Technical Blog", "auth": "REST API / OAuth"},
+            {"name": "Ghost", "url": "https://ghost.org", "role": "Headless Publishing Node", "auth": "Admin API Key"},
+            {"name": "Post Press / BlogWire", "url": "https://postpress.io", "role": "Unified Multi-Blog API / MCP", "auth": "API Key / MCP"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 2,
+        "name": "PDF and Ebook Networks",
+        "what_to_publish": "Downloadable engineering specifications, compliance checklists, and field guides",
+        "automation_route": "Upload API, ReportLab automated Python pipeline, Simplebooklet MCP, Internet Archive S3",
+        "top_platforms": [
+            {"name": "Google Drive PDF Vault", "url": "https://drive.google.com", "role": "Public PDF Vault (DA 100)", "auth": "Drive API"},
+            {"name": "Internet Archive Documents", "url": "https://archive.org", "role": "Permanent Archival & Dublin Core", "auth": "IAS3 Keys"},
+            {"name": "Simplebooklet", "url": "https://simplebooklet.com", "role": "Interactive 3D Flipbooks", "auth": "MCP / Upload API"},
+            {"name": "Scribd", "url": "https://scribd.com", "role": "Public Document Discovery", "auth": "Upload API / Web"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 3,
+        "name": "Presentation Networks",
+        "what_to_publish": "16:9 interactive slide decks, obstacle diagrams, and hardware architecture flows",
+        "automation_route": "Google Slides API, SlideShare, Speaker Deck PDF export, Git Action deck builders",
+        "top_platforms": [
+            {"name": "Google Slides", "url": "https://slides.google.com", "role": "Public Presentation Embeds (DA 100)", "auth": "Google OAuth"},
+            {"name": "Speaker Deck", "url": "https://speakerdeck.com", "role": "Developer Slide Platform", "auth": "GitHub / PDF Upload"},
+            {"name": "SlideShare", "url": "https://slideshare.net", "role": "Technical Deck Index", "auth": "Account / Upload"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 4,
+        "name": "Image and Infographic Networks",
+        "what_to_publish": "Trade photography (Starlink 90mph mounts, Ajax alarms, 4K ColorVu), DORI lens diagrams",
+        "automation_route": "Chevereto REST API (FreeImage.Host, ImgBB), Pinterest API v5, Flickr OAuth, Catbox API",
+        "top_platforms": [
+            {"name": "FreeImage.Host", "url": "https://freeimage.host", "role": "Instant REST API Viewer Pages", "auth": "API Key"},
+            {"name": "Pinterest", "url": "https://pinterest.com", "role": "Visual Pins with Buffer Links", "auth": "OAuth 2.0"},
+            {"name": "Flickr", "url": "https://flickr.com", "role": "Geotagged Photo Pages with EXIF", "auth": "OAuth 1.0a"},
+            {"name": "jsDelivr Multi-CDN", "url": "https://jsdelivr.com", "role": "Sub-15ms Edge CDN Delivery", "auth": "GitHub Automated"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 5,
+        "name": "Video Networks",
+        "what_to_publish": "Trade field debrief videos, hardware unboxings, spectrum sweeps, and installation walkthroughs",
+        "automation_route": "YouTube Data API v3, Dailymotion API, Vimeo API, PeerTube ActivityPub, FFmpeg transcode",
+        "top_platforms": [
+            {"name": "YouTube", "url": "https://youtube.com", "role": "Channel @CCTV.services (Google Entity)", "auth": "OAuth 2.0"},
+            {"name": "Dailymotion", "url": "https://dailymotion.com", "role": "Secondary High-Trust Video Parasite", "auth": "REST Upload API"},
+            {"name": "Vimeo", "url": "https://vimeo.com", "role": "High-Fidelity Showcase Embeds", "auth": "OAuth 2.0"},
+            {"name": "PeerTube", "url": "https://joinpeertube.org", "role": "Self-Hosted / Federated Video", "auth": "REST API"}
+        ],
+        "shield_anchor": "youtube_verified_channel"
+    },
+    {
+        "id": 6,
+        "name": "Audio and Podcast Networks",
+        "what_to_publish": "Dual-engineer field debriefs, technical study guides, and audio glossaries",
+        "automation_route": "Podbean API, Spotify for Creators, SoundCloud API, RSSHub feed generators",
+        "top_platforms": [
+            {"name": "YouTube Podcasts", "url": "https://podcasts.google.com", "role": "Google Search Podcast Carousels", "auth": "YouTube Studio"},
+            {"name": "Spotify for Creators", "url": "https://creators.spotify.com", "role": "Global Spotify Distribution", "auth": "Podcasters API"},
+            {"name": "Podbean", "url": "https://podbean.com", "role": "Automated Apple/Amazon RSS Hub", "auth": "REST API / RSS"},
+            {"name": "SoundCloud", "url": "https://soundcloud.com", "role": "Embeddable Audio Waveforms", "auth": "REST API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 7,
+        "name": "Dataset Networks",
+        "what_to_publish": "UK Police recorded crime statistics, CCTV camera DORI matrices, and cable loss tables",
+        "automation_route": "Kaggle CLI/API, Google Sheets API, Zenodo Deposit API, GitHub raw CSV commits",
+        "top_platforms": [
+            {"name": "Kaggle Datasets", "url": "https://kaggle.com/datasets", "role": "Public Research Data Science Hub", "auth": "Kaggle API"},
+            {"name": "Google Sheets Data", "url": "https://sheets.google.com", "role": "Live Synchronizing CSV/HTML Tables", "auth": "Google OAuth"},
+            {"name": "Zenodo", "url": "https://zenodo.org", "role": "CERN-Backed Research Repository (DOI)", "auth": "Deposit API"},
+            {"name": "GitHub Gists", "url": "https://gist.github.com", "role": "Structured JSON & CSV Data Snippets", "auth": "GitHub API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 8,
+        "name": "Chart and Dashboard Networks",
+        "what_to_publish": "Interactive wind-load calculators, crime density maps, and speed comparison charts",
+        "automation_route": "Tableau Public API, Flourish Studio embed, Observable HQ D3.js notebooks, Datawrapper",
+        "top_platforms": [
+            {"name": "Tableau Public", "url": "https://public.tableau.com", "role": "Public Interactive BI Dashboards", "auth": "Desktop / Web"},
+            {"name": "Flourish Studio", "url": "https://flourish.studio", "role": "Animated Race & Comparison Charts", "auth": "Web / Embed"},
+            {"name": "Observable HQ", "url": "https://observablehq.com", "role": "D3.js Vector Computation Graphs", "auth": "Notebook API"},
+            {"name": "Looker Studio", "url": "https://lookerstudio.google.com", "role": "Google Cloud Analytics Dashboards", "auth": "Google OAuth"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 9,
+        "name": "Code and Template Networks",
+        "what_to_publish": "Open-source diagnostic tools, Ohm's law calculators, and network planning scripts",
+        "automation_route": "GitHub Actions, GitLab CI/CD, Codeberg Git push, npm package registry",
+        "top_platforms": [
+            {"name": "GitHub", "url": "https://github.com", "role": "Core Open-Source Repo gazpearce", "auth": "GitHub OAuth"},
+            {"name": "GitLab", "url": "https://gitlab.com", "role": "Automated Mirror & CI/CD Pipelines", "auth": "GitLab OAuth"},
+            {"name": "Codeberg", "url": "https://codeberg.org", "role": "European FOSS Authority Node", "auth": "Git Push"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 10,
+        "name": "Documentation Networks",
+        "what_to_publish": "Comprehensive technical installation manuals, hardware pinouts, and compliance standards",
+        "automation_route": "Read the Docs webhooks, Docusaurus static builds, MkDocs Material, GitBook sync",
+        "top_platforms": [
+            {"name": "Read the Docs", "url": "https://readthedocs.org", "role": "Automated Sphinx/MkDocs Manuals", "auth": "Git Webhooks"},
+            {"name": "Docusaurus", "url": "https://docusaurus.io", "role": "React Technical Knowledge Base", "auth": "Static Git"},
+            {"name": "GitBook", "url": "https://gitbook.com", "role": "Collaborative Engineering Documentation", "auth": "GitHub Sync"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 11,
+        "name": "Public Wiki Networks",
+        "what_to_publish": "Technical security glossaries (DORI, TDMA, Jeweller, EXIR, F1.0), standards encyclopedias",
+        "automation_route": "MediaWiki API, Wiki.js REST API, DokuWiki, BookStack API",
+        "top_platforms": [
+            {"name": "Wikimedia Commons", "url": "https://commons.wikimedia.org", "role": "Public Domain Technical Diagrams", "auth": "MediaWiki Bot"},
+            {"name": "Wiki.js", "url": "https://js.wiki", "role": "Self-Hosted Modern Node.js Wiki", "auth": "REST / GraphQL"},
+            {"name": "BookStack", "url": "https://bookstackapp.com", "role": "Organized Book/Chapter Documentation", "auth": "REST API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 12,
+        "name": "Newsletter Networks",
+        "what_to_publish": "Yorkshire trade field engineering dispatches, crime alert digests, and rural broadband case studies",
+        "automation_route": "Substack API / Web, Buttondown API, Ghost Newsletter API, Resend email dispatch",
+        "top_platforms": [
+            {"name": "Substack", "url": "https://substack.com", "role": "Trade Engineering Newsletter", "auth": "Web / Email"},
+            {"name": "Buttondown", "url": "https://buttondown.email", "role": "Developer-Friendly Newsletter API", "auth": "REST API"},
+            {"name": "Blogger Atom Feed", "url": "https://blogger.com", "role": "Syndicated RSS Email Automation", "auth": "Google OAuth"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 13,
+        "name": "Community Publishing",
+        "what_to_publish": "In-depth technical answers, troubleshooting guides, and RF jamming mitigation case studies",
+        "automation_route": "Discourse API, Flarum REST API, Reddit API (where permitted), NodeBB",
+        "top_platforms": [
+            {"name": "Dev.to Community", "url": "https://dev.to", "role": "Technical Tutorials & Discussions", "auth": "REST API"},
+            {"name": "Hashnode Community", "url": "https://hashnode.com", "role": "Developer Whitepapers & Q&A", "auth": "GraphQL API"},
+            {"name": "Discourse Self-Hosted", "url": "https://discourse.org", "role": "Security Community Forum", "auth": "Admin API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 14,
+        "name": "Public App and Demo Networks",
+        "what_to_publish": "Interactive forensic calculators (CCTV storage, PoE voltage drop, Starlink wind load)",
+        "automation_route": "Firebase CLI, Vercel CLI, Netlify CLI, Render static deploy, Hugging Face Gradio git",
+        "top_platforms": [
+            {"name": "Firebase Hosting", "url": "https://firebase.google.com", "role": "Google Anycast Edge Tool Hub", "auth": "Firebase CLI"},
+            {"name": "Hugging Face Spaces", "url": "https://huggingface.co/spaces", "role": "Interactive Gradio Diagnostics", "auth": "Git / Python"},
+            {"name": "Vercel / Netlify", "url": "https://vercel.com", "role": "Serverless Previews & Calculators", "auth": "Git Deploy"}
+        ],
+        "shield_anchor": "firebase_app_hosting_edge"
+    },
+    {
+        "id": 15,
+        "name": "Open-Source Project Networks",
+        "what_to_publish": "FOSS network diagnostics, CCTV calculator libraries, and Dublin Core syndication scripts",
+        "automation_route": "GitHub Releases API, PyPI package releases, npm package publishes, Git tags",
+        "top_platforms": [
+            {"name": "GitHub Releases", "url": "https://github.com", "role": "Pre-Compiled Diagnostic Binaries", "auth": "GitHub Actions"},
+            {"name": "PyPI", "url": "https://pypi.org", "role": "Python CCTV Math Library Package", "auth": "API Token"},
+            {"name": "Open Source Initiative", "url": "https://opensource.org", "role": "Open Standards Compliance", "auth": "Git"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 16,
+        "name": "Research Repositories",
+        "what_to_publish": "Academic-grade reports on wireless 868MHz frequency hopping vs 433MHz legacy vulnerabilities",
+        "automation_route": "Zenodo REST API, OSF (Open Science Framework) API, Figshare API",
+        "top_platforms": [
+            {"name": "Zenodo (CERN)", "url": "https://zenodo.org", "role": "Permanent Research DOIs (DA 92)", "auth": "Deposit API"},
+            {"name": "OSF", "url": "https://osf.io", "role": "Open Science Research Repository", "auth": "REST API"},
+            {"name": "Figshare", "url": "https://figshare.com", "role": "Citable Research Output", "auth": "API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 17,
+        "name": "Digital Archive Networks",
+        "what_to_publish": "Lossless audiovisual records, Dublin Core metadata catalogs, and physical security historical guides",
+        "automation_route": "Internet Archive IAS3 S3-compatible API, Perma.cc, Archive.today webhooks",
+        "top_platforms": [
+            {"name": "Internet Archive", "url": "https://archive.org", "role": "Permanent Digital Preservation (DA 96)", "auth": "IAS3 Keys"},
+            {"name": "Archive.today", "url": "https://archive.today", "role": "On-Demand Snapshot Archival", "auth": "HTTP Submit"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 18,
+        "name": "Map and Geographic Networks",
+        "what_to_publish": "Interactive coverage maps, outward postcode risk polygons, and verified trade installations",
+        "automation_route": "Google Maps Platform / My Maps API, OpenStreetMap API, GeoJSON edge hosting",
+        "top_platforms": [
+            {"name": "Google My Maps", "url": "https://mymaps.google.com", "role": "Interactive Service Territory Embeds", "auth": "Google OAuth"},
+            {"name": "OpenStreetMap", "url": "https://openstreetmap.org", "role": "Open Geographic Grounding", "auth": "OSM API"},
+            {"name": "Felt / Mapbox", "url": "https://felt.com", "role": "Collaborative Vector GeoJSON Maps", "auth": "API / Web"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 19,
+        "name": "Diagram and Whiteboard Networks",
+        "what_to_publish": "System architecture diagrams (Starlink Gen 3 to Wi-Fi 7 mesh; PoE switch cavity drops)",
+        "automation_route": "Mermaid.js static SVG compilation, Excalidraw JSON export, Draw.io GitHub sync",
+        "top_platforms": [
+            {"name": "Draw.io (diagrams.net)", "url": "https://app.diagrams.net", "role": "Scalable SVG System Blueprints", "auth": "GitHub Sync"},
+            {"name": "Excalidraw", "url": "https://excalidraw.com", "role": "Hand-Drawn Technical Schematics", "auth": "Client-Side"},
+            {"name": "Mermaid Live", "url": "https://mermaid.live", "role": "Code-Driven Flowchart Compilation", "auth": "Automated"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 20,
+        "name": "Public Profile and Portfolio Networks",
+        "what_to_publish": "Verified engineer credentials, £10M Public Liability, NVQ qualifications, client testimonials",
+        "automation_route": "GitHub Profile README (`gazpearce/README.md`), Carrd, Notion Sites, Readme.com",
+        "top_platforms": [
+            {"name": "GitHub Profile", "url": "https://github.com/gazpearce", "role": "Verified Lead Engineer Profile (DA 96)", "auth": "Git Push"},
+            {"name": "Carrd Micro-Card", "url": "https://carrd.co", "role": "Responsive Contact & Rating Card", "auth": "Web / API"},
+            {"name": "Notion Public Site", "url": "https://notion.so", "role": "Interactive Engineer Portfolio", "auth": "Notion API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 21,
+        "name": "Q&A and Educational Networks",
+        "what_to_publish": "Authoritative answers to high-intent questions (e.g., 'Can you mount a TV above a fireplace?')",
+        "automation_route": "Google Classroom API, StackExchange / StackOverflow (where on-topic), Quora API",
+        "top_platforms": [
+            {"name": "Google Classroom", "url": "https://classroom.google.com", "role": "Telecom & Security Training Academy", "auth": "Google OAuth"},
+            {"name": "Dev.to Q&A", "url": "https://dev.to", "role": "Technical Q&A Solutions", "auth": "REST API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 22,
+        "name": "Bookmark and Resource Networks",
+        "what_to_publish": "Curated resource directories of UK wiring regulations, Eurocode 1 wind maps, and CAI standards",
+        "automation_route": "Raindrop.io REST API, Linkwarden Self-Hosted, Shaarli RSS, Pocket API",
+        "top_platforms": [
+            {"name": "Raindrop.io", "url": "https://raindrop.io", "role": "Public Curated Telecom Collections", "auth": "REST API"},
+            {"name": "Linkwarden", "url": "https://linkwarden.app", "role": "Self-Hosted Resource Archive", "auth": "REST API"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 23,
+        "name": "Static Microsite Networks",
+        "what_to_publish": "Topic-specific single-service knowledge bases (Starlink Rigging UK, Ajax Security Hub)",
+        "automation_route": "GitHub Pages, GitLab Pages, Cloudflare Pages, Surge.sh CLI, Tiiny Host",
+        "top_platforms": [
+            {"name": "Cloudflare Pages", "url": "https://pages.cloudflare.com", "role": "Global Anycast Microsite", "auth": "Git / API"},
+            {"name": "Surge.sh", "url": "https://surge.sh", "role": "Instant CLI Static Sandbox", "auth": "CLI Token"},
+            {"name": "Neocities", "url": "https://neocities.org", "role": "Independent Tech Microsite", "auth": "API Key"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 24,
+        "name": "Federated Publishing Networks",
+        "what_to_publish": "Decentralized trade field logs, daily equipment telemetry, and activity updates",
+        "automation_route": "Bluesky AT Protocol API, Mastodon ActivityPub REST API, Nostr protocol",
+        "top_platforms": [
+            {"name": "Bluesky Social", "url": "https://bsky.app", "role": "Open AT Protocol Micro-Blog", "auth": "App Password"},
+            {"name": "Mastodon", "url": "https://joinmastodon.org", "role": "Federated ActivityPub Node", "auth": "Bearer Token"}
+        ],
+        "shield_anchor": "primary_blogger_da99"
+    },
+    {
+        "id": 25,
+        "name": "App Directories and Showcases",
+        "what_to_publish": "Submission of the 12 forensic tools to open-source software directories and developer tools lists",
+        "automation_route": "Product Hunt API, AlternativeTo submissions, GitHub Topic Tags, Open Source Guides",
+        "top_platforms": [
+            {"name": "AlternativeTo", "url": "https://alternativeto.net", "role": "Free Open-Source Software Listing", "auth": "Web / Submission"},
+            {"name": "GitHub Topics", "url": "https://github.com/topics", "role": "cctv-calculator, starlink-tools Tags", "auth": "GitHub API"}
+        ],
+        "shield_anchor": "firebase_app_hosting_edge"
+    }
+]
+
+encyclopedia["categories"] = raw_categories
+
+with open(TARGET_FILE, "w", encoding="utf-8") as f:
+    json.dump(encyclopedia, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully generated {TARGET_FILE}")
+print(f"Total Stacking Categories Registered: {len(encyclopedia['categories'])}")
