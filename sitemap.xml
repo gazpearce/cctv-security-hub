@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://gazpearce.github.io/cctv-security-hub/uk-postcode-crime-risk-checker.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://gazpearce.github.io/cctv-security-hub/cctv-dori-lens-calculator.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
