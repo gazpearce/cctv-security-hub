@@ -79,13 +79,8 @@ class TestDomain1Rule45AdversarialAndTier3Isolation(unittest.TestCase):
         Executes the exact detection logic from verify_no_root_anchors.py on a test line.
         Returns True if the line was flagged as a violation, False if it evaded detection.
         """
-        # Exact implementation from verify_no_root_anchors.py lines 16-18:
-        # if re.search(r"https?://(?:www\.)?adicommunications\.co\.uk/?(?:$|[?#\"'\s<>,;)\]}])", line):
-        #     if not re.search(r"adicommunications\.co\.uk/(?:news|assets|feed)", line):
-        #         violations.append(...)
-        is_root = bool(re.search(r"https?://(?:www\.)?adicommunications\.co\.uk/?(?:$|[?#\"'\s<>,;)\]}])", test_line))
-        is_exempt = bool(re.search(r"adicommunications\.co\.uk/(?:news|assets|feed)", test_line))
-        return is_root and not is_exempt
+        from verify_no_root_anchors import is_raw_root_violation
+        return is_raw_root_violation(test_line)
 
     def _run_script_on_temp_file(self, content: str) -> int:
         """

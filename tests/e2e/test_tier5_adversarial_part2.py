@@ -321,11 +321,11 @@ class TestDomain4LedgerStrictnessAndHtmlSecurity(unittest.TestCase):
             "Strict Draft 2020-12 schema must reject unauthorized entry properties"
         )
 
-        # Record vulnerability telemetry
+        # Verify schema strictness is enforced
         is_current_schema_strict = (len(root_errors) > 0 and len(entry_errors) > 0)
-        self.assertFalse(
+        self.assertTrue(
             is_current_schema_strict,
-            "CONFIRMED VULNERABILITY: Current public_backlink_ledger.schema.json lacks 'additionalProperties: false'"
+            "Strictness confirmed: public_backlink_ledger.schema.json enforces 'additionalProperties: false'"
         )
 
     def test_d4_03_html_rendered_cells_xss_scan(self):

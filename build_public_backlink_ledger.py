@@ -7,7 +7,7 @@ Compiles doc3_published_asset_links.csv into:
 """
 
 import csv
-from html import escape as html_escape
+import html
 import json
 import os
 import re
@@ -150,15 +150,15 @@ def build_ledger():
                      "YouTube (DA 100)" if "youtube.com" in e['top_of_stack_apex_url'] else \
                      "Blogger (DA 99)" if "blogspot.com" in e['top_of_stack_apex_url'] else \
                      "Firebase Edge (DA 98)"
-        asset_title = html_escape(str(e.get('asset_title', '')), quote=True)
-        cat_stack = html_escape(str(e.get('category_stack', '')), quote=True)
-        platform = html_escape(str(e.get('platform', '')), quote=True)
-        tags_html = html_escape(str(e.get('seo_tags', '')), quote=True)
-        public_url = html_escape(str(e.get('public_live_url', '')), quote=True)
-        apex_url = html_escape(str(e.get('top_of_stack_apex_url', '')), quote=True)
-        shield_url = html_escape(str(e.get('shield_target_url', '')), quote=True)
-        dofollow = html_escape(str(e.get('dofollow_status', '')), quote=True)
-        agent = html_escape(str(e.get('responsible_agent', '')), quote=True)
+        asset_title = html.escape(str(e.get('asset_title', '')), quote=True)
+        cat_stack = html.escape(str(e.get('category_stack', '')), quote=True)
+        platform = html.escape(str(e.get('platform', '')), quote=True)
+        tags_html = html.escape(str(e.get('seo_tags', '')), quote=True)
+        public_url = html.escape(str(e.get('public_live_url', '')), quote=True)
+        apex_url = html.escape(str(e.get('top_of_stack_apex_url', '')), quote=True)
+        shield_url = html.escape(str(e.get('shield_target_url', '')), quote=True)
+        dofollow = html.escape(str(e.get('dofollow_status', '')), quote=True)
+        agent = html.escape(str(e.get('responsible_agent', '')), quote=True)
 
         rows_html += f"""
         <tr class="hover:bg-white/[0.02] border-b border-white/5 transition" data-category="{cat_stack}">
@@ -193,7 +193,7 @@ def build_ledger():
         </tr>
         """
 
-    html = f"""<!DOCTYPE html>
+    html_content = f"""<!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
@@ -347,7 +347,7 @@ def build_ledger():
 </html>
 """
     with open(html_file, "w", encoding="utf-8") as f:
-        f.write(html)
+        f.write(html_content)
 
     print(f"[LEDGER] Generated {html_file} successfully with 100% parity.")
 

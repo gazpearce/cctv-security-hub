@@ -106,11 +106,11 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 105,Google Sites,sites.google.com,99,Edge & Static Hosting,Unlimited free sites on sites.google.com/view/,Google OAuth,https://sites.google.com/,JOINED,https://sites.google.com/view/adi-communications/
 106,Blogger (Google Shield),blogger.com,99,Blog & Editorial Networks,"Unlimited posts, custom domains, Google DA 99",Google OAuth,https://www.blogger.com/,JOINED,https://tvandhomesecurity.blogspot.com/
 107,GitBook,gitbook.com,91,Documentation & Knowledge Bases,Free public docs for open-source,GitHub / Google,https://www.gitbook.com/,PENDING,
-108,Read the Docs,readthedocs.org,91,Documentation & Knowledge Bases,Free Sphinx/MkDocs hosting for public repos,GitHub / GitLab,https://readthedocs.org/,PENDING,
+108,Read the Docs,readthedocs.org,91,Documentation & Knowledge Bases,Free Sphinx/MkDocs hosting for public repos,GitHub / GitLab,https://readthedocs.org/,JOINED,https://home-security-guide.readthedocs.io/en/latest/
 109,Dev.to,dev.to,91,Blog & Editorial Networks,Free developer publishing with canonical links,GitHub / Twitter,https://dev.to/enter,JOINED,https://dev.to/gary_pearce_2171c679bfd81
 110,Hashnode,hashnode.com,88,Blog & Editorial Networks,Free developer blogging on custom or hashnode subdomains,GitHub / Google,https://hashnode.com/,JOINED,https://hashnode.com/@hardwire
 111,Substack,substack.com,92,Blog & Editorial Networks,Free newsletter & article publishing,Google / Email,https://substack.com/signup,PENDING,
-112,Medium,medium.com,95,Blog & Editorial Networks,Free publishing to global readership,Google / Email,https://medium.com/m/signin,PENDING,
+112,Medium,medium.com,95,Blog & Editorial Networks,Free publishing to global readership,Google / Email,https://medium.com/m/signin,JOINED,https://medium.com/@garypearce.homesecurity
 113,CodePen,codepen.io,93,Developer & Interactive Pens,Free front-end HTML/CSS/JS interactive pens,GitHub / Google,https://codepen.io/accounts/signup,JOINED,https://codepen.io/aiagent1510
 114,JSFiddle,jsfiddle.net,90,Developer & Interactive Pens,Embeddable live JavaScript calculators,GitHub / Google,https://jsfiddle.net/user/login/,PENDING,
 115,StackBlitz,stackblitz.com,89,Developer & Interactive Pens,WebContainers in-browser full stack apps,GitHub / Google,https://stackblitz.com/,PENDING,
@@ -120,7 +120,7 @@ Rank,Platform Name,Domain,DA,Category,Free Allowance / Tier,1-Click Join Method 
 119,Framer,framer.com,88,Edge & Static Hosting,Free responsive visual landing pages,Google / Email,https://www.framer.com/signup/,PENDING,
 120,Webflow,webflow.com,92,Edge & Static Hosting,2 free unhosted design projects on webflow.io,Google / Email,https://webflow.com/dashboard/signup,PENDING,
 121,Wix,wix.com,94,Edge & Static Hosting,Free website builder on wixsite.com,Google / Email,https://users.wix.com/signin,JOINED,https://aiagent1510.wixsite.com/cctv/blog
-122,Notion Sites,notion.so,93,Documentation & Knowledge Bases,Publish any Notion page to the web,Google / Email,https://www.notion.so/signup,PENDING,
+122,Notion Sites,notion.so,93,Documentation & Knowledge Bases,Publish any Notion page to the web,Google / Email,https://www.notion.so/signup,JOINED,https://notion.so/Wireless-CCTV-Jamming-UK-Why-Battery-Cameras-Fail-3f8c143c1cca81248b75f79a5ca3b277
 123,Codeberg,codeberg.org,85,Cloud Repositories & CI/CD,Free European open-source Git hosting & Pages,Codeberg OAuth,https://codeberg.org/user/sign_up,PENDING,
 124,Google AI Studio,aistudio.google.com,98,AI Inference & Development,Free Gemini API rate limits & prompt tuning,Google OAuth,https://aistudio.google.com/,JOINED,https://aistudio.google.com/
 125,GroqCloud,console.groq.com,82,AI Inference & Development,"Ultra-fast LPU inference (Llama 3.3 70B, DeepSeek)",Google / GitHub,https://console.groq.com/,PENDING,

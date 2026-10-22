@@ -1,6 +1,6 @@
 {
   "total_platforms": 155,
-  "joined_count": 62,
+  "joined_count": 65,
   "platforms": [
     {
       "rank": "1",
@@ -1324,8 +1324,8 @@
       "free_tier": "Free Sphinx/MkDocs hosting for public repos",
       "sso_method": "GitHub / GitLab",
       "signup_url": "https://readthedocs.org/",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://home-security-guide.readthedocs.io/en/latest/",
       "rank": "108"
     },
     {
@@ -1372,8 +1372,8 @@
       "free_tier": "Free publishing to global readership",
       "sso_method": "Google / Email",
       "signup_url": "https://medium.com/m/signin",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://medium.com/@garypearce.homesecurity",
       "rank": "112"
     },
     {
@@ -1492,8 +1492,8 @@
       "free_tier": "Publish any Notion page to the web",
       "sso_method": "Google / Email",
       "signup_url": "https://www.notion.so/signup",
-      "status": "PENDING",
-      "active_tenant_url": "",
+      "status": "JOINED",
+      "active_tenant_url": "https://notion.so/Wireless-CCTV-Jamming-UK-Why-Battery-Cameras-Fail-3f8c143c1cca81248b75f79a5ca3b277",
       "rank": "122"
     },
     {
@@ -1894,5 +1894,6 @@
       "status": "JOINED",
       "active_tenant_url": "https://rumble.com/user/adicommunications"
     }
-  ]
+  ],
+  "pending_count": 90
 }

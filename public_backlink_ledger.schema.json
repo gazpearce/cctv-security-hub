@@ -4,6 +4,7 @@
   "title": "PublicBacklinkMasterLedger",
   "description": "JSON Schema Draft 2020-12 definition for ADI Communications Public Backlink Discovery Ledger.",
   "type": "object",
+  "additionalProperties": false,
   "required": [
     "$schema",
     "version",
@@ -43,6 +44,7 @@
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": [
           "platform",
           "category_stack",

@@ -20,6 +20,7 @@ import asyncio
 import csv
 import json
 import os
+import posixpath
 import random
 import re
 import sys
@@ -117,7 +118,7 @@ class IntegrityFirewall:
         re.IGNORECASE
     )
     AUTH_DOMAINS = ["accounts.google.com", "github.com/login", "auth0.com", "login.microsoftonline.com"]
-    RULE45_PATTERN = re.compile(r"https?://(?:www\.)?adicommunications\.co\.uk[^\s\"\'<>)]*", re.IGNORECASE)
+    RULE45_PATTERN = re.compile(r"(?:https?:)?//(?:www\.)?adicommunications\.co\.uk\.?(?::\d+)?[^\s\"\'<>)]*", re.IGNORECASE)
 
     @classmethod
     def validate_layer1_syntax(cls, url):
@@ -255,9 +256,11 @@ class IntegrityFirewall:
         for raw_url in matches:
             url = raw_url.rstrip(".,;:!?")
             parsed = urllib.parse.urlparse(url)
-            path = parsed.path.rstrip('/')
-            if path == "" or path in ("/index.html", "/index.php", "/index.htm"):
-                return False, f"Violation of Rule 45: raw naked root anchor to https://adicommunications.co.uk/"
+            unquoted_path = urllib.parse.unquote(parsed.path or "")
+            norm_path = posixpath.normpath("/" + unquoted_path.lstrip("/")).rstrip('/')
+            norm_raw = posixpath.normpath(unquoted_path).rstrip('/')
+            if norm_path == "" or norm_path in ("/index.html", "/index.php", "/index.htm") or norm_raw in ("", ".", "/index.html", "/index.php", "/index.htm"):
+                return False, "Violation of Rule 45: raw naked root anchor to https://adicommunications.co.uk/"
 
         return True, "Layer 5 Rule 45 Pass"
 
