@@ -1,119 +1,874 @@
 {
   "title": "ADI Communications \u2014 Master Multi-Tier Video Stacking Registry",
-  "updated_at": "2026-10-22T19:01:28.553302+00:00",
+  "updated_at": "2026-10-23T00:45:06.570747+00:00",
   "apex_youtube_channel": "https://www.youtube.com/@CCTV.services",
-  "total_platforms": 9,
+  "total_platforms": 50,
   "tier_summary": {
     "tier_1_apex": [
-      "YouTube (@CCTV.services, DA 100)"
+      "YouTube (https://www.youtube.com/@CCTV.services, DA 100)"
     ],
     "tier_2_top_level": [
-      "DailyMotion (DA 95)",
-      "Vimeo (DA 97)",
-      "Wistia (DA 92)",
-      "Internet Archive (DA 98)"
+      "Dailymotion (DA 95)",
+      "Vimeo (DA 95)",
+      "Internet Archive Video (DA 96)",
+      "Wistia Free (DA 92)",
+      "Loom Video (DA 89)",
+      "Vidyard (DA 86)",
+      "SproutVideo (DA 78)",
+      "Cincopa Media (DA 79)",
+      "Dacast Streaming (DA 75)",
+      "Kaltura Cloud (DA 84)",
+      "JW Player Showcase (DA 88)",
+      "Panopto Video (DA 82)",
+      "Brightcove Trial (DA 88)",
+      "Flowplayer (DA 83)",
+      "Spotlightr (DA 73)",
+      "Cloudinary Video (DA 92)",
+      "Mux Video (DA 84)",
+      "api.video (DA 78)"
     ],
     "tier_3_low_level": [
-      "Rumble (DA 90)",
-      "PeerTube (DA 82)",
-      "Bitchute (DA 78)",
-      "Odysee (DA 84)",
-      "DTube (DA 75)"
+      "Rumble (DA 92)",
+      "Odysee LBRY (DA 87)",
+      "PeerTube (DA 85)",
+      "BitChute (DA 86)",
+      "DTube (DA 79)",
+      "Streamable (DA 87)",
+      "DLive (DA 78)",
+      "Kick (DA 82)",
+      "Tilvids (PeerTube) (DA 52)",
+      "Diode.zone (PeerTube) (DA 50)",
+      "Framatube (PeerTube) (DA 65)",
+      "Peertube.stream (DA 45)",
+      "Peertube.social (DA 48)",
+      "Peertube.uno (DA 42)",
+      "Peertube.ch (DA 44)",
+      "Tube.kockatoo (DA 40)",
+      "Brighteon (DA 76)",
+      "UgeTube (DA 62)",
+      "BitTube (DA 58)",
+      "BrandNewTube (DA 64)",
+      "Jumpshare Video (DA 81)",
+      "Droplr Video (DA 80)",
+      "Gyazo Video (DA 85)",
+      "ScreenPal (DA 82)",
+      "Kapwing Studio (DA 84)",
+      "Veed.io Video (DA 84)",
+      "Wave.video (DA 80)",
+      "Hippo Video (DA 76)",
+      "Dubb Video (DA 74)",
+      "Covideo (DA 72)",
+      "Veoh Video (DA 82)"
     ]
   },
   "linking_invariants": {
-    "tier_1_apex": "Links to adicommunications.co.uk & tvandhomesecurity.blogspot.com",
+    "tier_1_apex": "Links to adicommunications.co.uk/news/... & tvandhomesecurity.blogspot.com",
     "tier_2_top_level": "Links to adicommunications.co.uk/news/... & youtube.com",
     "tier_3_low_level": "Links to youtube.com ONLY (0 raw website links)"
   },
   "videos": [
     {
-      "id": "vid-01",
-      "youtube_id": "dOFIxVqMxCM",
-      "youtube_url": "https://www.youtube.com/watch?v=dOFIxVqMxCM",
-      "youtube_short": "https://youtu.be/dOFIxVqMxCM",
-      "title": "Starlink Gen 3 & Mini UK Installation: 90mph Gale Chimney Mounts, Bypass & Speed Test",
-      "topic": "SpaceX Starlink Satellite Rigging",
-      "category": "Broadband Infrastructure & Telecommunications",
-      "duration_seconds": 45,
+      "id": "VID-001",
+      "title": "Starlink Gen 3 & Mini UK Installation: 90mph Gale Chimney Mounts & Bypass",
+      "duration_seconds": 46.3,
       "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
       "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
-      "timestamps": [
-        "00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Field Experience)",
-        "00:08 - Starlink Gen 3 Dish Obstruction Survey & 110\u00b0 Northern Orbital Cone",
-        "00:18 - Non-Drill Chimney Lashing Kits vs Pennine 90mph Gale Brackets",
-        "00:28 - UV-Rated Cat6 Exterior Drops, Drip Loops & Weatherproof Grommets",
-        "00:38 - Gen 3 Router Bypass Mode & Whole-Home Wi-Fi 7 Mesh Integration"
-      ],
       "tags": [
         "Starlink Installation UK",
         "SpaceX Starlink Gen 3",
         "Starlink Mini",
         "Non-Drill Chimney Mount",
-        "90mph Gale Tested",
+        "90mph Gale Rated",
         "Gary Pearce",
         "ADI Communications",
-        "Wi-Fi 7 Mesh",
-        "West Yorkshire Broadband"
+        "Wi-Fi 7 Mesh"
       ]
     },
     {
-      "id": "vid-02",
-      "youtube_id": "l-HN4BuzBGQ",
-      "youtube_url": "https://www.youtube.com/watch?v=l-HN4BuzBGQ",
-      "youtube_short": "https://youtu.be/l-HN4BuzBGQ",
-      "title": "Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail & MotionCam PhOD",
-      "topic": "Ajax Wireless Intrusion Detection",
-      "category": "Physical Security & Smart Intruder Alarms",
-      "duration_seconds": 46,
+      "id": "VID-002",
+      "title": "Starlink Obstruction Surveys: 110\u00b0 Northern Orbital Cone Clearance",
+      "duration_seconds": 45.5,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Starlink Obstruction Survey",
+        "110 Degree Orbital Cone",
+        "Starlink Field App",
+        "LEO Satellite Rigging",
+        "Gary Pearce",
+        "ADI Communications",
+        "Yorkshire Broadband"
+      ]
+    },
+    {
+      "id": "VID-003",
+      "title": "Starlink Gen 3 vs Starlink Mini: Power Draw, DC 12V-48V & Mobile Rigging",
+      "duration_seconds": 43.6,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Starlink Mini UK",
+        "Starlink Gen 3 Comparison",
+        "12V Starlink Rigging",
+        "Campervan Broadband",
+        "Off-Grid Internet",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-004",
+      "title": "Starlink Non-Drill Chimney Lashing Kits vs Galvanised Pennine Wall Brackets",
+      "duration_seconds": 45.3,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Chimney Lashing Kit",
+        "Non-Drill Satellite Mount",
+        "Pennine Gale Bracket",
+        "Eurocode 1 Wind Load",
+        "Gary Pearce",
+        "ADI Communications",
+        "Lancashire Rigging"
+      ]
+    },
+    {
+      "id": "VID-005",
+      "title": "Starlink Router Bypass Mode: Connecting Ubiquiti UniFi & Wi-Fi 7 Mesh",
+      "duration_seconds": 42.2,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Starlink Bypass Mode",
+        "Ubiquiti UniFi Starlink",
+        "Wi-Fi 7 Mesh UK",
+        "Whole Home Broadband",
+        "Ethernet Backhaul",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-006",
+      "title": "Exterior Cat6 Solid Copper Cable Drops for Starlink: Drip Loops & Seals",
+      "duration_seconds": 44.0,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Exterior Cat6 Cabling",
+        "Waterproof Drip Loop",
+        "UV Rated Network Cable",
+        "Solid Copper Cat6",
+        "BS 6701 Standards",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-007",
+      "title": "Starlink 4G/5G Hybrid Failover Setup: Zero-Downtime SD-WAN for Business",
+      "duration_seconds": 43.4,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Starlink 4G Failover",
+        "Dual WAN Rural Business",
+        "Zero Downtime Broadband",
+        "SD-WAN Yorkshire",
+        "Gary Pearce",
+        "ADI Communications",
+        "Telecom Engineer"
+      ]
+    },
+    {
+      "id": "VID-008",
+      "title": "Diagnosing & Re-Aligning Storm-Damaged Starlink Dish Brackets in Gales",
+      "duration_seconds": 40.1,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Starlink Storm Repair",
+        "Realigning Starlink Dish",
+        "Pennine Gale Damage",
+        "Heavy Duty Masts",
+        "Gary Pearce",
+        "ADI Communications",
+        "Yorkshire Storm Repairs"
+      ]
+    },
+    {
+      "id": "VID-009",
+      "title": "Ajax Smart Alarms UK Masterclass 2026: Why Legacy 433MHz Bells Fail",
+      "duration_seconds": 48.7,
       "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
       "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
-      "timestamps": [
-        "00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Trade Experience)",
-        "00:10 - Why Legacy 433MHz Alarms Are Jammed & Bypassed in Minutes",
-        "00:22 - Ajax Jeweller 868MHz Frequency Hopping & Encrypted Rolling Code",
-        "00:32 - StreetSiren Masonry Mounting & 90mph Gale Wind Testing",
-        "00:40 - Hub 2 Plus Dual Micro-SIM Cellular Failover & Ethernet Integration"
-      ],
       "tags": [
         "Ajax Smart Alarms",
         "Grade 2 Intruder Alarm",
         "Jeweller 868MHz",
         "Anti-Jamming Security",
-        "MotionCam PhOD",
-        "StreetSiren 113dB",
+        "Smart Alarms UK",
         "Gary Pearce",
-        "ADI Communications",
-        "Leeds Alarm Installation"
+        "ADI Communications"
       ]
     },
     {
-      "id": "vid-03",
-      "youtube_id": "50q89TsNN3w",
-      "youtube_url": "https://www.youtube.com/watch?v=50q89TsNN3w",
-      "youtube_short": "https://youtu.be/50q89TsNN3w",
-      "title": "Hikvision ColorVu vs Infrared CCTV UK: Night Vision, DORI Standards & 4K Police Evidence",
-      "topic": "4K Ultra-HD Surveillance & Court Admissibility",
-      "category": "Commercial & Domestic CCTV Engineering",
-      "duration_seconds": 46,
-      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
-      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
-      "timestamps": [
-        "00:00 - CCTV Night Vision Reality: Infrared Fogging & Spiderweb Glare",
-        "00:12 - ColorVu 24/7 Full Colour Video with F1.0 Super-Aperture",
-        "00:25 - DORI Admissibility Standards: 250 Pixels/Metre for Court Evidence",
-        "00:38 - Hardwired PoE Cat6 vs Vulnerable Wi-Fi Jamming Attacks"
-      ],
+      "id": "VID-010",
+      "title": "Ajax Jeweller 868MHz vs 433MHz RF Jammers: Handheld Spectrum Analysis",
+      "duration_seconds": 46.5,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
       "tags": [
-        "Hikvision ColorVu",
-        "4K CCTV UK",
-        "Police Evidence CCTV",
-        "BS EN 62676-4 DORI",
-        "F1.0 Super Aperture",
-        "PoE Data Cabling",
+        "RF Jammer Test",
+        "Jeweller 868MHz",
+        "Alarm Spectrum Analysis",
+        "Anti-Jamming Protocol",
         "Gary Pearce",
         "ADI Communications",
-        "Bradford CCTV Specialist"
+        "Security Specialist"
+      ]
+    },
+    {
+      "id": "VID-011",
+      "title": "Ajax Hub 2 Plus Failover Engineering: Dual Micro-SIM 4G, LAN & Wi-Fi",
+      "duration_seconds": 43.0,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "tags": [
+        "Ajax Hub 2 Plus",
+        "Dual SIM Alarm",
+        "Cellular Failover Alarm",
+        "Grade 2 Hub",
+        "Gary Pearce",
+        "ADI Communications",
+        "Blackburn Security"
+      ]
+    },
+    {
+      "id": "VID-012",
+      "title": "Ajax StreetSiren 113dB Masonry Mounting & Accelerometer Anti-Pry Tuning",
+      "duration_seconds": 43.1,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "tags": [
+        "Ajax StreetSiren",
+        "113dB Outdoor Bell Box",
+        "Anti-Pry Tamper Alarm",
+        "Grade 2 Siren",
+        "Gary Pearce",
+        "ADI Communications",
+        "Leeds Security"
+      ]
+    },
+    {
+      "id": "VID-013",
+      "title": "Ajax MotionCam Outdoor PhOD: Dual PIR Sensors & Pet-Immunity Algorithm",
+      "duration_seconds": 43.9,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "tags": [
+        "MotionCam Outdoor PhOD",
+        "Photo Verification Alarm",
+        "Pet Immune PIR",
+        "Outdoor Security Camera",
+        "Gary Pearce",
+        "ADI Communications",
+        "Harrogate Alarm"
+      ]
+    },
+    {
+      "id": "VID-014",
+      "title": "Ajax DoorProtect Plus: Vibration & Tilt Sensors for UPVC & Bifold Doors",
+      "duration_seconds": 41.5,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "tags": [
+        "DoorProtect Plus",
+        "Bifold Door Alarm",
+        "UPVC Door Shock Sensor",
+        "Vibration Detector",
+        "Gary Pearce",
+        "ADI Communications",
+        "Yorkshire Alarms"
+      ]
+    },
+    {
+      "id": "VID-015",
+      "title": "Ajax Fibra Hybrid Architecture: Combining Hardwired Bus with Jeweller",
+      "duration_seconds": 43.6,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "tags": [
+        "Ajax Fibra",
+        "Hybrid Security System",
+        "Grade 3 Alarm UK",
+        "Hardwired Bus Alarm",
+        "Commercial Intruder Alarm",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-016",
+      "title": "Ajax Security App Configuration: Immediate Push Alerts & Geofencing",
+      "duration_seconds": 42.6,
+      "website_buffer": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/ajax-smart-alarms-uk-masterclass-2026.html",
+      "tags": [
+        "Ajax App Setup",
+        "Smart Alarm Notifications",
+        "Geofencing Security",
+        "Keypad Touchscreen",
+        "Gary Pearce",
+        "ADI Communications",
+        "Smart Security UK"
+      ]
+    },
+    {
+      "id": "VID-017",
+      "title": "Hikvision ColorVu vs Infrared CCTV UK: Night Vision & 4K Police Evidence",
+      "duration_seconds": 44.5,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-night-vision/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "Hikvision ColorVu",
+        "Night Vision CCTV",
+        "4K Color CCTV",
+        "Police Evidence CCTV",
+        "F1.0 Aperture",
+        "Gary Pearce",
+        "ADI Communications",
+        "Bradford CCTV"
+      ]
+    },
+    {
+      "id": "VID-018",
+      "title": "BS EN 62676-4 DORI Standards: Why 82% of UK CCTV Fails CPS Court Evidence",
+      "duration_seconds": 46.4,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "DORI Standards",
+        "BS EN 62676-4",
+        "CPS Evidence CCTV",
+        "CCTV Pixel Density",
+        "4K Security Cameras",
+        "Gary Pearce",
+        "ADI Communications",
+        "CCTV Specialist"
+      ]
+    },
+    {
+      "id": "VID-019",
+      "title": "CCTV Shutter Speed & Photonic Capture: Eliminating Night Motion Smear",
+      "duration_seconds": 39.8,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-night-vision/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "CCTV Shutter Speed",
+        "Night Motion Smear",
+        "CCTV Calibration",
+        "Hikvision Exposure Settings",
+        "Gary Pearce",
+        "ADI Communications",
+        "Security Engineer"
+      ]
+    },
+    {
+      "id": "VID-020",
+      "title": "Hikvision AcuSense AI Filtering: Human & Vehicle False-Alarm Suppression",
+      "duration_seconds": 41.5,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "Hikvision AcuSense",
+        "AI CCTV Filtering",
+        "False Alarm Suppression",
+        "Perimeter Protection",
+        "Line Crossing Detection",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-021",
+      "title": "16MP Panoramic 180\u00b0 Dual-Lens CCTV Turret: Seamless Stitched Coverage",
+      "duration_seconds": 43.5,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "16MP Panoramic CCTV",
+        "180 Degree Dual Lens",
+        "Seamless Stitched CCTV",
+        "Hikvision Panoramic",
+        "Driveway Security",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-022",
+      "title": "CCTV Junction Box Mounting on Yorkshire Gritstone & Cable Concealment",
+      "duration_seconds": 44.5,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "CCTV Junction Box",
+        "Yorkshire Stone Mounting",
+        "Cable Concealment",
+        "IP67 Weatherproof Base",
+        "Architectural CCTV",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-023",
+      "title": "Hardwired PoE Cat6 vs Vulnerable Wi-Fi Cameras: RF Deauth Vulnerability",
+      "duration_seconds": 43.6,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "PoE vs WiFi CCTV",
+        "RF Jammer Deauth Attack",
+        "Hardwired Security Cameras",
+        "Cat6 PoE Infrastructure",
+        "Gary Pearce",
+        "ADI Communications",
+        "Surveillance Expert"
+      ]
+    },
+    {
+      "id": "VID-024",
+      "title": "Hikvision NVR Local Storage & RAID: GDPR Compliance & Watermark Hashes",
+      "duration_seconds": 43.3,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv-4k/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "Hikvision NVR Storage",
+        "CCTV Hard Drives",
+        "WD Purple Surveillance",
+        "GDPR CCTV UK",
+        "Zero Subscription Security",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-025",
+      "title": "DarkFighter vs ColorVu: Choosing the Right Sensor for Urban vs Rural",
+      "duration_seconds": 43.1,
+      "website_buffer": "https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-night-vision/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/hikvision-colorvu-vs-infrared-cctv-4k.html",
+      "tags": [
+        "DarkFighter vs ColorVu",
+        "Low Light CCTV",
+        "Rural Farm Security",
+        "Suburban Security Camera",
+        "Hikvision Sensor Comparison",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-026",
+      "title": "Reolink PoE Video Doorbell Installation: Masonry Mounting & Chimes",
+      "duration_seconds": 45.2,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Reolink PoE Doorbell",
+        "Hardwired Video Doorbell",
+        "Smart Doorbell UK",
+        "Masonry Doorbell Mount",
+        "No Subscription Doorbell",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-027",
+      "title": "Ring Video Doorbell Gritstone Wedge Mounts on Uneven Yorkshire Stone",
+      "duration_seconds": 40.8,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Ring Doorbell Wedge",
+        "Yorkshire Stone Doorbell",
+        "Gritstone Doorbell Mount",
+        "Angle Mount Doorbell",
+        "Period Property Security",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-028",
+      "title": "24V DIN-Rail Bell Transformer Installation in Domestic Consumer Units",
+      "duration_seconds": 46.4,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "24V Bell Transformer",
+        "Smart Doorbell Wiring",
+        "Consumer Unit DIN Rail",
+        "BS 7671 Electrical",
+        "Doorbell Power Supply",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-029",
+      "title": "Reolink PoE Doorbell Local NVR Recording & Intercom Latency Testing",
+      "duration_seconds": 41.3,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Local Doorbell Recording",
+        "Reolink NVR Doorbell",
+        "ONVIF Video Doorbell",
+        "Low Latency Intercom",
+        "Zero Subscription Doorbell",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-030",
+      "title": "Smart Video Doorbells on Composite Doors: Clean Transom Drops",
+      "duration_seconds": 42.1,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Composite Door Doorbell",
+        "Clean Doorbell Installation",
+        "Concealed Wiring Doorbell",
+        "Architectural Security",
+        "Gary Pearce",
+        "ADI Communications",
+        "Harrogate Doorbell"
+      ]
+    },
+    {
+      "id": "VID-031",
+      "title": "Hardwired Ethernet Doorbells vs 2.4GHz Wi-Fi: Eliminating Jamming Risks",
+      "duration_seconds": 44.4,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Doorbell Jamming Protection",
+        "Hardwired Ethernet Doorbell",
+        "Anti-Deauth Security",
+        "PoE Video Doorbell",
+        "Gary Pearce",
+        "ADI Communications",
+        "Security Engineer"
+      ]
+    },
+    {
+      "id": "VID-032",
+      "title": "Exterior Cat6 Solid Copper Cavity Drops: Drip Loops, UV & CPR Ratings",
+      "duration_seconds": 44.7,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Exterior Cat6 Cable",
+        "Solid Copper Data Run",
+        "UV Stable Ethernet",
+        "CPR Rated Cabling",
+        "BS 6701 Standards",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-033",
+      "title": "How to Get Ethernet Upstairs in UK Homes Without Unsightly Trunking",
+      "duration_seconds": 45.0,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Ethernet Upstairs UK",
+        "Home Networking No Trunking",
+        "Cat6 Cavity Routing",
+        "Gigabit Home Office",
+        "Gary Pearce",
+        "ADI Communications",
+        "Data Cabling Leeds"
+      ]
+    },
+    {
+      "id": "VID-034",
+      "title": "Point-to-Point 5GHz / 60GHz Wireless Bridges for Rural Outbuildings",
+      "duration_seconds": 44.2,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Wireless Bridge UK",
+        "Garden Office Internet",
+        "Point to Point Wi-Fi",
+        "Ubiquiti airMAX",
+        "Outbuilding Broadband",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-035",
+      "title": "Fluke DSX-8000 Cable Certification: NEXT & Return Loss Telemetry",
+      "duration_seconds": 45.9,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Fluke DSX-8000",
+        "Cable Certification UK",
+        "Cat6 Fluke Test",
+        "NEXT Return Loss",
+        "ISO 11801 Class E",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-036",
+      "title": "SOHO 10\" & 19\" Network Rack Assembly: Patch Panels, Cable Trays & UPS",
+      "duration_seconds": 42.0,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "SOHO Network Rack",
+        "Home Server Cabinet",
+        "Patch Panel Assembly",
+        "Keystone Cat6 Rack",
+        "Clean Cable Management",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-037",
+      "title": "Ceiling-Mounted Wi-Fi 7 Access Points: Heat Mapping & PoE+ Power",
+      "duration_seconds": 41.8,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Ceiling Access Point",
+        "Wi-Fi 7 Installation",
+        "PoE Network Point",
+        "Wi-Fi Heat Mapping",
+        "Commercial Wi-Fi UK",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-038",
+      "title": "Fibre Optic Splicing & Armoured Burial Cable for Extended Estates",
+      "duration_seconds": 42.1,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "Fibre Optic Splicing",
+        "Armoured Fibre Cable",
+        "Estate Broadband",
+        "Single Mode OS2",
+        "Fusion Splicing UK",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-039",
+      "title": "Symmetrical VLAN Network Segmentation: Isolating IoT & CCTV Traffic",
+      "duration_seconds": 46.0,
+      "website_buffer": "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/how-to-get-ethernet-upstairs-without-running-cables.html",
+      "tags": [
+        "VLAN Segmentation",
+        "Network Security UK",
+        "Managed Switch Setup",
+        "CCTV Network Isolation",
+        "IoT Firewall Rules",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-040",
+      "title": "40\u00b0C OLED Thermal Safety: Mounting a TV Above a Working Fireplace",
+      "duration_seconds": 43.5,
+      "website_buffer": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+      "tags": [
+        "Fireplace TV Mounting",
+        "OLED Thermal Safety",
+        "TV Above Fireplace UK",
+        "Thermal Imaging Inspection",
+        "Gary Pearce",
+        "ADI Communications",
+        "TV Installer"
+      ]
+    },
+    {
+      "id": "VID-041",
+      "title": "Corefix Heavy-Duty Dot & Dab Masonry Anchors: Securing 85\" Screens",
+      "duration_seconds": 43.1,
+      "website_buffer": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+      "tags": [
+        "Corefix Anchors",
+        "Dot and Dab TV Mounting",
+        "Heavy Duty TV Bracket",
+        "85 Inch TV Wall Mount",
+        "Drywall TV Fitting",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-042",
+      "title": "Concealed In-Wall Cable Conduits: Chasing Brickwork & HDMI 2.1 48Gbps",
+      "duration_seconds": 44.0,
+      "website_buffer": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+      "tags": [
+        "Concealed TV Cables",
+        "Chasing Brickwork TV",
+        "HDMI 2.1 In Wall",
+        "Brush Wall Plate",
+        "Floating TV Installation",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-043",
+      "title": "Samsung The Frame Flush Wall Mounting: One Connect Invisible Routing",
+      "duration_seconds": 40.8,
+      "website_buffer": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+      "tags": [
+        "Samsung The Frame",
+        "One Connect Invisible Cable",
+        "Zero Gap Wall Mount",
+        "Art TV Installation",
+        "Luxury TV Mounting",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-044",
+      "title": "Articulated Heavy-Duty Dual-Arm Cantilever TV Brackets on Stud Walls",
+      "duration_seconds": 42.7,
+      "website_buffer": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+      "tags": [
+        "Cantilever TV Bracket",
+        "Stud Wall TV Mount",
+        "Dual Arm Swivel TV",
+        "Heavy Duty Articulated Mount",
+        "Gary Pearce",
+        "ADI Communications",
+        "TV Specialist"
+      ]
+    },
+    {
+      "id": "VID-045",
+      "title": "Acoustic Slat Wood Media Wall TV Installation: Recessing Soundbars",
+      "duration_seconds": 43.1,
+      "website_buffer": "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/tv-mounting-above-fireplaces-in-uk.html",
+      "tags": [
+        "Acoustic Slat Wall",
+        "Media Wall TV Mount",
+        "Recessed Soundbar",
+        "Wood Slat Feature Wall",
+        "Luxury Media Wall UK",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-046",
+      "title": "High-Gain Digital TV Aerial Installation: 4G & 5G LTE Filtering (Ch 21-48)",
+      "duration_seconds": 44.8,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Digital TV Aerial",
+        "4G 5G LTE Filter",
+        "Freeview Interference",
+        "Group T Aerial",
+        "CAI Benchmarked",
+        "Gary Pearce",
+        "ADI Communications",
+        "Aerial Specialist"
+      ]
+    },
+    {
+      "id": "VID-047",
+      "title": "Digital Spectrum Analyzer Aerial Alignment: MER & BER Signal Tuning",
+      "duration_seconds": 43.1,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Spectrum Analyzer Aerial",
+        "MER Signal Meter",
+        "BER Alignment",
+        "Promax HD Ranger",
+        "Freeview Signal Alignment",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-048",
+      "title": "Loft Multi-Way TV Distribution Amplifiers: CAI-Benchmarked WF100 Coax",
+      "duration_seconds": 43.3,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Loft TV Distribution",
+        "WF100 Coaxial Cable",
+        "Multi Room TV Aerial",
+        "CAI Benchmarked Cable",
+        "TV Signal Booster",
+        "Gary Pearce",
+        "ADI Communications"
+      ]
+    },
+    {
+      "id": "VID-049",
+      "title": "Chimney Lashing Aerial Mounts vs Pennine Storm Gale Brackets in Valleys",
+      "duration_seconds": 43.0,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Chimney Lashing Aerial",
+        "Pennine Gale Rigging",
+        "Valley Aerial Reception",
+        "Heavy Duty Aerial Mast",
+        "Gary Pearce",
+        "ADI Communications",
+        "Yorkshire Valleys"
+      ]
+    },
+    {
+      "id": "VID-050",
+      "title": "Diagnosing TV Freeview Pixelation: LTE Interference vs Waterlogged Coax",
+      "duration_seconds": 43.5,
+      "website_buffer": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
+      "blogger_shield": "https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html",
+      "tags": [
+        "Freeview Pixelation Repair",
+        "Waterlogged Coax Cable",
+        "5G Interference Diagnostic",
+        "TV Aerial Troubleshooting",
+        "Gary Pearce",
+        "ADI Communications",
+        "Aerial Repair"
       ]
     }
   ]
