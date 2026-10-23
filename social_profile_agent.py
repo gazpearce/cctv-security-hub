@@ -34,6 +34,7 @@ Repository: github-cctv-seo
 
 import os
 import sys
+import re
 import json
 import time
 import argparse
@@ -243,11 +244,20 @@ class SocialProfileAgent:
     def __init__(self, cdp_port: int = 9223):
         self.cdp_port = cdp_port
         self.evidence_dir = EVIDENCE_DIR
-        self.platforms = TARGET_PLATFORMS
+        if MANIFEST_PATH.exists():
+            try:
+                with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    self.platforms = data.get("platforms", TARGET_PLATFORMS)
+            except Exception:
+                self.platforms = TARGET_PLATFORMS
+        else:
+            self.platforms = TARGET_PLATFORMS
 
     def record_checkpoints(self, platform_id: str, platform_name: str) -> List[str]:
         """Creates or updates the 4-checkpoint visual evidence directory."""
-        slug = platform_name.lower().replace(" ", "_").replace("/", "_")
+        clean_name = re.sub(r'[^a-zA-Z0-9_\-]', '_', platform_name.lower()).strip('_')
+        slug = f"{platform_id.lower()}_{clean_name}"
         plat_dir = self.evidence_dir / slug
         plat_dir.mkdir(parents=True, exist_ok=True)
 
@@ -293,7 +303,9 @@ class SocialProfileAgent:
         }
 
         for p in self.platforms:
-            cps = self.record_checkpoints(p["id"], p["name"])
+            pid = p.get("id") or p.get("platform_id", "SOC-UNKNOWN")
+            pname = p.get("name", "Unknown Platform")
+            cps = self.record_checkpoints(pid, pname)
             entry = dict(p)
             entry["checkpoints"] = cps
             entry["bio_applied"] = TRADE_IDENTITY["short_bio"]
