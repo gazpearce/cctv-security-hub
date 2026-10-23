@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "ADI Communications — Master Video Stacking & Multi-Media Syndication Manifest",
+  "title": "ADI Communications \u2014 Master Video Stacking & Multi-Media Syndication Manifest",
   "version": "2.0.0",
-  "last_updated": "2026-10-23T16:57:11+01:00",
+  "last_updated": "2026-10-23T18:42:07.370783",
   "lead_engineer": "Gary Pearce",
   "business": "ADI Communications",
   "telephone": "07860 244 274",
-  "insurance": "£10,000,000 Public Liability Insurance",
-  "total_videos": 3,
+  "insurance": "\u00a310,000,000 Public Liability Insurance",
+  "total_videos": 38,
   "total_syndication_endpoints": 15,
   "rule_45_compliance": "100% PASS (Zero raw money site root links, all anchors route to Google Shield or /news/ buffer posts)",
   "videos": [
@@ -38,7 +38,7 @@
         "00:32 - StreetSiren Masonry Mounting & 90mph Gale Wind Testing",
         "00:40 - Hub 2 Plus Dual Micro-SIM Cellular Failover & Ethernet Integration"
       ],
-      "description": "Ajax Smart Alarms UK Masterclass: Grade 2 Setup, Jeweller Wireless & 90mph Bell Box Installation\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and £10,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Trade Experience)\n00:10 - Why Legacy 433MHz Alarms Are Jammed & Bypassed in Minutes\n00:22 - Ajax Jeweller 868MHz Frequency Hopping & Encrypted Rolling Code\n00:32 - StreetSiren Masonry Mounting & 90mph Gale Wind Testing\n00:40 - Hub 2 Plus Dual Micro-SIM Cellular Failover & Ethernet Integration\n\nVerified Engineering Standards:\n• CAI-benchmarked equipment & double-screened WF100 coaxial cable\n• NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n• 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
+      "description": "Ajax Smart Alarms UK Masterclass: Grade 2 Setup, Jeweller Wireless & 90mph Bell Box Installation\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and \u00a310,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - Introduction by Gary Pearce (25+ Yrs Yorkshire Trade Experience)\n00:10 - Why Legacy 433MHz Alarms Are Jammed & Bypassed in Minutes\n00:22 - Ajax Jeweller 868MHz Frequency Hopping & Encrypted Rolling Code\n00:32 - StreetSiren Masonry Mounting & 90mph Gale Wind Testing\n00:40 - Hub 2 Plus Dual Micro-SIM Cellular Failover & Ethernet Integration\n\nVerified Engineering Standards:\n\u2022 CAI-benchmarked equipment & double-screened WF100 coaxial cable\n\u2022 NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n\u2022 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
       "google_shield_anchor": "https://adicommunications.co.uk/news/ajax-wireless-alarm-grade-2-installation/",
       "syndication_targets": {
         "youtube": {
@@ -90,12 +90,12 @@
         "Huddersfield"
       ],
       "timestamps": [
-        "00:00 - Starlink Gen 3 Dish Obstruction Survey & 110° Sky Clearance",
+        "00:00 - Starlink Gen 3 Dish Obstruction Survey & 110\u00b0 Sky Clearance",
         "00:08 - Non-Drill Chimney Lashing Kits vs Heavy Duty Apex Brackets",
         "00:16 - Pennine 90mph Gale Force Engineering & UV-Rated Cat6 Drip Loops",
         "00:21 - Whole-Home Wi-Fi Mesh Integration & Router Bypass Mode"
       ],
-      "description": "SpaceX Starlink UK Field Installation: Chimney Mount vs Roof Apex Storm Brackets\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and £10,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - Starlink Gen 3 Dish Obstruction Survey & 110° Sky Clearance\n00:08 - Non-Drill Chimney Lashing Kits vs Heavy Duty Apex Brackets\n00:16 - Pennine 90mph Gale Force Engineering & UV-Rated Cat6 Drip Loops\n00:21 - Whole-Home Wi-Fi Mesh Integration & Router Bypass Mode\n\nVerified Engineering Standards:\n• CAI-benchmarked equipment & double-screened WF100 coaxial cable\n• NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n• 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
+      "description": "SpaceX Starlink UK Field Installation: Chimney Mount vs Roof Apex Storm Brackets\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and \u00a310,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - Starlink Gen 3 Dish Obstruction Survey & 110\u00b0 Sky Clearance\n00:08 - Non-Drill Chimney Lashing Kits vs Heavy Duty Apex Brackets\n00:16 - Pennine 90mph Gale Force Engineering & UV-Rated Cat6 Drip Loops\n00:21 - Whole-Home Wi-Fi Mesh Integration & Router Bypass Mode\n\nVerified Engineering Standards:\n\u2022 CAI-benchmarked equipment & double-screened WF100 coaxial cable\n\u2022 NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n\u2022 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
       "google_shield_anchor": "https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/",
       "syndication_targets": {
         "youtube": {
@@ -151,7 +151,7 @@
         "00:25 - DORI Admissibility Standards: 250 Pixels/Metre for Court Evidence",
         "00:38 - Hardwired PoE Cat6 vs Vulnerable Wi-Fi Jamming Attacks"
       ],
-      "description": "Hikvision ColorVu vs Infrared 4K CCTV: Low-Light F1.0 Aperture & Police Evidence Standards\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and £10,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - CCTV Night Vision Reality: Infrared Fogging & Spiderweb Glare\n00:12 - ColorVu 24/7 Full Colour Video with F1.0 Super-Aperture\n00:25 - DORI Admissibility Standards: 250 Pixels/Metre for Court Evidence\n00:38 - Hardwired PoE Cat6 vs Vulnerable Wi-Fi Jamming Attacks\n\nVerified Engineering Standards:\n• CAI-benchmarked equipment & double-screened WF100 coaxial cable\n• NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n• 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://tvandhomesecurity.blogspot.com/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
+      "description": "Hikvision ColorVu vs Infrared 4K CCTV: Low-Light F1.0 Aperture & Police Evidence Standards\n\nProfessional UK trade field engineering debrief by Gary Pearce, ADI Communications (Direct Mobile: 07860 244 274).\nWith over 25 years of continuous hands-on trade craftsmanship and \u00a310,000,000 Public Liability Insurance, Gary provides certified installations across Yorkshire, Lancashire, and Greater Manchester.\n\nKey Highlights:\n00:00 - CCTV Night Vision Reality: Infrared Fogging & Spiderweb Glare\n00:12 - ColorVu 24/7 Full Colour Video with F1.0 Super-Aperture\n00:25 - DORI Admissibility Standards: 250 Pixels/Metre for Court Evidence\n00:38 - Hardwired PoE Cat6 vs Vulnerable Wi-Fi Jamming Attacks\n\nVerified Engineering Standards:\n\u2022 CAI-benchmarked equipment & double-screened WF100 coaxial cable\n\u2022 NVQ Level 1-4 Data Cabling, Fibre Optics & Electrical Standards\n\u2022 9.98 / 10 Customer Rating across 84+ Verified Client Reviews\n\nInteractive Calculators & Full Technical Field Notes:\nhttps://tvandhomesecurity.blogspot.com/\n\nOfficial Google Entity Channel: https://www.youtube.com/@CCTV.services\nGoogle Drive Technical Spec Vault: https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88\n",
       "google_shield_anchor": "https://tvandhomesecurity.blogspot.com/",
       "syndication_targets": {
         "youtube": {
@@ -180,6 +180,1231 @@
           "public_url": "https://peertube.tv/w/vid-03_pt"
         }
       }
+    },
+    {
+      "video_id": "vid-faq-cctv-colorvu-vs-infrared-police-evidence",
+      "title": "Why Night Vision Glare Washes Out Faces on CCTV & How to Fix It",
+      "topic": "Why does night vision glare wash out faces on security cameras in pitch darkness?",
+      "category": "CCTV Engineering",
+      "filename": "cctv-colorvu-vs-infrared-police-evidence.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5315941,
+      "thumbnail": "cctv-colorvu-vs-infrared-police-evidence_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-cctv-dori-standards-police-identification",
+      "title": "Why Faces Look Blurry on CCTV Footage & How to Get Clear Facial Identification",
+      "topic": "Why do the police say my security camera footage is too blurry to identify an intruder?",
+      "category": "CCTV Engineering",
+      "filename": "cctv-dori-standards-police-identification.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5747172,
+      "thumbnail": "cctv-dori-standards-police-identification_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-cctv-hardwired-poe-vs-wifi-jamming",
+      "title": "Hardwired PoE CCTV vs Wireless Wi-Fi: Defeating Handheld RF Jammers",
+      "topic": "Why does hardwired Power-over-Ethernet (PoE) outperform wireless Wi-Fi security cameras?",
+      "category": "CCTV Engineering",
+      "filename": "cctv-hardwired-poe-vs-wifi-jamming.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5912601,
+      "thumbnail": "cctv-hardwired-poe-vs-wifi-jamming_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-cctv-nvr-storage-calculation-30-days",
+      "title": "4K CCTV NVR Storage: Calculating 30 Days Surveillance Retention",
+      "topic": "How much NVR hard drive storage is required for four 4K cameras recording 30 days?",
+      "category": "CCTV Engineering",
+      "filename": "cctv-nvr-storage-calculation-30-days.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 6081037,
+      "thumbnail": "cctv-nvr-storage-calculation-30-days_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-cctv-uk-laws-ico-planning-permission",
+      "title": "UK Domestic CCTV Laws: ICO Privacy Compliance & Planning Permission",
+      "topic": "Do domestic UK CCTV installations require planning permission or ICO registration?",
+      "category": "CCTV Engineering",
+      "filename": "cctv-uk-laws-ico-planning-permission.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 6047121,
+      "thumbnail": "cctv-uk-laws-ico-planning-permission_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-cctv-shutter-speed-motion-smear-elimination",
+      "title": "CCTV Shutter Speed Tuning: Eliminating Night Motion Smear on Intruders",
+      "topic": "How do you eliminate motion smear on fast-moving intruders at night with shutter speed tuning?",
+      "category": "CCTV Engineering",
+      "filename": "cctv-shutter-speed-motion-smear-elimination.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4866314,
+      "thumbnail": "cctv-shutter-speed-motion-smear-elimination_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-starlink-chimney-mount-vs-drilling-brickwork",
+      "title": "Starlink Chimney Mounting: Non-Drill Stainless Cradles vs Brick Drilling",
+      "topic": "Why is non-drill chimney lashing safer than drilling masonry anchors for Starlink in the UK?",
+      "category": "Satellite Telecoms",
+      "filename": "starlink-chimney-mount-vs-drilling-brickwork.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5069870,
+      "thumbnail": "starlink-chimney-mount-vs-drilling-brickwork_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-starlink-110-degree-orbital-cone-survey",
+      "title": "How Much Clear Sky Does Starlink Need to Prevent Micro-Dropouts?",
+      "topic": "How much clear open sky does Starlink need and will tall trees block the signal?",
+      "category": "Satellite Telecoms",
+      "filename": "starlink-110-degree-orbital-cone-survey.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4026617,
+      "thumbnail": "starlink-110-degree-orbital-cone-survey_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-starlink-router-bypass-mode-wifi7-mesh",
+      "title": "Starlink Router Bypass: Connecting Third-Party Wi-Fi 7 Gigabit Mesh",
+      "topic": "How do you bypass the Starlink Gen 3 / Mini router into a whole-home gigabit Wi-Fi 7 mesh network?",
+      "category": "Satellite Telecoms",
+      "filename": "starlink-router-bypass-mode-wifi7-mesh.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4073954,
+      "thumbnail": "starlink-router-bypass-mode-wifi7-mesh_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-starlink-storm-survivability-gale-mounts",
+      "title": "Starlink Storm Survivability: 90mph Gale Brackets & Self-Heating Elements",
+      "topic": "Can Starlink withstand severe UK winter storm winds and sub-zero ice buildup?",
+      "category": "Satellite Telecoms",
+      "filename": "starlink-storm-survivability-gale-mounts.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4842111,
+      "thumbnail": "starlink-storm-survivability-gale-mounts_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-starlink-vs-4g-5g-rural-latency-comparison",
+      "title": "Starlink vs 4G/5G Broadband: Latency, Jitter & Rural Speed Breakdown",
+      "topic": "How does Starlink real-world latency compare to rural 4G/5G mobile broadband for VoIP and gaming?",
+      "category": "Satellite Telecoms",
+      "filename": "starlink-vs-4g-5g-rural-latency-comparison.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5068347,
+      "thumbnail": "starlink-vs-4g-5g-rural-latency-comparison_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-starlink-cable-entry-drip-loops-grommets",
+      "title": "Starlink Cable Wall Entry: External Drip Loops & Weatherproof Grommets",
+      "topic": "How should external Starlink cables enter UK stone cavity walls to prevent moisture ingress?",
+      "category": "Satellite Telecoms",
+      "filename": "starlink-cable-entry-drip-loops-grommets.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5841494,
+      "thumbnail": "starlink-cable-entry-drip-loops-grommets_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-mounting-above-fireplace-oled-thermal-safety",
+      "title": "TV Mounting Above Fireplaces: 40\u00b0C OLED Thermal Safety & Warranty Protection",
+      "topic": "Will mounting an OLED TV above a wood burning stove or gas fire void the manufacturer warranty?",
+      "category": "TV & Media Walls",
+      "filename": "tv-mounting-above-fireplace-oled-thermal-safety.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5611047,
+      "thumbnail": "tv-mounting-above-fireplace-oled-thermal-safety_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-fireplace-mantelpiece-depth-heat-deflection",
+      "title": "Fireplace TV Deflection: Calculating Mantelpiece Depth & Heat Shielding",
+      "topic": "How deep must a mantelpiece be to deflect heat safely away from a wall-mounted TV?",
+      "category": "TV & Media Walls",
+      "filename": "tv-fireplace-mantelpiece-depth-heat-deflection.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4558207,
+      "thumbnail": "tv-fireplace-mantelpiece-depth-heat-deflection_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-mounting-dot-and-dab-corefix-anchors",
+      "title": "TV Mounting on Dot-and-Dab Plasterboard: CoreFix Heavy-Duty Anchors",
+      "topic": "Can you safely mount a heavy 65-inch or 75-inch TV onto dot-and-dab plasterboard above a fireplace?",
+      "category": "TV & Media Walls",
+      "filename": "tv-mounting-dot-and-dab-corefix-anchors.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4653727,
+      "thumbnail": "tv-mounting-dot-and-dab-corefix-anchors_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-dropdown-mantel-mount-eye-level-viewing",
+      "title": "Drop-Down TV Mantel Mounts: Eye-Level Viewing Without Neck Strain",
+      "topic": "What is a drop-down mantel mount and why is it recommended for high chimney breast installations?",
+      "category": "TV & Media Walls",
+      "filename": "tv-dropdown-mantel-mount-eye-level-viewing.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4264698,
+      "thumbnail": "tv-dropdown-mantel-mount-eye-level-viewing_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-cable-concealment-chimney-breast-regulations",
+      "title": "TV Cable Concealment: Flue Safety Regulations & In-Wall Conduit Standards",
+      "topic": "Can television power and HDMI cables be routed through a working chimney breast cavity?",
+      "category": "TV & Media Walls",
+      "filename": "tv-cable-concealment-chimney-breast-regulations.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5106443,
+      "thumbnail": "tv-cable-concealment-chimney-breast-regulations_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-samsung-frame-flush-gapless-installation",
+      "title": "Samsung The Frame Installation: Flush Zero-Gap Mounting on Uneven Stone",
+      "topic": "How do you install an ultra-flush Samsung The Frame TV with zero gap on uneven Yorkshire masonry?",
+      "category": "TV & Media Walls",
+      "filename": "tv-samsung-frame-flush-gapless-installation.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4713541,
+      "thumbnail": "tv-samsung-frame-flush-gapless-installation_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-ajax-alarms-why-433mhz-fails-jeweller-defence",
+      "title": "Why 433MHz DIY Alarms Fail: Ajax 868MHz Jeweller Anti-Jamming Defence",
+      "topic": "Why do legacy 433MHz wireless bell boxes fail against modern UK burglars with RF jammers?",
+      "category": "Smart Alarms",
+      "filename": "ajax-alarms-why-433mhz-fails-jeweller-defence.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 7468674,
+      "thumbnail": "ajax-alarms-why-433mhz-fails-jeweller-defence_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-ajax-motioncam-outdoor-phod-photo-verification",
+      "title": "Ajax MotionCam Outdoor PhOD: Visual Photo Verification Defeating False Alarms",
+      "topic": "How does the Ajax MotionCam Outdoor PhOD eliminate false alarm callouts with photo verification?",
+      "category": "Smart Alarms",
+      "filename": "ajax-motioncam-outdoor-phod-photo-verification.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 3989948,
+      "thumbnail": "ajax-motioncam-outdoor-phod-photo-verification_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-ajax-alarm-grade-2-vs-grade-3-insurance-standards",
+      "title": "Do Wireless Burglar Alarms Meet UK Home Insurance Requirements?",
+      "topic": "Do wireless burglar alarms meet UK insurance requirements for home insurance?",
+      "category": "Smart Alarms",
+      "filename": "ajax-alarm-grade-2-vs-grade-3-insurance-standards.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 6074133,
+      "thumbnail": "ajax-alarm-grade-2-vs-grade-3-insurance-standards_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-ajax-hub-2-plus-power-cut-failover-engineering",
+      "title": "Ajax Hub 2 Plus Resilience: Dual 4G SIMs & 16-Hour Battery Backup",
+      "topic": "How does the Ajax Hub 2 Plus maintain alert transmission during power cuts or severed internet cables?",
+      "category": "Smart Alarms",
+      "filename": "ajax-hub-2-plus-power-cut-failover-engineering.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5304666,
+      "thumbnail": "ajax-hub-2-plus-power-cut-failover-engineering_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-ajax-streetsiren-113db-anti-tamper-masonry-mounting",
+      "title": "Ajax StreetSiren 113dB Sounder: Masonry Anti-Tamper Accelerometers",
+      "topic": "What is the audible volume and anti-tamper specification of the Ajax StreetSiren on brickwork?",
+      "category": "Smart Alarms",
+      "filename": "ajax-streetsiren-113db-anti-tamper-masonry-mounting.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4938472,
+      "thumbnail": "ajax-streetsiren-113db-anti-tamper-masonry-mounting_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-ajax-pet-immune-pir-motion-detector-calibration",
+      "title": "Pet-Immune Smart Alarms: Calibrating Ajax PIRs for Dogs & Cats",
+      "topic": "Can pets trigger Ajax PIR motion detectors inside modern open-plan living rooms?",
+      "category": "Smart Alarms",
+      "filename": "ajax-pet-immune-pir-motion-detector-calibration.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 3098965,
+      "thumbnail": "ajax-pet-immune-pir-motion-detector-calibration_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-aerial-freeview-pixelation-4g-5g-lte-filtering",
+      "title": "Freeview TV Pixelation: Diagnosing 4G & 5G Mobile Mast Interference",
+      "topic": "Why does digital Freeview TV pixelate when mobile phone masts are upgraded to 4G and 5G LTE?",
+      "category": "TV & Broadcast",
+      "filename": "tv-aerial-freeview-pixelation-4g-5g-lte-filtering.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4895237,
+      "thumbnail": "tv-aerial-freeview-pixelation-4g-5g-lte-filtering_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-aerial-alignment-digital-spectrum-analyzer",
+      "title": "TV Aerial Alignment: Digital Spectrum Analyzers vs Cheap Signal Meters",
+      "topic": "What instrument is required to align a digital TV aerial accurately in difficult signal zones?",
+      "category": "TV & Broadcast",
+      "filename": "tv-aerial-alignment-digital-spectrum-analyzer.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5035096,
+      "thumbnail": "tv-aerial-alignment-digital-spectrum-analyzer_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-aerial-cabling-wf100-vs-brown-rg6-coax",
+      "title": "Why Cheap TV Aerial Cable Causes Picture Freezing & Signal Loss",
+      "topic": "Why does cheap brown TV aerial cable cause channels to freeze and pixelate?",
+      "category": "TV & Broadcast",
+      "filename": "tv-aerial-cabling-wf100-vs-brown-rg6-coax.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5053432,
+      "thumbnail": "tv-aerial-cabling-wf100-vs-brown-rg6-coax_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-signal-amplifiers-masthead-vs-indoor-boosters",
+      "title": "TV Signal Amplifiers: Low-Noise Masthead Pre-Amps vs Indoor Booster Units",
+      "topic": "How does a masthead pre-amplifier differ from a standard indoor distribution amplifier?",
+      "category": "TV & Broadcast",
+      "filename": "tv-signal-amplifiers-masthead-vs-indoor-boosters.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4375986,
+      "thumbnail": "tv-signal-amplifiers-masthead-vs-indoor-boosters_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-tv-aerial-storm-rigging-chimney-cradles-gales",
+      "title": "Aerial Storm Rigging: Stainless Chimney Cradles Withstanding Pennine Gales",
+      "topic": "Can a chimney-mounted TV aerial withstand 80mph Pennine gales without damage to masonry?",
+      "category": "TV & Broadcast",
+      "filename": "tv-aerial-storm-rigging-chimney-cradles-gales.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5847277,
+      "thumbnail": "tv-aerial-storm-rigging-chimney-cradles-gales_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-wifi-ethernet-upstairs-without-lifting-floorboards",
+      "title": "Gigabit Ethernet Upstairs: External Cat6 Drops & Clean Cable Containment",
+      "topic": "Can I get reliable gigabit Ethernet upstairs without lifting floorboards or tearing down drywall?",
+      "category": "Structured Cabling",
+      "filename": "wifi-ethernet-upstairs-without-lifting-floorboards.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 3743308,
+      "thumbnail": "wifi-ethernet-upstairs-without-lifting-floorboards_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-wifi-why-powerline-adapters-fail-dual-rcd",
+      "title": "Why Powerline Adapters Fail: Consumer Unit RCD Attenuation & Latency Spikes",
+      "topic": "Why do Powerline mains adapters perform poorly in modern UK homes with dual RCD consumer units?",
+      "category": "Structured Cabling",
+      "filename": "wifi-why-powerline-adapters-fail-dual-rcd.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 3896024,
+      "thumbnail": "wifi-why-powerline-adapters-fail-dual-rcd_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-wifi-moca-coax-ethernet-adapters-uk",
+      "title": "How to Turn Old TV Aerial Cables into High-Speed Home Ethernet",
+      "topic": "Can you turn old TV aerial cables into high-speed home ethernet broadband?",
+      "category": "Structured Cabling",
+      "filename": "wifi-moca-coax-ethernet-adapters-uk.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4636636,
+      "thumbnail": "wifi-moca-coax-ethernet-adapters-uk_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-wifi-exterior-cat6-cabling-uv-weatherproof",
+      "title": "Exterior Cat6 Cabling: UV-Resistant HDPE Jackets vs PVC Frost Cracking",
+      "topic": "Can Cat6 cable safely be run outside on an exterior brick wall in the UK climate?",
+      "category": "Structured Cabling",
+      "filename": "wifi-exterior-cat6-cabling-uv-weatherproof.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5831092,
+      "thumbnail": "wifi-exterior-cat6-cabling-uv-weatherproof_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-wifi-solid-copper-vs-cca-ethernet-poe-hazards",
+      "title": "Solid Copper vs CCA Ethernet: Avoiding PoE Overheating & Signal Dropouts",
+      "topic": "Why is solid bare copper mandatory over copper-clad aluminium (CCA) for home Ethernet and PoE?",
+      "category": "Structured Cabling",
+      "filename": "wifi-solid-copper-vs-cca-ethernet-poe-hazards.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 5158208,
+      "thumbnail": "wifi-solid-copper-vs-cca-ethernet-poe-hazards_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
+    },
+    {
+      "video_id": "vid-faq-wifi-garden-office-wireless-bridge-gigabit",
+      "title": "Garden Office Wireless Bridges: Gigabit Speeds Across Outbuildings",
+      "topic": "How do point-to-point wireless bridges connect detached garden offices through thick stone walls?",
+      "category": "Structured Cabling",
+      "filename": "wifi-garden-office-wireless-bridge-gigabit.mp4",
+      "local_file_exists": true,
+      "file_size_bytes": 4325019,
+      "thumbnail": "wifi-garden-office-wireless-bridge-gigabit_thumb.webp",
+      "audio_voice": "en-GB-RyanNeural (Edge-TTS \u00a30 token cost)",
+      "resolution": "1080p (1920x1080, 30fps)",
+      "engineer": "Gary Pearce (07860 244 274)",
+      "syndication_endpoints": [
+        {
+          "platform": "YouTube",
+          "channel": "@CCTV.services",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "DailyMotion",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "Vimeo",
+          "channel": "adicommunications",
+          "status": "QUEUED_FOR_SYNDICATION"
+        },
+        {
+          "platform": "InternetArchive",
+          "identifier": "adi-communications-trade-vault",
+          "status": "QUEUED_FOR_SYNDICATION"
+        }
+      ]
     }
   ]
 }
