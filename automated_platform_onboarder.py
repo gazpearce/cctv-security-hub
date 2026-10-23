@@ -127,11 +127,8 @@ class IntegrityFirewall:
             return False, "URL is empty or non-string"
 
         clean = url.strip()
-        if " " in clean or "\n" in clean or "\r" in clean:
+        if any(c in clean for c in (" ", "\t", "\n", "\r", "(", ")")):
             return False, f"URL contains whitespace or illegal characters: '{url}'"
-
-        if "(" in clean or ")" in clean:
-            return False, f"URL contains local path or parenthetical annotations: '{url}'"
 
         parsed = urllib.parse.urlparse(clean)
         if parsed.scheme not in ("https", "http"):
@@ -254,7 +251,11 @@ class IntegrityFirewall:
             return True, "Layer 5 Rule 45 Pass"
 
         for raw_url in matches:
-            url = raw_url.rstrip(".,;:!?")
+            # Strip trailing sentence punctuation (,;:!?) first
+            url = raw_url.rstrip(",;:!?")
+            # Do not strip trailing dots if part of a relative path traversal (..$)
+            if not re.search(r"\.\.(?:$|[?#])", url):
+                url = url.rstrip(".")
             parsed = urllib.parse.urlparse(url)
             unquoted_path = urllib.parse.unquote(parsed.path or "")
             norm_path = posixpath.normpath("/" + unquoted_path.lstrip("/")).rstrip('/')

@@ -47,56 +47,61 @@ STACKS_DEF = [
         "prefix": "PLAT-VID-",
         "category_name": "Video and streaming stacks",
         "platforms": [
+            # Tier 1 Apex (1) — DA 100
             ("YouTube", "youtube.com", 100, "Tier 1 Apex", "Google Workspace OAuth", "https://www.youtube.com/", "JOINED", "https://www.youtube.com/@CCTV.services", "https://tvandhomesecurity.blogspot.com/"),
+            
+            # Tier 2: High-DA & Enterprise Video Hosts (18) — DA 73–96 (Dual-Linked: YouTube Apex + /news/ buffer)
             ("Dailymotion", "dailymotion.com", 95, "Tier 2", "Google OAuth / Email", "https://www.dailymotion.com/", "JOINED", "https://www.dailymotion.com/cctvservices", "https://www.youtube.com/@CCTV.services"),
             ("Vimeo", "vimeo.com", 95, "Tier 2", "Google OAuth / Email", "https://vimeo.com/", "JOINED", "https://vimeo.com/cctvservices", "https://www.youtube.com/@CCTV.services"),
             ("Internet Archive Video", "archive.org", 96, "Tier 2", "Email Registration", "https://archive.org/", "JOINED", "https://archive.org/details/@gary_pearce", "https://www.youtube.com/@CCTV.services"),
             ("Wistia Free", "wistia.com", 92, "Tier 2", "Google OAuth / Email", "https://wistia.com/", "JOINED", "https://wistia.com/cctvservices", "https://www.youtube.com/@CCTV.services"),
-            ("Twitch", "twitch.tv", 94, "Tier 2", "Email & SMS Verification", "https://www.twitch.tv/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Loom Video", "loom.com", 89, "Tier 2", "Google OAuth", "https://www.loom.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Vidyard", "vidyard.com", 86, "Tier 2", "Google OAuth", "https://www.vidyard.com/free/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Streamable", "streamable.com", 87, "Tier 2", "Email Registration", "https://streamable.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Veoh", "veoh.com", 82, "Tier 2", "Email Registration", "https://www.veoh.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Metacafe Archive", "metacafe.com", 80, "Tier 2", "Email Registration", "https://www.metacafe.com/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Loom Video", "loom.com", 89, "Tier 2", "Google OAuth 1-Click", "https://www.loom.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Vidyard", "vidyard.com", 86, "Tier 2", "Google OAuth 1-Click", "https://www.vidyard.com/free/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
             ("SproutVideo", "sproutvideo.com", 78, "Tier 2", "Email Registration", "https://sproutvideo.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Hippo Video", "hippovideo.io", 76, "Tier 2", "Google OAuth", "https://www.hippovideo.io/signup.html", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Dubb Video", "dubb.com", 74, "Tier 2", "Google OAuth", "https://dubb.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Covideo", "covideo.com", 72, "Tier 2", "Email Registration", "https://www.covideo.com/free-trial/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Vzaar Video", "vzaar.com", 70, "Tier 2", "Email Registration", "https://vzaar.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Cincopa Media", "cincopa.com", 79, "Tier 2", "Google OAuth / Email", "https://www.cincopa.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
             ("Dacast Streaming", "dacast.com", 75, "Tier 2", "Email Registration", "https://www.dacast.com/free-trial/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Brightcove Free Trial", "brightcove.com", 88, "Tier 2", "Corporate Email", "https://www.brightcove.com/en/free-trial/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Kaltura OpenSource", "kaltura.com", 84, "Tier 2", "Email Registration", "https://corp.kaltura.com/free-trial/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Panopto", "panopto.com", 82, "Tier 2", "Google OAuth / Email", "https://www.panopto.com/try/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Flowplayer", "flowplayer.com", 83, "Tier 2", "Email Registration", "https://flowplayer.com/pricing", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Kaltura Cloud", "kaltura.com", 84, "Tier 2", "Email Registration", "https://corp.kaltura.com/free-trial/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
             ("JW Player Showcase", "jwplayer.com", 88, "Tier 2", "Email Registration", "https://www.jwplayer.com/pricing/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Cincopa Media", "cincopa.com", 79, "Tier 2", "Google OAuth", "https://www.cincopa.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Panopto Video", "panopto.com", 82, "Tier 2", "Google OAuth / Email", "https://www.panopto.com/try/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Brightcove Trial", "brightcove.com", 88, "Tier 2", "Corporate Email", "https://www.brightcove.com/en/free-trial/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Flowplayer", "flowplayer.com", 83, "Tier 2", "Email Registration", "https://flowplayer.com/pricing", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
             ("Spotlightr", "spotlightr.com", 73, "Tier 2", "Email Registration", "https://spotlightr.com/pricing/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Vidooly Studio", "vidooly.com", 71, "Tier 2", "Google OAuth", "https://vidooly.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Vadoo AI Video", "vadoo.ai", 69, "Tier 2", "Google OAuth", "https://www.vadoo.ai/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Synthesia AI Video", "synthesia.io", 78, "Tier 2", "Google OAuth", "https://www.synthesia.io/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Descript Video", "descript.com", 82, "Tier 2", "Google OAuth", "https://www.descript.com/download", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("InVideo Studio", "invideo.io", 81, "Tier 2", "Google OAuth", "https://invideo.io/signup/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Kapwing Studio", "kapwing.com", 84, "Tier 2", "Google OAuth", "https://www.kapwing.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Wave.video", "wave.video", 80, "Tier 2", "Google OAuth", "https://wave.video/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Animoto Video", "animoto.com", 84, "Tier 2", "Google OAuth", "https://animoto.com/sign-up", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Clipchamp", "clipchamp.com", 86, "Tier 2", "Microsoft / Google OAuth", "https://clipchamp.com/en/signup/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Biteable", "biteable.com", 81, "Tier 2", "Google OAuth", "https://biteable.com/signup/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Powtoon Studio", "powtoon.com", 85, "Tier 2", "Google OAuth", "https://www.powtoon.com/account/signup/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Renderforest Video", "renderforest.com", 83, "Tier 2", "Google OAuth", "https://www.renderforest.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Promo.com Video", "promo.com", 82, "Tier 2", "Google OAuth", "https://promo.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Moovly Studio", "moovly.com", 78, "Tier 2", "Google OAuth", "https://www.moovly.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Vyond Video", "vyond.com", 80, "Tier 2", "Google OAuth", "https://www.vyond.com/free-trial/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("WeVideo Cloud", "wevideo.com", 82, "Tier 2", "Google OAuth", "https://www.wevideo.com/sign-up", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Magisto Video", "magisto.com", 80, "Tier 2", "Google OAuth", "https://www.magisto.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("FlexClip Studio", "flexclip.com", 79, "Tier 2", "Google OAuth", "https://www.flexclip.com/register.html", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Clideo Video Tools", "clideo.com", 81, "Tier 2", "Google OAuth", "https://clideo.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("ScreenPal", "screenpal.com", 82, "Tier 2", "Google OAuth", "https://screenpal.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("Veed.io Video Suite", "veed.io", 84, "Tier 2", "Google OAuth", "https://www.veed.io/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Cloudinary Video", "cloudinary.com", 92, "Tier 2", "GitHub / Google OAuth", "https://cloudinary.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Mux Video", "mux.com", 84, "Tier 2", "GitHub / Google OAuth", "https://mux.com/sign-up", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("api.video", "api.video", 78, "Tier 2", "GitHub / Google OAuth", "https://dashboard.api.video/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            
+            # Tier 3: Alternative & Decentralized Hosts (31) — DA 40–92 (Links EXCLUSIVELY to YouTube Apex)
             ("Rumble", "rumble.com", 92, "Tier 3", "Email & OTP Verification", "https://rumble.com/register/", "JOINED", "https://rumble.com/c/c-6874917", "https://www.youtube.com/@CCTV.services"),
             ("Odysee LBRY", "odysee.com", 87, "Tier 3", "Google OAuth / Email", "https://odysee.com/$/signup", "JOINED", "https://odysee.com/@adicommunications:c", "https://www.youtube.com/@CCTV.services"),
-            ("PeerTube Decentralized", "joinpeertube.org", 85, "Tier 3", "Open ActivityPub", "https://joinpeertube.org/", "JOINED", "https://peertube.tv/c/adicommunications", "https://www.youtube.com/@CCTV.services"),
-            ("Bitchute", "bitchute.com", 86, "Tier 3", "Email Registration", "https://www.bitchute.com/accounts/register/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
-            ("DTube Blockchain Video", "d.tube", 79, "Tier 3", "Crypto Wallet / Email", "https://d.tube/", "PENDING", "", "https://www.youtube.com/@CCTV.services")
+            ("PeerTube", "peertube.tv", 85, "Tier 3", "Open ActivityPub", "https://peertube.tv/signup", "JOINED", "https://peertube.tv/c/adicommunications", "https://www.youtube.com/@CCTV.services"),
+            ("BitChute", "bitchute.com", 86, "Tier 3", "Email Registration", "https://www.bitchute.com/accounts/register/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("DTube", "d.tube", 79, "Tier 3", "Crypto Wallet / Email", "https://d.tube/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Streamable", "streamable.com", 87, "Tier 3", "Email Registration", "https://streamable.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("DLive", "dlive.tv", 78, "Tier 3", "Email & OTP Verification", "https://dlive.tv/", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Kick", "kick.com", 82, "Tier 3", "Email & OTP Verification", "https://kick.com/auth/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Tilvids (PeerTube)", "tilvids.com", 52, "Tier 3", "ActivityPub / Email", "https://tilvids.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Diode.zone (PeerTube)", "diode.zone", 50, "Tier 3", "ActivityPub / Email", "https://diode.zone/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Framatube (PeerTube)", "framatube.org", 65, "Tier 3", "ActivityPub / Email", "https://framatube.org/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Peertube.stream", "peertube.stream", 45, "Tier 3", "ActivityPub / Email", "https://peertube.stream/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Peertube.social", "peertube.social", 48, "Tier 3", "ActivityPub / Email", "https://peertube.social/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Peertube.uno", "peertube.uno", 42, "Tier 3", "ActivityPub / Email", "https://peertube.uno/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Peertube.ch", "peertube.ch", 44, "Tier 3", "ActivityPub / Email", "https://peertube.ch/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Tube.kockatoo", "tube.kockatoo.org", 40, "Tier 3", "ActivityPub / Email", "https://tube.kockatoo.org/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Brighteon", "brighteon.com", 76, "Tier 3", "Email & Activation Link", "https://www.brighteon.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("UgeTube", "ugetube.com", 62, "Tier 3", "Email & Activation Link", "https://ugetube.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("BitTube", "bittube.video", 58, "Tier 3", "Web3 / Email", "https://bittube.video/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("BrandNewTube", "brandnewtube.com", 64, "Tier 3", "Email & Activation Link", "https://brandnewtube.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Jumpshare Video", "jumpshare.com", 81, "Tier 3", "Google OAuth 1-Click", "https://jumpshare.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Droplr Video", "droplr.com", 80, "Tier 3", "Google OAuth 1-Click", "https://droplr.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Gyazo Video", "gyazo.com", 85, "Tier 3", "Google OAuth 1-Click", "https://gyazo.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("ScreenPal", "screenpal.com", 82, "Tier 3", "Google OAuth 1-Click", "https://screenpal.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Kapwing Studio", "kapwing.com", 84, "Tier 3", "Google OAuth 1-Click", "https://www.kapwing.com/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Veed.io Video", "veed.io", 84, "Tier 3", "Google OAuth 1-Click", "https://www.veed.io/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Wave.video", "wave.video", 80, "Tier 3", "Google OAuth 1-Click", "https://wave.video/signup", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Hippo Video", "hippovideo.io", 76, "Tier 3", "Google OAuth 1-Click", "https://www.hippovideo.io/signup.html", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Dubb Video", "dubb.com", 74, "Tier 3", "Google OAuth 1-Click", "https://dubb.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Covideo", "covideo.com", 72, "Tier 3", "Email Registration", "https://video.covideo.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services"),
+            ("Veoh Video", "veoh.com", 82, "Tier 3", "Email Registration", "https://www.veoh.com/register", "PENDING", "", "https://www.youtube.com/@CCTV.services")
         ]
     },
     {
@@ -768,10 +773,10 @@ def build_catalog():
             if status == "PENDING":
                 s_pending += 1
                 if "Corporate" in sso or "Trade Verification" in sso or "Trade Inspection" in sso:
-                    failure_reason = "MANUAL_REVIEW_DELAY"
+                    failure_reason = "WAITLIST_PENDING"
                     failure_detail = "Requires manual business verification or commercial vetting."
                 elif "Postal Address" in sso:
-                    failure_reason = "PHONE_2FA_REQUIRED"
+                    failure_reason = "PHONE_SMS_REQUIRED"
                     failure_detail = "Requires physical postal PIN postcard verification."
                 elif "Invitation" in sso:
                     failure_reason = "WAITLIST_PENDING"

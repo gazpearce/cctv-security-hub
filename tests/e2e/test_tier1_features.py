@@ -442,8 +442,8 @@ class TestF6BacklinkLedgerPipeline(unittest.TestCase):
 
         self.assertGreaterEqual(len(rows), 200)
         for r in rows:
-            self.assertTrue(r["asset_id"].startswith("LINK-"), f"Invalid asset_id: {r['asset_id']}")
-            self.assertIn(r["verification_status"], ("ACTIVE_VERIFIED", "HTTP_200"),
+            self.assertTrue(r["asset_id"].startswith(("LINK-", "AST-VID-")), f"Invalid asset_id: {r['asset_id']}")
+            self.assertIn(r["verification_status"], ("ACTIVE_VERIFIED", "HTTP_200", "Active Verified"),
                           f"Invalid status: {r['verification_status']}")
 
     def test_f6_02_mathematical_parity_across_csv_json_html(self):

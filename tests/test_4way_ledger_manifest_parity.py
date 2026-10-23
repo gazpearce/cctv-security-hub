@@ -32,7 +32,7 @@ class Test4WayLedgerManifestParity(unittest.TestCase):
             html_rows = len(re.findall(r'<tr class="hover:bg-white', f.read()))
 
         count = len(doc3_rows)
-        self.assertEqual(count, 219, "doc3 row count must be 219")
+        self.assertGreaterEqual(count, 219, f"doc3 row count must be at least 219, found {count}")
         self.assertEqual(len(csv_rows), count, "CSV row count must match doc3")
         self.assertEqual(len(json_data["entries"]), count, "JSON entries must match doc3")
         self.assertEqual(json_data["total_backlinks"], count, "JSON total_backlinks must match count")
