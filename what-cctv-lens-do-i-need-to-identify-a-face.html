@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What CCTV Lens Do I Need to Identify a Face? (DORI Explained) — ADI Communications</title>
+  <meta name="description" content="Discover what CCTV camera lens focal length (2.8mm, 4mm, 6mm, 12mm) is needed to identify a burglar's face at 5m, 10m, or 15m. Interactive lens calculator by Gary Pearce (07860 244 274).">
+  <link rel="canonical" href="https://adicommunications.co.uk/news/what-cctv-lens-do-i-need-to-identify-a-face/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #050508; color: #F3F4F6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .glass-panel { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(16px); }
+    .glass-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); }
+    .accent-orange { color: #FF5500; }
+    .accent-bg { background-color: #FF5500; }
+    .accent-bg:hover { background-color: #e04b00; }
+  </style>
+
+  <!-- Schema.org Article, FAQPage & SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "What CCTV Lens Do I Need to Identify a Face?",
+        "description": "Explaining the DORI standard: why standard 2.8mm wide-angle lenses fail beyond 4 metres and what focal length is required for police-evidentiary facial identification.",
+        "author": {
+          "@type": "Person",
+          "name": "Gary Pearce",
+          "jobTitle": "Lead Physical Security & Telecoms Engineer",
+          "telephone": "+447860244274"
+        },
+        "publisher": {
+          "@type": "LocalBusiness",
+          "name": "ADI Communications",
+          "telephone": "+447860244274",
+          "url": "https://adicommunications.co.uk/cctv-installation/"
+        },
+        "datePublished": "2026-10-23",
+        "dateModified": "2026-10-23"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What CCTV lens do I need to identify a face on a driveway?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a standard 4MP or 4K camera at a 10-metre driveway distance, you need roughly a 6mm lens to achieve the 250 pixels-per-metre required for police facial identification. A standard 2.8mm wide lens only identifies faces up to 4 metres."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Recognition and Identification under DORI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recognition requires 125 pixels per metre and lets you confirm if you already know the person. Identification requires 250 pixels per metre and provides clear, court-admissible detail to identify an unknown suspect beyond reasonable doubt."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="min-h-screen antialiased flex flex-col justify-between selection:bg-[#FF5500] selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-white/10 bg-black/60 backdrop-blur-xl sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <a href="https://adicommunications.co.uk/cctv-installation/" class="flex items-center space-x-2">
+          <span class="w-3 h-3 rounded-full accent-bg animate-pulse"></span>
+          <span class="font-black tracking-tight text-white uppercase text-base">ADI&nbsp;Communications</span>
+        </a>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="https://adicommunications.co.uk/tools/" class="text-xs text-neutral-300 hover:text-white transition hidden sm:inline-block">Tools Hub</a>
+        <a href="tel:07860244274" class="accent-bg text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full transition">
+          Call Gary: 07860&nbsp;244&nbsp;274
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Body -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-10">
+
+    <!-- Meta Header -->
+    <div class="space-y-4">
+      <div class="flex items-center space-x-2 text-xs text-neutral-400">
+        <span class="accent-orange font-bold uppercase">Field Guide &amp; Tool</span>
+        <span>•</span>
+        <span>By Gary Pearce (25+ Years on Tools)</span>
+        <span>•</span>
+        <span>Verified UK Trade Standard</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+        What CCTV Lens Do I Need to Identify a Face?
+      </h1>
+      
+      <!-- 42-Word BLUF Answer Box for AI Overviews & Perplexity -->
+      <div class="glass-panel p-5 rounded-xl border-l-4 border-l-[#FF5500] space-y-2">
+        <span class="text-xs font-bold accent-orange uppercase tracking-wider">Direct Answer</span>
+        <p class="text-sm text-neutral-200 leading-relaxed font-medium">
+          To identify an unknown face at 10 metres with a 4MP or 4K camera, you need a 6mm lens. Court-admissible identification requires 250 pixels per metre (px/m). A standard 2.8mm wide-angle lens only identifies faces up to 4 metres away before pixelation occurs.
+        </p>
+      </div>
+    </div>
+
+    <!-- The Problem Context -->
+    <section class="space-y-4 text-sm sm:text-base text-neutral-300 leading-relaxed font-normal">
+      <p>
+        The most common complaint I hear from homeowners across Yorkshire is: <em>“Gary, someone walked down my driveway last night, but when the police watched the CCTV, the face was just a blurry smudge.”</em>
+      </p>
+      <p>
+        Almost every off-the-shelf DIY camera kit comes fitted with a <strong class="text-white">2.8mm ultra-wide lens</strong>. Installers fit them because they give a huge 108° viewing angle that captures the whole front garden. But wide angles spread your camera’s pixels across a massive area. By the time someone is standing at your gate 12 metres away, there aren’t enough pixels across their face to identify them.
+      </p>
+    </section>
+
+    <!-- INLINE INTERACTIVE CALCULATOR (The Real Utility) -->
+    <section class="glass-panel p-6 sm:p-8 rounded-2xl space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-white/10 pb-4">
+        <div>
+          <span class="text-xs font-mono font-bold accent-orange uppercase">Interactive Diagnostic Widget</span>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Calculate Your Required Lens Live</h2>
+        </div>
+        <a href="https://adicommunications.co.uk/tools/" class="text-xs text-neutral-400 hover:text-white underline">Explore All 11 Tools →</a>
+      </div>
+
+      <!-- Live Interactive Controls -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="space-y-2">
+          <label class="block text-xs font-bold text-neutral-300 uppercase tracking-wider">Distance to Target (Metres)</label>
+          <div class="flex items-center space-x-4">
+            <input type="range" id="inlineDistSlider" min="2" max="25" value="10" step="1" class="w-full accent-[#FF5500]" oninput="updateInlineCalc()">
+            <span id="inlineDistVal" class="text-lg font-mono font-bold text-[#FF5500] w-12 text-right">10m</span>
+          </div>
+          <p class="text-xs text-neutral-400">Distance from camera to driveway gate or car door.</p>
+        </div>
+
+        <div class="space-y-2">
+          <label class="block text-xs font-bold text-neutral-300 uppercase tracking-wider">Camera Sensor Resolution</label>
+          <select id="inlineResSelect" class="w-full bg-black/60 border border-white/10 rounded-xl px-3 py-2 text-xs text-white" onchange="updateInlineCalc()">
+            <option value="2688">4MP Ultra HD (2688 × 1520) - Most Common</option>
+            <option value="3840">8MP 4K Ultra HD (3840 × 2160)</option>
+            <option value="1920">2MP 1080p Full HD (1920 × 1080)</option>
+          </select>
+          <p class="text-xs text-neutral-400">Higher resolution increases identification range.</p>
+        </div>
+      </div>
+
+      <!-- Real-Time Calculation Output Box -->
+      <div class="glass-card p-5 rounded-xl border border-[#FF5500]/30 bg-[#FF5500]/[0.02] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <span class="text-xs text-neutral-400 uppercase font-mono">Recommended Focal Length for Facial Identification:</span>
+          <div class="flex items-baseline space-x-2 mt-1">
+            <span id="inlineLensResult" class="text-3xl font-black text-white font-mono">6.0mm</span>
+            <span id="inlineCoverageResult" class="text-xs text-neutral-300">(Scene width at 10m: approx 8.5 metres)</span>
+          </div>
+          <p id="inlineVerdict" class="text-xs text-neutral-300 mt-1">
+            A 6mm lens provides ≥250 px/m at 10m distance, capturing clear facial features for police evidence.
+          </p>
+        </div>
+        <div class="shrink-0 flex flex-col sm:flex-row items-center gap-2">
+          <a href="cctv-dori-lens-calculator.html" class="text-xs px-3.5 py-2 rounded-full border border-white/20 hover:border-white text-white font-semibold transition">
+            Open Full Calculator
+          </a>
+          <a href="tel:07860244274" class="accent-bg text-white text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full transition">
+            Call Gary (07860&nbsp;244&nbsp;274)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 4 DORI Levels Explained Clearly -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-bold text-white tracking-tight">Understanding DORI: The Police Evidence Standard</h2>
+      <p class="text-sm sm:text-base text-neutral-300 leading-relaxed">
+        The UK security industry benchmarks camera performance using the international standard <strong class="text-white">BS EN 62676-4 (DORI)</strong>. DORI breaks surveillance down into four distinct levels of detail:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+        <div class="glass-card p-4 rounded-xl space-y-1 border-l-2 border-l-blue-500">
+          <span class="text-xs font-mono font-bold text-blue-400">1. Detection (25 px/m)</span>
+          <p class="text-xs text-neutral-300">You can tell a human is present, but you cannot determine clothing details, gender, or vehicle make.</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl space-y-1 border-l-2 border-l-emerald-500">
+          <span class="text-xs font-mono font-bold text-emerald-400">2. Observation (62.5 px/m)</span>
+          <p class="text-xs text-neutral-300">You can see clothing type (e.g. red hoodie vs black jacket) and determine the rough size of an object.</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl space-y-1 border-l-2 border-l-amber-500">
+          <span class="text-xs font-mono font-bold text-amber-400">3. Recognition (125 px/m)</span>
+          <p class="text-xs text-neutral-300">Allows you to recognise someone you already know (like a neighbour, delivery driver, or family member).</p>
+        </div>
+        <div class="glass-card p-4 rounded-xl space-y-1 border-l-2 border-l-[#FF5500]">
+          <span class="text-xs font-mono font-bold accent-orange">4. Identification (250 px/m)</span>
+          <p class="text-xs text-neutral-300">Court-admissible quality. Captures sharp facial features and eye detail of an unknown stranger for criminal prosecution.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gary's 25-Year Trade Verdict -->
+    <section class="glass-panel p-6 sm:p-8 rounded-2xl space-y-4">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🛠️</span>
+        <h3 class="text-xl font-bold text-white">Gary's Field Advice: The "Overview + Choke Point" Strategy</h3>
+      </div>
+      <p class="text-sm text-neutral-300 leading-relaxed">
+        You should never try to make a single camera do everything. The best professional security design uses a <strong class="text-white">two-camera approach</strong>:
+      </p>
+      <ol class="text-sm text-neutral-300 space-y-2 list-decimal list-inside">
+        <li><strong>Camera 1 (Overview)</strong>: A 2.8mm wide-angle turret camera mounted high on the soffit to provide situational awareness of your entire front boundary and vehicles.</li>
+        <li><strong>Camera 2 (Choke Point)</strong>: A 6mm or 8mm narrow-angle camera focused specifically on the pinch point where anyone walking towards the property must pass (the front gate or driveway bottleneck) to deliver the full 250 px/m facial identification.</li>
+      </ol>
+      <p class="text-sm text-neutral-300 pt-2">
+        Pairing this with a 24/7 ColorVu camera eliminates infrared glare off white masonry and ensures you record genuine colour jackets and car paints even in complete darkness.
+      </p>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-bold text-white tracking-tight">Frequently Asked Questions</h2>
+      <div class="space-y-3">
+        <details class="glass-card p-4 rounded-xl group cursor-pointer">
+          <summary class="text-sm font-bold text-white list-none flex justify-between items-center">
+            <span>Can 4K cameras use a 2.8mm lens and still identify faces at distance?</span>
+            <span class="accent-orange font-mono group-open:rotate-45 transition">+</span>
+          </summary>
+          <p class="text-xs text-neutral-300 mt-3 leading-relaxed">
+            4K resolution increases the identification range of a 2.8mm lens from roughly 4 metres to about 6 metres. However, past 7 metres, even 4K pixels become too dispersed across the 108° field of view. For 10m to 15m drives, a 4mm or 6mm lens remains necessary.
+          </p>
+        </details>
+
+        <details class="glass-card p-4 rounded-xl group cursor-pointer">
+          <summary class="text-sm font-bold text-white list-none flex justify-between items-center">
+            <span>What happens if I choose a lens that is too narrow (e.g. 12mm)?</span>
+            <summary class="text-xs text-neutral-300 mt-3 leading-relaxed">
+            A 12mm lens creates a tight "telephoto" tunnel. While someone 20 metres away will be razor-sharp, someone walking close to your wall will pass completely under the camera unseen. That is why focal length must match the physical distance.
+          </summary>
+        </details>
+      </div>
+    </section>
+
+    <!-- Internal Linking & Hub Referral -->
+    <section class="p-6 rounded-2xl border border-white/10 bg-white/[0.02] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <h4 class="text-base font-bold text-white">Need to calculate storage or Wi-Fi bridges?</h4>
+        <p class="text-xs text-neutral-400">Visit our master Tools Hub with 11 trade-grade diagnostic calculators.</p>
+      </div>
+      <a href="https://adicommunications.co.uk/tools/" class="accent-bg text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-full transition shadow-lg shrink-0">
+        Visit All Tools →
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-black/80 py-8">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
+      <div>
+        <p>© 2026 ADI Communications. Lead Engineer: Gary Pearce.</p>
+        <p>Direct Mobile: <a href="tel:07860244274" class="text-neutral-200 hover:text-[#FF5500]">07860&nbsp;244&nbsp;274</a> • £10M Public Liability.</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://adicommunications.co.uk/cctv-installation/" class="hover:text-white transition">CCTV Installations</a>
+        <a href="https://adicommunications.co.uk/tools/" class="hover:text-white transition">Tools Hub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Inline Calculator -->
+  <script>
+    function updateInlineCalc() {
+      const dist = parseFloat(document.getElementById('inlineDistSlider').value);
+      const res = parseFloat(document.getElementById('inlineResSelect').value);
+      document.getElementById('inlineDistVal').textContent = dist + 'm';
+
+      // Required focal length f = (req_ppm * distance * sensor_width) / horizontal_pixels
+      // For 1/2.8" sensor, sensor_width approx 5.38mm. Identification requires 250 px/m.
+      const sensorWidth = 5.38;
+      const targetPpm = 250;
+      const calcFocal = (targetPpm * dist * sensorWidth) / res;
+
+      let stdLens = 2.8;
+      if (calcFocal <= 3.4) stdLens = 2.8;
+      else if (calcFocal <= 5.0) stdLens = 4.0;
+      else if (calcFocal <= 7.0) stdLens = 6.0;
+      else if (calcFocal <= 10.0) stdLens = 8.0;
+      else stdLens = 12.0;
+
+      // Approximate scene width = (res / targetPpm) * (calcFocal / stdLens)
+      const sceneWidth = ((res / targetPpm) * (calcFocal / stdLens)).toFixed(1);
+
+      document.getElementById('inlineLensResult').textContent = stdLens.toFixed(1) + 'mm';
+      document.getElementById('inlineCoverageResult').textContent = `(Scene width at ${dist}m: approx ${sceneWidth} metres)`;
+
+      let verdictText = `A ${stdLens}mm lens provides ≥250 px/m at ${dist}m distance, capturing clear facial features for police evidence.`;
+      if (calcFocal > 12.0) {
+        verdictText = `Notice: At ${dist}m, standard 12mm lenses reach their optical limit. Consider an optical PTZ turret camera or repositioning the mount.`;
+      }
+      document.getElementById('inlineVerdict').textContent = verdictText;
+    }
+    updateInlineCalc();
+  </script>
+</body>
+</html>

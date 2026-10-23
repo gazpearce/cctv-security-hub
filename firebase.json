@@ -4,6 +4,11 @@
     "ignore": [
       "firebase.json",
       "**/.*",
+      "**/.*/**",
+      ".cache/**",
+      ".pytest_cache/**",
+      ".agents/**",
+      "tests/**",
       "**/node_modules/**",
       "**/*.bat",
       "**/*.sh",

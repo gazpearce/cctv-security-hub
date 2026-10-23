@@ -6,3 +6,7 @@ credentials/
 secrets/
 .agents/
 workspace_indexing_audit.log
+.cache/
+2fa_daemon_state.json
+pending_verifications.json
+verification_audit.log

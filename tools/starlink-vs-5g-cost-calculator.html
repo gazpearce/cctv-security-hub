@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starlink vs 5G Rural Broadband Cost & Speed Calculator UK — ADI Communications</title>
+  <meta name="description" content="Compare 3-year total cost of ownership (TCO), latency, and real-world download/upload speeds between SpaceX Starlink and 4G/5G external high-gain antennas. Engineered by Gary Pearce.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="canonical" href="https://gazpearce.github.io/cctv-security-hub/starlink-vs-5g-cost-calculator.html">
+  <style>
+    body { background-color: #050508; color: #F3F4F6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); border-radius: 1rem; }
+    .accent-orange { color: #FF5500; }
+    .accent-bg { background-color: #FF5500; }
+  </style>
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="ADI Communications Engineering Hub">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Starlink vs 5G Rural Broadband Cost & Speed Calculator UK — ADI Communications">
+  <meta property="og:description" content="Compare 3-year total cost of ownership (TCO), latency, and real-world download/upload speeds between SpaceX Starlink and 4G/5G external high-gain antennas. Engineered by Gary Pearce.">
+  <meta property="og:url" content="https://gazpearce.github.io/cctv-security-hub/starlink-vs-5g-cost-calculator.html">
+  <meta property="og:image" content="https://gazpearce.github.io/cctv-security-hub/assets/images/starlink-5g-og.webp">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Starlink vs 5G Rural Broadband Cost & Speed Calculator UK — ADI Communications">
+  <meta name="twitter:description" content="Compare 3-year total cost of ownership (TCO), latency, and real-world download/upload speeds between SpaceX Starlink and 4G/5G external high-gain antennas. Engineered by Gary Pearce.">
+  <meta name="twitter:image" content="https://gazpearce.github.io/cctv-security-hub/assets/images/starlink-5g-og.webp">
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Starlink vs 5G Rural Broadband Cost & Speed Calculator UK \u2014 ADI Communications",
+      "url": "https://gazpearce.github.io/cctv-security-hub/starlink-vs-5g-cost-calculator.html",
+      "description": "Compare 3-year total cost of ownership (TCO), latency, and real-world download/upload speeds between SpaceX Starlink and 4G/5G external high-gain antennas. Engineered by Gary Pearce.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All Web Browsers",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gary Pearce",
+        "jobTitle": "Lead Physical Security & Telecoms Engineer",
+        "telephone": "+447860244274",
+        "worksFor": {
+          "@type": "LocalBusiness",
+          "name": "ADI Communications",
+          "url": "https://tvandhomesecurity.blogspot.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ADI Communications",
+        "url": "https://tvandhomesecurity.blogspot.com/",
+        "telephone": "+447860244274"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ADI Communications Hub",
+          "item": "https://gazpearce.github.io/cctv-security-hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Starlink vs 5G Rural Broadband Cost & Speed Calculator UK \u2014 ADI Communications",
+          "item": "https://gazpearce.github.io/cctv-security-hub/starlink-vs-5g-cost-calculator.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+  <!-- Top Navigation -->
+  <header class="border-b border-white/10 bg-[#09090D]/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <span class="w-3 h-3 rounded-full bg-[#FF5500] animate-pulse"></span>
+        <span class="font-bold tracking-tight text-white uppercase text-sm sm:text-base">ADI Communications <span class="text-neutral-500">| Hub</span></span>
+      </a>
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="text-xs sm:text-sm text-neutral-400 hover:text-white transition">All Tools</a>
+        <a href="tel:07860244274" class="accent-bg text-black font-semibold text-xs sm:text-sm px-4 py-2 rounded-full hover:bg-orange-500 transition">
+          Direct: 07860 244 274
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Calculator Hero & Form -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-10 w-full flex-grow">
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs text-neutral-400 mb-3">
+        <span>Rural UK Connectivity Cost & Throughput Benchmark</span>
+      </div>
+      <h1 class="text-2xl sm:text-4xl font-black uppercase tracking-tight text-white mb-3">
+        Starlink vs 4G/5G Cost & Speed Calculator
+      </h1>
+      <p class="text-xs sm:text-sm text-neutral-400 max-w-xl mx-auto">
+        Accurately evaluate 1, 2, and 3-year Total Cost of Ownership (TCO) between SpaceX Starlink Gen 3 and external 4G/5G directional mast antennas across rural Yorkshire and Northern England.
+      </p>
+    </div>
+
+    <!-- Interactive Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <!-- Input Controls (7 cols) -->
+      <div class="md:col-span-7 glass-card p-6 space-y-5">
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Contract Horizon / Analysis Period</label>
+          <div class="grid grid-cols-3 gap-2">
+            <button type="button" id="period12" onclick="setPeriod(12)" class="py-2 text-xs font-mono font-bold rounded-lg border border-white/10 bg-white/5 hover:border-[#FF5500]">12 Months</button>
+            <button type="button" id="period24" onclick="setPeriod(24)" class="py-2 text-xs font-mono font-bold rounded-lg border border-white/10 bg-white/5 hover:border-[#FF5500]">24 Months</button>
+            <button type="button" id="period36" onclick="setPeriod(36)" class="py-2 text-xs font-mono font-bold rounded-lg border border-[#FF5500] bg-[#FF5500]/20 text-orange-300 font-bold">36 Months</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Starlink Hardware Kit Cost (£)</label>
+          <input type="number" id="starlinkKit" value="399" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#FF5500]" oninput="updateCalcs()">
+          <span class="text-[11px] text-neutral-500">SpaceX Gen 3 standard kit direct from Starlink (often discounted to £299).</span>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Starlink Monthly Subscription (£/month)</label>
+          <input type="number" id="starlinkSub" value="75" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#FF5500]" oninput="updateCalcs()">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">4G/5G High-Gain Outdoor Router & Antenna Kit (£)</label>
+          <input type="number" id="cellularKit" value="220" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#FF5500]" oninput="updateCalcs()">
+          <span class="text-[11px] text-neutral-500">Poynting 4G/5G directional 2x2/4x4 MIMO cross-polarised external antenna.</span>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">4G/5G Unlimited Data SIM (£/month)</label>
+          <input type="number" id="cellularSub" value="25" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-[#FF5500]" oninput="updateCalcs()">
+          <span class="text-[11px] text-neutral-500">Standard EE, Three, or Vodafone unlimited data 30-day SIM.</span>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Professional Installation & Mast Brackets</label>
+          <div class="flex items-center space-x-3">
+            <input type="checkbox" id="includeInstall" checked class="w-4 h-4 accent-orange rounded" onchange="updateCalcs()">
+            <label for="includeInstall" class="text-xs text-neutral-300">Include Certified ADI Chimney/Gable Installation (£199 + VAT)</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-Time Engineering Telemetry (5 cols) -->
+      <div class="md:col-span-5 glass-card p-6 flex flex-col justify-between border-orange-500/20">
+        <div>
+          <div class="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-4">Total Cost of Ownership</div>
+          
+          <div class="space-y-4 font-mono">
+            <div class="bg-black/40 p-3 rounded-lg border border-white/5">
+              <div class="text-[11px] text-neutral-400 uppercase">SpaceX Starlink 3-Year TCO</div>
+              <div id="starlinkTotal" class="text-2xl font-black text-white">£3,338</div>
+              <div class="text-[10px] text-neutral-500 mt-1">150–280 Mbps | 25–40ms ping | Unlimited satellite</div>
+            </div>
+
+            <div class="bg-black/40 p-3 rounded-lg border border-white/5">
+              <div class="text-[11px] text-neutral-400 uppercase">External 4G/5G 3-Year TCO</div>
+              <div id="cellularTotal" class="text-2xl font-black text-emerald-400">£1,359</div>
+              <div class="text-[10px] text-neutral-500 mt-1">50–180 Mbps | 30–55ms ping | Subject to cell mast congestion</div>
+            </div>
+
+            <div class="bg-[#FF5500]/10 p-3 rounded-lg border border-[#FF5500]/30">
+              <div class="text-[11px] text-orange-400 uppercase font-bold">Cost Difference & Recommendation</div>
+              <div id="costDiff" class="text-2xl font-black accent-orange">£1,979 <span class="text-xs font-normal text-white">difference</span></div>
+              <div id="recommendationText" class="text-[11px] text-neutral-300 mt-1 font-sans">
+                Starlink provides superior 250+ Mbps speeds where cellular mast signal is weak or non-existent.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-white/10 text-xs text-neutral-400 space-y-1">
+          <div><strong class="text-white">Trade Reality:</strong> Many rural farms deploy 4G/5G as an automatic instant failover WAN to Starlink using a dual-WAN router for 99.99% uptime.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Specification Chapter -->
+    <section class="mt-12 glass-card p-6 space-y-4">
+      <h2 class="text-lg font-bold text-white uppercase tracking-tight">Comparing Starlink LEO Constellation vs Terrestrial 4G/5G</h2>
+      <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+        SpaceX Low Earth Orbit (LEO) satellites orbit at 550km altitude, delivering 25ms to 40ms round-trip latency that completely outperforms legacy geostationary satellite systems (600ms+ lag). In contrast, 4G/5G relies on line-of-sight to the nearest cellular mast tower:
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono text-neutral-300 mt-3">
+        <div class="p-3 bg-black/40 rounded-lg border border-white/5">
+          <strong class="text-orange-400 block mb-1">Starlink Strengths:</strong>
+          • Works anywhere with open sky<br>
+          • 150–280 Mbps consistent speeds<br>
+          • Zero mobile mast throttling<br>
+          • Gale-proof when properly lashed
+        </div>
+        <div class="p-3 bg-black/40 rounded-lg border border-white/5">
+          <strong class="text-emerald-400 block mb-1">4G/5G Strengths:</strong>
+          • Lower monthly cost (£20–£30/mo)<br>
+          • Discreet compact antenna<br>
+          • Low 12V DC power consumption<br>
+          • Ideal secondary backup connection
+        </div>
+      </div>
+    </section>
+
+    <!-- Conversion Banner -->
+    <div class="mt-10 glass-card p-6 text-center border-orange-500/30 bg-gradient-to-b from-white/5 to-[#FF5500]/5">
+      <h3 class="text-base sm:text-lg font-black text-white uppercase">Need a Professional Rural Broadband Site Survey?</h3>
+      <p class="text-xs sm:text-sm text-neutral-400 mt-1 mb-4">
+        Gary Pearce conducts live Starlink obstruction mapping and 4G/5G cell mast signal tests across Yorkshire with professional spectrum analyzers.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="tel:07860244274" class="accent-bg text-black font-bold text-xs uppercase px-6 py-3 rounded-full hover:bg-orange-500 transition">
+          Call Gary Pearce: 07860 244 274
+        </a>
+        <a href="https://adicommunications.co.uk/news/starlink-vs-4g-5g-rural-broadband/" target="_blank" class="border border-white/20 text-white font-bold text-xs uppercase px-6 py-3 rounded-full hover:bg-white/10 transition">
+          Visit ADI Communications
+        </a>
+      </div>
+    </div>
+  
+    <!-- Gary Pearce Field Advisory & Dispatch Banner -->
+    <div class="mt-12 p-6 rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-4">
+        <div class="w-12 h-12 rounded-full bg-[#FF5500]/20 border border-[#FF5500]/40 flex items-center justify-center shrink-0">
+          <span class="text-lg">🛠️</span>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-tight">Need On-Site Engineering in Yorkshire?</h4>
+          <p class="text-xs text-neutral-400">Gary Pearce • 25+ Years Experience • £10M Public Liability • CAI-Benchmarked Materials</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="tel:07860244274" class="px-5 py-2.5 rounded-full bg-[#FF5500] hover:bg-orange-500 text-black font-bold text-xs uppercase tracking-wider transition">Call 07860 244 274</a>
+        <a href="https://adicommunications.co.uk/news/starlink-vs-4g-5g-rural-broadband/" class="px-4 py-2.5 rounded-full border border-white/20 hover:border-white text-white text-xs font-semibold transition" target="_blank" rel="noopener">Read Field Guide: Starlink vs 5G</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-[#09090D] py-6 text-center text-xs text-neutral-500">
+    <p>© 2026 ADI Communications. Lead Infrastructure Engineer: Gary Pearce (07860 244 274). West Yorkshire, UK.</p>
+  </footer>
+
+  <script>
+    let currentMonths = 36;
+
+    function setPeriod(m) {
+      currentMonths = m;
+      document.getElementById('period12').className = m === 12 ? 'py-2 text-xs font-mono font-bold rounded-lg border border-[#FF5500] bg-[#FF5500]/20 text-orange-300' : 'py-2 text-xs font-mono font-bold rounded-lg border border-white/10 bg-white/5 hover:border-[#FF5500]';
+      document.getElementById('period24').className = m === 24 ? 'py-2 text-xs font-mono font-bold rounded-lg border border-[#FF5500] bg-[#FF5500]/20 text-orange-300' : 'py-2 text-xs font-mono font-bold rounded-lg border border-white/10 bg-white/5 hover:border-[#FF5500]';
+      document.getElementById('period36').className = m === 36 ? 'py-2 text-xs font-mono font-bold rounded-lg border border-[#FF5500] bg-[#FF5500]/20 text-orange-300' : 'py-2 text-xs font-mono font-bold rounded-lg border border-white/10 bg-white/5 hover:border-[#FF5500]';
+      updateCalcs();
+    }
+
+    function updateCalcs() {
+      const sKit = parseFloat(document.getElementById('starlinkKit').value) || 399;
+      const sSub = parseFloat(document.getElementById('starlinkSub').value) || 75;
+      const cKit = parseFloat(document.getElementById('cellularKit').value) || 220;
+      const cSub = parseFloat(document.getElementById('cellularSub').value) || 25;
+      const hasInstall = document.getElementById('includeInstall').checked;
+
+      const installCost = hasInstall ? 238.80 : 0.0; // £199 + VAT
+
+      const sTotal = sKit + installCost + (sSub * currentMonths);
+      const cTotal = cKit + installCost + (cSub * currentMonths);
+      const diff = Math.abs(sTotal - cTotal);
+
+      document.getElementById('starlinkTotal').innerText = '£' + Math.round(sTotal).toLocaleString();
+      document.getElementById('cellularTotal').innerText = '£' + Math.round(cTotal).toLocaleString();
+      document.getElementById('costDiff').innerHTML = '£' + Math.round(diff).toLocaleString() + ' <span class="text-xs font-normal text-white">cheaper with 4G/5G</span>';
+
+      let rec = '';
+      if (diff > 1500) {
+        rec = `4G/5G saves £${Math.round(diff)} over ${currentMonths} months. If 4G/5G mast signal exceeds -95 dBm RSRP, high-gain antenna provides excellent value. Otherwise, Starlink delivers uncompromising 200+ Mbps bandwidth.`;
+      } else {
+        rec = `Starlink is competitively priced over ${currentMonths} months and provides guaranteed high-speed low-earth orbit coverage with zero cell mast contention.`;
+      }
+      document.getElementById('recommendationText').innerText = rec;
+    }
+
+    updateCalcs();
+  </script>
+  <script src="cctv-engineering-math.js"></script>
+
+
+
+
+<!-- ================= ADI COMMUNICATIONS CLOUD AUTHORITY & TRADE ENGINEERING NETWORK ================= -->
+<section id="cloud-authority-network" class="border-t border-slate-800 bg-space-950/95 text-slate-300 py-12 px-4 sm:px-6 lg:px-8 font-sans mt-16">
+    <div class="max-w-7xl mx-auto space-y-10">
+        
+        <!-- Authority Header -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800/80 pb-6">
+            <div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 font-mono text-xs border border-cyan-500/30 mb-2">
+                    <i class="fa-solid fa-network-wired"></i> UK Telecommunications & Physical Security Authority Network
+                </span>
+                <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">ADI Communications Open-Source Engineering Stack</h3>
+                <p class="text-xs sm:text-sm text-slate-400 max-w-3xl mt-1">
+                    Free, mathematically verified trade calculators, BS EN 62676-4 video surveillance models, and Pennine 90mph storm-rated mounting telemetry engineered by <strong>Gary Pearce</strong> (25+ years hands-on trade experience, £10M Public Liability Insurance).
+                </p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0">
+                <a href="tel:07860244274" class="px-4 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-space-950 font-bold text-xs transition shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Gary: 07860 244 274
+                </a>
+            </div>
+        </div>
+
+        <!-- 3-Column Authority Hub Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+            
+            <!-- Col 1: Interactive Tool Suite -->
+            <div class="bg-space-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-cyan-400 font-bold text-sm">
+                    <i class="fa-solid fa-calculator"></i> Verified Trade Calculators
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://gazpearce.github.io/starlink-mount-finder/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-satellite-dish text-slate-500"></i> Starlink Roof Mount & Obstacle Finder</a></li>
+                    <li><a href="https://gazpearce.github.io/starlink-wind-load-calculator/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-wind text-slate-500"></i> Pennine 90mph Gale Wind Load Calculator</a></li>
+                    <li><a href="https://gazpearce.github.io/uk-postcode-crime-checker/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-slate-500"></i> UK Postcode Police Crime Risk Checker</a></li>
+                    <li><a href="https://gazpearce.github.io/cctv-lens-dori-tool/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-video text-slate-500"></i> BS EN 62676-4 DORI Camera Distance Tool</a></li>
+                    <li><a href="https://gazpearce.github.io/ajax-smart-alarms-selector/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bell text-slate-500"></i> Grade 2 Ajax Wireless Alarm System Selector</a></li>
+                    <li><a href="https://gazpearce.github.io/poe-voltage-drop-calculator/" class="hover:text-cyan-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bolt text-slate-500"></i> Cat6 Pure Copper PoE Voltage Drop Tool</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 2: High-Authority Cloud Stack & Telemetry -->
+            <div class="bg-space-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+                    <i class="fa-solid fa-cloud"></i> Decentralized Cloud & Telemetry
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://purplemyrtle460.grafana.net/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chart-line text-slate-500"></i> Grafana Cloud Live Telemetry Dashboards</a></li>
+                    <li><a href="https://gary-pearce-forensic-hub.web.app/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-fire text-slate-500"></i> Google Firebase Global Edge Hub</a></li>
+                    <li><a href="https://adi-starlink-mount-finder.surge.sh/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-bolt-lightning text-slate-500"></i> Surge.sh Dedicated Edge CDN</a></li>
+                    <li><a href="https://github.com/gazpearce/cctv-security-hub" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-brands fa-github text-slate-500"></i> Open-Source GitHub Repository</a></li>
+                    <li><a href="https://gitlab.com/gazpearce" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-brands fa-gitlab text-slate-500"></i> GitLab Cloud CI/CD Pipeline</a></li>
+                    <li><a href="https://huggingface.co/datasets/gazpearce" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-brain text-slate-500"></i> Hugging Face Security Datasets</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Research Whitepapers & Commercial Services -->
+            <div class="bg-space-900/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+                <div class="flex items-center gap-2 text-orange-400 font-bold text-sm">
+                    <i class="fa-solid fa-graduation-cap"></i> Research Debriefs & Commercial Services
+                </div>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://adicommunications.co.uk/starlink-internet-installation/" target="_blank" rel="noopener" class="hover:text-orange-400 font-semibold text-white transition flex items-center gap-1.5"><i class="fa-solid fa-screwdriver-wrench text-orange-400"></i> Professional UK Starlink Installation</a></li>
+                    <li><a href="https://tvandhomesecurity.blogspot.com/" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-solid fa-newspaper text-slate-500"></i> ADI Technical Engineering Debriefs (UK Trade Blog)</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-brands fa-google-drive text-slate-500"></i> Google Drive CAD & Engineering Whitepapers</a></li>
+                    <li><a href="https://www.youtube.com/@GaryPearceADI" target="_blank" rel="noopener" class="hover:text-orange-400 transition flex items-center gap-1.5"><i class="fa-brands fa-youtube text-slate-500"></i> YouTube Field Engineering Masterclasses</a></li>
+                </ul>
+                <div class="pt-2 border-t border-slate-800/80 text-[11px] text-slate-400">
+                    Need turnkey physical installation? Direct engineer support across Yorkshire, Lancashire & Greater Manchester.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Semantic Co-Citation & Trade E-E-A-T Block -->
+        <div class="border-t border-slate-800/80 pt-6 text-[11px] text-slate-500 leading-relaxed space-y-2">
+            <p>
+                <strong>Engineering Citation & Attribution:</strong> All interactive models, load calculations, and impedance charts are maintained by physical installation engineer Gary Pearce for ADI Communications. Equipment conforms to British Standard BS EN 62676-4 (video surveillance), BS 6701 / BS 7671 (telecommunications and electrical cabling), and CAI benchmarked double-shielded copper standards.
+            </p>
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                <div>
+                    &copy; 2026 ADI Communications &bull; Gary Pearce &bull; 07860 244 274 &bull; £10M Public Liability Insurance.
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="font-mono text-slate-400">Multi-Cloud Edge Sync Active</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ================= END ADI COMMUNICATIONS CLOUD AUTHORITY NETWORK ================= -->
+
+</body>
+</html>

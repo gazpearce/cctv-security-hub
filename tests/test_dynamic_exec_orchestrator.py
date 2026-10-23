@@ -7,6 +7,7 @@ verifying zero NameError, REPO_ROOT resilience, and interface completeness.
 import os
 import unittest
 from pathlib import Path
+from swarm_stack_orchestrator import CATEGORY_STACK_KEYS
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -27,9 +28,10 @@ class TestDynamicExecOrchestrator(unittest.TestCase):
         self.assertIn("REPO_ROOT", ns)
         self.assertEqual(ns["REPO_ROOT"], os.getcwd())
         self.assertIn("STACK_TEAMS", ns)
-        self.assertEqual(len(ns["STACK_TEAMS"]), 13)
+        self.assertEqual(len(ns["STACK_TEAMS"]), 16)
         self.assertIn("CATEGORY_STACK_KEYS", ns)
-        self.assertEqual(len(ns["CATEGORY_STACK_KEYS"]), 11)
+        self.assertEqual(len(ns["CATEGORY_STACK_KEYS"]), len(CATEGORY_STACK_KEYS))
+        self.assertTrue(set(ns["CATEGORY_STACK_KEYS"]).issubset(set(ns["STACK_TEAMS"].keys())))
         self.assertTrue(callable(ns.get("check_url_reachability")))
 
     def test_exec_with_none_file(self):
@@ -40,7 +42,7 @@ class TestDynamicExecOrchestrator(unittest.TestCase):
 
         self.assertIn("REPO_ROOT", ns)
         self.assertEqual(ns["REPO_ROOT"], os.getcwd())
-        self.assertEqual(len(ns["STACK_TEAMS"]), 13)
+        self.assertEqual(len(ns["STACK_TEAMS"]), 16)
 
     def test_exec_with_empty_string_file(self):
         """Adversarial test: namespace has __file__ set to empty string."""

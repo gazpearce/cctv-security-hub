@@ -55,12 +55,17 @@ def validate():
     print(f"  [PASS] 100% Mathematical Parity verified across {len(doc3_rows)} assets.")
 
     # 3. Rule 45 Check on Ledger Targets
+    raw_root_regex = re.compile(r"^https?://(?:www\.)?adicommunications\.co\.uk/?(?:index\.(?:html?|php))?$", re.IGNORECASE)
+    allowed_prefixes = ("/news/", "/assets/", "/feed/", "/cctv-", "/starlink-", "/tv-", "/wifi-", "/ajax-", "/aerial-")
+
     for idx, e in enumerate(data["entries"], 1):
         for key in ("tenant_url", "apex_target", "shield_target_url"):
             val = e.get(key, "")
             if "adicommunications.co.uk" in val:
-                assert any(sub in val for sub in ("/news/", "/assets/", "/feed/")), \
-                    f"Rule 45 violation in entry {idx} key {key}: {val}"
+                assert not raw_root_regex.match(val.strip()), \
+                    f"Rule 45 raw root violation in entry {idx} key {key}: {val}"
+                assert any(sub in val for sub in allowed_prefixes), \
+                    f"Rule 45 unshielded target path in entry {idx} key {key}: {val}"
 
     print("  [PASS] Rule 45 Google Shield Air-Gap compliance verified.")
     print("[SUCCESS] All Milestone 3 Backlink Ledger checks passed 100%!\n")

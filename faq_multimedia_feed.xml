@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <atom:link href="https://gary-pearce-forensic-hub.web.app/faq_feed.xml" rel="self" type="application/rss+xml"/>
+    <title>ADI Communications • UK Trade Engineering Multimedia FAQ Feed</title>
+    <link>https://tvandhomesecurity.blogspot.com/</link>
+    <language>en-GB</language>
+    <copyright>© 2026 Gary Pearce • ADI Communications</copyright>
+    <itunes:subtitle>4K Explainer Videos, Slide Decks &amp; Physical Installation Standards</itunes:subtitle>
+    <itunes:author>Gary Pearce (ADI Communications)</itunes:author>
+    <itunes:summary>Autonomous high-intent multimedia feed streaming 4K video explainers, technical slide decks, and trade engineering assessments across CCTV, Starlink, TV Mounting, Smart Alarms, Aerials, and Wi-Fi Networking. Hosted by Gary Pearce, lead engineer with 25+ years hands-on experience (07860 244 274).</itunes:summary>
+    <description>Autonomous high-intent multimedia feed streaming 4K video explainers, technical slide decks, and trade engineering assessments across CCTV, Starlink, TV Mounting, Smart Alarms, Aerials, and Wi-Fi Networking. Hosted by Gary Pearce, lead engineer with 25+ years hands-on experience (07860 244 274).</description>
+    <itunes:owner>
+      <itunes:name>Gary Pearce</itunes:name>
+      <itunes:email>aiagent1510@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://gary-pearce-forensic-hub.web.app/assets/images/cat6-fluke-dsx-8000-cable-certification-telemetry.webp"/>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Business">
+      <itunes:category text="Management"/>
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    <item>
+      <title>Why does 850nm infrared night vision fail Crown Prosecution Service (CPS) court evidence standards? — Gary Pearce ADI Communications</title>
+      <itunes:title>Why does 850nm infrared night vision fail Crown Prosecution Service (CPS) court evidence standards?</itunes:title>
+      <itunes:author>Gary Pearce (ADI Communications)</itunes:author>
+      <pubDate>Fri, 23 Oct 2026 14:35:39 -0000</pubDate>
+      <link>https://adicommunications.co.uk/news/hikvision-colorvu-vs-infrared-cctv/</link>
+      <guid isPermaLink="false">adi-faq-cctv-colorvu-vs-infrared-police-evidence</guid>
+      <category>CCTV Engineering</category>
+      <description>Official ADI Communications Technical Trade Breakdown by Gary Pearce (25+ Years Hands-On Physical Security &amp;amp; Telecoms Engineer, Direct Mobile: 07860 244 274, £10M Public Liability Insurance).
+BOTTOM LINE UP FRONT (BLUF):
+Why do police reject CCTV footage when an intruder's face is completely washed out by infrared glare? I'm Gary Pearce, lead security engineer at ADI Communications, with over twenty-five years of hands-on Yorkshire trade experience. Standard eight-hundred-and-fifty nanometre infrared reflects off facial skin, creating severe overexposure and wiping out crucial colour characteristics. Under British Standard BS EN 62676-4, court prosecution requires full facial identification. We install Hikvision ColorVu cameras with F1.0 super-apertures that capture twenty-four-seven full colour in pitch darkness. For advice on police-admissible CCTV, call me on 07860 244 274.
+Technical Standards &amp;amp; Hardware:
+- BS EN 62676-4 • CPS Evidence Guidelines • F1.0 Super-Aperture • Full-Colour Night Vision
+- Fitted with CAI-benchmarked equipment and double-screened WF100 cable (Gary Pearce / ADI Communications are NOT CAI members).
+- 9.98/10 Rating across 84+ verified client reviews.
+Full Technical Guide &amp;amp; Apex Repository: https://docs.google.com/presentation/d/e/2PACX-1vTb-2iOvkk7k2_hkQ2hI3HDzuRDZrKUQmbhPSU3JHLx6XHHdzR1zzPlyo7ed6QBdfA3ly0RiUy6BRMh/pub</description>
+      <enclosure url="https://gary-pearce-forensic-hub.web.app/assets/videos/cctv-colorvu-vs-infrared-police-evidence.mp4" length="134524" type="audio/mpeg"/>
+      <itunes:duration>00:35</itunes:duration>
+      <itunes:image href="https://gary-pearce-forensic-hub.web.app/assets/videos/cctv-colorvu-vs-infrared-police-evidence_thumb.webp"/>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+    <item>
+      <title>Why is non-drill chimney lashing safer than drilling masonry anchors for Starlink in the UK? — Gary Pearce ADI Communications</title>
+      <itunes:title>Why is non-drill chimney lashing safer than drilling masonry anchors for Starlink in the UK?</itunes:title>
+      <itunes:author>Gary Pearce (ADI Communications)</itunes:author>
+      <pubDate>Fri, 23 Oct 2026 14:54:36 -0000</pubDate>
+      <link>https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/</link>
+      <guid isPermaLink="false">adi-faq-starlink-chimney-mount-vs-drilling-brickwork</guid>
+      <category>Satellite Telecoms</category>
+      <description><![CDATA[Official ADI Communications Technical Trade Breakdown by Gary Pearce (25+ Years Hands-On Physical Security &amp; Telecoms Engineer, Direct Mobile: 07860 244 274, £10M Public Liability Insurance).
+BOTTOM LINE UP FRONT (BLUF):
+Will drilling heavy anchor bolts into your chimney stack cause structural cracks and roof leaks during winter storms? I'm Gary Pearce, lead telecoms engineer at ADI Communications, with over twenty-five years of UK field experience. Drilling into Victorian lime-mortar chimneys causes brick spalling and water penetration. We secure rectangular Starlink Gen 3 dishes using heavy-duty non-drill stainless twin-wire lashing cradles with corner mitre protectors, rated for ninety-mile-per-hour Pennine winter gales. For safe chimney installations across Yorkshire and Lancashire, call Gary on 07860 244 274.
+Technical Standards &amp; Hardware:
+- Eurocode 1 (BS EN 1991-1-4) • Twin-Wire Stainless Lashing • Lime Mortar Preservation • 90mph Gale Rating
+- Fitted with CAI-benchmarked equipment and double-screened WF100 cable (Gary Pearce / ADI Communications are NOT CAI members).
+- 9.98/10 Rating across 84+ verified client reviews.
+Full Technical Guide &amp; Apex Repository: https://docs.google.com/presentation/d/e/2PACX-1vTb-2iOvkk7k2_hkQ2hI3HDzuRDZrKUQmbhPSU3JHLx6XHHdzR1zzPlyo7ed6QBdfA3ly0RiUy6BRMh/pub]]></description>
+      <enclosure url="https://gary-pearce-forensic-hub.web.app/assets/videos/starlink-chimney-mount-vs-drilling-brickwork.mp4" length="168804" type="audio/mpeg"/>
+      <itunes:duration>00:35</itunes:duration>
+      <itunes:image href="https://gary-pearce-forensic-hub.web.app/assets/videos/starlink-chimney-mount-vs-drilling-brickwork_thumb.webp"/>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
+</rss>

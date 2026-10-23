@@ -42,24 +42,51 @@ RESET = "\033[0m" if USE_COLOR else ""
 
 TIER_MODULES = {
     1: {
-        "name": "Tier 1: Feature Coverage (F1 to F8)",
-        "module": "tests.e2e.test_tier1_features",
-        "file": "test_tier1_features.py"
+        "name": "Tier 1: Feature Coverage (F1 to F8 & Milestones M1-M4)",
+        "modules": [
+            "tests.e2e.test_tier1_features",
+            "tests.test_m1all_onboarding",
+            "tests.test_m2all_multimedia",
+            "tests.test_m3all_citadel_ledger",
+            "tests.test_m4all_skills_sync"
+        ],
+        "files": [
+            "test_tier1_features.py",
+            "tests/test_m1all_onboarding.py",
+            "tests/test_m2all_multimedia.py",
+            "tests/test_m3all_citadel_ledger.py",
+            "tests/test_m4all_skills_sync.py"
+        ]
     },
     2: {
         "name": "Tier 2: Boundary & Corner Cases",
-        "module": "tests.e2e.test_tier2_boundaries",
-        "file": "test_tier2_boundaries.py"
+        "modules": ["tests.e2e.test_tier2_boundaries"],
+        "files": ["test_tier2_boundaries.py"]
     },
     3: {
         "name": "Tier 3: Cross-Feature Combinations",
-        "module": "tests.e2e.test_tier3_cross_feature",
-        "file": "test_tier3_cross_feature.py"
+        "modules": [
+            "tests.e2e.test_tier3_cross_feature"
+        ],
+        "files": ["test_tier3_cross_feature.py"]
     },
     4: {
         "name": "Tier 4: Real-World Application Scenarios",
-        "module": "tests.e2e.test_tier4_real_world",
-        "file": "test_tier4_real_world.py"
+        "modules": ["tests.e2e.test_tier4_real_world"],
+        "files": ["test_tier4_real_world.py"]
+    },
+    5: {
+        "name": "Tier 5: White-Box Adversarial Hardening (Domains 1 to 10)",
+        "modules": [
+            "tests.e2e.test_tier5_adversarial_part1",
+            "tests.e2e.test_tier5_adversarial_part2",
+            "tests.e2e.test_tier5_adversarial_comprehensive"
+        ],
+        "files": [
+            "test_tier5_adversarial_part1.py",
+            "test_tier5_adversarial_part2.py",
+            "test_tier5_adversarial_comprehensive.py"
+        ]
     }
 }
 
@@ -70,40 +97,30 @@ def run_tier(tier_num: int, verbose: bool = False, suppress_stdout: bool = False
     if not tier_info:
         raise ValueError(f"Invalid tier: {tier_num}")
 
-    module_name = tier_info["module"]
-    tests_dir = Path(__file__).resolve().parent
-    file_path = tests_dir / tier_info["file"]
-
-    if not file_path.exists():
-        return {
-            "tier": tier_num,
-            "name": tier_info["name"],
-            "tests_run": 0,
-            "passed": 0,
-            "failed": 0,
-            "errors": 0,
-            "skipped": 0,
-            "duration": 0.0,
-            "success": False,
-            "error_msg": f"Test file not found: {file_path}"
-        }
+    modules = tier_info.get("modules")
+    if not modules:
+        modules = [tier_info["module"]]
 
     loader = unittest.defaultTestLoader
-    try:
-        suite = loader.loadTestsFromName(module_name)
-    except Exception as e:
-        return {
-            "tier": tier_num,
-            "name": tier_info["name"],
-            "tests_run": 0,
-            "passed": 0,
-            "failed": 0,
-            "errors": 1,
-            "skipped": 0,
-            "duration": 0.0,
-            "success": False,
-            "error_msg": f"Failed to load suite {module_name}: {e}"
-        }
+    suite = unittest.TestSuite()
+
+    for mod_name in modules:
+        try:
+            mod_suite = loader.loadTestsFromName(mod_name)
+            suite.addTests(mod_suite)
+        except Exception as e:
+            return {
+                "tier": tier_num,
+                "name": tier_info["name"],
+                "tests_run": 0,
+                "passed": 0,
+                "failed": 0,
+                "errors": 1,
+                "skipped": 0,
+                "duration": 0.0,
+                "success": False,
+                "error_msg": f"Failed to load suite {mod_name}: {e}"
+            }
 
     verbosity_level = 2 if verbose else 1
     stream = io.StringIO() if not verbose else sys.stderr
@@ -141,18 +158,18 @@ def run_tier(tier_num: int, verbose: bool = False, suppress_stdout: bool = False
 
 def main():
     parser = argparse.ArgumentParser(description="Unified E2E Test Suite Runner")
-    parser.add_argument("--tier", choices=["1", "2", "3", "4", "all"], default="all",
+    parser.add_argument("--tier", choices=["1", "2", "3", "4", "5", "all"], default="all",
                         help="Specify tier to run (default: all)")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose test execution output")
     parser.add_argument("--json", dest="json_output", action="store_true", help="Print summary as JSON")
     args = parser.parse_args()
 
-    tiers_to_run = [1, 2, 3, 4] if args.tier == "all" else [int(args.tier)]
+    tiers_to_run = [1, 2, 3, 4, 5] if args.tier == "all" else [int(args.tier)]
 
     if not args.json_output:
         print(f"\n{BOLD}{CYAN}======================================================================{RESET}")
         print(f"{BOLD}{CYAN}  Autonomous Multi-Category Google & Cloud Stack Expansion Swarm{RESET}")
-        print(f"{BOLD}  Unified Opaque-Box E2E Test Runner — Tiers 1 to 4{RESET}")
+        print(f"{BOLD}  Unified Opaque-Box E2E Test Runner — Tiers 1 to 5{RESET}")
         print(f"{BOLD}{CYAN}======================================================================{RESET}\n")
 
     overall_start = time.time()

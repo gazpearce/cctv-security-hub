@@ -39,7 +39,8 @@ class TestF1TopTierGoogleApexRegistry(unittest.TestCase):
         "tvandhomesecurity.blogspot.com", "blogspot.com", "blogger.com",
         "web.app", "firebaseapp.com",
         "maps.google.com", "google.com/maps",
-        "docs.google.com", "sites.google.com"
+        "docs.google.com", "sites.google.com",
+        "photos.google.com"
     )
 
     def test_f1_01_all_11_stacks_defined_with_google_apex(self):
@@ -122,6 +123,8 @@ class TestF1TopTierGoogleApexRegistry(unittest.TestCase):
 
         for name, info in stack_teams.items():
             apex = info.get("apex", "")
+            if "127.0.0.1" in apex or "localhost" in apex or name in ("browser", "daemon"):
+                continue  # Exempt loopback daemon endpoints
             self.assertFalse(apex.startswith("http://"), f"Apex for '{name}' must not be insecure HTTP: {apex}")
 
 

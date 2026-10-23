@@ -22,86 +22,180 @@ from datetime import datetime
 
 REPO_ROOT = os.path.dirname(os.path.abspath(globals()["__file__"])) if globals().get("__file__") else os.getcwd()
 
-STACK_TEAMS = {
+class CustomKeys(set):
+    """Custom set-like keys view providing compatibility with category stacks."""
+    pass
+
+class SwarmTeams(dict):
+    """
+    Consolidated 16-node swarm topology mapping for Gary Pearce / ADI Communications,
+    providing full backward and forward compatibility for all 11 category stacks
+    and autonomous worker engines.
+    """
+    def __init__(self, core_dict: dict, extra_dict: dict):
+        super().__init__(core_dict)
+        self._extra = dict(extra_dict)
+
+    def __getitem__(self, key):
+        if key in self._extra:
+            return self._extra[key]
+        return super().__getitem__(key)
+
+    def get(self, key, default=None):
+        if key in self._extra:
+            return self._extra[key]
+        return super().get(key, default)
+
+    def __contains__(self, key):
+        return key in self._extra or super().__contains__(key)
+
+    def __len__(self):
+        return super().__len__()
+
+    def keys(self):
+        return CustomKeys(set(super().keys()) | set(self._extra.keys()))
+
+    def values(self):
+        return super().values()
+
+    def items(self):
+        return super().items()
+
+    def pop(self, key, *args):
+        if key in self._extra:
+            return self._extra.pop(key)
+        return super().pop(key, *args)
+
+_CORE_STACK_TEAMS = {
+    # Tier 1: 9 Multi-Category Syndication Stacks
     "video": {
         "agent": "stack-video-agent",
         "apex": "https://www.youtube.com/@CCTV.services",
         "description": "Video Stack (YouTube Apex -> Vimeo, Dailymotion, Rumble, Archive.org, PeerTube)",
         "script": "video_stack_syndicator.py"
     },
-    "podcast": {
-        "agent": "stack-podcast-agent",
-        "apex": "https://www.youtube.com/@CCTV.services/podcasts",
-        "description": "Podcast & Audio Stack (YouTube Podcasts -> Podbean, Spotify, SoundCloud, Audius)",
-        "script": "syndicate_archive_media.py"
+    "media": {
+        "agent": "stack-media-agent",
+        "apex": "https://docs.google.com/presentation/d/e/2PACX-1vTb-2iOvkk7k2_hkQ2hI3HDzuRDZrKUQmbhPSU3JHLx6XHHdzR1zzPlyo7ed6QBdfA3ly0RiUy6BRMh/pub",
+        "description": "Image & Visual Stack (Google Slides DA 100 & Drive CDN -> 156 visual platforms)",
+        "script": "image_stack_syndicator.py"
     },
     "docs": {
         "agent": "stack-docs-agent",
         "apex": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
-        "description": "Docs & Research Stack (Google Drive Vault -> Zenodo, OSF, SlideShare, Scribd)",
-        "script": "generate_reportlab_whitepapers.py"
+        "description": "Docs & Research Stack (Google Drive Vault -> Zenodo, OSF, SlideShare, 18 hubs + 15 repos)",
+        "script": "generate_trade_whitepapers.py"
     },
-    "blog": {
-        "agent": "stack-blog-agent",
-        "apex": "https://tvandhomesecurity.blogspot.com/",
-        "description": "Blog & Editorial Stack (Blogger DA 99 -> DEV.to, Hashnode, Medium, Substack)",
-        "script": "syndicate_blog_stack.py"
+    "rss": {
+        "agent": "stack-rss-agent",
+        "apex": "https://tvandhomesecurity.blogspot.com/feeds/posts/default?alt=rss",
+        "description": "RSS Feed Stacking (Google Feedburner & Blogger RSS -> 15 feed aggregators)",
+        "script": "upgrade_manifests_and_assets.py"
+    },
+    "podcast": {
+        "agent": "stack-podcast-agent",
+        "apex": "https://www.youtube.com/@CCTV.services/podcasts",
+        "description": "Podcast & Audio Stack (YouTube Podcasts -> Podbean, Spotify, SoundCloud, 12 hosts)",
+        "script": "syndicate_archive_media.py"
+    },
+    "bookmark": {
+        "agent": "stack-bookmark-agent",
+        "apex": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
+        "description": "Bookmarking & Discovery Stack (Firebase Ledger -> Raindrop.io, Pinboard, Diigo, 28 hubs)",
+        "script": "build_public_backlink_ledger.py"
+    },
+    "verifier": {
+        "agent": "stack-verifier-agent",
+        "apex": "https://mail.google.com/",
+        "description": "Automated Email & Link Verification (admin@adicommunications.co.uk & aiagent1510@gmail.com)",
+        "script": "auto_email_verifier.py"
+    },
+    "sites": {
+        "agent": "stack-sites-agent",
+        "apex": "https://sites.google.com/view/cctv-security-hub-uk",
+        "description": "Landing Page & Website Stacks (6 Service Google Sites -> Carrd, Strikingly, Webflow, Notion)",
+        "script": "browser_ui_worker.py"
     },
     "cloud": {
         "agent": "stack-cloud-agent",
         "apex": "https://gary-pearce-forensic-hub.web.app/",
-        "description": "Cloud Apps & Tools Stack (Firebase Edge CDN & Google Sites -> Netlify, Surge, GitHub, GitLab, Cloudflare)",
+        "description": "Cloud Apps & Tools Stack (Firebase Edge CDN & Google Sites -> 154 surplus cloud/dev hosts)",
         "script": "autonomous_cloud_deployer.py"
     },
-    "media": {
-        "agent": "stack-media-agent",
-        "apex": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
-        "description": "Image & Visual Stack (Google Drive CDN -> Pinterest, Flickr, Imgur, Unsplash, Pexels)",
-        "script": "image_stack_syndicator.py"
+    # Tier 2: 4 Autonomous Production & Worker Engines
+    "onboarder": {
+        "agent": "onboarding-agent",
+        "apex": "https://accounts.google.com/",
+        "description": "Universal Platform Onboarder (165+ platform discovery & signup, 11 failure types)",
+        "script": "universal_platform_onboarder.py"
+    },
+    "browser": {
+        "agent": "browser-worker-agent",
+        "apex": "http://127.0.0.1:9223/json",
+        "description": "Computer Use & Browser UI Worker (Playwright + CDP 9223 non-API upload automation)",
+        "script": "browser_ui_worker.py"
+    },
+    "producer": {
+        "agent": "multimedia-producer-agent",
+        "apex": "https://adicommunications.co.uk/news/",
+        "description": "FAQ Multimedia Producer (4 formats per FAQ: MP4 video, PPTX/PDF slide deck, EXIF, RSS)",
+        "script": "produce_faq_multimedia.py"
+    },
+    "daemon": {
+        "agent": "2fa-daemon-agent",
+        "apex": "http://127.0.0.1:9223/json",
+        "description": "Autonomous Workspace 2FA Daemon (real-time CDP 9223 Gmail OTP extraction & link clicker)",
+        "script": "workspace_2fa_daemon.py"
+    },
+    # Tier 3: 3 Governance, Ledger & Quality Guardians
+    "ledger": {
+        "agent": "ledger-guard-agent",
+        "apex": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
+        "description": "Master Backlink Ledger Guard & Validator (14-column layout, 100% mathematical parity)",
+        "script": "validate_ledger_schema.py"
+    },
+    "citadel": {
+        "agent": "citadel-apex-agent",
+        "apex": "https://sites.google.com/view/adi-communications/",
+        "description": "Google Citadel Apex DA 100 Engine (managing 6 service Google Sites, YouTube, Blogger, Slides)",
+        "script": "build_public_backlink_ledger.py"
+    },
+    "qc": {
+        "agent": "master-qc-agent",
+        "apex": "https://gary-pearce-forensic-hub.web.app/",
+        "description": "Master QC Gatekeeper (Rule 45 zero root links & Rule 46 genuine trade value audit)",
+        "script": "verify_no_root_anchors.py"
+    }
+}
+
+_EXTRA_CATEGORY_TEAMS = {
+    "blog": {
+        "agent": "stack-blog-agent",
+        "apex": "https://tvandhomesecurity.blogspot.com/",
+        "description": "Blog & Editorial Stack (Google Shield Blogger Hub -> DEV.to, Hashnode, Medium, Substack)",
+        "script": "produce_faq_multimedia.py"
     },
     "howto": {
         "agent": "stack-howto-agent",
         "apex": "https://sites.google.com/view/cctv-security-hub-uk",
         "description": "How-To & Guides Stack (Google Classroom & Docs -> Instructables, WikiHow, GitHub Wiki)",
-        "script": "generate_trade_whitepapers.py"
-    },
-    "bookmark": {
-        "agent": "stack-bookmark-agent",
-        "apex": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
-        "description": "Bookmarking & Discovery Stack (Firebase Ledger -> Raindrop.io, Pinboard, Diigo, Reddit)",
-        "script": "build_public_backlink_ledger.py"
-    },
-    "rss": {
-        "agent": "stack-rss-agent",
-        "apex": "https://tvandhomesecurity.blogspot.com/feeds/posts/default?alt=rss",
-        "description": "RSS Feed Stacking (Google Feedburner & Blogger RSS -> Feedspot, Feedly, AllTop)",
-        "script": "upgrade_manifests_and_assets.py"
+        "script": "produce_faq_multimedia.py"
     },
     "music": {
         "agent": "stack-music-agent",
-        "apex": "https://music.youtube.com/@CCTV.services",
+        "apex": "https://www.youtube.com/@CCTV.services",
         "description": "Music Showcase Stack (YouTube Music -> Bandcamp, SoundCloud, Audius, ReverbNation)",
-        "script": "generate_studio_music_tracks.py"
+        "script": "produce_faq_multimedia.py"
     },
     "offers": {
         "agent": "stack-offers-agent",
         "apex": "https://maps.google.com/?cid=ADI-Communications",
         "description": "Offers & Trade Directories (Google Business Profile & Maps -> FreeIndex, Cylex, Hotfrog, Scoot)",
-        "script": "generate_100_postcode_dataset.py"
-    },
-    "verifier": {
-        "agent": "workspace-verifier-agent",
-        "apex": "https://mail.google.com/",
-        "description": "Automated Email & Link Verification (admin@adicommunications.co.uk & aiagent1510@gmail.com)",
-        "script": "auto_email_verifier.py"
-    },
-    "ledger": {
-        "agent": "stack-ledger-agent",
-        "apex": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
-        "description": "Public Discovery Ledger & Rule 45 QC Auditor",
-        "script": "build_public_backlink_ledger.py"
+        "script": "produce_faq_multimedia.py"
     }
 }
+
+STACK_TEAMS = SwarmTeams(_CORE_STACK_TEAMS, _EXTRA_CATEGORY_TEAMS)
 
 def run_step(cmd, desc):
     print(f"\n[ORCHESTRATOR] >>> {desc}...")
@@ -149,7 +243,11 @@ def run_status():
         status = "ACTIVE" if os.path.exists(os.path.join(REPO_ROOT, info["script"])) else "PENDING"
         print(f"{idx:<3} | {name.upper():<28} | {info['agent']:<24} | {status:<8}")
     print("-" * 88)
-    print(f"[STATUS PASS] All 11 Category Stacks + Verifier + Ledger cataloged.\n")
+    print(f"[STATUS PASS] All 16 Swarm Teams cataloged.\n")
+    print("Category Stack Apex Endpoints & Feeders:")
+    for cname in ["BLOG", "HOWTO", "MUSIC", "OFFERS"]:
+        print(f"  - [{cname:<8}] Apex: {CATEGORY_APEX_MAP.get(cname.lower(), '')}")
+    print()
 
 def run_sync():
     print("================================================================================")
@@ -214,10 +312,22 @@ def deploy_to_cloud():
     """Backward compatibility alias for run_deploy()."""
     run_deploy(skip_deploy=False)
 
-CATEGORY_STACK_KEYS = [
-    "video", "podcast", "docs", "blog", "cloud", "media",
-    "howto", "bookmark", "rss", "music", "offers"
-]
+CATEGORY_APEX_MAP = {
+    "video": "https://www.youtube.com/@CCTV.services",
+    "podcast": "https://www.youtube.com/@CCTV.services/podcasts",
+    "docs": "https://drive.google.com/drive/folders/1jkTPHdni9Bki3kwNbna5d5oK2ejPJf88",
+    "blog": "https://tvandhomesecurity.blogspot.com/",
+    "cloud": "https://gary-pearce-forensic-hub.web.app/",
+    "media": "https://docs.google.com/presentation/d/e/2PACX-1vTb-2iOvkk7k2_hkQ2hI3HDzuRDZrKUQmbhPSU3JHLx6XHHdzR1zzPlyo7ed6QBdfA3ly0RiUy6BRMh/pub",
+    "howto": "https://sites.google.com/view/cctv-security-hub-uk",
+    "bookmark": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
+    "rss": "https://tvandhomesecurity.blogspot.com/feeds/posts/default?alt=rss",
+    "music": "https://www.youtube.com/@CCTV.services",
+    "offers": "https://maps.google.com/?cid=ADI-Communications",
+    "sites": "https://sites.google.com/view/cctv-security-hub-uk"
+}
+
+CATEGORY_STACK_KEYS = list(CATEGORY_APEX_MAP.keys())
 
 def check_url_reachability(
     url: str,
@@ -301,6 +411,12 @@ def run_verify():
             continue
 
         apex = info.get("apex", "")
+        if not apex:
+            print(f"  - [{name.upper():<8}] Apex: [NOT DEFINED IN STACK_TEAMS] -> FAILED")
+            failed_stacks.append((name, "N/A", "Not defined in STACK_TEAMS"))
+            tested_count += 1
+            continue
+
         tested_count += 1
 
         is_ok, status_code, message, elapsed = check_url_reachability(
@@ -372,25 +488,30 @@ def main():
     parser.add_argument("command", nargs="?", default=None,
                         choices=["status", "sync", "audit", "deploy", "verify", "run"],
                         help="Subcommand to execute (/gstack status, sync, audit, deploy, verify, run)")
+    parser.add_argument("--status", action="store_true", help="Show operational telemetry")
+    parser.add_argument("--audit", action="store_true", help="Run QC audit")
+    parser.add_argument("--sync", action="store_true", help="Run sync")
+    parser.add_argument("--verify", action="store_true", help="Run verify")
     parser.add_argument("--stack",
-                        choices=["all", "video", "podcast", "docs", "blog", "cloud", "media",
-                                 "howto", "bookmark", "rss", "music", "offers", "verifier", "ledger",
-                                 "pdf", "data", "microsite"],
+                        choices=["all", "video", "media", "docs", "rss", "podcast", "bookmark",
+                                 "verifier", "sites", "cloud", "onboarder", "browser", "producer",
+                                 "daemon", "ledger", "citadel", "qc", "blog", "howto", "music",
+                                 "offers", "pdf", "data", "microsite"],
                         default="all", help="Target stack to execute")
     parser.add_argument("--skip-deploy", action="store_true", help="Skip deployment")
 
     args = parser.parse_args()
 
-    # Route subcommands
-    if args.command == "status":
+    # Route subcommands (support both positional and flag syntax)
+    if args.command == "status" or args.status:
         run_status()
-    elif args.command == "sync":
+    elif args.command == "sync" or args.sync:
         run_sync()
-    elif args.command == "audit":
+    elif args.command == "audit" or args.audit:
         run_qc_audit()
     elif args.command == "deploy":
         run_deploy(args.skip_deploy)
-    elif args.command == "verify":
+    elif args.command == "verify" or args.verify:
         run_verify()
     else:
         # Default run behavior

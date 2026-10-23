@@ -55,7 +55,8 @@ class Test4WayLedgerManifestParity(unittest.TestCase):
         # Blogger apex also includes individual blog post permalinks
         valid_domains = [
             "youtube.com", "drive.google.com", "blogspot.com",
-            "web.app", "sites.google.com", "maps.google.com"
+            "web.app", "sites.google.com", "maps.google.com",
+            "photos.google.com", "docs.google.com"
         ]
 
         for idx, entry in enumerate(ledger_data["entries"], 1):
@@ -69,12 +70,19 @@ class Test4WayLedgerManifestParity(unittest.TestCase):
         with open(self.json_file, "r", encoding="utf-8") as f:
             ledger_data = json.load(f)
 
+        raw_root_regex = re.compile(r"^https?://(?:www\.)?adicommunications\.co\.uk/?(?:index\.(?:html?|php))?$", re.IGNORECASE)
+        allowed_prefixes = ("/news/", "/assets/", "/feed/", "/cctv-", "/starlink-", "/tv-", "/wifi-", "/ajax-", "/aerial-")
+
         for idx, entry in enumerate(ledger_data["entries"], 1):
             for field in ["tenant_url", "apex_target", "shield_target_url"]:
                 val = entry.get(field, "")
                 if "adicommunications.co.uk" in val:
+                    self.assertFalse(
+                        bool(raw_root_regex.match(val.strip())),
+                        f"Rule 45 raw root leak in entry {idx} field '{field}': {val}"
+                    )
                     self.assertTrue(
-                        any(sub in val for sub in ("/news/", "/assets/", "/feed/")),
+                        any(sub in val for sub in allowed_prefixes),
                         f"Rule 45 leak in entry {idx} field '{field}': {val}"
                     )
 

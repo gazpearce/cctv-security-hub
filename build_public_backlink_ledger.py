@@ -56,8 +56,11 @@ def classify_category_stack(platform, asset_type, public_url, apex_url):
     if any(k in p for k in ['freeindex', 'cylex', 'hotfrog', 'scoot', 'brownbook', 'yalwa', '118', 'directory', 'business profile', 'maps']):
         return "Offers, Deals & Trade Directories Stack", "stack-offers-agent"
 
-    if any(k in p for k in ['pinterest', 'flickr', 'imgur', 'unsplash', 'pexels', 'wikimedia', 'freeimage', 'imgbb', 'cloudinary', 'imagekit']) or 'pin' in t or 'photo' in t or 'exhibit' in t:
+    if any(k in p for k in ['pinterest', 'flickr', 'imgur', 'unsplash', 'pexels', 'wikimedia', 'freeimage', 'imgbb', 'cloudinary', 'imagekit', 'catbox']) or 'pin' in t or 'photo' in t or 'exhibit' in t or 'image' in t:
         return "Images & Visual Trade Photography Stack", "stack-media-agent"
+
+    if any(k in p for k in ['carrd', 'strikingly', 'webflow', 'canva', 'notion site', 'notion', 'bento.me', 'bento']) or 'landing page' in t or 'microsite' in t or 'website stack' in t:
+        return "Landing Page & Website Stacks", "stack-sites-agent"
 
     return "Cloud Apps, Sites & Tools Stack", "stack-cloud-agent"
 
@@ -146,7 +149,12 @@ def build_ledger():
     # 3. Write HTML with Interactive Search & Filter
     rows_html = ""
     for idx, e in enumerate(all_entries, 1):
-        apex_badge = "Google Drive (DA 100)" if "drive.google.com" in e['top_of_stack_apex_url'] else \
+        apex_badge = "Google Slides (DA 100)" if "docs.google.com/presentation" in e['top_of_stack_apex_url'] else \
+                     "Google Drive (DA 100)" if "drive.google.com" in e['top_of_stack_apex_url'] else \
+                     "Google Docs (DA 100)" if "docs.google.com" in e['top_of_stack_apex_url'] else \
+                     "Google Sites (DA 97)" if "sites.google.com" in e['top_of_stack_apex_url'] else \
+                     "Google Photos (DA 100)" if "photos.google.com" in e['top_of_stack_apex_url'] else \
+                     "Google Maps (DA 100)" if "maps.google.com" in e['top_of_stack_apex_url'] or "share.google" in e['top_of_stack_apex_url'] else \
                      "YouTube (DA 100)" if "youtube.com" in e['top_of_stack_apex_url'] else \
                      "Blogger (DA 99)" if "blogspot.com" in e['top_of_stack_apex_url'] else \
                      "Firebase Edge (DA 98)"
@@ -272,6 +280,7 @@ def build_ledger():
             <option value="Bookmarking & Link Discovery Stack">Bookmarking & Link Discovery Stack</option>
             <option value="RSS Feed Stacking">RSS Feed Stacking</option>
             <option value="Music & Audio Showcase Stack">Music & Audio Showcase Stack</option>
+            <option value="Landing Page & Website Stacks">Landing Page & Website Stacks</option>
             <option value="Offers, Deals & Trade Directories Stack">Offers, Deals & Trade Directories Stack</option>
           </select>
           <div class="px-3.5 py-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs whitespace-nowrap">
