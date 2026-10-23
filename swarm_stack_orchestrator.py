@@ -192,6 +192,12 @@ _EXTRA_CATEGORY_TEAMS = {
         "apex": "https://maps.google.com/?cid=ADI-Communications",
         "description": "Offers & Trade Directories (Google Business Profile & Maps -> FreeIndex, Cylex, Hotfrog, Scoot)",
         "script": "produce_faq_multimedia.py"
+    },
+    "social": {
+        "agent": "stack-social-profile-agent",
+        "apex": "https://bsky.app/profile/adicommunications.bsky.social",
+        "description": "Decentralized & Social Profile Stack (Bluesky, Mastodon, Lemmy, Pixelfed, Nostr, Reddit)",
+        "script": "social_profile_agent.py"
     }
 }
 
