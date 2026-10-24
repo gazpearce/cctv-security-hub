@@ -2,13 +2,13 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ADI Communications \u2014 Multi-Platform Social Syndication Manifest",
   "version": "2.0.0",
-  "last_updated": "2026-10-23T18:31:44.277976+00:00",
+  "last_updated": "2026-10-24T20:03:53.227588+00:00",
   "lead_engineer": "Gary Pearce (07860 244 274)",
   "business": "ADI Communications",
   "public_liability_insurance": "\u00a310,000,000",
   "verified_rating": "\u2605\u2605\u2605\u2605\u2605 9.98 / 10 Rating \u2022 84+ Verified Reviews",
   "rule_45_shield": "STRICT_AIR_GAP (All outbound traffic points to YouTube, Tools Hub or deep question guides)",
-  "total_campaigns": 8,
+  "total_campaigns": 9,
   "total_platforms_targeted": 100,
   "anti_ban_engine": {
     "burst_protection": "Active (1 post per 300-600s per platform)",
@@ -86,7 +86,7 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },
@@ -897,7 +897,7 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },
@@ -1708,7 +1708,7 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },
@@ -2519,7 +2519,7 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },
@@ -3330,7 +3330,7 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },
@@ -4141,7 +4141,7 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },
@@ -4889,8 +4889,8 @@
       "topic": "Freeview Pixelation & 4G/5G Mast Filters",
       "headline": "Why Freeview TV Pixelates When Nearby 4G/5G Phone Masts Upgrade",
       "target_url": "https://www.youtube.com/watch?v=50q89TsNN3w",
-      "tool_url": "https://gary-pearce-forensic-hub.web.app/tools.html",
-      "full_post_copy": "When mobile phone towers upgrade to 700MHz/800MHz LTE, high-power cellular signals overload TV aerial pre-amplifiers, freezing Freeview channels. Here is how low-loss LTE cavity filters and double-screened WF100 cable restore crystal-clear reception.\n\nWatch spectrum analysis: https://www.youtube.com/watch?v=50q89TsNN3w\nAerial Diagnostic Tools: https://gary-pearce-forensic-hub.web.app/tools.html\n\nFitted with CAI-benchmarked equipment. Gary Pearce (07860 244 274).\n#Freeview #TVAerial #5GInterference #BroadcastTech #Yorkshire",
+      "tool_url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
+      "full_post_copy": "When mobile phone towers upgrade to 700MHz/800MHz LTE, high-power cellular signals overload TV aerial pre-amplifiers, freezing Freeview channels. Here is how low-loss LTE cavity filters and double-screened WF100 cable restore crystal-clear reception.\n\nWatch spectrum analysis: https://www.youtube.com/watch?v=50q89TsNN3w\nAerial Diagnostic Tools: https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/\n\nFitted with CAI-benchmarked equipment. Gary Pearce (07860 244 274).\n#Freeview #TVAerial #5GInterference #BroadcastTech #Yorkshire",
       "syndicated_platforms": [
         {
           "platform_id": "PLAT-BKM-001",
@@ -4952,7 +4952,818 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-009",
+          "platform": "Mastodon ActivityPub",
+          "domain": "mastodon.social",
+          "profile_url": "https://mastodon.social/@adicommunications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-010",
+          "platform": "Folkd Social",
+          "domain": "folkd.com",
+          "profile_url": "https://www.folkd.com/login",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-011",
+          "platform": "Scoop.it Curation",
+          "domain": "scoop.it",
+          "profile_url": "https://www.scoop.it/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-012",
+          "platform": "Pearltrees Visual",
+          "domain": "pearltrees.com",
+          "profile_url": "https://www.pearltrees.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-013",
+          "platform": "Bagtheweb Curation",
+          "domain": "bagtheweb.com",
+          "profile_url": "https://www.bagtheweb.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-014",
+          "platform": "Start.me Portals",
+          "domain": "start.me",
+          "profile_url": "https://start.me/users/sign_up",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-015",
+          "platform": "Stack Exchange Network",
+          "domain": "stackexchange.com",
+          "profile_url": "https://stackexchange.com/users/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-016",
+          "platform": "Quora Knowledge Hub",
+          "domain": "quora.com",
+          "profile_url": "https://www.quora.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-017",
+          "platform": "Hacker News Show",
+          "domain": "ycombinator.com",
+          "profile_url": "https://news.ycombinator.com/login",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-018",
+          "platform": "Lobste.rs Link Hub",
+          "domain": "lobste.rs",
+          "profile_url": "https://lobste.rs/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-019",
+          "platform": "Product Hunt Launch",
+          "domain": "producthunt.com",
+          "profile_url": "https://www.producthunt.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-020",
+          "platform": "BetaList Showcase",
+          "domain": "betalist.com",
+          "profile_url": "https://betalist.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-021",
+          "platform": "Indie Hackers Directory",
+          "domain": "indiehackers.com",
+          "profile_url": "https://www.indiehackers.com/sign-in",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-022",
+          "platform": "GrowthHackers Hub",
+          "domain": "growthhackers.com",
+          "profile_url": "https://growthhackers.com/login",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-023",
+          "platform": "DevRant Community",
+          "domain": "devrant.com",
+          "profile_url": "https://devrant.com/feed",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-024",
+          "platform": "Wakelet Collections",
+          "domain": "wakelet.com",
+          "profile_url": "https://wakelet.com/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-025",
+          "platform": "Linktree Social Hub",
+          "domain": "linktr.ee",
+          "profile_url": "https://linktr.ee/register",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-026",
+          "platform": "Bio.link Profile Links",
+          "domain": "bio.link",
+          "profile_url": "https://bio.link/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-027",
+          "platform": "Carrd Bio Portal",
+          "domain": "carrd.co",
+          "profile_url": "https://carrd.co/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-028",
+          "platform": "Bento.me Link Bento",
+          "domain": "bento.me",
+          "profile_url": "https://bento.me/en/home",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-029",
+          "platform": "Campsite.bio Links",
+          "domain": "campsite.bio",
+          "profile_url": "https://campsite.bio/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-030",
+          "platform": "Taplink Multi-Links",
+          "domain": "taplink.at",
+          "profile_url": "https://taplink.at/en/profile/auth/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-031",
+          "platform": "Lnk.bio Gateway",
+          "domain": "lnk.bio",
+          "profile_url": "https://lnk.bio/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-032",
+          "platform": "Feedlink RSS Hub",
+          "domain": "feedlink.io",
+          "profile_url": "https://feedlink.io/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-033",
+          "platform": "ContactInBio Links",
+          "domain": "contactinbio.com",
+          "profile_url": "https://contactinbio.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-034",
+          "platform": "Everlinks Micro Hub",
+          "domain": "everlinks.io",
+          "profile_url": "https://everlinks.io/register",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-035",
+          "platform": "Shorby Smart Links",
+          "domain": "shorby.com",
+          "profile_url": "https://shorby.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-036",
+          "platform": "Linkinbio Later Hub",
+          "domain": "linkin.bio",
+          "profile_url": "https://later.com/link-in-bio/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-037",
+          "platform": "Solo.to Single Page",
+          "domain": "solo.to",
+          "profile_url": "https://solo.to/register",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-038",
+          "platform": "Beacons.ai Creator",
+          "domain": "beacons.ai",
+          "profile_url": "https://beacons.ai/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-039",
+          "platform": "SleekBio Collection",
+          "domain": "sleek.bio",
+          "profile_url": "https://sleek.bio/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-040",
+          "platform": "AllMyLinks Profile",
+          "domain": "allmylinks.com",
+          "profile_url": "https://allmylinks.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-041",
+          "platform": "Linkr Bio Tool",
+          "domain": "linkr.bio",
+          "profile_url": "https://linkr.bio/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-042",
+          "platform": "Direct.me Links Hub",
+          "domain": "direct.me",
+          "profile_url": "https://direct.me/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-043",
+          "platform": "Lynx Short Links",
+          "domain": "lynx.bio",
+          "profile_url": "https://lynx.bio/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-044",
+          "platform": "Linkhub Bio",
+          "domain": "linkhub.me",
+          "profile_url": "https://linkhub.me/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-045",
+          "platform": "Pingly Bookmarks",
+          "domain": "pingly.com",
+          "profile_url": "https://pingly.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-046",
+          "platform": "Listly Crowdsourced",
+          "domain": "list.ly",
+          "profile_url": "https://list.ly/register",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-047",
+          "platform": "Papaly Cloud",
+          "domain": "papaly.com",
+          "profile_url": "https://papaly.com/register",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-048",
+          "platform": "Symbaloo Bookmarks",
+          "domain": "symbaloo.com",
+          "profile_url": "https://www.symbaloo.com/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-049",
+          "platform": "Dropmark Visual",
+          "domain": "dropmark.com",
+          "profile_url": "https://www.dropmark.com/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-050",
+          "platform": "Toby Tab Manager",
+          "domain": "gettoby.com",
+          "profile_url": "https://www.gettoby.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-001",
+          "platform": "Google Business Profile",
+          "domain": "google.com",
+          "profile_url": "https://maps.google.com/?cid=ADI-Communications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-002",
+          "platform": "FreeIndex UK Profile",
+          "domain": "freeindex.co.uk",
+          "profile_url": "https://freeindex.co.uk/profile/adi-communications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-003",
+          "platform": "Thomson Local",
+          "domain": "thomsonlocal.com",
+          "profile_url": "https://thomsonlocal.com/company/adi-communications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-004",
+          "platform": "Cylex UK Directory",
+          "domain": "cylex-uk.co.uk",
+          "profile_url": "https://cylex-uk.co.uk/company/adi-communications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-005",
+          "platform": "Hotfrog UK",
+          "domain": "hotfrog.co.uk",
+          "profile_url": "https://hotfrog.co.uk/company/adi-communications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-006",
+          "platform": "Scoot UK Directory",
+          "domain": "scoot.co.uk",
+          "profile_url": "https://scoot.co.uk/find/adi-communications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-007",
+          "platform": "192.com Business",
+          "domain": "192.com",
+          "profile_url": "https://www.192.com/business/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-008",
+          "platform": "Yell Business Profile",
+          "domain": "yell.com",
+          "profile_url": "https://www.yell.com/free-listing/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-009",
+          "platform": "Central Index",
+          "domain": "centralindex.com",
+          "profile_url": "https://www.centralindex.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-010",
+          "platform": "Tuugo UK Directory",
+          "domain": "tuugo.co.uk",
+          "profile_url": "https://www.tuugo.co.uk/User_Add",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-011",
+          "platform": "Bizify UK Directory",
+          "domain": "bizify.co.uk",
+          "profile_url": "https://www.bizify.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-012",
+          "platform": "Near.co.uk Directory",
+          "domain": "near.co.uk",
+          "profile_url": "https://www.near.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-013",
+          "platform": "Brownbook Business",
+          "domain": "brownbook.net",
+          "profile_url": "https://www.brownbook.net/add-business/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-014",
+          "platform": "Yalwa UK Directory",
+          "domain": "yalwa.co.uk",
+          "profile_url": "https://www.yalwa.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-015",
+          "platform": "118 Information B2B",
+          "domain": "118information.co.uk",
+          "profile_url": "https://www.118information.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-016",
+          "platform": "Local Data Search UK",
+          "domain": "localdatasearch.com",
+          "profile_url": "https://www.localdatasearch.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-017",
+          "platform": "Bing Places Business",
+          "domain": "bingplaces.com",
+          "profile_url": "https://www.bingplaces.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-018",
+          "platform": "Apple Business Connect",
+          "domain": "apple.com",
+          "profile_url": "https://businessconnect.apple.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-019",
+          "platform": "Nextdoor UK Hub",
+          "domain": "nextdoor.co.uk",
+          "profile_url": "https://nextdoor.co.uk/business/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-020",
+          "platform": "Alignable Business",
+          "domain": "alignable.com",
+          "profile_url": "https://www.alignable.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-021",
+          "platform": "Wholesale Pages UK",
+          "domain": "wholesalepages.co.uk",
+          "profile_url": "https://www.wholesalepages.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-022",
+          "platform": "Trustpilot UK Profile",
+          "domain": "trustpilot.com",
+          "profile_url": "https://business.trustpilot.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-023",
+          "platform": "Reviews.io Profile",
+          "domain": "reviews.io",
+          "profile_url": "https://www.reviews.io/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-024",
+          "platform": "Feefo Merchant Hub",
+          "domain": "feefo.com",
+          "profile_url": "https://www.feefo.com/business",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-025",
+          "platform": "Bark Profile Direct",
+          "domain": "bark.com",
+          "profile_url": "https://www.bark.com/en/gb/sellers/create/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-026",
+          "platform": "Which? Trusted Trader",
+          "domain": "which.co.uk",
+          "profile_url": "https://trustedtraders.which.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-027",
+          "platform": "Property118 Directory",
+          "domain": "property118.com",
+          "profile_url": "https://www.property118.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-028",
+          "platform": "TradeFinder UK",
+          "domain": "tradefinder.co.uk",
+          "profile_url": "https://www.tradefinder.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-029",
+          "platform": "UK Small Business Directory",
+          "domain": "uksmallbusinessdirectory.co.uk",
+          "profile_url": "https://www.uksmallbusinessdirectory.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-030",
+          "platform": "Business Magnet UK",
+          "domain": "businessmagnet.co.uk",
+          "profile_url": "https://www.businessmagnet.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-031",
+          "platform": "Approved Business UK",
+          "domain": "approvedbusiness.co.uk",
+          "profile_url": "https://www.approvedbusiness.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-032",
+          "platform": "MyBuilder Trade",
+          "domain": "mybuilder.com",
+          "profile_url": "https://www.mybuilder.com/trade-signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-033",
+          "platform": "Rated People Directory",
+          "domain": "ratedpeople.com",
+          "profile_url": "https://www.ratedpeople.com/tradesmen/signup",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-034",
+          "platform": "TrustATrader Profile",
+          "domain": "trustatrader.com",
+          "profile_url": "https://www.trustatrader.com/apply",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-035",
+          "platform": "Guild of Master Craftsmen",
+          "domain": "guildmc.com",
+          "profile_url": "https://www.guildmc.com/membership/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-036",
+          "platform": "Federation Master Builders",
+          "domain": "fmb.org.uk",
+          "profile_url": "https://www.fmb.org.uk/join-the-fmb/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-037",
+          "platform": "BNI UK Yorkshire",
+          "domain": "bni.co.uk",
+          "profile_url": "https://bni.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-038",
+          "platform": "West & North Yorkshire Chamber",
+          "domain": "wnychamber.co.uk",
+          "profile_url": "https://www.wnychamber.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-039",
+          "platform": "Yorkshire Business Directory",
+          "domain": "yorkshirebusinessdirectory.com",
+          "profile_url": "https://www.yorkshirebusinessdirectory.com/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-040",
+          "platform": "Kirklees Business Hub",
+          "domain": "kirklees.gov.uk",
+          "profile_url": "https://www.kirklees.gov.uk/business",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-041",
+          "platform": "Leeds City Business",
+          "domain": "leeds.gov.uk",
+          "profile_url": "https://www.leeds.gov.uk/business",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-042",
+          "platform": "Bradford District Trade",
+          "domain": "bradford.gov.uk",
+          "profile_url": "https://www.bradford.gov.uk/business",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-043",
+          "platform": "Wakefield Business Network",
+          "domain": "wakefield.gov.uk",
+          "profile_url": "https://www.wakefield.gov.uk/business",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-044",
+          "platform": "Huddersfield Commerce",
+          "domain": "calderdale.gov.uk",
+          "profile_url": "https://www.calderdale.gov.uk/business",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-045",
+          "platform": "Batley Chamber of Trade",
+          "domain": "batley.org.uk",
+          "profile_url": "https://www.batley.org.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-046",
+          "platform": "Enterprise Nation UK",
+          "domain": "enterprisenation.com",
+          "profile_url": "https://www.enterprisenation.com/signup/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-047",
+          "platform": "UK Trade Directory Online",
+          "domain": "uktradedir.co.uk",
+          "profile_url": "https://uktradedir.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-048",
+          "platform": "Local Life UK Directory",
+          "domain": "locallife.co.uk",
+          "profile_url": "https://www.locallife.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-049",
+          "platform": "MisterWhat UK Directory",
+          "domain": "misterwhat.co.uk",
+          "profile_url": "https://www.misterwhat.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-OFF-050",
+          "platform": "Opendi UK Business",
+          "domain": "opendi.co.uk",
+          "profile_url": "https://www.opendi.co.uk/",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        }
+      ]
+    },
+    {
+      "campaign_id": "post-tv-aerial-fault-finder",
+      "category": "TV & Broadcast",
+      "topic": "Interactive TV Aerial & Signal Fault Finder + Live Transmitter Checker",
+      "headline": "Freeview Lost Signal or Freezing? Diagnose Your Aerial & Check Live Transmitter Status",
+      "target_url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
+      "tool_url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html",
+      "full_post_copy": "Before spending money on a retail TV booster you don't need or wiping your channels with another retune, use our free interactive TV Aerial & Signal Fault Finder. Enter your UK postcode to check live Freeview transmitter engineering outages, get exact aerial compass alignment bearings, and diagnose single-TV vs whole-house signal loss.\n\nLive Interactive Tool: https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/\nStandalone Console: https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html\n\nField diagnostics by Gary Pearce (25+ yrs telecommunications engineer, ADI Communications: 07860 244 274).\n#Freeview #TVAerial #NoSignal #TechSupport #Yorkshire #Lancashire #Broadband",
+      "syndicated_platforms": [
+        {
+          "platform_id": "PLAT-BKM-001",
+          "platform": "Firebase Ledger Apex",
+          "domain": "web.app",
+          "profile_url": "https://gary-pearce-forensic-hub.web.app/public_backlink_ledger.html",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-002",
+          "platform": "Pinboard Social",
+          "domain": "pinboard.in",
+          "profile_url": "https://pinboard.in/u:adicommunications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-003",
+          "platform": "Raindrop.io Cloud",
+          "domain": "raindrop.io",
+          "profile_url": "https://raindrop.io/adicommunications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-004",
+          "platform": "Diigo Research",
+          "domain": "diigo.com",
+          "profile_url": "https://diigo.com/user/adicommunications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-005",
+          "platform": "Reddit Community",
+          "domain": "reddit.com",
+          "profile_url": "https://reddit.com/user/adicommunications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-006",
+          "platform": "Lemmy Decentralized",
+          "domain": "lemmy.world",
+          "profile_url": "https://lemmy.world/u/adicommunications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-007",
+          "platform": "Discourse Open Forum",
+          "domain": "discourse.org",
+          "profile_url": "https://meta.discourse.org/u/adicommunications",
+          "status": "SCHEDULED_ANTI_BAN",
+          "post_url": null
+        },
+        {
+          "platform_id": "PLAT-BKM-008",
+          "platform": "Bluesky Social",
+          "domain": "bsky.app",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },
@@ -5763,7 +6574,7 @@
           "platform_id": "PLAT-BKM-008",
           "platform": "Bluesky Social",
           "domain": "bsky.app",
-          "profile_url": "https://bsky.app/profile/adicommunications.bsky.social",
+          "profile_url": "https://bsky.app/profile/hardwiring.bsky.social",
           "status": "SCHEDULED_ANTI_BAN",
           "post_url": null
         },

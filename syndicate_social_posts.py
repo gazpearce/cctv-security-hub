@@ -140,15 +140,32 @@ CAMPAIGN_POSTS = [
         "category": "TV & Broadcast",
         "topic": "Freeview Pixelation & 4G/5G Mast Filters",
         "target_url": "https://www.youtube.com/watch?v=50q89TsNN3w",
-        "tool_url": "https://gary-pearce-forensic-hub.web.app/tools.html",
+        "tool_url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
         "headline": "Why Freeview TV Pixelates When Nearby 4G/5G Phone Masts Upgrade",
         "content": (
             "When mobile phone towers upgrade to 700MHz/800MHz LTE, high-power cellular signals overload TV aerial pre-amplifiers, freezing Freeview channels. "
             "Here is how low-loss LTE cavity filters and double-screened WF100 cable restore crystal-clear reception.\n\n"
             "Watch spectrum analysis: https://www.youtube.com/watch?v=50q89TsNN3w\n"
-            "Aerial Diagnostic Tools: https://gary-pearce-forensic-hub.web.app/tools.html\n\n"
+            "Aerial Diagnostic Tools: https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/\n\n"
             "Fitted with CAI-benchmarked equipment. Gary Pearce (07860 244 274).\n"
             "#Freeview #TVAerial #5GInterference #BroadcastTech #Yorkshire"
+        )
+    },
+    {
+        "id": "post-tv-aerial-fault-finder",
+        "category": "TV & Broadcast",
+        "topic": "Interactive TV Aerial & Signal Fault Finder + Live Transmitter Checker",
+        "target_url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
+        "tool_url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html",
+        "headline": "Freeview Lost Signal or Freezing? Diagnose Your Aerial & Check Live Transmitter Status",
+        "content": (
+            "Before spending money on a retail TV booster you don't need or wiping your channels with another retune, "
+            "use our free interactive TV Aerial & Signal Fault Finder. Enter your UK postcode to check live Freeview transmitter "
+            "engineering outages, get exact aerial compass alignment bearings, and diagnose single-TV vs whole-house signal loss.\n\n"
+            "Live Interactive Tool: https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/\n"
+            "Standalone Console: https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html\n\n"
+            "Field diagnostics by Gary Pearce (25+ yrs telecommunications engineer, ADI Communications: 07860 244 274).\n"
+            "#Freeview #TVAerial #NoSignal #TechSupport #Yorkshire #Lancashire #Broadband"
         )
     },
     {

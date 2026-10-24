@@ -69,6 +69,10 @@ for idx, filename in enumerate(files, 1):
         topic = "Data Cabling & SOHO Networking"
         shield_anchor = "https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/"
         category = "Structured Copper & Fibre Infrastructure"
+    elif "aerial" in filename.lower() or "fault-finder" in filename.lower():
+        topic = "TV Aerial Signal Diagnostics & Coaxial Fault Finding"
+        shield_anchor = "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/"
+        category = "Broadcast RF Engineering & Coax Diagnostics"
     elif "tv" in filename.lower() or "fireplace" in filename.lower():
         topic = "Architectural TV Wall Mounting"
         shield_anchor = "https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/"
