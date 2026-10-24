@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>ADI Communications Full Ecosystem RSS Feeds</title>
+    <dateCreated>Sat, 24 Oct 2026 15:52:00 GMT</dateCreated>
+    <ownerName>Gary Pearce</ownerName>
+    <ownerEmail>aiagent1510@gmail.com</ownerEmail>
+  </head>
+  <body>
+    <outline text="ADI Communications Master Feeds" title="ADI Communications Master Feeds">
+      <outline type="rss" text="ADI News &amp; Engineering Guides" title="ADI News &amp; Engineering Guides" xmlUrl="https://adicommunications.co.uk/rss.xml" htmlUrl="https://adicommunications.co.uk/news/"/>
+      <outline type="rss" text="ADI Blogger Apex Authority Stream" title="ADI Blogger Apex Authority Stream" xmlUrl="https://tvandhomesecurity.blogspot.com/feeds/posts/default" htmlUrl="https://tvandhomesecurity.blogspot.com/"/>
+      <outline type="rss" text="Feedburner Official Syndication Feed" title="Feedburner Official Syndication Feed" xmlUrl="https://feeds.feedburner.com/ADICommunicationsSecurityDebrief" htmlUrl="https://adicommunications.co.uk"/>
+      <outline type="rss" text="ADI Technical Audio Debrief Podcast" title="ADI Technical Audio Debrief Podcast" xmlUrl="https://gary-pearce-forensic-hub.web.app/podcast.xml" htmlUrl="https://gary-pearce-forensic-hub.web.app/"/>
+      <outline type="rss" text="ADI Media RSS (MRSS) Video Feed" title="ADI Media RSS (MRSS) Video Feed" xmlUrl="https://gazpearce.github.io/cctv-security-hub/videos-mrss.xml" htmlUrl="https://gazpearce.github.io/cctv-security-hub/"/>
+    </outline>
+  </body>
+</opml>

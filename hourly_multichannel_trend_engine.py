@@ -292,10 +292,10 @@ HOURLY_CAMPAIGNS = [
         "hour": 16,
         "id": "starlink-storm-brackets-pennines",
         "category": "starlink",
-        "topic": "Starlink In 90mph Pennine Storm Winds",
+        "topic": "Starlink In 90mph 90mph High Winds",
         "badge": "🛰️ 90MPH STORM PROOF",
         "hook_line1": "STARLINK IN 90MPH",
-        "hook_line2": "PENNINE STORMS!",
+        "hook_line2": "90MPH HIGH WINDS!",
         "subtitle": "Pennine brackets vs cheap Amazon poles",
         "script": (
             "Will your Starlink dish survive a 90-mile-an-hour winter gale in the Pennines? "
@@ -307,7 +307,7 @@ HOURLY_CAMPAIGNS = [
         "ig_caption": (
             "🛰️ 90MPH STORM-TESTED STARLINK INSTALLATIONS!\n\n"
             "Micro-wobble in high winds breaks low-Earth satellite lock. How we build for Pennine gales:\n"
-            "✔ Heavy-duty galvanised Pennine storm brackets\n"
+            "✔ Heavy-duty galvanised heavy-duty Starlink chimney brackets\n"
             "✔ Non-drill stainless steel chimney lashing cradles\n"
             "✔ Solid copper exterior Cat6 with drip loop cable seals\n\n"
             "Fitted by Gary Pearce, ADI Communications (07860 244 274).\n\n"
@@ -614,12 +614,15 @@ async def publish_threads_post(post_text: str) -> bool:
         tabs = json.loads(data)
         th_tab = next((t for t in tabs if 'threads' in t.get('url', '').lower()), None)
         if not th_tab:
-            print("  [!] Threads tab not found in Chrome")
-            return False
+            print("  [*] Opening new Threads tab via Chrome CDP...")
+            req = urllib.request.Request("http://127.0.0.1:9223/json/new?https%3A%2F%2Fwww.threads.net%2F%40cctv.service.uk", method="PUT")
+            with urllib.request.urlopen(req, timeout=5.0) as resp:
+                th_tab = json.loads(resp.read().decode())
+                await asyncio.sleep(4)
 
         async with websockets.connect(th_tab["webSocketDebuggerUrl"], max_size=20*1024*1024) as ws:
             # Navigate to profile to ensure clean UI
-            await ws.send(json.dumps({"id": 1, "method": "Page.navigate", "params": {"url": "https://www.threads.com/@cctv.service.uk"}}))
+            await ws.send(json.dumps({"id": 1, "method": "Page.navigate", "params": {"url": "https://www.threads.net/@cctv.service.uk"}}))
             await asyncio.sleep(4)
 
             # Click What's new?
@@ -677,8 +680,9 @@ def publish_instagram_reel(video_path: Path, caption: str, campaign_id: str) -> 
             "--campaign", campaign_id,
             "--caption", caption
         ]
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-        success = (res.returncode == 0 and "Reel published live" in res.stdout)
+        res = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180)
+        stdout_text = res.stdout or ""
+        success = (res.returncode == 0 and "Reel published live" in stdout_text)
         print(f"  [+] Instagram Reel published: {success}")
         return success
     except Exception as e:

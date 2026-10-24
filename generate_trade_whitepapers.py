@@ -128,7 +128,7 @@ story1.append(Paragraph(
 table_data1 = [
     ["Wind Speed (mph)", "Velocity (m/s)", "Dynamic Pressure (N/m²)", "Drag Force (N)", "Structural Mounting Requirement"],
     ["45 mph (Gale)", "20.1 m/s", "247 N/m²", "65 N", "Standard 1.5-inch alloy standoff"],
-    ["70 mph (Severe Gale)", "31.3 m/s", "599 N/m²", "158 N", "Heavy-duty galvanised Pennine storm bracket"],
+    ["70 mph (Severe Gale)", "31.3 m/s", "599 N/m²", "158 N", "Heavy-duty galvanised heavy-duty Starlink chimney bracket"],
     ["90 mph (Storm Force 10)", "40.2 m/s", "990 N/m²", "261 N", "Twin stainless steel chimney lashing kit with corner mitres"],
     ["105 mph (Extreme Gust)", "46.9 m/s", "1,349 N/m²", "356 N", "10-gauge structural steel brackets with M10 masonry sleeves"]
 ]

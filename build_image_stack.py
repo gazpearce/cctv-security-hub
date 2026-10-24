@@ -33,7 +33,7 @@ CURATED_ASSETS = [
         "title": "Starlink Gen 3 90mph Gale Storm Bracket Installation",
         "alt": "Starlink Gen 3 dish mounted on heavy-duty galvanised storm bracket rated for 90mph gales in Beardwood",
         "desc": "Heavy-duty galvanised chimney clamp installation engineered to withstand violent upland winter storm gusts.",
-        "specs": "Galvanised heavy-duty Pennine storm brackets, M10 high-tensile hardware, double U-bolts",
+        "specs": "Galvanised heavy-duty Heavy-Duty Starlink Chimney Brackets, M10 high-tensile hardware, double U-bolts",
         "town": "Beardwood",
         "county": "Lancashire",
         "lat": 53.7580,

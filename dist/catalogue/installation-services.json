@@ -1,0 +1,86 @@
+[
+  {
+    "id": "service:starlink-chimney-install",
+    "title": "SpaceX Starlink Chimney Installation (Non-Drill Lashing)",
+    "price_from": "£199 + VAT",
+    "description": "Turnkey installation using stainless steel tensioned chimney lashing cradle, 2\" heavy-gauge mast, external black Cat6 drop with drip loop, internal cable entry and router setup.",
+    "url": "https://adicommunications.co.uk/starlink-internet-installation/"
+  },
+  {
+    "id": "service:starlink-wall-install",
+    "title": "SpaceX Starlink High-Standoff Wall Installation",
+    "price_from": "£199 + VAT",
+    "description": "Installation using heavy-duty 18\"–24\" galvanised T&K standoff brackets clearing rooflines and gutters.",
+    "url": "https://adicommunications.co.uk/starlink-internet-installation/"
+  },
+  {
+    "id": "service:starlink-bypass-config",
+    "title": "Starlink Third-Party Router Bypass & Mesh Integration",
+    "price_from": "£145 + VAT",
+    "description": "Configuring Starlink router bypass mode to hand off public IP directly into UniFi, Omada, Deco, or DrayTek firewalls.",
+    "url": "https://adicommunications.co.uk/starlink-internet-installation/"
+  },
+  {
+    "id": "service:cctv-poe-install",
+    "title": "Commercial Grade 4K PoE CCTV Installation",
+    "price_from": "£299 + VAT (Single) / £495 + VAT (Multi-Camera)",
+    "description": "Full installation of Hikvision ColorVu or Dahua TiOC cameras, external solid copper Cat6 cabling, NVR recorder with WD Purple storage, mobile phone app setup, zero monthly fees.",
+    "url": "https://adicommunications.co.uk/cctv-installation/"
+  },
+  {
+    "id": "service:cctv-upgrade",
+    "title": "CCTV System Upgrade & Camera Expansion",
+    "price_from": "£185 + VAT",
+    "description": "Upgrading old 720p/1080p coax cameras or budget Wi-Fi cameras to modern AI human/vehicle classification 4K systems.",
+    "url": "https://adicommunications.co.uk/cctv-installation/"
+  },
+  {
+    "id": "service:cctv-repair",
+    "title": "CCTV Diagnostic Fault-Finding & Cable Repair",
+    "price_from": "£85 + VAT",
+    "description": "Resolving offline cameras, voltage drop, night glare, broken connectors, or failed hard drives.",
+    "url": "https://adicommunications.co.uk/cctv-installation/"
+  },
+  {
+    "id": "service:ajax-alarm-install",
+    "title": "Ajax Grade 2 Wireless Smart Intruder Alarm Installation",
+    "price_from": "£599 + VAT",
+    "description": "Certified fitting of Ajax Hub 2 Plus, MotionCam PhOD detectors, DoorProtect Plus contacts, 113dB StreetSiren, 4G failover setup, smartphone configuration.",
+    "url": "https://adicommunications.co.uk/ajax-alarm/"
+  },
+  {
+    "id": "service:tv-wall-mounting-install",
+    "title": "Heavy-Duty TV Wall Mounting (Any Screen Size & Wall Type)",
+    "price_from": "£89.99 + VAT",
+    "description": "Safe structural mounting of 32\" to 100\" TVs on dot-and-dab, brick, timber stud, or acoustic media walls using CoreFix and SnapToggle fixings.",
+    "url": "https://adicommunications.co.uk/tv-wall-mounting/"
+  },
+  {
+    "id": "service:wifi-mesh-install",
+    "title": "Whole-Home Wi-Fi 6/7 Mesh & Access Point Installation",
+    "price_from": "£145 + VAT",
+    "description": "Hardwired Cat6 backhaul cabling to ceiling or wall-mounted APs, eliminating dead spots in thick stone properties.",
+    "url": "https://adicommunications.co.uk/wifi-installation/"
+  },
+  {
+    "id": "service:garden-office-link-install",
+    "title": "High-Speed Garden Office Wireless Point-to-Point Bridge",
+    "price_from": "£295 + VAT",
+    "description": "Outdoor 5GHz/60GHz gigabit bridge links connecting home broadband directly to garden rooms, outbuildings, or workshops without digging trenches.",
+    "url": "https://adicommunications.co.uk/wifi-installation/"
+  },
+  {
+    "id": "service:tv-aerial-install",
+    "title": "Digital High-Gain TV Aerial Installation",
+    "price_from": "£129 + VAT",
+    "description": "Benchmarked CAI-standard wideband aerials with 5G LTE filtering, Webro WF100 cabling, and precision spectrum analyzer transmitter alignment.",
+    "url": "https://adicommunications.co.uk/tv-aerial-installation/"
+  },
+  {
+    "id": "service:tv-aerial-repair",
+    "title": "TV Aerial Signal Diagnosis, Filter Fitting & Storm Repair",
+    "price_from": "£69 + VAT",
+    "description": "Spectrum analyser diagnosis for pixelation, transmitter realignment, masthead amplifier replacement, 5G filter retrofitting.",
+    "url": "https://adicommunications.co.uk/tv-aerial-installation/"
+  }
+]

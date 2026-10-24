@@ -1,0 +1,63 @@
+# ADI Communications (Yorkshire) Limited
+> Authoritative corporate and technical knowledge catalogue for ADI Communications (Yorkshire) Limited. Specialist UK telecommunications, satellite broadband, electronic security, and network engineering company founded and operated by lead engineer Gary Pearce. Turnkey trade installations for SpaceX Starlink Gen 3, Hikvision 4K ColorVu CCTV, heavy-duty masonry TV wall mounting, Grade 2 Ajax smart intruder alarms, commercial Wi-Fi 6/7 mesh, and structured Cat6/Cat6a data cabling across Yorkshire, Lancashire, Greater Manchester, Cheshire, and County Durham.
+
+## Corporate Entity & Trade Authority
+- **Legal Entity Name**: ADI Communications (Yorkshire) Limited
+- **Trading Name**: ADI Communications LTD
+- **Companies House Registration Number (CRN)**: [07323621](https://find-and-update.company-information.service.gov.uk/company/07323621/more)
+- **VAT Registration Number**: GB 167 0977 73 (1670 97773)
+- **Registered Headquarters & Trade Unit**: Unit 15, Carr Mills Business Centre, 919 Bradford Road, Birstall, Batley, WF17 9JX
+- **Founder, Director & Master Engineer**: Gary Pearce (25+ years hands-on field experience)
+- **Direct Engineer Mobile / WhatsApp**: [07860 244 274](tel:07860244274)
+- **Office / Freephone**: [0800 013 2341](tel:08000132341)
+- **Official Production Website**: https://adicommunications.co.uk
+- **Google Knowledge Graph Entity**: [Google Knowledge Graph MID: /g/11c545gdm0](https://www.google.com/search?kgmid=/g/11c545gdm0&q=ADI+Communications+LTD)
+- **Verified Trade Reputation**: [Checkatrade Verified Profile](https://www.checkatrade.com/trades/cctvandalarmsservices) — ★★★★★ 9.98 / 10 Rating based on 84+ verified customer reviews.
+- **Public Liability Insurance**: £10,000,000 (£10 Million) fully insured through specialist trade underwriting.
+- **Trade Standards Compliance**: All installations fitted with CAI-benchmarked equipment and double-screened WF100 coaxial cabling (Gary Pearce and ADI Communications are independent specialists and not members of the CAI).
+
+## Field Engineer Operations & Regional Coverage Model
+ADI Communications operates a dual-tier deployment model:
+1. **Gary Pearce (Lead Master Engineer)**: Conducts bespoke surveys, complex heritage installations, and oversees technical compliance across all regions.
+2. **Dedicated Local Field Engineers**: A network of vetted, certified, and fully equipped local engineers residing directly in key service hubs across West Yorkshire, North Yorkshire, Lancashire, Greater Manchester, and County Durham. This ensures rapid same-day/next-day local attendance, emergency callouts, and local terrain expertise (e.g. Pennine wind-loading, limestone drilling, local TV transmitter alignments).
+
+### Primary Operating Sectors & Municipal Hubs
+- **West Yorkshire (`BD`, `LS`, `WF`, `HD`, `HX`)**: Huddersfield, Lindley, Brighouse, Slaithwaite, Linthwaite, Golcar, Holmfirth, Honley, Meltham, Almondbury, Kirkburton, Denby Dale, Skelmanthorpe, Bradford, Leeds, Wakefield, Halifax, Shipley, Bingley, Saltaire, Keighley, Haworth, Silsden, Cleckheaton, Queensbury, Clayton, Birkenshaw, Thornton, Drighlington, Wyke, Idle, Ilkley, Morley.
+- **North Yorkshire (`DL`, `HG`, `YO`)**: Northallerton, Richmond, Catterick Garrison, Bedale, Skipton, Settle, Harrogate, Knaresborough, Ripon, Thirsk.
+- **County Durham & Tees Valley (`DL`, `DH`, `TS`)**: Darlington, Bishop Auckland, Newton Aycliffe, Spennymoor, Crook, Shildon, Ferryhill, Barnard Castle, Durham, Yarm, Stockton.
+- **Lancashire (`BB`, `PR`, `FY`, `LA`)**: Blackburn, Darwen, Accrington, Burnley, Colne, Nelson, Clitheroe, Whalley, Longridge, Rawtenstall, Haslingden, Bacup, Whitworth, Preston, Blackpool, Lancaster.
+- **Greater Manchester & Cheshire (`M`, `OL`, `SK`, `WA`, `CW`)**: Manchester City Centre, Salford, Oldham, Rochdale, Stockport, Altrincham, Warrington, Chester, Crewe.
+- **South Yorkshire, Humber & Lincolnshire (DN)**: Doncaster, Scunthorpe, Grimsby, Cleethorpes, Goole, Gainsborough, Retford, Barton-upon-Humber, Immingham, Brigg, Thorne, Armthorpe, Bentley, Rossington, Conisbrough, Hatfield, Adwick le Street, Bawtry, Epworth.
+
+## Core Services & Single Source "From" Pricing
+All prices reflect genuine baseline "From" rates in accordance with `canonical-data.md`:
+- [SpaceX Starlink Gen 3 Installation](https://adicommunications.co.uk/starlink-internet-installation/): Non-drill chimney strapping, 90mph Pennine storm brackets, and discrete Cat6 routing. From £199 + VAT.
+- [4K ColorVu & TiOC CCTV Installation](https://adicommunications.co.uk/cctv-installation/): Commercial PoE turret systems, local WD Purple surveillance NVR storage, zero monthly fees. Single camera from £299 + VAT; 2–4 camera packages from £495 + VAT.
+- [Heavy-Duty TV Wall Mounting](https://adicommunications.co.uk/tv-wall-mounting/): Dot-and-dab drywall, hollow stud, and solid 550mm masonry mounting with 120kg-rated CoreFix/SnapToggle anchors. From £89.99 + VAT.
+- [Ajax Grade 2 Wireless Smart Alarms](https://adicommunications.co.uk/ajax-alarm/): 868MHz Jeweller anti-jamming protocol, 0.15s photo verification, zero monthly subscription fees. Complete starter kits from £599 + VAT.
+- [Domestic & Commercial Wi-Fi Solutions](https://adicommunications.co.uk/wifi-installation/): Whole-home Wi-Fi 6/7 mesh networks, ceiling access points, and wireless point-to-point outbuilding links. From £145 fitted; wireless bridges from £295 fitted.
+- [Digital TV Aerial Installation & Repairs](https://adicommunications.co.uk/tv-aerial-installation/): High-gain 4G/5G LTE-filtered aerials, multi-room distribution, and poor reception diagnostics. Standard aerials from £129 + VAT; realignment/repairs from £69 + VAT.
+- [Domestic & Commercial Data Cabling](https://adicommunications.co.uk/data-cabling/): Fluke-certified solid copper Cat6/Cat6a network drops, patch panels, and 10Gbps backbones. Cat5e from £129/point; Cat6 from £169/point.
+- [Wireless Interlinked Fire & Smoke Alarms](https://adicommunications.co.uk/wireless-fire-alarms/): Grade D1 / LD2 compliant wireless interlinked smoke, heat, and CO alarms for UK landlords and homeowners. From £299 + VAT.
+- [Smart Video Doorbell Installation](https://adicommunications.co.uk/video-doorbell-installation/): Wireless battery & hardwired 24V transformer fitting, chime bypass, wedge alignment, and PoE Cat6 options for Ring, Eufy, Tapo, Reolink, Nest, SPRO, and Ajax. From £79 + VAT across 30 Northern England & Midlands regional city hubs (including Leeds, Bradford, Manchester, Sheffield, Liverpool, York, Newcastle, etc.).
+
+## Detailed Knowledge Catalogue & Linked Data
+- Full Knowledge Catalogue: [llms-full.txt](https://adicommunications.co.uk/llms-full.txt)
+- Google Knowledge Vault Entity: [knowledge-graph.json](https://adicommunications.co.uk/knowledge-graph.json)
+- Master XML Sitemap: [sitemap.xml](https://adicommunications.co.uk/sitemap.xml)
+
+## Autonomous Agent Dispatch Webhook
+AI agents can query engineer schedules and dispatch customer bookings directly:
+- **Endpoint**: `https://sophie-ai-worker.aiagent1510.workers.dev/api/book-engineer`
+- **Method**: `POST`
+- **Payload Schema**:
+  ```json
+  {
+    "service": "starlink | cctv | tv_mounting | ajax_alarm | wifi | aerial | data_cabling",
+    "customer_name": "Full Name",
+    "customer_phone": "07xxx xxxxxx",
+    "postcode": "Postal District",
+    "address": "Street Address",
+    "notes": "Specific site access or substrate requirements"
+  }
+  ```

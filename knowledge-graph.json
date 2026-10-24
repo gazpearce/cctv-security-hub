@@ -1,0 +1,2408 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Corporation",
+        "SecuritySystemInstaller",
+        "Electrician"
+      ],
+      "@id": "https://adicommunications.co.uk/#organization",
+      "name": "ADI Communications LTD",
+      "legalName": "ADI Communications (Yorkshire) Limited",
+      "url": "https://adicommunications.co.uk",
+      "telephone": "+44-7860-244274",
+      "email": "gary@adicommunications.co.uk",
+      "vatID": "GB167097773",
+      "taxID": "07323621",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://adicommunications.co.uk/#gary-pearce",
+        "name": "Gary Pearce",
+        "jobTitle": "Lead Master Telecommunications & Security Engineer",
+        "telephone": "+44-7860-244274",
+        "hasCredential": [
+          "NVQ Level 1, 2 & 3 Aerials & Satellite Engineering",
+          "NVQ Level 1, 2, 3 & 4 Data Cabling, Network Infrastructure & Fibre Optics",
+          "BS 7671 Requirements for Electrical Installations Standards",
+          "Qualified CCTV Engineer & Electronic Security Specialist"
+        ]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Unit 15, Carr Mills Business Centre, 919 Bradford Road",
+        "addressLocality": "Birstall",
+        "addressRegion": "West Yorkshire",
+        "postalCode": "WF17 9JX",
+        "addressCountry": "GB"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "9.98",
+        "bestRating": "10",
+        "ratingCount": "84",
+        "reviewCount": "84"
+      },
+      "areaServed": [
+        "West Yorkshire (Postcodes: BD, LS, WF, HD, HX)",
+        "Leeds City Centre",
+        "Headingley",
+        "Horsforth",
+        "Roundhay",
+        "Moortown",
+        "Alwoodley",
+        "Pudsey",
+        "Morley",
+        "Guiseley",
+        "Yeadon",
+        "Otley",
+        "Wetherby",
+        "Boston Spa",
+        "Garforth",
+        "Bradford",
+        "Shipley",
+        "Bingley",
+        "Saltaire",
+        "Keighley",
+        "Haworth",
+        "Silsden",
+        "Ilkley",
+        "Queensbury",
+        "Clayton",
+        "Thornton",
+        "Idle",
+        "Baildon",
+        "Birkenshaw",
+        "Cleckheaton",
+        "Wyke",
+        "Huddersfield",
+        "Lindley",
+        "Brighouse",
+        "Slaithwaite",
+        "Linthwaite",
+        "Golcar",
+        "Holmfirth",
+        "Honley",
+        "Meltham",
+        "Almondbury",
+        "Kirkburton",
+        "Denby Dale",
+        "Skelmanthorpe",
+        "Marsden",
+        "Halifax",
+        "Hebden Bridge",
+        "Todmorden",
+        "Sowerby Bridge",
+        "Elland",
+        "Hipperholme",
+        "Lightcliffe",
+        "Rishworth",
+        "Wakefield",
+        "Pontefract",
+        "Castleford",
+        "Normanton",
+        "Ossett",
+        "Horbury",
+        "Knottingley",
+        "Batley",
+        "Birstall",
+        "Dewsbury",
+        "North Yorkshire (Postcodes: DL, HG, YO, BD)",
+        "Harrogate",
+        "Knaresborough",
+        "Ripon",
+        "Pannal",
+        "Starbeck",
+        "Killinghall",
+        "Skipton",
+        "Settle",
+        "Grassington",
+        "Gargrave",
+        "Barnoldswick",
+        "Earby",
+        "Northallerton",
+        "Richmond",
+        "Catterick Garrison",
+        "Bedale",
+        "Thirsk",
+        "Leyburn",
+        "Hawes",
+        "York City Centre",
+        "Heslington",
+        "Fulford",
+        "Haxby",
+        "Wigginton",
+        "Selby",
+        "Tadcaster",
+        "Malton",
+        "Pickering",
+        "Lancashire (Postcodes: BB, PR, FY, LA)",
+        "Blackburn",
+        "Darwen",
+        "Accrington",
+        "Church",
+        "Oswaldtwistle",
+        "Rishton",
+        "Great Harwood",
+        "Burnley",
+        "Padiham",
+        "Colne",
+        "Nelson",
+        "Barrowford",
+        "Brierfield",
+        "Clitheroe",
+        "Whalley",
+        "Longridge",
+        "Rawtenstall",
+        "Haslingden",
+        "Bacup",
+        "Whitworth",
+        "Ramsbottom",
+        "Preston",
+        "Fulwood",
+        "Bamber Bridge",
+        "Leyland",
+        "Chorley",
+        "Penwortham",
+        "Kirkham",
+        "Blackpool",
+        "Lytham St Annes",
+        "Poulton-le-Fylde",
+        "Thornton-Cleveleys",
+        "Fleetwood",
+        "Lancaster",
+        "Morecambe",
+        "Heysham",
+        "Carnforth",
+        "Garstang",
+        "Greater Manchester & Cheshire (Postcodes: M, OL, SK, WA, CW, BL, WN)",
+        "Manchester City Centre",
+        "Didsbury",
+        "Chorlton",
+        "Salford",
+        "MediaCityUK",
+        "Swinton",
+        "Eccles",
+        "Worsley",
+        "Stockport",
+        "Cheadle",
+        "Bramhall",
+        "Marple",
+        "Hazel Grove",
+        "Wilmslow",
+        "Alderley Edge",
+        "Knutsford",
+        "Macclesfield",
+        "Altrincham",
+        "Sale",
+        "Stretford",
+        "Oldham",
+        "Saddleworth",
+        "Shaw",
+        "Royton",
+        "Chadderton",
+        "Failsworth",
+        "Rochdale",
+        "Littleborough",
+        "Milnrow",
+        "Heywood",
+        "Middleton",
+        "Bury",
+        "Prestwich",
+        "Whitefield",
+        "Radcliffe",
+        "Tottington",
+        "Bolton",
+        "Horwich",
+        "Farnworth",
+        "Wigan",
+        "Leigh",
+        "Ashton-in-Makerfield",
+        "Warrington",
+        "Lymm",
+        "Culcheth",
+        "Runcorn",
+        "Widnes",
+        "Chester",
+        "Crewe",
+        "Nantwich",
+        "County Durham & Tees Valley (Postcodes: DL, DH, TS, SR)",
+        "Darlington",
+        "Hurworth",
+        "Heighington",
+        "Newton Aycliffe",
+        "Bishop Auckland",
+        "Shildon",
+        "Spennymoor",
+        "Ferryhill",
+        "Crook",
+        "Barnard Castle",
+        "Durham City",
+        "Chester-le-Street",
+        "Peterlee",
+        "Seaham",
+        "Consett",
+        "Stanley",
+        "Lanchester",
+        "Stockton-on-Tees",
+        "Yarm",
+        "Eaglescliffe",
+        "Billingham",
+        "Middlesbrough",
+        "Redcar",
+        "Saltburn-by-the-Sea",
+        "Guisborough",
+        "Hartlepool",
+        "South Yorkshire, Humber & Lincolnshire (Postcodes: DN, S, LN)",
+        "Doncaster",
+        "Bawtry",
+        "Rossington",
+        "Thorne",
+        "Hatfield",
+        "Armthorpe",
+        "Bentley",
+        "Conisbrough",
+        "Tickhill",
+        "Epworth",
+        "Sheffield",
+        "Rotherham",
+        "Barnsley",
+        "Wombwell",
+        "Hoyland",
+        "Penistone",
+        "Dronfield",
+        "Scunthorpe",
+        "Brigg",
+        "Barton-upon-Humber",
+        "Grimsby",
+        "Cleethorpes",
+        "Immingham",
+        "Louth",
+        "Goole",
+        "Gainsborough",
+        "Retford",
+        "Lincoln City"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:starlink-chimney-install",
+      "name": "SpaceX Starlink Chimney Installation (Non-Drill Lashing)",
+      "description": "Turnkey installation using stainless steel tensioned chimney lashing cradle, 2\" heavy-gauge mast, external black Cat6 drop with drip loop, internal cable entry and router setup.",
+      "offers": {
+        "@type": "Offer",
+        "price": "199",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/starlink-internet-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:starlink-wall-install",
+      "name": "SpaceX Starlink High-Standoff Wall Installation",
+      "description": "Installation using heavy-duty 18\"–24\" galvanised T&K standoff brackets clearing rooflines and gutters.",
+      "offers": {
+        "@type": "Offer",
+        "price": "199",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/starlink-internet-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:starlink-bypass-config",
+      "name": "Starlink Third-Party Router Bypass & Mesh Integration",
+      "description": "Configuring Starlink router bypass mode to hand off public IP directly into UniFi, Omada, Deco, or DrayTek firewalls.",
+      "offers": {
+        "@type": "Offer",
+        "price": "145",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/starlink-internet-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:cctv-poe-install",
+      "name": "Commercial Grade 4K PoE CCTV Installation",
+      "description": "Full installation of Hikvision ColorVu or Dahua TiOC cameras, external solid copper Cat6 cabling, NVR recorder with WD Purple storage, mobile phone app setup, zero monthly fees.",
+      "offers": {
+        "@type": "Offer",
+        "price": "299",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/cctv-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:cctv-upgrade",
+      "name": "CCTV System Upgrade & Camera Expansion",
+      "description": "Upgrading old 720p/1080p coax cameras or budget Wi-Fi cameras to modern AI human/vehicle classification 4K systems.",
+      "offers": {
+        "@type": "Offer",
+        "price": "185",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/cctv-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:cctv-repair",
+      "name": "CCTV Diagnostic Fault-Finding & Cable Repair",
+      "description": "Resolving offline cameras, voltage drop, night glare, broken connectors, or failed hard drives.",
+      "offers": {
+        "@type": "Offer",
+        "price": "85",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/cctv-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:ajax-alarm-install",
+      "name": "Ajax Grade 2 Wireless Smart Intruder Alarm Installation",
+      "description": "Certified fitting of Ajax Hub 2 Plus, MotionCam PhOD detectors, DoorProtect Plus contacts, 113dB StreetSiren, 4G failover setup, smartphone configuration.",
+      "offers": {
+        "@type": "Offer",
+        "price": "599",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/ajax-alarm/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:tv-wall-mounting-install",
+      "name": "Heavy-Duty TV Wall Mounting (Any Screen Size & Wall Type)",
+      "description": "Safe structural mounting of 32\" to 100\" TVs on dot-and-dab, brick, timber stud, or acoustic media walls using CoreFix and SnapToggle fixings.",
+      "offers": {
+        "@type": "Offer",
+        "price": "89.99",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/tv-wall-mounting/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:wifi-mesh-install",
+      "name": "Whole-Home Wi-Fi 6/7 Mesh & Access Point Installation",
+      "description": "Hardwired Cat6 backhaul cabling to ceiling or wall-mounted APs, eliminating dead spots in thick stone properties.",
+      "offers": {
+        "@type": "Offer",
+        "price": "145",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/wifi-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:garden-office-link-install",
+      "name": "High-Speed Garden Office Wireless Point-to-Point Bridge",
+      "description": "Outdoor 5GHz/60GHz gigabit bridge links connecting home broadband directly to garden rooms, outbuildings, or workshops without digging trenches.",
+      "offers": {
+        "@type": "Offer",
+        "price": "295",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/wifi-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:tv-aerial-install",
+      "name": "Digital High-Gain TV Aerial Installation",
+      "description": "Benchmarked CAI-standard wideband aerials with 5G LTE filtering, Webro WF100 cabling, and precision spectrum analyzer transmitter alignment.",
+      "offers": {
+        "@type": "Offer",
+        "price": "129",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/tv-aerial-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/services#service:tv-aerial-repair",
+      "name": "TV Aerial Signal Diagnosis, Filter Fitting & Storm Repair",
+      "description": "Spectrum analyser diagnosis for pixelation, transmitter realignment, masthead amplifier replacement, 5G filter retrofitting.",
+      "offers": {
+        "@type": "Offer",
+        "price": "69",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk/tv-aerial-installation/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:rj45-crimp-repair",
+      "name": "RJ45 Plug Crimp & Ethernet Connection Repair",
+      "description": "Re-terminating damaged RJ45 modular plugs, snapped plastic locking clips, and broken wire cores using shielded pass-through connectors and Fluke wiremap verification.",
+      "offers": {
+        "@type": "Offer",
+        "price": "65",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "rj45 connection repair",
+        "ethernet cable end repair",
+        "fix broken ethernet clip",
+        "crimp rj45 plug leeds",
+        "cat6 connector replacement",
+        "network cable termination service"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:tv-aerial-socket-replacement",
+      "name": "TV Aerial Wall Socket & Coaxial Faceplate Replacement",
+      "description": "Replacing damaged, loose, or high-resistance TV aerial coaxial wall sockets with screened, low-loss metal Belling-Lee or F-type modular Euro faceplates.",
+      "offers": {
+        "@type": "Offer",
+        "price": "55",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "tv aerial wall socket replacement",
+        "fix loose aerial socket",
+        "coax wall plate repair",
+        "replace tv aerial point",
+        "broken aerial socket in wall",
+        "belling lee socket fitting"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:cat6-data-point-socket",
+      "name": "Single & Dual Cat6/Cat6a RJ45 Wall Socket Installation",
+      "description": "Fitting surface or flush-mounted single and dual Cat6/Cat6a data sockets with IDC punch-down termination, metal backbox, and Fluke attenuation certification.",
+      "offers": {
+        "@type": "Offer",
+        "price": "85",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "install ethernet wall socket",
+        "cat6 wall point installation",
+        "rj45 socket fitting",
+        "run ethernet to room",
+        "hardwired internet socket in bedroom",
+        "data point installation near me"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:coax-f-connector-retermination",
+      "name": "Coaxial F-Type Connector Compression Fitting & Repair",
+      "description": "Replacing cheap screw-on F-plugs with broadcast-grade waterproof radial compression connectors (Cabelcon/PCT) on Webro WF100 and WF65 cables.",
+      "offers": {
+        "@type": "Offer",
+        "price": "50",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "f connector repair",
+        "coax cable connector fitting",
+        "sky satellite cable repair",
+        "compress f type plug",
+        "replace tv coax plug",
+        "loose satellite dish wire"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:loft-distribution-amp-psu-repair",
+      "name": "Loft TV Distribution Amplifier & 12V PSU Replacement",
+      "description": "Diagnosing and replacing failed loft distribution amplifiers, blown 12V DC power inserters, and shorted coaxial lines causing complete house-wide TV signal loss.",
+      "offers": {
+        "@type": "Offer",
+        "price": "75",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "tv booster in loft stopped working",
+        "loft aerial amplifier replacement",
+        "12v masthead power supply repair",
+        "no tv signal in any room",
+        "replace aerial distribution box",
+        "multi room tv amplifier repair"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:5g-lte-filter-retrofit",
+      "name": "4G/5G LTE Low-Pass Filter Retrofitting for TV Pixelation",
+      "description": "Installing high-rejection 700MHz 5G (Channel 48) inline low-pass filters directly before amplifiers to eliminate digital Freeview packet loss and freezing.",
+      "offers": {
+        "@type": "Offer",
+        "price": "65",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "5g mobile mast interfering with tv",
+        "fit 5g filter to tv aerial",
+        "freeview pixelating since 5g mast installed",
+        "lte ch48 filter installation",
+        "tv channel 48 breaking up",
+        "tv aerial filter fitting"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:cctv-bnc-balun-cat6-conversion",
+      "name": "CCTV BNC Coax to Cat6 Balun Conversion & Upgrade",
+      "description": "Resolving rolling ground loop hum bars and ghosting by replacing failing passive video baluns or converting old analogue RG59 coax runs to modern 4K PoE IP architecture.",
+      "offers": {
+        "@type": "Offer",
+        "price": "95",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "upgrade old bnc cctv to ip",
+        "cctv balun replacement",
+        "convert coax cctv to cat6",
+        "lines across cctv screen repair",
+        "ground loop isolator cctv",
+        "analogue cctv repair"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:cctv-junction-box-resealing",
+      "name": "CCTV Junction Box Weatherproofing & Water Ingress Repair",
+      "description": "Drying out corroded RJ45/BNC connectors, replacing unsealed backboxes with IP66 deep bases, and forming downward drip loops to stop water tracking into cavity walls.",
+      "offers": {
+        "@type": "Offer",
+        "price": "75",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "cctv camera full of water",
+        "water in cctv connector",
+        "cctv camera cutting out in rain",
+        "weatherproof cctv junction box",
+        "dry out cctv camera connection",
+        "fix cctv water damage"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:cctv-hard-drive-replacement",
+      "name": "CCTV NVR Hard Drive Replacement & Formatting",
+      "description": "Replacing failed desktop drives with genuine 24/7 surveillance-rated Western Digital Purple or Seagate SkyHawk drives, firmware initialization, and continuous loop setup.",
+      "offers": {
+        "@type": "Offer",
+        "price": "125",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "cctv nvr beeping hard drive error",
+        "replace cctv hard drive",
+        "wd purple hard drive fitting",
+        "cctv not recording to disk",
+        "nvr hdd format error",
+        "cctv hard disk replacement"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:starlink-cable-splice-repair",
+      "name": "Starlink Cable Splice & Waterproof IP68 Joint Repair",
+      "description": "Precision shielded splicing and IP68 waterproof gland sealing of crushed, chewed, or severed Starlink Gen 2 and Gen 3 data cables without replacing full roof runs.",
+      "offers": {
+        "@type": "Offer",
+        "price": "95",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "starlink cable chewed by dog",
+        "repair cut starlink cable",
+        "starlink cable splice kit",
+        "starlink proprietary cable repair",
+        "waterproof starlink cable joiner",
+        "starlink wire cut"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:tv-bracket-remount-repair",
+      "name": "TV Wall Bracket Remounting & Stripped Plasterboard Repair",
+      "description": "Rescuing loose or sagging TV brackets from failing drywall by patching damaged holes and anchoring with CoreFix 120 (into solid block) or SnapToggle steel channel bolts.",
+      "offers": {
+        "@type": "Offer",
+        "price": "85",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "tv bracket pulling out of wall",
+        "remount tv on plasterboard",
+        "fix loose tv wall bracket",
+        "stripped drywall anchors tv",
+        "safe tv remounting service",
+        "reinforce tv wall mount"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:in-wall-hdmi-replacement",
+      "name": "In-Wall Hidden HDMI 2.1 Cable Routing & Brush Plates",
+      "description": "Routing ultra-high-speed 48Gbps 4K/120Hz HDMI 2.1 cables, optical audio, and power through cavity walls using white or black brushed cable-exit faceplates.",
+      "offers": {
+        "@type": "Offer",
+        "price": "80",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "hide tv cables in wall",
+        "in wall hdmi cable replacement",
+        "brush faceplate for tv wires",
+        "no cables showing tv mount",
+        "run hdmi through stud wall",
+        "replace broken hdmi behind wall"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:ajax-alarm-battery-service",
+      "name": "Ajax Wireless Alarm Battery Replacement & Health Audit",
+      "description": "Full battery replacement across Ajax DoorProtect, MotionProtect, and StreetSiren units using genuine Panasonic CR123A/CR2032 cells, radio signal recalibration.",
+      "offers": {
+        "@type": "Offer",
+        "price": "75",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "ajax alarm battery replacement",
+        "ajax detector low battery",
+        "replace cr123a alarm battery",
+        "streetsiren battery change",
+        "ajax hub backup battery",
+        "wireless alarm battery service"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:wifi-hardwired-backhaul-run",
+      "name": "Hardwired Ethernet Backhaul Cabling for Wi-Fi Mesh Nodes",
+      "description": "Running solid copper Cat6 lines between mesh pods (Deco, Orbi, UniFi, eero) to eliminate 50% wireless backhaul speed loss through solid floors and stone walls.",
+      "offers": {
+        "@type": "Offer",
+        "price": "125",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "hardwire mesh wifi nodes",
+        "ethernet backhaul installation",
+        "connect deco with cable",
+        "unifi ap ethernet cabling",
+        "fix slow mesh wifi backhaul",
+        "run cable between mesh routers"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:garden-office-armoured-cat6",
+      "name": "SWA Steel-Wire Armoured Cat6 Trench Cable Termination",
+      "description": "Glanding, earthing, and terminating Steel Wire Armoured (SWA) Cat6 cables in external IP66 junction boxes and internal RJ45 modules for rodent-proof garden office links.",
+      "offers": {
+        "@type": "Offer",
+        "price": "145",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "armoured ethernet cable to garden room",
+        "swa cat6 cable termination",
+        "trench cable for garden office internet",
+        "outdoor armoured data cable",
+        "hardwired internet to outbuilding",
+        "rodent proof ethernet cable"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:freeview-tv-retune-rescan",
+      "name": "Freeview TV Transmitter Retune, Realignment & MUX Rescan",
+      "description": "Calibrated spectrum analyzer realignment to local transmitters (Winter Hill, Emley Moor, Bilsdale) with manual frequency entry to prevent duplicate weak relay channels.",
+      "offers": {
+        "@type": "Offer",
+        "price": "55",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "retune freeview tv channels",
+        "lost bbc channels on tv",
+        "freeview channel rescan service",
+        "tv transmitter realignment",
+        "fix missing freeview multiplexes",
+        "tune smart tv to winter hill"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:sky-q-lnb-realignment",
+      "name": "Freesat & Sky Q Dish LNB Realignment & Shotgun Cable Repair",
+      "description": "Aligning satellite dishes to Astra 28.2°E using spectrum meters, replacing waterlogged wideband LNBs, and running fresh Webro WF65 twin copper shotgun cables.",
+      "offers": {
+        "@type": "Offer",
+        "price": "70",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "sky q dish realignment",
+        "fix no satellite signal sky",
+        "replace wideband lnb sky q",
+        "freesat dish repair",
+        "replace twin shotgun satellite cable",
+        "satellite dish storm damage repair"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/repairs#service:doorbell-transformer-fitting",
+      "name": "Video Doorbell 24V Transformer Fitting & Chime Bypass",
+      "description": "Installing DIN-rail or wall-mount 8V–24V AC step-down transformers, mechanical chime bypass fuses, and neat low-voltage cabling for permanent battery-free doorbell power.",
+      "offers": {
+        "@type": "Offer",
+        "price": "79",
+        "priceCurrency": "GBP"
+      },
+      "alternateName": [
+        "hardwire ring doorbell to mains",
+        "install 24v transformer for nest doorbell",
+        "bypass mechanical doorbell chime",
+        "eufy doorbell hardwired installation",
+        "video doorbell electrical fitting",
+        "ring pro power kit installation"
+      ],
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "url": "https://adicommunications.co.uk"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:hikvision",
+      "name": "Hikvision",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Repair",
+        "Firmware Service"
+      ],
+      "marketTier": "Commercial / Premium Domestic"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:dahua",
+      "name": "Dahua Technology",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Commercial / Smart Domestic"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:uniview",
+      "name": "Uniview (UNV)",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Enterprise / Commercial"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:reolink",
+      "name": "Reolink",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Domestic PoE / Standalone"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:spro",
+      "name": "SPRO",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "UK Trade Commercial"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:hilook",
+      "name": "HiLook (by Hikvision)",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Cost-Effective Domestic"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:qvis",
+      "name": "Qvis Labs",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "UK Trade Commercial"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:axis",
+      "name": "Axis Communications",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair",
+        "Maintain"
+      ],
+      "marketTier": "High-End Enterprise"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:hanwha",
+      "name": "Hanwha Vision",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair",
+        "Maintain"
+      ],
+      "marketTier": "Commercial Enterprise"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:bosch-security",
+      "name": "Bosch Security",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair",
+        "Maintain"
+      ],
+      "marketTier": "Commercial Enterprise"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:honeywell-security",
+      "name": "Honeywell Security",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Commercial Enterprise"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:avigilon",
+      "name": "Avigilon (Motorola)",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Maintain"
+      ],
+      "marketTier": "Enterprise AI Surveillance"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:pelco",
+      "name": "Pelco",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Enterprise"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:mobotix",
+      "name": "Mobotix",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Specialist Industrial"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:vivotek",
+      "name": "Vivotek",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Commercial IP"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:provision-isr",
+      "name": "Provision-ISR",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Install",
+        "Configure"
+      ],
+      "marketTier": "Commercial IP"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:milesight",
+      "name": "Milesight",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Install",
+        "Configure"
+      ],
+      "marketTier": "Commercial AI / IoT"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:genie-cctv",
+      "name": "Genie CCTV",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Repair",
+        "Maintain"
+      ],
+      "marketTier": "UK Trade"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:vista-cctv",
+      "name": "Vista CCTV (Norbain)",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Repair",
+        "Maintain"
+      ],
+      "marketTier": "UK Trade Legacy"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:swann",
+      "name": "Swann",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Repair",
+        "Replace with Hardwired PoE"
+      ],
+      "marketTier": "Consumer Retail"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:lorex",
+      "name": "Lorex",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Consumer Retail"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:annke",
+      "name": "Annke",
+      "category": "CCTV & Video Surveillance",
+      "serviceScope": [
+        "Configure",
+        "Repair"
+      ],
+      "marketTier": "Consumer Retail"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:ring",
+      "name": "Ring (Amazon)",
+      "category": "Smart Doorbells & Cameras",
+      "serviceScope": [
+        "Hardwired Installation",
+        "Transformer Fitting",
+        "Chime Bypass",
+        "Configure"
+      ],
+      "marketTier": "Consumer Smart Home"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:eufy",
+      "name": "Eufy Security (Anker)",
+      "category": "Smart Doorbells & Cameras",
+      "serviceScope": [
+        "Hardwired Installation",
+        "HomeBase Integration",
+        "Configure"
+      ],
+      "marketTier": "Consumer Local Storage"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:nest",
+      "name": "Google Nest",
+      "category": "Smart Doorbells & Cameras",
+      "serviceScope": [
+        "Hardwired Installation",
+        "Chime Connector Setup",
+        "Configure"
+      ],
+      "marketTier": "Consumer Smart Home"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:arlo",
+      "name": "Arlo",
+      "category": "Smart Doorbells & Cameras",
+      "serviceScope": [
+        "Installation",
+        "Solar Link",
+        "Hub Setup"
+      ],
+      "marketTier": "Consumer Wireless"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:tapo",
+      "name": "TP-Link Tapo",
+      "category": "Smart Home / CCTV",
+      "serviceScope": [
+        "Installation",
+        "SD Card Local Storage Setup",
+        "Configure"
+      ],
+      "marketTier": "Consumer Budget"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:ajax",
+      "name": "Ajax Systems",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Authorised Supply",
+        "Install",
+        "Grade 2 Certify",
+        "Maintain"
+      ],
+      "marketTier": "Grade 2 Wireless & Hybrid"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:pyronix",
+      "name": "Pyronix (Hikvision)",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Repair",
+        "Battery Service",
+        "Upgrade to Ajax"
+      ],
+      "marketTier": "UK Trade Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:texecom",
+      "name": "Texecom",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Repair",
+        "Battery Service",
+        "Upgrade to Ajax"
+      ],
+      "marketTier": "Commercial UK Trade"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:scantronic",
+      "name": "Scantronic (Eaton)",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Repair",
+        "Battery Service",
+        "Upgrade to Ajax"
+      ],
+      "marketTier": "UK Legacy"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:risco",
+      "name": "Risco Group",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Repair",
+        "Service",
+        "Upgrade"
+      ],
+      "marketTier": "Commercial / Domestic"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:visonic",
+      "name": "Visonic (Johnson Controls)",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Repair",
+        "Battery Service",
+        "Upgrade"
+      ],
+      "marketTier": "UK Legacy Wireless"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:honeywell-galaxy",
+      "name": "Honeywell Galaxy",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Service",
+        "Maintain"
+      ],
+      "marketTier": "High-Security Commercial"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:yale-alarm",
+      "name": "Yale Smart Alarms",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Troubleshoot",
+        "Upgrade to Ajax Grade 2"
+      ],
+      "marketTier": "Consumer DIY"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:simplisafe",
+      "name": "SimpliSafe",
+      "category": "Intruder Alarms",
+      "serviceScope": [
+        "Troubleshoot",
+        "Replace with Grade 2"
+      ],
+      "marketTier": "Consumer DIY"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:paxton",
+      "name": "Paxton Access (Net2)",
+      "category": "Access Control & Intercom",
+      "serviceScope": [
+        "Install",
+        "Configure",
+        "Maintain"
+      ],
+      "marketTier": "Commercial UK Market Leader"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:videx",
+      "name": "Videx",
+      "category": "Door Entry & Intercom",
+      "serviceScope": [
+        "Install",
+        "Repair",
+        "Maintain"
+      ],
+      "marketTier": "Commercial / Residential"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:comelit",
+      "name": "Comelit",
+      "category": "Door Entry & Intercom",
+      "serviceScope": [
+        "Install",
+        "Repair",
+        "Maintain"
+      ],
+      "marketTier": "Commercial / Residential"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:fermax",
+      "name": "Fermax",
+      "category": "Door Entry & Intercom",
+      "serviceScope": [
+        "Install",
+        "Repair"
+      ],
+      "marketTier": "Commercial / Residential"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:ubiquiti",
+      "name": "Ubiquiti (UniFi)",
+      "category": "Networking & Wi-Fi",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Network Architecture",
+        "Troubleshoot"
+      ],
+      "marketTier": "Enterprise / High-End Residential"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:tp-link-omada",
+      "name": "TP-Link Omada",
+      "category": "Networking & Wi-Fi",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure",
+        "Maintain"
+      ],
+      "marketTier": "Commercial Cloud SDN"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:tp-link-deco",
+      "name": "TP-Link Deco",
+      "category": "Networking & Wi-Fi",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Hardwired Backhaul"
+      ],
+      "marketTier": "Domestic Whole-Home Mesh"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:draytek",
+      "name": "DrayTek (Vigor)",
+      "category": "Networking & Routers",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Multi-WAN Failover Config"
+      ],
+      "marketTier": "Commercial Edge Security"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:asus",
+      "name": "ASUS (AiMesh & ROG)",
+      "category": "Networking & Routers",
+      "serviceScope": [
+        "Configure",
+        "Hardwired Backhaul"
+      ],
+      "marketTier": "Prosumer / Gaming"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:netgear",
+      "name": "Netgear (Orbi & Nighthawk)",
+      "category": "Networking & Wi-Fi",
+      "serviceScope": [
+        "Configure",
+        "Backhaul Optimization"
+      ],
+      "marketTier": "Consumer / Prosumer"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:zyxel",
+      "name": "Zyxel",
+      "category": "Networking",
+      "serviceScope": [
+        "Supply",
+        "Configure"
+      ],
+      "marketTier": "Commercial Switch / AP"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:cisco-meraki",
+      "name": "Cisco Meraki Go",
+      "category": "Networking",
+      "serviceScope": [
+        "Install",
+        "Configure"
+      ],
+      "marketTier": "Small Business Commercial"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:mikrotik",
+      "name": "MikroTik",
+      "category": "Networking & Wireless Wire",
+      "serviceScope": [
+        "Supply",
+        "Install 60GHz Bridges",
+        "Configure"
+      ],
+      "marketTier": "Telecom / PtP High-Bandwidth"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:teltonika",
+      "name": "Teltonika Networks",
+      "category": "Industrial Cellular & 5G Routers",
+      "serviceScope": [
+        "Supply",
+        "Install 4G/5G Failover Antennas",
+        "Configure"
+      ],
+      "marketTier": "Industrial IoT & Failover"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:peplink",
+      "name": "Peplink (Pepwave)",
+      "category": "Multi-WAN Bonding Routers",
+      "serviceScope": [
+        "Configure SpeedFusion Bonding",
+        "Install"
+      ],
+      "marketTier": "Enterprise Redundancy"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:aruba-instant-on",
+      "name": "HPE Aruba Instant On",
+      "category": "Networking & Wi-Fi",
+      "serviceScope": [
+        "Install",
+        "Configure"
+      ],
+      "marketTier": "Commercial Prosumer"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:ruckus",
+      "name": "Ruckus (CommScope)",
+      "category": "Networking & Wi-Fi",
+      "serviceScope": [
+        "Configure",
+        "Troubleshoot"
+      ],
+      "marketTier": "Enterprise High-Density"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:eero",
+      "name": "Eero (Amazon)",
+      "category": "Consumer Mesh Wi-Fi",
+      "serviceScope": [
+        "Install",
+        "Hardwired Backhaul Config"
+      ],
+      "marketTier": "Consumer Mesh"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:linksys-velop",
+      "name": "Linksys Velop",
+      "category": "Consumer Mesh Wi-Fi",
+      "serviceScope": [
+        "Configure",
+        "Hardwired Backhaul"
+      ],
+      "marketTier": "Consumer Mesh"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:google-nest-wifi",
+      "name": "Google Nest Wifi Pro",
+      "category": "Consumer Mesh Wi-Fi",
+      "serviceScope": [
+        "Install",
+        "Configure"
+      ],
+      "marketTier": "Consumer Mesh"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:spacex-starlink",
+      "name": "SpaceX Starlink",
+      "category": "Satellite Broadband",
+      "serviceScope": [
+        "Certified Physical Mounting",
+        "Bypass Networking",
+        "Cabling",
+        "Surge Protection"
+      ],
+      "marketTier": "LEO Satellite Broadband"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:sanus",
+      "name": "Sanus",
+      "category": "TV Mounting & AV",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "Premium Structural"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:vogels",
+      "name": "Vogel's",
+      "category": "TV Mounting & AV",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "Premium Engineered"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:invision",
+      "name": "Invision",
+      "category": "TV Mounting & AV",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "Heavy-Duty Cantilever"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:one-for-all",
+      "name": "One For All",
+      "category": "TV Mounting & Antennas",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "Consumer"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:peerless-av",
+      "name": "Peerless-AV",
+      "category": "Commercial AV Mounting",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "Commercial Digital Signage"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:ergotron",
+      "name": "Ergotron",
+      "category": "Specialist Articulating Arms",
+      "serviceScope": [
+        "Install",
+        "Configure"
+      ],
+      "marketTier": "Commercial / Medical"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:b-tech",
+      "name": "B-Tech AV Mounts",
+      "category": "Commercial AV Mounts",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "UK Trade Commercial"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:unicol",
+      "name": "Unicol",
+      "category": "Specialist Heavy-Duty Mounts",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "UK Engineered Heavy-Duty"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:corefix",
+      "name": "CoreFix (Metex)",
+      "category": "Masonry Fixings",
+      "serviceScope": [
+        "Primary Specification",
+        "Install"
+      ],
+      "marketTier": "100kg+ Dot-and-Dab Anchor"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:snaptoggle",
+      "name": "SnapToggle (Toggler)",
+      "category": "Hollow Stud Fixings",
+      "serviceScope": [
+        "Primary Specification",
+        "Install"
+      ],
+      "marketTier": "Heavy-Duty Hollow Stud"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:fischer",
+      "name": "Fischer Fixings",
+      "category": "Structural Anchors",
+      "serviceScope": [
+        "Duopower / Resin Anchor Specification"
+      ],
+      "marketTier": "Solid Masonry & Aerated Block"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:gripit",
+      "name": "GripIt Fixings",
+      "category": "Plasterboard Fixings",
+      "serviceScope": [
+        "Specification for Medium Loads"
+      ],
+      "marketTier": "Drywall Cavity"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:rawlplug",
+      "name": "Rawlplug",
+      "category": "Structural Fixings",
+      "serviceScope": [
+        "Spring Toggle / Shield Anchor Specification"
+      ],
+      "marketTier": "UK Trade Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:webro",
+      "name": "Webro Cables",
+      "category": "Coaxial & Data Cabling",
+      "serviceScope": [
+        "Primary Specification (WF100 / WF65 / Cat6 PE)"
+      ],
+      "marketTier": "CAI-Benchmarked UK Coax"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:blake-uk",
+      "name": "Blake UK",
+      "category": "Aerials, Masts & Brackets",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "UK Trade Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:antiference",
+      "name": "Antiference",
+      "category": "Aerials & Distribution",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "UK Trade Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:triax",
+      "name": "Triax",
+      "category": "RF & Satellite Distribution",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "Commercial Headend / Domestic"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:televes",
+      "name": "Televes",
+      "category": "Intelligent Aerials & Headends",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "TForce Alignment"
+      ],
+      "marketTier": "European High-Gain Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:labgear",
+      "name": "Labgear",
+      "category": "Distribution Amps & Filters",
+      "serviceScope": [
+        "Supply",
+        "Install"
+      ],
+      "marketTier": "UK Trade Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:global-invacom",
+      "name": "Global Invacom",
+      "category": "Fibre Satellite & Optical LNBs",
+      "serviceScope": [
+        "Supply",
+        "Install",
+        "Configure"
+      ],
+      "marketTier": "Commercial IRS & Fibre Satellite"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:promax",
+      "name": "Promax Electronic",
+      "category": "RF Test Equipment",
+      "serviceScope": [
+        "Calibrated Field Diagnostics (HD Ranger)"
+      ],
+      "marketTier": "Broadcast Laboratory Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:cabelcon",
+      "name": "Corning Cabelcon",
+      "category": "Compression Connectors",
+      "serviceScope": [
+        "Primary Coaxial F-Type Specification"
+      ],
+      "marketTier": "Waterproof Broadcast Grade"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:wd-purple",
+      "name": "Western Digital (WD Purple)",
+      "category": "Surveillance Storage",
+      "serviceScope": [
+        "Primary Surveillance NVR Drive"
+      ],
+      "marketTier": "24/7 AllFrame 4K Storage"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:seagate-skyhawk",
+      "name": "Seagate (SkyHawk AI)",
+      "category": "Surveillance Storage",
+      "serviceScope": [
+        "Surveillance NVR Drive"
+      ],
+      "marketTier": "24/7 AI Surveillance Storage"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:excel-networking",
+      "name": "Excel Networking",
+      "category": "Structured Cabling",
+      "serviceScope": [
+        "Supply",
+        "Certified Install",
+        "Patch Panels"
+      ],
+      "marketTier": "UK Commercial Enterprise Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:connectix",
+      "name": "Connectix Cabling Systems",
+      "category": "Structured Cabling",
+      "serviceScope": [
+        "Supply",
+        "Certified Install"
+      ],
+      "marketTier": "UK Commercial Enterprise"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:fluke-networks",
+      "name": "Fluke Networks",
+      "category": "Certification Test Equipment",
+      "serviceScope": [
+        "DSX-8000 Certified Testing"
+      ],
+      "marketTier": "Global Gold Standard"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:samsung",
+      "name": "Samsung Electronics",
+      "category": "Smart TV & The Frame",
+      "serviceScope": [
+        "Wall Mount",
+        "One-Connect In-Wall",
+        "Setup"
+      ],
+      "marketTier": "Consumer / High-End QLED"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:lg",
+      "name": "LG Electronics",
+      "category": "OLED & QNED Displays",
+      "serviceScope": [
+        "Flush Wall Mount",
+        "Audio Bypass",
+        "Setup"
+      ],
+      "marketTier": "Consumer / Reference OLED"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:sony",
+      "name": "Sony",
+      "category": "Bravia OLED & Master Series",
+      "serviceScope": [
+        "Wall Mount",
+        "Audio Routing",
+        "Setup"
+      ],
+      "marketTier": "Reference Visual / Audio"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:panasonic",
+      "name": "Panasonic",
+      "category": "Master OLED Displays",
+      "serviceScope": [
+        "Wall Mount",
+        "Setup"
+      ],
+      "marketTier": "Reference Master OLED"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:hisense",
+      "name": "Hisense",
+      "category": "Mini-LED & Laser TV",
+      "serviceScope": [
+        "Wall Mount",
+        "Setup"
+      ],
+      "marketTier": "Consumer Mini-LED"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:tcl",
+      "name": "TCL",
+      "category": "Mini-LED & QLED Displays",
+      "serviceScope": [
+        "Wall Mount",
+        "Setup"
+      ],
+      "marketTier": "Consumer Mini-LED"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:sonos",
+      "name": "Sonos",
+      "category": "Home Theatre & Multi-Room Audio",
+      "serviceScope": [
+        "Wall Mount (Arc/Beam/Sub)",
+        "eARC Integration"
+      ],
+      "marketTier": "Premium Wireless Audio"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:bose",
+      "name": "Bose",
+      "category": "Soundbars & Audio",
+      "serviceScope": [
+        "Wall Mount",
+        "Setup"
+      ],
+      "marketTier": "Premium Audio"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://adicommunications.co.uk/brands#brand:denon",
+      "name": "Denon (HEOS)",
+      "category": "AV Receivers & Multi-Room",
+      "serviceScope": [
+        "Install",
+        "Surround Sound Setup"
+      ],
+      "marketTier": "Audiophile AV Receivers"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:starlink-gen3-standard",
+      "name": "SpaceX Starlink Gen 3 Standard (V4 Kickstand)",
+      "category": "Satellite Terminal",
+      "description": "Rectangular phased-array, 100° FOV, Wi-Fi 6 router with 2x Gigabit RJ45 ports, IP67 weather-rated, tri-band mesh capable.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:spacex-starlink"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-chimney-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-wall-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-bypass-config"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:starlink-gen2-actuated",
+      "name": "SpaceX Starlink Gen 2 Standard Actuated (Motorised)",
+      "category": "Satellite Terminal",
+      "description": "Motorised self-orienting rectangular dish, proprietary SPX cable, requires Starlink Ethernet Adapter for RJ45 hand-off.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:spacex-starlink"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-chimney-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-wall-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-repair"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:starlink-mini",
+      "name": "SpaceX Starlink Mini (Compact Portable)",
+      "category": "Satellite Terminal",
+      "description": "Integrated Wi-Fi 5 router, DC barrel jack powered (12-48V), compact 1.1kg form factor, Gigabit Ethernet port.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:spacex-starlink"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-wall-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-bypass-config"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:starlink-heavy-duty-chimney-kit",
+      "name": "Heavy-Duty Starlink Chimney Lashing Kit (Non-Drill)",
+      "category": "Mounting Hardware",
+      "description": "Galvanised twin-cradle bracket, 1.5” / 2” heavy-gauge steel mast, 5-strand stainless steel tension lashing wire, high-tensile J-bolts. 0 holes drilled in masonry. 90mph gale rated.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:blake-uk"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-chimney-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:starlink-tk-wall-brackets",
+      "name": "Heavy-Duty Galvanised T&K Standoff Brackets (18\"–24\")",
+      "category": "Mounting Hardware",
+      "description": "Hot-dipped galvanised welded steel pair, 18\" to 24\" standoff clearance for deep eaves and gutters, anchored with M10 masonry shield anchors.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:blake-uk"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-wall-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:hikvision-colorvu-4k-turret",
+      "name": "Hikvision 4K ColorVu Turret IP Camera (DS-2CD2387G2-LU)",
+      "category": "CCTV Camera",
+      "description": "8MP 4K resolution, F1.0 super-aperture lens, 24/7 full-colour night vision (0 lux), built-in mic, AcuSense human/vehicle AI classification, IP67 weatherproof.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:hikvision"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-poe-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-upgrade"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:hikvision-acusense-nvr",
+      "name": "Hikvision 8-Channel 4K PoE NVR (DS-7608NXI-I2/8P)",
+      "category": "CCTV Recorder",
+      "description": "8x independent PoE interfaces, up to 12MP recording, 2x SATA bays up to 20TB, dual-stream, Hik-Connect zero-subscription mobile remote viewing.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:hikvision"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-poe-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:dahua-tioc-5mp-active-deterrence",
+      "name": "Dahua 5MP TiOC 2.0 Active Deterrence Turret",
+      "category": "CCTV Camera",
+      "description": "Full-colour night vision, flashing red/blue police strobe beacons, 110dB custom voice siren, perimeter AI tripwire, two-way audio.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:dahua"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-poe-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:reolink-duo-3-poe",
+      "name": "Reolink Duo 3 PoE 16MP 180° Panoramic Camera",
+      "category": "CCTV Camera",
+      "description": "Dual lenses seamlessly stitched into 180° blind-spot-free perspective, 16MP ultra-wide UHD, ColorX nighttime lens, motion tracking.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:reolink"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-poe-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:wd-purple-surveillance-hdd",
+      "name": "WD Purple Surveillance Hard Drive (4TB / 8TB / 10TB)",
+      "category": "Storage",
+      "description": "Engineered for 24/7 continuous high-definition surveillance recording, AllFrame technology reduces frame drops, rated for 180TB/year workload.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:wd-purple"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-poe-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-hard-drive-replacement"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:ajax-hub-2-plus",
+      "name": "Ajax Hub 2 Plus Central Controller",
+      "category": "Alarm Central Hub",
+      "description": "Grade 2 security control panel, 4 communication channels (Ethernet, Wi-Fi, 2x 2G/3G/LTE SIM slots), supports up to 200 devices, 100 cameras, 200 users. Jeweller 868MHz protocol.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:ajax"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:ajax-alarm-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:ajax-motioncam-phod",
+      "name": "Ajax MotionCam PhOD (Photo on Demand)",
+      "category": "Alarm Detector",
+      "description": "PIR motion sensor with integrated camera, takes animated photo series on alarm or user demand, pet-immune up to 20kg, 1,700m line of sight.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:ajax"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:ajax-alarm-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:ajax-streetsiren-doubledeck",
+      "name": "Ajax StreetSiren DoubleDeck",
+      "category": "Alarm Siren",
+      "description": "Wireless outdoor siren with customizable LED frame and acoustic buzzer (up to 113dB), IP54 water resistance, accelerometer anti-tamper tear-off detection.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:ajax"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:ajax-alarm-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:unifi-dream-machine-se",
+      "name": "Ubiquiti UniFi Dream Machine Special Edition (UDM-SE)",
+      "category": "Router & Gateway",
+      "description": "Enterprise gateway with integrated PoE/PoE+ 8-port switch, 2.5G WAN, 10G SFP+ LAN/WAN, integrated 128GB SSD + 3.5\" NVR drive bay.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:ubiquiti"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:networking-commercial-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:unifi-u7-pro-ap",
+      "name": "Ubiquiti UniFi U7 Pro Wi-Fi 7 Access Point",
+      "category": "Wireless Access Point",
+      "description": "Ceiling-mounted Wi-Fi 7 AP, 6GHz / 5GHz / 2.4GHz tri-band, 2.5G uplink with PoE+, handles 300+ connected clients without slowdown.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:ubiquiti"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:wifi-mesh-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:networking-commercial-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:draytek-vigor-2865",
+      "name": "DrayTek Vigor 2865 Security Firewall Router",
+      "category": "Router & Gateway",
+      "description": "VDSL2 / ADSL2+ & Gigabit Ethernet WAN router, dual-WAN failover (ideal for Starlink + 4G/5G backup), robust VPN concentrator.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:draytek"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:networking-commercial-install"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:corefix-120-heavy-duty-anchors",
+      "name": "CoreFix 120 Heavy-Duty Dot & Dab Wall Fixings",
+      "category": "Masonry Anchor",
+      "description": "Steel core bridge transfers TV load directly into solid masonry behind plasterboard cavity; 100kg safe working load for 65\"–100\" TVs.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:corefix"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-wall-mounting-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-bracket-remount-repair"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:snaptoggle-heavy-duty-stud-bolts",
+      "name": "SnapToggle Heavy-Duty Hollow Wall Anchors (1/4\"-20)",
+      "category": "Stud Anchor",
+      "description": "Solid zinc-plated steel channel with nylon strapping, anchors heavy TV brackets across hollow drywall and timber/metal studs with up to 120kg shear strength.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:snaptoggle"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-wall-mounting-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-bracket-remount-repair"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:webro-wf100-coax",
+      "name": "Webro WF100 Coaxial Cable (CAI Benchmarked)",
+      "category": "Coaxial Cable",
+      "description": "1.00mm pure solid copper inner conductor, physical gas-injected foam dielectric, copper foil and copper braid screening (CAI 0007 F benchmarked).",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:webro"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-aerial-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-aerial-socket-replacement"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:coax-f-connector-retermination"
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://adicommunications.co.uk/hardware#equip:promax-hd-ranger-analyser",
+      "name": "Promax HD Ranger Eco Spectrum Analyzer & Field Meter",
+      "category": "Test Equipment",
+      "description": "Ultra-fast spectrum analyzer, DVB-T/T2 MER constellation measurement, pre/post Viterbi BER, LTE signal interference logging.",
+      "brand": {
+        "@id": "https://adicommunications.co.uk/brands#brand:promax"
+      },
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-aerial-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-aerial-repair"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:freeview-tv-retune-rescan"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://adicommunications.co.uk/diagnostics#prob:cctv-night-glare",
+      "name": "CCTV Night-Time Vision is White Fog or Washed Out Glare",
+      "description": "Root Cause: Infrared reflection bouncing back off dome glass covers, nearby soffit boards, brick corners, or spiderweb buildup. Solution: Replace reflective glass dome with open-lens Turret (Eyeball) camera with separated dual IR/white-light emitters and ColorVu technology.",
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-upgrade"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-repair"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://adicommunications.co.uk/diagnostics#prob:cctv-voltage-drop-reboot",
+      "name": "CCTV Cameras Disconnect or Reboot Every Evening at Dusk",
+      "description": "Root Cause: Cheap Copper-Clad Aluminium (CCA) cable drops too much voltage under high electrical load when infrared LEDs activate at sunset. Solution: Replace substandard CCA with 100% solid oxygen-free copper Cat6 cable with IEEE 802.3at PoE+ power budget.",
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:cctv-repair"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:rj45-crimp-repair"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://adicommunications.co.uk/diagnostics#prob:wifi-dead-spots-stone-walls",
+      "name": "Wi-Fi Drops Completely Inside 500mm Thick Stone Walls or Extensions",
+      "description": "Root Cause: High-density Yorkshire gritstone and foil-backed insulation absorb 5GHz and 6GHz wireless signals completely. Solution: Install hardwired solid copper Cat6 backhaul cables to discreet ceiling-mounted Wi-Fi 6/7 access points in every zone.",
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:wifi-mesh-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:wifi-hardwired-backhaul-run"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://adicommunications.co.uk/diagnostics#prob:starlink-mast-micro-wobble",
+      "name": "Starlink Internet Stalls or Drops Satellite Lock in High Winds",
+      "description": "Root Cause: Flimsy aluminium poles or cheap swan-neck brackets flex 2–3 degrees in wind gusts, losing phased-array beam alignment. Solution: Mount on heavy-duty non-drill chimney lashing cradles or 18\" welded T&K brackets with 2\" heavy-gauge mast.",
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-chimney-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:starlink-wall-install"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://adicommunications.co.uk/diagnostics#prob:tv-pixelating-5g-interference",
+      "name": "Freeview TV Channels Pixelating, Freezing or Missing Completely",
+      "description": "Root Cause: 700MHz 5G or 800MHz 4G mobile phone mast transmission breaking into wideband unshielded TV aerial coax. Solution: Install CAI-benchmarked 5G LTE channel 48 low-pass filter, double-screened Webro WF100 coax, and spectrum analyzer realignment.",
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-aerial-repair"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:5g-lte-filter-retrofit"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://adicommunications.co.uk/diagnostics#prob:diy-alarm-rf-jamming",
+      "name": "DIY 433MHz Wireless Alarms Vulnerable to Cheap RF Jamming",
+      "description": "Root Cause: Single-frequency 433MHz wireless devices can be blinded by basic handheld transmitters without triggering an alarm. Solution: Upgrade to Grade 2 Ajax Jeweller 868MHz encrypted rolling-code frequency-hopping system with sub-second jamming detection.",
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:ajax-alarm-install"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://adicommunications.co.uk/diagnostics#prob:tv-mounting-drywall-collapse",
+      "name": "Fear of 75\"–85\" Heavy OLED TV Pulling Down Plasterboard Drywall",
+      "description": "Root Cause: Standard plastic drywall plugs pull straight out of gypsum board under dynamic cantilever forward weight. Solution: Professional structural mounting with CoreFix 120 (into solid block) or SnapToggle (into timber/metal studs) rated to 100kg+.",
+      "serviceSupported": [
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-wall-mounting-install"
+        },
+        {
+          "@id": "https://adicommunications.co.uk/services#service:tv-bracket-remount-repair"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html#tool",
+      "name": "ADI Signal Doctor: Freeview, TV Aerial & Coax Fault Finder",
+      "url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All Web Browsers",
+      "description": "Interactive 5-step UK diagnostic tool for Freeview No Signal errors, picture pixelation, missing multiplexes, coaxial cable water ingress, loft amplifier PSU failures, and 4G/5G interference.",
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/#article",
+      "headline": "TV Aerial Signal Problems Explained: Diagnose No Signal, Pixelation, Coax & Booster Faults",
+      "url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
+      "author": {
+        "@id": "https://adicommunications.co.uk/#gary-pearce"
+      },
+      "publisher": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "description": "Comprehensive UK engineering guide and interactive diagnostic fault finder covering single-TV vs multi-room signal loss, amplifier overload, damaged WF100 coax, and 4G/5G mast interference."
+    }
+  ]
+}

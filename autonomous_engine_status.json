@@ -1,0 +1,13 @@
+{
+  "status": "STOPPED",
+  "current_platform": "IDLE",
+  "current_category": "None",
+  "last_action": "BATCH_FINISHED",
+  "stats": {
+    "processed": 8,
+    "joined": 7,
+    "blocked": 1,
+    "errors": 0
+  },
+  "last_updated": "2026-10-24T15:38:32.192524+00:00"
+}

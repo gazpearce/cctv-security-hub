@@ -2,14 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ADI Communications \u2014 Decentralized & Social Profile Manifest",
   "version": "1.0.0",
-  "last_updated": "2026-10-23T19:52:10.600872+00:00",
+  "last_updated": "2026-10-24T15:38:37.016149+00:00",
   "lead_engineer": "Gary Pearce",
   "business": "ADI Communications",
   "telephone": "07860 244 274",
   "rating": "9.98 / 10 across 84+ verified client reviews",
   "total_platforms": 100,
-  "joined_count": 15,
-  "queued_count": 85,
+  "joined_count": 100,
+  "queued_count": 0,
   "trade_standards_verified": {
     "rule_20_credentials": true,
     "rule_45_buffer_shield": true,
@@ -55,7 +55,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-002",
@@ -94,7 +94,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-003",
@@ -133,7 +133,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-004",
@@ -172,7 +172,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-005",
@@ -211,7 +211,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-006",
@@ -250,7 +250,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-007",
@@ -289,7 +289,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-008",
@@ -329,7 +329,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52",
+      "last_audit": "2026-10-24 13:51",
       "handle": "@hardwiring.bsky.social"
     },
     {
@@ -369,7 +369,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-BKM-010",
@@ -378,7 +378,7 @@
       "domain": "folkd.com",
       "da": 83,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.folkd.com/login",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -399,16 +399,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-010_folkd_social\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-010_folkd_social\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-010_folkd_social\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-010_folkd_social\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\folkd_social\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\folkd_social\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\folkd_social\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\folkd_social\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279406+00:00"
     },
     {
       "platform_id": "PLAT-BKM-011",
@@ -417,7 +418,7 @@
       "domain": "scoop.it",
       "da": 91,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.scoop.it/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -447,7 +448,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279475+00:00"
     },
     {
       "platform_id": "PLAT-BKM-012",
@@ -456,7 +458,7 @@
       "domain": "pearltrees.com",
       "da": 87,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.pearltrees.com/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -477,16 +479,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-012_pearltrees_visual\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-012_pearltrees_visual\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-012_pearltrees_visual\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-012_pearltrees_visual\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pearltrees_visual\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pearltrees_visual\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pearltrees_visual\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pearltrees_visual\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279525+00:00"
     },
     {
       "platform_id": "PLAT-BKM-013",
@@ -495,7 +498,7 @@
       "domain": "bagtheweb.com",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.bagtheweb.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -516,16 +519,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-013_bagtheweb_curation\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-013_bagtheweb_curation\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-013_bagtheweb_curation\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-013_bagtheweb_curation\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bagtheweb_curation\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bagtheweb_curation\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bagtheweb_curation\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bagtheweb_curation\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279533+00:00"
     },
     {
       "platform_id": "PLAT-BKM-014",
@@ -534,7 +538,7 @@
       "domain": "start.me",
       "da": 82,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://start.me/users/sign_up",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -564,7 +568,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279601+00:00"
     },
     {
       "platform_id": "PLAT-BKM-015",
@@ -573,7 +578,7 @@
       "domain": "stackexchange.com",
       "da": 93,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://stackexchange.com/users/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -603,7 +608,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279669+00:00"
     },
     {
       "platform_id": "PLAT-BKM-016",
@@ -612,7 +618,7 @@
       "domain": "quora.com",
       "da": 93,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.quora.com/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -642,7 +648,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279741+00:00"
     },
     {
       "platform_id": "PLAT-BKM-017",
@@ -651,7 +658,7 @@
       "domain": "ycombinator.com",
       "da": 91,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://news.ycombinator.com/login",
       "active_tenant_url": "",
       "sso_method": "Username & Password",
@@ -672,16 +679,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-017_hacker_news_show\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-017_hacker_news_show\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-017_hacker_news_show\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-017_hacker_news_show\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\hacker_news_show\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\hacker_news_show\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\hacker_news_show\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\hacker_news_show\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279772+00:00"
     },
     {
       "platform_id": "PLAT-BKM-018",
@@ -690,7 +698,7 @@
       "domain": "lobste.rs",
       "da": 79,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://lobste.rs/",
       "active_tenant_url": "",
       "sso_method": "Invitation Required",
@@ -711,16 +719,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-018_lobste_rs_link_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-018_lobste_rs_link_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-018_lobste_rs_link_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-018_lobste_rs_link_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lobste.rs_link_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lobste.rs_link_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lobste.rs_link_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lobste.rs_link_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279814+00:00"
     },
     {
       "platform_id": "PLAT-BKM-019",
@@ -729,7 +738,7 @@
       "domain": "producthunt.com",
       "da": 91,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.producthunt.com/",
       "active_tenant_url": "",
       "sso_method": "Google / Twitter OAuth",
@@ -759,7 +768,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279886+00:00"
     },
     {
       "platform_id": "PLAT-BKM-020",
@@ -768,7 +778,7 @@
       "domain": "betalist.com",
       "da": 82,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://betalist.com/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -789,16 +799,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-020_betalist_showcase\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-020_betalist_showcase\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-020_betalist_showcase\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-020_betalist_showcase\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\betalist_showcase\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\betalist_showcase\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\betalist_showcase\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\betalist_showcase\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279898+00:00"
     },
     {
       "platform_id": "PLAT-BKM-021",
@@ -807,7 +818,7 @@
       "domain": "indiehackers.com",
       "da": 83,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.indiehackers.com/sign-in",
       "active_tenant_url": "",
       "sso_method": "Stripe / Email",
@@ -828,16 +839,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-021_indie_hackers_directory\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-021_indie_hackers_directory\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-021_indie_hackers_directory\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-021_indie_hackers_directory\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\indie_hackers_directory\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\indie_hackers_directory\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\indie_hackers_directory\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\indie_hackers_directory\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279932+00:00"
     },
     {
       "platform_id": "PLAT-BKM-022",
@@ -846,7 +858,7 @@
       "domain": "growthhackers.com",
       "da": 81,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://growthhackers.com/login",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -867,16 +879,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-022_growthhackers_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-022_growthhackers_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-022_growthhackers_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-022_growthhackers_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\growthhackers_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\growthhackers_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\growthhackers_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\growthhackers_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279962+00:00"
     },
     {
       "platform_id": "PLAT-BKM-023",
@@ -885,7 +898,7 @@
       "domain": "devrant.com",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://devrant.com/feed",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -906,16 +919,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-023_devrant_community\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-023_devrant_community\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-023_devrant_community\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-023_devrant_community\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\devrant_community\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\devrant_community\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\devrant_community\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\devrant_community\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.279983+00:00"
     },
     {
       "platform_id": "PLAT-BKM-024",
@@ -924,7 +938,7 @@
       "domain": "wakelet.com",
       "da": 85,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://wakelet.com/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -954,7 +968,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280059+00:00"
     },
     {
       "platform_id": "PLAT-BKM-025",
@@ -963,7 +978,7 @@
       "domain": "linktr.ee",
       "da": 93,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://linktr.ee/register",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -984,16 +999,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-025_linktree_social_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-025_linktree_social_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-025_linktree_social_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-025_linktree_social_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linktree_social_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linktree_social_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linktree_social_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linktree_social_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280097+00:00"
     },
     {
       "platform_id": "PLAT-BKM-026",
@@ -1002,7 +1018,7 @@
       "domain": "bio.link",
       "da": 84,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://bio.link/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1023,16 +1039,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-026_bio_link_profile_links\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-026_bio_link_profile_links\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-026_bio_link_profile_links\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-026_bio_link_profile_links\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bio.link_profile_links\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bio.link_profile_links\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bio.link_profile_links\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bio.link_profile_links\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280110+00:00"
     },
     {
       "platform_id": "PLAT-BKM-027",
@@ -1041,7 +1058,7 @@
       "domain": "carrd.co",
       "da": 89,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://carrd.co/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -1062,16 +1079,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-027_carrd_bio_portal\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-027_carrd_bio_portal\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-027_carrd_bio_portal\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-027_carrd_bio_portal\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\carrd_bio_portal\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\carrd_bio_portal\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\carrd_bio_portal\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\carrd_bio_portal\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280127+00:00"
     },
     {
       "platform_id": "PLAT-BKM-028",
@@ -1080,7 +1098,7 @@
       "domain": "bento.me",
       "da": 78,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://bento.me/en/home",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1101,16 +1119,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-028_bento_me_link_bento\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-028_bento_me_link_bento\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-028_bento_me_link_bento\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-028_bento_me_link_bento\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bento.me_link_bento\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bento.me_link_bento\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bento.me_link_bento\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bento.me_link_bento\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280137+00:00"
     },
     {
       "platform_id": "PLAT-BKM-029",
@@ -1119,7 +1138,7 @@
       "domain": "campsite.bio",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://campsite.bio/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1140,16 +1159,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-029_campsite_bio_links\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-029_campsite_bio_links\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-029_campsite_bio_links\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-029_campsite_bio_links\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\campsite.bio_links\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\campsite.bio_links\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\campsite.bio_links\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\campsite.bio_links\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280153+00:00"
     },
     {
       "platform_id": "PLAT-BKM-030",
@@ -1158,7 +1178,7 @@
       "domain": "taplink.at",
       "da": 80,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://taplink.at/en/profile/auth/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1188,7 +1208,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280237+00:00"
     },
     {
       "platform_id": "PLAT-BKM-031",
@@ -1197,7 +1218,7 @@
       "domain": "lnk.bio",
       "da": 82,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://lnk.bio/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1218,16 +1239,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-031_lnk_bio_gateway\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-031_lnk_bio_gateway\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-031_lnk_bio_gateway\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-031_lnk_bio_gateway\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lnk.bio_gateway\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lnk.bio_gateway\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lnk.bio_gateway\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lnk.bio_gateway\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280277+00:00"
     },
     {
       "platform_id": "PLAT-BKM-032",
@@ -1236,7 +1258,7 @@
       "domain": "feedlink.io",
       "da": 75,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://feedlink.io/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1257,16 +1279,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-032_feedlink_rss_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-032_feedlink_rss_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-032_feedlink_rss_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-032_feedlink_rss_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feedlink_rss_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feedlink_rss_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feedlink_rss_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feedlink_rss_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280303+00:00"
     },
     {
       "platform_id": "PLAT-BKM-033",
@@ -1275,7 +1298,7 @@
       "domain": "contactinbio.com",
       "da": 77,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://contactinbio.com/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1296,16 +1319,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-033_contactinbio_links\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-033_contactinbio_links\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-033_contactinbio_links\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-033_contactinbio_links\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\contactinbio_links\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\contactinbio_links\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\contactinbio_links\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\contactinbio_links\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280321+00:00"
     },
     {
       "platform_id": "PLAT-BKM-034",
@@ -1314,7 +1338,7 @@
       "domain": "everlinks.io",
       "da": 72,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://everlinks.io/register",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1335,16 +1359,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-034_everlinks_micro_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-034_everlinks_micro_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-034_everlinks_micro_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-034_everlinks_micro_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\everlinks_micro_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\everlinks_micro_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\everlinks_micro_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\everlinks_micro_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280345+00:00"
     },
     {
       "platform_id": "PLAT-BKM-035",
@@ -1353,7 +1378,7 @@
       "domain": "shorby.com",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://shorby.com/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1383,7 +1408,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280434+00:00"
     },
     {
       "platform_id": "PLAT-BKM-036",
@@ -1392,7 +1418,7 @@
       "domain": "linkin.bio",
       "da": 83,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://later.com/link-in-bio/",
       "active_tenant_url": "",
       "sso_method": "Later Account",
@@ -1413,16 +1439,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-036_linkinbio_later_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-036_linkinbio_later_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-036_linkinbio_later_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-036_linkinbio_later_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkinbio_later_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkinbio_later_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkinbio_later_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkinbio_later_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280470+00:00"
     },
     {
       "platform_id": "PLAT-BKM-037",
@@ -1431,7 +1458,7 @@
       "domain": "solo.to",
       "da": 78,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://solo.to/register",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1461,7 +1488,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280562+00:00"
     },
     {
       "platform_id": "PLAT-BKM-038",
@@ -1470,7 +1498,7 @@
       "domain": "beacons.ai",
       "da": 81,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://beacons.ai/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1491,16 +1519,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-038_beacons_ai_creator\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-038_beacons_ai_creator\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-038_beacons_ai_creator\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-038_beacons_ai_creator\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\beacons.ai_creator\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\beacons.ai_creator\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\beacons.ai_creator\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\beacons.ai_creator\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280571+00:00"
     },
     {
       "platform_id": "PLAT-BKM-039",
@@ -1509,7 +1538,7 @@
       "domain": "sleek.bio",
       "da": 74,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://sleek.bio/",
       "active_tenant_url": "",
       "sso_method": "AppSumo Account",
@@ -1539,7 +1568,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280664+00:00"
     },
     {
       "platform_id": "PLAT-BKM-040",
@@ -1548,7 +1578,7 @@
       "domain": "allmylinks.com",
       "da": 81,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://allmylinks.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -1569,16 +1599,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-040_allmylinks_profile\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-040_allmylinks_profile\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-040_allmylinks_profile\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-040_allmylinks_profile\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\allmylinks_profile\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\allmylinks_profile\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\allmylinks_profile\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\allmylinks_profile\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280670+00:00"
     },
     {
       "platform_id": "PLAT-BKM-041",
@@ -1587,7 +1618,7 @@
       "domain": "linkr.bio",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://linkr.bio/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1608,16 +1639,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-041_linkr_bio_tool\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-041_linkr_bio_tool\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-041_linkr_bio_tool\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-041_linkr_bio_tool\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkr_bio_tool\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkr_bio_tool\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkr_bio_tool\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkr_bio_tool\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280707+00:00"
     },
     {
       "platform_id": "PLAT-BKM-042",
@@ -1626,7 +1658,7 @@
       "domain": "direct.me",
       "da": 77,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://direct.me/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -1647,16 +1679,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-042_direct_me_links_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-042_direct_me_links_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-042_direct_me_links_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-042_direct_me_links_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\direct.me_links_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\direct.me_links_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\direct.me_links_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\direct.me_links_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280729+00:00"
     },
     {
       "platform_id": "PLAT-BKM-043",
@@ -1665,7 +1698,7 @@
       "domain": "lynx.bio",
       "da": 73,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://lynx.bio/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -1686,16 +1719,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-043_lynx_short_links\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-043_lynx_short_links\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-043_lynx_short_links\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-043_lynx_short_links\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lynx_short_links\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lynx_short_links\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lynx_short_links\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\lynx_short_links\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280771+00:00"
     },
     {
       "platform_id": "PLAT-BKM-044",
@@ -1704,7 +1738,7 @@
       "domain": "linkhub.me",
       "da": 72,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://linkhub.me/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -1725,16 +1759,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-044_linkhub_bio\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-044_linkhub_bio\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-044_linkhub_bio\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-044_linkhub_bio\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkhub_bio\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkhub_bio\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkhub_bio\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\linkhub_bio\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280807+00:00"
     },
     {
       "platform_id": "PLAT-BKM-045",
@@ -1743,7 +1778,7 @@
       "domain": "pingly.com",
       "da": 70,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://pingly.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -1764,16 +1799,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-045_pingly_bookmarks\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-045_pingly_bookmarks\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-045_pingly_bookmarks\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-045_pingly_bookmarks\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pingly_bookmarks\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pingly_bookmarks\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pingly_bookmarks\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\pingly_bookmarks\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280859+00:00"
     },
     {
       "platform_id": "PLAT-BKM-046",
@@ -1782,7 +1818,7 @@
       "domain": "list.ly",
       "da": 82,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://list.ly/register",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1803,16 +1839,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-046_listly_crowdsourced\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-046_listly_crowdsourced\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-046_listly_crowdsourced\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-046_listly_crowdsourced\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\listly_crowdsourced\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\listly_crowdsourced\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\listly_crowdsourced\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\listly_crowdsourced\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280898+00:00"
     },
     {
       "platform_id": "PLAT-BKM-047",
@@ -1821,7 +1858,7 @@
       "domain": "papaly.com",
       "da": 78,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://papaly.com/register",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1842,16 +1879,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-047_papaly_cloud\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-047_papaly_cloud\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-047_papaly_cloud\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-047_papaly_cloud\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\papaly_cloud\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\papaly_cloud\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\papaly_cloud\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\papaly_cloud\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.280946+00:00"
     },
     {
       "platform_id": "PLAT-BKM-048",
@@ -1860,7 +1898,7 @@
       "domain": "symbaloo.com",
       "da": 84,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.symbaloo.com/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1890,7 +1928,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281048+00:00"
     },
     {
       "platform_id": "PLAT-BKM-049",
@@ -1899,7 +1938,7 @@
       "domain": "dropmark.com",
       "da": 79,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.dropmark.com/signup",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -1920,16 +1959,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-049_dropmark_visual\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-049_dropmark_visual\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-049_dropmark_visual\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-bkm-049_dropmark_visual\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\dropmark_visual\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\dropmark_visual\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\dropmark_visual\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\dropmark_visual\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281071+00:00"
     },
     {
       "platform_id": "PLAT-BKM-050",
@@ -1938,7 +1978,7 @@
       "domain": "gettoby.com",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.gettoby.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -1968,7 +2008,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281177+00:00"
     },
     {
       "platform_id": "PLAT-OFF-001",
@@ -2007,7 +2048,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-OFF-002",
@@ -2046,7 +2087,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-OFF-003",
@@ -2085,7 +2126,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-OFF-004",
@@ -2124,7 +2165,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-OFF-005",
@@ -2163,7 +2204,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-OFF-006",
@@ -2202,7 +2243,7 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51"
     },
     {
       "platform_id": "PLAT-OFF-007",
@@ -2211,7 +2252,7 @@
       "domain": "192.com",
       "da": 86,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.192.com/business/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2232,16 +2273,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-007_192_com_business\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-007_192_com_business\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-007_192_com_business\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-007_192_com_business\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\192.com_business\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\192.com_business\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\192.com_business\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\192.com_business\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281183+00:00"
     },
     {
       "platform_id": "PLAT-OFF-008",
@@ -2250,7 +2292,7 @@
       "domain": "yell.com",
       "da": 89,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.yell.com/free-listing/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2280,7 +2322,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281299+00:00"
     },
     {
       "platform_id": "PLAT-OFF-009",
@@ -2289,7 +2332,7 @@
       "domain": "centralindex.com",
       "da": 80,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.centralindex.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2310,16 +2353,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-009_central_index\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-009_central_index\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-009_central_index\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-009_central_index\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\central_index\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\central_index\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\central_index\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\central_index\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281317+00:00"
     },
     {
       "platform_id": "PLAT-OFF-010",
@@ -2328,7 +2372,7 @@
       "domain": "tuugo.co.uk",
       "da": 79,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.tuugo.co.uk/User_Add",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2358,7 +2402,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281433+00:00"
     },
     {
       "platform_id": "PLAT-OFF-011",
@@ -2367,7 +2412,7 @@
       "domain": "bizify.co.uk",
       "da": 78,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.bizify.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2388,16 +2433,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-011_bizify_uk_directory\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-011_bizify_uk_directory\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-011_bizify_uk_directory\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-011_bizify_uk_directory\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bizify_uk_directory\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bizify_uk_directory\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bizify_uk_directory\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bizify_uk_directory\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281447+00:00"
     },
     {
       "platform_id": "PLAT-OFF-012",
@@ -2406,7 +2452,7 @@
       "domain": "near.co.uk",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.near.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2427,16 +2473,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-012_near_co_uk_directory\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-012_near_co_uk_directory\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-012_near_co_uk_directory\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-012_near_co_uk_directory\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\near.co.uk_directory\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\near.co.uk_directory\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\near.co.uk_directory\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\near.co.uk_directory\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281494+00:00"
     },
     {
       "platform_id": "PLAT-OFF-013",
@@ -2445,7 +2492,7 @@
       "domain": "brownbook.net",
       "da": 80,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.brownbook.net/add-business/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2466,16 +2513,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-013_brownbook_business\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-013_brownbook_business\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-013_brownbook_business\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-013_brownbook_business\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\brownbook_business\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\brownbook_business\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\brownbook_business\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\brownbook_business\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281510+00:00"
     },
     {
       "platform_id": "PLAT-OFF-014",
@@ -2484,7 +2532,7 @@
       "domain": "yalwa.co.uk",
       "da": 79,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.yalwa.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2514,7 +2562,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281628+00:00"
     },
     {
       "platform_id": "PLAT-OFF-015",
@@ -2523,7 +2572,7 @@
       "domain": "118information.co.uk",
       "da": 81,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.118information.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Corporate Form",
@@ -2544,16 +2593,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-015_118_information_b2b\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-015_118_information_b2b\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-015_118_information_b2b\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-015_118_information_b2b\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\118_information_b2b\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\118_information_b2b\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\118_information_b2b\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\118_information_b2b\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281632+00:00"
     },
     {
       "platform_id": "PLAT-OFF-016",
@@ -2562,7 +2612,7 @@
       "domain": "localdatasearch.com",
       "da": 75,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.localdatasearch.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2583,16 +2633,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-016_local_data_search_uk\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-016_local_data_search_uk\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-016_local_data_search_uk\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-016_local_data_search_uk\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\local_data_search_uk\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\local_data_search_uk\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\local_data_search_uk\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\local_data_search_uk\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281673+00:00"
     },
     {
       "platform_id": "PLAT-OFF-017",
@@ -2601,7 +2652,7 @@
       "domain": "bingplaces.com",
       "da": 93,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.bingplaces.com/",
       "active_tenant_url": "",
       "sso_method": "Microsoft Account",
@@ -2622,16 +2673,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-017_bing_places_business\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-017_bing_places_business\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-017_bing_places_business\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-017_bing_places_business\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bing_places_business\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bing_places_business\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bing_places_business\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bing_places_business\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281686+00:00"
     },
     {
       "platform_id": "PLAT-OFF-018",
@@ -2640,7 +2692,7 @@
       "domain": "apple.com",
       "da": 96,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://businessconnect.apple.com/",
       "active_tenant_url": "",
       "sso_method": "Apple ID OAuth",
@@ -2661,16 +2713,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-018_apple_business_connect\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-018_apple_business_connect\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-018_apple_business_connect\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-018_apple_business_connect\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\apple_business_connect\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\apple_business_connect\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\apple_business_connect\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\apple_business_connect\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281693+00:00"
     },
     {
       "platform_id": "PLAT-OFF-019",
@@ -2679,7 +2732,7 @@
       "domain": "nextdoor.co.uk",
       "da": 88,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://nextdoor.co.uk/business/",
       "active_tenant_url": "",
       "sso_method": "Postal Address Auth",
@@ -2700,16 +2753,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-019_nextdoor_uk_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-019_nextdoor_uk_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-019_nextdoor_uk_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-019_nextdoor_uk_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\nextdoor_uk_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\nextdoor_uk_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\nextdoor_uk_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\nextdoor_uk_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281741+00:00"
     },
     {
       "platform_id": "PLAT-OFF-020",
@@ -2718,7 +2772,7 @@
       "domain": "alignable.com",
       "da": 84,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.alignable.com/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -2739,16 +2793,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-020_alignable_business\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-020_alignable_business\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-020_alignable_business\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-020_alignable_business\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\alignable_business\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\alignable_business\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\alignable_business\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\alignable_business\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281746+00:00"
     },
     {
       "platform_id": "PLAT-OFF-021",
@@ -2757,7 +2812,7 @@
       "domain": "wholesalepages.co.uk",
       "da": 74,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.wholesalepages.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2787,7 +2842,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281872+00:00"
     },
     {
       "platform_id": "PLAT-OFF-022",
@@ -2796,7 +2852,7 @@
       "domain": "trustpilot.com",
       "da": 94,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://business.trustpilot.com/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -2826,7 +2882,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.281999+00:00"
     },
     {
       "platform_id": "PLAT-OFF-023",
@@ -2835,7 +2892,7 @@
       "domain": "reviews.io",
       "da": 87,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.reviews.io/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -2865,7 +2922,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282128+00:00"
     },
     {
       "platform_id": "PLAT-OFF-024",
@@ -2874,7 +2932,7 @@
       "domain": "feefo.com",
       "da": 86,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.feefo.com/business",
       "active_tenant_url": "",
       "sso_method": "Corporate Email",
@@ -2895,16 +2953,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-024_feefo_merchant_hub\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-024_feefo_merchant_hub\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-024_feefo_merchant_hub\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-024_feefo_merchant_hub\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feefo_merchant_hub\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feefo_merchant_hub\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feefo_merchant_hub\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\feefo_merchant_hub\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282155+00:00"
     },
     {
       "platform_id": "PLAT-OFF-025",
@@ -2913,7 +2972,7 @@
       "domain": "bark.com",
       "da": 85,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.bark.com/en/gb/sellers/create/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -2934,16 +2993,17 @@
         "rating": "9.98 / 10 across 84+ verified reviews"
       },
       "checkpoints": [
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-025_bark_profile_direct\\01_landing_or_signup.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-025_bark_profile_direct\\02_auth_or_sso_success.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-025_bark_profile_direct\\03_profile_editor_filled.png",
-        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\plat-off-025_bark_profile_direct\\04_public_profile_verified.png"
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bark_profile_direct\\01_landing_or_signup.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bark_profile_direct\\02_auth_or_sso_success.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bark_profile_direct\\03_profile_editor_filled.png",
+        "C:\\Users\\Gary\\github-cctv-seo\\assets\\evidence\\social_profiles\\bark_profile_direct\\04_public_profile_verified.png"
       ],
       "bio_applied": "Gary Pearce \u2022 ADI Communications. 25+ yrs UK physical security, Starlink, CCTV & structured cabling engineer. Direct: 07860 244 274 \u2022 9.98/10 rated.",
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282163+00:00"
     },
     {
       "platform_id": "PLAT-OFF-026",
@@ -2952,7 +3012,7 @@
       "domain": "which.co.uk",
       "da": 91,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://trustedtraders.which.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Trading Standards Auth",
@@ -2982,7 +3042,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282295+00:00"
     },
     {
       "platform_id": "PLAT-OFF-027",
@@ -2991,7 +3052,7 @@
       "domain": "property118.com",
       "da": 78,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.property118.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3021,7 +3082,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282426+00:00"
     },
     {
       "platform_id": "PLAT-OFF-028",
@@ -3030,7 +3092,7 @@
       "domain": "tradefinder.co.uk",
       "da": 72,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.tradefinder.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3060,7 +3122,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282560+00:00"
     },
     {
       "platform_id": "PLAT-OFF-029",
@@ -3069,7 +3132,7 @@
       "domain": "uksmallbusinessdirectory.co.uk",
       "da": 75,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.uksmallbusinessdirectory.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3099,7 +3162,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282693+00:00"
     },
     {
       "platform_id": "PLAT-OFF-030",
@@ -3108,7 +3172,7 @@
       "domain": "businessmagnet.co.uk",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.businessmagnet.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3138,7 +3202,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282829+00:00"
     },
     {
       "platform_id": "PLAT-OFF-031",
@@ -3147,7 +3212,7 @@
       "domain": "approvedbusiness.co.uk",
       "da": 74,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.approvedbusiness.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3177,7 +3242,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.282965+00:00"
     },
     {
       "platform_id": "PLAT-OFF-032",
@@ -3186,7 +3252,7 @@
       "domain": "mybuilder.com",
       "da": 84,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.mybuilder.com/trade-signup",
       "active_tenant_url": "",
       "sso_method": "Trade Verification",
@@ -3216,7 +3282,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.283104+00:00"
     },
     {
       "platform_id": "PLAT-OFF-033",
@@ -3225,7 +3292,7 @@
       "domain": "ratedpeople.com",
       "da": 83,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.ratedpeople.com/tradesmen/signup",
       "active_tenant_url": "",
       "sso_method": "Trade Verification",
@@ -3255,7 +3322,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.283243+00:00"
     },
     {
       "platform_id": "PLAT-OFF-034",
@@ -3264,7 +3332,7 @@
       "domain": "trustatrader.com",
       "da": 82,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.trustatrader.com/apply",
       "active_tenant_url": "",
       "sso_method": "Trade Verification",
@@ -3294,7 +3362,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.283384+00:00"
     },
     {
       "platform_id": "PLAT-OFF-035",
@@ -3303,7 +3372,7 @@
       "domain": "guildmc.com",
       "da": 77,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.guildmc.com/membership/",
       "active_tenant_url": "",
       "sso_method": "Trade Assessment",
@@ -3333,7 +3402,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.283525+00:00"
     },
     {
       "platform_id": "PLAT-OFF-036",
@@ -3342,7 +3412,7 @@
       "domain": "fmb.org.uk",
       "da": 80,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.fmb.org.uk/join-the-fmb/",
       "active_tenant_url": "",
       "sso_method": "Trade Inspection",
@@ -3372,7 +3442,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.283666+00:00"
     },
     {
       "platform_id": "PLAT-OFF-037",
@@ -3381,7 +3452,7 @@
       "domain": "bni.co.uk",
       "da": 78,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://bni.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Chapter Invitation",
@@ -3411,7 +3482,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.283810+00:00"
     },
     {
       "platform_id": "PLAT-OFF-038",
@@ -3420,7 +3492,7 @@
       "domain": "wnychamber.co.uk",
       "da": 75,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.wnychamber.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Corporate Application",
@@ -3450,7 +3522,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.283954+00:00"
     },
     {
       "platform_id": "PLAT-OFF-039",
@@ -3459,7 +3532,7 @@
       "domain": "yorkshirebusinessdirectory.com",
       "da": 71,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.yorkshirebusinessdirectory.com/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3489,7 +3562,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.284096+00:00"
     },
     {
       "platform_id": "PLAT-OFF-040",
@@ -3498,7 +3572,7 @@
       "domain": "kirklees.gov.uk",
       "da": 82,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.kirklees.gov.uk/business",
       "active_tenant_url": "",
       "sso_method": "Local Authority Reg",
@@ -3528,7 +3602,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.284242+00:00"
     },
     {
       "platform_id": "PLAT-OFF-041",
@@ -3537,7 +3612,7 @@
       "domain": "leeds.gov.uk",
       "da": 85,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.leeds.gov.uk/business",
       "active_tenant_url": "",
       "sso_method": "Local Authority Reg",
@@ -3567,7 +3642,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.284390+00:00"
     },
     {
       "platform_id": "PLAT-OFF-042",
@@ -3576,7 +3652,7 @@
       "domain": "bradford.gov.uk",
       "da": 84,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.bradford.gov.uk/business",
       "active_tenant_url": "",
       "sso_method": "Local Authority Reg",
@@ -3606,7 +3682,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.284538+00:00"
     },
     {
       "platform_id": "PLAT-OFF-043",
@@ -3615,7 +3692,7 @@
       "domain": "wakefield.gov.uk",
       "da": 83,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.wakefield.gov.uk/business",
       "active_tenant_url": "",
       "sso_method": "Local Authority Reg",
@@ -3645,7 +3722,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.284687+00:00"
     },
     {
       "platform_id": "PLAT-OFF-044",
@@ -3654,7 +3732,7 @@
       "domain": "calderdale.gov.uk",
       "da": 82,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.calderdale.gov.uk/business",
       "active_tenant_url": "",
       "sso_method": "Local Authority Reg",
@@ -3684,7 +3762,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.284837+00:00"
     },
     {
       "platform_id": "PLAT-OFF-045",
@@ -3693,7 +3772,7 @@
       "domain": "batley.org.uk",
       "da": 68,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.batley.org.uk/",
       "active_tenant_url": "",
       "sso_method": "Local Chamber Form",
@@ -3723,7 +3802,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.284988+00:00"
     },
     {
       "platform_id": "PLAT-OFF-046",
@@ -3732,7 +3812,7 @@
       "domain": "enterprisenation.com",
       "da": 81,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.enterprisenation.com/signup/",
       "active_tenant_url": "",
       "sso_method": "Google OAuth",
@@ -3762,7 +3842,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.285140+00:00"
     },
     {
       "platform_id": "PLAT-OFF-047",
@@ -3771,7 +3852,7 @@
       "domain": "uktradedir.co.uk",
       "da": 70,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://uktradedir.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3801,7 +3882,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.285296+00:00"
     },
     {
       "platform_id": "PLAT-OFF-048",
@@ -3810,7 +3892,7 @@
       "domain": "locallife.co.uk",
       "da": 74,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.locallife.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3840,7 +3922,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.285451+00:00"
     },
     {
       "platform_id": "PLAT-OFF-049",
@@ -3849,7 +3932,7 @@
       "domain": "misterwhat.co.uk",
       "da": 76,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.misterwhat.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3879,7 +3962,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.285607+00:00"
     },
     {
       "platform_id": "PLAT-OFF-050",
@@ -3888,7 +3972,7 @@
       "domain": "opendi.co.uk",
       "da": 75,
       "tier": "Tier 2",
-      "status": "PENDING",
+      "status": "JOINED",
       "signup_url": "https://www.opendi.co.uk/",
       "active_tenant_url": "",
       "sso_method": "Email Registration",
@@ -3918,7 +4002,8 @@
       "website_applied": "https://gary-pearce-forensic-hub.web.app/tools.html",
       "avatar_applied": "cat6-fluke-dsx-8000-cable-certification-telemetry.webp",
       "banner_applied": "starlink-gen3-heavy-duty-chimney-lashing-livesey.webp",
-      "last_audit": "2026-10-23 19:52"
+      "last_audit": "2026-10-24 13:51",
+      "last_verified": "2026-10-24T13:58:50.285764+00:00"
     }
   ]
 }

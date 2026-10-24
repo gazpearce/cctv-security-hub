@@ -21,9 +21,9 @@ FEEDS = [
         "feed_url": "https://gary-pearce-forensic-hub.web.app/videos-mrss.xml"
     },
     {
-        "name": "ADI Communications Official Master RSS Feed",
-        "url": "https://gary-pearce-forensic-hub.web.app/",
-        "feed_url": "https://gary-pearce-forensic-hub.web.app/feed.xml"
+        "name": "ADI Communications Official Master RSS Feed (40 Articles)",
+        "url": "https://adicommunications.co.uk/news/",
+        "feed_url": "https://adicommunications.co.uk/rss.xml"
     },
     {
         "name": "ADI Communications Security Audio Podcast",

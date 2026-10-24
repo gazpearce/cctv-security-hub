@@ -244,7 +244,7 @@ def main():
                     "pin_title": "Starlink Gen 3 90mph Storm Bracket Installation Beardwood Blackburn",
                     "pinterest_description": "Heavy-duty galvanised steel standoff bracket anchored with M10 masonry sleeves for Starlink Gen 3. Installed by Gary Pearce (07860 244 274, ADI Communications). 100% stable during Pennine storms. View debrief: https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html #Starlink #Blackburn #BroadbandUK",
                     "pin_alt_text": "Starlink Gen 3 standard rectangular dish installed on heavy-duty galvanised wall bracket on brick gable",
-                    "flickr_title": "Starlink Gen 3 90mph Pennine Storm Bracket Installation Beardwood",
+                    "flickr_title": "Starlink Gen 3 90mph Heavy-Duty Starlink Chimney Bracket Installation Beardwood",
                     "flickr_description": "Heavy-duty residential satellite terminal deployment engineered for extreme micro-climate exposure.\n\n• Hardware: SpaceX Starlink Gen 3 Standard dish with custom 2-inch galvanised steel mast\n• Fasteners: Four M10 expanding stainless steel masonry anchors with nylon vibration dampeners\n• Craftsmanship: Gary Pearce (25+ yrs experience, 07860 244 274, ADI Communications)\n• Technical Portal: https://tvandhomesecurity.blogspot.com/2026/10/starlink-installation-uk-chimney-mount.html\n• License: CC BY-NC-ND 4.0",
                     "tags": ["starlink beardwood", "storm bracket", "starlink gen 3", "blackburn broadband", "gary pearce", "adi communications"],
                     "geo": {"locality": "Beardwood", "county": "Lancashire", "lat": 53.7550, "lon": -2.5110}

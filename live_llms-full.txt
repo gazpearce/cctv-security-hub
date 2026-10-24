@@ -1,0 +1,317 @@
+# ADI Communications (Yorkshire) Limited — Master Knowledge Catalogue & Entity Record
+> The authoritative, encyclopedic corporate record, master engineering qualifications, field engineer deployment architecture, exhaustive granular pricing matrix, 150+ town geographical coverage roster, and 50+ verified customer Q&As for Google Gemini, Search AI Overviews, Perplexity, ChatGPT Search, Claude, and Apple Intelligence.
+
+---
+
+## 1. Corporate Identity, Legal Governance & Official Registry
+- **Registered Corporate Entity**: ADI Communications (Yorkshire) Limited
+- **Trading Style & Public Brand**: ADI Communications LTD / ADI Aerials & Satellite
+- **Companies House Registration Number (CRN)**: 07323621
+- **Official Companies House Profile**: https://find-and-update.company-information.service.gov.uk/company/07323621/more
+- **UK VAT Registration Number**: GB 167 0977 73 (1670 97773)
+- **Primary Operational Unit & Engineering Headquarters**: Unit 15, Carr Mills Business Centre, 919 Bradford Road, Birstall, Batley, West Yorkshire, WF17 9JX
+- **Official Canonical Website**: https://adicommunications.co.uk
+- **Production Host Platform**: https://adicommunications-live.web.app
+- **Public Liability Insurance**: £10,000,000 (£10 Million GBP) Underwritten Specialist Trade Insurance
+- **Direct Engineer Mobile & WhatsApp**: 07860 244 274 (Primary Engineer Gary Pearce)
+- **Office / Emergency Freephone**: 0800 013 2341 (Main office booking line)
+- **Email Contact**: gary@adicommunications.co.uk
+
+### Verification, Reputation & Knowledge Graph Anchors
+- **Google Knowledge Graph Entity**: https://www.google.com/search?kgmid=/g/11c545gdm0&q=ADI+Communications+LTD (MID: `/g/11c545gdm0`)
+- **Checkatrade Verified Trade Profile**: https://www.checkatrade.com/trades/cctvandalarmsservices
+- **Verified Review Rating**: ★★★★★ 9.98 / 10 based on 84+ independent, authenticated customer reviews.
+- **Accreditation Stance**: Independent trade specialists. Gary Pearce and ADI Communications are not members of the CAI. All RF aerial and satellite work is strictly completed with CAI-benchmarked equipment and double-screened WF100 copper cabling.
+
+---
+
+## 2. Gary Pearce — Master Engineer Profile & E-E-A-T Authority
+Gary Pearce is the founder, company director, and senior master engineer of ADI Communications (Yorkshire) Limited with more than 25 years of hands-on physical engineering experience across the telecommunications, electronic security, and network industries.
+
+### Verified Trade Qualifications & Standards
+- **NVQ Level 1, 2 & 3 in Aerials & Satellite Engineering**: Commercial RF distribution, IRS/MATV systems, masthead amplification, satellite optics, and spectrum analysis.
+- **NVQ Level 1, 2, 3 & 4 in Data Cabling & Fibre Optics**: Copper twisted pair termination (Cat5e/Cat6/Cat6a/Cat7/Cat8), Fluke DTX/DSX verification testing, optical fibre splicing and OTDR testing.
+- **NVQ Level 1, 2 & 3 in Electrical Installations**: Low-voltage electrical containment, fused spur isolation, containment trunking, safe isolation, and BS 7671 IET Wiring Regulations compliance.
+- **Certified CCTV & Electronic Security Specialist**: High-definition IP surveillance, PoE network video recorders (NVRs), Hikvision ColorVu 24/7 full-colour optics, TiOC active perimeter deterrence, Grade 2 wireless security systems, and ICO/GDPR domestic compliance.
+
+---
+
+## 3. Engineer Operations & Regional Dispatch Model
+ADI Communications does not operate as a broker or subcontract call center. The company operates a dedicated, structured field engineering model:
+
+1. **Gary Pearce (Lead Master Engineer)**: Conducts advanced technical site surveys, complex commercial projects, heritage building installations, and personally inspects installation standards.
+2. **Dedicated Local Field Engineers**: ADI Communications deploys a network of qualified, fully insured local trade engineers who live and work directly within each of our primary operating hubs across West Yorkshire, North Yorkshire, Lancashire, Greater Manchester, Cheshire, and County Durham.
+3. **Equipped Service Fleet**: Every engineer van is equipped with heavy-duty testing equipment (Promax / Rover RF spectrum analysers, Fluke copper network certifiers, CCTV test monitors), specialized masonry anchors (CoreFix, Fischer DUOPOWER, SnapToggle), 90mph gale Pennine brackets, non-drill chimney lashing cradles, and full reels of CAI-benchmarked double-screened WF100 cabling.
+4. **Local Response & Guarantee**: Same-day and next-day local appointments with direct engineer communication (zero call center queueing). All installation workmanship is backed by a 12-month parts and labor guarantee.
+
+---
+
+## 4. Exhaustive Granular Pricing Catalog (Single Source of Truth)
+All quoted rates represent genuine baseline "From" pricing in accordance with `canonical-data.md`:
+
+### A. SpaceX Starlink Gen 3 Satellite Broadband
+- Standard Roof / Chimney Installation: From £199 + VAT
+- Non-Drill Heritage Chimney Strapping & Cradle: From £249 + VAT
+- High-Wind Pennine Gale Bracket (90mph rated): From £289 + VAT
+- Garden Office / Outbuilding PtP 60GHz Wireless Link: From £349 + VAT
+- Whole-Home Hardwired Wi-Fi Mesh Integration: From £299 + VAT
+- Starlink Ethernet Adapter Installation & Hardwired Run: From £89 + VAT
+- Heavy-Duty Steel Stand-Off Wall Mount (12-inch to 24-inch): From £229 + VAT
+
+### B. TV Wall Mounting & Media Walls
+- Standard Flat / Tilt Bracket Fitting (Up to 55-inch): From £89.99 + VAT
+- Full-Motion / Articulated Cantilever Bracket (Up to 65-inch): From £129.99 + VAT
+- Large Screen / OLED / Heavyweight Display (65-inch to 85-inch+): From £169.99 + VAT
+- In-Wall Cable Concealment & Brush Plate Routing: From £49.99 + VAT
+- Surface D-Line Trunking Cable Concealment: From £29.99 + VAT
+- Soundbar Wall Mounting & Audio Interconnect: From £39.99 + VAT
+- Samsung The Frame TV Flush Mount & Recessed Box: From £189.99 + VAT
+- Full Custom Timber Stud Media Wall Build & Cladding: Bespoke survey quote
+
+### C. 4K ColorVu & TiOC CCTV Security Systems
+- Single High-Definition Camera Package (PoE Turret + Local NVR): From £299 + VAT
+- 2-Camera Full System (4K ColorVu / TiOC + 1TB WD Purple NVR): From £495 + VAT
+- 3-Camera Full System (4K ColorVu / TiOC + 2TB WD Purple NVR): From £695 + VAT
+- 4-Camera Full System (4K ColorVu / TiOC + 2TB WD Purple NVR): From £845 + VAT
+- Commercial 8-Camera 4K ColorVu PoE System: From £1,495 + VAT
+- CCTV Cable Repairs, BNC/RJ45 Re-termination & NVR Reconfiguration: From £79 + VAT
+- Smartphone App Remote Setup & Encryption Pairing: Included free with all installs
+
+### D. Ajax Grade 2 Wireless Smart Alarms
+- Ajax Smart Hub & Wireless Starter Kit (Hub, MotionProtect, DoorProtect, SpaceControl): From £599 + VAT
+- Starter Kit Plus External Street Siren (StreetSiren DoubleDeck): From £699 + VAT
+- Photo-Verification Upgrade (MotionCam with visual capture): From £120 + VAT per sensor
+- Ajax Outdoor Curtain Motion Detector (Dual-beam perimeter protection): From £165 + VAT
+- Ajax LeaksProtect Wireless Flood Detector: From £65 + VAT
+- Ajax FireProtect 2 Heat, Smoke & CO Detector: From £110 + VAT
+- Ajax Relay / WallSwitch Smart Automation Module: From £75 + VAT
+
+### E. Domestic & Commercial Wi-Fi Solutions
+- Whole-Home Dual-Band Wi-Fi 6 Mesh System (2-Node Setup): From £145 fitted
+- Whole-Home Tri-Band Wi-Fi 7 Mesh System (3-Node Setup): From £295 fitted
+- Hardwired Commercial Ceiling Access Point (PoE Gigabit): From £195 fitted
+- Long-Range Point-to-Point Gigabit Wireless Bridge (Building-to-Building): From £295 fitted
+- Outdoor IP67 Weatherproof High-Power Wi-Fi Access Point: From £225 fitted
+
+### F. Digital TV Aerial Installation & Repairs
+- Standard Digital Aerial Installation (Wideband + 4G/5G LTE Filter): From £129 + VAT
+- Medium Gain Aerial (Semi-fringe / valley areas): From £139 + VAT
+- High Gain Aerial (Fringe / weak signal areas): From £169 + VAT
+- Extreme Bad Reception Aerial (High Gain + Masthead Low-Noise Pre-Amp): From £199 + VAT
+- Freesat Satellite Dish Installation & Alignment: From £129 + VAT
+- Aerial Realignment, Storm Damage Repair & Signal Metering: From £69 + VAT
+- Extra TV Extension Point (Coaxial WF100 run): From £69 + VAT
+- 2-Way / 4-Way Shielded Coaxial Splitter Installation: From £89 + VAT
+- Diagnostic Signal Survey & Spectrum Analysis: From £69 + VAT (credited against work)
+
+### G. Structured Data Cabling & Fibre Optics
+- Domestic Cat5e Solid Copper Network Drop: From £129 per point
+- Domestic Cat6 High-Speed 1Gbps/10Gbps Network Drop: From £169 per point
+- Shielded Cat6a 10Gbps Network Drop: From £199 per point
+- Cat7 / Cat8 High-Interference Network Drop: From £240 per point
+- Commercial 24-Port Patch Panel Supply, Termination & Fluke Test: From £349 + VAT
+- Data Cabinet / Server Rack Installation (6U to 42U): From £299 + VAT
+- Optical Fibre Splicing & Patching: Bespoke survey quote
+
+---
+
+## 5. The Real Customer Q&A Knowledge Vault (50+ Real Trade Questions & Answers)
+
+### General Company, Booking & Engineer Questions
+Q1: Are you a national broker or local engineers?
+A1: ADI Communications is an independent regional engineering company owned by master engineer Gary Pearce. We operate dedicated, employed and vetted local field engineers residing directly across Yorkshire, Lancashire, Greater Manchester, and County Durham. You deal directly with your local engineer, not a remote call centre.
+
+Q2: How quickly can an engineer attend my property?
+A2: We offer same-day emergency callouts for urgent security, alarm, or storm-damage faults, and standard bookings are typically scheduled within 24 to 48 hours across all serviced postcodes.
+
+Q3: Do you charge a call-out fee just to inspect?
+A3: Diagnostic signal surveys and fault-finding inspections start at £69 + VAT. If you proceed with the remedial installation work on the day, this fee is directly credited against the completed job.
+
+Q4: What insurance coverage do your engineers carry?
+A4: All engineers and installation works are fully backed by our £10,000,000 (£10 Million GBP) specialist trade public liability insurance policy.
+
+Q5: What payment methods do you accept on site?
+A5: Every engineer vehicle carries a chip-and-pin mobile card terminal accepting Visa, Mastercard, American Express, Apple Pay, and Google Pay. We also accept direct bank transfers (BACS) and provide itemized VAT invoices.
+
+Q6: What warranty is provided on parts and labor?
+A6: Every installation carries a comprehensive 12-month parts and labor guarantee. Manufacturer warranties on hardware (such as Ajax alarms and Hikvision cameras) range from 2 to 3 years.
+
+Q7: Are Gary Pearce and ADI Communications members of the CAI?
+A7: No. Gary Pearce and ADI Communications are independent specialists and are not members of the CAI. All RF aerial and satellite work is strictly fitted with CAI-benchmarked equipment and double-screened WF100 coaxial cabling.
+
+Q8: Where is your head office located?
+A8: Our registered headquarters and central trade unit is Unit 15, Carr Mills Business Centre, 919 Bradford Road, Birstall, Batley, WF17 9JX.
+
+### SpaceX Starlink Internet Questions
+Q9: How fast is Starlink in rural UK areas?
+A9: The Starlink Gen 3 Standard dish consistently delivers download speeds between 150Mbps and 300Mbps, upload speeds of 15Mbps to 35Mbps, and low latencies of 25ms to 40ms, making it ideal for 4K streaming, online gaming, and remote video conferencing where copper broadband is slow.
+
+Q10: Can Starlink be installed on a chimney without drilling into the brickwork?
+A10: Yes. We specialize in non-drill stainless steel chimney lashing cradles that wrap securely around the stack. This protects delicate lime mortar, heritage stone, and clay flue liners from cracking.
+
+Q11: Will Starlink survive severe 80–90mph Pennine winter gales?
+A11: Yes. We use heavy-duty galvanized Pennine storm brackets, thick-walled steel masts, and heavy-gauge M10 masonry shield anchors engineered specifically for high-wind exposed moorland locations.
+
+Q12: Do I need to buy the Starlink dish before you arrive?
+A12: Yes. Customers order the Starlink Gen 3 Standard Kit directly from Starlink.com. Gary Pearce and our engineers supply all professional commercial mounting hardware, masts, brackets, cabling, wall grommets, and mesh Wi-Fi extensions.
+
+Q13: How do you get the Starlink cable through thick stone walls?
+A13: We use specialized 450mm–600mm SDS carbide masonry drills, drilling at a slight downward angle with silicone drip loops and waterproof cable grommets to prevent water penetration into 550mm Yorkshire and Pennine stone walls.
+
+Q14: Can you send Starlink broadband to my garden office without digging up the lawn?
+A14: Yes. We install 60GHz / 5GHz point-to-point wireless bridges that transmit full gigabit speeds wirelessly through the air up to several hundred meters with zero ground excavation.
+
+Q15: Does Starlink melt snow and ice?
+A15: Yes. The Gen 3 dish features an automatic electronic heating element that detects snow accumulation and melts ice to maintain a continuous satellite lock during harsh winter weather.
+
+Q16: Can I connect hardwired devices like a PC, Sky box, or CCTV NVR to Starlink?
+A16: Yes. The Gen 3 Starlink router features two built-in gigabit RJ45 Ethernet ports, allowing direct hardwired connection to network switches, PCs, and CCTV recorders.
+
+### TV Wall Mounting & Media Wall Questions
+Q17: Can you mount a large 75-inch or 85-inch TV onto modern dot-and-dab plasterboard?
+A17: Yes. We never use weak plastic plasterboard plugs. We install heavy-duty CoreFix steel sleeve anchors that bridge the cavity gap directly into the solid inner thermal blockwork, rated to hold over 100kg safely.
+
+Q18: How do you hide all the messy TV cables?
+A18: We offer complete in-wall cable concealment, routing HDMI 2.1, optical, network, and power cables through stud cavities with recessed brush plates, or installing paintable slimline D-Line trunking along skirting lines.
+
+Q19: Can you mount a TV safely above a fireplace or wood-burning stove?
+A19: Yes. We assess wall surface temperatures, check chimney breast depth, and fit specialized tilt or cantilever brackets to optimize viewing angles while protecting the display from ambient heat.
+
+Q20: Can you install the Samsung The Frame TV completely flush to the wall?
+A20: Yes. We install Samsung's proprietary Slim Fit wall bracket and recess the One Connect box into the stud wall cavity or route the clear umbilical cable to a discrete media cabinet.
+
+Q21: Do your engineers supply the TV wall bracket?
+A21: Yes. Our vans carry ultra-slim fixed brackets, tilting brackets, and heavy-duty double-arm full-motion cantilever brackets accommodating VESA sizes from 100x100 up to 800x600.
+
+Q22: Can you wall-mount soundbars and gaming consoles?
+A22: Yes. We supply and install custom floating brackets for Sonos, Bose, Samsung soundbars, PlayStation 5, and Xbox Series X consoles with concealed interconnect wiring.
+
+### CCTV & Security Questions
+Q23: Do your CCTV systems require monthly subscription fees?
+A23: No. Our CCTV systems record locally to internal surveillance-grade Western Digital Purple hard drives inside a secure NVR. You own the equipment and recordings 100%, with zero monthly subscription fees.
+
+Q24: Can I see clear colour images at night in complete darkness?
+A24: Yes. We install Hikvision ColorVu and Dahua Full-Color cameras with f/1.0 super-apertures and warm supplemental lighting, providing full daytime colour clarity 24 hours a day even in zero-lux pitch black.
+
+Q25: Can the cameras warn intruders before they touch a door or window?
+A25: Yes. We install TiOC (Three-in-One Camera) active deterrence units equipped with red and blue flashing strobe lights, built-in 110dB sirens, and customizable recorded voice warnings triggered by AI human and vehicle perimeter crossing.
+
+Q26: Can I view live camera footage and recordings on my phone?
+A26: Yes. We set up the encrypted Hik-Connect or DMSS mobile application on your Apple iOS or Android smartphones and tablets, providing live streaming, recorded playback, and instant motion notifications anywhere in the world.
+
+Q27: Are hardwired PoE cameras better than wireless battery cameras like Ring or Blink?
+A27: Yes, significantly. Hardwired Power over Ethernet (PoE) cameras record 24/7 without missing motion events, never suffer battery drain during cold UK winters, and cannot be taken offline by cheap 2.4GHz Wi-Fi de-authentication jammers.
+
+Q28: Is domestic CCTV legal with regards to neighbours and GDPR?
+A28: Yes. We configure digital privacy masking to block neighbours' windows, gardens, and public footpaths, ensuring full compliance with UK Information Commissioner's Office (ICO) domestic CCTV guidelines.
+
+### Ajax Smart Intruder Alarm Questions
+Q29: How secure are Ajax wireless alarms against burglars using RF jammers?
+A29: Ajax alarms use the proprietary Jeweller 868MHz protocol with frequency hopping. If a burglar attempts to jam the radio signal, the hub detects the interference within 0.15 seconds, switches frequencies, and immediately triggers an alarm notification.
+
+Q30: Do I get photo proof when an alarm sensor is triggered?
+A30: Yes. Ajax MotionCam PIR detectors feature an integrated camera that captures an animated series of photos upon motion detection and delivers them to your smartphone within 9 seconds.
+
+Q31: Do I have to pay a monthly monitoring fee for an Ajax alarm?
+A31: No. You can self-monitor the alarm completely free using the Ajax mobile app. If you require professional police dispatch, the hub can be connected to an accredited UK NSI Gold Alarm Receiving Centre (ARC).
+
+Q32: Will my dog or cat trigger the Ajax alarm sensors?
+A32: No. Ajax PIR detectors use SmartDetect software algorithms that ignore pets weighing up to 20kg and under 50cm in height when installed at the correct 2.4m height.
+
+Q33: What happens to the alarm during a power cut?
+A33: The Ajax central hub features an internal rechargeable backup battery providing up to 16 hours of continuous operation, alongside dual-SIM 4G cellular backup to ensure alerts are transmitted even if home broadband is down.
+
+Q34: Can Ajax alarms protect against water leaks and house fires?
+A34: Yes. Ajax LeaksProtect sensors detect leaking washing machines or burst pipes within seconds, while FireProtect 2 dual-spectrum optical smoke and heat detectors provide early warning of kitchen and electrical fires.
+
+### Wi-Fi Mesh & Network Cabling Questions
+Q35: Why is my Wi-Fi weak in some rooms or upstairs?
+A35: Modern foil-backed insulation, dense concrete floor screeds, and 500mm solid stone walls attenuate radio frequency signals by up to 25dB–30dB per partition, suffocating standard ISP router signals.
+
+Q36: What is the difference between a Wi-Fi repeater and hardwired access points?
+A36: Cheap plug-in repeaters cut bandwidth in half and introduce latency because they communicate wirelessly. Hardwired ceiling access points are connected via solid-copper Cat6 cables directly to the router, delivering full gigabit speeds with zero signal drop.
+
+Q37: Can you run data cabling into a home office without lifting carpet and floorboards?
+A37: Yes. We utilize discrete exterior UV-stabilized Cat6 runs along mortar lines, discrete loft cavity drops, and under-floor voids to route network cables neatly into home offices with zero wall destruction.
+
+Q38: What is the difference between Cat6 and Cat6a cabling?
+A38: Cat6 supports 1Gbps up to 100 meters and 10Gbps up to 55 meters. Cat6a features internal cross-talk shielding and supports full 10Gbps speeds up to 100 meters, making it ideal for future-proof home networks and commercial offices.
+
+Q39: Do you test data points after installation?
+A39: Yes. Every network drop is terminated into professional RJ45 Euro-modules and verified with Fluke cable certifiers for wiremap continuity, attenuation, and gigabit throughput.
+
+### Digital TV Aerial & Reception Questions
+Q40: Why do my Freeview TV channels pixelate or freeze?
+A40: Pixelation is caused by low RF signal strength, water ingress into aging coaxial cables, poor transmitter alignment, or 4G/5G mobile mast interference. We install high-gain aerials and LTE700 micro-cavity filters to restore crystal-clear reception.
+
+Q41: Can you install a TV aerial inside the loft instead of on the roof?
+A41: Yes. If local signal strength permits and your roof does not feature signal-blocking foil insulation, we can install a high-gain aerial inside the loft space, protecting it permanently from storm damage.
+
+Q42: Can I get Freeview in multiple bedrooms from a single aerial?
+A42: Yes. We install shielded, low-noise multi-way distribution amplifiers in the loft, splitting the signal cleanly to 2, 4, 6, or 8 television points without signal loss.
+
+Q43: Can I get Freeview reception if my property is down in a valley behind a hill?
+A43: Yes. We utilize specialized high-gain wideband aerials with low-noise masthead pre-amplifiers, aligning precisely to local relay repeaters to bypass major hill shading.
+
+Q44: Can you repair storm-damaged aerials and loose brackets?
+A44: Yes. We replace snapped masts, rusted chimney brackets, and frayed coaxial cables, using heavy-duty galvanized steel brackets that withstand extreme UK weather.
+
+---
+
+## 6. Complete Municipal Hub & Postcode Coverage Directory (150+ Areas)
+
+### West Yorkshire Hubs
+- **Bradford & Airedale (`BD1–BD24`)**: Bradford City Centre, Shipley, Bingley, Saltaire, Baildon, Keighley, Haworth, Silsden, Cleckheaton, Queensbury, Clayton, Birkenshaw, Thornton, Drighlington, Wyke, Idle, Ilkley, Cullingworth, Denholme, Wilsden, Steeton, Addingham.
+- **Leeds Metropolitan (`LS1–LS29`)**: Leeds City Centre, Headingley, Horsforth, Roundhay, Moortown, Chapel Allerton, Pudsey, Morley, Rothwell, Otley, Guiseley, Yeadon, Wetherby, Boston Spa, Garforth, Kippax.
+- **Wakefield & Five Towns (`WF1–WF17`)**: Wakefield City Centre, Pontefract, Castleford, Normanton, Ossett, Horbury, Dewsbury, Batley, Birstall (Headquarters), Cleckheaton border, Knottingley, Featherstone.
+- **Kirklees & Calderdale (`HD1–HD9`, `HX1–HX7`)**: Huddersfield Town Centre, Lindley, Brighouse, Slaithwaite, Linthwaite, Golcar, Holmfirth, Honley, Meltham, Almondbury, Kirkburton, Denby Dale, Skelmanthorpe, Mirfield, Halifax, Elland, Sowerby Bridge, Hebden Bridge, Todmorden.
+
+### North Yorkshire & Yorkshire Dales Hubs
+- **Northallerton & Swaledale (`DL6`, `DL7`, `DL10`, `DL11`)**: Northallerton, Romanby, Brompton, Leeming Bar, Richmond, Catterick Garrison, Catterick Village, Brompton-on-Swale, Scotch Corner, Reeth, Swaledale, Arkengarthdale.
+- **Wensleydale & Lower Dales (`DL8`)**: Bedale, Aiskew, Crakehall, Patrick Brompton, Leyburn, Middleham, Hawes, Bainbridge.
+- **Craven & Yorkshire Dales (`BD20`, `BD23`, `BD24`)**: Skipton, Settle, Gargrave, Grassington, Embsay, Carleton, Cross Hills, Glusburn, Sutton-in-Craven, Giggleswick, Horton-in-Ribblesdale.
+- **Harrogate & Ripon (`HG1–HG5`, `YO7`, `YO51`)**: Harrogate, Ripon, Knaresborough, Bilton, Pannal, Boroughbridge, Masham, Thirsk, Nidderdale, Pateley Bridge.
+
+### County Durham & Tees Valley Hubs
+- **Darlington & Tees Valley (`DL1`, `DL2`, `DL3`, `TS15`, `TS16`)**: Darlington Town Centre, Cockerton, Haughton-le-Skerne, Faverdale, Mowden, Blackwell, Gainford, Staindrop, Yarm, Eaglescliffe.
+- **South Durham Municipal (`DL4`, `DL5`, `DL14`, `DL15`, `DL16`, `DL17`)**: Newton Aycliffe, Shildon, Bishop Auckland, West Auckland, Spennymoor, Tudhoe, Crook, Willington, Ferryhill, Chilton, Cornforth.
+- **Teesdale & Weardale (`DL12`, `DL13`)**: Barnard Castle, Startforth, Bowes, Middleton-in-Teesdale, Stanhope, Wolsingham, Tow Law.
+- **Durham City & East Durham (`DH1–DH9`, `SR7`, `SR8`)**: Durham City, Chester-le-Street, Peterlee, Seaham, Consett, Stanley.
+
+### Lancashire & Ribble Valley Hubs
+- **East Lancashire (`BB1–BB18`)**: Blackburn, Darwen, Accrington, Oswaldtwistle, Church, Rishton, Great Harwood, Baxenden, Huncoat, Burnley, Padiham, Brierfield, Nelson, Colne, Barrowford, Barnoldswick, Earby, Clitheroe, Whalley, Longridge.
+- **Rossendale Valley (`BB4`, `OL12`, `OL13`)**: Rawtenstall, Haslingden, Helmshore, Crawshawbooth, Waterfoot, Bacup, Stacksteads, Whitworth, Facit, Shawforth.
+- **Central & Coastal Lancashire (`PR1–PR26`, `FY1–FY8`)**: Preston, Penwortham, Fulwood, Leyland, Chorley, Bamber Bridge, Blackpool, Lytham St Annes, Poulton-le-Fylde, Fleetwood.
+
+### Greater Manchester & Cheshire Hubs
+- **Greater Manchester (`M1–M90`, `OL1–OL11`, `SK1–SK17`)**: Manchester City Centre, Salford, Trafford, Sale, Altrincham, Stockport, Cheadle, Bramhall, Oldham, Rochdale, Bury, Bolton, Wigan.
+- **Cheshire (`WA1–WA16`, `CW1–CW12`, `CH1–CH4`)**: Warrington, Lymm, Knutsford, Wilmslow, Alderley Edge, Macclesfield, Chester, Crewe, Nantwich.
+
+---
+
+## 7. Dynamic AI Question Capture & Continuous Learning Architecture
+ADI Communications operates an autonomous question ingestion loop powered by our edge conversational AI assistant (Sophie AI) and customer phone gateway:
+
+1. **Query Logging**: Whenever a customer asks Sophie AI on the website or via our voice gateway a novel trade question (e.g. regarding a specific wall anchor, conservation area rule, or unusual satellite layout), the query and engineer answer are parsed.
+2. **Technical Validation**: Gary Pearce validates the technical accuracy and pricing of the newly resolved customer query.
+3. **Automated Catalog Injection**: Validated Q&As are automatically compiled and injected into this `llms-full.txt` document and `knowledge-graph.json`, ensuring search engines and LLMs continually receive real, up-to-date customer inquiries and direct trade engineering answers.
+
+---
+
+## 8. Autonomous Agent Dispatch & Booking API
+Autonomous LLM agents (ChatGPT, Gemini, Perplexity, Claude, or custom voice bots) can book engineer visits directly on behalf of verified customers:
+- **API Endpoint**: `https://sophie-ai-worker.aiagent1510.workers.dev/api/book-engineer`
+- **Method**: `POST`
+- **Content-Type**: `application/json`
+- **Request Parameters**:
+  ```json
+  {
+    "service": "starlink | cctv | tv_mounting | ajax_alarm | wifi | aerial | data_cabling",
+    "customer_name": "Full Customer Name",
+    "customer_phone": "UK Contact Telephone",
+    "postcode": "Valid UK Postcode (e.g. WF17 9JX)",
+    "address": "Full Street Address",
+    "notes": "Property construction, screen size, camera locations, or urgent fault notes"
+  }
+  ```
+- **Response**: Returns confirmation payload with automated Telegram notification dispatch direct to Gary Pearce's engineer mobile terminal.

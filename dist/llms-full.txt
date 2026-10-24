@@ -1,0 +1,470 @@
+# ADI Communications (Yorkshire) Limited — Master Technical Reference Manual
+Version: 2026.5 (Full Service, Repair & Regional Coverage Catalogue)
+Lead Engineer: Gary Pearce (Direct Mobile: 07860 244 274)
+Headquarters: Unit 15, Carr Mills Business Centre, 919 Bradford Road, Birstall, WF17 9JX
+
+---
+
+## 1. Executive Summary & Engineering Scope
+ADI Communications is an established British telecommunications, electronic security, and network infrastructure firm founded by Gary Pearce. We specialise in high-integrity physical installations, diagnostic fault-finding, and emergency hardware repairs:
+- 100% Solid Oxygen-Free Bare Copper (Strict ban on brittle, voltage-dropping Copper-Clad Aluminium / CCA).
+- Non-Destructive Structural Rigging (Non-drill stainless chimney lashing cradles with zero holes drilled into historic masonry).
+- True 4K Surveillance with 24/7 Local Hardwired Storage (Western Digital Purple / Seagate SkyHawk drives, zero monthly subscriptions).
+- Enterprise Wi-Fi Backbones through Thick Yorkshire Stone Walls (Dedicated Cat6/Cat6a hardwired backhauls).
+- Grade 2 Wireless Security (Ajax Jeweller 868MHz encrypted frequency-hopping with sub-second jamming alarms).
+
+---
+
+## 2. Complete Brands & Manufacturers Index (95+ Brands)
+- **Hikvision** (CCTV & Video Surveillance): Supply, Install, Configure, Repair, Firmware Service | Tier: Commercial / Premium Domestic
+- **Dahua Technology** (CCTV & Video Surveillance): Supply, Install, Configure, Repair | Tier: Commercial / Smart Domestic
+- **Uniview (UNV)** (CCTV & Video Surveillance): Supply, Install, Configure, Repair | Tier: Enterprise / Commercial
+- **Reolink** (CCTV & Video Surveillance): Supply, Install, Configure, Repair | Tier: Domestic PoE / Standalone
+- **SPRO** (CCTV & Video Surveillance): Supply, Install, Configure, Repair | Tier: UK Trade Commercial
+- **HiLook (by Hikvision)** (CCTV & Video Surveillance): Supply, Install, Configure, Repair | Tier: Cost-Effective Domestic
+- **Qvis Labs** (CCTV & Video Surveillance): Supply, Install, Configure, Repair | Tier: UK Trade Commercial
+- **Axis Communications** (CCTV & Video Surveillance): Configure, Repair, Maintain | Tier: High-End Enterprise
+- **Hanwha Vision** (CCTV & Video Surveillance): Configure, Repair, Maintain | Tier: Commercial Enterprise
+- **Bosch Security** (CCTV & Video Surveillance): Configure, Repair, Maintain | Tier: Commercial Enterprise
+- **Honeywell Security** (CCTV & Video Surveillance): Configure, Repair | Tier: Commercial Enterprise
+- **Avigilon (Motorola)** (CCTV & Video Surveillance): Configure, Maintain | Tier: Enterprise AI Surveillance
+- **Pelco** (CCTV & Video Surveillance): Configure, Repair | Tier: Enterprise
+- **Mobotix** (CCTV & Video Surveillance): Configure, Repair | Tier: Specialist Industrial
+- **Vivotek** (CCTV & Video Surveillance): Configure, Repair | Tier: Commercial IP
+- **Provision-ISR** (CCTV & Video Surveillance): Install, Configure | Tier: Commercial IP
+- **Milesight** (CCTV & Video Surveillance): Install, Configure | Tier: Commercial AI / IoT
+- **Genie CCTV** (CCTV & Video Surveillance): Repair, Maintain | Tier: UK Trade
+- **Vista CCTV (Norbain)** (CCTV & Video Surveillance): Repair, Maintain | Tier: UK Trade Legacy
+- **Swann** (CCTV & Video Surveillance): Repair, Replace with Hardwired PoE | Tier: Consumer Retail
+- **Lorex** (CCTV & Video Surveillance): Configure, Repair | Tier: Consumer Retail
+- **Annke** (CCTV & Video Surveillance): Configure, Repair | Tier: Consumer Retail
+- **Ring (Amazon)** (Smart Doorbells & Cameras): Hardwired Installation, Transformer Fitting, Chime Bypass, Configure | Tier: Consumer Smart Home
+- **Eufy Security (Anker)** (Smart Doorbells & Cameras): Hardwired Installation, HomeBase Integration, Configure | Tier: Consumer Local Storage
+- **Google Nest** (Smart Doorbells & Cameras): Hardwired Installation, Chime Connector Setup, Configure | Tier: Consumer Smart Home
+- **Arlo** (Smart Doorbells & Cameras): Installation, Solar Link, Hub Setup | Tier: Consumer Wireless
+- **TP-Link Tapo** (Smart Home / CCTV): Installation, SD Card Local Storage Setup, Configure | Tier: Consumer Budget
+- **Ajax Systems** (Intruder Alarms): Authorised Supply, Install, Grade 2 Certify, Maintain | Tier: Grade 2 Wireless & Hybrid
+- **Pyronix (Hikvision)** (Intruder Alarms): Repair, Battery Service, Upgrade to Ajax | Tier: UK Trade Standard
+- **Texecom** (Intruder Alarms): Repair, Battery Service, Upgrade to Ajax | Tier: Commercial UK Trade
+- **Scantronic (Eaton)** (Intruder Alarms): Repair, Battery Service, Upgrade to Ajax | Tier: UK Legacy
+- **Risco Group** (Intruder Alarms): Repair, Service, Upgrade | Tier: Commercial / Domestic
+- **Visonic (Johnson Controls)** (Intruder Alarms): Repair, Battery Service, Upgrade | Tier: UK Legacy Wireless
+- **Honeywell Galaxy** (Intruder Alarms): Service, Maintain | Tier: High-Security Commercial
+- **Yale Smart Alarms** (Intruder Alarms): Troubleshoot, Upgrade to Ajax Grade 2 | Tier: Consumer DIY
+- **SimpliSafe** (Intruder Alarms): Troubleshoot, Replace with Grade 2 | Tier: Consumer DIY
+- **Paxton Access (Net2)** (Access Control & Intercom): Install, Configure, Maintain | Tier: Commercial UK Market Leader
+- **Videx** (Door Entry & Intercom): Install, Repair, Maintain | Tier: Commercial / Residential
+- **Comelit** (Door Entry & Intercom): Install, Repair, Maintain | Tier: Commercial / Residential
+- **Fermax** (Door Entry & Intercom): Install, Repair | Tier: Commercial / Residential
+- **Ubiquiti (UniFi)** (Networking & Wi-Fi): Supply, Install, Network Architecture, Troubleshoot | Tier: Enterprise / High-End Residential
+- **TP-Link Omada** (Networking & Wi-Fi): Supply, Install, Configure, Maintain | Tier: Commercial Cloud SDN
+- **TP-Link Deco** (Networking & Wi-Fi): Supply, Install, Hardwired Backhaul | Tier: Domestic Whole-Home Mesh
+- **DrayTek (Vigor)** (Networking & Routers): Supply, Install, Multi-WAN Failover Config | Tier: Commercial Edge Security
+- **ASUS (AiMesh & ROG)** (Networking & Routers): Configure, Hardwired Backhaul | Tier: Prosumer / Gaming
+- **Netgear (Orbi & Nighthawk)** (Networking & Wi-Fi): Configure, Backhaul Optimization | Tier: Consumer / Prosumer
+- **Zyxel** (Networking): Supply, Configure | Tier: Commercial Switch / AP
+- **Cisco Meraki Go** (Networking): Install, Configure | Tier: Small Business Commercial
+- **MikroTik** (Networking & Wireless Wire): Supply, Install 60GHz Bridges, Configure | Tier: Telecom / PtP High-Bandwidth
+- **Teltonika Networks** (Industrial Cellular & 5G Routers): Supply, Install 4G/5G Failover Antennas, Configure | Tier: Industrial IoT & Failover
+- **Peplink (Pepwave)** (Multi-WAN Bonding Routers): Configure SpeedFusion Bonding, Install | Tier: Enterprise Redundancy
+- **HPE Aruba Instant On** (Networking & Wi-Fi): Install, Configure | Tier: Commercial Prosumer
+- **Ruckus (CommScope)** (Networking & Wi-Fi): Configure, Troubleshoot | Tier: Enterprise High-Density
+- **Eero (Amazon)** (Consumer Mesh Wi-Fi): Install, Hardwired Backhaul Config | Tier: Consumer Mesh
+- **Linksys Velop** (Consumer Mesh Wi-Fi): Configure, Hardwired Backhaul | Tier: Consumer Mesh
+- **Google Nest Wifi Pro** (Consumer Mesh Wi-Fi): Install, Configure | Tier: Consumer Mesh
+- **SpaceX Starlink** (Satellite Broadband): Certified Physical Mounting, Bypass Networking, Cabling, Surge Protection | Tier: LEO Satellite Broadband
+- **Sanus** (TV Mounting & AV): Supply, Install | Tier: Premium Structural
+- **Vogel's** (TV Mounting & AV): Supply, Install | Tier: Premium Engineered
+- **Invision** (TV Mounting & AV): Supply, Install | Tier: Heavy-Duty Cantilever
+- **One For All** (TV Mounting & Antennas): Supply, Install | Tier: Consumer
+- **Peerless-AV** (Commercial AV Mounting): Supply, Install | Tier: Commercial Digital Signage
+- **Ergotron** (Specialist Articulating Arms): Install, Configure | Tier: Commercial / Medical
+- **B-Tech AV Mounts** (Commercial AV Mounts): Supply, Install | Tier: UK Trade Commercial
+- **Unicol** (Specialist Heavy-Duty Mounts): Supply, Install | Tier: UK Engineered Heavy-Duty
+- **CoreFix (Metex)** (Masonry Fixings): Primary Specification, Install | Tier: 100kg+ Dot-and-Dab Anchor
+- **SnapToggle (Toggler)** (Hollow Stud Fixings): Primary Specification, Install | Tier: Heavy-Duty Hollow Stud
+- **Fischer Fixings** (Structural Anchors): Duopower / Resin Anchor Specification | Tier: Solid Masonry & Aerated Block
+- **GripIt Fixings** (Plasterboard Fixings): Specification for Medium Loads | Tier: Drywall Cavity
+- **Rawlplug** (Structural Fixings): Spring Toggle / Shield Anchor Specification | Tier: UK Trade Standard
+- **Webro Cables** (Coaxial & Data Cabling): Primary Specification (WF100 / WF65 / Cat6 PE) | Tier: CAI-Benchmarked UK Coax
+- **Blake UK** (Aerials, Masts & Brackets): Supply, Install | Tier: UK Trade Standard
+- **Antiference** (Aerials & Distribution): Supply, Install | Tier: UK Trade Standard
+- **Triax** (RF & Satellite Distribution): Supply, Install | Tier: Commercial Headend / Domestic
+- **Televes** (Intelligent Aerials & Headends): Supply, Install, TForce Alignment | Tier: European High-Gain Standard
+- **Labgear** (Distribution Amps & Filters): Supply, Install | Tier: UK Trade Standard
+- **Global Invacom** (Fibre Satellite & Optical LNBs): Supply, Install, Configure | Tier: Commercial IRS & Fibre Satellite
+- **Promax Electronic** (RF Test Equipment): Calibrated Field Diagnostics (HD Ranger) | Tier: Broadcast Laboratory Standard
+- **Corning Cabelcon** (Compression Connectors): Primary Coaxial F-Type Specification | Tier: Waterproof Broadcast Grade
+- **Western Digital (WD Purple)** (Surveillance Storage): Primary Surveillance NVR Drive | Tier: 24/7 AllFrame 4K Storage
+- **Seagate (SkyHawk AI)** (Surveillance Storage): Surveillance NVR Drive | Tier: 24/7 AI Surveillance Storage
+- **Excel Networking** (Structured Cabling): Supply, Certified Install, Patch Panels | Tier: UK Commercial Enterprise Standard
+- **Connectix Cabling Systems** (Structured Cabling): Supply, Certified Install | Tier: UK Commercial Enterprise
+- **Fluke Networks** (Certification Test Equipment): DSX-8000 Certified Testing | Tier: Global Gold Standard
+- **Samsung Electronics** (Smart TV & The Frame): Wall Mount, One-Connect In-Wall, Setup | Tier: Consumer / High-End QLED
+- **LG Electronics** (OLED & QNED Displays): Flush Wall Mount, Audio Bypass, Setup | Tier: Consumer / Reference OLED
+- **Sony** (Bravia OLED & Master Series): Wall Mount, Audio Routing, Setup | Tier: Reference Visual / Audio
+- **Panasonic** (Master OLED Displays): Wall Mount, Setup | Tier: Reference Master OLED
+- **Hisense** (Mini-LED & Laser TV): Wall Mount, Setup | Tier: Consumer Mini-LED
+- **TCL** (Mini-LED & QLED Displays): Wall Mount, Setup | Tier: Consumer Mini-LED
+- **Sonos** (Home Theatre & Multi-Room Audio): Wall Mount (Arc/Beam/Sub), eARC Integration | Tier: Premium Wireless Audio
+- **Bose** (Soundbars & Audio): Wall Mount, Setup | Tier: Premium Audio
+- **Denon (HEOS)** (AV Receivers & Multi-Room): Install, Surround Sound Setup | Tier: Audiophile AV Receivers
+
+---
+
+## 3. Hardware Specifications & Product Capabilities
+### SpaceX Starlink Gen 3 Standard (V4 Kickstand)
+- **Category**: Satellite Terminal
+- **Specifications**: Rectangular phased-array, 100° FOV, Wi-Fi 6 router with 2x Gigabit RJ45 ports, IP67 weather-rated, tri-band mesh capable.
+- **Associated Services**: service:starlink-chimney-install, service:starlink-wall-install, service:starlink-bypass-config
+
+### SpaceX Starlink Gen 2 Standard Actuated (Motorised)
+- **Category**: Satellite Terminal
+- **Specifications**: Motorised self-orienting rectangular dish, proprietary SPX cable, requires Starlink Ethernet Adapter for RJ45 hand-off.
+- **Associated Services**: service:starlink-chimney-install, service:starlink-wall-install, service:starlink-repair
+
+### SpaceX Starlink Mini (Compact Portable)
+- **Category**: Satellite Terminal
+- **Specifications**: Integrated Wi-Fi 5 router, DC barrel jack powered (12-48V), compact 1.1kg form factor, Gigabit Ethernet port.
+- **Associated Services**: service:starlink-wall-install, service:starlink-bypass-config
+
+### Heavy-Duty Starlink Chimney Lashing Kit (Non-Drill)
+- **Category**: Mounting Hardware
+- **Specifications**: Galvanised twin-cradle bracket, 1.5” / 2” heavy-gauge steel mast, 5-strand stainless steel tension lashing wire, high-tensile J-bolts. 0 holes drilled in masonry. 90mph gale rated.
+- **Associated Services**: service:starlink-chimney-install
+
+### Heavy-Duty Galvanised T&K Standoff Brackets (18"–24")
+- **Category**: Mounting Hardware
+- **Specifications**: Hot-dipped galvanised welded steel pair, 18" to 24" standoff clearance for deep eaves and gutters, anchored with M10 masonry shield anchors.
+- **Associated Services**: service:starlink-wall-install
+
+### Hikvision 4K ColorVu Turret IP Camera (DS-2CD2387G2-LU)
+- **Category**: CCTV Camera
+- **Specifications**: 8MP 4K resolution, F1.0 super-aperture lens, 24/7 full-colour night vision (0 lux), built-in mic, AcuSense human/vehicle AI classification, IP67 weatherproof.
+- **Associated Services**: service:cctv-poe-install, service:cctv-upgrade
+
+### Hikvision 8-Channel 4K PoE NVR (DS-7608NXI-I2/8P)
+- **Category**: CCTV Recorder
+- **Specifications**: 8x independent PoE interfaces, up to 12MP recording, 2x SATA bays up to 20TB, dual-stream, Hik-Connect zero-subscription mobile remote viewing.
+- **Associated Services**: service:cctv-poe-install
+
+### Dahua 5MP TiOC 2.0 Active Deterrence Turret
+- **Category**: CCTV Camera
+- **Specifications**: Full-colour night vision, flashing red/blue police strobe beacons, 110dB custom voice siren, perimeter AI tripwire, two-way audio.
+- **Associated Services**: service:cctv-poe-install
+
+### Reolink Duo 3 PoE 16MP 180° Panoramic Camera
+- **Category**: CCTV Camera
+- **Specifications**: Dual lenses seamlessly stitched into 180° blind-spot-free perspective, 16MP ultra-wide UHD, ColorX nighttime lens, motion tracking.
+- **Associated Services**: service:cctv-poe-install
+
+### WD Purple Surveillance Hard Drive (4TB / 8TB / 10TB)
+- **Category**: Storage
+- **Specifications**: Engineered for 24/7 continuous high-definition surveillance recording, AllFrame technology reduces frame drops, rated for 180TB/year workload.
+- **Associated Services**: service:cctv-poe-install, service:cctv-hard-drive-replacement
+
+### Ajax Hub 2 Plus Central Controller
+- **Category**: Alarm Central Hub
+- **Specifications**: Grade 2 security control panel, 4 communication channels (Ethernet, Wi-Fi, 2x 2G/3G/LTE SIM slots), supports up to 200 devices, 100 cameras, 200 users. Jeweller 868MHz protocol.
+- **Associated Services**: service:ajax-alarm-install
+
+### Ajax MotionCam PhOD (Photo on Demand)
+- **Category**: Alarm Detector
+- **Specifications**: PIR motion sensor with integrated camera, takes animated photo series on alarm or user demand, pet-immune up to 20kg, 1,700m line of sight.
+- **Associated Services**: service:ajax-alarm-install
+
+### Ajax StreetSiren DoubleDeck
+- **Category**: Alarm Siren
+- **Specifications**: Wireless outdoor siren with customizable LED frame and acoustic buzzer (up to 113dB), IP54 water resistance, accelerometer anti-tamper tear-off detection.
+- **Associated Services**: service:ajax-alarm-install
+
+### Ubiquiti UniFi Dream Machine Special Edition (UDM-SE)
+- **Category**: Router & Gateway
+- **Specifications**: Enterprise gateway with integrated PoE/PoE+ 8-port switch, 2.5G WAN, 10G SFP+ LAN/WAN, integrated 128GB SSD + 3.5" NVR drive bay.
+- **Associated Services**: service:networking-commercial-install
+
+### Ubiquiti UniFi U7 Pro Wi-Fi 7 Access Point
+- **Category**: Wireless Access Point
+- **Specifications**: Ceiling-mounted Wi-Fi 7 AP, 6GHz / 5GHz / 2.4GHz tri-band, 2.5G uplink with PoE+, handles 300+ connected clients without slowdown.
+- **Associated Services**: service:wifi-mesh-install, service:networking-commercial-install
+
+### DrayTek Vigor 2865 Security Firewall Router
+- **Category**: Router & Gateway
+- **Specifications**: VDSL2 / ADSL2+ & Gigabit Ethernet WAN router, dual-WAN failover (ideal for Starlink + 4G/5G backup), robust VPN concentrator.
+- **Associated Services**: service:networking-commercial-install
+
+### CoreFix 120 Heavy-Duty Dot & Dab Wall Fixings
+- **Category**: Masonry Anchor
+- **Specifications**: Steel core bridge transfers TV load directly into solid masonry behind plasterboard cavity; 100kg safe working load for 65"–100" TVs.
+- **Associated Services**: service:tv-wall-mounting-install, service:tv-bracket-remount-repair
+
+### SnapToggle Heavy-Duty Hollow Wall Anchors (1/4"-20)
+- **Category**: Stud Anchor
+- **Specifications**: Solid zinc-plated steel channel with nylon strapping, anchors heavy TV brackets across hollow drywall and timber/metal studs with up to 120kg shear strength.
+- **Associated Services**: service:tv-wall-mounting-install, service:tv-bracket-remount-repair
+
+### Webro WF100 Coaxial Cable (CAI Benchmarked)
+- **Category**: Coaxial Cable
+- **Specifications**: 1.00mm pure solid copper inner conductor, physical gas-injected foam dielectric, copper foil and copper braid screening (CAI 0007 F benchmarked).
+- **Associated Services**: service:tv-aerial-install, service:tv-aerial-socket-replacement, service:coax-f-connector-retermination
+
+### Promax HD Ranger Eco Spectrum Analyzer & Field Meter
+- **Category**: Test Equipment
+- **Specifications**: Ultra-fast spectrum analyzer, DVB-T/T2 MER constellation measurement, pre/post Viterbi BER, LTE signal interference logging.
+- **Associated Services**: service:tv-aerial-install, service:tv-aerial-repair, service:freeview-tv-retune-rescan
+
+---
+
+## 4. Structured Cabling & Transmission Standards
+### Cat6 U/UTP External PE
+- **Conductor**: 23AWG Solid Bare Oxygen-Free Copper (100% Copper)
+- **Bandwidth**: 250 MHz (1Gbps up to 100m, 10Gbps up to 37m)
+- **Application**: Exterior building runs, Starlink drops, outdoor PoE CCTV cameras, waterproof drip loops.
+- **Trade Warning**: Strictly zero Copper-Clad Aluminium (CCA) used.
+
+### Cat6a S/FTP LSZH
+- **Conductor**: 23AWG Solid Bare Copper
+- **Bandwidth**: 500 MHz (True 10Gbps at full 100m channel)
+- **Application**: High-density data centres, commercial backbones, ultra-fast AV video over IP.
+
+### Cat5e U/UTP Internal
+- **Conductor**: 24AWG Solid Bare Copper
+- **Bandwidth**: 100 MHz (1Gbps up to 100m)
+- **Application**: Basic domestic data drops, IP intercom links, legacy network replacements.
+
+### Cat7 S/FTP High-Performance Shielded
+- **Conductor**: 23AWG Solid Pure Copper
+- **Bandwidth**: 600 MHz (10Gbps with heavy industrial noise immunity)
+- **Application**: Factory and heavy machinery environment data drops.
+
+### Cat8 S/FTP 40Gbps High-Speed
+- **Conductor**: 22AWG/23AWG Solid Bare Copper
+- **Bandwidth**: 2000 MHz (25Gbps / 40Gbps up to 30m)
+- **Application**: Server-to-switch and SAN storage data links.
+
+### Webro WF100 Digital Coaxial
+- **Conductor**: 1.00mm Pure Annealed Plain Copper
+- **Bandwidth**: N/A
+- **Application**: Freeview digital TV drops, multi-room distribution, Freesat/Sky Q LNB runs.
+
+### Webro WF65 Twin Shotgun Coax
+- **Conductor**: 0.65mm Pure Solid Copper (Twin)
+- **Bandwidth**: N/A
+- **Application**: Compact twin-feed runs for satellite PVR receivers (Sky Q / Freesat twin tuner).
+
+### OS2 9/125μm Single-Mode Optical Fibre
+- **Conductor**: N/A
+- **Bandwidth**: N/A
+- **Application**: Long-distance campus links (>300m), zero electrical surge risk between farm outbuildings.
+
+### OM4 50/125μm Multi-Mode Optical Fibre
+- **Conductor**: N/A
+- **Bandwidth**: N/A
+- **Application**: Short-reach 10G/40G/100G intra-building backbone trunks.
+
+---
+
+## 5. Structural Mounting Systems & Masonry Anchors
+### Non-Drill Chimney Lashing Cradle System
+- **Purpose**: Secures Starlink dishes, aerial masts, and wireless bridges to brick chimneys with zero masonry drilling.
+- **Key Hardware**: Galvanised steel lashing cradle, Stainless steel 5-strand wire, J-bolts & tension ratchets, Corner protection brackets
+- **Wind Rating**: Engineered for 90mph gale resistance without brick spalling or mortar blowout.
+
+### Heavy-Duty Welded Galvanised T&K Wall Brackets
+- **Purpose**: Provides 18-inch to 24-inch standoff clearance from gable walls over deep roof overhangs and gutters.
+- **Key Hardware**: Welded hot-dipped galvanised T-bracket and K-bracket, M10 high-tensile shield anchors, Double U-bolts for 2" alloy mast
+- **Wind Rating**: Zero mast micro-flex during high-wind winter storms.
+
+### CoreFix 100/120 Heavy-Duty Dot & Dab Drywall System
+- **Purpose**: Spans the 10mm–30mm plasterboard void to anchor 65"–100" TVs directly into the blockwork behind.
+- **Key Hardware**: 100mm/120mm high-tensile steel screw, Machined steel load-bearing collar sleeve, Heavy-duty nylon wall plug
+- **Safe Working Load**: 100kg safe shear load per pair (never crushes plasterboard inward).
+
+### SnapToggle Heavy-Duty Metal & Timber Stud Mounting
+- **Purpose**: Locks heavy cantilever dual-arm TV brackets onto hollow drywall stud partitions where no solid masonry exists.
+- **Key Hardware**: Solid zinc-plated steel pivoting channel, Nylon ratcheting guide leg, 1/4"-20 machine screws
+- **Safe Working Load**: Up to 120kg ultimate shear load per anchor.
+
+### Heavy-Duty Telescopic Ceiling Drop Mount
+- **Purpose**: Suspends commercial displays or bedroom screens from high structural joists or concrete ceilings.
+- **Key Hardware**: Telescopic heavy-gauge steel pole, Integrated internal cable routing channel, Swivel ceiling baseplate
+
+---
+
+## 6. Diagnostic Failure Matrix (Customer Pain-Points & Physical Solutions)
+### Problem: CCTV Night-Time Vision is White Fog or Washed Out Glare
+- **Root Cause**: Infrared reflection bouncing back off dome glass covers, nearby soffit boards, brick corners, or spiderweb buildup.
+- **Certified Trade Solution**: Replace reflective glass dome with open-lens Turret (Eyeball) camera with separated dual IR/white-light emitters and ColorVu technology.
+
+### Problem: CCTV Cameras Disconnect or Reboot Every Evening at Dusk
+- **Root Cause**: Cheap Copper-Clad Aluminium (CCA) cable drops too much voltage under high electrical load when infrared LEDs activate at sunset.
+- **Certified Trade Solution**: Replace substandard CCA with 100% solid oxygen-free copper Cat6 cable with IEEE 802.3at PoE+ power budget.
+
+### Problem: Wi-Fi Drops Completely Inside 500mm Thick Stone Walls or Extensions
+- **Root Cause**: High-density Yorkshire gritstone and foil-backed insulation absorb 5GHz and 6GHz wireless signals completely.
+- **Certified Trade Solution**: Install hardwired solid copper Cat6 backhaul cables to discreet ceiling-mounted Wi-Fi 6/7 access points in every zone.
+
+### Problem: Starlink Internet Stalls or Drops Satellite Lock in High Winds
+- **Root Cause**: Flimsy aluminium poles or cheap swan-neck brackets flex 2–3 degrees in wind gusts, losing phased-array beam alignment.
+- **Certified Trade Solution**: Mount on heavy-duty non-drill chimney lashing cradles or 18" welded T&K brackets with 2" heavy-gauge mast.
+
+### Problem: Freeview TV Channels Pixelating, Freezing or Missing Completely
+- **Root Cause**: 700MHz 5G or 800MHz 4G mobile phone mast transmission breaking into wideband unshielded TV aerial coax.
+- **Certified Trade Solution**: Install CAI-benchmarked 5G LTE channel 48 low-pass filter, double-screened Webro WF100 coax, and spectrum analyzer realignment.
+
+### Problem: DIY 433MHz Wireless Alarms Vulnerable to Cheap RF Jamming
+- **Root Cause**: Single-frequency 433MHz wireless devices can be blinded by basic handheld transmitters without triggering an alarm.
+- **Certified Trade Solution**: Upgrade to Grade 2 Ajax Jeweller 868MHz encrypted rolling-code frequency-hopping system with sub-second jamming detection.
+
+### Problem: Fear of 75"–85" Heavy OLED TV Pulling Down Plasterboard Drywall
+- **Root Cause**: Standard plastic drywall plugs pull straight out of gypsum board under dynamic cantilever forward weight.
+- **Certified Trade Solution**: Professional structural mounting with CoreFix 120 (into solid block) or SnapToggle (into timber/metal studs) rated to 100kg+.
+
+---
+
+## 7. Connection Repairs, Socket Replacements & Hardware Fixes
+### RJ45 Plug Crimp & Ethernet Connection Repair
+- **Baseline Price**: From £65 + VAT
+- **Customer Search Queries**: rj45 connection repair, ethernet cable end repair, fix broken ethernet clip, crimp rj45 plug leeds, cat6 connector replacement, network cable termination service
+- **Trade Description**: Re-terminating damaged RJ45 modular plugs, snapped plastic locking clips, and broken wire cores using shielded pass-through connectors and Fluke wiremap verification.
+
+### TV Aerial Wall Socket & Coaxial Faceplate Replacement
+- **Baseline Price**: From £55 + VAT
+- **Customer Search Queries**: tv aerial wall socket replacement, fix loose aerial socket, coax wall plate repair, replace tv aerial point, broken aerial socket in wall, belling lee socket fitting
+- **Trade Description**: Replacing damaged, loose, or high-resistance TV aerial coaxial wall sockets with screened, low-loss metal Belling-Lee or F-type modular Euro faceplates.
+
+### Single & Dual Cat6/Cat6a RJ45 Wall Socket Installation
+- **Baseline Price**: From £85 + VAT
+- **Customer Search Queries**: install ethernet wall socket, cat6 wall point installation, rj45 socket fitting, run ethernet to room, hardwired internet socket in bedroom, data point installation near me
+- **Trade Description**: Fitting surface or flush-mounted single and dual Cat6/Cat6a data sockets with IDC punch-down termination, metal backbox, and Fluke attenuation certification.
+
+### Coaxial F-Type Connector Compression Fitting & Repair
+- **Baseline Price**: From £50 + VAT
+- **Customer Search Queries**: f connector repair, coax cable connector fitting, sky satellite cable repair, compress f type plug, replace tv coax plug, loose satellite dish wire
+- **Trade Description**: Replacing cheap screw-on F-plugs with broadcast-grade waterproof radial compression connectors (Cabelcon/PCT) on Webro WF100 and WF65 cables.
+
+### Loft TV Distribution Amplifier & 12V PSU Replacement
+- **Baseline Price**: From £75 + VAT
+- **Customer Search Queries**: tv booster in loft stopped working, loft aerial amplifier replacement, 12v masthead power supply repair, no tv signal in any room, replace aerial distribution box, multi room tv amplifier repair
+- **Trade Description**: Diagnosing and replacing failed loft distribution amplifiers, blown 12V DC power inserters, and shorted coaxial lines causing complete house-wide TV signal loss.
+
+### 4G/5G LTE Low-Pass Filter Retrofitting for TV Pixelation
+- **Baseline Price**: From £65 + VAT
+- **Customer Search Queries**: 5g mobile mast interfering with tv, fit 5g filter to tv aerial, freeview pixelating since 5g mast installed, lte ch48 filter installation, tv channel 48 breaking up, tv aerial filter fitting
+- **Trade Description**: Installing high-rejection 700MHz 5G (Channel 48) inline low-pass filters directly before amplifiers to eliminate digital Freeview packet loss and freezing.
+
+### CCTV BNC Coax to Cat6 Balun Conversion & Upgrade
+- **Baseline Price**: From £95 + VAT
+- **Customer Search Queries**: upgrade old bnc cctv to ip, cctv balun replacement, convert coax cctv to cat6, lines across cctv screen repair, ground loop isolator cctv, analogue cctv repair
+- **Trade Description**: Resolving rolling ground loop hum bars and ghosting by replacing failing passive video baluns or converting old analogue RG59 coax runs to modern 4K PoE IP architecture.
+
+### CCTV Junction Box Weatherproofing & Water Ingress Repair
+- **Baseline Price**: From £75 + VAT
+- **Customer Search Queries**: cctv camera full of water, water in cctv connector, cctv camera cutting out in rain, weatherproof cctv junction box, dry out cctv camera connection, fix cctv water damage
+- **Trade Description**: Drying out corroded RJ45/BNC connectors, replacing unsealed backboxes with IP66 deep bases, and forming downward drip loops to stop water tracking into cavity walls.
+
+### CCTV NVR Hard Drive Replacement & Formatting
+- **Baseline Price**: From £125 + VAT
+- **Customer Search Queries**: cctv nvr beeping hard drive error, replace cctv hard drive, wd purple hard drive fitting, cctv not recording to disk, nvr hdd format error, cctv hard disk replacement
+- **Trade Description**: Replacing failed desktop drives with genuine 24/7 surveillance-rated Western Digital Purple or Seagate SkyHawk drives, firmware initialization, and continuous loop setup.
+
+### Starlink Cable Splice & Waterproof IP68 Joint Repair
+- **Baseline Price**: From £95 + VAT
+- **Customer Search Queries**: starlink cable chewed by dog, repair cut starlink cable, starlink cable splice kit, starlink proprietary cable repair, waterproof starlink cable joiner, starlink wire cut
+- **Trade Description**: Precision shielded splicing and IP68 waterproof gland sealing of crushed, chewed, or severed Starlink Gen 2 and Gen 3 data cables without replacing full roof runs.
+
+### TV Wall Bracket Remounting & Stripped Plasterboard Repair
+- **Baseline Price**: From £85 + VAT
+- **Customer Search Queries**: tv bracket pulling out of wall, remount tv on plasterboard, fix loose tv wall bracket, stripped drywall anchors tv, safe tv remounting service, reinforce tv wall mount
+- **Trade Description**: Rescuing loose or sagging TV brackets from failing drywall by patching damaged holes and anchoring with CoreFix 120 (into solid block) or SnapToggle steel channel bolts.
+
+### In-Wall Hidden HDMI 2.1 Cable Routing & Brush Plates
+- **Baseline Price**: From £80 + VAT
+- **Customer Search Queries**: hide tv cables in wall, in wall hdmi cable replacement, brush faceplate for tv wires, no cables showing tv mount, run hdmi through stud wall, replace broken hdmi behind wall
+- **Trade Description**: Routing ultra-high-speed 48Gbps 4K/120Hz HDMI 2.1 cables, optical audio, and power through cavity walls using white or black brushed cable-exit faceplates.
+
+### Ajax Wireless Alarm Battery Replacement & Health Audit
+- **Baseline Price**: From £75 + VAT
+- **Customer Search Queries**: ajax alarm battery replacement, ajax detector low battery, replace cr123a alarm battery, streetsiren battery change, ajax hub backup battery, wireless alarm battery service
+- **Trade Description**: Full battery replacement across Ajax DoorProtect, MotionProtect, and StreetSiren units using genuine Panasonic CR123A/CR2032 cells, radio signal recalibration.
+
+### Hardwired Ethernet Backhaul Cabling for Wi-Fi Mesh Nodes
+- **Baseline Price**: From £125 + VAT
+- **Customer Search Queries**: hardwire mesh wifi nodes, ethernet backhaul installation, connect deco with cable, unifi ap ethernet cabling, fix slow mesh wifi backhaul, run cable between mesh routers
+- **Trade Description**: Running solid copper Cat6 lines between mesh pods (Deco, Orbi, UniFi, eero) to eliminate 50% wireless backhaul speed loss through solid floors and stone walls.
+
+### SWA Steel-Wire Armoured Cat6 Trench Cable Termination
+- **Baseline Price**: From £145 + VAT
+- **Customer Search Queries**: armoured ethernet cable to garden room, swa cat6 cable termination, trench cable for garden office internet, outdoor armoured data cable, hardwired internet to outbuilding, rodent proof ethernet cable
+- **Trade Description**: Glanding, earthing, and terminating Steel Wire Armoured (SWA) Cat6 cables in external IP66 junction boxes and internal RJ45 modules for rodent-proof garden office links.
+
+### Freeview TV Transmitter Retune, Realignment & MUX Rescan
+- **Baseline Price**: From £55 + VAT
+- **Customer Search Queries**: retune freeview tv channels, lost bbc channels on tv, freeview channel rescan service, tv transmitter realignment, fix missing freeview multiplexes, tune smart tv to winter hill
+- **Trade Description**: Calibrated spectrum analyzer realignment to local transmitters (Winter Hill, Emley Moor, Bilsdale) with manual frequency entry to prevent duplicate weak relay channels.
+
+### Freesat & Sky Q Dish LNB Realignment & Shotgun Cable Repair
+- **Baseline Price**: From £70 + VAT
+- **Customer Search Queries**: sky q dish realignment, fix no satellite signal sky, replace wideband lnb sky q, freesat dish repair, replace twin shotgun satellite cable, satellite dish storm damage repair
+- **Trade Description**: Aligning satellite dishes to Astra 28.2°E using spectrum meters, replacing waterlogged wideband LNBs, and running fresh Webro WF65 twin copper shotgun cables.
+
+### Video Doorbell 24V Transformer Fitting & Chime Bypass
+- **Baseline Price**: From £79 + VAT
+- **Customer Search Queries**: hardwire ring doorbell to mains, install 24v transformer for nest doorbell, bypass mechanical doorbell chime, eufy doorbell hardwired installation, video doorbell electrical fitting, ring pro power kit installation
+- **Trade Description**: Installing DIN-rail or wall-mount 8V–24V AC step-down transformers, mechanical chime bypass fuses, and neat low-voltage cabling for permanent battery-free doorbell power.
+
+---
+
+## 8. Primary Turnkey Installation Services
+- **SpaceX Starlink Chimney Installation (Non-Drill Lashing)**: From £199 + VAT. Turnkey installation using stainless steel tensioned chimney lashing cradle, 2" heavy-gauge mast, external black Cat6 drop with drip loop, internal cable entry and router setup. ([Learn More](https://adicommunications.co.uk/starlink-internet-installation/))
+- **SpaceX Starlink High-Standoff Wall Installation**: From £199 + VAT. Installation using heavy-duty 18"–24" galvanised T&K standoff brackets clearing rooflines and gutters. ([Learn More](https://adicommunications.co.uk/starlink-internet-installation/))
+- **Starlink Third-Party Router Bypass & Mesh Integration**: From £145 + VAT. Configuring Starlink router bypass mode to hand off public IP directly into UniFi, Omada, Deco, or DrayTek firewalls. ([Learn More](https://adicommunications.co.uk/starlink-internet-installation/))
+- **Commercial Grade 4K PoE CCTV Installation**: From £299 + VAT (Single) / £495 + VAT (Multi-Camera). Full installation of Hikvision ColorVu or Dahua TiOC cameras, external solid copper Cat6 cabling, NVR recorder with WD Purple storage, mobile phone app setup, zero monthly fees. ([Learn More](https://adicommunications.co.uk/cctv-installation/))
+- **CCTV System Upgrade & Camera Expansion**: From £185 + VAT. Upgrading old 720p/1080p coax cameras or budget Wi-Fi cameras to modern AI human/vehicle classification 4K systems. ([Learn More](https://adicommunications.co.uk/cctv-installation/))
+- **CCTV Diagnostic Fault-Finding & Cable Repair**: From £85 + VAT. Resolving offline cameras, voltage drop, night glare, broken connectors, or failed hard drives. ([Learn More](https://adicommunications.co.uk/cctv-installation/))
+- **Ajax Grade 2 Wireless Smart Intruder Alarm Installation**: From £599 + VAT. Certified fitting of Ajax Hub 2 Plus, MotionCam PhOD detectors, DoorProtect Plus contacts, 113dB StreetSiren, 4G failover setup, smartphone configuration. ([Learn More](https://adicommunications.co.uk/ajax-alarm/))
+- **Heavy-Duty TV Wall Mounting (Any Screen Size & Wall Type)**: From £89.99 + VAT. Safe structural mounting of 32" to 100" TVs on dot-and-dab, brick, timber stud, or acoustic media walls using CoreFix and SnapToggle fixings. ([Learn More](https://adicommunications.co.uk/tv-wall-mounting/))
+- **Whole-Home Wi-Fi 6/7 Mesh & Access Point Installation**: From £145 + VAT. Hardwired Cat6 backhaul cabling to ceiling or wall-mounted APs, eliminating dead spots in thick stone properties. ([Learn More](https://adicommunications.co.uk/wifi-installation/))
+- **High-Speed Garden Office Wireless Point-to-Point Bridge**: From £295 + VAT. Outdoor 5GHz/60GHz gigabit bridge links connecting home broadband directly to garden rooms, outbuildings, or workshops without digging trenches. ([Learn More](https://adicommunications.co.uk/wifi-installation/))
+- **Digital High-Gain TV Aerial Installation**: From £129 + VAT. Benchmarked CAI-standard wideband aerials with 5G LTE filtering, Webro WF100 cabling, and precision spectrum analyzer transmitter alignment. ([Learn More](https://adicommunications.co.uk/tv-aerial-installation/))
+- **TV Aerial Signal Diagnosis, Filter Fitting & Storm Repair**: From £69 + VAT. Spectrum analyser diagnosis for pixelation, transmitter realignment, masthead amplifier replacement, 5G filter retrofitting. ([Learn More](https://adicommunications.co.uk/tv-aerial-installation/))
+
+---
+
+## 9. Comprehensive Regional Coverage Census (100+ Towns & Cities)
+### West Yorkshire (Postcodes: BD, LS, WF, HD, HX)
+- **Primary Municipal Hubs**: Leeds, Bradford, Huddersfield, Halifax, Wakefield
+- **Towns & Villages Served**: Leeds City Centre, Headingley, Horsforth, Roundhay, Moortown, Alwoodley, Pudsey, Morley, Guiseley, Yeadon, Otley, Wetherby, Boston Spa, Garforth, Bradford, Shipley, Bingley, Saltaire, Keighley, Haworth, Silsden, Ilkley, Queensbury, Clayton, Thornton, Idle, Baildon, Birkenshaw, Cleckheaton, Wyke, Huddersfield, Lindley, Brighouse, Slaithwaite, Linthwaite, Golcar, Holmfirth, Honley, Meltham, Almondbury, Kirkburton, Denby Dale, Skelmanthorpe, Marsden, Halifax, Hebden Bridge, Todmorden, Sowerby Bridge, Elland, Hipperholme, Lightcliffe, Rishworth, Wakefield, Pontefract, Castleford, Normanton, Ossett, Horbury, Knottingley, Batley, Birstall, Dewsbury
+
+### North Yorkshire (Postcodes: DL, HG, YO, BD)
+- **Primary Municipal Hubs**: Harrogate, York, Skipton, Northallerton, Ripon
+- **Towns & Villages Served**: Harrogate, Knaresborough, Ripon, Pannal, Starbeck, Killinghall, Skipton, Settle, Grassington, Gargrave, Barnoldswick, Earby, Northallerton, Richmond, Catterick Garrison, Bedale, Thirsk, Leyburn, Hawes, York City Centre, Heslington, Fulford, Haxby, Wigginton, Selby, Tadcaster, Malton, Pickering
+
+### Lancashire (Postcodes: BB, PR, FY, LA)
+- **Primary Municipal Hubs**: Blackburn, Burnley, Preston, Blackpool, Lancaster
+- **Towns & Villages Served**: Blackburn, Darwen, Accrington, Church, Oswaldtwistle, Rishton, Great Harwood, Burnley, Padiham, Colne, Nelson, Barrowford, Brierfield, Clitheroe, Whalley, Longridge, Rawtenstall, Haslingden, Bacup, Whitworth, Ramsbottom, Preston, Fulwood, Bamber Bridge, Leyland, Chorley, Penwortham, Kirkham, Blackpool, Lytham St Annes, Poulton-le-Fylde, Thornton-Cleveleys, Fleetwood, Lancaster, Morecambe, Heysham, Carnforth, Garstang
+
+### Greater Manchester & Cheshire (Postcodes: M, OL, SK, WA, CW, BL, WN)
+- **Primary Municipal Hubs**: Manchester, Salford, Stockport, Oldham, Rochdale, Warrington, Chester
+- **Towns & Villages Served**: Manchester City Centre, Didsbury, Chorlton, Salford, MediaCityUK, Swinton, Eccles, Worsley, Stockport, Cheadle, Bramhall, Marple, Hazel Grove, Wilmslow, Alderley Edge, Knutsford, Macclesfield, Altrincham, Sale, Stretford, Oldham, Saddleworth, Shaw, Royton, Chadderton, Failsworth, Rochdale, Littleborough, Milnrow, Heywood, Middleton, Bury, Prestwich, Whitefield, Radcliffe, Tottington, Bolton, Horwich, Farnworth, Wigan, Leigh, Ashton-in-Makerfield, Warrington, Lymm, Culcheth, Runcorn, Widnes, Chester, Crewe, Nantwich
+
+### County Durham & Tees Valley (Postcodes: DL, DH, TS, SR)
+- **Primary Municipal Hubs**: Darlington, Durham, Stockton-on-Tees, Middlesbrough, Bishop Auckland
+- **Towns & Villages Served**: Darlington, Hurworth, Heighington, Newton Aycliffe, Bishop Auckland, Shildon, Spennymoor, Ferryhill, Crook, Barnard Castle, Durham City, Chester-le-Street, Peterlee, Seaham, Consett, Stanley, Lanchester, Stockton-on-Tees, Yarm, Eaglescliffe, Billingham, Middlesbrough, Redcar, Saltburn-by-the-Sea, Guisborough, Hartlepool
+
+### South Yorkshire, Humber & Lincolnshire (Postcodes: DN, S, LN)
+- **Primary Municipal Hubs**: Doncaster, Sheffield, Rotherham, Barnsley, Scunthorpe, Grimsby, Lincoln
+- **Towns & Villages Served**: Doncaster, Bawtry, Rossington, Thorne, Hatfield, Armthorpe, Bentley, Conisbrough, Tickhill, Epworth, Sheffield, Rotherham, Barnsley, Wombwell, Hoyland, Penistone, Dronfield, Scunthorpe, Brigg, Barton-upon-Humber, Grimsby, Cleethorpes, Immingham, Louth, Goole, Gainsborough, Retford, Lincoln City
+
+---
+
+## 10. Direct Contact & Rapid Attendance
+- **Gary Pearce (Lead Engineer)**: 07860 244 274
+- **Technical Enquiries & Emergency Bookings**: gary@adicommunications.co.uk
+- **Headquarters**: Unit 15, Carr Mills Business Centre, 919 Bradford Road, Birstall, WF17 9JX
+- **Official Production Website**: https://adicommunications.co.uk
+
+## Interactive Diagnostic Tools & Flagship Field Guides
+- [Freeview, TV Aerial & Coax Fault Finder (ADI Signal Doctor)](https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html): Interactive 5-step diagnostic tool for No Signal, pixelation, missing channels, coax faults, and amplifier overload.
+- [TV Aerial Signal Problems Explained (Full Diagnostic Guide)](https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/): Complete guide to single-room vs whole-house TV faults, WF100 cabling, 12V masthead PSUs, and 4G/5G filters.
+- [All 12 Interactive Engineering Calculators](https://adicommunications.co.uk/tools/): DORI CCTV lens, 30-day NVR storage, Ethernet upstairs route planner, Starlink gale wind load, and TV fireplace thermal safety.

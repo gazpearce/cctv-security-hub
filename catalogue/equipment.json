@@ -1,0 +1,216 @@
+[
+  {
+    "id": "equip:starlink-gen3-standard",
+    "name": "SpaceX Starlink Gen 3 Standard (V4 Kickstand)",
+    "brand_id": "brand:spacex-starlink",
+    "category": "Satellite Terminal",
+    "specs": "Rectangular phased-array, 100° FOV, Wi-Fi 6 router with 2x Gigabit RJ45 ports, IP67 weather-rated, tri-band mesh capable.",
+    "services": [
+      "service:starlink-chimney-install",
+      "service:starlink-wall-install",
+      "service:starlink-bypass-config"
+    ]
+  },
+  {
+    "id": "equip:starlink-gen2-actuated",
+    "name": "SpaceX Starlink Gen 2 Standard Actuated (Motorised)",
+    "brand_id": "brand:spacex-starlink",
+    "category": "Satellite Terminal",
+    "specs": "Motorised self-orienting rectangular dish, proprietary SPX cable, requires Starlink Ethernet Adapter for RJ45 hand-off.",
+    "services": [
+      "service:starlink-chimney-install",
+      "service:starlink-wall-install",
+      "service:starlink-repair"
+    ]
+  },
+  {
+    "id": "equip:starlink-mini",
+    "name": "SpaceX Starlink Mini (Compact Portable)",
+    "brand_id": "brand:spacex-starlink",
+    "category": "Satellite Terminal",
+    "specs": "Integrated Wi-Fi 5 router, DC barrel jack powered (12-48V), compact 1.1kg form factor, Gigabit Ethernet port.",
+    "services": [
+      "service:starlink-wall-install",
+      "service:starlink-bypass-config"
+    ]
+  },
+  {
+    "id": "equip:starlink-heavy-duty-chimney-kit",
+    "name": "Heavy-Duty Starlink Chimney Lashing Kit (Non-Drill)",
+    "brand_id": "brand:blake-uk",
+    "category": "Mounting Hardware",
+    "specs": "Galvanised twin-cradle bracket, 1.5” / 2” heavy-gauge steel mast, 5-strand stainless steel tension lashing wire, high-tensile J-bolts. 0 holes drilled in masonry. 90mph gale rated.",
+    "services": [
+      "service:starlink-chimney-install"
+    ]
+  },
+  {
+    "id": "equip:starlink-tk-wall-brackets",
+    "name": "Heavy-Duty Galvanised T&K Standoff Brackets (18\"–24\")",
+    "brand_id": "brand:blake-uk",
+    "category": "Mounting Hardware",
+    "specs": "Hot-dipped galvanised welded steel pair, 18\" to 24\" standoff clearance for deep eaves and gutters, anchored with M10 masonry shield anchors.",
+    "services": [
+      "service:starlink-wall-install"
+    ]
+  },
+  {
+    "id": "equip:hikvision-colorvu-4k-turret",
+    "name": "Hikvision 4K ColorVu Turret IP Camera (DS-2CD2387G2-LU)",
+    "brand_id": "brand:hikvision",
+    "category": "CCTV Camera",
+    "specs": "8MP 4K resolution, F1.0 super-aperture lens, 24/7 full-colour night vision (0 lux), built-in mic, AcuSense human/vehicle AI classification, IP67 weatherproof.",
+    "services": [
+      "service:cctv-poe-install",
+      "service:cctv-upgrade"
+    ]
+  },
+  {
+    "id": "equip:hikvision-acusense-nvr",
+    "name": "Hikvision 8-Channel 4K PoE NVR (DS-7608NXI-I2/8P)",
+    "brand_id": "brand:hikvision",
+    "category": "CCTV Recorder",
+    "specs": "8x independent PoE interfaces, up to 12MP recording, 2x SATA bays up to 20TB, dual-stream, Hik-Connect zero-subscription mobile remote viewing.",
+    "services": [
+      "service:cctv-poe-install"
+    ]
+  },
+  {
+    "id": "equip:dahua-tioc-5mp-active-deterrence",
+    "name": "Dahua 5MP TiOC 2.0 Active Deterrence Turret",
+    "brand_id": "brand:dahua",
+    "category": "CCTV Camera",
+    "specs": "Full-colour night vision, flashing red/blue police strobe beacons, 110dB custom voice siren, perimeter AI tripwire, two-way audio.",
+    "services": [
+      "service:cctv-poe-install"
+    ]
+  },
+  {
+    "id": "equip:reolink-duo-3-poe",
+    "name": "Reolink Duo 3 PoE 16MP 180° Panoramic Camera",
+    "brand_id": "brand:reolink",
+    "category": "CCTV Camera",
+    "specs": "Dual lenses seamlessly stitched into 180° blind-spot-free perspective, 16MP ultra-wide UHD, ColorX nighttime lens, motion tracking.",
+    "services": [
+      "service:cctv-poe-install"
+    ]
+  },
+  {
+    "id": "equip:wd-purple-surveillance-hdd",
+    "name": "WD Purple Surveillance Hard Drive (4TB / 8TB / 10TB)",
+    "brand_id": "brand:wd-purple",
+    "category": "Storage",
+    "specs": "Engineered for 24/7 continuous high-definition surveillance recording, AllFrame technology reduces frame drops, rated for 180TB/year workload.",
+    "services": [
+      "service:cctv-poe-install",
+      "service:cctv-hard-drive-replacement"
+    ]
+  },
+  {
+    "id": "equip:ajax-hub-2-plus",
+    "name": "Ajax Hub 2 Plus Central Controller",
+    "brand_id": "brand:ajax",
+    "category": "Alarm Central Hub",
+    "specs": "Grade 2 security control panel, 4 communication channels (Ethernet, Wi-Fi, 2x 2G/3G/LTE SIM slots), supports up to 200 devices, 100 cameras, 200 users. Jeweller 868MHz protocol.",
+    "services": [
+      "service:ajax-alarm-install"
+    ]
+  },
+  {
+    "id": "equip:ajax-motioncam-phod",
+    "name": "Ajax MotionCam PhOD (Photo on Demand)",
+    "brand_id": "brand:ajax",
+    "category": "Alarm Detector",
+    "specs": "PIR motion sensor with integrated camera, takes animated photo series on alarm or user demand, pet-immune up to 20kg, 1,700m line of sight.",
+    "services": [
+      "service:ajax-alarm-install"
+    ]
+  },
+  {
+    "id": "equip:ajax-streetsiren-doubledeck",
+    "name": "Ajax StreetSiren DoubleDeck",
+    "brand_id": "brand:ajax",
+    "category": "Alarm Siren",
+    "specs": "Wireless outdoor siren with customizable LED frame and acoustic buzzer (up to 113dB), IP54 water resistance, accelerometer anti-tamper tear-off detection.",
+    "services": [
+      "service:ajax-alarm-install"
+    ]
+  },
+  {
+    "id": "equip:unifi-dream-machine-se",
+    "name": "Ubiquiti UniFi Dream Machine Special Edition (UDM-SE)",
+    "brand_id": "brand:ubiquiti",
+    "category": "Router & Gateway",
+    "specs": "Enterprise gateway with integrated PoE/PoE+ 8-port switch, 2.5G WAN, 10G SFP+ LAN/WAN, integrated 128GB SSD + 3.5\" NVR drive bay.",
+    "services": [
+      "service:networking-commercial-install"
+    ]
+  },
+  {
+    "id": "equip:unifi-u7-pro-ap",
+    "name": "Ubiquiti UniFi U7 Pro Wi-Fi 7 Access Point",
+    "brand_id": "brand:ubiquiti",
+    "category": "Wireless Access Point",
+    "specs": "Ceiling-mounted Wi-Fi 7 AP, 6GHz / 5GHz / 2.4GHz tri-band, 2.5G uplink with PoE+, handles 300+ connected clients without slowdown.",
+    "services": [
+      "service:wifi-mesh-install",
+      "service:networking-commercial-install"
+    ]
+  },
+  {
+    "id": "equip:draytek-vigor-2865",
+    "name": "DrayTek Vigor 2865 Security Firewall Router",
+    "brand_id": "brand:draytek",
+    "category": "Router & Gateway",
+    "specs": "VDSL2 / ADSL2+ & Gigabit Ethernet WAN router, dual-WAN failover (ideal for Starlink + 4G/5G backup), robust VPN concentrator.",
+    "services": [
+      "service:networking-commercial-install"
+    ]
+  },
+  {
+    "id": "equip:corefix-120-heavy-duty-anchors",
+    "name": "CoreFix 120 Heavy-Duty Dot & Dab Wall Fixings",
+    "brand_id": "brand:corefix",
+    "category": "Masonry Anchor",
+    "specs": "Steel core bridge transfers TV load directly into solid masonry behind plasterboard cavity; 100kg safe working load for 65\"–100\" TVs.",
+    "services": [
+      "service:tv-wall-mounting-install",
+      "service:tv-bracket-remount-repair"
+    ]
+  },
+  {
+    "id": "equip:snaptoggle-heavy-duty-stud-bolts",
+    "name": "SnapToggle Heavy-Duty Hollow Wall Anchors (1/4\"-20)",
+    "brand_id": "brand:snaptoggle",
+    "category": "Stud Anchor",
+    "specs": "Solid zinc-plated steel channel with nylon strapping, anchors heavy TV brackets across hollow drywall and timber/metal studs with up to 120kg shear strength.",
+    "services": [
+      "service:tv-wall-mounting-install",
+      "service:tv-bracket-remount-repair"
+    ]
+  },
+  {
+    "id": "equip:webro-wf100-coax",
+    "name": "Webro WF100 Coaxial Cable (CAI Benchmarked)",
+    "brand_id": "brand:webro",
+    "category": "Coaxial Cable",
+    "specs": "1.00mm pure solid copper inner conductor, physical gas-injected foam dielectric, copper foil and copper braid screening (CAI 0007 F benchmarked).",
+    "services": [
+      "service:tv-aerial-install",
+      "service:tv-aerial-socket-replacement",
+      "service:coax-f-connector-retermination"
+    ]
+  },
+  {
+    "id": "equip:promax-hd-ranger-analyser",
+    "name": "Promax HD Ranger Eco Spectrum Analyzer & Field Meter",
+    "brand_id": "brand:promax",
+    "category": "Test Equipment",
+    "specs": "Ultra-fast spectrum analyzer, DVB-T/T2 MER constellation measurement, pre/post Viterbi BER, LTE signal interference logging.",
+    "services": [
+      "service:tv-aerial-install",
+      "service:tv-aerial-repair",
+      "service:freeview-tv-retune-rescan"
+    ]
+  }
+]

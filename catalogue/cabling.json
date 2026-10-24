@@ -1,0 +1,65 @@
+[
+  {
+    "id": "cable:cat6-solid-copper-external",
+    "type": "Cat6 U/UTP External PE",
+    "conductor": "23AWG Solid Bare Oxygen-Free Copper (100% Copper)",
+    "bandwidth": "250 MHz (1Gbps up to 100m, 10Gbps up to 37m)",
+    "jacket": "Heavy-duty UV-resistant black Polyethylene (PE) external grade",
+    "application": "Exterior building runs, Starlink drops, outdoor PoE CCTV cameras, waterproof drip loops.",
+    "warning": "Strictly zero Copper-Clad Aluminium (CCA) used."
+  },
+  {
+    "id": "cable:cat6a-sftp-lszh",
+    "type": "Cat6a S/FTP LSZH",
+    "conductor": "23AWG Solid Bare Copper",
+    "bandwidth": "500 MHz (True 10Gbps at full 100m channel)",
+    "shielding": "Braided overall shield + individual aluminium foil pairs (S/FTP) eliminating alien crosstalk",
+    "jacket": "Low Smoke Zero Halogen (LSZH) CPR Class Cca",
+    "application": "High-density data centres, commercial backbones, ultra-fast AV video over IP."
+  },
+  {
+    "id": "cable:cat5e-solid-copper",
+    "type": "Cat5e U/UTP Internal",
+    "conductor": "24AWG Solid Bare Copper",
+    "bandwidth": "100 MHz (1Gbps up to 100m)",
+    "application": "Basic domestic data drops, IP intercom links, legacy network replacements."
+  },
+  {
+    "id": "cable:cat7-s-ftp",
+    "type": "Cat7 S/FTP High-Performance Shielded",
+    "conductor": "23AWG Solid Pure Copper",
+    "bandwidth": "600 MHz (10Gbps with heavy industrial noise immunity)",
+    "application": "Factory and heavy machinery environment data drops."
+  },
+  {
+    "id": "cable:cat8-s-ftp",
+    "type": "Cat8 S/FTP 40Gbps High-Speed",
+    "conductor": "22AWG/23AWG Solid Bare Copper",
+    "bandwidth": "2000 MHz (25Gbps / 40Gbps up to 30m)",
+    "application": "Server-to-switch and SAN storage data links."
+  },
+  {
+    "id": "cable:webro-wf100",
+    "type": "Webro WF100 Digital Coaxial",
+    "conductor": "1.00mm Pure Annealed Plain Copper",
+    "dielectric": "Foamed Polyethylene (3.40mm)",
+    "screening": "Plain copper foil + 55% plain copper braid (100% optical coverage)",
+    "application": "Freeview digital TV drops, multi-room distribution, Freesat/Sky Q LNB runs."
+  },
+  {
+    "id": "cable:webro-wf65-shotgun",
+    "type": "Webro WF65 Twin Shotgun Coax",
+    "conductor": "0.65mm Pure Solid Copper (Twin)",
+    "application": "Compact twin-feed runs for satellite PVR receivers (Sky Q / Freesat twin tuner)."
+  },
+  {
+    "id": "cable:os2-single-mode-fibre",
+    "type": "OS2 9/125μm Single-Mode Optical Fibre",
+    "application": "Long-distance campus links (>300m), zero electrical surge risk between farm outbuildings."
+  },
+  {
+    "id": "cable:om4-multi-mode-fibre",
+    "type": "OM4 50/125μm Multi-Mode Optical Fibre",
+    "application": "Short-reach 10G/40G/100G intra-building backbone trunks."
+  }
+]

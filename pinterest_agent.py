@@ -53,7 +53,7 @@ PINTEREST_BOARDS = [
     {
         "name": "Starlink UK High-Speed Internet Mounts",
         "category": "Starlink",
-        "description": "Starlink Gen 3 chimney non-drill tensioned lashing cradles, Pennine 90mph storm brackets, Wi-Fi 7 router bypass, and rural broadband solutions across Yorkshire."
+        "description": "Starlink Gen 3 chimney non-drill tensioned lashing cradles, heavy-duty Starlink chimney brackets, Wi-Fi 7 router bypass, and rural broadband solutions across Yorkshire."
     },
     {
         "name": "Whole-Home Wi-Fi 7 & Cat6 Cabling",

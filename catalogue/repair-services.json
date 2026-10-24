@@ -1,0 +1,254 @@
+[
+  {
+    "id": "service:rj45-crimp-repair",
+    "title": "RJ45 Plug Crimp & Ethernet Connection Repair",
+    "price_from": "£65 + VAT",
+    "search_queries": [
+      "rj45 connection repair",
+      "ethernet cable end repair",
+      "fix broken ethernet clip",
+      "crimp rj45 plug leeds",
+      "cat6 connector replacement",
+      "network cable termination service"
+    ],
+    "description": "Re-terminating damaged RJ45 modular plugs, snapped plastic locking clips, and broken wire cores using shielded pass-through connectors and Fluke wiremap verification."
+  },
+  {
+    "id": "service:tv-aerial-socket-replacement",
+    "title": "TV Aerial Wall Socket & Coaxial Faceplate Replacement",
+    "price_from": "£55 + VAT",
+    "search_queries": [
+      "tv aerial wall socket replacement",
+      "fix loose aerial socket",
+      "coax wall plate repair",
+      "replace tv aerial point",
+      "broken aerial socket in wall",
+      "belling lee socket fitting"
+    ],
+    "description": "Replacing damaged, loose, or high-resistance TV aerial coaxial wall sockets with screened, low-loss metal Belling-Lee or F-type modular Euro faceplates."
+  },
+  {
+    "id": "service:cat6-data-point-socket",
+    "title": "Single & Dual Cat6/Cat6a RJ45 Wall Socket Installation",
+    "price_from": "£85 + VAT",
+    "search_queries": [
+      "install ethernet wall socket",
+      "cat6 wall point installation",
+      "rj45 socket fitting",
+      "run ethernet to room",
+      "hardwired internet socket in bedroom",
+      "data point installation near me"
+    ],
+    "description": "Fitting surface or flush-mounted single and dual Cat6/Cat6a data sockets with IDC punch-down termination, metal backbox, and Fluke attenuation certification."
+  },
+  {
+    "id": "service:coax-f-connector-retermination",
+    "title": "Coaxial F-Type Connector Compression Fitting & Repair",
+    "price_from": "£50 + VAT",
+    "search_queries": [
+      "f connector repair",
+      "coax cable connector fitting",
+      "sky satellite cable repair",
+      "compress f type plug",
+      "replace tv coax plug",
+      "loose satellite dish wire"
+    ],
+    "description": "Replacing cheap screw-on F-plugs with broadcast-grade waterproof radial compression connectors (Cabelcon/PCT) on Webro WF100 and WF65 cables."
+  },
+  {
+    "id": "service:loft-distribution-amp-psu-repair",
+    "title": "Loft TV Distribution Amplifier & 12V PSU Replacement",
+    "price_from": "£75 + VAT",
+    "search_queries": [
+      "tv booster in loft stopped working",
+      "loft aerial amplifier replacement",
+      "12v masthead power supply repair",
+      "no tv signal in any room",
+      "replace aerial distribution box",
+      "multi room tv amplifier repair"
+    ],
+    "description": "Diagnosing and replacing failed loft distribution amplifiers, blown 12V DC power inserters, and shorted coaxial lines causing complete house-wide TV signal loss."
+  },
+  {
+    "id": "service:5g-lte-filter-retrofit",
+    "title": "4G/5G LTE Low-Pass Filter Retrofitting for TV Pixelation",
+    "price_from": "£65 + VAT",
+    "search_queries": [
+      "5g mobile mast interfering with tv",
+      "fit 5g filter to tv aerial",
+      "freeview pixelating since 5g mast installed",
+      "lte ch48 filter installation",
+      "tv channel 48 breaking up",
+      "tv aerial filter fitting"
+    ],
+    "description": "Installing high-rejection 700MHz 5G (Channel 48) inline low-pass filters directly before amplifiers to eliminate digital Freeview packet loss and freezing."
+  },
+  {
+    "id": "service:cctv-bnc-balun-cat6-conversion",
+    "title": "CCTV BNC Coax to Cat6 Balun Conversion & Upgrade",
+    "price_from": "£95 + VAT",
+    "search_queries": [
+      "upgrade old bnc cctv to ip",
+      "cctv balun replacement",
+      "convert coax cctv to cat6",
+      "lines across cctv screen repair",
+      "ground loop isolator cctv",
+      "analogue cctv repair"
+    ],
+    "description": "Resolving rolling ground loop hum bars and ghosting by replacing failing passive video baluns or converting old analogue RG59 coax runs to modern 4K PoE IP architecture."
+  },
+  {
+    "id": "service:cctv-junction-box-resealing",
+    "title": "CCTV Junction Box Weatherproofing & Water Ingress Repair",
+    "price_from": "£75 + VAT",
+    "search_queries": [
+      "cctv camera full of water",
+      "water in cctv connector",
+      "cctv camera cutting out in rain",
+      "weatherproof cctv junction box",
+      "dry out cctv camera connection",
+      "fix cctv water damage"
+    ],
+    "description": "Drying out corroded RJ45/BNC connectors, replacing unsealed backboxes with IP66 deep bases, and forming downward drip loops to stop water tracking into cavity walls."
+  },
+  {
+    "id": "service:cctv-hard-drive-replacement",
+    "title": "CCTV NVR Hard Drive Replacement & Formatting",
+    "price_from": "£125 + VAT",
+    "search_queries": [
+      "cctv nvr beeping hard drive error",
+      "replace cctv hard drive",
+      "wd purple hard drive fitting",
+      "cctv not recording to disk",
+      "nvr hdd format error",
+      "cctv hard disk replacement"
+    ],
+    "description": "Replacing failed desktop drives with genuine 24/7 surveillance-rated Western Digital Purple or Seagate SkyHawk drives, firmware initialization, and continuous loop setup."
+  },
+  {
+    "id": "service:starlink-cable-splice-repair",
+    "title": "Starlink Cable Splice & Waterproof IP68 Joint Repair",
+    "price_from": "£95 + VAT",
+    "search_queries": [
+      "starlink cable chewed by dog",
+      "repair cut starlink cable",
+      "starlink cable splice kit",
+      "starlink proprietary cable repair",
+      "waterproof starlink cable joiner",
+      "starlink wire cut"
+    ],
+    "description": "Precision shielded splicing and IP68 waterproof gland sealing of crushed, chewed, or severed Starlink Gen 2 and Gen 3 data cables without replacing full roof runs."
+  },
+  {
+    "id": "service:tv-bracket-remount-repair",
+    "title": "TV Wall Bracket Remounting & Stripped Plasterboard Repair",
+    "price_from": "£85 + VAT",
+    "search_queries": [
+      "tv bracket pulling out of wall",
+      "remount tv on plasterboard",
+      "fix loose tv wall bracket",
+      "stripped drywall anchors tv",
+      "safe tv remounting service",
+      "reinforce tv wall mount"
+    ],
+    "description": "Rescuing loose or sagging TV brackets from failing drywall by patching damaged holes and anchoring with CoreFix 120 (into solid block) or SnapToggle steel channel bolts."
+  },
+  {
+    "id": "service:in-wall-hdmi-replacement",
+    "title": "In-Wall Hidden HDMI 2.1 Cable Routing & Brush Plates",
+    "price_from": "£80 + VAT",
+    "search_queries": [
+      "hide tv cables in wall",
+      "in wall hdmi cable replacement",
+      "brush faceplate for tv wires",
+      "no cables showing tv mount",
+      "run hdmi through stud wall",
+      "replace broken hdmi behind wall"
+    ],
+    "description": "Routing ultra-high-speed 48Gbps 4K/120Hz HDMI 2.1 cables, optical audio, and power through cavity walls using white or black brushed cable-exit faceplates."
+  },
+  {
+    "id": "service:ajax-alarm-battery-service",
+    "title": "Ajax Wireless Alarm Battery Replacement & Health Audit",
+    "price_from": "£75 + VAT",
+    "search_queries": [
+      "ajax alarm battery replacement",
+      "ajax detector low battery",
+      "replace cr123a alarm battery",
+      "streetsiren battery change",
+      "ajax hub backup battery",
+      "wireless alarm battery service"
+    ],
+    "description": "Full battery replacement across Ajax DoorProtect, MotionProtect, and StreetSiren units using genuine Panasonic CR123A/CR2032 cells, radio signal recalibration."
+  },
+  {
+    "id": "service:wifi-hardwired-backhaul-run",
+    "title": "Hardwired Ethernet Backhaul Cabling for Wi-Fi Mesh Nodes",
+    "price_from": "£125 + VAT",
+    "search_queries": [
+      "hardwire mesh wifi nodes",
+      "ethernet backhaul installation",
+      "connect deco with cable",
+      "unifi ap ethernet cabling",
+      "fix slow mesh wifi backhaul",
+      "run cable between mesh routers"
+    ],
+    "description": "Running solid copper Cat6 lines between mesh pods (Deco, Orbi, UniFi, eero) to eliminate 50% wireless backhaul speed loss through solid floors and stone walls."
+  },
+  {
+    "id": "service:garden-office-armoured-cat6",
+    "title": "SWA Steel-Wire Armoured Cat6 Trench Cable Termination",
+    "price_from": "£145 + VAT",
+    "search_queries": [
+      "armoured ethernet cable to garden room",
+      "swa cat6 cable termination",
+      "trench cable for garden office internet",
+      "outdoor armoured data cable",
+      "hardwired internet to outbuilding",
+      "rodent proof ethernet cable"
+    ],
+    "description": "Glanding, earthing, and terminating Steel Wire Armoured (SWA) Cat6 cables in external IP66 junction boxes and internal RJ45 modules for rodent-proof garden office links."
+  },
+  {
+    "id": "service:freeview-tv-retune-rescan",
+    "title": "Freeview TV Transmitter Retune, Realignment & MUX Rescan",
+    "price_from": "£55 + VAT",
+    "search_queries": [
+      "retune freeview tv channels",
+      "lost bbc channels on tv",
+      "freeview channel rescan service",
+      "tv transmitter realignment",
+      "fix missing freeview multiplexes",
+      "tune smart tv to winter hill"
+    ],
+    "description": "Calibrated spectrum analyzer realignment to local transmitters (Winter Hill, Emley Moor, Bilsdale) with manual frequency entry to prevent duplicate weak relay channels."
+  },
+  {
+    "id": "service:sky-q-lnb-realignment",
+    "title": "Freesat & Sky Q Dish LNB Realignment & Shotgun Cable Repair",
+    "price_from": "£70 + VAT",
+    "search_queries": [
+      "sky q dish realignment",
+      "fix no satellite signal sky",
+      "replace wideband lnb sky q",
+      "freesat dish repair",
+      "replace twin shotgun satellite cable",
+      "satellite dish storm damage repair"
+    ],
+    "description": "Aligning satellite dishes to Astra 28.2°E using spectrum meters, replacing waterlogged wideband LNBs, and running fresh Webro WF65 twin copper shotgun cables."
+  },
+  {
+    "id": "service:doorbell-transformer-fitting",
+    "title": "Video Doorbell 24V Transformer Fitting & Chime Bypass",
+    "price_from": "£79 + VAT",
+    "search_queries": [
+      "hardwire ring doorbell to mains",
+      "install 24v transformer for nest doorbell",
+      "bypass mechanical doorbell chime",
+      "eufy doorbell hardwired installation",
+      "video doorbell electrical fitting",
+      "ring pro power kit installation"
+    ],
+    "description": "Installing DIN-rail or wall-mount 8V–24V AC step-down transformers, mechanical chime bypass fuses, and neat low-voltage cabling for permanent battery-free doorbell power."
+  }
+]

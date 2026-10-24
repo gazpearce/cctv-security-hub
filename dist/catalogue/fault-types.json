@@ -1,0 +1,109 @@
+[
+  {
+    "id": "prob:cctv-night-glare",
+    "title": "CCTV Night-Time Vision is White Fog or Washed Out Glare",
+    "root_cause": "Infrared reflection bouncing back off dome glass covers, nearby soffit boards, brick corners, or spiderweb buildup.",
+    "solution": "Replace reflective glass dome with open-lens Turret (Eyeball) camera with separated dual IR/white-light emitters and ColorVu technology.",
+    "services": [
+      "service:cctv-upgrade",
+      "service:cctv-repair"
+    ]
+  },
+  {
+    "id": "prob:cctv-voltage-drop-reboot",
+    "title": "CCTV Cameras Disconnect or Reboot Every Evening at Dusk",
+    "root_cause": "Cheap Copper-Clad Aluminium (CCA) cable drops too much voltage under high electrical load when infrared LEDs activate at sunset.",
+    "solution": "Replace substandard CCA with 100% solid oxygen-free copper Cat6 cable with IEEE 802.3at PoE+ power budget.",
+    "services": [
+      "service:cctv-repair",
+      "service:rj45-crimp-repair"
+    ]
+  },
+  {
+    "id": "prob:wifi-dead-spots-stone-walls",
+    "title": "Wi-Fi Drops Completely Inside 500mm Thick Stone Walls or Extensions",
+    "root_cause": "High-density Yorkshire gritstone and foil-backed insulation absorb 5GHz and 6GHz wireless signals completely.",
+    "solution": "Install hardwired solid copper Cat6 backhaul cables to discreet ceiling-mounted Wi-Fi 6/7 access points in every zone.",
+    "services": [
+      "service:wifi-mesh-install",
+      "service:wifi-hardwired-backhaul-run"
+    ]
+  },
+  {
+    "id": "prob:starlink-mast-micro-wobble",
+    "title": "Starlink Internet Stalls or Drops Satellite Lock in High Winds",
+    "root_cause": "Flimsy aluminium poles or cheap swan-neck brackets flex 2–3 degrees in wind gusts, losing phased-array beam alignment.",
+    "solution": "Mount on heavy-duty non-drill chimney lashing cradles or 18\" welded T&K brackets with 2\" heavy-gauge mast.",
+    "services": [
+      "service:starlink-chimney-install",
+      "service:starlink-wall-install"
+    ]
+  },
+  {
+    "id": "prob:tv-pixelating-5g-interference",
+    "title": "Freeview TV Channels Pixelating, Freezing or Missing Completely",
+    "root_cause": "700MHz 5G or 800MHz 4G mobile phone mast transmission breaking into wideband unshielded TV aerial coax.",
+    "solution": "Install CAI-benchmarked 5G LTE channel 48 low-pass filter, double-screened Webro WF100 coax, and spectrum analyzer realignment.",
+    "services": [
+      "service:tv-aerial-repair",
+      "service:5g-lte-filter-retrofit"
+    ]
+  },
+  {
+    "id": "prob:diy-alarm-rf-jamming",
+    "title": "DIY 433MHz Wireless Alarms Vulnerable to Cheap RF Jamming",
+    "root_cause": "Single-frequency 433MHz wireless devices can be blinded by basic handheld transmitters without triggering an alarm.",
+    "solution": "Upgrade to Grade 2 Ajax Jeweller 868MHz encrypted rolling-code frequency-hopping system with sub-second jamming detection.",
+    "services": [
+      "service:ajax-alarm-install"
+    ]
+  },
+  {
+    "id": "prob:tv-mounting-drywall-collapse",
+    "title": "Fear of 75\"–85\" Heavy OLED TV Pulling Down Plasterboard Drywall",
+    "root_cause": "Standard plastic drywall plugs pull straight out of gypsum board under dynamic cantilever forward weight.",
+    "solution": "Professional structural mounting with CoreFix 120 (into solid block) or SnapToggle (into timber/metal studs) rated to 100kg+.",
+    "services": [
+      "service:tv-wall-mounting-install",
+      "service:tv-bracket-remount-repair"
+    ]
+  },
+  {
+    "id": "prob:tv-no-signal-one-room-vs-all-rooms",
+    "title": "TV Says 'No Signal' in One Room While Other Rooms Work (or All Rooms Dead)",
+    "root_cause": "Single-room loss is caused by a damaged fly-lead, loose Belling-Lee wall socket, or detached drop coax. Whole-house loss is caused by a dead 12V masthead power supply unit (PSU), failed loft distribution amplifier, or storm-damaged main aerial.",
+    "solution": "Run the ADI Signal Doctor diagnostic or book Gary Pearce with a Promax HD Ranger spectrum analyser to test MER/BER and replace failed wall sockets, fly-leads, or loft amplifiers.",
+    "services": [
+      "service:tv-aerial-repair",
+      "service:tv-aerial-socket-replacement",
+      "service:loft-distribution-amp-psu-repair"
+    ],
+    "guide_url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
+    "tool_url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html"
+  },
+  {
+    "id": "prob:tv-booster-amplifier-signal-overload",
+    "title": "Fitting a TV Signal Booster Made Pixelation Worse or Killed Channels",
+    "root_cause": "When a strong signal (over 70 dBμV) or local 4G/5G mast signal is fed into an amplifier, the tuner overloads into intermodulation distortion and clipping, destroying the digital Modulation Error Ratio (MER).",
+    "solution": "Remove the unnecessary booster, fit a passive variable attenuator or a 700MHz Ch48 LTE filter, and balance signal levels between 48 dBμV and 65 dBμV.",
+    "services": [
+      "service:tv-aerial-repair",
+      "service:5g-lte-filter-retrofit"
+    ],
+    "guide_url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
+    "tool_url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html"
+  },
+  {
+    "id": "prob:coax-water-ingress-green-copper",
+    "title": "TV Signal Fails During Rain or Wind & Green Corrosion on Coax Plug",
+    "root_cause": "Cracked outdoor PVC cable jacket or unsealed aerial balun box allows rainwater to wick down the coaxial braid by capillary action, corroding copper into green verdigris and shorting the tuner.",
+    "solution": "Strip out waterlogged RG6/air-spaced coax and replace with CAI-benchmarked Webro WF100 foam-filled copper cable with external drip loops and Cabelcon compression connectors.",
+    "services": [
+      "service:tv-aerial-repair",
+      "service:coax-f-connector-retermination",
+      "service:tv-aerial-socket-replacement"
+    ],
+    "guide_url": "https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/",
+    "tool_url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html"
+  }
+]

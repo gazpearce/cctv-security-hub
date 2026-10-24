@@ -1,0 +1,57 @@
+[
+  {
+    "id": "mount:chimney-non-drill-cradle",
+    "name": "Non-Drill Chimney Lashing Cradle System",
+    "trade_purpose": "Secures Starlink dishes, aerial masts, and wireless bridges to brick chimneys with zero masonry drilling.",
+    "hardware": [
+      "Galvanised steel lashing cradle",
+      "Stainless steel 5-strand wire",
+      "J-bolts & tension ratchets",
+      "Corner protection brackets"
+    ],
+    "wind_rating": "Engineered for 90mph gale resistance without brick spalling or mortar blowout."
+  },
+  {
+    "id": "mount:heavy-duty-tk-wall-brackets",
+    "name": "Heavy-Duty Welded Galvanised T&K Wall Brackets",
+    "trade_purpose": "Provides 18-inch to 24-inch standoff clearance from gable walls over deep roof overhangs and gutters.",
+    "hardware": [
+      "Welded hot-dipped galvanised T-bracket and K-bracket",
+      "M10 high-tensile shield anchors",
+      "Double U-bolts for 2\" alloy mast"
+    ],
+    "wind_rating": "Zero mast micro-flex during high-wind winter storms."
+  },
+  {
+    "id": "mount:corefix-dot-and-dab",
+    "name": "CoreFix 100/120 Heavy-Duty Dot & Dab Drywall System",
+    "trade_purpose": "Spans the 10mm–30mm plasterboard void to anchor 65\"–100\" TVs directly into the blockwork behind.",
+    "hardware": [
+      "100mm/120mm high-tensile steel screw",
+      "Machined steel load-bearing collar sleeve",
+      "Heavy-duty nylon wall plug"
+    ],
+    "safe_load": "100kg safe shear load per pair (never crushes plasterboard inward)."
+  },
+  {
+    "id": "mount:snaptoggle-hollow-stud",
+    "name": "SnapToggle Heavy-Duty Metal & Timber Stud Mounting",
+    "trade_purpose": "Locks heavy cantilever dual-arm TV brackets onto hollow drywall stud partitions where no solid masonry exists.",
+    "hardware": [
+      "Solid zinc-plated steel pivoting channel",
+      "Nylon ratcheting guide leg",
+      "1/4\"-20 machine screws"
+    ],
+    "safe_load": "Up to 120kg ultimate shear load per anchor."
+  },
+  {
+    "id": "mount:ceiling-drop-bracket",
+    "name": "Heavy-Duty Telescopic Ceiling Drop Mount",
+    "trade_purpose": "Suspends commercial displays or bedroom screens from high structural joists or concrete ceilings.",
+    "hardware": [
+      "Telescopic heavy-gauge steel pole",
+      "Integrated internal cable routing channel",
+      "Swivel ceiling baseplate"
+    ]
+  }
+]

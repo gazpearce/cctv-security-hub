@@ -1,0 +1,973 @@
+[
+  {
+    "id": "brand:hikvision",
+    "name": "Hikvision",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Repair",
+      "Firmware Service"
+    ],
+    "tier": "Commercial / Premium Domestic"
+  },
+  {
+    "id": "brand:dahua",
+    "name": "Dahua Technology",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Commercial / Smart Domestic"
+  },
+  {
+    "id": "brand:uniview",
+    "name": "Uniview (UNV)",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Enterprise / Commercial"
+  },
+  {
+    "id": "brand:reolink",
+    "name": "Reolink",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Domestic PoE / Standalone"
+  },
+  {
+    "id": "brand:spro",
+    "name": "SPRO",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Repair"
+    ],
+    "tier": "UK Trade Commercial"
+  },
+  {
+    "id": "brand:hilook",
+    "name": "HiLook (by Hikvision)",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Cost-Effective Domestic"
+  },
+  {
+    "id": "brand:qvis",
+    "name": "Qvis Labs",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Repair"
+    ],
+    "tier": "UK Trade Commercial"
+  },
+  {
+    "id": "brand:axis",
+    "name": "Axis Communications",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair",
+      "Maintain"
+    ],
+    "tier": "High-End Enterprise"
+  },
+  {
+    "id": "brand:hanwha",
+    "name": "Hanwha Vision",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair",
+      "Maintain"
+    ],
+    "tier": "Commercial Enterprise"
+  },
+  {
+    "id": "brand:bosch-security",
+    "name": "Bosch Security",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair",
+      "Maintain"
+    ],
+    "tier": "Commercial Enterprise"
+  },
+  {
+    "id": "brand:honeywell-security",
+    "name": "Honeywell Security",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Commercial Enterprise"
+  },
+  {
+    "id": "brand:avigilon",
+    "name": "Avigilon (Motorola)",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Maintain"
+    ],
+    "tier": "Enterprise AI Surveillance"
+  },
+  {
+    "id": "brand:pelco",
+    "name": "Pelco",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Enterprise"
+  },
+  {
+    "id": "brand:mobotix",
+    "name": "Mobotix",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Specialist Industrial"
+  },
+  {
+    "id": "brand:vivotek",
+    "name": "Vivotek",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Commercial IP"
+  },
+  {
+    "id": "brand:provision-isr",
+    "name": "Provision-ISR",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Install",
+      "Configure"
+    ],
+    "tier": "Commercial IP"
+  },
+  {
+    "id": "brand:milesight",
+    "name": "Milesight",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Install",
+      "Configure"
+    ],
+    "tier": "Commercial AI / IoT"
+  },
+  {
+    "id": "brand:genie-cctv",
+    "name": "Genie CCTV",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Repair",
+      "Maintain"
+    ],
+    "tier": "UK Trade"
+  },
+  {
+    "id": "brand:vista-cctv",
+    "name": "Vista CCTV (Norbain)",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Repair",
+      "Maintain"
+    ],
+    "tier": "UK Trade Legacy"
+  },
+  {
+    "id": "brand:swann",
+    "name": "Swann",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Repair",
+      "Replace with Hardwired PoE"
+    ],
+    "tier": "Consumer Retail"
+  },
+  {
+    "id": "brand:lorex",
+    "name": "Lorex",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Consumer Retail"
+  },
+  {
+    "id": "brand:annke",
+    "name": "Annke",
+    "category": "CCTV & Video Surveillance",
+    "scope": [
+      "Configure",
+      "Repair"
+    ],
+    "tier": "Consumer Retail"
+  },
+  {
+    "id": "brand:ring",
+    "name": "Ring (Amazon)",
+    "category": "Smart Doorbells & Cameras",
+    "scope": [
+      "Hardwired Installation",
+      "Transformer Fitting",
+      "Chime Bypass",
+      "Configure"
+    ],
+    "tier": "Consumer Smart Home"
+  },
+  {
+    "id": "brand:eufy",
+    "name": "Eufy Security (Anker)",
+    "category": "Smart Doorbells & Cameras",
+    "scope": [
+      "Hardwired Installation",
+      "HomeBase Integration",
+      "Configure"
+    ],
+    "tier": "Consumer Local Storage"
+  },
+  {
+    "id": "brand:nest",
+    "name": "Google Nest",
+    "category": "Smart Doorbells & Cameras",
+    "scope": [
+      "Hardwired Installation",
+      "Chime Connector Setup",
+      "Configure"
+    ],
+    "tier": "Consumer Smart Home"
+  },
+  {
+    "id": "brand:arlo",
+    "name": "Arlo",
+    "category": "Smart Doorbells & Cameras",
+    "scope": [
+      "Installation",
+      "Solar Link",
+      "Hub Setup"
+    ],
+    "tier": "Consumer Wireless"
+  },
+  {
+    "id": "brand:tapo",
+    "name": "TP-Link Tapo",
+    "category": "Smart Home / CCTV",
+    "scope": [
+      "Installation",
+      "SD Card Local Storage Setup",
+      "Configure"
+    ],
+    "tier": "Consumer Budget"
+  },
+  {
+    "id": "brand:ajax",
+    "name": "Ajax Systems",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Authorised Supply",
+      "Install",
+      "Grade 2 Certify",
+      "Maintain"
+    ],
+    "tier": "Grade 2 Wireless & Hybrid"
+  },
+  {
+    "id": "brand:pyronix",
+    "name": "Pyronix (Hikvision)",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Repair",
+      "Battery Service",
+      "Upgrade to Ajax"
+    ],
+    "tier": "UK Trade Standard"
+  },
+  {
+    "id": "brand:texecom",
+    "name": "Texecom",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Repair",
+      "Battery Service",
+      "Upgrade to Ajax"
+    ],
+    "tier": "Commercial UK Trade"
+  },
+  {
+    "id": "brand:scantronic",
+    "name": "Scantronic (Eaton)",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Repair",
+      "Battery Service",
+      "Upgrade to Ajax"
+    ],
+    "tier": "UK Legacy"
+  },
+  {
+    "id": "brand:risco",
+    "name": "Risco Group",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Repair",
+      "Service",
+      "Upgrade"
+    ],
+    "tier": "Commercial / Domestic"
+  },
+  {
+    "id": "brand:visonic",
+    "name": "Visonic (Johnson Controls)",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Repair",
+      "Battery Service",
+      "Upgrade"
+    ],
+    "tier": "UK Legacy Wireless"
+  },
+  {
+    "id": "brand:honeywell-galaxy",
+    "name": "Honeywell Galaxy",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Service",
+      "Maintain"
+    ],
+    "tier": "High-Security Commercial"
+  },
+  {
+    "id": "brand:yale-alarm",
+    "name": "Yale Smart Alarms",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Troubleshoot",
+      "Upgrade to Ajax Grade 2"
+    ],
+    "tier": "Consumer DIY"
+  },
+  {
+    "id": "brand:simplisafe",
+    "name": "SimpliSafe",
+    "category": "Intruder Alarms",
+    "scope": [
+      "Troubleshoot",
+      "Replace with Grade 2"
+    ],
+    "tier": "Consumer DIY"
+  },
+  {
+    "id": "brand:paxton",
+    "name": "Paxton Access (Net2)",
+    "category": "Access Control & Intercom",
+    "scope": [
+      "Install",
+      "Configure",
+      "Maintain"
+    ],
+    "tier": "Commercial UK Market Leader"
+  },
+  {
+    "id": "brand:videx",
+    "name": "Videx",
+    "category": "Door Entry & Intercom",
+    "scope": [
+      "Install",
+      "Repair",
+      "Maintain"
+    ],
+    "tier": "Commercial / Residential"
+  },
+  {
+    "id": "brand:comelit",
+    "name": "Comelit",
+    "category": "Door Entry & Intercom",
+    "scope": [
+      "Install",
+      "Repair",
+      "Maintain"
+    ],
+    "tier": "Commercial / Residential"
+  },
+  {
+    "id": "brand:fermax",
+    "name": "Fermax",
+    "category": "Door Entry & Intercom",
+    "scope": [
+      "Install",
+      "Repair"
+    ],
+    "tier": "Commercial / Residential"
+  },
+  {
+    "id": "brand:ubiquiti",
+    "name": "Ubiquiti (UniFi)",
+    "category": "Networking & Wi-Fi",
+    "scope": [
+      "Supply",
+      "Install",
+      "Network Architecture",
+      "Troubleshoot"
+    ],
+    "tier": "Enterprise / High-End Residential"
+  },
+  {
+    "id": "brand:tp-link-omada",
+    "name": "TP-Link Omada",
+    "category": "Networking & Wi-Fi",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure",
+      "Maintain"
+    ],
+    "tier": "Commercial Cloud SDN"
+  },
+  {
+    "id": "brand:tp-link-deco",
+    "name": "TP-Link Deco",
+    "category": "Networking & Wi-Fi",
+    "scope": [
+      "Supply",
+      "Install",
+      "Hardwired Backhaul"
+    ],
+    "tier": "Domestic Whole-Home Mesh"
+  },
+  {
+    "id": "brand:draytek",
+    "name": "DrayTek (Vigor)",
+    "category": "Networking & Routers",
+    "scope": [
+      "Supply",
+      "Install",
+      "Multi-WAN Failover Config"
+    ],
+    "tier": "Commercial Edge Security"
+  },
+  {
+    "id": "brand:asus",
+    "name": "ASUS (AiMesh & ROG)",
+    "category": "Networking & Routers",
+    "scope": [
+      "Configure",
+      "Hardwired Backhaul"
+    ],
+    "tier": "Prosumer / Gaming"
+  },
+  {
+    "id": "brand:netgear",
+    "name": "Netgear (Orbi & Nighthawk)",
+    "category": "Networking & Wi-Fi",
+    "scope": [
+      "Configure",
+      "Backhaul Optimization"
+    ],
+    "tier": "Consumer / Prosumer"
+  },
+  {
+    "id": "brand:zyxel",
+    "name": "Zyxel",
+    "category": "Networking",
+    "scope": [
+      "Supply",
+      "Configure"
+    ],
+    "tier": "Commercial Switch / AP"
+  },
+  {
+    "id": "brand:cisco-meraki",
+    "name": "Cisco Meraki Go",
+    "category": "Networking",
+    "scope": [
+      "Install",
+      "Configure"
+    ],
+    "tier": "Small Business Commercial"
+  },
+  {
+    "id": "brand:mikrotik",
+    "name": "MikroTik",
+    "category": "Networking & Wireless Wire",
+    "scope": [
+      "Supply",
+      "Install 60GHz Bridges",
+      "Configure"
+    ],
+    "tier": "Telecom / PtP High-Bandwidth"
+  },
+  {
+    "id": "brand:teltonika",
+    "name": "Teltonika Networks",
+    "category": "Industrial Cellular & 5G Routers",
+    "scope": [
+      "Supply",
+      "Install 4G/5G Failover Antennas",
+      "Configure"
+    ],
+    "tier": "Industrial IoT & Failover"
+  },
+  {
+    "id": "brand:peplink",
+    "name": "Peplink (Pepwave)",
+    "category": "Multi-WAN Bonding Routers",
+    "scope": [
+      "Configure SpeedFusion Bonding",
+      "Install"
+    ],
+    "tier": "Enterprise Redundancy"
+  },
+  {
+    "id": "brand:aruba-instant-on",
+    "name": "HPE Aruba Instant On",
+    "category": "Networking & Wi-Fi",
+    "scope": [
+      "Install",
+      "Configure"
+    ],
+    "tier": "Commercial Prosumer"
+  },
+  {
+    "id": "brand:ruckus",
+    "name": "Ruckus (CommScope)",
+    "category": "Networking & Wi-Fi",
+    "scope": [
+      "Configure",
+      "Troubleshoot"
+    ],
+    "tier": "Enterprise High-Density"
+  },
+  {
+    "id": "brand:eero",
+    "name": "Eero (Amazon)",
+    "category": "Consumer Mesh Wi-Fi",
+    "scope": [
+      "Install",
+      "Hardwired Backhaul Config"
+    ],
+    "tier": "Consumer Mesh"
+  },
+  {
+    "id": "brand:linksys-velop",
+    "name": "Linksys Velop",
+    "category": "Consumer Mesh Wi-Fi",
+    "scope": [
+      "Configure",
+      "Hardwired Backhaul"
+    ],
+    "tier": "Consumer Mesh"
+  },
+  {
+    "id": "brand:google-nest-wifi",
+    "name": "Google Nest Wifi Pro",
+    "category": "Consumer Mesh Wi-Fi",
+    "scope": [
+      "Install",
+      "Configure"
+    ],
+    "tier": "Consumer Mesh"
+  },
+  {
+    "id": "brand:spacex-starlink",
+    "name": "SpaceX Starlink",
+    "category": "Satellite Broadband",
+    "scope": [
+      "Certified Physical Mounting",
+      "Bypass Networking",
+      "Cabling",
+      "Surge Protection"
+    ],
+    "tier": "LEO Satellite Broadband"
+  },
+  {
+    "id": "brand:sanus",
+    "name": "Sanus",
+    "category": "TV Mounting & AV",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "Premium Structural"
+  },
+  {
+    "id": "brand:vogels",
+    "name": "Vogel's",
+    "category": "TV Mounting & AV",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "Premium Engineered"
+  },
+  {
+    "id": "brand:invision",
+    "name": "Invision",
+    "category": "TV Mounting & AV",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "Heavy-Duty Cantilever"
+  },
+  {
+    "id": "brand:one-for-all",
+    "name": "One For All",
+    "category": "TV Mounting & Antennas",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "Consumer"
+  },
+  {
+    "id": "brand:peerless-av",
+    "name": "Peerless-AV",
+    "category": "Commercial AV Mounting",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "Commercial Digital Signage"
+  },
+  {
+    "id": "brand:ergotron",
+    "name": "Ergotron",
+    "category": "Specialist Articulating Arms",
+    "scope": [
+      "Install",
+      "Configure"
+    ],
+    "tier": "Commercial / Medical"
+  },
+  {
+    "id": "brand:b-tech",
+    "name": "B-Tech AV Mounts",
+    "category": "Commercial AV Mounts",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "UK Trade Commercial"
+  },
+  {
+    "id": "brand:unicol",
+    "name": "Unicol",
+    "category": "Specialist Heavy-Duty Mounts",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "UK Engineered Heavy-Duty"
+  },
+  {
+    "id": "brand:corefix",
+    "name": "CoreFix (Metex)",
+    "category": "Masonry Fixings",
+    "scope": [
+      "Primary Specification",
+      "Install"
+    ],
+    "tier": "100kg+ Dot-and-Dab Anchor"
+  },
+  {
+    "id": "brand:snaptoggle",
+    "name": "SnapToggle (Toggler)",
+    "category": "Hollow Stud Fixings",
+    "scope": [
+      "Primary Specification",
+      "Install"
+    ],
+    "tier": "Heavy-Duty Hollow Stud"
+  },
+  {
+    "id": "brand:fischer",
+    "name": "Fischer Fixings",
+    "category": "Structural Anchors",
+    "scope": [
+      "Duopower / Resin Anchor Specification"
+    ],
+    "tier": "Solid Masonry & Aerated Block"
+  },
+  {
+    "id": "brand:gripit",
+    "name": "GripIt Fixings",
+    "category": "Plasterboard Fixings",
+    "scope": [
+      "Specification for Medium Loads"
+    ],
+    "tier": "Drywall Cavity"
+  },
+  {
+    "id": "brand:rawlplug",
+    "name": "Rawlplug",
+    "category": "Structural Fixings",
+    "scope": [
+      "Spring Toggle / Shield Anchor Specification"
+    ],
+    "tier": "UK Trade Standard"
+  },
+  {
+    "id": "brand:webro",
+    "name": "Webro Cables",
+    "category": "Coaxial & Data Cabling",
+    "scope": [
+      "Primary Specification (WF100 / WF65 / Cat6 PE)"
+    ],
+    "tier": "CAI-Benchmarked UK Coax"
+  },
+  {
+    "id": "brand:blake-uk",
+    "name": "Blake UK",
+    "category": "Aerials, Masts & Brackets",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "UK Trade Standard"
+  },
+  {
+    "id": "brand:antiference",
+    "name": "Antiference",
+    "category": "Aerials & Distribution",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "UK Trade Standard"
+  },
+  {
+    "id": "brand:triax",
+    "name": "Triax",
+    "category": "RF & Satellite Distribution",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "Commercial Headend / Domestic"
+  },
+  {
+    "id": "brand:televes",
+    "name": "Televes",
+    "category": "Intelligent Aerials & Headends",
+    "scope": [
+      "Supply",
+      "Install",
+      "TForce Alignment"
+    ],
+    "tier": "European High-Gain Standard"
+  },
+  {
+    "id": "brand:labgear",
+    "name": "Labgear",
+    "category": "Distribution Amps & Filters",
+    "scope": [
+      "Supply",
+      "Install"
+    ],
+    "tier": "UK Trade Standard"
+  },
+  {
+    "id": "brand:global-invacom",
+    "name": "Global Invacom",
+    "category": "Fibre Satellite & Optical LNBs",
+    "scope": [
+      "Supply",
+      "Install",
+      "Configure"
+    ],
+    "tier": "Commercial IRS & Fibre Satellite"
+  },
+  {
+    "id": "brand:promax",
+    "name": "Promax Electronic",
+    "category": "RF Test Equipment",
+    "scope": [
+      "Calibrated Field Diagnostics (HD Ranger)"
+    ],
+    "tier": "Broadcast Laboratory Standard"
+  },
+  {
+    "id": "brand:cabelcon",
+    "name": "Corning Cabelcon",
+    "category": "Compression Connectors",
+    "scope": [
+      "Primary Coaxial F-Type Specification"
+    ],
+    "tier": "Waterproof Broadcast Grade"
+  },
+  {
+    "id": "brand:wd-purple",
+    "name": "Western Digital (WD Purple)",
+    "category": "Surveillance Storage",
+    "scope": [
+      "Primary Surveillance NVR Drive"
+    ],
+    "tier": "24/7 AllFrame 4K Storage"
+  },
+  {
+    "id": "brand:seagate-skyhawk",
+    "name": "Seagate (SkyHawk AI)",
+    "category": "Surveillance Storage",
+    "scope": [
+      "Surveillance NVR Drive"
+    ],
+    "tier": "24/7 AI Surveillance Storage"
+  },
+  {
+    "id": "brand:excel-networking",
+    "name": "Excel Networking",
+    "category": "Structured Cabling",
+    "scope": [
+      "Supply",
+      "Certified Install",
+      "Patch Panels"
+    ],
+    "tier": "UK Commercial Enterprise Standard"
+  },
+  {
+    "id": "brand:connectix",
+    "name": "Connectix Cabling Systems",
+    "category": "Structured Cabling",
+    "scope": [
+      "Supply",
+      "Certified Install"
+    ],
+    "tier": "UK Commercial Enterprise"
+  },
+  {
+    "id": "brand:fluke-networks",
+    "name": "Fluke Networks",
+    "category": "Certification Test Equipment",
+    "scope": [
+      "DSX-8000 Certified Testing"
+    ],
+    "tier": "Global Gold Standard"
+  },
+  {
+    "id": "brand:samsung",
+    "name": "Samsung Electronics",
+    "category": "Smart TV & The Frame",
+    "scope": [
+      "Wall Mount",
+      "One-Connect In-Wall",
+      "Setup"
+    ],
+    "tier": "Consumer / High-End QLED"
+  },
+  {
+    "id": "brand:lg",
+    "name": "LG Electronics",
+    "category": "OLED & QNED Displays",
+    "scope": [
+      "Flush Wall Mount",
+      "Audio Bypass",
+      "Setup"
+    ],
+    "tier": "Consumer / Reference OLED"
+  },
+  {
+    "id": "brand:sony",
+    "name": "Sony",
+    "category": "Bravia OLED & Master Series",
+    "scope": [
+      "Wall Mount",
+      "Audio Routing",
+      "Setup"
+    ],
+    "tier": "Reference Visual / Audio"
+  },
+  {
+    "id": "brand:panasonic",
+    "name": "Panasonic",
+    "category": "Master OLED Displays",
+    "scope": [
+      "Wall Mount",
+      "Setup"
+    ],
+    "tier": "Reference Master OLED"
+  },
+  {
+    "id": "brand:hisense",
+    "name": "Hisense",
+    "category": "Mini-LED & Laser TV",
+    "scope": [
+      "Wall Mount",
+      "Setup"
+    ],
+    "tier": "Consumer Mini-LED"
+  },
+  {
+    "id": "brand:tcl",
+    "name": "TCL",
+    "category": "Mini-LED & QLED Displays",
+    "scope": [
+      "Wall Mount",
+      "Setup"
+    ],
+    "tier": "Consumer Mini-LED"
+  },
+  {
+    "id": "brand:sonos",
+    "name": "Sonos",
+    "category": "Home Theatre & Multi-Room Audio",
+    "scope": [
+      "Wall Mount (Arc/Beam/Sub)",
+      "eARC Integration"
+    ],
+    "tier": "Premium Wireless Audio"
+  },
+  {
+    "id": "brand:bose",
+    "name": "Bose",
+    "category": "Soundbars & Audio",
+    "scope": [
+      "Wall Mount",
+      "Setup"
+    ],
+    "tier": "Premium Audio"
+  },
+  {
+    "id": "brand:denon",
+    "name": "Denon (HEOS)",
+    "category": "AV Receivers & Multi-Room",
+    "scope": [
+      "Install",
+      "Surround Sound Setup"
+    ],
+    "tier": "Audiophile AV Receivers"
+  }
+]

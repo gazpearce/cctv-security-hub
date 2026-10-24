@@ -1,0 +1,713 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Corporation",
+        "HomeAndConstructionBusiness",
+        "SecuritySystemInstaller",
+        "Electrician"
+      ],
+      "@id": "https://adicommunications.co.uk/#organization",
+      "name": "ADI Communications LTD",
+      "legalName": "ADI Communications (Yorkshire) Limited",
+      "alternateName": [
+        "ADI Communications",
+        "ADI Aerials & Satellite",
+        "ADI Security Systems"
+      ],
+      "url": "https://adicommunications.co.uk",
+      "logo": "https://adicommunications.co.uk/assets/images/logo.webp",
+      "image": "https://adicommunications.co.uk/assets/images/van-hero.webp",
+      "telephone": "+44-7860-244274",
+      "email": "gary@adicommunications.co.uk",
+      "vatID": "GB167097773",
+      "taxID": "07323621",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "Companies House CRN",
+          "value": "07323621",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/07323621/more"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "UK VAT Registration",
+          "value": "GB 167 0977 73"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Google Knowledge Graph MID",
+          "value": "/g/11c545gdm0",
+          "url": "https://www.google.com/search?kgmid=/g/11c545gdm0&q=ADI+Communications+LTD"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Unit 15, Carr Mills Business Centre, 919 Bradford Road",
+        "addressLocality": "Birstall",
+        "addressRegion": "West Yorkshire",
+        "postalCode": "WF17 9JX",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.738,
+        "longitude": -1.662
+      },
+      "sameAs": [
+        "https://find-and-update.company-information.service.gov.uk/company/07323621/more",
+        "https://www.google.com/search?kgmid=/g/11c545gdm0&q=ADI+Communications+LTD",
+        "https://www.checkatrade.com/trades/cctvandalarmsservices"
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://adicommunications.co.uk/#gary-pearce",
+        "name": "Gary Pearce",
+        "jobTitle": "Director & Senior Master Engineer",
+        "telephone": "+44-7860-244274",
+        "hasCredential": [
+          "NVQ Level 1, 2 & 3 Aerials & Satellite Engineering",
+          "NVQ Level 1, 2, 3 & 4 Data Cabling & Fibre Optics",
+          "NVQ Level 1, 2 & 3 Electrical Installations",
+          "Certified CCTV & Security Systems Specialist"
+        ],
+        "knowsAbout": [
+          "SpaceX Starlink Gen 3 Satellite Broadband Installation",
+          "Hikvision 4K ColorVu IP CCTV",
+          "Dahua TiOC Active Perimeter Deterrence",
+          "Heavy-Duty TV Wall Mounting and CoreFix Anchoring",
+          "Ajax Grade 2 Wireless Smart Alarms & Jeweller Protocol",
+          "Multi-Gigabit Wi-Fi 6 & Wi-Fi 7 Mesh Architecture",
+          "Digital TV Aerials and CAI-Benchmarked WF100 Coaxial Cabling",
+          "Cat6 and Cat6a Structured Copper Cabling with Fluke Certification"
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "9.98",
+        "reviewCount": "84",
+        "bestRating": "10",
+        "worstRating": "1",
+        "ratingExplanation": "Verified customer feedback independently audited via Checkatrade."
+      },
+      "priceRange": "\u00a3\u00a3",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "07:00",
+          "closes": "21:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "West Yorkshire",
+          "containsPlace": [
+            "Bradford",
+            "Leeds",
+            "Wakefield",
+            "Huddersfield",
+            "Halifax",
+            "Shipley",
+            "Bingley",
+            "Saltaire",
+            "Baildon",
+            "Keighley",
+            "Haworth",
+            "Silsden",
+            "Cleckheaton",
+            "Queensbury",
+            "Clayton",
+            "Birkenshaw",
+            "Thornton",
+            "Drighlington",
+            "Wyke",
+            "Idle",
+            "Ilkley"
+          ]
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "North Yorkshire",
+          "containsPlace": [
+            "Northallerton",
+            "Richmond",
+            "Catterick Garrison",
+            "Bedale",
+            "Skipton",
+            "Settle",
+            "Harrogate",
+            "Knaresborough",
+            "Ripon",
+            "Thirsk"
+          ]
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "County Durham & Tees Valley",
+          "containsPlace": [
+            "Darlington",
+            "Bishop Auckland",
+            "Newton Aycliffe",
+            "Spennymoor",
+            "Crook",
+            "Shildon",
+            "Ferryhill",
+            "Barnard Castle",
+            "Durham City",
+            "Yarm"
+          ]
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Lancashire",
+          "containsPlace": [
+            "Blackburn",
+            "Darwen",
+            "Accrington",
+            "Burnley",
+            "Colne",
+            "Nelson",
+            "Clitheroe",
+            "Whalley",
+            "Longridge",
+            "Rawtenstall",
+            "Haslingden",
+            "Bacup",
+            "Whitworth",
+            "Preston",
+            "Blackpool"
+          ]
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater Manchester & Cheshire",
+          "containsPlace": [
+            "Manchester City Centre",
+            "Salford",
+            "Oldham",
+            "Rochdale",
+            "Stockport",
+            "Warrington",
+            "Altrincham",
+            "Chester",
+            "Crewe"
+          ]
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire, Humber & North Lincolnshire",
+          "containsPlace": [
+            "Doncaster",
+            "Scunthorpe",
+            "Grimsby",
+            "Cleethorpes",
+            "Goole",
+            "Gainsborough",
+            "Retford",
+            "Barton-upon-Humber",
+            "Immingham",
+            "Brigg",
+            "Thorne",
+            "Armthorpe",
+            "Bentley",
+            "Rossington",
+            "Conisbrough",
+            "Hatfield",
+            "Adwick le Street",
+            "Bawtry",
+            "Epworth"
+          ]
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Trade Installation & Engineering Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SpaceX Starlink Gen 3 Internet Installation",
+              "url": "https://adicommunications.co.uk/starlink-internet-installation/",
+              "description": "Professional SpaceX Starlink satellite broadband installation featuring non-drill chimney lashing cradles, 90mph gale Pennine brackets, discrete Cat6 routing, and whole-home mesh Wi-Fi integration."
+            },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "199.00",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": false,
+              "description": "From \u00a3199 + VAT standard installation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "4K ColorVu & TiOC CCTV Installation",
+              "url": "https://adicommunications.co.uk/cctv-installation/",
+              "description": "High-definition PoE surveillance camera installations with 24/7 full-colour night vision, Western Digital Purple NVR local storage, and zero monthly subscription fees."
+            },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "299.00",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": false,
+              "description": "From \u00a3299 + VAT single camera package; multi-camera packages from \u00a3495 + VAT."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heavy-Duty TV Wall Mounting",
+              "url": "https://adicommunications.co.uk/tv-wall-mounting/",
+              "description": "Professional TV wall mounting across dot-and-dab drywall, stud partitions, and 550mm solid Yorkshire stone walls using 120kg-rated CoreFix anchors with concealed cabling."
+            },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "89.99",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": false,
+              "description": "From \u00a389.99 + VAT flat/tilt bracket fitting."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ajax Grade 2 Wireless Smart Alarms",
+              "url": "https://adicommunications.co.uk/ajax-alarm/",
+              "description": "Grade 2 accredited wireless intruder alarm installation with 868MHz Jeweller anti-jamming protocol, 0.15s photo verification, and smartphone app control with zero monthly fees."
+            },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "599.00",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": false,
+              "description": "From \u00a3599 + VAT complete starter kit."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Domestic & Commercial Wi-Fi Solutions",
+              "url": "https://adicommunications.co.uk/wifi-installation/",
+              "description": "Elimination of residential and commercial Wi-Fi dead zones using multi-gigabit Wi-Fi 6/7 mesh ceiling access points and point-to-point wireless outbuilding links."
+            },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "145.00",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": false,
+              "description": "From \u00a3145 fitted for mesh points; outbuilding bridges from \u00a3295 fitted."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital TV Aerial Installation & Repairs",
+              "url": "https://adicommunications.co.uk/tv-aerial-installation/",
+              "description": "Freeview HD digital TV aerial installation, realignment, 4G/5G LTE filtering, and multi-room coaxial distribution fitted with CAI-benchmarked WF100 double-screened cable."
+            },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "129.00",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": false,
+              "description": "From \u00a3129 + VAT standard installation; repairs from \u00a369 + VAT."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Structured Cat6 & Data Cabling",
+              "url": "https://adicommunications.co.uk/data-cabling/",
+              "description": "Fluke-certified domestic and commercial Cat5e, Cat6, Cat6a, and Cat7 network drops, patch panel termination, and server rack installations."
+            },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "129.00",
+              "priceCurrency": "GBP",
+              "valueAddedTaxIncluded": false,
+              "description": "From \u00a3129 per point for Cat5e; Cat6 from \u00a3169 per point."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://adicommunications.co.uk/#faq-knowledge-vault",
+      "name": "ADI Communications Master Trade Engineering Knowledge Vault & FAQs",
+      "description": "50+ verified customer questions and master engineering answers regarding Starlink, CCTV, TV wall mounting, Ajax alarms, Wi-Fi mesh, and digital TV aerials.",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are you a national broker or local engineers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ADI Communications is an independent regional engineering company owned by master engineer Gary Pearce. We operate dedicated, employed and vetted local field engineers residing directly across Yorkshire, Lancashire, Greater Manchester, and County Durham. You deal directly with your local engineer, not a remote call centre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can an engineer attend my property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer same-day emergency callouts for urgent security, alarm, or storm-damage faults, and standard bookings are typically scheduled within 24 to 48 hours across all serviced postcodes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you charge a call-out fee just to inspect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Diagnostic signal surveys and fault-finding inspections start at \u00a369 + VAT. If you proceed with the remedial installation work on the day, this fee is directly credited against the completed job."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What insurance coverage do your engineers carry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All engineers and installation works are fully backed by our \u00a310,000,000 (\u00a310 Million GBP) specialist trade public liability insurance policy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods do you accept on site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every engineer vehicle carries a chip-and-pin mobile card terminal accepting Visa, Mastercard, American Express, Apple Pay, and Google Pay. We also accept direct bank transfers (BACS) and provide itemized VAT invoices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What warranty is provided on parts and labor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every installation carries a comprehensive 12-month parts and labor guarantee. Manufacturer warranties on hardware (such as Ajax alarms and Hikvision cameras) range from 2 to 3 years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Gary Pearce and ADI Communications members of the CAI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Gary Pearce and ADI Communications are independent specialists and are not members of the CAI. All RF aerial and satellite work is strictly fitted with CAI-benchmarked equipment and double-screened WF100 coaxial cabling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is your head office located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our registered headquarters and central trade unit is Unit 15, Carr Mills Business Centre, 919 Bradford Road, Birstall, Batley, WF17 9JX."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast is Starlink in rural UK areas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Starlink Gen 3 Standard dish consistently delivers download speeds between 150Mbps and 300Mbps, upload speeds of 15Mbps to 35Mbps, and low latencies of 25ms to 40ms, making it ideal for 4K streaming, online gaming, and remote video conferencing where copper broadband is slow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Starlink be installed on a chimney without drilling into the brickwork?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We specialize in non-drill stainless steel chimney lashing cradles that wrap securely around the stack. This protects delicate lime mortar, heritage stone, and clay flue liners from cracking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will Starlink survive severe 80\u201390mph Pennine winter gales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We use heavy-duty galvanized Pennine storm brackets, thick-walled steel masts, and heavy-gauge M10 masonry shield anchors engineered specifically for high-wind exposed moorland locations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to buy the Starlink dish before you arrive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Customers order the Starlink Gen 3 Standard Kit directly from Starlink.com. Gary Pearce and our engineers supply all professional commercial mounting hardware, masts, brackets, cabling, wall grommets, and mesh Wi-Fi extensions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you get the Starlink cable through thick stone walls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use specialized 450mm\u2013600mm SDS carbide masonry drills, drilling at a slight downward angle with silicone drip loops and waterproof cable grommets to prevent water penetration into 550mm Yorkshire and Pennine stone walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you send Starlink broadband to my garden office without digging up the lawn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We install 60GHz / 5GHz point-to-point wireless bridges that transmit full gigabit speeds wirelessly through the air up to several hundred meters with zero ground excavation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Starlink melt snow and ice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Gen 3 dish features an automatic electronic heating element that detects snow accumulation and melts ice to maintain a continuous satellite lock during harsh winter weather."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I connect hardwired devices like a PC, Sky box, or CCTV NVR to Starlink?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Gen 3 Starlink router features two built-in gigabit RJ45 Ethernet ports, allowing direct hardwired connection to network switches, PCs, and CCTV recorders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you mount a large 75-inch or 85-inch TV onto modern dot-and-dab plasterboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We never use weak plastic plasterboard plugs. We install heavy-duty CoreFix steel sleeve anchors that bridge the cavity gap directly into the solid inner thermal blockwork, rated to hold over 100kg safely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you hide all the messy TV cables?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer complete in-wall cable concealment, routing HDMI 2.1, optical, network, and power cables through stud cavities with recessed brush plates, or installing paintable slimline D-Line trunking along skirting lines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you mount a TV safely above a fireplace or wood-burning stove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We assess wall surface temperatures, check chimney breast depth, and fit specialized tilt or cantilever brackets to optimize viewing angles while protecting the display from ambient heat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you install the Samsung The Frame TV completely flush to the wall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We install Samsung's proprietary Slim Fit wall bracket and recess the One Connect box into the stud wall cavity or route the clear umbilical cable to a discrete media cabinet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do your engineers supply the TV wall bracket?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our vans carry ultra-slim fixed brackets, tilting brackets, and heavy-duty double-arm full-motion cantilever brackets accommodating VESA sizes from 100x100 up to 800x600."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you wall-mount soundbars and gaming consoles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We supply and install custom floating brackets for Sonos, Bose, Samsung soundbars, PlayStation 5, and Xbox Series X consoles with concealed interconnect wiring."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do your CCTV systems require monthly subscription fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our CCTV systems record locally to internal surveillance-grade Western Digital Purple hard drives inside a secure NVR. You own the equipment and recordings 100%, with zero monthly subscription fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see clear colour images at night in complete darkness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We install Hikvision ColorVu and Dahua Full-Color cameras with f/1.0 super-apertures and warm supplemental lighting, providing full daytime colour clarity 24 hours a day even in zero-lux pitch black."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the cameras warn intruders before they touch a door or window?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We install TiOC (Three-in-One Camera) active deterrence units equipped with red and blue flashing strobe lights, built-in 110dB sirens, and customizable recorded voice warnings triggered by AI human and vehicle perimeter crossing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I view live camera footage and recordings on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We set up the encrypted Hik-Connect or DMSS mobile application on your Apple iOS or Android smartphones and tablets, providing live streaming, recorded playback, and instant motion notifications anywhere in the world."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are hardwired PoE cameras better than wireless battery cameras like Ring or Blink?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, significantly. Hardwired Power over Ethernet (PoE) cameras record 24/7 without missing motion events, never suffer battery drain during cold UK winters, and cannot be taken offline by cheap 2.4GHz Wi-Fi de-authentication jammers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is domestic CCTV legal with regards to neighbours and GDPR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We configure digital privacy masking to block neighbours' windows, gardens, and public footpaths, ensuring full compliance with UK Information Commissioner's Office (ICO) domestic CCTV guidelines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How secure are Ajax wireless alarms against burglars using RF jammers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ajax alarms use the proprietary Jeweller 868MHz protocol with frequency hopping. If a burglar attempts to jam the radio signal, the hub detects the interference within 0.15 seconds, switches frequencies, and immediately triggers an alarm notification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I get photo proof when an alarm sensor is triggered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Ajax MotionCam PIR detectors feature an integrated camera that captures an animated series of photos upon motion detection and delivers them to your smartphone within 9 seconds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to pay a monthly monitoring fee for an Ajax alarm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can self-monitor the alarm completely free using the Ajax mobile app. If you require professional police dispatch, the hub can be connected to an accredited UK NSI Gold Alarm Receiving Centre (ARC)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my dog or cat trigger the Ajax alarm sensors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ajax PIR detectors use SmartDetect software algorithms that ignore pets weighing up to 20kg and under 50cm in height when installed at the correct 2.4m height."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to the alarm during a power cut?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ajax central hub features an internal rechargeable backup battery providing up to 16 hours of continuous operation, alongside dual-SIM 4G cellular backup to ensure alerts are transmitted even if home broadband is down."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Ajax alarms protect against water leaks and house fires?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Ajax LeaksProtect sensors detect leaking washing machines or burst pipes within seconds, while FireProtect 2 dual-spectrum optical smoke and heat detectors provide early warning of kitchen and electrical fires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my Wi-Fi weak in some rooms or upstairs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modern foil-backed insulation, dense concrete floor screeds, and 500mm solid stone walls attenuate radio frequency signals by up to 25dB\u201330dB per partition, suffocating standard ISP router signals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a Wi-Fi repeater and hardwired access points?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cheap plug-in repeaters cut bandwidth in half and introduce latency because they communicate wirelessly. Hardwired ceiling access points are connected via solid-copper Cat6 cables directly to the router, delivering full gigabit speeds with zero signal drop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you run data cabling into a home office without lifting carpet and floorboards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We utilize discrete exterior UV-stabilized Cat6 runs along mortar lines, discrete loft cavity drops, and under-floor voids to route network cables neatly into home offices with zero wall destruction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Cat6 and Cat6a cabling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cat6 supports 1Gbps up to 100 meters and 10Gbps up to 55 meters. Cat6a features internal cross-talk shielding and supports full 10Gbps speeds up to 100 meters, making it ideal for future-proof home networks and commercial offices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you test data points after installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every network drop is terminated into professional RJ45 Euro-modules and verified with Fluke cable certifiers for wiremap continuity, attenuation, and gigabit throughput."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do my Freeview TV channels pixelate or freeze?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pixelation is caused by low RF signal strength, water ingress into aging coaxial cables, poor transmitter alignment, or 4G/5G mobile mast interference. We install high-gain aerials and LTE700 micro-cavity filters to restore crystal-clear reception."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you install a TV aerial inside the loft instead of on the roof?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If local signal strength permits and your roof does not feature signal-blocking foil insulation, we can install a high-gain aerial inside the loft space, protecting it permanently from storm damage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get Freeview in multiple bedrooms from a single aerial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We install shielded, low-noise multi-way distribution amplifiers in the loft, splitting the signal cleanly to 2, 4, 6, or 8 television points without signal loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get Freeview reception if my property is down in a valley behind a hill?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We utilize specialized high-gain wideband aerials with low-noise masthead pre-amplifiers, aligning precisely to local relay repeaters to bypass major hill shading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you repair storm-damaged aerials and loose brackets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We replace snapped masts, rusted chimney brackets, and frayed coaxial cables, using heavy-duty galvanized steel brackets that withstand extreme UK weather.\n\n---"
+          }
+        }
+      ]
+    }
+  ]
+}

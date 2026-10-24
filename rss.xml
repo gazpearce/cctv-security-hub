@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>ADI Communications | Security, Starlink &amp; Audio Visual Insights</title>
+    <atom:link href="https://adicommunications.co.uk/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://adicommunications.co.uk/news/</link>
+    <description>Official trade engineering guides, surveillance benchmarks, Starlink installations, and B2B hospitality mounting insights by Gary Pearce, Lead Engineer at ADI Communications (07860 244 274).</description>
+    <lastBuildDate>Sat, 24 Oct 2026 14:52:21 GMT</lastBuildDate>
+    <language>en-GB</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <image>
+      <url>https://adicommunications.co.uk/assets/images/gary-pearce-profile.webp</url>
+      <title>ADI Communications | Security, Starlink &amp; Audio Visual Insights</title>
+      <link>https://adicommunications.co.uk/news/</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    <item>
+      <title><![CDATA[4G 5G Mobile Mast TV Aerial Interference Fixes]]></title>
+      <link>https://adicommunications.co.uk/news/4g-5g-mobile-interference-tv-aerials/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/4g-5g-mobile-interference-tv-aerials/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Diagnose Freeview picture freezing, blocky pixelation, and channel loss caused by 700MHz and 800MHz mobile phone masts. How CAI-certified LTE filters restore signal.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/coaxial-aerial-cable-connector-crimp.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/coaxial-aerial-cable-connector-crimp.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[4G 5G Mobile Mast TV Aerial Interference Fixes]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Diagnose Freeview picture freezing, blocky pixelation, and channel loss caused by 700MHz and 800MHz mobile phone masts. How CAI-certified LTE filters restore signal.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/coaxial-aerial-cable-connector-crimp.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[8K CCTV Camera Price UK: True 8K, 16MP Panoramic &]]></title>
+      <link>https://adicommunications.co.uk/news/8k-cctv-camera-price-guide-uk/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/8k-cctv-camera-price-guide-uk/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[How much does an 8K CCTV camera cost in the UK? We separate true 8K UHD (7680x4320) from 16MP panoramic (7680x2160) units, comparing real UK gear and turnkey fitting costs.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/hikvision-panoramic-8k-turret-installation.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/hikvision-panoramic-8k-turret-installation.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[8K CCTV Camera Price UK: True 8K, 16MP Panoramic &]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How much does an 8K CCTV camera cost in the UK? We separate true 8K UHD (7680x4320) from 16MP panoramic (7680x2160) units, comparing real UK gear and turnkey fitting costs.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/hikvision-panoramic-8k-turret-installation.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Ajax Outdoor MotionCam: Zero False Alarms & Photo Verification]]></title>
+      <link>https://adicommunications.co.uk/news/ajax-outdoor-motioncam-false-alarm-prevention/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/ajax-outdoor-motioncam-false-alarm-prevention/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Intruder & Fire Alarms]]></category>
+      <description><![CDATA[How Ajax MotionCam Outdoor stops false alarms from pets and trees in UK storm weather while sending photo proof to your phone within 9 seconds.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/ajax_outdoor_motioncam_installation.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/ajax_outdoor_motioncam_installation.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Ajax Outdoor MotionCam: Zero False Alarms & Photo Verification]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How Ajax MotionCam Outdoor stops false alarms from pets and trees in UK storm weather while sending photo proof to your phone within 9 seconds.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/ajax_outdoor_motioncam_installation.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Ajax Wireless Alarm Review 2026: UK Grade 2 Security]]></title>
+      <link>https://adicommunications.co.uk/news/ajax-wireless-alarms-review/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/ajax-wireless-alarms-review/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Intruder & Fire Alarms]]></category>
+      <description><![CDATA[Expert UK review of Ajax Systems wireless alarms. EN 50131 Grade 2 certification, Jeweller 2,000m encrypted radio, MotionCam 0.15s photo verification, £0 monthly fees & video explainer.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/ajax-wireless-smart-alarm-motioncam.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/ajax-wireless-smart-alarm-motioncam.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Ajax Wireless Alarm Review 2026: UK Grade 2 Security]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Expert UK review of Ajax Systems wireless alarms. EN 50131 Grade 2 certification, Jeweller 2,000m encrypted radio, MotionCam 0.15s photo verification, £0 monthly fees & video explainer.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/ajax-wireless-smart-alarm-motioncam.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Best Smart Video Doorbells UK Without Subscription]]></title>
+      <link>https://adicommunications.co.uk/news/best-smart-doorbell-cameras-uk/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/best-smart-doorbell-cameras-uk/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[CCTV & Security]]></category>
+      <description><![CDATA[Best subscription-free smart doorbells in the UK for 2026. Eufy Dual, Reolink PoE, and Hikvision doorbells reviewed. Save £50-£120/year with encrypted local storage.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/smart-doorbell-camera-installation-uk.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/smart-doorbell-camera-installation-uk.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Best Smart Video Doorbells UK Without Subscription]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Best subscription-free smart doorbells in the UK for 2026. Eufy Dual, Reolink PoE, and Hikvision doorbells reviewed. Save £50-£120/year with encrypted local storage.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/smart-doorbell-camera-installation-uk.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Can You Run Cat6 Cable Outside Without Conduit? UK]]></title>
+      <link>https://adicommunications.co.uk/news/can-cat6-run-outside-without-conduit/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/can-cat6-run-outside-without-conduit/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Data Cabling & Networking]]></category>
+      <description><![CDATA[The dangers of running indoor PVC Ethernet cable outside in the UK. Understand UV degradation, moisture ingress, PE black exterior sheath, and SWA armoured cables.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/backbone_cable_routing.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/backbone_cable_routing.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Can You Run Cat6 Cable Outside Without Conduit? UK]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[The dangers of running indoor PVC Ethernet cable outside in the UK. Understand UV degradation, moisture ingress, PE black exterior sheath, and SWA armoured cables.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/backbone_cable_routing.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[4K CCTV Frame Rate vs Bitrate: Optimal Surveillance]]></title>
+      <link>https://adicommunications.co.uk/news/cctv-frame-rate-vs-bitrate-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/cctv-frame-rate-vs-bitrate-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Why 15 FPS at high bitrate delivers sharper UK CCTV evidence than 30 FPS. Understand H.265+ compression, motion blur reduction, and hard drive storage calculations.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cctv-2-camera-starter-package-installation.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cctv-2-camera-starter-package-installation.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[4K CCTV Frame Rate vs Bitrate: Optimal Surveillance]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Why 15 FPS at high bitrate delivers sharper UK CCTV evidence than 30 FPS. Understand H.265+ compression, motion blur reduction, and hard drive storage calculations.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cctv-2-camera-starter-package-installation.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[CCTV Installation Cost UK]]></title>
+      <link>https://adicommunications.co.uk/news/cctv-installation-cost-guide-uk/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/cctv-installation-cost-guide-uk/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Transparent UK CCTV installation costs for 2026. 2-camera (£495), 4-camera ColorVu (£695), 8-camera commercial packages. Zero monthly fees, local hard drive storage.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cctv-4-camera-colorvu-package-installation.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cctv-4-camera-colorvu-package-installation.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[CCTV Installation Cost UK]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Transparent UK CCTV installation costs for 2026. 2-camera (£495), 4-camera ColorVu (£695), 8-camera commercial packages. Zero monthly fees, local hard drive storage.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cctv-4-camera-colorvu-package-installation.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[UK Domestic CCTV Laws: ICO Guidelines & Neighbour]]></title>
+      <link>https://adicommunications.co.uk/news/cctv-laws-gdpr-neighbours-uk/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/cctv-laws-gdpr-neighbours-uk/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Complete legal guide to home CCTV in the UK. ICO guidelines, neighbour privacy masking, audio recording legality, warning signs, and avoiding GDPR harassment claims.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/advanced-gdpr-cctv-privacy-masking-for-uk-residential-properties_image1.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/advanced-gdpr-cctv-privacy-masking-for-uk-residential-properties_image1.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[UK Domestic CCTV Laws: ICO Guidelines & Neighbour]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Complete legal guide to home CCTV in the UK. ICO guidelines, neighbour privacy masking, audio recording legality, warning signs, and avoiding GDPR harassment claims.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/advanced-gdpr-cctv-privacy-masking-for-uk-residential-properties_image1.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Dahua TiOC 2.0 Active Deterrence CCTV: UK Field Review]]></title>
+      <link>https://adicommunications.co.uk/news/dahua-tioc-active-deterrence-night-vision-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/dahua-tioc-active-deterrence-night-vision-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[CCTV & Security]]></category>
+      <description><![CDATA[How Dahua Three-in-One Cameras (TiOC) stop UK intruders before break-ins occur. Full color night vision, red/blue flashing lights, AI tripwire perimeter defense.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cctv_tioc_active_deterrence_field.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cctv_tioc_active_deterrence_field.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Dahua TiOC 2.0 Active Deterrence CCTV: UK Field Review]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How Dahua Three-in-One Cameras (TiOC) stop UK intruders before break-ins occur. Full color night vision, red/blue flashing lights, AI tripwire perimeter defense.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cctv_tioc_active_deterrence_field.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Garden Office Internet & Wi-Fi: Armoured Cable vs]]></title>
+      <link>https://adicommunications.co.uk/news/garden-office-wifi-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/garden-office-wifi-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Data Cabling & Networking]]></category>
+      <description><![CDATA[How to get 500Mbps+ broadband into a UK garden office pod. SWA armoured direct-burial Cat6a vs 60GHz wireless point-to-point links, trenching depths, and internal Wi-Fi access points.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/direct-bury-swa-armoured-cat6a-garden-office.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/direct-bury-swa-armoured-cat6a-garden-office.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Garden Office Internet & Wi-Fi: Armoured Cable vs]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How to get 500Mbps+ broadband into a UK garden office pod. SWA armoured direct-burial Cat6a vs 60GHz wireless point-to-point links, trenching depths, and internal Wi-Fi access points.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/direct-bury-swa-armoured-cat6a-garden-office.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Hikvision ColorVu vs Dahua TiOC: 2026 UK Night]]></title>
+      <link>https://adicommunications.co.uk/news/hikvision-colorvu-vs-dahua-tioc/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/hikvision-colorvu-vs-dahua-tioc/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[CCTV & Security]]></category>
+      <description><![CDATA[Real-world comparison of Hikvision ColorVu F1.0 and Dahua TiOC active deterrence cameras. Night-time footage clarity, false alarm filtering, app performance, and UK pricing.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cctv-colorvu-clean.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cctv-colorvu-clean.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Hikvision ColorVu vs Dahua TiOC: 2026 UK Night]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Real-world comparison of Hikvision ColorVu F1.0 and Dahua TiOC active deterrence cameras. Night-time footage clarity, false alarm filtering, app performance, and UK pricing.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cctv-colorvu-clean.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Data Cabling for Homes UK: Cat6 vs Cat6a Ethernet]]></title>
+      <link>https://adicommunications.co.uk/news/home-data-cabling-cat6-vs-cat6a/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/home-data-cabling-cat6-vs-cat6a/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Data Cabling & Networking]]></category>
+      <description><![CDATA[Hardwired home Ethernet network installation guide. Cat6 vs Cat6a vs Cat7, discrete routing under floorboards, patch panels, PoE switches, and garden office links.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cabling_standards_comparison.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cabling_standards_comparison.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Data Cabling for Homes UK: Cat6 vs Cat6a Ethernet]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Hardwired home Ethernet network installation guide. Cat6 vs Cat6a vs Cat7, discrete routing under floorboards, patch panels, PoE switches, and garden office links.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cabling_standards_comparison.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[The Hotel & HMO Asset Protection Guide: Anti-Theft TV Wall Mounting Systems]]></title>
+      <link>https://adicommunications.co.uk/news/hotel-hmo-anti-theft-tv-wall-mounting-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/hotel-hmo-anti-theft-tv-wall-mounting-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[A commercial guide to hotel TV wall mounting, anti-theft locking brackets, and securing hospitality displays (Samsung, LG, Peerless-AV) across Yorkshire & Lancashire.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/in-wall-concealed-tv-mounting-living-room.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/in-wall-concealed-tv-mounting-living-room.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[The Hotel & HMO Asset Protection Guide: Anti-Theft TV Wall Mounting Systems]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[A commercial guide to hotel TV wall mounting, anti-theft locking brackets, and securing hospitality displays (Samsung, LG, Peerless-AV) across Yorkshire & Lancashire.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/in-wall-concealed-tv-mounting-living-room.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Can Wireless Alarms Be Jammed? Jeweller Anti-Jamming]]></title>
+      <link>https://adicommunications.co.uk/news/how-burglars-jam-wireless-alarms/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/how-burglars-jam-wireless-alarms/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Intruder & Fire Alarms]]></category>
+      <description><![CDATA[The truth about RF jamming on wireless home alarms. Why cheap 433MHz Wi-Fi alarms fail, and how Ajax Jeweller frequency-hopping radio detects and defeats jamming in seconds.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/ajax-alarm-clean.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/ajax-alarm-clean.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Can Wireless Alarms Be Jammed? Jeweller Anti-Jamming]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[The truth about RF jamming on wireless home alarms. Why cheap 433MHz Wi-Fi alarms fail, and how Ajax Jeweller frequency-hopping radio detects and defeats jamming in seconds.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/ajax-alarm-clean.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Slow Home Broadband at Night? Fix Internal Wiring]]></title>
+      <link>https://adicommunications.co.uk/news/how-to-fix-slow-home-broadband-wiring/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/how-to-fix-slow-home-broadband-wiring/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Data Cabling & Networking]]></category>
+      <description><![CDATA[Diagnose internal UK telephone and broadband bottlenecks. How old bell wire extensions, damaged master sockets, and RFI powerline noise destroy FTTC and FTTP speeds.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/york_telecom_1790262647482.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/york_telecom_1790262647482.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Slow Home Broadband at Night? Fix Internal Wiring]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Diagnose internal UK telephone and broadband bottlenecks. How old bell wire extensions, damaged master sockets, and RFI powerline noise destroy FTTC and FTTP speeds.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/york_telecom_1790262647482.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Get Ethernet Upstairs Without Running Cables (4 Ways)]]></title>
+      <link>https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/how-to-get-ethernet-upstairs-without-running-cables/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Data Cabling & Networking]]></category>
+      <description><![CDATA[Learn how to get Ethernet to an upstairs bedroom without running cables through the house. Compare external UV Cat6 runs, loft cavity drops, MoCA coax, and Powerline.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/how-to-get-ethernet-upstairs-without-running-cables.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/how-to-get-ethernet-upstairs-without-running-cables.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Get Ethernet Upstairs Without Running Cables (4 Ways)]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Learn how to get Ethernet to an upstairs bedroom without running cables through the house. Compare external UV Cat6 runs, loft cavity drops, MoCA coax, and Powerline.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/how-to-get-ethernet-upstairs-without-running-cables.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Hide TV Wall Cables Without Plastering: In-Wall]]></title>
+      <link>https://adicommunications.co.uk/news/how-to-hide-tv-cables-without-chasing/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/how-to-hide-tv-cables-without-chasing/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[How to conceal HDMI and power cables behind a wall-mounted TV without messy plaster chasing. Stud cavity routing, recessed brush faceplates, and low-profile trunking options.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/best-practices-for-hidden-cable-access-hatches-setups-in-ashington_image1.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/best-practices-for-hidden-cable-access-hatches-setups-in-ashington_image1.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Hide TV Wall Cables Without Plastering: In-Wall]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How to conceal HDMI and power cables behind a wall-mounted TV without messy plaster chasing. Stud cavity routing, recessed brush faceplates, and low-profile trunking options.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/best-practices-for-hidden-cable-access-hatches-setups-in-ashington_image1.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[How to Save CCTV Footage for Police UK]]></title>
+      <link>https://adicommunications.co.uk/news/how-to-save-cctv-footage-for-police-uk/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/how-to-save-cctv-footage-for-police-uk/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Need to give CCTV footage to the police? Learn how to save and export CCTV from an NVR or DVR to USB, preserve the original recording and avoid losing evidence.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/how-to-save-cctv-footage-for-police-hero.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/how-to-save-cctv-footage-for-police-hero.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[How to Save CCTV Footage for Police UK]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Need to give CCTV footage to the police? Learn how to save and export CCTV from an NVR or DVR to USB, preserve the original recording and avoid losing evidence.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/how-to-save-cctv-footage-for-police-hero.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Is Hikvision Banned in the UK? Homeowner Guide (2026)]]></title>
+      <link>https://adicommunications.co.uk/news/is-hikvision-banned-uk-homeowners/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/is-hikvision-banned-uk-homeowners/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[CCTV & Security]]></category>
+      <description><![CDATA[Find out whether Hikvision CCTV is banned in the UK, what the government restrictions mean for homeowners, and how to secure your existing cameras.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/is-hikvision-banned-uk-homeowners-hero.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/is-hikvision-banned-uk-homeowners-hero.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Is Hikvision Banned in the UK? Homeowner Guide (2026)]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Find out whether Hikvision CCTV is banned in the UK, what the government restrictions mean for homeowners, and how to secure your existing cameras.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/is-hikvision-banned-uk-homeowners-hero.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Loft TV Aerial vs Outdoor Roof Chimney Aerial UK]]></title>
+      <link>https://adicommunications.co.uk/news/lofted-vs-roof-tv-aerial-reception/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/lofted-vs-roof-tv-aerial-reception/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Can a TV aerial work inside a loft? Why wet slate tiles, foil-backed insulation, and solar panels cause up to 50% signal attenuation compared to external chimney mounts.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cai-benchmarked-digital-tv-aerial-chimney.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cai-benchmarked-digital-tv-aerial-chimney.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Loft TV Aerial vs Outdoor Roof Chimney Aerial UK]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Can a TV aerial work inside a loft? Why wet slate tiles, foil-backed insulation, and solar panels cause up to 50% signal attenuation compared to external chimney mounts.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cai-benchmarked-digital-tv-aerial-chimney.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Mesh Wi-Fi vs Hardwired Access Points UK: Thick Wall]]></title>
+      <link>https://adicommunications.co.uk/news/mesh-wifi-vs-hardwired-access-points/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/mesh-wifi-vs-hardwired-access-points/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Data Cabling & Networking]]></category>
+      <description><![CDATA[Why wireless mesh Wi-Fi fails in Victorian brick and stone homes. How hardwired PoE ceiling access points deliver full ultra-fast multi-gigabit throughput with seamless roaming.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/foil-backed-pir-insulation-wifi.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/foil-backed-pir-insulation-wifi.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Mesh Wi-Fi vs Hardwired Access Points UK: Thick Wall]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Why wireless mesh Wi-Fi fails in Victorian brick and stone homes. How hardwired PoE ceiling access points deliver full ultra-fast multi-gigabit throughput with seamless roaming.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/foil-backed-pir-insulation-wifi.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Mounting Heavy TVs on Exposed Brick & Stone Walls]]></title>
+      <link>https://adicommunications.co.uk/news/mounting-heavy-tv-on-exposed-brick-stone/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/mounting-heavy-tv-on-exposed-brick-stone/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[How to safely mount heavy OLED and large-format TVs onto crumbling Victorian brick, lime mortar, and irregular Yorkshire stone using chemical resin studs.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/tv_mounting_brick_stone_specialist.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/tv_mounting_brick_stone_specialist.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Mounting Heavy TVs on Exposed Brick & Stone Walls]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How to safely mount heavy OLED and large-format TVs onto crumbling Victorian brick, lime mortar, and irregular Yorkshire stone using chemical resin studs.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/tv_mounting_brick_stone_specialist.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[OLED vs QLED TV for Wall Mounting: Living Room Guide]]></title>
+      <link>https://adicommunications.co.uk/news/oled-vs-qled-wall-mounting/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/oled-vs-qled-wall-mounting/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Choosing between LG OLED and Samsung QLED for wall mounting. Thinness, zero-gap flush brackets, reflections in bright daylit rooms, and anti-burn-in heat dissipation.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/oled-tv-wall-mounting-guide.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/oled-tv-wall-mounting-guide.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[OLED vs QLED TV for Wall Mounting: Living Room Guide]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Choosing between LG OLED and Samsung QLED for wall mounting. Thinness, zero-gap flush brackets, reflections in bright daylit rooms, and anti-burn-in heat dissipation.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/oled-tv-wall-mounting-guide.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Power over Ethernet (PoE) for Homes: 802.3af vs]]></title>
+      <link>https://adicommunications.co.uk/news/power-over-ethernet-poe-home-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/power-over-ethernet-poe-home-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Data Cabling & Networking]]></category>
+      <description><![CDATA[Complete homeowner guide to PoE (Power over Ethernet). Understand PoE, PoE+ and PoE++ wattages, powering CCTV cameras, Wi-Fi 6 access points, and smart home hubs cleanly.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cctv-2-camera-starter-package-installation.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cctv-2-camera-starter-package-installation.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Power over Ethernet (PoE) for Homes: 802.3af vs]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Complete homeowner guide to PoE (Power over Ethernet). Understand PoE, PoE+ and PoE++ wattages, powering CCTV cameras, Wi-Fi 6 access points, and smart home hubs cleanly.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cctv-2-camera-starter-package-installation.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Stop Spiders & Rain Triggering CCTV Alarms: AI]]></title>
+      <link>https://adicommunications.co.uk/news/prevent-cctv-spider-webs-false-alarms/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/prevent-cctv-spider-webs-false-alarms/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Eliminate false security alerts from spiders, moths, headlights, and rain. How Hikvision AcuSense and Dahua WizSense AI deep learning filter out 98% of false motion triggers.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cctv-turret-f10-lens.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cctv-turret-f10-lens.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Stop Spiders & Rain Triggering CCTV Alarms: AI]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Eliminate false security alerts from spiders, moths, headlights, and rain. How Hikvision AcuSense and Dahua WizSense AI deep learning filter out 98% of false motion triggers.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cctv-turret-f10-lens.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Samsung The Frame TV Installation Guide: Flush]]></title>
+      <link>https://adicommunications.co.uk/news/samsung-the-frame-tv-installation-secrets/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/samsung-the-frame-tv-installation-secrets/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[How to achieve true zero-gap flush mounting with Samsung The Frame. Slim-fit brackets, in-wall One Connect box recesses, and hiding the clear optical One Invisible Connection cable.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Samsung The Frame TV Installation Guide: Flush]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How to achieve true zero-gap flush mounting with Samsung The Frame. Slim-fit brackets, in-wall One Connect box recesses, and hiding the clear optical One Invisible Connection cable.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Sky Glass TV Wall Mounting Guide: Fixings & Brackets]]></title>
+      <link>https://adicommunications.co.uk/news/sky-glass-tv-wall-mounting-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/sky-glass-tv-wall-mounting-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Expert Sky Glass wall mounting guide. Handling 28kg–35kg weights, Fischer Duopower & CoreFix anchors on dot-and-dab drywall, bracket selection, and hidden cable routing.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Sky Glass TV Wall Mounting Guide: Fixings & Brackets]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Expert Sky Glass wall mounting guide. Handling 28kg–35kg weights, Fischer Duopower & CoreFix anchors on dot-and-dab drywall, bracket selection, and hidden cable routing.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Starlink Gen 3 Bypass Mode Setup for Mesh Wi-Fi]]></title>
+      <link>https://adicommunications.co.uk/news/starlink-bypass-mode-mesh-wifi-setup/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/starlink-bypass-mode-mesh-wifi-setup/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Starlink & Satellite]]></category>
+      <description><![CDATA[Step-by-step guide to configuring Starlink Gen 3 Bypass Mode. Connecting UniFi, TP-Link Deco, and eero mesh systems via built-in Ethernet ports without double NAT.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/mesh-wifi-clean.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/mesh-wifi-clean.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Starlink Gen 3 Bypass Mode Setup for Mesh Wi-Fi]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Step-by-step guide to configuring Starlink Gen 3 Bypass Mode. Connecting UniFi, TP-Link Deco, and eero mesh systems via built-in Ethernet ports without double NAT.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/mesh-wifi-clean.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Routing Starlink Cables Through UK Brick Walls]]></title>
+      <link>https://adicommunications.co.uk/news/starlink-cable-routing-and-grommets/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/starlink-cable-routing-and-grommets/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Starlink & Satellite]]></category>
+      <description><![CDATA[Professional guide to routing Starlink Gen 3 RJ45 cables through exterior masonry. Upward-angled drilling, silicone drip loops, masonry grommets, and internal brush faceplates.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/direct-bury-swa-armoured-cat6a-garden-office.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/direct-bury-swa-armoured-cat6a-garden-office.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Routing Starlink Cables Through UK Brick Walls]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Professional guide to routing Starlink Gen 3 RJ45 cables through exterior masonry. Upward-angled drilling, silicone drip loops, masonry grommets, and internal brush faceplates.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/direct-bury-swa-armoured-cat6a-garden-office.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Starlink Chimney Mount vs Roof Apex Bracket UK: Best]]></title>
+      <link>https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/starlink-chimney-mount-vs-roof-apex/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Starlink & Satellite]]></category>
+      <description><![CDATA[How to mount Starlink safely on British slate and pantile roofs. Non-drill chimney lashing cradles vs gable apex storm brackets. Prevent tile damage and ensure clear satellite line of sight.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/starlink-gen-3-chimney-mount-uk.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/starlink-gen-3-chimney-mount-uk.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Starlink Chimney Mount vs Roof Apex Bracket UK: Best]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[How to mount Starlink safely on British slate and pantile roofs. Non-drill chimney lashing cradles vs gable apex storm brackets. Prevent tile damage and ensure clear satellite line of sight.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/starlink-gen-3-chimney-mount-uk.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[SpaceX Starlink Gen 3 UK Installation Guide 2026]]></title>
+      <link>https://adicommunications.co.uk/news/starlink-gen-3-uk-installation-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/starlink-gen-3-uk-installation-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Starlink & Satellite]]></category>
+      <description><![CDATA[Complete 2026 guide to installing SpaceX Starlink Gen 3 in the UK. Non-drill chimney mounts, slate brackets, bypass mode, Wi-Fi 6 mesh distribution and 250Mbps real speeds.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/starlink-gen-3-chimney-mount-uk.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/starlink-gen-3-chimney-mount-uk.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[SpaceX Starlink Gen 3 UK Installation Guide 2026]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Complete 2026 guide to installing SpaceX Starlink Gen 3 in the UK. Non-drill chimney mounts, slate brackets, bypass mode, Wi-Fi 6 mesh distribution and 250Mbps real speeds.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/starlink-gen-3-chimney-mount-uk.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Does Starlink Work in UK Gales & Snow? Weatherproof]]></title>
+      <link>https://adicommunications.co.uk/news/starlink-in-high-winds-and-snow/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/starlink-in-high-winds-and-snow/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Starlink & Satellite]]></category>
+      <description><![CDATA[Real-world UK weather testing for Starlink Gen 3. How the built-in 75W snow melt heater performs, wind loading calculations for 90mph gales, and storm bracket engineering.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/advanced-starlink-high-performance-dish-for-uk-residential-properties_image1.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/advanced-starlink-high-performance-dish-for-uk-residential-properties_image1.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Does Starlink Work in UK Gales & Snow? Weatherproof]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Real-world UK weather testing for Starlink Gen 3. How the built-in 75W snow melt heater performs, wind loading calculations for 90mph gales, and storm bracket engineering.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/advanced-starlink-high-performance-dish-for-uk-residential-properties_image1.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Starlink vs 4G/5G Rural Home Broadband UK: Which Is]]></title>
+      <link>https://adicommunications.co.uk/news/starlink-vs-4g-5g-rural-broadband/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/starlink-vs-4g-5g-rural-broadband/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Starlink & Satellite]]></category>
+      <description><![CDATA[Detailed comparison between SpaceX Starlink and 4G/5G external antenna broadband. Real rural download speeds, ping latency for gaming, mast congestion, and monthly costs.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/starlink-alfreton-hero.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/starlink-alfreton-hero.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Starlink vs 4G/5G Rural Home Broadband UK: Which Is]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Detailed comparison between SpaceX Starlink and 4G/5G external antenna broadband. Real rural download speeds, ping latency for gaming, mast congestion, and monthly costs.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/starlink-alfreton-hero.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Can You Mount a TV Above a Fireplace Safely? Thermal]]></title>
+      <link>https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/tv-above-fireplace-safe-installation/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Definitive guide to mounting smart TVs above working fireplaces and log burners. Thermal laser testing, mantelpiece heat deflector requirements, and drop-down mantel brackets.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/oled-tv-wall-mounting-guide.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/oled-tv-wall-mounting-guide.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Can You Mount a TV Above a Fireplace Safely? Thermal]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Definitive guide to mounting smart TVs above working fireplaces and log burners. Thermal laser testing, mantelpiece heat deflector requirements, and drop-down mantel brackets.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/oled-tv-wall-mounting-guide.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[TV Aerial Installation Cost UK]]></title>
+      <link>https://adicommunications.co.uk/news/tv-aerial-installation-costs-uk/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/tv-aerial-installation-costs-uk/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Realistic UK TV aerial installation and repair costs for 2026. Benchmark prices for new digital high-gain aerials (£150–£280), chimney lashings, 4G/5G filters, and multi-room points.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cai-benchmarked-digital-tv-aerial-chimney.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cai-benchmarked-digital-tv-aerial-chimney.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[TV Aerial Installation Cost UK]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Realistic UK TV aerial installation and repair costs for 2026. Benchmark prices for new digital high-gain aerials (£150–£280), chimney lashings, 4G/5G filters, and multi-room points.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cai-benchmarked-digital-tv-aerial-chimney.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[TV Wall Mounting on Dot and Dab Drywall UK: CoreFix]]></title>
+      <link>https://adicommunications.co.uk/news/tv-wall-mounting-on-dot-and-dab-drywall/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/tv-wall-mounting-on-dot-and-dab-drywall/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Why standard plasterboard plugs collapse on dot-and-dab walls. How steel sleeve CoreFix anchors bridge the 20mm air gap to anchor 85]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[TV Wall Mounting on Dot and Dab Drywall UK: CoreFix]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Why standard plasterboard plugs collapse on dot-and-dab walls. How steel sleeve CoreFix anchors bridge the 20mm air gap to anchor 85]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/articulating-full-motion-tv-bracket.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[UK Home Security FAQ Guide: 7 Urgent Questions]]></title>
+      <link>https://adicommunications.co.uk/news/uk-home-security-faq-guide/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/uk-home-security-faq-guide/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[CCTV & Security]]></category>
+      <description><![CDATA[Can burglars jam wireless alarms and CCTV? Learn UK domestic security laws, Grade 2 vs cheap DIY systems, power cut failovers, and transparent installation costs.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/home-security-faq-guide-hero.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/home-security-faq-guide-hero.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[UK Home Security FAQ Guide: 7 Urgent Questions]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Can burglars jam wireless alarms and CCTV? Learn UK domestic security laws, Grade 2 vs cheap DIY systems, power cut failovers, and transparent installation costs.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/home-security-faq-guide-hero.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[Wireless CCTV Jamming UK: Why Battery Cameras Fail]]></title>
+      <link>https://adicommunications.co.uk/news/why-battery-wireless-cctv-fails-uk/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/why-battery-wireless-cctv-fails-uk/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Can wireless CCTV jamming disable home security cameras? Understand RF interference, deauth attacks, local storage, and hardwired PoE alternatives.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/wifi-deauth-jammer-handheld-device.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/wifi-deauth-jammer-handheld-device.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[Wireless CCTV Jamming UK: Why Battery Cameras Fail]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Can wireless CCTV jamming disable home security cameras? Understand RF interference, deauth attacks, local storage, and hardwired PoE alternatives.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/wifi-deauth-jammer-handheld-device.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[UK Landlord Fire Regulations: Grade D1 Wireless]]></title>
+      <link>https://adicommunications.co.uk/news/wireless-interlinked-smoke-alarms-uk-regulations/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/wireless-interlinked-smoke-alarms-uk-regulations/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[Intruder & Fire Alarms]]></category>
+      <description><![CDATA[Complete compliance guide to UK BS 5839-6:2019 fire safety laws for landlords and HMOs. Grade D1 wireless interlinked smoke, heat, and CO alarms with tamper-proof lithium batteries.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/commercial-wireless-fire-alarm-panel.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/commercial-wireless-fire-alarm-panel.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[UK Landlord Fire Regulations: Grade D1 Wireless]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Complete compliance guide to UK BS 5839-6:2019 fire safety laws for landlords and HMOs. Grade D1 wireless interlinked smoke, heat, and CO alarms with tamper-proof lithium batteries.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/commercial-wireless-fire-alarm-panel.webp" width="300" height="169" />
+    </item>
+  </channel>
+</rss>
