@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "last_updated": "",
+  "used_images": [
+    "cctv-hikvision-colorvu-vs-infrared-night-vision-comparison.webp",
+    "cctv-masonry-junction-box-mounting-accrington.webp",
+    "ajax-alarms-why-433mhz-fails-jeweller-defence.webp",
+    "starlink-gen3-chimney-mount-vs-gable-apex-engineering-uk.webp",
+    "cctv-camera-outdoor-weatherproof-blackburn.webp",
+    "ajax-hub2-central-panel-whitebirk.webp",
+    "starlink-dish-mounting-bracket-darwen.webp",
+    "cctv-16mp-panoramic-dual-lens-180-degree-turret-installation.webp",
+    "cat6-5ghz-gigabit-wireless-bridge-garden-office.webp"
+  ],
+  "posts_log": [
+    {
+      "timestamp": 1792654844.0195541,
+      "image": "cctv-16mp-panoramic-dual-lens-180-degree-turret-installation.webp",
+      "campaign_id": "cctv-night-vision-glare",
+      "platform": "Instagram+Threads"
+    },
+    {
+      "timestamp": 1792654846.404131,
+      "image": "cat6-5ghz-gigabit-wireless-bridge-garden-office.webp",
+      "campaign_id": "wifi-dead-spots-stone-walls",
+      "platform": "Instagram+Threads"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "hour": 9,
+    "timestamp": "2026-10-24T08:43:50.674217",
+    "campaign_id": "cctv-night-vision-glare",
+    "topic": "Why CCTV Night Vision Looks Terrible",
+    "image_used": "cctv-16mp-panoramic-dual-lens-180-degree-turret-installation.webp",
+    "reel_path": "C:\\Users\\Gary\\github-cctv-seo\\assets\\reels\\cctv-night-vision-glare.mp4",
+    "duration_seconds": 47.832,
+    "threads_published": false,
+    "instagram_published": false,
+    "tiktok_status": "READY_FOR_UPLOAD"
+  },
+  {
+    "hour": 10,
+    "timestamp": "2026-10-24T08:46:24.228817",
+    "campaign_id": "wifi-dead-spots-stone-walls",
+    "topic": "Why Wi-Fi Mesh Fails Through Thick Walls",
+    "image_used": "cat6-5ghz-gigabit-wireless-bridge-garden-office.webp",
+    "reel_path": "C:\\Users\\Gary\\github-cctv-seo\\assets\\reels\\wifi-dead-spots-stone-walls.mp4",
+    "duration_seconds": 40.728,
+    "threads_published": true,
+    "instagram_published": true,
+    "tiktok_tags": "#WiFi #HomeNetworking #Cat6 #Broadband #Tradesman #Yorkshire #SmartHome",
+    "tiktok_status": "READY_FOR_UPLOAD"
+  }
+]
