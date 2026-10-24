@@ -183,6 +183,22 @@ CAMPAIGN_POSTS = [
             "Field advice by Gary Pearce (07860 244 274, ADI Communications).\n"
             "#GardenOffice #WorkFromHome #WirelessBridge #GigabitWiFi #OutbuildingInternet"
         )
+    },
+    {
+        "id": "post-cctv-camera-placement-storage",
+        "category": "CCTV & Security",
+        "topic": "CCTV Camera Placement & 30-Day Storage Calculator",
+        "target_url": "https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/",
+        "tool_url": "https://adicommunications.co.uk/tools/cctv-camera-placement-storage-planner.html",
+        "headline": "Where Should CCTV Cameras Be Positioned? (And How to Avoid 'Head-Top Syndrome')",
+        "content": (
+            "Mounting CCTV cameras too high at second-floor roof apexes renders footage useless for police identification—capturing only the tops of hoods and caps. "
+            "Our new interactive CCTV Camera Placement & Storage Planner helps homeowners calculate optimal 10ft mounting heights, avoid blind spots, and determine exact 30-day NVR hard drive capacity.\n\n"
+            "Interactive Placement & Storage Planner: https://adicommunications.co.uk/tools/cctv-camera-placement-storage-planner.html\n"
+            "Full Engineering Guide: https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/\n\n"
+            "Designed by Gary Pearce (25+ yrs security engineer, 07860 244 274, ADI Communications).\n"
+            "#CCTV #HomeSecurity #CrimePrevention #CCTVPlacement #NVRStorage #Yorkshire"
+        )
     }
 ]
 

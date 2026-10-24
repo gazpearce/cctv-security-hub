@@ -12,7 +12,7 @@
     <atom:link href="https://adicommunications.co.uk/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://adicommunications.co.uk/news/</link>
     <description>Official trade engineering guides, surveillance benchmarks, Starlink installations, and B2B hospitality mounting insights by Gary Pearce, Lead Engineer at ADI Communications (07860 244 274).</description>
-    <lastBuildDate>Sat, 24 Oct 2026 14:52:21 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 20:43:45 GMT</lastBuildDate>
     <language>en-GB</language>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
@@ -118,6 +118,22 @@
         <media:description><![CDATA[The dangers of running indoor PVC Ethernet cable outside in the UK. Understand UV degradation, moisture ingress, PE black exterior sheath, and SWA armoured cables.]]></media:description>
       </media:content>
       <media:thumbnail url="https://adicommunications.co.uk/assets/images/backbone_cable_routing.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[CCTV Camera Placement & Storage Calculator]]></title>
+      <link>https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Where to position CCTV cameras, best mounting height, avoiding blind spots and how much NVR hard drive storage you need. Free interactive placement planner by Gary Pearce.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/cctv-residential-turret-eaves-mount-beverley.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/cctv-residential-turret-eaves-mount-beverley.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[CCTV Camera Placement & Storage Calculator]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Where to position CCTV cameras, best mounting height, avoiding blind spots and how much NVR hard drive storage you need. Free interactive placement planner by Gary Pearce.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/cctv-residential-turret-eaves-mount-beverley.webp" width="300" height="169" />
     </item>
     <item>
       <title><![CDATA[4K CCTV Frame Rate vs Bitrate: Optimal Surveillance]]></title>
@@ -598,6 +614,22 @@
         <media:description><![CDATA[Realistic UK TV aerial installation and repair costs for 2026. Benchmark prices for new digital high-gain aerials (£150–£280), chimney lashings, 4G/5G filters, and multi-room points.]]></media:description>
       </media:content>
       <media:thumbnail url="https://adicommunications.co.uk/assets/images/cai-benchmarked-digital-tv-aerial-chimney.webp" width="300" height="169" />
+    </item>
+    <item>
+      <title><![CDATA[TV Aerial & Signal Fault Finder: Fix No Signal]]></title>
+      <link>https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/</link>
+      <guid isPermaLink="true">https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/</guid>
+      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Gary Pearce]]></dc:creator>
+      <category><![CDATA[TV Wall Mounting & Audio Visual]]></category>
+      <description><![CDATA[Free interactive TV aerial, Freeview & coax fault finder by Gary Pearce. Diagnose No Signal errors, picture pixelation, missing channels, booster overload & weather faults.]]></description>
+      <enclosure url="https://adicommunications.co.uk/assets/images/tv-aerial-signal-fault-finder.webp" length="150000" type="image/webp" />
+      <media:content url="https://adicommunications.co.uk/assets/images/tv-aerial-signal-fault-finder.webp" medium="image" type="image/webp" width="1600" height="900">
+        <media:title><![CDATA[TV Aerial & Signal Fault Finder: Fix No Signal]]></media:title>
+        <media:credit><![CDATA[Gary Pearce, ADI Communications (07860 244 274)]]></media:credit>
+        <media:description><![CDATA[Free interactive TV aerial, Freeview & coax fault finder by Gary Pearce. Diagnose No Signal errors, picture pixelation, missing channels, booster overload & weather faults.]]></media:description>
+      </media:content>
+      <media:thumbnail url="https://adicommunications.co.uk/assets/images/tv-aerial-signal-fault-finder.webp" width="300" height="169" />
     </item>
     <item>
       <title><![CDATA[TV Wall Mounting on Dot and Dab Drywall UK: CoreFix]]></title>

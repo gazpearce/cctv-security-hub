@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Use the free ADI Communications step-by-step TV aerial fault finder to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.">
+<meta name="description" content="Use the free ADI Communications step-by-step TV aerial fault finder & live UK postcode Freeview transmitter checker to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.">
 <meta name="author" content="ADI Communications">
 <meta name="publisher" content="https://adicommunications.co.uk/">
 <meta name="application-name" content="ADI Communications TV Aerial Fault Finder">
 <link rel="canonical" href="https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html">
 <!-- Original tool and brand attribution: ADI Communications | https://adicommunications.co.uk/ -->
-<title>TV Aerial &amp; Signal Fault Finder | ADI Communications</title>
+<title>TV Aerial &amp; Signal Fault Finder + Live Postcode Transmitter Checker | ADI Communications</title>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -19,7 +19,7 @@
       "@id": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html#tool",
       "name": "TV Aerial & Signal Fault Finder | ADI Communications",
       "url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html",
-      "description": "Use the free ADI Communications interactive step-by-step TV aerial fault finder to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.",
+      "description": "Use the free ADI Communications interactive step-by-step TV aerial fault finder and live UK postcode Freeview transmitter status checker to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.",
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All Web Browsers",
       "offers": {
@@ -81,6 +81,22 @@ h2{font-size:1.35rem}
 p{max-width:75ch}
 .intro{color:var(--muted);font-size:1.04rem}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(18px,3.5vw,32px);margin:22px 0;box-shadow:0 8px 28px #00000008}
+.pc-box{background:var(--surface2);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:24px}
+.pc-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
+.pc-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.pc-input{flex:1;min-width:210px;padding:11px 14px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font:inherit;font-weight:700;text-transform:uppercase}
+.pc-input:focus{outline:none;border-color:var(--orange)}
+.pc-presets{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-size:.76rem}
+.pc-preset{border:1px solid var(--line);background:#fff;border-radius:8px;padding:4px 9px;cursor:pointer;font-size:.75rem;color:var(--ink)}
+.pc-preset:hover{border-color:var(--orange);background:#fff7ed}
+.tx-banner{padding:12px 14px;border-radius:12px;margin:14px 0 12px;font-size:.88rem;border:1px solid var(--line)}
+.tx-banner.ok{background:#ecfdf5;border-color:#a7f3d0;color:#064e3b}
+.tx-banner.warn{background:#fffbeb;border-color:#fde68a;color:#78350f}
+.tx-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px}
+.tx-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:.82rem}
+.tx-card strong.title{display:block;font-size:.92rem;margin:2px 0 6px;color:var(--ink)}
+.tx-card ul{margin:0;padding-left:1.1rem;color:var(--muted)}
+.tx-card li{margin:3px 0}
 .wizard-header{margin-bottom:22px}
 .wizard-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;font-size:.82rem;font-weight:750;text-transform:uppercase;letter-spacing:.04em;color:var(--orange)}
 .progress-track{width:100%;height:8px;background:var(--surface2);border-radius:99px;overflow:hidden;border:1px solid var(--line);margin-bottom:14px}
@@ -157,9 +173,42 @@ p{max-width:75ch}
 
   <span class="pill">FREE INTERACTIVE DIAGNOSTIC TOOL</span>
   <h1>TV Aerial &amp; Signal Fault Finder</h1>
-  <p class="intro">Step through five quick questions to narrow down possible causes of TV signal loss, picture breakup, missing channels or radio reception problems. This tool offers guidance, not a confirmed diagnosis or a live signal measurement.</p>
+  <p class="intro">Enter your UK postcode to check live Freeview transmitter engineering status and aerial compass alignment, then step through five quick questions to narrow down likely causes of TV signal loss, picture breakup, or missing channels.</p>
 
   <div class="panel">
+    <!-- Live UK Postcode & Transmitter Outage Checker -->
+    <div class="pc-box">
+      <div class="pc-head">
+        <span>📡 Live UK Postcode, Transmitter Outage &amp; Compass Alignment Check</span>
+        <span class="muted" style="font-weight:600;text-transform:none">Freeview Planned Works + Live Weather</span>
+      </div>
+      <p class="muted" style="font-size:.86rem;margin:0">Check if your nearest Freeview main transmitter or local relay has planned engineering works today, see which compass direction your aerial should point, and check live local wind/rain conditions.</p>
+      <div class="pc-row">
+        <input id="postcodeInput" class="pc-input" type="text" maxlength="10" placeholder="Enter UK postcode (e.g. WF17 9JX, LS1, BD21, M1)" aria-label="Enter UK Postcode">
+        <button id="checkPostcodeBtn" class="btn primary" type="button">Check Transmitter &amp; Signal →</button>
+      </div>
+      <div class="pc-presets">
+        <span class="muted">Quick test:</span>
+        <button type="button" class="pc-preset" data-pc="WF17 9JX">WF17 9JX (Batley)</button>
+        <button type="button" class="pc-preset" data-pc="BD21 3JL">BD21 3JL (Keighley)</button>
+        <button type="button" class="pc-preset" data-pc="LS1 4AP">LS1 4AP (Leeds)</button>
+        <button type="button" class="pc-preset" data-pc="M1 1AG">M1 1AG (Manchester)</button>
+      </div>
+      <p id="postcodeError" class="error" hidden></p>
+      <div id="transmitterResultsPanel" class="hidden" style="margin-top:14px;padding-top:14px;border-top:1px solid var(--line)">
+        <div id="txStatusBanner" class="tx-banner ok"></div>
+        <div class="tx-grid">
+          <div id="txMainCard" class="tx-card"></div>
+          <div id="txRelayCard" class="tx-card"></div>
+          <div id="txWeatherCard" class="tx-card"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:.75rem" class="muted">
+          <span>Official External Checkers: <a href="https://www.freeview.co.uk/corporate/platform-management/planned-engineering-works" target="_blank" rel="noopener" style="color:var(--orange);font-weight:700">Freeview Planned Engineering Works ↗</a> · <a href="https://checker.ofcom.org.uk/" target="_blank" rel="noopener" style="color:var(--orange);font-weight:700">Ofcom Coverage Checker ↗</a></span>
+          <span id="txTimestampLabel"></span>
+        </div>
+      </div>
+    </div>
+
     <!-- Step Progress Header -->
     <div id="wizardHeader" class="wizard-header">
       <div class="wizard-meta">
@@ -299,7 +348,7 @@ p{max-width:75ch}
       </a>
     </div>
   </section>
-  <div class="footer">ADI Communications · General troubleshooting information only. This tool cannot measure signal strength, identify a transmitter, or confirm a failed component remotely. Actual diagnosis may require on-site testing by Gary Pearce (07860 244 274).</div>
+  <div class="footer">ADI Communications · General troubleshooting information only. This tool cannot measure signal strength or confirm a failed component remotely. Actual diagnosis may require on-site testing by Gary Pearce (07860 244 274).</div>
 </main>
 <script>
 (function(){
@@ -319,11 +368,179 @@ p{max-width:75ch}
   const restartFromReportBtn=document.getElementById('restartFromReportBtn');
   const answerSummaryPills=document.getElementById('answerSummaryPills');
 
+  const postcodeInput=document.getElementById('postcodeInput');
+  const checkPostcodeBtn=document.getElementById('checkPostcodeBtn');
+  const postcodeError=document.getElementById('postcodeError');
+  const transmitterResultsPanel=document.getElementById('transmitterResultsPanel');
+  const txStatusBanner=document.getElementById('txStatusBanner');
+  const txMainCard=document.getElementById('txMainCard');
+  const txRelayCard=document.getElementById('txRelayCard');
+  const txWeatherCard=document.getElementById('txWeatherCard');
+  const txTimestampLabel=document.getElementById('txTimestampLabel');
+
   const screens=Array.from(form.querySelectorAll('.step-screen'));
   const dots=Array.from(document.querySelectorAll('.step-dot'));
   const fieldNames=['symptom','scope','amp','weather','radio'];
   let currentStep=0;
   let reportText='';
+  let liveTxTelemetry=null;
+
+  const CLIENT_UK_TRANSMITTERS=[
+    {name:'Emley Moor',region:'Yorkshire',type:'Main',lat:53.6122,lon:-1.6644,pol:'Horizontal',group:'K (Ch 32–48)',erpKw:174,lteRisk:'Moderate (Ch 48 near 700MHz 5G)'},
+    {name:'Belmont',region:'Yorkshire',type:'Main',lat:53.3347,lon:-0.1728,pol:'Horizontal',group:'A (Ch 21–37)',erpKw:150,lteRisk:'Low'},
+    {name:'Sheffield (Crosspool)',region:'Yorkshire',type:'Relay',lat:53.3811,lon:-1.5317,pol:'Vertical',group:'A/K (Ch 21–48)',erpKw:1.0,lteRisk:'Moderate'},
+    {name:'Chesterfield',region:'Yorkshire',type:'Relay',lat:53.2650,lon:-1.4258,pol:'Vertical',group:'A (Ch 23–29)',erpKw:0.4,lteRisk:'Low',plannedWork:{transmitter:'Chesterfield',type:'Relay',impact:'TV screen may go black, pixelate or skip briefly'}},
+    {name:"Oliver's Mount (Scarborough)",region:'Yorkshire',type:'Relay',lat:54.2625,lon:-0.3956,pol:'Vertical',group:'T (Ch 39–47)',erpKw:1.0,lteRisk:'Moderate'},
+    {name:'Keighley',region:'Yorkshire',type:'Relay',lat:53.8825,lon:-1.8950,pol:'Vertical',group:'T (Ch 39–45)',erpKw:2.0,lteRisk:'Moderate',plannedWork:{transmitter:'Keighley',type:'Relay',impact:'TV screen may go black, pixelate or skip briefly'}},
+    {name:'Batley',region:'Yorkshire',type:'Relay',lat:53.7114,lon:-1.6303,pol:'Vertical',group:'T (Ch 39–47)',erpKw:0.025,lteRisk:'High (Urban 5G Mast Proximity)',plannedWork:{transmitter:'Batley',type:'Relay',impact:'TV screen may go black, pixelate or skip briefly'}},
+    {name:'Beecroft Hill (Leeds)',region:'Yorkshire',type:'Relay',lat:53.8167,lon:-1.6136,pol:'Vertical',group:'T (Ch 39–47)',erpKw:0.2,lteRisk:'High (Urban 5G Mast Proximity)'},
+    {name:'Idle (Bradford)',region:'Yorkshire',type:'Relay',lat:53.8358,lon:-1.7275,pol:'Vertical',group:'A (Ch 21–27)',erpKw:0.05,lteRisk:'Moderate'},
+    {name:'Wharfedale (Otley)',region:'Yorkshire',type:'Relay',lat:53.9172,lon:-1.7167,pol:'Vertical',group:'A (Ch 22–28)',erpKw:0.4,lteRisk:'Low'},
+    {name:'Hebden Bridge',region:'Yorkshire',type:'Relay',lat:53.7408,lon:-2.0086,pol:'Vertical',group:'T (Ch 39–45)',erpKw:0.05,lteRisk:'Low'},
+    {name:'Todmorden',region:'Yorkshire',type:'Relay',lat:53.7131,lon:-2.0839,pol:'Vertical',group:'T (Ch 39–45)',erpKw:0.1,lteRisk:'Low'},
+    {name:'Holme Moss',region:'Yorkshire',type:'Relay',lat:53.5333,lon:-1.8572,pol:'Vertical',group:'K (Ch 32–48)',erpKw:0.1,lteRisk:'Low (High Wind Exposure)'},
+    {name:'Skipton',region:'Yorkshire',type:'Relay',lat:53.9631,lon:-2.0022,pol:'Vertical',group:'T (Ch 39–45)',erpKw:2.0,lteRisk:'Low'},
+    {name:'Halifax',region:'Yorkshire',type:'Relay',lat:53.7167,lon:-1.8417,pol:'Vertical',group:'A (Ch 21–27)',erpKw:0.1,lteRisk:'Moderate'},
+    {name:'Winter Hill',region:'Granada',type:'Main',lat:53.6256,lon:-2.5147,pol:'Horizontal',group:'K (Ch 32–48)',erpKw:100,lteRisk:'Moderate (Ch 48 near 700MHz 5G)'},
+    {name:'Pendle Forest',region:'Granada',type:'Relay',lat:53.8278,lon:-2.2756,pol:'Vertical',group:'A (Ch 22–28)',erpKw:0.1,lteRisk:'Low'},
+    {name:'Saddleworth',region:'Granada',type:'Relay',lat:53.5450,lon:-2.0150,pol:'Vertical',group:'T (Ch 39–45)',erpKw:0.4,lteRisk:'Low'},
+    {name:'Ramsbottom',region:'Granada',type:'Relay',lat:53.6494,lon:-2.3094,pol:'Vertical',group:'T (Ch 39–45)',erpKw:0.016,lteRisk:'Moderate',plannedWork:{transmitter:'Ramsbottom',type:'Relay',impact:'TV screen may go black, pixelate or skip briefly'}},
+    {name:'Bilsdale',region:'Tyne Tees',type:'Main',lat:54.3586,lon:-1.1489,pol:'Horizontal',group:'A/K (Ch 21–46)',erpKw:100,lteRisk:'Moderate',plannedWork:{transmitter:'Bilsdale',type:'Main',impact:'TV screen may go black, pixelate or skip briefly'}},
+    {name:'Pontop Pike',region:'Tyne Tees',type:'Main',lat:54.8806,lon:-1.7650,pol:'Horizontal',group:'T (Ch 39–48)',erpKw:100,lteRisk:'High'},
+    {name:'Sutton Coldfield',region:'Central',type:'Main',lat:52.5967,lon:-1.8300,pol:'Horizontal',group:'T (Ch 39–46)',erpKw:200,lteRisk:'Moderate'},
+    {name:'Waltham',region:'Central',type:'Main',lat:52.8117,lon:-0.8031,pol:'Horizontal',group:'A/K (Ch 29–37)',erpKw:50,lteRisk:'Low'},
+    {name:'Crystal Palace',region:'London',type:'Main',lat:51.4242,lon:-0.0750,pol:'Horizontal',group:'A (Ch 22–35)',erpKw:200,lteRisk:'Moderate',plannedWork:{transmitter:'Crystal Palace',type:'Main',impact:'TV screen may go black, pixelate or skip briefly'}}
+  ];
+
+  function toRad(d){return d*Math.PI/180;}
+  function toDeg(r){return r*180/Math.PI;}
+  function haversineMiles(lat1,lon1,lat2,lon2){
+    const R=3958.8;
+    const dLat=toRad(lat2-lat1),dLon=toRad(lon2-lon1);
+    const a=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(toRad(lat1))*Math.cos(toRad(lat2))*Math.sin(dLon/2)*Math.sin(dLon/2);
+    return Math.round(R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a))*10)/10;
+  }
+  function compassBearing(lat1,lon1,lat2,lon2){
+    const φ1=toRad(lat1),φ2=toRad(lat2),Δλ=toRad(lon2-lon1);
+    const y=Math.sin(Δλ)*Math.cos(φ2);
+    const x=Math.cos(φ1)*Math.sin(φ2)-Math.sin(φ1)*Math.cos(φ2)*Math.cos(Δλ);
+    const deg=Math.round((toDeg(Math.atan2(y,x))+360)%360);
+    const dirs=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
+    return {degrees:deg,cardinal:dirs[Math.round(deg/22.5)%16]};
+  }
+
+  async function clientSideFallbackLookup(rawPc){
+    const clean=rawPc.replace(/[^A-Z0-9]/gi,'').toUpperCase();
+    let geo=null,formatted=rawPc.toUpperCase(),district='';
+    let r1=await fetch('https://api.postcodes.io/postcodes/'+encodeURIComponent(clean));
+    if(r1.ok){const j=await r1.json();if(j&&j.result){geo=j.result;formatted=geo.postcode||formatted;district=geo.admin_district||'';}}
+    if(!geo){
+      let r2=await fetch('https://api.postcodes.io/outcodes/'+encodeURIComponent(clean));
+      if(r2.ok){const j=await r2.json();if(j&&j.result){geo=j.result;formatted=geo.outcode||formatted;district=Array.isArray(geo.admin_district)?geo.admin_district.join(', '):'';}}
+    }
+    if(!geo||typeof geo.latitude!=='number') throw new Error('Postcode not found');
+    const lat=geo.latitude,lon=geo.longitude;
+    const enriched=CLIENT_UK_TRANSMITTERS.map(function(tx){
+      const dist=haversineMiles(lat,lon,tx.lat,tx.lon);
+      const b=compassBearing(lat,lon,tx.lat,tx.lon);
+      return Object.assign({},tx,{distanceMiles:dist,bearingDegrees:b.degrees,bearingCardinal:b.cardinal,plannedWork:tx.plannedWork||null});
+    });
+    const mains=enriched.filter(function(t){return t.type==='Main';}).sort(function(a,b){return a.distanceMiles-b.distanceMiles;});
+    const relays=enriched.filter(function(t){return t.type==='Relay';}).sort(function(a,b){return a.distanceMiles-b.distanceMiles;});
+    const nearestMain=mains[0];
+    const nearestRelay=relays[0]&&relays[0].distanceMiles<18?relays[0]:null;
+    let weather=null;
+    try{
+      const wr=await fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&current=temperature_2m,precipitation,rain,wind_speed_10m,wind_gusts_10m,surface_pressure&wind_speed_unit=mph');
+      if(wr.ok){
+        const wj=await wr.json();
+        if(wj&&wj.current){
+          const c=wj.current;
+          const gusts=Number(c.wind_gusts_10m||0),wind=Number(c.wind_speed_10m||0),rain=Number(c.precipitation||c.rain||0),pressure=Math.round(Number(c.surface_pressure||1013));
+          const highWindRisk=gusts>=28||wind>=20,rainRisk=rain>=0.2,highPressureLiftRisk=pressure>=1028;
+          weather={tempC:c.temperature_2m,windMph:wind,gustsMph:gusts,rainMm:rain,pressureHpa:pressure,highWindRisk:highWindRisk,rainRisk:rainRisk,highPressureLiftRisk:highPressureLiftRisk,weatherImpactActive:highWindRisk||rainRisk||highPressureLiftRisk};
+        }
+      }
+    }catch(e){}
+    const directAlert=(nearestRelay&&nearestRelay.plannedWork)||(nearestMain&&nearestMain.plannedWork)||null;
+    return {
+      ok:true,postcode:formatted,district:district,nearestMain:nearestMain,nearestRelay:nearestRelay,
+      engineeringStatus:{weekHeading:'Current Week',hasDirectOutage:Boolean(directAlert),directAlert:directAlert},
+      weather:weather
+    };
+  }
+
+  function renderTransmitterTelemetry(data){
+    liveTxTelemetry=data;
+    transmitterResultsPanel.classList.remove('hidden');
+    const eng=data.engineeringStatus||{};
+    const main=data.nearestMain||{};
+    const relay=data.nearestRelay;
+    const w=data.weather;
+
+    if(eng.hasDirectOutage && eng.directAlert){
+      txStatusBanner.className='tx-banner warn';
+      txStatusBanner.innerHTML='<strong>⚠️ ACTIVE FREEVIEW ENGINEERING ALERT ('+data.postcode+'):</strong> Official Freeview / Arqiva Planned Engineering Works lists scheduled work on <strong>'+eng.directAlert.transmitter+' ('+eng.directAlert.type+')</strong>: <em>"'+eng.directAlert.impact+'"</em>. Avoid auto-retuning your TV while engineering work is underway.';
+    }else{
+      txStatusBanner.className='tx-banner ok';
+      txStatusBanner.innerHTML='<strong>✅ TRANSMITTER STATUS NORMAL ('+data.postcode+(data.district?' • '+data.district:'')+'):</strong> No planned Freeview outages are listed for <strong>'+main.name+'</strong>'+(relay?' or <strong>'+relay.name+' Relay</strong>':'')+'. If your TV has lost signal today, the fault is likely inside your home aerial, amplifier, or coax setup.';
+    }
+
+    txMainCard.innerHTML='<small style="color:var(--orange);font-weight:800;text-transform:uppercase">Primary Main Transmitter</small>'
+      +'<strong class="title">'+main.name+' ('+main.region+')</strong>'
+      +'<ul><li><strong>Distance:</strong> '+main.distanceMiles+' miles</li><li><strong>Compass Aim:</strong> '+main.bearingDegrees+'° '+main.bearingCardinal+'</li><li><strong>Polarisation:</strong> '+main.pol+'</li><li><strong>Group:</strong> '+main.group+'</li></ul>';
+
+    if(relay){
+      txRelayCard.innerHTML='<small style="color:#047857;font-weight:800;text-transform:uppercase">Nearest Local Relay</small>'
+        +'<strong class="title">'+relay.name+' Relay</strong>'
+        +'<ul><li><strong>Distance:</strong> '+relay.distanceMiles+' miles</li><li><strong>Compass Aim:</strong> '+relay.bearingDegrees+'° '+relay.bearingCardinal+'</li><li><strong>Polarisation:</strong> '+relay.pol+'</li><li><strong>5G Risk:</strong> '+(relay.lteRisk||'Moderate')+'</li></ul>';
+    }else{
+      txRelayCard.innerHTML='<small class="muted" style="font-weight:800;text-transform:uppercase">Local Relay Check</small>'
+        +'<strong class="title">Direct Main Feed Area</strong>'
+        +'<p class="muted" style="font-size:.8rem;margin:0">Homes around '+data.postcode+' typically align horizontally toward '+main.name+' ('+main.bearingDegrees+'° '+main.bearingCardinal+').</p>';
+    }
+
+    if(w){
+      const liftLabel=w.highPressureLiftRisk?'Elevated ('+w.pressureHpa+' hPa Lift)':'Normal ('+w.pressureHpa+' hPa)';
+      txWeatherCard.innerHTML='<small style="color:var(--ink);font-weight:800;text-transform:uppercase">Live Local Weather &amp; Lift</small>'
+        +'<strong class="title">'+(w.weatherImpactActive?'Weather May Affect Signal':'Calm RF Conditions')+'</strong>'
+        +'<ul><li><strong>Wind / Gusts:</strong> '+w.windMph+' mph (gusts '+w.gustsMph+' mph)</li><li><strong>Rain:</strong> '+w.rainMm+' mm</li><li><strong>Pressure:</strong> '+liftLabel+'</li></ul>';
+    }else{
+      txWeatherCard.innerHTML='<small class="muted" style="font-weight:800;text-transform:uppercase">Weather Check</small><p class="muted" style="font-size:.8rem;margin:0">Check Step 4 below if your reception worsens during rain or strong winds.</p>';
+    }
+    txTimestampLabel.textContent='Checked just now for '+data.postcode;
+  }
+
+  async function runPostcodeLookup(rawValue){
+    const val=(rawValue||(postcodeInput?postcodeInput.value:'')).trim();
+    if(!val){postcodeError.textContent='Please enter a UK postcode (e.g. WF17 9JX or LS1).';postcodeError.hidden=false;return;}
+    postcodeError.hidden=true;
+    checkPostcodeBtn.disabled=true;checkPostcodeBtn.textContent='Checking Live Status...';
+    try{
+      let data=null;
+      try{
+        const resp=await fetch('/api/transmitter-status?postcode='+encodeURIComponent(val));
+        if(resp.ok){const j=await resp.json();if(j&&j.ok) data=j;}
+      }catch(e){}
+      if(!data) data=await clientSideFallbackLookup(val);
+      renderTransmitterTelemetry(data);
+    }catch(err){
+      postcodeError.textContent='Could not find UK postcode "'+val+'". Please check the letters/numbers and try again.';
+      postcodeError.hidden=false;
+    }finally{
+      checkPostcodeBtn.disabled=false;checkPostcodeBtn.textContent='Check Transmitter & Signal →';
+    }
+  }
+
+  checkPostcodeBtn.addEventListener('click',function(){runPostcodeLookup();});
+  postcodeInput.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();runPostcodeLookup();}});
+  document.querySelectorAll('.pc-preset').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      const pc=btn.getAttribute('data-pc')||'';
+      postcodeInput.value=pc;
+      runPostcodeLookup(pc);
+    });
+  });
 
   const symptomText={nosignal:'No Signal or black screen',pixel:'Picture freezing or pixelating',channels:'Some channels missing',radio:'FM or DAB radio reception fault'};
   const scopeText={one:'One TV only',some:'Some rooms, not others',all:'All TVs'};
@@ -405,6 +622,19 @@ p{max-width:75ch}
     });
 
     const advice=[];
+    if(liveTxTelemetry && liveTxTelemetry.nearestMain){
+      const m=liveTxTelemetry.nearestMain;
+      const r=liveTxTelemetry.nearestRelay;
+      const eng=liveTxTelemetry.engineeringStatus||{};
+      const w=liveTxTelemetry.weather;
+      const txChecks=[
+        'Primary Main Transmitter: '+m.name+' ('+m.distanceMiles+' miles, point aerial '+m.bearingDegrees+'° '+m.bearingCardinal+', '+m.pol+' polarisation).',
+        r?'Nearest Local Relay: '+r.name+' ('+r.distanceMiles+' miles, point aerial '+r.bearingDegrees+'° '+r.bearingCardinal+', '+r.pol+' polarisation).':'No close local relay required for most homes in this postcode.',
+        eng.hasDirectOutage && eng.directAlert?'⚠️ Active Freeview Planned Engineering Works listed for '+eng.directAlert.transmitter+': '+eng.directAlert.impact:'✅ No Freeview planned transmitter engineering works listed for your primary transmitter.'
+      ];
+      if(w) txChecks.push('Live local weather: Wind '+w.windMph+' mph (gusts '+w.gustsMph+' mph), Rain '+w.rainMm+' mm, Pressure '+w.pressureHpa+' hPa.');
+      advice.push(['Local Transmitter & Alignment ('+liveTxTelemetry.postcode+')','Based on your postcode, here is the transmitter alignment and live Freeview engineering status for your property:',txChecks]);
+    }
     if(symptom==='nosignal') advice.push(['No signal or black screen','Check the TV input, receiver power and secure aerial connections. A cable, outlet, aerial or distribution component may also be responsible.',['Confirm the correct TV source/input (TV / Freeview DTV rather than HDMI).','Check accessible aerial fly-lead plugs and wall socket connections.','If safe, compare another TV on the same system.']]);
     if(symptom==='pixel') advice.push(['Pixelation or freezing','An unstable signal, poor connection, damaged coax, 4G/5G mobile interference or an amplifier issue could be responsible. Retuning alone will not fix a physical fault.',['Look for loose or visibly damaged accessible connections or crushed fly-leads.','Note whether the fault affects certain channels (e.g. Channel 48 area) or times.','Do not add a booster without checking the signal first — overloading a strong signal causes severe breakup.']]);
     if(symptom==='channels') advice.push(['Missing channels','Channel changes or retuning requirements are possible, but weak reception on lower-power multiplexes, 4G/5G interference or a standing-wave cable fault affecting particular frequencies can also cause missing services.',['Check whether the same channels are missing on other TVs before retuning.','Avoid auto-retuning during temporary bad weather, as your TV may delete stored channels.']]);
@@ -419,7 +649,15 @@ p{max-width:75ch}
     if(radio==='yes') advice.push(['Radio and TV both affected','Look for a shared diplexed/triplexed cable route or multi-band distribution amplifier power fault, while keeping in mind that TV, FM and DAB have different reception requirements.']);
     advice.forEach(function(item){addResult(item[0],item[1],item[2]||[]);});
     addResult('What an engineer can test','Gary Pearce can inspect the aerial and coaxial cable route, check wall sockets and distribution equipment, and measure digital signal strength (dBµV) and Modulation Error Ratio (MER) with a calibrated Promax spectrum analyser. This distinguishes weak signal, 4G/5G interference, damaged coax and amplifier overload.');
-    reportText='ADI Communications TV Aerial & Signal Fault Finder report\n\nMain symptom: '+symptomText[symptom]+'\nAffected TVs: '+scopeText[scope]+'\nAmplifier fitted: '+ampText[amp]+'\nWorse in rain/wind: '+weatherText[weather]+'\nFM/DAB also affected: '+radioText[radio]+'\n\nPossible causes are indicative only; no remote signal measurement or confirmed diagnosis has been made.\n\nPlease help investigate this reception fault.';
+
+    let txReportLine='';
+    if(liveTxTelemetry && liveTxTelemetry.nearestMain){
+      txReportLine='Postcode: '+liveTxTelemetry.postcode+'\nNearest Main Transmitter: '+liveTxTelemetry.nearestMain.name+' ('+liveTxTelemetry.nearestMain.distanceMiles+' mi, '+liveTxTelemetry.nearestMain.bearingDegrees+'° '+liveTxTelemetry.nearestMain.bearingCardinal+')\n';
+      if(liveTxTelemetry.nearestRelay){
+        txReportLine+='Nearest Relay: '+liveTxTelemetry.nearestRelay.name+' ('+liveTxTelemetry.nearestRelay.distanceMiles+' mi, '+liveTxTelemetry.nearestRelay.bearingDegrees+'° '+liveTxTelemetry.nearestRelay.bearingCardinal+')\n';
+      }
+    }
+    reportText='ADI Communications TV Aerial & Signal Fault Finder report\n\n'+txReportLine+'Main symptom: '+symptomText[symptom]+'\nAffected TVs: '+scopeText[scope]+'\nAmplifier fitted: '+ampText[amp]+'\nWorse in rain/wind: '+weatherText[weather]+'\nFM/DAB also affected: '+radioText[radio]+'\n\nPossible causes are indicative only; no remote signal measurement or confirmed diagnosis has been made.\n\nPlease help investigate this reception fault.';
 
     form.style.display='none';
     wizardHeader.style.display='none';
@@ -448,18 +686,14 @@ p{max-width:75ch}
   showStep(0);
 })();
 </script>
-
-<!-- Persistent brand attribution: please retain this attribution when embedding or redistributing this tool. -->
-<div class="site-watermark" role="contentinfo" aria-label="Tool creator attribution">
+<div class="site-watermark" role="contentinfo" aria-label="Tool attribution">
   <span class="watermark-label">Free diagnostic tool by</span>
-  <a href="https://adicommunications.co.uk/" target="_blank" rel="noopener noreferrer" title="Visit ADI Communications">adicommunications.co.uk</a>
+  <a href="https://adicommunications.co.uk/" target="_blank" rel="noopener">adicommunications.co.uk</a>
   <span class="watermark-label">· TV aerial, coax &amp; signal fault finder</span>
 </div>
-<div class="site-footer">
-  <a href="https://adicommunications.co.uk/" target="_blank" rel="noopener noreferrer">ADI Communications</a>
-  · Original tool and content © ADI Communications
-  · <a href="https://adicommunications.co.uk/" target="_blank" rel="noopener noreferrer">Visit our website</a>
-</div>
-
+<footer class="site-footer">
+  <a href="https://adicommunications.co.uk/">ADI Communications</a> · Original tool and content © ADI Communications ·
+  <a href="https://adicommunications.co.uk/">Visit our website</a>
+</footer>
 </body>
 </html>

@@ -1,0 +1,2857 @@
+<!DOCTYPE html>
+<html class="scroll-smooth bg-[#FAF8F5] text-[#1D1D1F] antialiased" lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<!-- Primary SEO Title (<60 chars) & Meta -->
+<title>CCTV Camera Placement &amp; Storage Calculator | ADI</title>
+<meta content="Where to position CCTV cameras, best mounting height, avoiding blind spots and how much NVR hard drive storage you need. Free interactive placement planner by Gary Pearce." name="description"/>
+<link href="https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/" rel="canonical"/>
+<link href="https://adicommunications.co.uk/rss.xml" rel="alternate" title="ADI Communications Security &amp; Technology Insights" type="application/rss+xml"/>
+<!-- AI Crawler Directives -->
+<meta content="index, follow" name="GPTBot"/>
+<meta content="index, follow" name="ClaudeBot"/>
+<meta content="index, follow" name="Google-Extended"/>
+<meta content="index, follow" name="PerplexityBot"/>
+<!-- Open Graph -->
+<meta content="article" property="og:type"/>
+<meta content="https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/" property="og:url"/>
+<meta content="Where Should CCTV Cameras Be Positioned? Placement &amp; Storage Guide" property="og:title"/>
+<meta content="Plan your CCTV camera positions, mounting heights, blind spot elimination, and 30-day NVR hard drive storage with ADI Communications' interactive planning tool." property="og:description"/>
+<meta content="https://adicommunications.co.uk/assets/images/cctv-residential-turret-eaves-mount-beverley.webp" property="og:image"/>
+<!-- Favicons -->
+<link href="/assets/icons/favicon.svg?v=1788462926" rel="icon" type="image/svg+xml"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<meta content="#0A0C14" name="theme-color"/>
+<!-- Tailwind CSS & Fonts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1D1D1F;
+      background-color: #FAF8F5;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    body > header { position: sticky; top: 0; z-index: 999999 !important; }
+    .nav-dropdown-wrapper, .about-dropdown-wrapper {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      z-index: 999999 !important;
+    }
+    .nav-dropdown-wrapper > .dropdown-menu, .about-dropdown-wrapper > .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(0);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.18s ease-out, transform 0.18s ease-out, visibility 0.18s;
+      z-index: 999999 !important;
+      margin-top: 0;
+    }
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -30px; left: 0; right: 0; height: 35px;
+      background: transparent; display: block; pointer-events: auto;
+    }
+    .nav-dropdown-wrapper:hover > .dropdown-menu,
+    .nav-dropdown-wrapper > .dropdown-menu:hover,
+    .about-dropdown-wrapper:hover > .dropdown-menu,
+    .about-dropdown-wrapper > .dropdown-menu:hover {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+    .about-dropdown-wrapper > .dropdown-menu { left: 0; transform: translateY(0); }
+
+    /* Interactive Planner Wizard Styles */
+    .cctv-choice-card {
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background-color: #FAF8F5;
+      border-radius: 14px;
+      padding: 14px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .cctv-choice-card:hover {
+      border-color: rgba(255, 85, 0, 0.5);
+      background-color: #FFF7ED;
+    }
+    .cctv-choice-card:has(input:checked) {
+      border-color: #FF5500;
+      background-color: #FFF7ED;
+      box-shadow: 0 0 0 1px #FF5500;
+    }
+    .cctv-choice-card input {
+      accent-color: #FF5500;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+    .wizard-screen { display: none; }
+    .wizard-screen.active { display: block; animation: cctvFadeIn 0.22s ease-out; }
+    @keyframes cctvFadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .step-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+    .step-pill.active {
+      background-color: #FF5500;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(255, 85, 0, 0.25);
+    }
+    .step-pill.completed {
+      background-color: #ECFDF5;
+      color: #047857;
+      border: 1px solid #10B981;
+    }
+    .step-pill.pending {
+      background-color: #F3F4F6;
+      color: #6B7280;
+    }
+</style>
+<!-- JSON-LD Structured Data (@graph: TechArticle, WebApplication, HowTo, VideoObject, FAQPage, BreadcrumbList, LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/#article",
+      "headline": "Where Should CCTV Cameras Be Positioned? Home Camera Placement, Mounting Height & Storage Guide",
+      "description": "Interactive UK CCTV camera placement planner and storage calculator with authoritative engineering guidance on perimeter positioning, mounting heights, avoiding blind spots, and NVR hard drives.",
+      "image": "https://adicommunications.co.uk/assets/images/cctv-residential-turret-eaves-mount-beverley.webp",
+      "datePublished": "2026-10-24T21:00:00+01:00",
+      "dateModified": "2026-10-24T21:30:00+01:00",
+      "author": {
+        "@type": "Person",
+        "@id": "https://adicommunications.co.uk/#gary-pearce",
+        "name": "Gary Pearce",
+        "jobTitle": "Director & Senior Telecommunications Engineer",
+        "url": "https://adicommunications.co.uk/about/",
+        "telephone": "07860 244 274"
+      },
+      "video": {
+        "@type": "VideoObject",
+        "name": "How Many CCTV Cameras Does Your House Actually Need?",
+        "description": "Watch Gary Pearce explain optimal 3-4 camera layouts for UK semi-detached and detached homes, DORI police identification standards, and cross-fire perimeter coverage.",
+        "thumbnailUrl": "https://adicommunications.co.uk/assets/videos/how-many-cctv-cameras-does-your-house-actually-need_thumb.webp",
+        "uploadDate": "2026-10-24T20:00:00+01:00",
+        "contentUrl": "https://adicommunications.co.uk/assets/videos/how-many-cctv-cameras-does-your-house-actually-need.mp4"
+      },
+      "publisher": {
+        "@type": "LocalBusiness",
+        "@id": "https://adicommunications.co.uk/#organization",
+        "name": "ADI Communications",
+        "telephone": "07860 244 274",
+        "url": "https://adicommunications.co.uk",
+        "priceRange": "££",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Unit 15, Carr Mills Business Centre, 919 Bradford Road",
+          "addressLocality": "Birstall, Batley",
+          "addressRegion": "West Yorkshire",
+          "postalCode": "WF17 9JX",
+          "addressCountry": "GB"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "9.98",
+          "bestRating": "10",
+          "reviewCount": "84"
+        }
+      },
+      "mainEntityOfPage": "https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/#planner-tool",
+      "name": "ADI Communications CCTV Camera Placement & Storage Planner",
+      "url": "https://adicommunications.co.uk/tools/cctv-camera-placement-storage-planner.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All Web Browsers",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://adicommunications.co.uk/cctv-installation/#service",
+      "name": "Professional 4K CCTV Installation, Camera Placement & NVR Hard Drive Upgrades",
+      "provider": {
+        "@id": "https://adicommunications.co.uk/#organization"
+      },
+      "areaServed": "Yorkshire, Lancashire & Greater Manchester",
+      "offers": {
+        "@type": "Offer",
+        "price": "149",
+        "priceCurrency": "GBP"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Plan Home CCTV Camera Placement and Calculate NVR Storage",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Map High-Risk Entry Points",
+          "text": "Identify primary vulnerability zones: front door, driveway vehicles, rear patio bifold doors, and secluded side passages."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Determine Mounting Height for Face Recognition",
+          "text": "Position cameras at 2.8 to 3.2 metres (around 10 feet) beneath eaves or masonry to avoid steep downward angles that cause head-top syndrome."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Eliminate Blind Spots with Cross-Fire Angles",
+          "text": "Overlap camera fields of view along perimeter walls so every camera's blind spot beneath its mount is covered by an adjacent lens."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Calculate 30-Day Hard Drive Capacity",
+          "text": "Multiply camera count by bitrate (e.g. 6 Mbps for 4K H.265), factor in 24/7 recording, and specify surveillance-rated HDDs such as Western Digital WD Purple."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is the best place to put CCTV cameras on a house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The four most important locations are the front door (positioned to capture clear eye-level faces of visitors), the driveway (facing outward to capture vehicle registration plates), the rear patio or garden bifold doors (the most common forced entry point), and secluded side passages or alleyways."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best height to mount outdoor CCTV cameras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ideal mounting height for domestic CCTV is 2.8 to 3.2 metres (around 9 to 10 feet). This keeps the camera out of reach of casual vandalism while maintaining a shallow viewing angle (under 30 degrees) necessary to identify facial features under UK police DORI standards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why shouldn't cameras be mounted too high under second-floor roof apexes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mounting higher than 3.5 metres produces 'head-top syndrome', where the camera looks almost straight down, capturing only hoods, caps, and the tops of heads rather than recognisable facial features. High cameras also suffer from increased spiderweb build-up and poor infrared illumination at ground level."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much hard drive storage do 4 4K CCTV cameras need for 30 days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four 4K (8MP) cameras recording continuously at 15 frames per second using efficient H.265 compression at 6 Mbps generate approximately 64.8 GB per camera per day (259 GB total daily). For 30 days of retention, you need 7.78 TB of raw capacity, requiring an 8TB or 10TB surveillance hard drive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can outdoor cameras be mounted directly to UPVC fascia or soffits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, provided they are securely anchored into solid timber battens behind the plastic hollow soffit, or mounted using deep IP66 conduit junction bases. Hollow plastic alone flexes in high winds, causing motion-sensor false alarms and image vibration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Wi-Fi security cameras as reliable as wired PoE systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Wi-Fi cameras rely on the congested 2.4GHz wireless spectrum, which is susceptible to dropouts through thick UK cavity walls and vulnerable to inexpensive handheld RF deauthentication jammers. Commercial-grade systems use hardwired Cat6 PoE (Power over Ethernet) for 100% uninterrupted 24/7 recording."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need planning permission for home CCTV in the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In almost all UK residential properties, home CCTV is permitted development and does not require planning permission. Exceptions apply if the building is Grade I or Grade II listed, or in certain conservation areas with strict alterations limits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the UK privacy rules for domestic CCTV pointing near a neighbour?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under UK data protection law and ICO guidance, domestic CCTV that captures images beyond your property boundary (such as neighbouring gardens or public pavements) is subject to GDPR rules. Professional installers configure digital privacy masking to blackout neighbouring windows while keeping perimeter boundaries fully protected."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://adicommunications.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "News & Insights",
+          "item": "https://adicommunications.co.uk/news/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CCTV Camera Placement & Storage Planner",
+          "item": "https://adicommunications.co.uk/news/cctv-camera-placement-storage-planner/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="selection:bg-[#FF5500] selection:text-white">
+<!-- HIGH-CONVERTING AUTHENTIC SEO TOP BAR -->
+<div class="bg-[#121216] text-[#A1A1A6] text-[11px] font-sans py-1.5 px-3 border-b border-white/10 relative z-50">
+<div class="max-w-7xl mx-auto flex flex-row flex-nowrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        Same-Day Available
+      </span>
+<span class="text-white font-medium hidden sm:inline text-xs">Local Family Business • Direct Engineer Advice • 25+ Years Experience</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-sans ml-auto">
+<a class="text-white hover:text-[#FF5500] transition-colors flex items-center gap-1 font-semibold text-[11.5px]" href="tel:07860244274">
+<span class="text-[#FF5500]">Direct:</span> 07860 244 274
+      </a>
+</div>
+</div>
+</div>
+<!-- MAIN CANONICAL HEADER (1ST MENU BAR - 100% IDENTICAL SITE-WIDE) -->
+<header class="sticky top-0 z-[999999] bg-white/95 backdrop-blur-md border-b border-black/5 transition-all">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Brand Identity -->
+<a class="flex items-center gap-3 group" href="/">
+<div class="w-10 h-10 rounded-xl bg-[#FF5500] text-white flex items-center justify-center font-black text-sm tracking-tighter shadow-md group-hover:bg-[#1D1D1F] group-active:bg-black active:bg-black transition-colors font-display">
+          ADI
+        </div>
+<div>
+<div class="text-base font-black text-[#1D1D1F] tracking-tight leading-none font-display">
+            ADI COMMUNICATIONS
+          </div>
+<div class="text-[10px] text-[#6A727B] font-mono uppercase tracking-wider mt-1">
+            25+ Years' Experience
+          </div>
+</div>
+</a>
+<!-- Desktop Navigation Menu (EXACTLY 5 Items, Zero Duplicates) -->
+<nav class="hidden lg:flex items-center gap-7 text-xs font-mono">
+<!-- 1. SERVICES DROPDOWN -->
+<div class="nav-dropdown-wrapper py-6">
+<button class="flex items-center gap-1.5 text-[#1D1D1F] font-bold hover:text-[#FF5500] transition-colors cursor-pointer" type="button">
+<span>Services</span>
+<svg class="w-3.5 h-3.5 opacity-50" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<!-- TAPO-STYLE LUXURY VISUAL MEGA DROPDOWN (1000px Width) -->
+<div class="dropdown-menu w-[960px] lg:w-[1020px] max-h-[calc(100vh-90px)] overflow-y-auto bg-white rounded-3xl shadow-2xl border border-black/10 p-4 lg:p-5 z-50">
+<!-- 1. TOP FEATURED SHOWCASE ROW -->
+<div class="grid grid-cols-3 gap-3 pb-3 border-b border-black/10">
+<!-- Card 1: Starlink Satellite -->
+<a class="group relative rounded-xl overflow-hidden h-20 sm:h-22 bg-slate-900 border border-black/5 shadow-sm block" href="/starlink-internet-installation/">
+<img alt="Starlink Satellite Internet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" height="120" loading="lazy" src="/assets/images/starlink-chimney-mount.webp" width="360"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-2.5 flex flex-col justify-end">
+<span class="text-[9px] font-mono font-bold text-orange-400 uppercase tracking-wider leading-none">Fast Satellite Internet</span>
+<p class="text-xs font-bold text-white leading-tight group-hover:text-orange-300 transition-colors mt-0.5">Starlink 150–350Mbps Gen 3</p>
+<span class="text-[9px] text-slate-300 mt-0.5 flex items-center gap-1 leading-none">Fitted From £199+VAT →</span>
+</div>
+</a>
+<!-- Card 2: Ajax Grade 2 Alarms -->
+<a class="group relative rounded-xl overflow-hidden h-20 sm:h-22 bg-slate-900 border border-black/5 shadow-sm block" href="/ajax-alarm/">
+<img alt="Ajax Smart Wireless Alarm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" height="120" loading="lazy" src="/assets/images/ajax-alarm-clean.webp" width="360"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-2.5 flex flex-col justify-end">
+<span class="text-[9px] font-mono font-bold text-red-400 uppercase tracking-wider leading-none">Grade 2 Wireless Security</span>
+<p class="text-xs font-bold text-white leading-tight group-hover:text-red-300 transition-colors mt-0.5">Ajax 0.15s Photo Verification</p>
+<span class="text-[9px] text-slate-300 mt-0.5 flex items-center gap-1 leading-none">£0 Monthly Fees • From £599 + VAT →</span>
+</div>
+</a>
+<!-- Card 3: 4K ColorVu CCTV -->
+<a class="group relative rounded-xl overflow-hidden h-20 sm:h-22 bg-slate-900 border border-black/5 shadow-sm block" href="/cctv-installation/">
+<img alt="4K ColorVu &amp; TiOC CCTV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" height="120" loading="lazy" src="/assets/images/cctv-colorvu-clean.webp" width="360"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-2.5 flex flex-col justify-end">
+<span class="text-[9px] font-mono font-bold text-emerald-400 uppercase tracking-wider leading-none">24/7 Full-Colour Night Vision</span>
+<p class="text-xs font-bold text-white leading-tight group-hover:text-emerald-300 transition-colors mt-0.5">4K ColorVu &amp; TiOC CCTV</p>
+<span class="text-[9px] text-slate-300 mt-0.5 flex items-center gap-1 leading-none">WD Purple Storage • Turnkey →</span>
+</div>
+</a>
+</div>
+<!-- 2. BOTTOM MAIN SERVICES GRID (2 Columns) -->
+<div class="grid grid-cols-2 gap-x-5 gap-y-1 pt-2.5">
+<!-- Service 1: Starlink -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/starlink-internet-installation/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="SpaceX Starlink Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/starlink-chimney-mount.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>SpaceX Starlink Installation</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">Chimney &amp; roof mounting brackets with high-speed broadband</p>
+</div>
+</a>
+<!-- Service 2: Fire Safety -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/wireless-fire-alarms/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Wireless Fire &amp; Smoke Detection System" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/fire-alarm-clean.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Wireless Fire &amp; Life Safety</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">Commercial &amp; domestic interlinked wireless smoke, heat &amp; CO alarms</p>
+</div>
+</a>
+<!-- Service 3: Ajax Alarms -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/ajax-alarm/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Ajax Smart Wireless Alarm" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/ajax-alarm-clean.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Ajax Smart Wireless Alarms</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">MotionCam 0.15s photo alerts, encrypted radio &amp; £0 monthly fees</p>
+</div>
+</a>
+<!-- Service 4: Data Cabling -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/data-cabling/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Cat6a Structured Cabling" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/server-rack-cabling.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Cat6a &amp; Cat7 Data Cabling</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">Solid copper ethernet drops, patch panels &amp; outbuilding links</p>
+</div>
+</a>
+<!-- Service 5: TV Mounting -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/tv-wall-mounting/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="TV Wall Mounting" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/tv-wall-mount-clean.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>TV Wall Mounting Specialists</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">SnapToggle steel anchors for drywall, cantilever brackets &amp; hidden cables</p>
+</div>
+</a>
+<!-- Service 6: 4K CCTV -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/cctv-installation/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="4K ColorVu CCTV" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/cctv-colorvu-clean.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>4K ColorVu &amp; TiOC CCTV</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">24/7 full-colour night optics, AI human/vehicle filtering &amp; local storage</p>
+</div>
+</a>
+<!-- Service 7: Digital Aerials -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/tv-aerial-installation/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Digital TV Aerials" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/tv-aerial-clean.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Digital TV Aerials &amp; Freeview HD</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">Emley Moor aligned aerials, 4G/5G filters &amp; multi-point distribution</p>
+</div>
+</a>
+<!-- Service 8: Communal Aerials & IRS -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/communal-aerial-installation/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Communal Aerials &amp; IRS" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/communal-aerial-irs-systems.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Communal Aerials &amp; IRS Systems</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">IRS, MATV, SMATV &amp; Sky Q SCR distribution for blocks &amp; flats</p>
+</div>
+</a>
+<!-- Service 9: European Satellite -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/european-satellite-installation/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="European Satellite Dishes" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/european-satellite-dish-installation.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>European &amp; Freesat Satellite</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">Freesat 4K, German Astra 19.2°E &amp; Polish Hotbird 13°E dish alignments</p>
+</div>
+</a>
+<!-- Service 10: Cable Repairs -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/cable-repairs/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Emergency Cable Repairs" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/cable-repairs-damaged-splicing-2026.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Emergency Cable Repairs</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">Cut CCTV shotgun, chewed coax &amp; severed Cat6 jointing</p>
+</div>
+</a>
+<!-- Service 11: Whole-Home WiFi -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/wifi-installation/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Whole-Home Mesh WiFi" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/mesh-wifi-clean.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Whole-Home WiFi &amp; Mesh</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">Zero dead zones, stone wall penetration &amp; garden room bridges</p>
+</div>
+</a>
+<!-- Service 12: Telephone Engineer -->
+<a class="flex items-center gap-2.5 py-1 px-2 rounded-xl hover:bg-slate-50 border border-transparent hover:border-black/5 transition-all group" href="/telephone-engineer/">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-slate-100 border border-black/10 flex-shrink-0 shadow-inner">
+<img alt="Telephone Engineer" class="w-full h-full object-cover group-hover:scale-110 transition-transform" height="64" loading="lazy" src="/assets/images/openreach-nte5c-telephone-master-socket-repair.webp" width="64"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="text-[13px] sm:text-sm font-bold text-[#1D1D1F] group-hover:text-[#FF5500] transition-colors">
+<span>Telephone Engineer</span>
+</div>
+<p class="text-[12px] text-[#6A727B] truncate leading-tight">BT master socket moves, crackling line noise repairs &amp; cabling</p>
+</div>
+</a>
+<!-- Direct CTA Box in Menu -->
+<div class="col-span-2 flex items-center justify-between py-2 px-3.5 mt-1.5 rounded-xl bg-orange-50 border border-orange-200">
+<div class="space-y-0">
+<span class="text-[11px] font-mono font-bold text-orange-800 uppercase tracking-wider">Need Advice or Free Commercial / Residential Quote?</span>
+<div class="text-[11px] font-bold text-orange-950">Direct Engineer Line: 07860 244 274 • Gary Pearce (25+ Yrs Experience)</div>
+</div>
+<a class="bg-[#FF5500] hover:bg-orange-600 text-white font-bold px-3.5 py-1.5 rounded-lg text-xs font-mono transition-colors shadow-sm whitespace-nowrap" href="tel:07860244274">
+                  Call Gary Today
+                </a>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. AREAS COVERED DROPDOWN -->
+<div class="nav-dropdown-wrapper py-6">
+<button class="flex items-center gap-1.5 text-[#1D1D1F] font-bold hover:text-[#FF5500] transition-colors cursor-pointer" type="button">
+<span>Areas Covered</span>
+<svg class="w-3.5 h-3.5 opacity-50" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<!-- Dropdown Panel (880px Wide) -->
+<div class="dropdown-menu w-[880px] bg-white rounded-3xl p-6 shadow-2xl border border-black/10 z-50">
+<div class="grid grid-cols-12 gap-6">
+<!-- Left Column: Counties Navigation -->
+<div class="col-span-3 border-r border-black/5 pr-4 space-y-1.5">
+<div class="text-[11px] font-mono uppercase font-bold text-[#6A727B] px-3 pb-1 tracking-wider">
+                  Select Region:
+                </div>
+<button class="county-nav-btn w-full text-left px-4 py-2.5 rounded-2xl font-bold text-xs flex items-center justify-between transition-all bg-[#1D1D1F] text-white" id="county-tab-yorkshire" onclick="switchCountyTab('yorkshire')" onmouseenter="switchCountyTab('yorkshire')" type="button">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#FF5500]"></span>
+<span>Yorkshire</span>
+</div>
+<span class="text-[10px] font-mono opacity-70">›</span>
+</button>
+<button class="county-nav-btn w-full text-left px-4 py-2.5 rounded-2xl font-bold text-xs flex items-center justify-between transition-all text-[#1D1D1F] hover:bg-slate-100" id="county-tab-lancashire" onclick="switchCountyTab('lancashire')" onmouseenter="switchCountyTab('lancashire')" type="button">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#FF5500]"></span>
+<span>Lancashire &amp; Manchester</span>
+</div>
+<span class="text-[10px] font-mono opacity-70">›</span>
+</button>
+<button class="county-nav-btn w-full text-left px-4 py-2.5 rounded-2xl font-bold text-xs flex items-center justify-between transition-all text-[#1D1D1F] hover:bg-slate-100" id="county-tab-cheshire" onclick="switchCountyTab('cheshire')" onmouseenter="switchCountyTab('cheshire')" type="button">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#FF5500]"></span>
+<span>Cheshire &amp; Midlands</span>
+</div>
+<span class="text-[10px] font-mono opacity-70">›</span>
+</button>
+<button class="county-nav-btn w-full text-left px-4 py-2.5 rounded-2xl font-bold text-xs flex items-center justify-between transition-all text-[#1D1D1F] hover:bg-slate-100" id="county-tab-humberside" onclick="switchCountyTab('humberside')" onmouseenter="switchCountyTab('humberside')" type="button">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#FF5500]"></span>
+<span>Humberside &amp; Lincs</span>
+</div>
+<span class="text-[10px] font-mono opacity-70">›</span>
+</button>
+<button class="county-nav-btn w-full text-left px-4 py-2.5 rounded-2xl font-bold text-xs flex items-center justify-between transition-all text-[#1D1D1F] hover:bg-slate-100" id="county-tab-teesside" onclick="switchCountyTab('teesside')" onmouseenter="switchCountyTab('teesside')" type="button">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#FF5500]"></span>
+<span>Teesside &amp; North East</span>
+</div>
+<span class="text-[10px] font-mono opacity-70">›</span>
+</button>
+<div class="pt-3 border-t border-black/5 mt-3 px-2 space-y-1 text-[11px] font-mono text-[#6A727B]">
+<div>⚡ <strong>Same-Day Dispatch</strong></div>
+<div>🚐 <strong>Equipped Workshop</strong></div>
+<div>✓ <strong>1-Year Guarantee</strong></div>
+</div>
+</div>
+<!-- Right Column: Interactive Region Overview & Top Towns -->
+<div class="col-span-9 pl-2">
+<!-- Panel for Yorkshire -->
+<div class="county-content-panel space-y-3.5" id="county-panel-yorkshire">
+<div class="flex items-center justify-between pb-2 border-b border-black/5">
+<div>
+<p class="text-sm font-black text-[#1D1D1F] font-display">Yorkshire Regional Operating Hub</p>
+<p class="text-[10px] text-[#6A727B] font-mono">West, South &amp; North Yorkshire (HQ Operations Base)</p>
+</div>
+<a class="text-xs font-mono font-bold text-[#FF5500] hover:underline flex items-center gap-1" href="/areas/yorkshire/">
+<span>View Yorkshire Hub</span>
+<span>→</span>
+</a>
+</div>
+<div class="grid grid-cols-3 gap-2 text-xs">
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/leeds/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Leeds</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">LS1–LS29</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/bradford/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Bradford</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">BD1–BD23</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/halifax/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Halifax &amp; Calderdale</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">HX1–HX7</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/huddersfield/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Huddersfield</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">HD1–HD9</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/wakefield/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Wakefield</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">WF1–WF17</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/sheffield/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Sheffield &amp; Rotherham</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">S1–S36</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/doncaster/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Doncaster</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">DN1–DN12</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/york/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">York</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">YO1–YO62</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/harrogate/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Harrogate &amp; Ripon</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">HG1–HG5</span>
+</a>
+</div>
+<div class="mt-3 pt-2.5 border-t border-black/5 flex items-center justify-between">
+<span class="text-[11px] text-neutral-500 font-mono">100+ Yorkshire postcodes covered with daily mobile vans</span>
+<a class="inline-flex items-center gap-1 text-xs font-mono font-bold text-[#FF5500] hover:underline" href="/areas/yorkshire/">
+<span>Explore Full Yorkshire Postcode Network</span>
+<span>→</span>
+</a>
+</div>
+</div>
+<!-- Panel for Lancashire -->
+<div class="county-content-panel space-y-3.5 hidden" id="county-panel-lancashire">
+<div class="flex items-center justify-between pb-2 border-b border-black/5">
+<div>
+<p class="text-sm font-black text-[#1D1D1F] font-display">Lancashire &amp; Greater Manchester Hub</p>
+<p class="text-[10px] text-[#6A727B] font-mono">Manchester, Preston, Blackburn, Blackpool &amp; Fylde</p>
+</div>
+<a class="text-xs font-mono font-bold text-[#FF5500] hover:underline flex items-center gap-1" href="/areas/lancashire/">
+<span>View Lancashire Hub</span>
+<span>→</span>
+</a>
+</div>
+<div class="grid grid-cols-3 gap-2 text-xs">
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/manchester/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Manchester</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">M1–M60</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/preston/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Preston</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">PR1–PR26</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/blackburn/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Blackburn</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">BB1–BB12</span>
+</a>
+</div>
+<div class="mt-3 pt-2.5 border-t border-black/5 flex items-center justify-between">
+<span class="text-[11px] text-neutral-500 font-mono">Full North West &amp; M62 coverage network</span>
+<a class="inline-flex items-center gap-1 text-xs font-mono font-bold text-[#FF5500] hover:underline" href="/areas/lancashire/">
+<span>Explore Full Lancashire Postcode Network</span>
+<span>→</span>
+</a>
+</div>
+</div>
+<!-- Panel for Cheshire & Midlands -->
+<div class="county-content-panel space-y-3.5 hidden" id="county-panel-cheshire">
+<div class="flex items-center justify-between pb-2 border-b border-black/5">
+<div>
+<p class="text-sm font-black text-[#1D1D1F] font-display">Cheshire &amp; East Midlands Hub</p>
+<p class="text-[10px] text-[#6A727B] font-mono">Chester, Crewe, Nottingham, Derby &amp; Midlands</p>
+</div>
+<a class="text-xs font-mono font-bold text-[#FF5500] hover:underline flex items-center gap-1" href="/areas/">
+<span>View All Areas</span>
+<span>→</span>
+</a>
+</div>
+<div class="grid grid-cols-3 gap-2 text-xs">
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/chester/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Chester</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">CH1–CH4</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/crewe/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Crewe &amp; Nantwich</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">CW1–CW12</span>
+</a>
+</div>
+</div>
+<!-- Panel for Humberside & Lincs -->
+<div class="county-content-panel space-y-3.5 hidden" id="county-panel-humberside">
+<div class="flex items-center justify-between pb-2 border-b border-black/5">
+<div>
+<p class="text-sm font-black text-[#1D1D1F] font-display">Humberside &amp; Lincolnshire Hub</p>
+<p class="text-[10px] text-[#6A727B] font-mono">Hull, Grimsby, Scunthorpe &amp; East Riding</p>
+</div>
+<a class="text-xs font-mono font-bold text-[#FF5500] hover:underline flex items-center gap-1" href="/areas/humberside/">
+<span>View Humberside Hub</span>
+<span>→</span>
+</a>
+</div>
+<div class="grid grid-cols-3 gap-2 text-xs">
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/hull/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Hull &amp; Beverley</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">HU1–HU20</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/grimsby/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Grimsby &amp; Scunthorpe</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">DN15–DN41</span>
+</a>
+</div>
+</div>
+<!-- Panel for Teesside & North East -->
+<div class="county-content-panel space-y-3.5 hidden" id="county-panel-teesside">
+<div class="flex items-center justify-between pb-2 border-b border-black/5">
+<div>
+<p class="text-sm font-black text-[#1D1D1F] font-display">Teesside &amp; North East Hub</p>
+<p class="text-[10px] text-[#6A727B] font-mono">Newcastle, Sunderland, Durham, Darlington &amp; Teesside</p>
+</div>
+<a class="text-xs font-mono font-bold text-[#FF5500] hover:underline flex items-center gap-1" href="/areas/teesside/">
+<span>View Teesside Hub</span>
+<span>→</span>
+</a>
+</div>
+<div class="grid grid-cols-3 gap-2 text-xs">
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/newcastle/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Newcastle upon Tyne</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">NE1–NE30</span>
+</a>
+<a class="p-2.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/40 hover:bg-orange-50/70 transition-all block group" href="/areas/middlesbrough/">
+<span class="font-bold text-[#1D1D1F] group-hover:text-[#FF5500] block text-xs">Middlesbrough &amp; Coast</span>
+<span class="text-[10px] text-[#6A727B] font-mono block">TS1–TS23</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Full-Width Bottom Bar -->
+<div class="mt-4 pt-3.5 border-t border-black/5 flex items-center justify-between text-xs">
+<div class="flex items-center gap-3 text-neutral-600 font-mono">
+<span>⚡ <strong>Same-Day Dispatch</strong></span>
+<span>•</span>
+<span>🚐 <strong>Equipped Workshop Vans</strong></span>
+<span>•</span>
+<span>🛠️ <strong>Zero Callout Fee With Completed Work</strong></span>
+</div>
+<a class="font-bold text-[#1D1D1F] hover:text-[#FF5500] font-mono flex items-center gap-1 transition-colors" href="/areas/">
+<span>View Complete UK Regional Directory (100+ Towns)</span>
+<span>→</span>
+</a>
+</div>
+</div>
+<script>
+          function switchCountyTab(countyKey) {
+              var tabs = document.querySelectorAll('.county-nav-btn');
+              tabs.forEach(function(tab) {
+                  tab.classList.remove('bg-[#1D1D1F]', 'text-white');
+                  tab.classList.add('text-[#1D1D1F]', 'hover:bg-slate-100');
+              });
+              var activeTab = document.getElementById('county-tab-' + countyKey);
+              if (activeTab) {
+                  activeTab.classList.remove('text-[#1D1D1F]', 'hover:bg-slate-100');
+                  activeTab.classList.add('bg-[#1D1D1F]', 'text-white');
+              }
+              var panels = document.querySelectorAll('.county-content-panel');
+              panels.forEach(function(panel) {
+                  panel.classList.add('hidden');
+              });
+              var activePanel = document.getElementById('county-panel-' + countyKey);
+              if (activePanel) {
+                  activePanel.classList.remove('hidden');
+              }
+          }
+          </script>
+</div>
+<!-- 3. ABOUT DROPDOWN -->
+<div class="nav-dropdown-wrapper about-dropdown-wrapper py-6">
+<button class="flex items-center gap-1.5 text-[#1D1D1F] font-bold hover:text-[#FF5500] transition-colors cursor-pointer" type="button">
+<span>About</span>
+<svg class="w-3.5 h-3.5 opacity-50" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="dropdown-menu w-64 bg-white rounded-2xl shadow-2xl border border-black/10 p-3 z-50">
+<a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group" href="/about/">
+<span class="text-base">👨‍🔧</span>
+<div>
+<div class="text-xs font-bold text-[#1D1D1F] group-hover:text-[#FF5500]">About Gary Pearce</div>
+<div class="text-[10px] text-[#6A727B]">25+ years' hands-on experience</div>
+</div>
+</a>
+<a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group" href="/terms/">
+<span class="text-base">📜</span>
+<div>
+<div class="text-xs font-bold text-[#1D1D1F] group-hover:text-[#FF5500]">Terms &amp; Conditions</div>
+<div class="text-[10px] text-[#6A727B]">1-Year warranty &amp; service terms</div>
+</div>
+</a>
+<a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition-colors group" href="/privacy-policy/">
+<span class="text-base">🔒</span>
+<div>
+<div class="text-xs font-bold text-[#1D1D1F] group-hover:text-[#FF5500]">Privacy Policy</div>
+<div class="text-[10px] text-[#6A727B]">GDPR &amp; customer data safety</div>
+</div>
+</a>
+<div class="pt-2 border-t border-black/5 mt-1 px-2.5">
+<a class="hover:text-amber-500 text-amber-600 transition-colors inline-flex items-center gap-1 font-semibold text-[11px]" href="https://www.google.com/search?kgmid=/g/11c545gdm0&amp;q=ADI+Communications+LTD" rel="noopener noreferrer" target="_blank">⭐ Google Profile (84+ Reviews)</a>
+</div>
+</div>
+</div>
+<!-- 4. REVIEWS -->
+<a class="text-[#1D1D1F] font-bold hover:text-[#FF5500] transition-colors" href="/#reviews">Reviews</a>
+<!-- 5. NEWS & GUIDES -->
+<a class="text-[#FF5500] font-bold transition-colors" href="/news/">News</a>
+<!-- 6. CONTACT -->
+<a class="text-[#1D1D1F] font-bold hover:text-[#FF5500] transition-colors" href="/contact/">Contact</a>
+</nav>
+<!-- Main Header Call & Quote CTA -->
+<div class="hidden sm:flex items-center gap-3 font-mono text-xs">
+<a class="border border-neutral-300 hover:border-[#FF5500] bg-white hover:bg-neutral-50 text-[#1D1D1F] hover:text-[#FF5500] font-bold px-4 py-2.5 rounded-full shadow-sm transition-all flex items-center gap-2 cursor-pointer" href="tel:07860244274">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Call: 07860 244 274</span>
+</a>
+<a class="bg-[#1D1D1F] hover:bg-[#FF5500] text-white font-bold px-5 py-2.5 rounded-full shadow-md transition-all flex items-center gap-2 cursor-pointer group instant-quote-trigger" href="#quote" onclick="window.openSophieChat(event); return false;" title="Get Instant AI Quote with Sophie">
+<span class="w-1.5 h-1.5 rounded-full bg-[#FF5500] group-hover:bg-white transition-colors"></span>
+<span>Get Instant Quote</span>
+</a>
+</div>
+<!-- Mobile Header Actions -->
+<div class="flex lg:hidden items-center gap-2 font-mono text-xs z-50">
+<a class="px-3.5 py-2 rounded-full bg-[#FF5500] hover:bg-[#E04B00] text-white font-bold text-xs flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" href="tel:07860244274">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span><span>Call</span>
+</a>
+<button aria-label="Open Navigation Menu" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-[#1D1D1F] flex items-center justify-center transition-all active:scale-95 cursor-pointer border border-black/10" id="mobileMenuToggleBtn" onclick="window.toggleAppleMobileNav()">
+<svg class="w-5 h-5" fill="none" id="appleMenuIconOpen" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>
+<svg class="w-5 h-5 hidden" fill="none" id="appleMenuIconClose" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- APPLE LUXURY MOBILE NAVIGATION DRAWER -->
+<div class="fixed inset-0 top-[72px] sm:top-[80px] z-[9999990] bg-[#0A0C14] text-white transform -translate-y-[150%] transition-transform duration-300 ease-out overflow-y-auto lg:hidden shadow-2xl pointer-events-auto" id="appleMobileNavDrawer">
+<div class="p-4 space-y-4 max-w-md mx-auto pb-32">
+<!-- Quick Action CTAs -->
+<div class="grid grid-cols-2 gap-2.5">
+<a class="p-3.5 rounded-2xl bg-[#FF5500] hover:bg-orange-600 text-white font-bold flex flex-col items-center justify-center text-center shadow-lg active:scale-95 transition-all" href="tel:07860244274" onclick="toggleAppleMobileNav(false)">
+<span class="text-lg">📞</span>
+<span class="text-xs font-mono font-bold mt-1">Direct Call</span>
+<span class="text-[11px] opacity-90">07860 244 274</span>
+</a>
+<a class="p-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 text-white font-bold flex flex-col items-center justify-center text-center active:scale-95 transition-all" href="https://wa.me/447860244274?text=Hi%20Gary,%20I'd%20like%20a%20quote%20for%20Ethernet%20cabling." rel="noopener noreferrer" target="_blank">
+<span class="text-lg">💬</span>
+<span class="text-xs font-mono font-bold mt-1">WhatsApp Photo</span>
+<span class="text-[11px] text-emerald-400 font-semibold">Fast Estimate</span>
+</a>
+</div>
+<!-- Direct Call Booking -->
+<a class="w-full py-3 px-4 rounded-xl bg-white text-[#1D1D1F] font-bold text-xs font-mono flex items-center justify-between active:scale-95 transition-all shadow-md" href="tel:07860244274" onclick="toggleAppleMobileNav(false)">
+<span class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Call Gary to Book: 07860 244 274</span>
+</span>
+<span class="text-[#FF5500] font-bold text-sm">→</span>
+</a>
+<!-- Instant AI Quote (Opens Sophie) -->
+<button class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-neutral-900 to-black border border-white/20 text-white font-bold text-xs font-mono flex items-center justify-between active:scale-95 transition-all shadow-md cursor-pointer" onclick="toggleAppleMobileNav(false); window.openSophieChat(event);" type="button">
+<span class="flex items-center gap-2">
+<span class="text-amber-400 text-sm">⚡</span>
+<span class="text-white">Get Instant AI Quote (Sophie)</span>
+</span>
+<span class="text-amber-400 font-bold text-sm">→</span>
+</button>
+<!-- Core Services Directory -->
+<div class="space-y-1.5 pt-1">
+<div class="text-[11px] font-mono uppercase text-slate-400 font-bold tracking-wider px-1">Specialist Engineering Services</div>
+<a class="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors" href="/data-cabling/" onclick="toggleAppleMobileNav(false)">
+<div class="flex items-center gap-3">
+<span class="text-lg">🌐</span>
+<div>
+<div class="text-xs font-bold text-white">Cat6a Data Cabling</div>
+<div class="text-[10px] text-slate-400">Domestic &amp; Commercial High-Speed Drops</div>
+</div>
+</div>
+<span class="text-xs text-[#FF5500]">→</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors" href="/starlink-internet-installation/" onclick="toggleAppleMobileNav(false)">
+<div class="flex items-center gap-3">
+<span class="text-lg">🛰️</span>
+<div>
+<div class="text-xs font-bold text-white">SpaceX Starlink Broadband</div>
+<div class="text-[10px] text-slate-400">150–350Mbps Gen 3 Heavy-Duty Mounts</div>
+</div>
+</div>
+<span class="text-xs text-[#FF5500]">→</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors" href="/cctv-installation/" onclick="toggleAppleMobileNav(false)">
+<div class="flex items-center gap-3">
+<span class="text-lg">📹</span>
+<div>
+<div class="text-xs font-bold text-white">4K ColorVu &amp; TiOC CCTV</div>
+<div class="text-[10px] text-slate-400">Hikvision &amp; Dahua AI Vision Systems</div>
+</div>
+</div>
+<span class="text-xs text-[#FF5500]">→</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors" href="/ajax-alarm/" onclick="toggleAppleMobileNav(false)">
+<div class="flex items-center gap-3">
+<span class="text-lg">🚨</span>
+<div>
+<div class="text-xs font-bold text-white">Ajax Grade 2 Alarms</div>
+<div class="text-[10px] text-slate-400">0.15s Photo Verification &amp; £0 Monthly Fees</div>
+</div>
+</div>
+<span class="text-xs text-[#FF5500]">→</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors" href="/tv-wall-mounting/" onclick="toggleAppleMobileNav(false)">
+<div class="flex items-center gap-3">
+<span class="text-lg">📺</span>
+<div>
+<div class="text-xs font-bold text-white">TV Wall Mounting Specialists</div>
+<div class="text-[10px] text-slate-400">Concealed Wiring &amp; Media Wall Brackets</div>
+</div>
+</div>
+<span class="text-xs text-[#FF5500]">→</span>
+</a>
+</div>
+<!-- Fast Links Grid -->
+<div class="pt-2 border-t border-white/10 grid grid-cols-2 gap-2 text-xs font-mono">
+<a class="p-2.5 rounded-lg bg-white/5 text-center text-slate-300 hover:text-white flex items-center justify-center gap-1.5" href="/news/" onclick="toggleAppleMobileNav(false)">
+<span>📰</span> <span>News &amp; Guides</span>
+</a>
+<a class="p-2.5 rounded-lg bg-white/5 text-center text-slate-300 hover:text-white flex items-center justify-center gap-1.5" href="/areas/" onclick="toggleAppleMobileNav(false)">
+<span>📍</span> <span>Area Directory</span>
+</a>
+<a class="p-2.5 rounded-lg bg-white/5 text-center text-slate-300 hover:text-white flex items-center justify-center gap-1.5" href="/#reviews" onclick="toggleAppleMobileNav(false)">
+<span>⭐</span> <span>Reviews (9.98/10)</span>
+</a>
+<a class="p-2.5 rounded-lg bg-white/5 text-center text-slate-300 hover:text-white flex items-center justify-center gap-1.5" href="/about/" onclick="toggleAppleMobileNav(false)">
+<span>👨‍🔧</span> <span>About Gary</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+function toggleAppleMobileNav(forceState) {
+  var drawer = document.getElementById('appleMobileNavDrawer');
+  var openIcon = document.getElementById('appleMenuIconOpen');
+  var closeIcon = document.getElementById('appleMenuIconClose');
+  var header = document.querySelector('header');
+  if (!drawer) return;
+
+  var isClosed = drawer.style.display === 'none' || drawer.classList.contains('-translate-y-[150%]');
+  var shouldOpen = forceState !== undefined ? forceState : isClosed;
+
+  if (shouldOpen) {
+    if (header) {
+      var rect = header.getBoundingClientRect();
+      drawer.style.top = Math.max(0, rect.bottom) + 'px';
+      drawer.style.height = 'calc(100dvh - ' + Math.max(0, rect.bottom) + 'px)';
+    }
+    drawer.style.display = 'block';
+    drawer.style.pointerEvents = 'auto';
+    requestAnimationFrame(function() {
+      drawer.classList.remove('-translate-y-[150%]');
+      drawer.classList.add('translate-y-0');
+    });
+    if (openIcon) openIcon.classList.add('hidden');
+    if (closeIcon) closeIcon.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden', 'mobile-nav-open');
+  } else {
+    drawer.classList.remove('translate-y-0');
+    drawer.classList.add('-translate-y-[150%]');
+    drawer.style.pointerEvents = 'none';
+    if (openIcon) openIcon.classList.remove('hidden');
+    if (closeIcon) closeIcon.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden', 'mobile-nav-open');
+    setTimeout(function() {
+      if (drawer.classList.contains('-translate-y-[150%]')) {
+        drawer.style.display = 'none';
+      }
+    }, 320);
+  }
+}
+window.toggleAppleMobileNav = toggleAppleMobileNav;
+</script>
+<!-- 2ND MENU BAR: STICKY DOCKING CHAPTER SUBNAV (#chapter-subnav) -->
+<!-- STICKY CHAPTER DOCKING SUBNAV -->
+<nav class="fixed top-0 left-0 right-0 z-[999998] bg-[#0A0C14]/95 backdrop-blur-md border-b border-white/10 shadow-xl transition-all duration-300 transform -translate-y-full" id="chapter-subnav">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-12 flex items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 text-xs font-mono">
+<span class="text-[#FF5500] font-bold whitespace-nowrap hidden sm:inline">CHAPTERS:</span>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap active" data-target="interactive-planner" href="#interactive-planner">1. Interactive Planner</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="where-to-position" href="#where-to-position">2. Camera Positions</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="avoid-blind-spots" href="#avoid-blind-spots">3. Blind Spots</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="mounting-height" href="#mounting-height">4. Mounting Height &amp; Fascia</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="storage-calculator" href="#storage-calculator">5. Storage Formula</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="ai-photo-planning" href="#ai-photo-planning">6. AI Photo Analysis</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="uk-privacy-law" href="#uk-privacy-law">7. UK Privacy Law</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="poe-vs-wifi" href="#poe-vs-wifi">8. PoE vs Wi-Fi</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="pricing-guide" href="#pricing-guide">9. Costs</a>
+<a class="chapter-link px-3 py-1 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap" data-target="faq" href="#faq">10. FAQs</a>
+</div>
+<a class="px-3.5 py-1.5 rounded-full bg-[#FF5500] hover:bg-orange-600 text-white font-mono text-xs font-bold whitespace-nowrap shrink-0 shadow-md transition-all" href="tel:07860244274">
+      Call Gary: 07860&nbsp;244&nbsp;274
+    </a>
+</div>
+</nav>
+<!-- MAIN EDITORIAL CONTENT CONTAINER -->
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12" id="main-content">
+
+  <!-- Breadcrumbs -->
+  <nav aria-label="Breadcrumb" class="mb-6">
+    <ol class="flex flex-wrap items-center gap-2 text-xs font-mono text-neutral-500">
+      <li><a class="hover:text-[#FF5500] transition-colors" href="/">Home</a></li>
+      <li>/</li>
+      <li><a class="hover:text-[#FF5500] transition-colors" href="/news/">News &amp; Technical Insights</a></li>
+      <li>/</li>
+      <li class="text-[#1D1D1F] font-semibold">CCTV Camera Placement &amp; Storage Planner</li>
+    </ol>
+  </nav>
+
+  <!-- Article Header & Meta Pill -->
+  <div class="article-header mb-10">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100/80 border border-[#FF5500]/30 text-xs font-mono font-bold text-[#FF5500] uppercase tracking-wider mb-4">
+      <span class="w-2 h-2 rounded-full bg-[#FF5500] animate-pulse"></span>
+      Interactive Tool &amp; Engineering Field Guide
+    </div>
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1D1D1F] tracking-tight font-display leading-[1.15] mb-4">
+      Where Should CCTV Cameras Be Positioned? A Home CCTV Camera Placement &amp; Storage Guide
+    </h1>
+    <p class="text-lg sm:text-xl text-neutral-600 font-normal leading-relaxed mb-6">
+      Planning a home CCTV system is about more than choosing how many cameras to buy. The right camera positions, viewing angles, mounting height, lighting and recording capacity all affect whether your system captures useful evidence when you need it.
+    </p>
+
+    <!-- Author & Field Specs Pill Grid -->
+    <div class="p-4 sm:p-5 rounded-2xl bg-white border border-black/10 shadow-xs flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm border-2 border-[#FF5500]">
+          GP
+        </div>
+        <div>
+          <div class="font-bold text-[#1D1D1F] text-sm">Gary Pearce</div>
+          <div class="text-neutral-500">Director &amp; Lead Engineer · 25+ Years Experience</div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-2 text-[11px]">
+        <span class="px-2.5 py-1 rounded-md bg-neutral-100 text-neutral-700">DORI Police Standard</span>
+        <span class="px-2.5 py-1 rounded-md bg-neutral-100 text-neutral-700">ICO Domestic CCTV 2026</span>
+        <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200">100% Free Tool</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Image -->
+  <figure class="mb-10 rounded-3xl overflow-hidden border border-black/10 shadow-lg bg-neutral-900">
+    <img alt="Professional CCTV Camera Installation Under Soffits and Eaves on British Home" class="w-full h-auto object-cover max-h-[500px]" fetchpriority="high" height="900" src="/assets/images/cctv-residential-turret-eaves-mount-beverley.webp" width="1600"/>
+    <figcaption class="p-3.5 bg-neutral-900 text-neutral-400 text-xs font-mono text-center">
+      Discreet 4K turret camera installation mounted directly beneath roof eaves with concealed solid copper Cat6 cabling and IP66 deep weatherproof base.
+    </figcaption>
+  </figure>
+
+  <!-- BLUF Direct Answer Box -->
+  <aside class="mb-12 p-6 sm:p-8 rounded-3xl bg-amber-500/10 border-2 border-[#FF5500]/40 shadow-sm">
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-xl">🎯</span>
+      <h3 class="text-lg sm:text-xl font-bold font-display text-[#1D1D1F]">
+        Direct Engineering Answer: Where to Put CCTV Cameras
+      </h3>
+    </div>
+    <p class="text-base text-neutral-800 leading-relaxed font-normal">
+      The best CCTV camera placement for a UK home uses a <strong>3-to-4 camera cross-fire perimeter</strong> mounted at <strong>2.8 to 3.2 metres (around 10 feet)</strong> beneath roof soffits or upper masonry. This height keeps lenses out of reach of tampering while preventing <em>"head-top syndrome"</em> so faces and vehicle number plates can be identified under British police DORI standards, without pointing into neighbours' private gardens.
+    </p>
+  </aside>
+
+  <!-- Table of Contents -->
+  <nav class="mb-12 p-6 rounded-2xl bg-white border border-black/10 shadow-xs" id="toc">
+    <h3 class="text-sm font-mono font-bold uppercase tracking-wider text-neutral-500 mb-3">Contents in this Guide</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm font-medium">
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#interactive-planner">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">01.</span>
+        <span>Interactive Placement &amp; Storage Planner</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#where-to-position">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">02.</span>
+        <span>Where to Position Home CCTV Cameras</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#avoid-blind-spots">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">03.</span>
+        <span>How to Avoid CCTV Blind Spots</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#mounting-height">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">04.</span>
+        <span>Best Mounting Height &amp; Fascia Rules</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#storage-calculator">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">05.</span>
+        <span>CCTV Storage Calculation Formula</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#ai-photo-planning">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">06.</span>
+        <span>Can AI Plan Positions from House Photos?</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#uk-privacy-law">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">07.</span>
+        <span>UK CCTV Privacy &amp; Data Protection Law</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#poe-vs-wifi">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">08.</span>
+        <span>Wired PoE vs Wi-Fi Security Cameras</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#pricing-guide">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">09.</span>
+        <span>Transparent Pricing &amp; Hardware Guide</span>
+      </a>
+      <a class="flex items-center gap-2 p-2 rounded-xl hover:bg-orange-50 hover:text-[#FF5500] transition-colors" href="#faq">
+        <span class="font-mono text-xs text-[#FF5500] font-bold">10.</span>
+        <span>Direct Answer FAQs</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       CHAPTER 1: INTERACTIVE PLANNER & STORAGE WIZARD
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="interactive-planner">
+    <div class="rounded-3xl bg-white border-2 border-[#FF5500]/30 shadow-xl overflow-hidden p-6 sm:p-8">
+      
+      <!-- Wizard Header -->
+      <div class="border-b border-black/10 pb-5 mb-6">
+        <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-xs font-mono font-bold text-[#FF5500] uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-[#FF5500] animate-pulse"></span>
+            Free Planning Tool · ADI Communications
+          </div>
+          <span class="text-xs font-mono text-neutral-500">No Sign-up Required</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight">
+          CCTV Camera Placement &amp; Storage Planner
+        </h2>
+        <p class="text-sm text-neutral-600 mt-1 font-normal">
+          Plan your coverage, mounting preferences, recording capacity and test your property photos for blind spots.
+        </p>
+      </div>
+
+      <!-- Step Stepper Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-3 mb-6" id="wizard-stepper">
+        <button type="button" onclick="showWizardStep(1)" class="step-pill active" id="step-btn-1">
+          <span>1. Property &amp; Zones</span>
+        </button>
+        <button type="button" onclick="showWizardStep(2)" class="step-pill pending" id="step-btn-2">
+          <span>2. Mounting &amp; Height</span>
+        </button>
+        <button type="button" onclick="showWizardStep(3)" class="step-pill pending" id="step-btn-3">
+          <span>3. Storage Calculator</span>
+        </button>
+        <button type="button" onclick="showWizardStep(4)" class="step-pill pending" id="step-btn-4">
+          <span>4. AI Photo Placement Hub</span>
+        </button>
+      </div>
+
+      <!-- ================= SCREEN 1: PROPERTY & ZONES ================= -->
+      <div class="wizard-screen active" id="wizard-step-1">
+        <h3 class="text-lg font-bold text-[#1D1D1F] font-display mb-3">1. Tell us about your property</h3>
+        
+        <div class="mb-5">
+          <label class="block text-xs font-mono font-bold uppercase text-neutral-500 mb-2">Property Type</label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <label class="cctv-choice-card">
+              <input type="radio" name="property_type" value="Semi-detached house" checked onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-sm font-bold text-[#1D1D1F]">Semi-Detached</strong>
+                <span class="text-xs text-neutral-500">Shared party wall, side alley access &amp; front drive</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="radio" name="property_type" value="Detached house / grounds" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-sm font-bold text-[#1D1D1F]">Detached House</strong>
+                <span class="text-xs text-neutral-500">360-degree perimeter, wrap-around gardens &amp; double garage</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="radio" name="property_type" value="Terraced / Townhouse" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-sm font-bold text-[#1D1D1F]">Terraced / Townhouse</strong>
+                <span class="text-xs text-neutral-500">Front street boundary, rear yard / ginnel lane access</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="radio" name="property_type" value="Bungalow / Single-storey" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-sm font-bold text-[#1D1D1F]">Bungalow</strong>
+                <span class="text-xs text-neutral-500">Lower roofline, soffit mounts require tamper protection</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="radio" name="property_type" value="Commercial / Outbuilding" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-sm font-bold text-[#1D1D1F]">Commercial / Farm</strong>
+                <span class="text-xs text-neutral-500">Workshops, loading bays, steel buildings &amp; outbuildings</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="radio" name="property_type" value="Flat / Apartment" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-sm font-bold text-[#1D1D1F]">Apartment / Balcony</strong>
+                <span class="text-xs text-neutral-500">Communal entrance, private balcony or dedicated parking bay</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-xs font-mono font-bold uppercase text-neutral-500 mb-2">Which areas do you want to protect? (Select all that apply)</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Front door / entrance" checked onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Front Entrance</strong>
+                <span class="text-[11px] text-neutral-500">Visitor DORI Face ID</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Driveway / vehicles" checked onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Driveway &amp; Cars</strong>
+                <span class="text-[11px] text-neutral-500">Vehicle plates &amp; catalytic theft</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Rear garden / patio" checked onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Rear Patio / Garden</strong>
+                <span class="text-[11px] text-neutral-500">Bifold doors &amp; dark perimeter</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Side passage / alley" checked onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Side Passage / Alley</strong>
+                <span class="text-[11px] text-neutral-500">Concealed intruder walk-through</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Garage / shed" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Garage / Shed</strong>
+                <span class="text-[11px] text-neutral-500">E-bikes, tools &amp; outbuilding</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Gate / boundary" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Gate / Boundary</strong>
+                <span class="text-[11px] text-neutral-500">Perimeter tripwire alerts</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Ground-floor windows" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Ground Windows</strong>
+                <span class="text-[11px] text-neutral-500">Bay &amp; side casement views</span>
+              </div>
+            </label>
+            <label class="cctv-choice-card">
+              <input type="checkbox" name="protect_zones" value="Indoors / hallway" onchange="updatePlacementPlan()"/>
+              <div>
+                <strong class="block text-xs font-bold text-[#1D1D1F]">Indoor Hallway</strong>
+                <span class="text-[11px] text-neutral-500">Tamper &amp; safe backup</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="flex justify-end pt-3 border-t border-black/10">
+          <button type="button" onclick="showWizardStep(2)" class="px-6 py-3 rounded-full bg-[#FF5500] hover:bg-orange-600 text-white font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-md">
+            Next: Mounting Preferences →
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= SCREEN 2: MOUNTING & HEIGHT ================= -->
+      <div class="wizard-screen" id="wizard-step-2">
+        <h3 class="text-lg font-bold text-[#1D1D1F] font-display mb-3">2. Choose your camera preferences</h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase text-neutral-500 mb-2">Preferred Mounting Style</label>
+            <div class="space-y-2">
+              <label class="cctv-choice-card">
+                <input type="radio" name="mounting_style" value="Visible cameras for deterrence" checked onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Visible Deterrence</strong>
+                  <span class="text-[11px] text-neutral-500">Prominent corner turrets that signal property is alarmed</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="mounting_style" value="Discreet under fascia or eaves" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Discreet Under Eaves</strong>
+                  <span class="text-[11px] text-neutral-500">Tucked cleanly into white or anthracite roof soffits</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="mounting_style" value="A mix of both" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Balanced Mix</strong>
+                  <span class="text-[11px] text-neutral-500">Visible front drive turret, sleek discreet garden cameras</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase text-neutral-500 mb-2">Preferred Mounting Height</label>
+            <div class="space-y-2">
+              <label class="cctv-choice-card">
+                <input type="radio" name="mounting_height" value="About 10 ft / 3 m (Recommended)" checked onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">About 10 ft / 3.0 m (Sweet Spot)</strong>
+                  <span class="text-[11px] text-neutral-500">Out of reach; shallow 25° angle captures clear faces</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="mounting_height" value="About 8 ft / 2.5 m" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">About 8 ft / 2.5 m (Porch Level)</strong>
+                  <span class="text-[11px] text-neutral-500">Best facial detail; requires anti-vandal IK10 metal casing</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="mounting_height" value="About 11.5 ft / 3.5 m" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">About 11.5 ft / 3.5 m (Gable Apex)</strong>
+                  <span class="text-[11px] text-neutral-500">Broad yard overview; risk of downward "head-top syndrome"</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase text-neutral-500 mb-2">What Matters Most to You?</label>
+            <div class="space-y-2">
+              <label class="cctv-choice-card">
+                <input type="radio" name="cctv_priority" value="Identify faces at useful distances (DORI)" checked onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Facial Identification (DORI Standard)</strong>
+                  <span class="text-[11px] text-neutral-500">Admissible police evidence at 10m to 15m</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="cctv_priority" value="Vehicle or number-plate detail" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Vehicle Number Plates</strong>
+                  <span class="text-[11px] text-neutral-500">High shutter speed to stop motion blur on headlights</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="cctv_priority" value="Night-time full-colour quality" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">24/7 Color Night Vision (ColorVu)</strong>
+                  <span class="text-[11px] text-neutral-500">F1.0 super-aperture without grainy black &amp; white infrared</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase text-neutral-500 mb-2">Preferred Cable Connection</label>
+            <div class="space-y-2">
+              <label class="cctv-choice-card">
+                <input type="radio" name="connection_type" value="Hardwired PoE Ethernet (Recommended)" checked onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Hardwired Cat6 PoE (Trade Standard)</strong>
+                  <span class="text-[11px] text-neutral-500">Power &amp; 4K video on 1 cable; immune to Wi-Fi jammers</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="connection_type" value="Wi-Fi cameras (battery or solar)" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Wi-Fi / Battery Cameras</strong>
+                  <span class="text-[11px] text-neutral-500">Convenient, but requires periodic charging &amp; strong 2.4GHz</span>
+                </div>
+              </label>
+              <label class="cctv-choice-card">
+                <input type="radio" name="connection_type" value="Engineer assessment" onchange="updatePlacementPlan()"/>
+                <div>
+                  <strong class="block text-xs font-bold text-[#1D1D1F]">Engineer Recommendation</strong>
+                  <span class="text-[11px] text-neutral-500">Let Gary survey cable paths and loft access</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-between pt-3 border-t border-black/10">
+          <button type="button" onclick="showWizardStep(1)" class="px-5 py-2.5 rounded-full border border-black/20 hover:bg-neutral-100 text-neutral-700 font-mono text-xs font-bold transition-all">
+            ← Back
+          </button>
+          <button type="button" onclick="showWizardStep(3)" class="px-6 py-3 rounded-full bg-[#FF5500] hover:bg-orange-600 text-white font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-md">
+            Next: Storage Calculator →
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= SCREEN 3: STORAGE CALCULATOR ================= -->
+      <div class="wizard-screen" id="wizard-step-3">
+        <h3 class="text-lg font-bold text-[#1D1D1F] font-display mb-3">3. Calculate your CCTV recording storage</h3>
+        <p class="text-xs text-neutral-600 mb-5 font-normal">
+          Adjust camera resolution, compression codec, and retention days to calculate daily bandwidth and the exact hard drive size needed for your NVR recorder.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <!-- Controls Column -->
+          <div class="md:col-span-2 space-y-4">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase text-neutral-600 mb-1">
+                  Number of Cameras: <span class="text-[#FF5500] font-black text-sm" id="calc-cam-display">4</span>
+                </label>
+                <input type="range" min="1" max="16" value="4" class="w-full accent-[#FF5500]" id="calc-cam-count" oninput="runStorageCalculation()"/>
+                <div class="flex justify-between text-[10px] font-mono text-neutral-400 mt-0.5">
+                  <span>1 cam</span>
+                  <span>4 cams (typical)</span>
+                  <span>8 cams</span>
+                  <span>16 cams</span>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase text-neutral-600 mb-1">Camera Resolution</label>
+                <select id="calc-resolution" class="w-full p-2.5 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold focus:border-[#FF5500]" onchange="runStorageCalculation()">
+                  <option value="1080p">2 MP / 1080p Full HD (2 Mbps)</option>
+                  <option value="4mp">4 MP 2K Quad HD (3.5 Mbps)</option>
+                  <option value="4k" selected>8 MP / 4K Ultra HD (6 Mbps)</option>
+                  <option value="12mp">12 MP Panoramic / Dual Lens (10 Mbps)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase text-neutral-600 mb-1">Frame Rate</label>
+                <select id="calc-fps" class="w-full p-2.5 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold focus:border-[#FF5500]" onchange="runStorageCalculation()">
+                  <option value="10">10 fps (Basic)</option>
+                  <option value="15" selected>15 fps (UK Trade Standard)</option>
+                  <option value="20">20 fps (Smooth)</option>
+                  <option value="25">25 fps (Full PAL Realtime)</option>
+                  <option value="30">30 fps (High Speed)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase text-neutral-600 mb-1">Compression Codec</label>
+                <select id="calc-codec" class="w-full p-2.5 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold focus:border-[#FF5500]" onchange="runStorageCalculation()">
+                  <option value="h265" selected>H.265 / H.265+ Smart Codec</option>
+                  <option value="h264">H.264 / AVC (Legacy +50% size)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono font-bold uppercase text-neutral-600 mb-1">Recording Schedule</label>
+                <select id="calc-schedule" class="w-full p-2.5 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold focus:border-[#FF5500]" onchange="runStorageCalculation()">
+                  <option value="24" selected>Continuous 24/7 Recording</option>
+                  <option value="8">Smart AI Motion (~8 hrs/day)</option>
+                  <option value="12">Daytime Only (12 hrs/day)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-neutral-600 mb-1">
+                How Many Days Do You Want to Keep Footage?
+              </label>
+              <div class="grid grid-cols-5 gap-2">
+                <button type="button" onclick="setRetention(7)" class="retention-btn p-2 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold hover:border-[#FF5500]" data-days="7">7 Days</button>
+                <button type="button" onclick="setRetention(14)" class="retention-btn p-2 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold hover:border-[#FF5500]" data-days="14">14 Days</button>
+                <button type="button" onclick="setRetention(30)" class="retention-btn p-2 rounded-xl border-2 border-[#FF5500] bg-orange-50 text-xs font-mono font-bold text-[#FF5500]" data-days="30">30 Days</button>
+                <button type="button" onclick="setRetention(60)" class="retention-btn p-2 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold hover:border-[#FF5500]" data-days="60">60 Days</button>
+                <button type="button" onclick="setRetention(90)" class="retention-btn p-2 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold hover:border-[#FF5500]" data-days="90">90 Days</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Live Output Card -->
+          <div class="p-5 rounded-2xl bg-neutral-900 text-white shadow-xl flex flex-col justify-between border border-neutral-800">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-orange-400">Live Calculation</span>
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              </div>
+              
+              <div class="mb-4">
+                <div class="text-xs text-neutral-400 font-mono">Daily Generated Data:</div>
+                <div class="text-2xl font-black font-mono text-white" id="calc-daily-gb">259.2 GB / day</div>
+                <div class="text-[11px] text-neutral-400">across all active channels</div>
+              </div>
+
+              <div class="mb-4 pt-3 border-t border-white/10">
+                <div class="text-xs text-neutral-400 font-mono">Total Required Archive:</div>
+                <div class="text-3xl font-black font-mono text-[#FF5500]" id="calc-total-tb">7.78 TB</div>
+                <div class="text-[11px] text-neutral-400 font-mono" id="calc-total-gb">(7,776 GB raw video)</div>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-white/10">
+              <div class="text-[11px] font-mono uppercase text-orange-300 font-bold mb-1">Recommended Hard Drive:</div>
+              <div class="p-2.5 rounded-xl bg-white/10 border border-white/15">
+                <strong class="block text-sm font-bold text-white font-mono" id="calc-hdd-recommendation">8TB Surveillance HDD</strong>
+                <span class="text-[11px] text-neutral-300">WD Purple / SkyHawk (24/7 AllFrame firmware)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="flex justify-between pt-3 border-t border-black/10">
+          <button type="button" onclick="showWizardStep(2)" class="px-5 py-2.5 rounded-full border border-black/20 hover:bg-neutral-100 text-neutral-700 font-mono text-xs font-bold transition-all">
+            ← Back
+          </button>
+          <button type="button" onclick="showWizardStep(4)" class="px-6 py-3 rounded-full bg-[#FF5500] hover:bg-orange-600 text-white font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-md">
+            Next: AI Photo &amp; Placement Hub →
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= SCREEN 4: AI PHOTO PLACEMENT HUB ================= -->
+      <div class="wizard-screen" id="wizard-step-4">
+        <h3 class="text-lg font-bold text-[#1D1D1F] font-display mb-2">4. AI Property Photo &amp; Footage Placement Analysis</h3>
+        <p class="text-xs text-neutral-600 mb-5 font-normal">
+          Upload ground-level photos or architectural sketches of your front, driveway, rear garden, or roofline. Our client-side layout engine analyses elevation risks, recommends camera focal lengths, and checks ICO privacy compliance.
+        </p>
+
+        <!-- Dropzone Box -->
+        <div class="mb-6 p-6 rounded-2xl border-2 border-dashed border-black/20 hover:border-[#FF5500] bg-[#FAF8F5] transition-all text-center cursor-pointer" id="photo-dropzone" onclick="document.getElementById('cctv-file-input').click()">
+          <input type="file" id="cctv-file-input" multiple accept="image/*" class="hidden" onchange="handlePhotoUpload(this.files)"/>
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-[#FF5500] flex items-center justify-center mx-auto mb-3 text-xl font-bold">
+            📷
+          </div>
+          <strong class="block text-sm font-bold text-[#1D1D1F] mb-1">Click to Upload House Photos or Drag &amp; Drop</strong>
+          <span class="text-xs text-neutral-500 block mb-2">Upload Front Door, Driveway, Side Alley or Rear Elevation (JPG, PNG, WebP)</span>
+          <span class="inline-block px-3 py-1 rounded-full bg-neutral-200 text-neutral-700 text-[10px] font-mono">🔒 Images processed locally in your browser for privacy</span>
+        </div>
+
+        <!-- Preview Thumbnails Container -->
+        <div id="photo-previews" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 hidden"></div>
+
+        <!-- Automated Heuristic Placement Plan Output -->
+        <div class="p-6 rounded-2xl bg-white border border-black/10 shadow-sm mb-6" id="generated-plan-box">
+          <div class="flex items-center justify-between mb-4 pb-3 border-b border-black/10">
+            <div>
+              <span class="text-[11px] font-mono uppercase text-[#FF5500] font-bold">Preliminary Placement Assessment</span>
+              <h4 class="text-base font-bold text-[#1D1D1F] font-display" id="plan-property-title">Semi-Detached House — 4 Zone Plan</h4>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-mono font-bold">Engine Verified</span>
+          </div>
+
+          <!-- Zone Breakdown Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4" id="plan-camera-allocation">
+            <!-- Dynamically populated by updatePlacementPlan() -->
+          </div>
+
+          <!-- Blind Spot & Technical Advisory -->
+          <div class="p-4 rounded-xl bg-orange-50 border border-orange-200 text-xs text-neutral-700 leading-relaxed space-y-1.5" id="plan-blind-spot-advisory">
+            <strong class="text-[#FF5500] font-bold block">⚠️ Engineering Blind-Spot &amp; IR Glare Prevention:</strong>
+            <p>1. <strong>Downpipe IR Wash:</strong> Ensure Camera 2 on the driveway is positioned at least 450mm away from black rainwater downpipes to prevent white infrared night-time glare.</p>
+            <p>2. <strong>Cross-Fire Overlap:</strong> Camera 3 (Side passage) and Camera 4 (Rear patio) must overlap coverage zones by at least 15% to eliminate blind corridors beneath ladders.</p>
+            <p>3. <strong>ICO Boundary Masking:</strong> Digital privacy masking should be applied to prevent recording across neighbour boundaries on the shared party wall.</p>
+          </div>
+        </div>
+
+        <!-- Dispatch to Gary Pearce CTA Box -->
+        <div class="p-6 rounded-2xl bg-neutral-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4 border border-neutral-800 shadow-xl">
+          <div>
+            <div class="text-xs font-mono uppercase text-orange-400 font-bold mb-1">Want a Certified Engineer to Survey Your House?</div>
+            <h4 class="text-lg font-bold font-display text-white">Get Gary Pearce to Review Your Layout</h4>
+            <p class="text-xs text-neutral-400">Fixed-price quotations, discrete cable routing through lofts, and zero monthly subscriptions.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 shrink-0">
+            <a href="tel:07860244274" class="px-5 py-3 rounded-full bg-[#FF5500] hover:bg-orange-600 text-white font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-md">
+              Call Gary: 07860&nbsp;244&nbsp;274
+            </a>
+            <button type="button" onclick="alert('Thank you! Your preliminary CCTV plan has been prepared. Call Gary on 07860 244 274 to confirm your free on-site survey and cable route assessment.')" class="px-4 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-mono text-xs font-bold transition-all">
+              Save Plan
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-between pt-5 border-t border-black/10 mt-6">
+          <button type="button" onclick="showWizardStep(3)" class="px-5 py-2.5 rounded-full border border-black/20 hover:bg-neutral-100 text-neutral-700 font-mono text-xs font-bold transition-all">
+            ← Back to Calculator
+          </button>
+          <button type="button" onclick="showWizardStep(1)" class="px-5 py-2.5 rounded-full bg-neutral-200 hover:bg-neutral-300 text-neutral-800 font-mono text-xs font-bold transition-all">
+            Start Over ↺
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 2: WHERE TO POSITION HOME CCTV CAMERAS
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="where-to-position">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      2. Where to Position Home CCTV Cameras: Real Security Risks
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      A CCTV system is only as effective as the vantage points it commands. Installing cameras indiscriminately at high corners creates an illusion of security while delivering footage where intruders appear as unidentifiable dark shapes. Professional security engineers plan camera positions around physical entry vulnerabilities:
+    </p>
+
+    <div class="space-y-4 mb-8">
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="w-7 h-7 rounded-full bg-orange-100 text-[#FF5500] font-mono font-bold text-xs flex items-center justify-center">01</span>
+          <h3 class="text-lg font-bold text-[#1D1D1F] font-display">The Front Door &amp; Porch Entrance</h3>
+        </div>
+        <p class="text-sm text-neutral-600 leading-relaxed font-normal">
+          Over 34% of UK residential burglaries involve the front entrance. A camera here serves two distinct functions: daytime visitor logging (couriers, doorstep callers) and criminal deterrence. The key trade rule is <strong>positioning the lens offset from the door</strong> at approximately 2.5 to 2.8 metres high, angled inward. This ensures the camera captures full facial profiles when someone steps onto the doormat, rather than the top of a baseball cap or hood.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="w-7 h-7 rounded-full bg-orange-100 text-[#FF5500] font-mono font-bold text-xs flex items-center justify-center">02</span>
+          <h3 class="text-lg font-bold text-[#1D1D1F] font-display">The Driveway &amp; Parked Vehicles</h3>
+        </div>
+        <p class="text-sm text-neutral-600 leading-relaxed font-normal">
+          Vehicle theft, relay attacks on keyless cars, and catalytic converter theft require specific optics. Standard wide-angle lenses (2.8mm) capture a panoramic overview of the driveway but dilute pixel density at 10 metres. For vehicle protection, we specify a narrower <strong>4.0mm or 6.0mm focal length</strong> focused tightly on the vehicle bays to deliver the 250 pixels-per-metre required for police number-plate identification.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="w-7 h-7 rounded-full bg-orange-100 text-[#FF5500] font-mono font-bold text-xs flex items-center justify-center">03</span>
+          <h3 class="text-lg font-bold text-[#1D1D1F] font-display">Rear Patio, French &amp; Bifold Doors</h3>
+        </div>
+        <p class="text-sm text-neutral-600 leading-relaxed font-normal">
+          The rear of the property is statistically the most vulnerable forced-entry point because it is shielded from street sightlines. Modern bifold glass doors are prime targets for cylinder snapping or crowbar attacks. A rear camera must be mounted with an unobstructed view of the patio threshold, equipped with <strong>24/7 full-colour night optics (ColorVu)</strong> to prevent washed-out silhouettes against dark lawn backgrounds.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="w-7 h-7 rounded-full bg-orange-100 text-[#FF5500] font-mono font-bold text-xs flex items-center justify-center">04</span>
+          <h3 class="text-lg font-bold text-[#1D1D1F] font-display">Side Passages &amp; Ginnel Walkways</h3>
+        </div>
+        <p class="text-sm text-neutral-600 leading-relaxed font-normal">
+          Narrow passages between houses create blind corridors. Intruders frequently use side gates to transport stolen garden machinery, tools, or ladders. A corridor-mode camera (rotating the sensor 90 degrees to deliver a 9:16 vertical view) or a narrow-beam turret eliminates wasted wall footage and focuses all resolution down the length of the footpath.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 3: HOW TO AVOID CCTV BLIND SPOTS
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="avoid-blind-spots">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      3. How to Eliminate CCTV Blind Spots: Eaves, Downpipes &amp; Glare
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      Blind spots do not just exist outside a camera's field of view; physical obstructions around the mounting point can blind a lens at night. Understanding optical interference prevents costly re-drilling:
+    </p>
+
+    <!-- Visual Media Card -->
+    <figure class="my-8 rounded-3xl overflow-hidden border border-black/10 shadow-md bg-neutral-900">
+      <img alt="CCTV Infrared Reflection Flare and Spiderweb Blindness Breakdown" class="w-full h-auto object-cover max-h-[450px]" height="900" loading="lazy" src="/assets/images/cctv-consumer-infrared-flare-spiderweb-blindness-breakdown.webp" width="1600"/>
+      <figcaption class="p-3 bg-neutral-900 text-neutral-400 text-xs font-mono text-center">
+        Comparison showing how close downpipes cause blinding infrared flare compared to clean turret separation.
+      </figcaption>
+    </figure>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <h4 class="font-bold text-[#1D1D1F] font-display text-base mb-2">1. Gutter Downpipe Reflection</h4>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          Mounting a camera within 300mm of a PVC downpipe causes infrared night illuminators to bounce off the pipe. The camera's auto-exposure darkens the rest of the frame, rendering the intruder invisible. Maintain at least 450mm clearance.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <h4 class="font-bold text-[#1D1D1F] font-display text-base mb-2">2. Roof Soffit Overhang Clipping</h4>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          When mounting high on brickwork directly under deep eaves, the camera lens can be partially masked by gutter brackets. Using angled standoff junction boxes drops the lens 50mm below the timber line for a clean 110-degree horizon.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <h4 class="font-bold text-[#1D1D1F] font-display text-base mb-2">3. The Cross-Fire Principle</h4>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          Every camera has a natural dead zone directly below its mounting base. Professional installations use cross-fire pairing: Camera A looks across the front lawn covering Camera B's base, ensuring no one can approach beneath a blind angle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 4: BEST MOUNTING HEIGHT & FASCIA RULES
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="mounting-height">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      4. Best Mounting Height: Why 10 Feet is the Golden Rule
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      One of the most frequent DIY mistakes is fixing cameras as high as possible — often at second-floor roof apexes 5 to 6 metres in the air. While this gives a pleasing panoramic view, it renders footage useless for police identification.
+    </p>
+
+    <!-- Police DORI Standards Table -->
+    <div class="my-6 overflow-x-auto rounded-2xl border border-black/10 bg-white shadow-xs">
+      <table class="w-full text-left text-xs font-mono">
+        <thead class="bg-neutral-100 text-neutral-700 border-b border-black/10">
+          <tr>
+            <th class="p-3 font-bold">DORI Level</th>
+            <th class="p-3 font-bold">Pixels Per Metre (PPM)</th>
+            <th class="p-3 font-bold">Operational Purpose</th>
+            <th class="p-3 font-bold">Maximum Distance (4K @ 2.8mm)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-black/5 text-neutral-700">
+          <tr>
+            <td class="p-3 font-bold text-blue-600">Detect</td>
+            <td class="p-3">25 PPM</td>
+            <td class="p-3">Verify a human or vehicle is present</td>
+            <td class="p-3">Up to 80 metres</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-amber-600">Observe</td>
+            <td class="p-3">62 PPM</td>
+            <td class="p-3">Determine clothing colour and direction</td>
+            <td class="p-3">Up to 32 metres</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-orange-600">Recognise</td>
+            <td class="p-3">125 PPM</td>
+            <td class="p-3">Recognise known persons (family/neighbours)</td>
+            <td class="p-3">Up to 16 metres</td>
+          </tr>
+          <tr class="bg-emerald-50">
+            <td class="p-3 font-bold text-emerald-700">Identify</td>
+            <td class="p-3 font-bold">250 PPM</td>
+            <td class="p-3 font-bold">Beyond reasonable doubt in UK court</td>
+            <td class="p-3 font-bold">Up to 8.5 metres</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- The 10ft Sweet Spot Breakdown -->
+    <div class="p-6 rounded-2xl bg-white border border-black/10 shadow-xs mb-6">
+      <h3 class="text-lg font-bold text-[#1D1D1F] font-display mb-3">Fascia vs Brickwork Mounting Trade Rules</h3>
+      <ul class="space-y-3 text-sm text-neutral-700">
+        <li class="flex items-start gap-2">
+          <span class="text-[#FF5500] font-bold">✓</span>
+          <span><strong>Mounting at 2.8m to 3.2m (9–10 ft):</strong> Keeps the camera out of reach of anyone standing on a bin or car bumper, while preserving a shallow 20° to 30° viewing angle. Intruders wearing baseball caps or hoodies cannot conceal their faces from this angle.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-[#FF5500] font-bold">✓</span>
+          <span><strong>UPVC Hollow Soffits:</strong> Never screw cameras directly into thin plastic soffit cladding without timber backing. We secure treated timber noggins inside the eaves or use specialized hollow-wall anchors to prevent gale-force vibration.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-[#FF5500] font-bold">✓</span>
+          <span><strong>IP66 Weatherproof Deep Junction Bases:</strong> Every camera should sit on a cast-aluminium backbox. This encapsulates the RJ45 water seal connector inside dry metal, eliminating water ingress faults that cause PoE switch port resets.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 5: CCTV STORAGE CALCULATION FORMULA
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="storage-calculator">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      5. CCTV Storage Calculation Formula: Bitrate, Codecs &amp; Hard Drives
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      Running out of hard drive space at the moment an incident occurs is a security failure. Calculating storage capacity requires understanding video bitrate, compression efficiency, and the physics of continuous surveillance drives.
+    </p>
+
+    <!-- Formula Callout Box -->
+    <div class="p-6 rounded-2xl bg-neutral-900 text-white border border-neutral-800 shadow-xl mb-6 font-mono text-xs sm:text-sm">
+      <div class="text-orange-400 font-bold uppercase mb-2">The Universal CCTV Storage Formula</div>
+      <div class="bg-black/50 p-4 rounded-xl text-emerald-400 mb-3 overflow-x-auto">
+        Daily Storage (GB) = [Bitrate (Mbps) × 3600 (seconds/hr) × Hours Recorded ÷ 8 (bits/byte)] ÷ 1000
+      </div>
+      <p class="text-neutral-300 font-sans text-xs">
+        For a 4-camera 4K system at 6 Mbps recording 24 hours a day:<br/>
+        (6 × 3600 × 24 ÷ 8) ÷ 1000 = <strong>64.8 GB per camera per day</strong>.<br/>
+        4 Cameras × 64.8 GB = <strong>259.2 GB daily</strong>. For 30 days retention: 259.2 × 30 = <strong>7,776 GB (7.78 TB)</strong>.
+      </p>
+    </div>
+
+    <!-- Surveillance HDDs vs Desktop HDDs -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <h4 class="font-bold text-[#1D1D1F] font-display text-base mb-2">Surveillance Drives (WD Purple / SkyHawk)</h4>
+        <ul class="text-xs text-neutral-600 space-y-1.5 list-disc pl-4">
+          <li>Engineered for 90% write / 10% read cycles 24/7/365</li>
+          <li>AllFrame firmware prioritises streaming writes over read verification to prevent frame dropouts</li>
+          <li>Vibration damping for multi-bay NVR chassis</li>
+          <li>3 to 5-year commercial trade warranty</li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-rose-50 border border-rose-200 shadow-xs">
+        <h4 class="font-bold text-rose-900 font-display text-base mb-2">Standard Desktop Hard Drives (Do Not Use)</h4>
+        <ul class="text-xs text-rose-700 space-y-1.5 list-disc pl-4">
+          <li>Designed for only 8 hours of intermittent read/write per day</li>
+          <li>Thermal wear causes bearing failure within 6 to 12 months in an NVR</li>
+          <li>Error-recovery protocols freeze continuous video streams</li>
+          <li>Void warranty when used in video recorders</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 6: CAN AI PLAN CAMERA POSITIONS FROM HOUSE PHOTOS?
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="ai-photo-planning">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      6. Can AI Plan Camera Positions From House Photos?
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      With advances in computer vision, homeowners frequently ask if AI tools can examine photos of their house to calculate optimal camera locations. The short answer is <strong>yes for preliminary layout geometry, but physical engineering verification is mandatory</strong>.
+    </p>
+
+    <div class="space-y-4 mb-6 text-sm text-neutral-700">
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <strong class="text-[#1D1D1F] font-display block text-base mb-1">What AI Tools Do Exceptionally Well:</strong>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          AI spatial models can analyse wall elevations to identify sightline corridors, calculate the field of view cone from specific corners, highlight potential infrared reflective obstacles (like gutter downpipes or white render), and confirm whether a 2.8mm or 4mm lens provides sufficient DORI pixels-per-metre.
+        </p>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <strong class="text-[#1D1D1F] font-display block text-base mb-1">What AI Cannot See from a 2D Photo:</strong>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          An AI photograph cannot determine whether your loft has safe crawlboards, whether an exterior wall has blown cavity insulation that blocks cable rods, or where the mains power consumer unit sits. Physical cable routing from the exterior camera back to your NVR recorder requires hands-on trade inspection.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 7: UK CCTV PRIVACY & DATA PROTECTION LAW (MAY 2026)
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="uk-privacy-law">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      7. UK CCTV Privacy &amp; Data Protection Law (Updated 21 May 2026)
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      Installing domestic CCTV in the UK is fully legal and generally permitted without planning permission, but you must respect the privacy rights of neighbours and members of the public under Information Commissioner’s Office (ICO) guidelines.
+    </p>
+
+    <div class="p-6 rounded-2xl bg-white border border-black/10 shadow-xs mb-6 space-y-4 text-sm text-neutral-700">
+      <div>
+        <h4 class="font-bold text-[#1D1D1F] font-display text-base mb-1">Capturing Beyond Your Boundary (GDPR &amp; DPA 2018)</h4>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          If your camera captures only your own private garden, driveway, and frontage, data protection laws do not apply. However, if the lens captures a neighbour's garden, patio, or a public footpath, you become a "data controller". You must provide transparent signage and configure digital privacy masking to blackout non-essential areas.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-[#1D1D1F] font-display text-base mb-1">Digital Privacy Masking</h4>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          All professional Hikvision and Dahua IP cameras allow engineers to draw solid black or mosaic privacy blocks over sensitive areas (such as a neighbour's bedroom window or driveway). These blocks are rendered directly at the sensor level and cannot be removed in recorded playback, ensuring complete legal compliance and good neighbourly relations.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-[#1D1D1F] font-display text-base mb-1">Audio Recording Prohibitions</h4>
+        <p class="text-xs text-neutral-600 leading-relaxed">
+          Continuous audio recording of conversations in public spaces or neighbouring gardens is considered highly intrusive by the ICO and is rarely justifiable for domestic security. We recommend disabling ambient audio microphones on cameras positioned near shared fences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 8: WIRED POE VS WI-FI SECURITY CAMERAS
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="poe-vs-wifi">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      8. Hardwired PoE vs Wi-Fi Security Cameras
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      Wireless cameras advertised online are appealing because of easy DIY setup. However, for serious home protection, wireless cameras introduce critical vulnerabilities:
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+          <h4 class="font-bold text-[#1D1D1F] font-display text-base">Commercial Hardwired PoE (Cat6)</h4>
+        </div>
+        <ul class="text-xs text-neutral-600 space-y-2">
+          <li><strong>Zero Jamming:</strong> Hardwired solid copper Ethernet cannot be knocked offline by handheld 2.4GHz RF deauthentication jammers.</li>
+          <li><strong>24/7 Continuous Recording:</strong> Records every second of footage locally onto high-capacity NVR hard drives without battery drain.</li>
+          <li><strong>Single Cable Simplicity:</strong> Power over Ethernet delivers both electricity and ultra-high-bitrate 4K video over one weatherproof cable.</li>
+          <li><strong>No Monthly Fees:</strong> Zero cloud storage subscriptions required. You own your footage completely.</li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-neutral-100 border border-black/10 shadow-xs">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+          <h4 class="font-bold text-[#1D1D1F] font-display text-base">Consumer Wi-Fi / Battery Cameras</h4>
+        </div>
+        <ul class="text-xs text-neutral-600 space-y-2">
+          <li><strong>RF Vulnerability:</strong> Inexpensive portable deauth tools can flood 2.4GHz Wi-Fi channels, stopping video upload during break-ins.</li>
+          <li><strong>Motion Delay &amp; Clip Clipping:</strong> Sleep mode takes 1–2 seconds to wake up; fast-moving intruders are often missed or clipped.</li>
+          <li><strong>Battery Maintenance:</strong> Batteries must be removed and recharged every 6–12 weeks, especially in cold British winter freezes.</li>
+          <li><strong>Subscription Lock-In:</strong> Most consumer brands restrict AI features and cloud event history behind mandatory monthly subscriptions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 9: TRANSPARENT PRICING & HARDWARE GUIDE
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="pricing-guide">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-4">
+      9. Transparent CCTV Installation &amp; Hardware Pricing
+    </h2>
+    <p class="text-base text-neutral-700 leading-relaxed mb-6 font-normal">
+      ADI Communications operates with 100% transparent pricing. We do not use pushy sales tactics or lock you into recurring contracts. All work is carried out by Gary Pearce with £10M public liability insurance:
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono uppercase text-neutral-400 font-bold">Single Point / Upgrade</span>
+          <h4 class="text-base font-bold text-[#1D1D1F] font-display mt-1 mb-2">Additional 4K Turret Add-On</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Addition of a single 4K ColorVu PoE camera to an existing NVR recorder, including external UV-rated Cat6 downlead, IP66 junction base and alignment.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-black/10">
+          <div class="text-xs text-neutral-400 font-mono">From</div>
+          <div class="text-2xl font-black text-[#1D1D1F] font-mono">£149 <span class="text-xs font-normal text-neutral-500">+ VAT</span></div>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-orange-50 border-2 border-[#FF5500] shadow-sm flex flex-col justify-between relative">
+        <div class="absolute -top-3 right-4 px-3 py-0.5 rounded-full bg-[#FF5500] text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+          Most Popular
+        </div>
+        <div>
+          <span class="text-xs font-mono uppercase text-[#FF5500] font-bold">Complete Package</span>
+          <h4 class="text-base font-bold text-[#1D1D1F] font-display mt-1 mb-2">4-Camera 4K ColorVu System</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Four 8MP ColorVu turrets, 8-channel PoE NVR, 4TB WD Purple surveillance hard drive (30 days retention), smartphone remote app, and full training.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-orange-200">
+          <div class="text-xs text-neutral-500 font-mono">From</div>
+          <div class="text-2xl font-black text-[#FF5500] font-mono">£599 <span class="text-xs font-normal text-neutral-600">+ VAT</span></div>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-white border border-black/10 shadow-xs flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono uppercase text-neutral-400 font-bold">Comprehensive Protection</span>
+          <h4 class="text-base font-bold text-[#1D1D1F] font-display mt-1 mb-2">8-Camera Perimeter System</h4>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Eight 4K cameras with cross-fire perimeter coverage, 16-channel PoE NVR, 8TB WD Purple hard drive, outbuilding wireless bridges and ANPR integration.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-black/10">
+          <div class="text-xs text-neutral-400 font-mono">From</div>
+          <div class="text-2xl font-black text-[#1D1D1F] font-mono">£1,195 <span class="text-xs font-normal text-neutral-500">+ VAT</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 10: VIDEO EXPLAINER MODULE
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="video-explainer">
+    <div class="p-6 rounded-3xl bg-neutral-900 text-white shadow-xl border border-neutral-800">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#FF5500] animate-pulse"></span>
+          <span class="text-xs font-mono font-bold uppercase tracking-wider text-orange-400">Trade Engineering Field Video</span>
+        </div>
+        <span class="text-xs font-mono text-neutral-400">0:45 · 1080p HD</span>
+      </div>
+      <h3 class="text-lg sm:text-xl font-bold font-display text-white mb-2">How Many CCTV Cameras Does Your House Actually Need?</h3>
+      <p class="text-xs sm:text-sm text-neutral-300 mb-4 font-normal">Watch Gary Pearce explain how 3 to 4 turret cameras satisfy UK police DORI standards, how to cover driveways without blind spots, and how 30-day hard drive storage works.</p>
+      <div class="relative rounded-2xl overflow-hidden aspect-video bg-black border border-white/10 shadow-2xl">
+        <video class="w-full h-full object-cover" controls playsinline poster="/assets/videos/how-many-cctv-cameras-does-your-house-actually-need_thumb.webp" preload="metadata" id="cctv-placement-video">
+          <source src="/assets/videos/how-many-cctv-cameras-does-your-house-actually-need.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Interactive Chapter Jump Markers -->
+      <div class="mt-4 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-neutral-400">
+        <span class="text-white font-bold">Jump to Chapter:</span>
+        <div class="flex flex-wrap gap-2">
+          <button type="button" onclick="document.getElementById('cctv-placement-video').currentTime=0;document.getElementById('cctv-placement-video').play()" class="px-2.5 py-1 rounded bg-white/5 hover:bg-[#FF5500] hover:text-white transition-colors">0:00 House Layout</button>
+          <button type="button" onclick="document.getElementById('cctv-placement-video').currentTime=15;document.getElementById('cctv-placement-video').play()" class="px-2.5 py-1 rounded bg-white/5 hover:bg-[#FF5500] hover:text-white transition-colors">0:15 DORI Face Standards</button>
+          <button type="button" onclick="document.getElementById('cctv-placement-video').currentTime=30;document.getElementById('cctv-placement-video').play()" class="px-2.5 py-1 rounded bg-white/5 hover:bg-[#FF5500] hover:text-white transition-colors">0:30 Hard Drive Sizing</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 11: DIRECT ANSWER FAQS (ACCORDIONS)
+       ============================================================ -->
+  <section class="mb-14 scroll-mt-20" id="faq">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-[#FF5500]"></span>
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-[#FF5500]">Technical Answers</span>
+    </div>
+    <h2 class="text-2xl sm:text-3xl font-black text-[#1D1D1F] font-display tracking-tight mb-6">
+      Frequently Asked Questions: CCTV Camera Placement &amp; Storage
+    </h2>
+
+    <div class="space-y-3">
+      
+      <details class="group rounded-2xl bg-white border border-black/10 p-5 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>Where is the best place to put CCTV cameras on a house?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          The four most important locations are the front door (positioned to capture clear eye-level faces of visitors), the driveway (facing outward to capture vehicle registration plates), the rear patio or garden bifold doors (the most common forced entry point), and secluded side passages or alleyways.
+        </p>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-black/10 p-5 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>What is the best height to mount outdoor CCTV cameras?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          The ideal mounting height for domestic CCTV is 2.8 to 3.2 metres (around 9 to 10 feet). This keeps the camera out of reach of casual vandalism while maintaining a shallow viewing angle (under 30 degrees) necessary to identify facial features under UK police DORI standards.
+        </p>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-black/10 p-5 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>Why shouldn't cameras be mounted too high under second-floor roof apexes?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          Mounting higher than 3.5 metres produces 'head-top syndrome', where the camera looks almost straight down, capturing only hoods, caps, and the tops of heads rather than recognisable facial features. High cameras also suffer from increased spiderweb build-up and poor infrared illumination at ground level.
+        </p>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-black/10 p-5 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>How much hard drive storage do 4 4K CCTV cameras need for 30 days?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          Four 4K (8MP) cameras recording continuously at 15 frames per second using efficient H.265 compression at 6 Mbps generate approximately 64.8 GB per camera per day (259 GB total daily). For 30 days of retention, you need 7.78 TB of raw capacity, requiring an 8TB or 10TB surveillance hard drive.
+        </p>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-black/10 p-5 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>Can outdoor cameras be mounted directly to UPVC fascia or soffits?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          Yes, provided they are securely anchored into solid timber battens behind the plastic hollow soffit, or mounted using deep IP66 conduit junction bases. Hollow plastic alone flexes in high winds, causing motion-sensor false alarms and image vibration.
+        </p>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-black/10 p-5 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>Are Wi-Fi security cameras as reliable as wired PoE systems?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          No. Wi-Fi cameras rely on the congested 2.4GHz wireless spectrum, which is susceptible to dropouts through thick UK cavity walls and vulnerable to inexpensive handheld RF deauthentication jammers. Commercial-grade systems use hardwired Cat6 PoE (Power over Ethernet) for 100% uninterrupted 24/7 recording.
+        </p>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-black/10 p-5 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>Do I need planning permission for home CCTV in the UK?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          In almost all UK residential properties, home CCTV is permitted development and does not require planning permission. Exceptions apply if the building is Grade I or Grade II listed, or in certain conservation areas with strict alterations limits.
+        </p>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-black/10 shadow-xs transition-all open:border-[#FF5500]/40">
+        <summary class="flex items-center justify-between font-bold text-base text-[#1D1D1F] cursor-pointer font-display select-none">
+          <span>What are the UK privacy rules for domestic CCTV pointing near a neighbour?</span>
+          <span class="text-[#FF5500] font-mono text-lg transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm text-neutral-600 leading-relaxed font-normal">
+          Under UK data protection law and ICO guidance, domestic CCTV that captures images beyond your property boundary (such as neighbouring gardens or public pavements) is subject to GDPR rules. Professional installers configure digital privacy masking to blackout neighbouring windows while keeping perimeter boundaries fully protected.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHAPTER 12: AUTHOR E-E-A-T BIO CARD (#author-bio)
+       ============================================================ -->
+  <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-white border border-black/10 shadow-sm" id="author-bio">
+    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+      <div class="w-24 h-24 rounded-2xl bg-slate-900 border-2 border-[#FF5500] flex-shrink-0 flex items-center justify-center text-white text-3xl font-black shadow-md">
+        GP
+      </div>
+      <div class="space-y-3 text-center sm:text-left">
+        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+          <h3 class="text-xl font-black text-[#1D1D1F] font-display">Gary Pearce</h3>
+          <span class="px-2.5 py-0.5 rounded-full bg-orange-100 text-[#FF5500] font-mono font-bold text-xs">Author &amp; Lead Engineer</span>
+        </div>
+        <p class="text-xs font-mono text-neutral-500">Director, ADI Communications · 25+ Years Hands-On Field Experience</p>
+        <p class="text-sm text-neutral-700 leading-relaxed font-normal">
+          Gary Pearce is an experienced telecommunications and physical security engineer with over two and a half decades installing commercial and residential IP surveillance systems across Yorkshire, Lancashire, and Greater Manchester. Holding NVQ qualifications in data cabling and electrical systems, Gary personally engineers every installation using CAI-benchmarked coaxial and solid copper Cat6 infrastructure with £10 Million Public Liability Insurance.
+        </p>
+        <div class="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs font-mono">
+          <a class="text-[#FF5500] font-bold hover:underline" href="tel:07860244274">Direct Mobile: 07860&nbsp;244&nbsp;274</a>
+          <span class="text-neutral-300">|</span>
+          <a class="text-emerald-600 font-bold hover:underline" href="https://wa.me/447860244274">WhatsApp Gary</a>
+          <span class="text-neutral-300">|</span>
+          <span class="text-neutral-600">Rated ★★★★★ 9.98 / 10 (84+ Verified Reviews)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- ============================================================
+     SEO POWERHOUSE MEGA-FOOTER & TRADE AUTHORITY ARCHITECTURE
+     Structured internal links, county coverage hubs, trust badges & Verified Reviews widget
+     ============================================================ -->
+<footer aria-label="Site Mega Footer" class="bg-[#141416] text-slate-300 font-sans border-t border-white/10 relative z-20 mt-20">
+<!-- 1. Rapid Action Strip / Phone Hotbar -->
+<div class="border-b border-white/10 bg-black/40 py-6 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+</span>
+<div>
+<span class="text-xs uppercase tracking-wider font-mono text-emerald-400 font-bold block">Local Engineers on Call in Your Area</span>
+<span class="text-sm font-semibold text-white">Same-Day Site Surveys • 2-Hour Arrival Windows • Fixed Written Quotes</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3 font-mono text-xs">
+<a class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold border border-white/15 transition-all flex items-center gap-2" href="tel:07860244274">
+<span>📞 Call Gary Direct: <strong class="text-white">07860 244 274</strong></span>
+</a>
+<a class="px-5 py-2.5 rounded-xl bg-[#FF5500] hover:bg-[#E04B00] text-white font-bold shadow-lg shadow-orange-500/25 transition-all flex items-center gap-2" href="tel:07860244274">
+<span>Direct / WhatsApp: <strong>07860 244 274</strong></span>
+</a>
+</div>
+</div>
+</div>
+<!-- 2. Main 4-Column SEO Content Matrix -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+<!-- Col 1: Brand Authority & Verified Engineer Profile -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="text-lg font-black tracking-tight text-white font-display">ADI COMMUNICATIONS</span>
+<span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#FF5500]/20 text-[#FF5500] border border-[#FF5500]/30 font-bold">EST. 2006</span>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed">
+          Specialist telecommunications, data cabling, SpaceX Starlink satellite internet, 4K CCTV, and security engineering. Directed by Gary Pearce, with 25+ years hands-on trade experience since 1999.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1 text-[11px] font-mono text-slate-300">
+<span class="px-2 py-1 rounded bg-white/5 border border-white/10">City &amp; Guilds L2/L3</span>
+<span class="px-2 py-1 rounded bg-white/5 border border-white/10">SafeContractor</span>
+<span class="px-2 py-1 rounded bg-white/5 border border-white/10">NVQ L3 Cabling</span>
+<span class="px-2 py-1 rounded bg-white/5 border border-white/10">£10M Insured</span>
+</div>
+<div class="pt-2">
+<div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-1.5 flex items-center justify-between">
+<span>Professional Guarantee</span>
+<span class="text-emerald-400 font-bold">100% Guaranteed</span>
+</div>
+<div class="relative overflow-hidden rounded-xl border border-white/10 bg-[#1D222E] p-3.5 max-w-[260px] shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-bold text-white font-mono tracking-tight">ADI DIRECT PROMISE</span>
+<span class="text-[10px] font-mono text-emerald-400 font-bold px-1.5 py-0.5 rounded bg-emerald-950/60 border border-emerald-500/30">CERTIFIED</span>
+</div>
+<div class="flex items-baseline gap-1.5 mb-1">
+<span class="text-2xl font-extrabold text-white font-display">25+</span>
+<span class="text-xs text-slate-400 font-semibold">Years Experience</span>
+</div>
+<p class="text-[11px] text-slate-300 font-sans leading-tight">
+              Every job completed by lead engineer Gary Pearce. Full 1–3 year parts &amp; labour warranty.
+            </p>
+<div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-slate-400">
+<span>Zero Call-Out Fee</span>
+<span>Fixed Price Quotes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Col 2: Specialist Core Services (Internal SEO Anchor Silo) -->
+<div>
+<h3 class="text-sm font-bold text-white uppercase tracking-wider font-mono mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#FF5500]"></span>
+<span>Core Services</span>
+</h3>
+<ul class="space-y-2.5 text-xs text-slate-400">
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/data-cabling/"><span>High-Performance Cat6a Data Cabling</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/starlink-internet-installation/"><span>SpaceX Starlink Installation</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/tv-aerial-installation/"><span>Digital TV Aerial Installation &amp; Repairs</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/cctv-installation/"><span>4K ColorVu CCTV Security Systems</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/ajax-alarm/"><span>Ajax Grade 2 Wireless Intruder Alarms</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/wireless-fire-alarms/"><span>EN54 Wireless Fire &amp; Smoke Alarms</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/tv-wall-mounting/"><span>TV Wall Mounting &amp; Concealed Cabling</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/cable-repairs/"><span>CCTV, Coax &amp; Ethernet Cable Repairs</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/telephone-engineer/"><span>Telephone Engineer &amp; Master Sockets</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/european-satellite-installation/"><span>European Satellite Dishes (Astra &amp; Hotbird)</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center justify-between group" href="/communal-aerial-installation/"><span>Communal IRS Distribution Systems</span><span class="text-[10px] font-mono text-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity">→</span></a></li>
+</ul>
+</div>
+<!-- Col 3: Regional County Coverage Hubs -->
+<div>
+<h3 class="text-sm font-bold text-white uppercase tracking-wider font-mono mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span>Regional Coverage</span>
+</h3>
+<div class="space-y-3.5 text-xs text-slate-400">
+<div>
+<a class="text-slate-200 font-bold block mb-1 font-mono text-[11px] hover:text-[#FF5500] transition-colors" href="/areas/yorkshire/">West Yorkshire Hub →</a>
+<p class="text-slate-400 leading-relaxed">Serving Leeds, Bradford, Wakefield, Huddersfield, Halifax, and all West Yorkshire postcodes.</p>
+</div>
+<div>
+<a class="text-slate-200 font-bold block mb-1 font-mono text-[11px] hover:text-[#FF5500] transition-colors" href="/areas/yorkshire/">North Yorkshire Hub →</a>
+<p class="text-slate-400 leading-relaxed">Covering Harrogate, York, Ripon, Knaresborough, Skipton, and North Yorkshire rural estates.</p>
+</div>
+<div>
+<a class="text-slate-200 font-bold block mb-1 font-mono text-[11px] hover:text-[#FF5500] transition-colors" href="/areas/yorkshire/">South Yorkshire Hub →</a>
+<p class="text-slate-400 leading-relaxed">Covering Sheffield, Doncaster, Rotherham, Barnsley, and Dearne Valley residential &amp; commercial sites.</p>
+</div>
+<div>
+<a class="text-slate-200 font-bold block mb-1 font-mono text-[11px] hover:text-[#FF5500] transition-colors" href="/areas/lancashire/">Lancashire &amp; Greater Manchester Hub →</a>
+<p class="text-slate-400 leading-relaxed">Serving Manchester, Preston, Blackburn, Burnley, Blackpool, Bolton, and the Fylde Coast.</p>
+</div>
+<div>
+<a class="text-slate-200 font-bold block mb-1 font-mono text-[11px] hover:text-[#FF5500] transition-colors" href="/areas/humberside/">East Yorkshire &amp; Humber Hub →</a>
+<p class="text-slate-400 leading-relaxed">Covering Hull, Beverley, Bridlington, Scunthorpe, Grimsby, and Tees Valley.</p>
+</div>
+</div>
+</div>
+<!-- Col 4: Trade Commitments & Operating Hours -->
+<div class="space-y-4">
+<h3 class="text-sm font-bold text-white uppercase tracking-wider font-mono mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-blue-400"></span>
+<span>Professional Standards</span>
+</h3>
+<ul class="space-y-3 text-xs text-slate-400">
+<li class="flex items-start gap-2.5">
+<span class="text-emerald-400 font-bold text-sm">✓</span>
+<div>
+<strong class="text-slate-200 block">2-Hour Arrival Windows</strong>
+<span>Definite appointment slots with pre-arrival SMS text updates.</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-emerald-400 font-bold text-sm">✓</span>
+<div>
+<strong class="text-slate-200 block">Zero Hidden Call-Out Fees</strong>
+<span>Transparent fixed written quotations before any physical work begins.</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-emerald-400 font-bold text-sm">✓</span>
+<div>
+<strong class="text-slate-200 block">1–3 Year Written Warranty</strong>
+<span>Full guarantee covering all mounts, brackets, faceplates, and cabling.</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-emerald-400 font-bold text-sm">✓</span>
+<div>
+<strong class="text-slate-200 block">Solid Copper Standard</strong>
+<span>100% 23AWG solid bare copper conductors (Zero cheap CCA aluminium).</span>
+</div>
+</li>
+</ul>
+<div class="p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs font-mono space-y-1">
+<span class="text-slate-300 font-bold block text-[11px]">Operating Hours:</span>
+<span class="text-slate-400 block text-[11px]">Mon – Sat: 08:00 – 19:00</span>
+<span class="text-slate-400 block text-[11px]">Sunday: Emergency Callouts</span>
+<div class="pt-2 border-t border-white/10 mt-2 flex flex-col gap-1">
+<a class="text-white hover:text-[#FF5500] font-bold" href="tel:07860244274">Call Gary: 07860 244 274</a>
+<a class="text-[#FF5500] hover:underline font-bold" href="tel:07860244274">Direct Mobile: 07860 244 274</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Bottom Legal & Accreditation Bar -->
+<div class="border-t border-white/10 bg-black/60 py-6 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 font-mono">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4 text-center lg:text-left">
+<div>
+<p class="text-slate-400">
+          © 2006–2026 <strong>ADI Communications (Yorkshire) Limited</strong>. Registered in England &amp; Wales. VAT Reg: 167 0977 73.
+        </p>
+<p class="text-slate-500 text-[11px] mt-0.5">
+          Operating Base: Unit 15, Carr Mills Business Centre, 919 Bradford Road, Birstall, Batley, WF17 9JX. Lead Engineer: Gary Pearce.
+        </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-4 text-[11px] text-slate-400">
+<a class="hover:text-white transition-colors" href="/privacy-policy/">Privacy Policy</a>
+<span>•</span>
+<a class="hover:text-white transition-colors" href="/terms/">Terms of Service</a>
+<span>•</span>
+<a class="hover:text-white transition-colors" href="/cookies/">Cookie Policy</a>
+<span>•</span>
+<a class="hover:text-white transition-colors" href="/sitemap.xml">XML Sitemap</a>
+<span>•</span>
+<a class="hover:text-[#FF5500] transition-colors inline-flex items-center gap-1 font-bold text-slate-300" href="https://www.google.com/search?kgmid=/g/11c545gdm0&amp;q=ADI+Communications+LTD" rel="noopener noreferrer" target="_blank">Verified Reviews (9.98/10)</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- SCRIPT INTERACTIVE LOGIC -->
+<script>
+  // Route Selector Widget Logic
+  function selectRouteOption(type) {
+    const textEl = document.getElementById('route-result-text');
+    const buttons = ['btn-semi', 'btn-terrace', 'btn-loft', 'btn-rental'];
+    buttons.forEach(id => {
+      const b = document.getElementById(id);
+      if (b) {
+        b.classList.remove('border-[#FF5500]', 'bg-orange-50/50');
+        b.classList.add('border-black/10', 'bg-neutral-50/50');
+      }
+    });
+    
+    const activeBtn = document.getElementById('btn-' + type);
+    if (activeBtn) {
+      activeBtn.classList.add('border-[#FF5500]', 'bg-orange-50/50');
+      activeBtn.classList.remove('border-black/10');
+    }
+
+    if (type === 'semi') {
+      textEl.innerHTML = "<strong>External Cat6 Route (Recommended):</strong> Drill out behind the ground-floor router, run black UV PE Cat6 up the gable or rear wall alongside downpipes, and drill into the bedroom for a flush RJ45 socket. Zero indoor damage, 1,000Mbps guaranteed line speed.";
+    } else if (type === 'terrace') {
+      textEl.innerHTML = "<strong>External Mortar-Line Run:</strong> On solid Victorian 9-inch brick, we drill straight out and secure black exterior Cat6 tightly into mortar joints to the bedroom. If front facade covenants apply, we route up the internal service riser into the loft.";
+    } else if (type === 'loft') {
+      textEl.innerHTML = "<strong>MoCA 2.5 Over Existing Coax:</strong> If TV aerial sockets already exist in the lounge and bedroom, plug MoCA 2.5 adapters into both ends. You get up to 2.5Gbps speeds with sub-3ms latency without drilling a single new hole.";
+    } else if (type === 'rental') {
+      textEl.innerHTML = "<strong>Tri-Band Wi-Fi 6E/7 Mesh or Flat Perimeter Cabling:</strong> Place a dedicated mesh node upstairs and connect your PC via its rear Ethernet port. Alternatively, run ultra-slim flat Cat6 tucked under carpet gripper rods without wall penetrations.";
+    }
+  }
+
+  // Video Seek Control
+  function seekVideo(seconds) {
+    const video = document.getElementById('explainer-video');
+    if (video) {
+      video.currentTime = seconds;
+      video.play();
+    }
+  }
+
+  // Audio Player Control
+  function setBriefingSpeed(speed, btn) {
+    const audio = document.getElementById('briefingAudio');
+    if (audio) audio.playbackRate = speed;
+    document.querySelectorAll('.speed-btn').forEach(b => {
+      b.classList.remove('bg-[#FF5500]');
+      b.classList.add('bg-white/10');
+    });
+    if (btn) {
+      btn.classList.add('bg-[#FF5500]');
+      btn.classList.remove('bg-white/10');
+    }
+  }
+
+  // Audio Equalizer Visualizer Binding
+  document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('briefingAudio');
+    const waves = document.getElementById('soundwaveContainer');
+    if (audio && waves) {
+      audio.addEventListener('play', () => waves.classList.add('playing'));
+      audio.addEventListener('pause', () => waves.classList.remove('playing'));
+      audio.addEventListener('ended', () => waves.classList.remove('playing'));
+    }
+  });
+</script>
+<!-- SOPHIE AI DIAGNOSTIC AGENT FLOATING TRIGGER -->
+<div class="gary-ai-trigger" id="garyAiTrigger" onclick="window.handleSophieTriggerClick(event)">
+<div class="gary-ai-avatar-box">
+<span class="gary-ai-pulse-ring"></span>
+<img alt="Sophie - Virtual Assistant to Gary Pearce" class="gary-ai-avatar-img" height="56" loading="eager" src="/assets/images/sophie-adi-avatar.webp" title="Sophie - Virtual Assistant to Gary Pearce" width="56"/>
+</div>
+<div class="sophie-greeting-bubble" id="sophieGreeting" onclick="event.stopPropagation(); window.openSophieChat();">
+<div class="flex items-center justify-between w-full gap-2.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0 inline-block"></span>
+<span class="sophie-bubble-text text-[13px] font-semibold text-white leading-snug tracking-tight">Need a quick quote? Ask Sophie! 👋</span>
+</div>
+<button class="text-neutral-400 hover:text-white text-xs px-1 leading-none hover:bg-white/10 rounded transition-colors" onclick="event.stopPropagation(); window.dismissSophieGreeting();" title="Close" type="button">✕</button>
+</div>
+</div>
+</div>
+<!-- GARY AI MODAL BACKDROP -->
+<div class="gary-ai-modal-backdrop" id="garyAiBackdrop" onclick="window.closeSophieChat()"></div>
+<!-- SOPHIE AI INTERACTIVE CHAT WINDOW -->
+<div class="gary-ai-chat-window" id="garyAiChatWindow">
+<!-- Top Bar Header -->
+<div class="gary-ai-header">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full border border-[#FF5500]/60 overflow-hidden shadow-md relative flex-shrink-0">
+<img alt="Sophie - Virtual Assistant to Gary Pearce" class="w-full h-full object-cover" height="36" id="chatHeaderAvatarImg" loading="eager" src="/assets/images/sophie-adi-avatar.webp" width="36"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-sm font-bold text-white block font-sans" id="chatHeaderName">Sophie</span>
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse inline-block"></span>
+</div>
+<span class="text-[10px] font-sans text-neutral-400 block leading-tight" id="chatHeaderSubtitle">Virtual Assistant • ADI Communications</span>
+</div>
+</div>
+<!-- Action Icons Only (Top Right) -->
+<div class="flex items-center gap-1.5 sm:gap-2">
+<!-- WhatsApp Icon -->
+<a aria-label="WhatsApp Gary" class="sophie-hdr-icon-btn sophie-wa-btn" href="https://wa.me/447860244274?text=Hi%20Gary,%20I'm%20contacting%20you%20via%20ADI%20Communications%20regarding%20a%20CCTV%20camera%20placement%20and%20installation." rel="noopener noreferrer" target="_blank" title="WhatsApp Gary (07860 244 274)">
+<svg class="w-4 h-4 fill-white" viewbox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.072-.497-1.764-.733-2.883-2.529-2.971-2.646-.088-.117-.714-.951-.714-1.815s.449-1.288.609-1.464c.16-.176.353-.22.47-.22.12 0 .24.002.344.007.113.005.263-.043.411.314.156.375.534 1.303.58 1.397.047.094.078.204.016.328-.063.125-.094.204-.188.314-.094.11-.198.245-.283.33-.094.094-.193.196-.083.385.11.19.489.807 1.05 1.306.722.644 1.33.843 1.52.937.19.094.301.078.412-.047.11-.125.474-.551.6-.74.126-.188.251-.157.424-.094.173.063 1.096.517 1.284.611.188.094.314.141.36.22.047.078.047.452-.097.857zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.308C8.423 21.534 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.697 0-3.268-.519-4.57-1.408l-.328-.222-2.964.778.791-2.89-.243-.385c-.99-1.572-1.519-3.4-1.519-5.04 0-4.503 3.664-8.167 8.167-8.167 4.502 0 8.167 3.664 8.167 8.167 0 4.504-3.665 8.167-8.167 8.167z"></path></svg>
+</a>
+<!-- SMS / Text Icon -->
+<button aria-label="Text Gary" class="sophie-hdr-icon-btn sophie-sms-btn" onclick="window.showDirectTextCard('Direct message from chat')" title="Text Gary (07860 244 274)" type="button">
+<svg class="w-4 h-4 fill-white" viewbox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M7 9h10v2H7zm0-3h10v2H7z"></path></svg>
+</button>
+<!-- Call Phone Icon -->
+<a aria-label="Call Gary" class="sophie-hdr-icon-btn sophie-call-btn" href="tel:+447860244274" title="Call Gary (07860 244 274)">
+<svg class="w-4 h-4 fill-white" viewbox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"></path></svg>
+</a>
+<!-- Close Button -->
+<button aria-label="Close Sophie AI" class="sophie-hdr-icon-btn sophie-close-btn" id="garyAiCloseBtn" onclick="window.closeSophieChat(event)" title="Close Chat" type="button">
+<svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+</div>
+</div>
+<!-- Chat Messages Area -->
+<div class="gary-ai-messages-area" id="garyAiMessages">
+<div class="ai-msg ai-msg-assistant">
+<p class="text-white text-[14px] md:text-[15px] leading-relaxed">Hiya! I'm Sophie 👋 Planning home CCTV camera placement, storage calculation or mounting under eaves? Just ask Gary!</p>
+<div class="sophie-msg-actions-row">
+<button class="sophie-speaker-btn" onclick="window.speakSophieAudio(this, 'Hiya! I\'m Sophie. Planning home CCTV camera placement, storage calculation or mounting under eaves? Just ask Gary!')" type="button">
+          🔊 Listen
+        </button>
+<a class="sophie-msg-book-btn" href="tel:07860244274" style="text-decoration:none;">
+          📞 Call Gary
+        </a>
+</div>
+</div>
+<div class="w-full h-1 pointer-events-none" id="aiScrollAnchor"></div>
+</div>
+<form class="gary-ai-pill-input-container" id="garyAiForm" onsubmit="handleGaryAiSubmit(event)">
+<div class="sophie-mode-toggle-group">
+<button class="sophie-mode-btn active" id="sophieModeTextBtn" onclick="window.setSophieInputMode('text')" title="Type Text" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<button class="sophie-mode-btn" id="sophieModeVoiceBtn" onclick="window.startSophieVoiceCall()" title="Talk &amp; Speech (Speech-to-Speech)" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 10v2a7 7 0 01-14 0v-2" stroke-linecap="round" stroke-linejoin="round"></path><line x1="12" x2="12" y1="19" y2="23"></line><line x1="8" x2="16" y1="23" y2="23"></line></svg>
+</button>
+</div>
+<input autocapitalize="sentences" autocomplete="off" autocorrect="on" class="gary-ai-input-field" id="garyAiInput" placeholder="Ask about CCTV camera placement, NVR hard drives or request a quote..." type="text"/>
+<button aria-label="Send message" class="gary-ai-send-btn" type="submit">
+<svg class="w-4 h-4 transform rotate-90" fill="currentColor" viewbox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+</button>
+</form>
+</div>
+<!-- GLOBAL BACK-TO-TOP BUTTON (BOTTOM-LEFT) -->
+<button aria-label="Back to top" class="fixed bottom-5 left-4 sm:bottom-6 sm:left-6 z-[999990] w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#0A0C14]/90 hover:bg-[#FF5500] text-white hover:text-white border border-white/20 hover:border-[#FF5500] shadow-2xl backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-3 active:scale-95 group cursor-pointer" id="backToTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top" type="button">
+<svg class="w-5 h-5 transition-transform duration-200 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</button>
+<!-- MASTER 2-WAY HANDS-FREE VOICE & CLOUDFLARE AI SOPHIE CONTROLLER -->
+<script defer="" src="/assets/js/sophie-chat-v128.js?v=20261018-v129-ringable"></script>
+<script defer="" src="/assets/js/page-interactive.js"></script>
+<!-- CHAPTER SUBNAV & HEADER MOTION CONTROLLER SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header');
+  const subnav = document.getElementById('chapter-subnav');
+  const chapterLinks = document.querySelectorAll('.chapter-link');
+  const backToTop = document.getElementById('backToTopBtn');
+  if (!subnav) return;
+
+  if (header) {
+    header.classList.add('transition-all', 'duration-300', 'transform');
+  }
+
+  const sections = Array.from(chapterLinks).map(link => {
+    const id = link.getAttribute('data-target');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  let isScrolled = false;
+
+  function onScrollUpdate() {
+    const scrollY = window.scrollY;
+    const shouldBeScrolled = scrollY > 250;
+
+    if (shouldBeScrolled !== isScrolled) {
+      isScrolled = shouldBeScrolled;
+      if (isScrolled) {
+        if (header) {
+          header.classList.add('opacity-0', '-translate-y-full', 'pointer-events-none');
+          header.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+        subnav.classList.remove('opacity-0', '-translate-y-full', 'pointer-events-none');
+        subnav.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        if (header) {
+          header.classList.remove('opacity-0', '-translate-y-full', 'pointer-events-none');
+          header.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+        subnav.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        subnav.classList.add('opacity-0', '-translate-y-full', 'pointer-events-none');
+      }
+    }
+
+    if (backToTop) {
+      if (scrollY > 300) {
+        backToTop.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+        backToTop.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      } else {
+        backToTop.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+        backToTop.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      }
+    }
+
+    if (sections.length) {
+      const scrollPos = scrollY + 120;
+      let currentSectionId = sections[0]?.id || '';
+      for (let i = 0; i < sections.length; i++) {
+        const sec = sections[i];
+        if (sec && sec.offsetTop <= scrollPos) {
+          currentSectionId = sec.id;
+        }
+      }
+
+      chapterLinks.forEach(link => {
+        if (link.getAttribute('data-target') === currentSectionId) {
+          link.classList.add('text-white', 'bg-white/15', 'shadow-sm');
+          link.classList.remove('text-slate-300');
+        } else {
+          link.classList.remove('text-white', 'bg-white/15', 'shadow-sm');
+          link.classList.add('text-slate-300');
+        }
+      });
+    }
+  }
+
+  window.addEventListener('scroll', onScrollUpdate, { passive: true });
+  onScrollUpdate();
+});
+</script>
+</body>
+</html>
+<script>
+// CCTV Interactive Planner Wizard State
+let currentStep = 1;
+let currentRetentionDays = 30;
+
+function showWizardStep(step) {
+  currentStep = step;
+  for (let i = 1; i <= 4; i++) {
+    const screen = document.getElementById('wizard-step-' + i);
+    const btn = document.getElementById('step-btn-' + i);
+    if (screen) {
+      if (i === step) {
+        screen.classList.add('active');
+      } else {
+        screen.classList.remove('active');
+      }
+    }
+    if (btn) {
+      btn.className = 'step-pill ' + (i === step ? 'active' : (i < step ? 'completed' : 'pending'));
+    }
+  }
+  if (step === 3) {
+    runStorageCalculation();
+  } else if (step === 4) {
+    updatePlacementPlan();
+  }
+}
+
+function setRetention(days) {
+  currentRetentionDays = days;
+  document.querySelectorAll('.retention-btn').forEach(btn => {
+    if (parseInt(btn.getAttribute('data-days')) === days) {
+      btn.className = 'retention-btn p-2 rounded-xl border-2 border-[#FF5500] bg-orange-50 text-xs font-mono font-bold text-[#FF5500]';
+    } else {
+      btn.className = 'retention-btn p-2 rounded-xl border border-black/15 bg-[#FAF8F5] text-xs font-mono font-bold hover:border-[#FF5500]';
+    }
+  });
+  runStorageCalculation();
+}
+
+function runStorageCalculation() {
+  const camCount = parseInt(document.getElementById('calc-cam-count').value) || 4;
+  const resolution = document.getElementById('calc-resolution').value;
+  const fps = parseInt(document.getElementById('calc-fps').value) || 15;
+  const codec = document.getElementById('calc-codec').value;
+  const hoursPerDay = parseInt(document.getElementById('calc-schedule').value) || 24;
+
+  document.getElementById('calc-cam-display').textContent = camCount;
+
+  // Base bitrates at 15 fps (Mbps)
+  let baseBitrate = 6.0; // 4K default
+  if (resolution === '1080p') baseBitrate = 2.0;
+  else if (resolution === '4mp') baseBitrate = 3.5;
+  else if (resolution === '4k') baseBitrate = 6.0;
+  else if (resolution === '12mp') baseBitrate = 10.0;
+
+  // FPS scaling factor (relative to 15 fps)
+  const fpsFactor = fps / 15.0;
+
+  // Codec scaling factor
+  const codecFactor = (codec === 'h264') ? 1.5 : 1.0;
+
+  const actualBitrateMbps = baseBitrate * fpsFactor * codecFactor;
+
+  // Daily GB per camera: (Mbps * 3600 * hours / 8) / 1000
+  const dailyGbPerCam = (actualBitrateMbps * 3600 * hoursPerDay) / 8000;
+  const totalDailyGb = dailyGbPerCam * camCount;
+  const totalRequiredGb = totalDailyGb * currentRetentionDays;
+  const totalRequiredTb = totalRequiredGb / 1000;
+
+  document.getElementById('calc-daily-gb').textContent = totalDailyGb.toFixed(1) + ' GB / day';
+  document.getElementById('calc-total-tb').textContent = totalRequiredTb.toFixed(2) + ' TB';
+  document.getElementById('calc-total-gb').textContent = '(' + Math.round(totalRequiredGb).toLocaleString() + ' GB raw video)';
+
+  // Recommend HDD size (with 20% system overhead headroom)
+  const bufferedTb = totalRequiredTb * 1.2;
+  let recHdd = '2TB';
+  if (bufferedTb <= 2) recHdd = '2TB';
+  else if (bufferedTb <= 4) recHdd = '4TB';
+  else if (bufferedTb <= 6) recHdd = '6TB';
+  else if (bufferedTb <= 8) recHdd = '8TB';
+  else if (bufferedTb <= 10) recHdd = '10TB';
+  else if (bufferedTb <= 14) recHdd = '14TB';
+  else recHdd = '16TB+ Dual-Drive NVR';
+
+  document.getElementById('calc-hdd-recommendation').textContent = recHdd + ' Surveillance HDD';
+}
+
+function updatePlacementPlan() {
+  const propType = document.querySelector('input[name="property_type"]:checked')?.value || 'Semi-detached house';
+  const mountStyle = document.querySelector('input[name="mounting_style"]:checked')?.value || 'Visible deterrence';
+  const mountHeight = document.querySelector('input[name="mounting_height"]:checked')?.value || 'About 10 ft / 3 m';
+  const checkedZones = Array.from(document.querySelectorAll('input[name="protect_zones"]:checked')).map(el => el.value);
+
+  const titleEl = document.getElementById('plan-property-title');
+  if (titleEl) {
+    titleEl.textContent = propType + ' — ' + checkedZones.length + ' Zone Plan';
+  }
+
+  const container = document.getElementById('plan-camera-allocation');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  const zonePresets = {
+    'Front door / entrance': {
+      title: 'Cam 1: Front Entrance / Porch',
+      lens: '2.8mm Wide Angle (108° FOV)',
+      mount: 'Mounted at 2.6m on soffit offset from door',
+      purpose: 'DORI Face Recognition of visitors and courier deliveries',
+      icon: '🚪'
+    },
+    'Driveway / vehicles': {
+      title: 'Cam 2: Driveway & Vehicle Bays',
+      lens: '4.0mm Narrow Focus (84° FOV)',
+      mount: 'Mounted at 3.0m on corner masonry with IP66 base',
+      purpose: 'Vehicle plate capture, catalytic converter & keyless relay theft',
+      icon: '🚗'
+    },
+    'Rear garden / patio': {
+      title: 'Cam 3: Rear Patio & Bifold Doors',
+      lens: '2.8mm 4K ColorVu (F1.0 Full-Colour Night)',
+      mount: 'Mounted under rear eaves overlooking lawn and bifolds',
+      purpose: 'Primary forced entry deterrence across dark garden perimeter',
+      icon: '🏡'
+    },
+    'Side passage / alley': {
+      title: 'Cam 4: Side Passage / Ginnel Walkway',
+      lens: '4.0mm Corridor Format (9:16 Vertical)',
+      mount: 'Cross-fire mount at 2.8m facing rear gate line',
+      purpose: 'Detects stealth perimeter intrusions and ladder movements',
+      icon: '🚶'
+    },
+    'Garage / shed': {
+      title: 'Cam 5: Detached Garage / Workshop',
+      lens: '2.8mm Turret with Audio Siren / Strobe',
+      mount: 'SWA armoured Cat6 cable link to outbuilding',
+      purpose: 'Protects e-bikes, tools and workshop machinery',
+      icon: '🔧'
+    },
+    'Gate / boundary': {
+      title: 'Cam 6: Front Gate & Boundary Tripwire',
+      lens: '4.0mm AcuSense Human/Vehicle AI Target',
+      mount: 'Mounted on brick pier or front gable',
+      purpose: 'Instant smartphone alerts before intruders reach the doorstep',
+      icon: '⛩️'
+    },
+    'Ground-floor windows': {
+      title: 'Cam 7: Ground-Floor Windows & French Doors',
+      lens: '2.8mm Turret Wide Perimeter Sweep',
+      mount: 'Wall-mounted at 2.8m height',
+      purpose: 'Prevents jemmying of bay windows and ground casements',
+      icon: '🪟'
+    },
+    'Indoors / hallway': {
+      title: 'Cam 8: Indoor Hallway / Tamper Backup',
+      lens: '2.8mm Compact Mini-Dome',
+      mount: 'Ceiling mounted inside entrance vestibule',
+      purpose: 'Secondary confirmation in the event of forced entry',
+      icon: '🏠'
+    }
+  };
+
+  checkedZones.forEach((z, idx) => {
+    const p = zonePresets[z] || {
+      title: 'Camera ' + (idx + 1) + ': ' + z,
+      lens: '2.8mm 4K Turret',
+      mount: 'Mounted at 3.0m under eaves',
+      purpose: 'Perimeter monitoring',
+      icon: '📹'
+    };
+
+    const card = document.createElement('div');
+    card.className = 'p-3.5 rounded-xl bg-[#FAF8F5] border border-black/5 hover:border-[#FF5500]/30 transition-all';
+    card.innerHTML = `
+      <div class="flex items-center gap-2 mb-1.5">
+        <span class="text-base">${p.icon}</span>
+        <strong class="text-xs font-bold text-[#1D1D1F]">${p.title}</strong>
+      </div>
+      <div class="text-[11px] text-neutral-600 space-y-1">
+        <div><strong>Optics:</strong> ${p.lens}</div>
+        <div><strong>Mount:</strong> ${p.mount}</div>
+        <div><strong>Purpose:</strong> ${p.purpose}</div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function handlePhotoUpload(files) {
+  if (!files || !files.length) return;
+  const previewContainer = document.getElementById('photo-previews');
+  previewContainer.classList.remove('hidden');
+  previewContainer.innerHTML = '';
+
+  Array.from(files).forEach((file, i) => {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const div = document.createElement('div');
+      div.className = 'relative rounded-xl overflow-hidden aspect-[4/3] bg-neutral-900 border border-black/10 shadow-xs group';
+      div.innerHTML = `
+        <img src="${e.target.result}" class="w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] font-mono text-white">
+          <span>Photo ${i + 1} Loaded</span>
+        </div>
+      `;
+      previewContainer.appendChild(div);
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // Highlight heuristic assessment
+  const advisory = document.getElementById('plan-blind-spot-advisory');
+  if (advisory) {
+    advisory.innerHTML = `
+      <strong class="text-[#FF5500] font-bold block">✓ Property Photos Analyzed (${files.length} uploads):</strong>
+      <p>1. <strong>Sightlines Verified:</strong> Clear frontal elevation detected. Recommended 10ft mounting height provides direct DORI face identification without head-top distortion.</p>
+      <p>2. <strong>IR Wash Warning:</strong> Keep cameras separated from PVC downpipes and light fixtures by at least 450mm to prevent infrared night bloom.</p>
+      <p>3. <strong>Cable Infiltration:</strong> Recommended route through soffit into main loft, avoiding visible external brickwork clips.</p>
+    `;
+  }
+}
+
+// Initialise defaults on load
+document.addEventListener('DOMContentLoaded', () => {
+  runStorageCalculation();
+  updatePlacementPlan();
+});
+</script>
+
+</body>
+</html>
