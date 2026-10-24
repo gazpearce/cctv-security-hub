@@ -72,6 +72,9 @@ html_content = f"""<!DOCTYPE html>
   <title>ADI Communications UK Video Strategy Vault (185 Problem-Solving Masterclasses | 2026)</title>
   <meta name="description" content="Official library of 185 video masterclasses and customer problem-solving guides across 18 service chapters: CCTV, Ajax alarms, Starlink, Wi-Fi 7 mesh, Hikvision, Dahua, Tapo, and TV aerial installations by Gary Pearce (ADI Communications, 07860 244 274).">
   <link rel="canonical" href="https://gary-pearce-forensic-hub.web.app/video-showcase.html">
+  <link rel="alternate" type="application/rss+xml" title="ADI Communications 185 Video Masterclasses MRSS Feed" href="https://gary-pearce-forensic-hub.web.app/videos-mrss.xml">
+  <link rel="alternate" type="application/rss+xml" title="ADI Communications Official RSS Feed" href="https://gary-pearce-forensic-hub.web.app/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Google Blogger Security Citadel RSS" href="https://tvandhomesecurity.blogspot.com/feeds/posts/default?alt=rss">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
