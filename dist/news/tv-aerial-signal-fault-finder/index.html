@@ -102,7 +102,39 @@
       flex-shrink: 0;
     }
     .ff-results { display: none; }
-    .ff-results.visible { display: block; }
+    .ff-results.visible { display: block; animation: ffFadeIn 0.28s ease-out; }
+    .ff-step-screen { display: none; }
+    .ff-step-screen.active { display: block; animation: ffFadeIn 0.22s ease-out; }
+    @keyframes ffFadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .ff-step-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      border: 1.5px solid rgba(0, 0, 0, 0.12);
+      background-color: #FAF8F5;
+      color: #737373;
+      transition: all 0.2s ease;
+    }
+    .ff-step-dot.current {
+      border-color: #FF5500;
+      background-color: #FF5500;
+      color: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.18);
+    }
+    .ff-step-dot.done {
+      border-color: #10B981;
+      background-color: #ECFDF5;
+      color: #047857;
+    }
     .ff-result-card {
       border: 1px solid rgba(0, 0, 0, 0.1);
       background-color: #FAF8F5;
@@ -1159,7 +1191,7 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
 </nav>
 
 <!-- ============================================================
-     CHAPTER 1: EMBEDDED INTERACTIVE TV AERIAL & SIGNAL FAULT FINDER
+     CHAPTER 1: EMBEDDED INTERACTIVE STEP-BY-STEP FAULT FINDER WIZARD
      100% Light Editorial Card (bg-white border-black/10)
      ============================================================ -->
 <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-white border-2 border-[#FF5500]/30 shadow-md" id="fault-finder-tool">
@@ -1167,7 +1199,7 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
     <div class="flex items-center gap-3">
       <div class="w-11 h-11 rounded-xl bg-[#FF5500] text-white font-display font-black text-base flex items-center justify-center shadow-sm">ADI</div>
       <div>
-        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-orange-100 text-[#FF5500] uppercase tracking-wider">FREE DIAGNOSTIC TOOL</span>
+        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-orange-100 text-[#FF5500] uppercase tracking-wider">FREE INTERACTIVE DIAGNOSTIC WIZARD</span>
         <h2 class="text-xl sm:text-2xl font-black text-[#1D1D1F] font-display tracking-tight mt-0.5">
           TV Aerial &amp; Signal Fault Finder
         </h2>
@@ -1178,16 +1210,43 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
     </a>
   </div>
 
-  <p class="text-sm sm:text-base text-neutral-600 leading-relaxed mb-6">
-    Answer five quick questions below to narrow down possible causes of TV signal loss, picture breakup, missing channels, or radio reception problems. This tool offers structured trade guidance, not a confirmed diagnosis or a live signal measurement.
-  </p>
+  <!-- Step Progress Header Bar -->
+  <div id="wizardHeader" class="mb-6">
+    <div class="flex items-center justify-between gap-2 mb-2.5">
+      <span id="stepCounterLabel" class="text-xs font-mono font-bold uppercase tracking-wider text-[#FF5500]">
+        Step 1 of 5 • Main Symptom
+      </span>
+      <span id="stepPercentLabel" class="text-xs font-mono text-neutral-500 font-semibold">
+        20%
+      </span>
+    </div>
+    <!-- Progress Track -->
+    <div class="w-full h-2 rounded-full bg-neutral-100 overflow-hidden border border-black/5 mb-4">
+      <div id="wizardProgressBar" class="h-full bg-[#FF5500] transition-all duration-300 rounded-full" style="width: 20%;"></div>
+    </div>
+    <!-- 5 Step Number Pills -->
+    <div class="flex items-center justify-between gap-1 sm:gap-2">
+      <button type="button" class="ff-step-dot current cursor-pointer" data-jump="0" aria-label="Go to Step 1">1</button>
+      <div class="flex-1 h-px bg-black/10"></div>
+      <button type="button" class="ff-step-dot cursor-pointer" data-jump="1" aria-label="Go to Step 2">2</button>
+      <div class="flex-1 h-px bg-black/10"></div>
+      <button type="button" class="ff-step-dot cursor-pointer" data-jump="2" aria-label="Go to Step 3">3</button>
+      <div class="flex-1 h-px bg-black/10"></div>
+      <button type="button" class="ff-step-dot cursor-pointer" data-jump="3" aria-label="Go to Step 4">4</button>
+      <div class="flex-1 h-px bg-black/10"></div>
+      <button type="button" class="ff-step-dot cursor-pointer" data-jump="4" aria-label="Go to Step 5">5</button>
+    </div>
+  </div>
 
-  <form id="faultForm" class="space-y-6">
-    <!-- Question 1 -->
-    <div class="pb-5 border-b border-black/10">
-      <h3 class="text-sm sm:text-base font-bold text-[#1D1D1F] font-display mb-3">
-        1. What is the main symptom?
+  <form id="faultForm" novalidate>
+    <!-- SCREEN 1: Main Symptom -->
+    <div class="ff-step-screen active" data-step="0" data-title="Main Symptom">
+      <h3 class="text-base sm:text-lg font-extrabold text-[#1D1D1F] font-display mb-1.5">
+        1. What is the main symptom on your TV or radio?
       </h3>
+      <p class="text-xs sm:text-sm text-neutral-500 mb-4">
+        Select the option that best matches what you see on screen (automatically advances to Step 2).
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label class="ff-choice">
           <input type="radio" name="symptom" value="nosignal" required>
@@ -1220,106 +1279,171 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
       </div>
     </div>
 
-    <!-- Question 2 -->
-    <div class="pb-5 border-b border-black/10">
-      <h3 class="text-sm sm:text-base font-bold text-[#1D1D1F] font-display mb-3">
-        2. How many TVs are affected?
+    <!-- SCREEN 2: Scope -->
+    <div class="ff-step-screen" data-step="1" data-title="TVs Affected">
+      <h3 class="text-base sm:text-lg font-extrabold text-[#1D1D1F] font-display mb-1.5">
+        2. How many TVs in the property are affected?
       </h3>
+      <p class="text-xs sm:text-sm text-neutral-500 mb-4">
+        Comparing one TV against other rooms helps isolate a local wall socket fault from a roof aerial or loft distribution fault.
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <label class="ff-choice">
           <input type="radio" name="scope" value="one" required>
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">One TV only</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">One TV only</strong>
+            <span class="text-neutral-500 text-xs">Other TVs work normally or only 1 TV fitted</span>
+          </span>
         </label>
         <label class="ff-choice">
           <input type="radio" name="scope" value="some">
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">Some rooms, not others</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">Some rooms, not others</strong>
+            <span class="text-neutral-500 text-xs">Working in one room, failing in others</span>
+          </span>
         </label>
         <label class="ff-choice">
           <input type="radio" name="scope" value="all">
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">All TVs in the property</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">All TVs in the property</strong>
+            <span class="text-neutral-500 text-xs">Every room lost signal together</span>
+          </span>
         </label>
       </div>
     </div>
 
-    <!-- Question 3 -->
-    <div class="pb-5 border-b border-black/10">
-      <h3 class="text-sm sm:text-base font-bold text-[#1D1D1F] font-display mb-3">
-        3. Is an aerial amplifier or booster fitted?
+    <!-- SCREEN 3: Amplifier / Booster -->
+    <div class="ff-step-screen" data-step="2" data-title="Amplifier / Booster">
+      <h3 class="text-base sm:text-lg font-extrabold text-[#1D1D1F] font-display mb-1.5">
+        3. Is an aerial amplifier or signal booster fitted?
       </h3>
+      <p class="text-xs sm:text-sm text-neutral-500 mb-4">
+        This includes plug-in boosters behind a TV, a 12V masthead power box, or a multi-way distribution box in the loft.
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <label class="ff-choice">
           <input type="radio" name="amp" value="yes" required>
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">Yes</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">Yes</strong>
+            <span class="text-neutral-500 text-xs">Booster or loft amplifier present</span>
+          </span>
         </label>
         <label class="ff-choice">
           <input type="radio" name="amp" value="no">
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">No</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">No</strong>
+            <span class="text-neutral-500 text-xs">Direct passive coax feed only</span>
+          </span>
         </label>
         <label class="ff-choice">
           <input type="radio" name="amp" value="unsure">
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">Not sure</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">Not sure</strong>
+            <span class="text-neutral-500 text-xs">Don't know what is in the loft</span>
+          </span>
         </label>
       </div>
     </div>
 
-    <!-- Question 4 -->
-    <div class="pb-5 border-b border-black/10">
-      <h3 class="text-sm sm:text-base font-bold text-[#1D1D1F] font-display mb-3">
-        4. Is the problem worse in rain or strong wind?
+    <!-- SCREEN 4: Weather Pattern -->
+    <div class="ff-step-screen" data-step="3" data-title="Weather Impact">
+      <h3 class="text-base sm:text-lg font-extrabold text-[#1D1D1F] font-display mb-1.5">
+        4. Is the problem worse in heavy rain or strong wind?
       </h3>
+      <p class="text-xs sm:text-sm text-neutral-500 mb-4">
+        Weather sensitivity helps distinguish outdoor coaxial water ingress and loose brackets from indoor equipment faults.
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label class="ff-choice">
           <input type="radio" name="weather" value="yes" required>
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">Yes (Worse in rain or strong wind)</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">Yes — worse in rain or wind</strong>
+            <span class="text-neutral-500 text-xs">Breaks up during bad weather</span>
+          </span>
         </label>
         <label class="ff-choice">
           <input type="radio" name="weather" value="no">
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">No obvious weather pattern</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">No obvious weather pattern</strong>
+            <span class="text-neutral-500 text-xs">Happens in dry, calm weather too</span>
+          </span>
         </label>
       </div>
     </div>
 
-    <!-- Question 5 -->
-    <div class="pb-2">
-      <h3 class="text-sm sm:text-base font-bold text-[#1D1D1F] font-display mb-3">
-        5. Is FM/DAB radio reception affected as well?
+    <!-- SCREEN 5: FM / DAB Radio -->
+    <div class="ff-step-screen" data-step="4" data-title="FM / DAB Radio">
+      <h3 class="text-base sm:text-lg font-extrabold text-[#1D1D1F] font-display mb-1.5">
+        5. Is FM or DAB radio reception affected as well?
       </h3>
+      <p class="text-xs sm:text-sm text-neutral-500 mb-4">
+        Final step — select an option below or click <strong>Find likely causes</strong> to generate your diagnostic report.
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <label class="ff-choice">
           <input type="radio" name="radio" value="yes" required>
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">Yes</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">Yes</strong>
+            <span class="text-neutral-500 text-xs">Radio also crackling or dead</span>
+          </span>
         </label>
         <label class="ff-choice">
           <input type="radio" name="radio" value="no">
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">No</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">No</strong>
+            <span class="text-neutral-500 text-xs">Radio works normally</span>
+          </span>
         </label>
         <label class="ff-choice">
           <input type="radio" name="radio" value="unsure">
-          <span class="text-xs sm:text-sm font-semibold text-[#1D1D1F]">Not tested / not applicable</span>
+          <span class="text-xs sm:text-sm">
+            <strong class="block text-[#1D1D1F] font-bold">Not tested / N/A</strong>
+            <span class="text-neutral-500 text-xs">No separate radio aerial used</span>
+          </span>
         </label>
       </div>
     </div>
 
-    <p id="formError" class="text-xs font-mono font-bold text-rose-600" role="alert" hidden>
-      Please answer each of the 5 questions above to generate your diagnostic report.
+    <p id="formError" class="text-xs font-mono font-bold text-rose-600 mt-4" role="alert" hidden>
+      Please select an option above to continue.
     </p>
 
-    <div class="flex flex-wrap items-center gap-3 pt-2">
-      <button class="px-6 py-3.5 rounded-full bg-[#FF5500] hover:bg-orange-600 text-white font-mono font-bold text-xs uppercase tracking-wider shadow-md transition-all active:scale-95 cursor-pointer" type="submit">
-        Find likely causes <span aria-hidden="true">→</span>
-      </button>
-      <button class="px-5 py-3.5 rounded-full bg-neutral-100 hover:bg-neutral-200 text-[#1D1D1F] font-mono font-bold text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer" type="reset">
-        Start again
-      </button>
+    <!-- Wizard Step Controls -->
+    <div id="wizardControls" class="flex flex-wrap items-center justify-between gap-3 pt-5 mt-5 border-t border-black/10">
+      <div class="flex items-center gap-2">
+        <button id="prevStepBtn" class="px-4 py-2.5 rounded-full bg-neutral-100 hover:bg-neutral-200 text-[#1D1D1F] font-mono font-bold text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer hidden" type="button">
+          ← Back
+        </button>
+        <button id="resetWizardBtn" class="px-4 py-2.5 rounded-full bg-white hover:bg-neutral-100 text-neutral-600 font-mono font-bold text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer" type="reset">
+          Start again
+        </button>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="nextStepBtn" class="px-6 py-3 rounded-full bg-[#1D1D1F] hover:bg-[#FF5500] text-white font-mono font-bold text-xs uppercase tracking-wider shadow-sm transition-all active:scale-95 cursor-pointer" type="button">
+          Next Question <span aria-hidden="true">→</span>
+        </button>
+        <button id="submitWizardBtn" class="px-6 py-3.5 rounded-full bg-[#FF5500] hover:bg-orange-600 text-white font-mono font-bold text-xs uppercase tracking-wider shadow-md transition-all active:scale-95 cursor-pointer hidden" type="submit">
+          Find likely causes <span aria-hidden="true">→</span>
+        </button>
+      </div>
     </div>
   </form>
 
-  <!-- Dynamic Diagnostic Report Output -->
-  <div id="results" class="ff-results mt-8 pt-6 border-t-2 border-orange-200" aria-live="polite" aria-labelledby="resultsTitle" tabindex="-1">
-    <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
-      <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-100 text-emerald-800 uppercase tracking-wider">YOUR DIAGNOSTIC REPORT</span>
-      <span class="text-xs font-mono text-neutral-500">Indicative Trade Guidance</span>
+  <!-- Dynamic Diagnostic Report Output (Shown as Screen 6 when complete) -->
+  <div id="results" class="ff-results mt-2 pt-2" aria-live="polite" aria-labelledby="resultsTitle" tabindex="-1">
+    <div class="flex items-center justify-between flex-wrap gap-2 mb-3 pb-3 border-b border-black/10">
+      <div class="flex items-center gap-2">
+        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-100 text-emerald-800 uppercase tracking-wider">DIAGNOSTIC COMPLETE</span>
+        <span class="text-xs font-mono text-neutral-500">5 of 5 Answered</span>
+      </div>
+      <button id="editAnswersBtn" type="button" class="text-xs font-mono font-bold text-[#FF5500] hover:underline cursor-pointer">
+        ← Change Answers / Start Again
+      </button>
     </div>
+
+    <!-- Summary Pills of User's 5 Answers -->
+    <div id="answerSummaryPills" class="flex flex-wrap gap-1.5 mb-4"></div>
+
     <h3 id="resultsTitle" class="text-lg sm:text-xl font-black text-[#1D1D1F] font-display mb-2">
       Likely Causes and Safe Next Steps
     </h3>
@@ -1344,9 +1468,9 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
       <a class="px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-mono font-bold text-xs uppercase tracking-wider transition-all" href="https://wa.me/447860244274?text=Hi%20Gary,%20I%20ran%20the%20ADI%20TV%20Aerial%20Fault%20Finder%20and%20need%20help%20with%20my%20signal." target="_blank" rel="noopener">
         WhatsApp Report to Gary
       </a>
-      <a class="px-4 py-2.5 rounded-full bg-white hover:bg-neutral-50 text-[#1D1D1F] font-mono font-bold text-xs uppercase tracking-wider border border-black/15 transition-all" href="/tv-aerial-installation/">
-        TV Aerial Repairs →
-      </a>
+      <button class="px-4 py-2.5 rounded-full bg-white hover:bg-neutral-50 text-[#1D1D1F] font-mono font-bold text-xs uppercase tracking-wider border border-black/15 transition-all cursor-pointer" id="restartFromReportBtn" type="button">
+        Start Again ↺
+      </button>
     </div>
     <p id="copyStatus" class="text-xs font-mono text-emerald-700 mt-2 font-semibold" role="status"></p>
   </div>
@@ -2177,7 +2301,7 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
   });
 </script>
 
-<!-- INTERACTIVE TV AERIAL & SIGNAL FAULT FINDER SCRIPT -->
+<!-- INTERACTIVE STEP-BY-STEP TV AERIAL & SIGNAL FAULT FINDER WIZARD SCRIPT -->
 <script>
 (function(){
   const form=document.getElementById('faultForm');
@@ -2185,14 +2309,110 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
   const resultList=document.getElementById('resultList');
   const error=document.getElementById('formError');
   const copyStatus=document.getElementById('copyStatus');
+  const wizardHeader=document.getElementById('wizardHeader');
+  const stepCounterLabel=document.getElementById('stepCounterLabel');
+  const stepPercentLabel=document.getElementById('stepPercentLabel');
+  const wizardProgressBar=document.getElementById('wizardProgressBar');
+  const prevStepBtn=document.getElementById('prevStepBtn');
+  const nextStepBtn=document.getElementById('nextStepBtn');
+  const submitWizardBtn=document.getElementById('submitWizardBtn');
+  const editAnswersBtn=document.getElementById('editAnswersBtn');
+  const restartFromReportBtn=document.getElementById('restartFromReportBtn');
+  const answerSummaryPills=document.getElementById('answerSummaryPills');
   if(!form) return;
+
+  const screens=Array.from(form.querySelectorAll('.ff-step-screen'));
+  const dots=Array.from(document.querySelectorAll('.ff-step-dot'));
+  const fieldNames=['symptom','scope','amp','weather','radio'];
+  let currentStep=0;
   let reportText='';
+
   const symptomText={nosignal:'No Signal or black screen',pixel:'Picture freezing or pixelating',channels:'Some channels missing',radio:'FM or DAB radio reception fault'};
   const scopeText={one:'One TV only',some:'Some rooms, not others',all:'All TVs'};
   const ampText={yes:'Yes',no:'No',unsure:'Not sure'};
   const weatherText={yes:'Yes',no:'No obvious weather pattern'};
   const radioText={yes:'Yes',no:'No',unsure:'Not tested / not applicable'};
-  function selected(name){const item=form.querySelector('input[name="'+name+'"]:checked');return item?item.value:'';}
+
+  function selected(name){
+    const item=form.querySelector('input[name="'+name+'"]:checked');
+    return item?item.value:'';
+  }
+
+  function showStep(idx){
+    currentStep=Math.max(0,Math.min(screens.length-1,idx));
+    error.hidden=true;
+    form.style.display='block';
+    wizardHeader.style.display='block';
+    results.classList.remove('visible');
+
+    screens.forEach(function(sc,i){
+      sc.classList.toggle('active',i===currentStep);
+    });
+
+    const pct=Math.round(((currentStep+1)/screens.length)*100);
+    const title=screens[currentStep].getAttribute('data-title')||'Question';
+    if(stepCounterLabel) stepCounterLabel.textContent='Step '+(currentStep+1)+' of '+screens.length+' • '+title;
+    if(stepPercentLabel) stepPercentLabel.textContent=pct+'%';
+    if(wizardProgressBar) wizardProgressBar.style.width=pct+'%';
+
+    dots.forEach(function(dot,i){
+      dot.classList.remove('current','done');
+      if(i===currentStep){
+        dot.classList.add('current');
+      }else if(selected(fieldNames[i])){
+        dot.classList.add('done');
+      }
+    });
+
+    if(prevStepBtn) prevStepBtn.classList.toggle('hidden',currentStep===0);
+    if(nextStepBtn) nextStepBtn.classList.toggle('hidden',currentStep===screens.length-1);
+    if(submitWizardBtn) submitWizardBtn.classList.toggle('hidden',currentStep!==screens.length-1);
+  }
+
+  // Auto-advance when a radio button is clicked/changed on steps 1..4
+  screens.forEach(function(sc,idx){
+    const radios=sc.querySelectorAll('input[type="radio"]');
+    radios.forEach(function(r){
+      r.addEventListener('change',function(){
+        error.hidden=true;
+        if(idx<screens.length-1){
+          setTimeout(function(){
+            showStep(idx+1);
+          },180);
+        }
+      });
+    });
+  });
+
+  if(nextStepBtn){
+    nextStepBtn.addEventListener('click',function(){
+      if(!selected(fieldNames[currentStep])){
+        error.hidden=false;
+        return;
+      }
+      showStep(currentStep+1);
+    });
+  }
+
+  if(prevStepBtn){
+    prevStepBtn.addEventListener('click',function(){
+      showStep(currentStep-1);
+    });
+  }
+
+  dots.forEach(function(dot){
+    dot.addEventListener('click',function(){
+      const target=parseInt(dot.getAttribute('data-jump'),10);
+      // Allow jumping back anytime, or jumping forward if preceding steps are answered
+      let canJump=true;
+      for(let i=0;i<target;i++){
+        if(!selected(fieldNames[i])){canJump=false;break;}
+      }
+      if(canJump) showStep(target);
+      else error.hidden=false;
+    });
+  });
+
   function addResult(title,detail,checks){
     const article=document.createElement('article');article.className='ff-result-card';
     const heading=document.createElement('h4');heading.textContent=title;article.appendChild(heading);
@@ -2200,11 +2420,40 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
     if(checks&&checks.length){const list=document.createElement('ul');checks.forEach(function(item){const li=document.createElement('li');li.textContent=item;list.appendChild(li);});article.appendChild(list);}
     resultList.appendChild(article);
   }
+
   form.addEventListener('submit',function(event){
     event.preventDefault();
-    if(!form.reportValidity()){error.hidden=false;return;}
+    for(let i=0;i<fieldNames.length;i++){
+      if(!selected(fieldNames[i])){
+        showStep(i);
+        error.hidden=false;
+        return;
+      }
+    }
     error.hidden=true;resultList.replaceChildren();copyStatus.textContent='';
     const symptom=selected('symptom'),scope=selected('scope'),amp=selected('amp'),weather=selected('weather'),radio=selected('radio');
+
+    // Render summary pills so user can see what they picked
+    if(answerSummaryPills){
+      answerSummaryPills.replaceChildren();
+      const summaryItems=[
+        ['Symptom',symptomText[symptom]],
+        ['Scope',scopeText[scope]],
+        ['Booster',ampText[amp]],
+        ['Weather',weatherText[weather]],
+        ['FM/DAB',radioText[radio]]
+      ];
+      summaryItems.forEach(function(pair,idx){
+        const btn=document.createElement('button');
+        btn.type='button';
+        btn.className='px-2.5 py-1 rounded-full bg-neutral-100 hover:bg-orange-50 text-[11px] font-mono text-neutral-700 border border-black/10 cursor-pointer transition-colors';
+        btn.innerHTML='<strong class="text-[#1D1D1F]">'+pair[0]+':</strong> '+pair[1];
+        btn.title='Click to change '+pair[0];
+        btn.addEventListener('click',function(){showStep(idx);});
+        answerSummaryPills.appendChild(btn);
+      });
+    }
+
     const advice=[];
     if(symptom==='nosignal') advice.push(['No signal or black screen','Check the TV input, receiver power and secure aerial connections. A cable, outlet, aerial or distribution component may also be responsible.',['Confirm the correct TV source/input (DTV / Freeview rather than HDMI).','Check accessible aerial plugs and receiver power.','If safe, compare another TV on the same system.']]);
     if(symptom==='pixel') advice.push(['Pixelation or freezing','An unstable signal, poor connection, damaged coax, interference or an amplifier issue could be responsible. Retuning alone will not fix a physical fault.',['Look for loose or visibly damaged accessible connections.','Note whether the fault affects certain channels or times.','Do not add a booster without checking the signal first.']]);
@@ -2221,15 +2470,43 @@ window.toggleAppleMobileNav = toggleAppleMobileNav;
     advice.forEach(function(item){addResult(item[0],item[1],item[2]||[]);});
     addResult('What an engineer can test','An engineer can inspect the aerial and cable route, check connectors and distribution equipment, and measure signal strength (dBµV) and quality (MER). This helps distinguish a weak signal, 4G/5G interference, damaged cable and unsuitable amplification.');
     reportText='ADI Communications TV Aerial & Signal Fault Finder report\n\nMain symptom: '+symptomText[symptom]+'\nAffected TVs: '+scopeText[scope]+'\nAmplifier fitted: '+ampText[amp]+'\nWorse in rain/wind: '+weatherText[weather]+'\nFM/DAB also affected: '+radioText[radio]+'\n\nPossible causes are indicative only; no remote signal measurement or confirmed diagnosis has been made.\n\nPlease help investigate this reception fault.';
-    results.classList.add('visible');results.focus();results.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+
+    // Hide question form & show results screen inside the tool container
+    form.style.display='none';
+    wizardHeader.style.display='none';
+    results.classList.add('visible');
+    results.focus();
   });
-  form.addEventListener('reset',function(){results.classList.remove('visible');error.hidden=true;copyStatus.textContent='';reportText='';});
+
+  form.addEventListener('reset',function(){
+    setTimeout(function(){
+      results.classList.remove('visible');
+      error.hidden=true;
+      copyStatus.textContent='';
+      reportText='';
+      showStep(0);
+    },10);
+  });
+
+  if(editAnswersBtn){
+    editAnswersBtn.addEventListener('click',function(){
+      showStep(0);
+    });
+  }
+  if(restartFromReportBtn){
+    restartFromReportBtn.addEventListener('click',function(){
+      form.reset();
+    });
+  }
+
   document.getElementById('copyReport').addEventListener('click',async function(){
     if(!reportText)return;
     try{await navigator.clipboard.writeText(reportText);copyStatus.textContent='Fault report copied. You can paste it into an enquiry or WhatsApp message.';}
     catch(e){const area=document.createElement('textarea');area.value=reportText;area.setAttribute('readonly','');area.style.position='absolute';area.style.left='-9999px';document.body.appendChild(area);area.select();const ok=document.execCommand('copy');area.remove();copyStatus.textContent=ok?'Fault report copied. You can paste it into an enquiry.':'Copy was blocked by your browser. Use Print / save report instead.';}
   });
   document.getElementById('printReport').addEventListener('click',function(){window.print();});
+
+  showStep(0);
 })();
 </script>
 <!-- SOPHIE AI DIAGNOSTIC AGENT FLOATING TRIGGER -->

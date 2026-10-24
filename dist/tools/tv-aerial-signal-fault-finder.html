@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Use the free ADI Communications TV aerial fault finder to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.">
+<meta name="description" content="Use the free ADI Communications step-by-step TV aerial fault finder to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.">
 <meta name="author" content="ADI Communications">
 <meta name="publisher" content="https://adicommunications.co.uk/">
 <meta name="application-name" content="ADI Communications TV Aerial Fault Finder">
@@ -19,7 +19,7 @@
       "@id": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html#tool",
       "name": "TV Aerial & Signal Fault Finder | ADI Communications",
       "url": "https://adicommunications.co.uk/tools/tv-aerial-signal-fault-finder.html",
-      "description": "Use the free ADI Communications TV aerial fault finder to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.",
+      "description": "Use the free ADI Communications interactive step-by-step TV aerial fault finder to investigate TV signal loss, pixelation, missing channels, coax cable and amplifier problems.",
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All Web Browsers",
       "offers": {
@@ -67,16 +67,76 @@
 }
 </script>
 <style>
-:root{color-scheme:light dark;--navy:#101b2d;--orange:#f47b20;--ink:light-dark(#182230,#f0f3f7);--muted:light-dark(#586579,#b2bdca);--surface:light-dark(#fff,#182334);--surface2:light-dark(#f3f6fa,#202e41);--line:light-dark(#dce3eb,#344358);--page:light-dark(#f5f7fa,#0c1421);--good:light-dark(#e8f7ed,#173626)}*{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:900px;margin:auto;padding:clamp(16px,4vw,36px)}.brand{display:flex;align-items:center;gap:12px;margin-bottom:24px;justify-content:space-between;flex-wrap:wrap}.brand-left{display:flex;align-items:center;gap:12px}.mark{display:grid;place-items:center;width:48px;height:48px;background:var(--orange);color:#111827;border-radius:12px;font-weight:900;font-size:20px;text-decoration:none}.brand small{display:block;color:var(--muted)}h1,h2,h3{line-height:1.2;letter-spacing:-.02em}h1{font-size:clamp(2rem,5vw,3.25rem);margin:.25em 0}h2{font-size:1.4rem}p{max-width:75ch}.intro{color:var(--muted);font-size:1.08rem}.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,3vw,28px);margin:22px 0;box-shadow:0 8px 28px #0000000a}.step{padding:18px 0;border-bottom:1px solid var(--line)}.step:last-of-type{border-bottom:0}.step h2{font-size:1.05rem;margin:0 0 12px}.choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:9px}.choice{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:11px;padding:12px;cursor:pointer;min-height:48px}.choice:has(input:checked){border-color:var(--orange);background:color-mix(in srgb,var(--orange) 10%,var(--surface))}.choice input{accent-color:var(--orange);margin-top:5px;flex-shrink:0}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.btn{appearance:none;border:1px solid var(--line);border-radius:10px;padding:12px 17px;font:inherit;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:8px}.primary{background:var(--orange);border-color:var(--orange);color:#171717}.secondary{background:var(--surface);color:var(--ink)}.btn:focus-visible,.choice:focus-within{outline:3px solid color-mix(in srgb,var(--orange) 60%,transparent);outline-offset:2px}.results{display:none}.results.visible{display:block}.result{border:1px solid var(--line);border-radius:12px;padding:15px;margin:12px 0}.result h3{font-size:1rem;margin:0 0 6px}.result p{margin:0}.notice{border-left:4px solid var(--orange);background:var(--surface2);padding:14px 16px;border-radius:0 10px 10px 0}.muted{color:var(--muted)}.pill{display:inline-block;background:var(--surface2);border-radius:99px;padding:4px 9px;font-size:.8rem;font-weight:700}.footer{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);margin-top:30px;padding-top:18px}.error{color:#d83d3d;font-weight:700}.result ol,.result ul{padding-left:1.25rem}.result li{margin:.35rem 0}.guide-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:10px;margin-top:14px}.guide-link{display:block;border:1px solid var(--line);border-radius:11px;padding:12px;text-decoration:none;color:var(--ink);background:var(--surface2)}.guide-link:hover{border-color:var(--orange)}.guide-link strong{display:block;color:var(--orange);font-size:.92rem;margin-bottom:3px}@media(max-width:480px){.actions .btn{width:100%}.brand{align-items:flex-start}}@media print{body{background:#fff;color:#111}.panel{box-shadow:none}.actions,.brand .mark{display:none}.results{display:block}}
-
-.brand-link{display:inline-flex;text-decoration:none;color:inherit;flex:0 0 auto}
-.brand-link:focus-visible,.site-watermark a:focus-visible{outline:3px solid var(--orange);outline-offset:4px;border-radius:5px}
-.site-watermark{position:sticky;bottom:0;z-index:20;display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;margin-top:28px;background:color-mix(in srgb,var(--surface) 94%,transparent);border-top:1px solid var(--line);box-shadow:0 -4px 18px #0000000b;font-size:13px;text-align:center}
+:root{color-scheme:light;--navy:#101b2d;--orange:#ff5500;--ink:#1d1d1f;--muted:#586579;--surface:#ffffff;--surface2:#faf8f5;--line:#e5e0d8;--page:#faf8f5;--good:#ecfdf5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:860px;margin:auto;padding:clamp(16px,4vw,36px)}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:24px;justify-content:space-between;flex-wrap:wrap}
+.brand-left{display:flex;align-items:center;gap:12px}
+.mark{display:grid;place-items:center;width:48px;height:48px;background:var(--orange);color:#fff;border-radius:12px;font-weight:900;font-size:20px;text-decoration:none}
+.brand small{display:block;color:var(--muted)}
+h1,h2,h3{line-height:1.2;letter-spacing:-.02em}
+h1{font-size:clamp(1.85rem,4.5vw,2.85rem);margin:.25em 0}
+h2{font-size:1.35rem}
+p{max-width:75ch}
+.intro{color:var(--muted);font-size:1.04rem}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(18px,3.5vw,32px);margin:22px 0;box-shadow:0 8px 28px #00000008}
+.wizard-header{margin-bottom:22px}
+.wizard-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;font-size:.82rem;font-weight:750;text-transform:uppercase;letter-spacing:.04em;color:var(--orange)}
+.progress-track{width:100%;height:8px;background:var(--surface2);border-radius:99px;overflow:hidden;border:1px solid var(--line);margin-bottom:14px}
+.progress-bar{height:100%;background:var(--orange);width:20%;transition:width .28s ease;border-radius:99px}
+.dots-row{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.dot-line{flex:1;height:1px;background:var(--line)}
+.step-dot{width:30px;height:30px;border-radius:99px;border:1.5px solid var(--line);background:var(--surface2);color:var(--muted);font-weight:800;font-size:.8rem;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s ease}
+.step-dot.current{border-color:var(--orange);background:var(--orange);color:#fff;box-shadow:0 0 0 3px #ff550026}
+.step-dot.done{border-color:#10b981;background:var(--good);color:#047857}
+.step-screen{display:none;padding:6px 0}
+.step-screen.active{display:block;animation:fadeIn .22s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.step-screen h2{font-size:1.2rem;margin:0 0 6px}
+.step-hint{color:var(--muted);font-size:.9rem;margin:0 0 16px}
+.choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:11px}
+.choice{display:flex;align-items:flex-start;gap:10px;border:1.5px solid var(--line);background:var(--surface2);border-radius:14px;padding:14px 16px;cursor:pointer;min-height:56px;transition:all .16s ease}
+.choice:hover{border-color:#ff550080;background:#fff7ed}
+.choice:has(input:checked){border-color:var(--orange);background:#fff7ed;box-shadow:0 0 0 1px var(--orange)}
+.choice input{accent-color:var(--orange);margin-top:4px;flex-shrink:0}
+.actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}
+.actions-left,.actions-right{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{appearance:none;border:1px solid var(--line);border-radius:99px;padding:11px 20px;font:inherit;font-size:.88rem;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:8px;transition:all .15s ease}
+.primary{background:var(--orange);border-color:var(--orange);color:#fff}
+.primary:hover{background:#e04b00}
+.dark-btn{background:var(--ink);border-color:var(--ink);color:#fff}
+.dark-btn:hover{background:var(--orange);border-color:var(--orange)}
+.secondary{background:var(--surface);color:var(--ink)}
+.secondary:hover{background:var(--surface2)}
+.hidden{display:none!important}
+.btn:focus-visible,.choice:focus-within{outline:3px solid #ff550080;outline-offset:2px}
+.results{display:none}
+.results.visible{display:block;animation:fadeIn .26s ease-out}
+.summary-pills{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 16px}
+.summary-pill{border:1px solid var(--line);background:var(--surface2);border-radius:99px;padding:5px 11px;font-size:.78rem;cursor:pointer}
+.summary-pill:hover{border-color:var(--orange);background:#fff7ed}
+.result{border:1px solid var(--line);background:var(--surface2);border-radius:14px;padding:16px 18px;margin:12px 0}
+.result h3{font-size:1rem;margin:0 0 6px}
+.result p{margin:0}
+.notice{border-left:4px solid var(--orange);background:#fff7ed;padding:14px 16px;border-radius:0 12px 12px 0;margin:16px 0}
+.muted{color:var(--muted)}
+.pill{display:inline-block;background:#fff7ed;color:var(--orange);border:1px solid #fed7aa;border-radius:99px;padding:4px 11px;font-size:.76rem;font-weight:800;letter-spacing:.03em}
+.footer{font-size:.88rem;color:var(--muted);border-top:1px solid var(--line);margin-top:30px;padding-top:18px}
+.error{color:#dc2626;font-weight:700;font-size:.88rem;margin-top:12px}
+.result ol,.result ul{padding-left:1.25rem;margin:8px 0 0}
+.result li{margin:.35rem 0;font-size:.9rem;color:#374151}
+.guide-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:10px;margin-top:14px}
+.guide-link{display:block;border:1px solid var(--line);border-radius:12px;padding:13px;text-decoration:none;color:var(--ink);background:var(--surface2)}
+.guide-link:hover{border-color:var(--orange)}
+.guide-link strong{display:block;color:var(--orange);font-size:.92rem;margin-bottom:3px}
+.site-watermark{position:sticky;bottom:0;z-index:20;display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;margin-top:28px;background:#ffffffeb;backdrop-filter:blur(8px);border-top:1px solid var(--line);box-shadow:0 -4px 18px #00000008;font-size:13px;text-align:center}
 .site-watermark a{font-weight:800;color:var(--orange);text-decoration:underline;text-underline-offset:3px}
 .site-watermark .watermark-label{color:var(--muted)}
 .site-footer{margin:18px 0 72px;text-align:center;color:var(--muted);font-size:12px}
 .site-footer a{color:inherit}
-@media print{.site-watermark{position:static;box-shadow:none}.site-footer{margin-bottom:0}}
+@media(max-width:480px){.actions{flex-direction:column;align-items:stretch}.actions-left,.actions-right{width:100%;justify-content:space-between}.brand{align-items:flex-start}}
+@media print{body{background:#fff;color:#111}.panel{box-shadow:none}.actions,.brand .mark,.site-watermark{display:none}.results{display:block}}
 </style>
 </head>
 <body>
@@ -90,57 +150,132 @@
       </div>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <a class="btn secondary" style="padding:8px 13px;font-size:13px" href="https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/">Read Full Fault Guide</a>
-      <a class="btn primary" style="padding:8px 13px;font-size:13px" href="tel:07860244274">Call Gary: 07860 244 274</a>
+      <a class="btn secondary" style="padding:8px 14px;font-size:13px" href="https://adicommunications.co.uk/news/tv-aerial-signal-fault-finder/">Read Full Fault Guide</a>
+      <a class="btn primary" style="padding:8px 14px;font-size:13px" href="tel:07860244274">Call Gary: 07860 244 274</a>
     </div>
   </div>
-  <span class="pill">FREE DIAGNOSTIC TOOL</span>
+
+  <span class="pill">FREE INTERACTIVE DIAGNOSTIC TOOL</span>
   <h1>TV Aerial &amp; Signal Fault Finder</h1>
-  <p class="intro">Answer a few quick questions to narrow down possible causes of TV signal loss, picture breakup, missing channels or radio reception problems. This tool offers guidance, not a confirmed diagnosis or a live signal measurement.</p>
+  <p class="intro">Step through five quick questions to narrow down possible causes of TV signal loss, picture breakup, missing channels or radio reception problems. This tool offers guidance, not a confirmed diagnosis or a live signal measurement.</p>
 
-  <form id="faultForm" class="panel">
-    <div class="step"><h2><label for="symptom">1. What is the main symptom?</label></h2><div class="choices">
-      <label class="choice"><input type="radio" id="symptom" name="symptom" value="nosignal" required><span><strong>No Signal / black screen</strong><br><small class="muted">TV cannot find a usable signal</small></span></label>
-      <label class="choice"><input type="radio" name="symptom" value="pixel"><span><strong>Picture freezing or pixelating</strong><br><small class="muted">Blocks, glitches or dropouts</small></span></label>
-      <label class="choice"><input type="radio" name="symptom" value="channels"><span><strong>Some channels missing</strong><br><small class="muted">Only certain services affected</small></span></label>
-      <label class="choice"><input type="radio" name="symptom" value="radio"><span><strong>FM or DAB radio fault</strong><br><small class="muted">Crackling or loss of reception</small></span></label>
-    </div></div>
-    <div class="step"><h2>2. How many TVs are affected?</h2><div class="choices">
-      <label class="choice"><input type="radio" name="scope" value="one" required><span>One TV only</span></label>
-      <label class="choice"><input type="radio" name="scope" value="some"><span>Some rooms, not others</span></label>
-      <label class="choice"><input type="radio" name="scope" value="all"><span>All TVs in the property</span></label>
-    </div></div>
-    <div class="step"><h2>3. Is an aerial amplifier or booster fitted?</h2><div class="choices">
-      <label class="choice"><input type="radio" name="amp" value="yes" required><span>Yes</span></label>
-      <label class="choice"><input type="radio" name="amp" value="no"><span>No</span></label>
-      <label class="choice"><input type="radio" name="amp" value="unsure"><span>Not sure</span></label>
-    </div></div>
-    <div class="step"><h2>4. Is the problem worse in rain or strong wind?</h2><div class="choices">
-      <label class="choice"><input type="radio" name="weather" value="yes" required><span>Yes</span></label>
-      <label class="choice"><input type="radio" name="weather" value="no"><span>No obvious weather pattern</span></label>
-    </div></div>
-    <div class="step"><h2>5. Is FM/DAB radio reception affected as well?</h2><div class="choices">
-      <label class="choice"><input type="radio" name="radio" value="yes" required><span>Yes</span></label>
-      <label class="choice"><input type="radio" name="radio" value="no"><span>No</span></label>
-      <label class="choice"><input type="radio" name="radio" value="unsure"><span>Not tested / not applicable</span></label>
-    </div></div>
-    <p id="formError" class="error" role="alert" hidden>Please answer each question to generate your report.</p>
-    <div class="actions"><button class="btn primary" type="submit">Find likely causes <span aria-hidden="true">→</span></button><button class="btn secondary" type="reset">Start again</button></div>
-  </form>
-
-  <section id="results" class="panel results" aria-live="polite" aria-labelledby="resultsTitle" tabindex="-1">
-    <span class="pill">YOUR REPORT</span><h2 id="resultsTitle">Likely causes and next steps</h2>
-    <p class="muted">These are possibilities based on your answers, not a confirmed diagnosis. Several causes can produce the same symptoms.</p>
-    <div id="resultList"></div>
-    <div class="notice"><strong>Safety first</strong><p>Only check accessible connections. Do not climb onto a roof, work near overhead power lines, open electrical equipment or handle outdoor wiring in unsafe conditions.</p></div>
-    <div class="actions">
-      <button class="btn primary" id="copyReport" type="button">Copy my fault report</button>
-      <button class="btn secondary" id="printReport" type="button">Print / save report</button>
-      <a class="btn secondary" href="https://adicommunications.co.uk/tv-aerial-installation/">TV Aerial Repairs (From £69 + VAT)</a>
-      <a class="btn secondary" href="https://wa.me/447860244274?text=Hi%20Gary,%20I%20used%20the%20ADI%20TV%20Aerial%20Fault%20Finder%20and%20need%20help%20with%20a%20signal%20problem.">WhatsApp Report to Gary</a>
+  <div class="panel">
+    <!-- Step Progress Header -->
+    <div id="wizardHeader" class="wizard-header">
+      <div class="wizard-meta">
+        <span id="stepCounterLabel">Step 1 of 5 • Main Symptom</span>
+        <span id="stepPercentLabel">20%</span>
+      </div>
+      <div class="progress-track">
+        <div id="wizardProgressBar" class="progress-bar" style="width:20%"></div>
+      </div>
+      <div class="dots-row">
+        <button type="button" class="step-dot current" data-jump="0" aria-label="Step 1">1</button>
+        <div class="dot-line"></div>
+        <button type="button" class="step-dot" data-jump="1" aria-label="Step 2">2</button>
+        <div class="dot-line"></div>
+        <button type="button" class="step-dot" data-jump="2" aria-label="Step 3">3</button>
+        <div class="dot-line"></div>
+        <button type="button" class="step-dot" data-jump="3" aria-label="Step 4">4</button>
+        <div class="dot-line"></div>
+        <button type="button" class="step-dot" data-jump="4" aria-label="Step 5">5</button>
+      </div>
     </div>
-    <p id="copyStatus" class="muted" role="status"></p>
-  </section>
+
+    <form id="faultForm" novalidate>
+      <!-- Screen 1 -->
+      <div class="step-screen active" data-step="0" data-title="Main Symptom">
+        <h2>1. What is the main symptom?</h2>
+        <p class="step-hint">Select the main issue you are seeing on screen (automatically advances to the next step).</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" id="symptom" name="symptom" value="nosignal" required><span><strong>No Signal / black screen</strong><br><small class="muted">TV cannot find a usable signal</small></span></label>
+          <label class="choice"><input type="radio" name="symptom" value="pixel"><span><strong>Picture freezing or pixelating</strong><br><small class="muted">Blocks, glitches or dropouts</small></span></label>
+          <label class="choice"><input type="radio" name="symptom" value="channels"><span><strong>Some channels missing</strong><br><small class="muted">Only certain services affected</small></span></label>
+          <label class="choice"><input type="radio" name="symptom" value="radio"><span><strong>FM or DAB radio fault</strong><br><small class="muted">Crackling or loss of reception</small></span></label>
+        </div>
+      </div>
+
+      <!-- Screen 2 -->
+      <div class="step-screen" data-step="1" data-title="TVs Affected">
+        <h2>2. How many TVs are affected?</h2>
+        <p class="step-hint">Comparing one TV against other rooms helps isolate a local wall socket fault from a roof aerial or loft amplifier fault.</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="scope" value="one" required><span><strong>One TV only</strong><br><small class="muted">Other TVs work or only 1 TV fitted</small></span></label>
+          <label class="choice"><input type="radio" name="scope" value="some"><span><strong>Some rooms, not others</strong><br><small class="muted">Working in one room, failing in others</small></span></label>
+          <label class="choice"><input type="radio" name="scope" value="all"><span><strong>All TVs in the property</strong><br><small class="muted">Every room lost signal together</small></span></label>
+        </div>
+      </div>
+
+      <!-- Screen 3 -->
+      <div class="step-screen" data-step="2" data-title="Amplifier / Booster">
+        <h2>3. Is an aerial amplifier or booster fitted?</h2>
+        <p class="step-hint">Includes plug-in boosters behind a TV, a 12V masthead power box, or a multi-way distribution box in the loft.</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="amp" value="yes" required><span><strong>Yes</strong><br><small class="muted">Booster or loft amplifier present</small></span></label>
+          <label class="choice"><input type="radio" name="amp" value="no"><span><strong>No</strong><br><small class="muted">Direct passive coax feed only</small></span></label>
+          <label class="choice"><input type="radio" name="amp" value="unsure"><span><strong>Not sure</strong><br><small class="muted">Unchecked or unknown loft setup</small></span></label>
+        </div>
+      </div>
+
+      <!-- Screen 4 -->
+      <div class="step-screen" data-step="3" data-title="Weather Impact">
+        <h2>4. Is the problem worse in rain or strong wind?</h2>
+        <p class="step-hint">Weather sensitivity helps distinguish outdoor coaxial water ingress and loose brackets from indoor equipment faults.</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="weather" value="yes" required><span><strong>Yes</strong><br><small class="muted">Worse in rain or strong wind</small></span></label>
+          <label class="choice"><input type="radio" name="weather" value="no"><span><strong>No obvious weather pattern</strong><br><small class="muted">Happens in dry, calm weather too</small></span></label>
+        </div>
+      </div>
+
+      <!-- Screen 5 -->
+      <div class="step-screen" data-step="4" data-title="FM / DAB Radio">
+        <h2>5. Is FM/DAB radio reception affected as well?</h2>
+        <p class="step-hint">Final step — select an option below and click <strong>Find likely causes</strong> to view your diagnostic report.</p>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="radio" value="yes" required><span><strong>Yes</strong><br><small class="muted">Radio also crackling or dead</small></span></label>
+          <label class="choice"><input type="radio" name="radio" value="no"><span><strong>No</strong><br><small class="muted">Radio works normally</small></span></label>
+          <label class="choice"><input type="radio" name="radio" value="unsure"><span><strong>Not tested / not applicable</strong><br><small class="muted">No separate radio aerial used</small></span></label>
+        </div>
+      </div>
+
+      <p id="formError" class="error" role="alert" hidden>Please select an option above to continue.</p>
+
+      <div class="actions">
+        <div class="actions-left">
+          <button id="prevStepBtn" class="btn secondary hidden" type="button">← Back</button>
+          <button id="resetWizardBtn" class="btn secondary" type="reset">Start again</button>
+        </div>
+        <div class="actions-right">
+          <button id="nextStepBtn" class="btn dark-btn" type="button">Next Question <span aria-hidden="true">→</span></button>
+          <button id="submitWizardBtn" class="btn primary hidden" type="submit">Find likely causes <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Results Screen inside the same interactive card -->
+    <section id="results" class="results" aria-live="polite" aria-labelledby="resultsTitle" tabindex="-1">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+        <span class="pill">YOUR DIAGNOSTIC REPORT</span>
+        <button id="editAnswersBtn" class="btn secondary" style="padding:6px 13px;font-size:.78rem" type="button">← Change Answers</button>
+      </div>
+      <div id="answerSummaryPills" class="summary-pills"></div>
+      <h2 id="resultsTitle">Likely causes and safe next steps</h2>
+      <p class="muted">These are possibilities based on your answers, not a confirmed diagnosis. Several physical causes can produce the same symptoms.</p>
+      <div id="resultList"></div>
+      <div class="notice"><strong>Safety first</strong><p>Only check accessible indoor connections. Do not climb onto a roof, work near overhead power lines, open electrical equipment or handle outdoor wiring in unsafe conditions.</p></div>
+      <div class="actions">
+        <div class="actions-left">
+          <button class="btn primary" id="copyReport" type="button">Copy my fault report</button>
+          <button class="btn secondary" id="printReport" type="button">Print / save report</button>
+        </div>
+        <div class="actions-right">
+          <a class="btn secondary" href="https://adicommunications.co.uk/tv-aerial-installation/">TV Aerial Repairs (From £69 + VAT)</a>
+          <button class="btn secondary" id="restartFromReportBtn" type="button">Start Again ↺</button>
+        </div>
+      </div>
+      <p id="copyStatus" class="muted" role="status"></p>
+    </section>
+  </div>
 
   <section class="panel">
     <h2>Common TV aerial and coax faults</h2>
@@ -173,13 +308,78 @@
   const resultList=document.getElementById('resultList');
   const error=document.getElementById('formError');
   const copyStatus=document.getElementById('copyStatus');
+  const wizardHeader=document.getElementById('wizardHeader');
+  const stepCounterLabel=document.getElementById('stepCounterLabel');
+  const stepPercentLabel=document.getElementById('stepPercentLabel');
+  const wizardProgressBar=document.getElementById('wizardProgressBar');
+  const prevStepBtn=document.getElementById('prevStepBtn');
+  const nextStepBtn=document.getElementById('nextStepBtn');
+  const submitWizardBtn=document.getElementById('submitWizardBtn');
+  const editAnswersBtn=document.getElementById('editAnswersBtn');
+  const restartFromReportBtn=document.getElementById('restartFromReportBtn');
+  const answerSummaryPills=document.getElementById('answerSummaryPills');
+
+  const screens=Array.from(form.querySelectorAll('.step-screen'));
+  const dots=Array.from(document.querySelectorAll('.step-dot'));
+  const fieldNames=['symptom','scope','amp','weather','radio'];
+  let currentStep=0;
   let reportText='';
+
   const symptomText={nosignal:'No Signal or black screen',pixel:'Picture freezing or pixelating',channels:'Some channels missing',radio:'FM or DAB radio reception fault'};
   const scopeText={one:'One TV only',some:'Some rooms, not others',all:'All TVs'};
   const ampText={yes:'Yes',no:'No',unsure:'Not sure'};
   const weatherText={yes:'Yes',no:'No obvious weather pattern'};
   const radioText={yes:'Yes',no:'No',unsure:'Not tested / not applicable'};
+
   function selected(name){const item=form.querySelector('input[name="'+name+'"]:checked');return item?item.value:'';}
+
+  function showStep(idx){
+    currentStep=Math.max(0,Math.min(screens.length-1,idx));
+    error.hidden=true;
+    form.style.display='block';
+    wizardHeader.style.display='block';
+    results.classList.remove('visible');
+    screens.forEach(function(sc,i){sc.classList.toggle('active',i===currentStep);});
+    const pct=Math.round(((currentStep+1)/screens.length)*100);
+    const title=screens[currentStep].getAttribute('data-title')||'Question';
+    stepCounterLabel.textContent='Step '+(currentStep+1)+' of '+screens.length+' • '+title;
+    stepPercentLabel.textContent=pct+'%';
+    wizardProgressBar.style.width=pct+'%';
+    dots.forEach(function(dot,i){
+      dot.classList.remove('current','done');
+      if(i===currentStep) dot.classList.add('current');
+      else if(selected(fieldNames[i])) dot.classList.add('done');
+    });
+    prevStepBtn.classList.toggle('hidden',currentStep===0);
+    nextStepBtn.classList.toggle('hidden',currentStep===screens.length-1);
+    submitWizardBtn.classList.toggle('hidden',currentStep!==screens.length-1);
+  }
+
+  screens.forEach(function(sc,idx){
+    sc.querySelectorAll('input[type="radio"]').forEach(function(r){
+      r.addEventListener('change',function(){
+        error.hidden=true;
+        if(idx<screens.length-1){
+          setTimeout(function(){showStep(idx+1);},180);
+        }
+      });
+    });
+  });
+
+  nextStepBtn.addEventListener('click',function(){
+    if(!selected(fieldNames[currentStep])){error.hidden=false;return;}
+    showStep(currentStep+1);
+  });
+  prevStepBtn.addEventListener('click',function(){showStep(currentStep-1);});
+  dots.forEach(function(dot){
+    dot.addEventListener('click',function(){
+      const target=parseInt(dot.getAttribute('data-jump'),10);
+      let canJump=true;
+      for(let i=0;i<target;i++){if(!selected(fieldNames[i])){canJump=false;break;}}
+      if(canJump) showStep(target); else error.hidden=false;
+    });
+  });
+
   function addResult(title,detail,checks){
     const article=document.createElement('article');article.className='result';
     const heading=document.createElement('h3');heading.textContent=title;article.appendChild(heading);
@@ -187,11 +387,23 @@
     if(checks&&checks.length){const list=document.createElement('ul');checks.forEach(function(item){const li=document.createElement('li');li.textContent=item;list.appendChild(li);});article.appendChild(list);}
     resultList.appendChild(article);
   }
+
   form.addEventListener('submit',function(event){
     event.preventDefault();
-    if(!form.reportValidity()){error.hidden=false;return;}
+    for(let i=0;i<fieldNames.length;i++){
+      if(!selected(fieldNames[i])){showStep(i);error.hidden=false;return;}
+    }
     error.hidden=true;resultList.replaceChildren();copyStatus.textContent='';
     const symptom=selected('symptom'),scope=selected('scope'),amp=selected('amp'),weather=selected('weather'),radio=selected('radio');
+
+    answerSummaryPills.replaceChildren();
+    [['Symptom',symptomText[symptom]],['Scope',scopeText[scope]],['Booster',ampText[amp]],['Weather',weatherText[weather]],['FM/DAB',radioText[radio]]].forEach(function(pair,idx){
+      const btn=document.createElement('button');btn.type='button';btn.className='summary-pill';
+      btn.innerHTML='<strong>'+pair[0]+':</strong> '+pair[1];
+      btn.addEventListener('click',function(){showStep(idx);});
+      answerSummaryPills.appendChild(btn);
+    });
+
     const advice=[];
     if(symptom==='nosignal') advice.push(['No signal or black screen','Check the TV input, receiver power and secure aerial connections. A cable, outlet, aerial or distribution component may also be responsible.',['Confirm the correct TV source/input (TV / Freeview DTV rather than HDMI).','Check accessible aerial fly-lead plugs and wall socket connections.','If safe, compare another TV on the same system.']]);
     if(symptom==='pixel') advice.push(['Pixelation or freezing','An unstable signal, poor connection, damaged coax, 4G/5G mobile interference or an amplifier issue could be responsible. Retuning alone will not fix a physical fault.',['Look for loose or visibly damaged accessible connections or crushed fly-leads.','Note whether the fault affects certain channels (e.g. Channel 48 area) or times.','Do not add a booster without checking the signal first — overloading a strong signal causes severe breakup.']]);
@@ -208,15 +420,32 @@
     advice.forEach(function(item){addResult(item[0],item[1],item[2]||[]);});
     addResult('What an engineer can test','Gary Pearce can inspect the aerial and coaxial cable route, check wall sockets and distribution equipment, and measure digital signal strength (dBµV) and Modulation Error Ratio (MER) with a calibrated Promax spectrum analyser. This distinguishes weak signal, 4G/5G interference, damaged coax and amplifier overload.');
     reportText='ADI Communications TV Aerial & Signal Fault Finder report\n\nMain symptom: '+symptomText[symptom]+'\nAffected TVs: '+scopeText[scope]+'\nAmplifier fitted: '+ampText[amp]+'\nWorse in rain/wind: '+weatherText[weather]+'\nFM/DAB also affected: '+radioText[radio]+'\n\nPossible causes are indicative only; no remote signal measurement or confirmed diagnosis has been made.\n\nPlease help investigate this reception fault.';
-    results.classList.add('visible');results.focus();results.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+
+    form.style.display='none';
+    wizardHeader.style.display='none';
+    results.classList.add('visible');
+    results.focus();
   });
-  form.addEventListener('reset',function(){results.classList.remove('visible');error.hidden=true;copyStatus.textContent='';reportText='';});
+
+  form.addEventListener('reset',function(){
+    setTimeout(function(){
+      results.classList.remove('visible');
+      error.hidden=true;
+      copyStatus.textContent='';
+      reportText='';
+      showStep(0);
+    },10);
+  });
+  editAnswersBtn.addEventListener('click',function(){showStep(0);});
+  restartFromReportBtn.addEventListener('click',function(){form.reset();});
+
   document.getElementById('copyReport').addEventListener('click',async function(){
     if(!reportText)return;
     try{await navigator.clipboard.writeText(reportText);copyStatus.textContent='Fault report copied. You can paste it into an enquiry or WhatsApp message.';}
     catch(e){const area=document.createElement('textarea');area.value=reportText;area.setAttribute('readonly','');area.style.position='absolute';area.style.left='-9999px';document.body.appendChild(area);area.select();const ok=document.execCommand('copy');area.remove();copyStatus.textContent=ok?'Fault report copied. You can paste it into an enquiry or WhatsApp message.':'Copy was blocked by your browser. Use Print / save report instead.';}
   });
   document.getElementById('printReport').addEventListener('click',function(){window.print();});
+  showStep(0);
 })();
 </script>
 
